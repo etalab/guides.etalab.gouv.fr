@@ -18,5 +18,6 @@ module.exports = {
   themeConfig: {
     sidebar: sidebar,
     sidebarDepth: 1,
-  }
+  },
+  dest: 'public'
 }
