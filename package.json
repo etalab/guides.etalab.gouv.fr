@@ -1,0 +1,22 @@
+{
+  "name": "guides.etalab.gouv.fr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etalab/guides.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etalab/guides/issues"
+  },
+  "homepage": "https://github.com/etalab/guides#readme",
+  "dependencies": {
+    "vuepress": "^1.1.0"
+  }
+}
