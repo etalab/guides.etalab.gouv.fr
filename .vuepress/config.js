@@ -4,7 +4,6 @@ sidebar = [
     path: '/qualite',
     collapsable: false,
     children: [
-      'qualite/0-introduction',
       'qualite/1-preparer-le-jeu-de-donnees',
       'qualite/2-documenter-les-donnees',
       'qualite/3-elements-organisationnels'
