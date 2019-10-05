@@ -4,7 +4,7 @@ Ce guide s’adresse aux acteurs publics ou privés qui souhaitent préparer leu
 
 ![](./images/csv_gg.png)
 
-- [Introduction](/qualite/introduction)
-- [Préparer le jeu de données](/qualite/preparer-le-jeu-de-donnes)
-- [Documenter les données](/qualite/documenter-les-donnes)
-- [Eléments organisationnels](/qualite/elements-organisationnels)
+- [Introduction](/qualite/introduction/)
+- [Préparer le jeu de données](/qualite/preparer-le-jeu-de-donnes/)
+- [Documenter les données](/qualite/documenter-les-donnes/)
+- [Eléments organisationnels](/qualite/elements-organisationnels/)

@@ -18,6 +18,7 @@ module.exports = {
   themeConfig: {
     sidebar: sidebar,
     sidebarDepth: 1,
+    logo: 'https://doc.data.gouv.fr/assets/images/logo-marianne.svg'
   },
   dest: 'public'
 }

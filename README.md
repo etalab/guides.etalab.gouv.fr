@@ -1,3 +1,3 @@
 # Les guides d'Etalab
 
-- [Guide qualité](/qualite)
+- [Guide qualité](/qualite/)
