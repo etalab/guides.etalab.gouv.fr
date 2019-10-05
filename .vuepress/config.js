@@ -5,12 +5,13 @@ sidebar = {
     '1-preparer-le-jeu-de-donnees',
     '2-documenter-les-donnees',
     '3-elements-organisationnels',
-],
-  '/dummy/': [
-    '',
-    'dummy-child',
-    'dummy-child-dir/dummy-child-dir-child'
-  ]
+  ],
+  // add other guides here, like this:
+  // '/dummy/': [
+  //   '',
+  //   'dummy-child',
+  //   'dummy-child-dir/dummy-child-dir-child'
+  // ]
 }
 
 module.exports = {
