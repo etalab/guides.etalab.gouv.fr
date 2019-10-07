@@ -13,7 +13,7 @@ Il est conseillé de proposer votre documentation en ligne et non sous format PD
 >Dans le cadre de la publication des données de sauvetage en mer (opérations coordonnées par les CROSS), un [site statique](https://mtes-mct.github.io/secmar-documentation/) a été créé afin de présenter la documentation du jeu de données.
 > ![](./images/doc_secmar.png)
 
-**Description générale du jeu de données :**
+#### Description générale du jeu de données :
 
 Afin de donner un aperçu rapide des informations mises à disposition, il est conseillé de commencer la documentation par une description synthétique du jeu de données.
 
@@ -26,7 +26,7 @@ La description peut couvrir les points suivants :
 > *Description générale du jeu de données du Répertoire national des élus*
 > ![](./images/description_rne.png)
 
-**Description du mode de production des données :**
+#### Description du mode de production des données :
 
 La structure de votre jeu de données ainsi que son contenu sont intrinsèquement liés au contexte de production des données. La description de cet environnement métier au réutilisateur des données est indispensable :
 * Comment ont été produites les données (saisie manuelle, collecte automatique, etc.) ?
@@ -37,7 +37,7 @@ Il est également conseillé de préciser les points d’attention et précautio
 
 À partir de la description du mode de production du jeu de données, le réutilisateur comprend la structure du jeu, la nature des données mais aussi les possibles manques ou incohérences figurant dans le fichier.
 
-**Description du modèle de données :**
+#### Description du modèle de données :
 Le jeu de données que vous mettez à disposition peut se composer de plusieurs éléments liés entre eux. Le modèle de données décrit la structure logique du jeu de données.
 Il est conseillé de faire apparaître ce modèle de données à l’aide de schémas et de tableaux. Si votre jeu de données se compose de plusieurs fichiers, il est souhaitable de faire apparaître les relations entre eux.
 
@@ -59,7 +59,7 @@ Cet effort de définition fait gagner un temps considérable au réutilisateur l
 > La base de données de demande de valeur foncière recense l’ensemble des transactions immobilières intervenues au cours des cinq dernières années. Le vocabulaire utilisé dans ce jeu de données est issu d’un environnement administratif, parfois difficile à appréhender. La Direction générale des Finances publiques met à disposition une [documentation](https://static.data.gouv.fr/resources/demande-de-valeurs-foncieres/20190419-091745/notice-descriptive-du-fichier-dvf.pdf)  qui comprend notamment un lexique de définition des termes rencontrés. Ce lexique facilite l’appropriation et la réutilisation des données par des acteurs tiers.
 > ![](./images/lexique_dvf.png)
 
-**Description des métadonnées**
+#### Description des métadonnées
 
 *Qu’est-ce qu’une métadonnée ?*
 Une métadonnée est une donnée qui décrit ou définit une autre donnée. Dans la vie courante, l’étiquette d’un produit fournit des informations/métadonnées sur le produit (origine, composition, date de péremption, etc.). Appliqué aux jeux de données, les métadonnées sont des descriptions normalisées du contenu du jeu.
@@ -78,7 +78,7 @@ Des formats standards de métadonnées existent afin de faciliter leur collecte,
 
 Il est possible de consulter le guide de publication d'un jeu de données sur data.gouv.fr pour avoir des informations complémentaires sur ces métadonées. La description des métadonnées apportera à votre jeu de données une meilleure visibilité sur les catalogues. 
 
-**Description des changements majeurs**
+#### Description des changements majeurs
 
 En pratique, il est souhaitable que le modèle de données et la nature de vos données n’évoluent pas au fil du temps. Toutefois, des changements dans la structure des données, dans le mode de collecte ou dans les dispositions réglementaires peuvent affecter le jeu de données. Dans cette situation, il est conseillé de maintenir une liste de ces changements. Cette liste peut faire figurer la date, la version des données (si vous versionnez vos données) et la nature du changement. Si nécessaire, il est possible d’indiquer des liens, comme par exemple lorsque des changements sont introduits par une modification du code de transformation des données.
 
@@ -88,5 +88,5 @@ En pratique, il est souhaitable que le modèle de données et la nature de vos d
 >* Les liens relatifs au changement
 > ![](./images/maj_secmar.png)
 
-**Points de contact**
+#### Points de contact
 Les réutilisateurs des données peuvent avoir des questions à propos des fichiers mis à disposition. Il est conseillé de proposer un espace d’échange entre les producteurs et réutilisateurs des données. Il est préférable que cet espace d’échange soit public afin qu’il puisse bénéficier aux personnes qui auraient des questions similaires. De plus, la collecte des retours d’usage permettra d’améliorer votre documentation de manière incrémentale.
