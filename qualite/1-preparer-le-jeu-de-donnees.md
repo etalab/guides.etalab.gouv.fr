@@ -23,9 +23,9 @@ Deux approches sont envisageables :
 * La structure de votre jeu de données correspond à un schéma de données existant ;
 * La structure de votre jeu de données ne correspond pas à aucun schéma de données existant. Un travail de modélisation est nécessaire en amont de la création du jeu de données.
 
-### La structure du jeu de données correspond à un schéma de données existant
+### Cas 1 - La structure du jeu de données correspond à un schéma de données existant
 
-### Qu’est-ce qu’un schéma de données ?
+#### Qu’est-ce qu’un schéma de données ?
 
 Un schéma de données est un modèle qui permet de décrire de manière précise et univoque les différents champs et valeurs possibles qui composent un jeu de données.
 Il permet notamment de valider qu’un jeu de données se conforme à un schéma, de générer de la documentation automatiquement, de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
@@ -35,7 +35,7 @@ Les schémas existants peuvent avoir été définis par voie :
 * Réglementaire : un modèle de données été défini de manière réglementaire, par décret ou arrêté. Un schéma est un moyen de faciliter l’adoption de ces modèles par les producteurs de données.Par exemple, le schéma de données relatif à la publication des données essentielles dans la commande publique est fixé par [arrêté depuis le 14 avril 2017](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034492587&categorieLien=id).
 * D’usage : la réutilisation des données décrites par le schéma bénéficie à un grand nombre de réutilisateurs ou de nombreux producteurs sont amenés à utiliser ce schéma.
 
-### Pourquoi utiliser un schéma de données ?
+#### Pourquoi utiliser un schéma de données ?
 
 La création d’un jeu de données en conformité avec un schéma de données existant apporte plusieurs bénéfices :
 *Le jeu de données créé peut être facilement croisé avec d’autres jeux de données conformes au standard utilisé. L'interopérabilité des données et leur croisement est simplifié.
@@ -43,25 +43,25 @@ La création d’un jeu de données en conformité avec un schéma de données e
 *La formalisation d’un standard de données assure une pérennité des fichiers dans le temps ;
 *La documentation d’un standard de données existant est déjà rédigée et accessible.
 
-### Comment identifier un schéma de données déjà existant ?
+#### Comment identifier un schéma de données déjà existant ?
 
 Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près. Le site schema.data.gouv.fr permet [d’intégrer les schémas de données et documentations associées](https://schema.data.gouv.fr/documentation/integration-autres-systemes)  dans d’autres systèmes informatiques.
 
-### Comment produire un jeu de données conforme à un schéma de données ?
+#### Comment produire un jeu de données conforme à un schéma de données ?
 
 Si le jeu de données n’est pas extrait d’un système d’information mais saisi manuellement, [l’outil CSV-GG](https://csv-gg.etalab.studio/?schema=etalab%2Fschema-decp-dpa) peut assister le processus de production. A partir d’un schéma de données sélectionné, il est possible de saisir les valeurs de chaque information et ainsi produire un fichier exhaustif et conforme.
 
 ![](./images/csv_gg.png)
 _Outil CSV-GG_
 
-### Comment valider la conformité d’un jeu de données avec un schéma de données ?
+#### Comment valider la conformité d’un jeu de données avec un schéma de données ?
 
 Il est possible de valider la conformité d’un jeu de données à un schéma de données existant grâce à différents outils :
 * L’outil [Validata](https://validata.fr/doku.php) intègre un outil de validation des schémas de données. Vous pouvez valider des jeux de données référencé ou proposer votre propre URL d’un schéma ;
 * Des solutions anglaises comme [goodtables.io](http://goodtables.io) ou [CSV Lint](https://csvlint.io/) proposent des validateurs de jeux de données,
 * Enfin, il est possible d’intégrer une fonction de validation d’un jeu directement dans la procédure de publication. C’est le cas pour les données d’adresses locales qui font l’objet d’une validation directement sur le site [adresse.data.gouv.fr](http://adresse.data.gouv.fr).
 
-### La structure du jeu de données ne correspond à aucun schéma de données existant
+### Cas 2 - La structure du jeu de données ne correspond à aucun schéma de données existant
 
 Si les données que vous souhaitez faire circuler ne correspondent à aucun schéma de données existant, il est nécessaire de réfléchir en amont à la meilleure structure pour vos données.
 
