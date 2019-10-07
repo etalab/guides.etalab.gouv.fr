@@ -1,3 +1,7 @@
+---
+permalink: /qualite/preparer-le-jeu-de-donnees
+---
+
 # 1. Préparer le jeu de données
 
 ## 1.1 Extraire le jeu de données du système d’information de l’organisation
@@ -7,9 +11,9 @@ Il est possible que les données que vous souhaitez faire circuler ne soient pas
 Lorsque vous cherchez à extraire des données d’un système d’information, plusieurs situations peuvent se présenter :
 * Le système d’information propose un outil qui permet d’exporter l’ensemble des données depuis le système d’information. Il est nécessaire de sélectionner les données éligibles à la circulation en aval de l’export ;
 * Le système d’information propose un outil qui permet d’exporter l’ensemble des données ou de sélectionner un sous ensemble des données à exporter depuis le système d’information ;
-* Le système d’information ne prévoit pas d’outil d’exportation des données. Dans ce cas, il est nécessaire de réaliser une opération technique qui permette de réaliser l’export des données. Cette opération est directement liée aux spécificité du système d’information utilisé. 
+* Le système d’information ne prévoit pas d’outil d’exportation des données. Dans ce cas, il est nécessaire de réaliser une opération technique qui permette de réaliser l’export des données. Cette opération est directement liée aux spécificité du système d’information utilisé.
 
-Quel que soit le mode d’export des données, il est recommandé  d’automatiser l’opération réalisée afin de faciliter la mise à jour des données publiées. Cette automatisation instaure un processus sur le long terme et fait gagner du temps à l’organisation. 
+Quel que soit le mode d’export des données, il est recommandé  d’automatiser l’opération réalisée afin de faciliter la mise à jour des données publiées. Cette automatisation instaure un processus sur le long terme et fait gagner du temps à l’organisation.
 
 ## 1.2 La structure du jeu de données
 
@@ -27,15 +31,15 @@ Il permet notamment de valider qu’un jeu de données se conforme à un schéma
 Ces schémas facilitent la montée en qualité des données proposées en open data, surtout lorsque plusieurs producteurs de données sont amenés à produire un même jeu de données.
 
 Les schémas existants peuvent avoir été définis par voie :
-* Réglementaire : un modèle de données été défini de manière réglementaire, par décret ou arrêté. Un schéma est un moyen de faciliter l’adoption de ces modèles par les producteurs de données.Par exemple, le schéma de données relatif à la publication des données essentielles dans la commande publique est fixé par [arrêté depuis le 14 avril 2017](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034492587&categorieLien=id). 
+* Réglementaire : un modèle de données été défini de manière réglementaire, par décret ou arrêté. Un schéma est un moyen de faciliter l’adoption de ces modèles par les producteurs de données.Par exemple, le schéma de données relatif à la publication des données essentielles dans la commande publique est fixé par [arrêté depuis le 14 avril 2017](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034492587&categorieLien=id).
 * D’usage : la réutilisation des données décrites par le schéma bénéficie à un grand nombre de réutilisateurs ou de nombreux producteurs sont amenés à utiliser ce schéma.
 
 **Pourquoi utiliser un schéma de données ?**
-La création d’un jeu de données en conformité avec un schéma de données existant apporte plusieurs bénéfices : 
-*Le jeu de données créé peut être facilement croisé avec d’autres jeux de données conformes au standard utilisé. L'interopérabilité des données et leur croisement est simplifié. 
+La création d’un jeu de données en conformité avec un schéma de données existant apporte plusieurs bénéfices :
+*Le jeu de données créé peut être facilement croisé avec d’autres jeux de données conformes au standard utilisé. L'interopérabilité des données et leur croisement est simplifié.
 *Si le jeu de données que vous créez est une agrégation de plusieurs fichiers produits par différents acteurs, la formalisation et le partage d’un standard  de données  facilite le travail d’agrégation des données ;
-*La formalisation d’un standard de données assure une pérennité des fichiers dans le temps ; 
-*La documentation d’un standard de données existant est déjà rédigée et accessible. 
+*La formalisation d’un standard de données assure une pérennité des fichiers dans le temps ;
+*La documentation d’un standard de données existant est déjà rédigée et accessible.
 
 **Comment identifier un schéma de données déjà existant ?**
 Le site schema.data.gouv.fr référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près. Le site schema.data.gouv.fr permet d’intégrer les schémas de données et documentations associées dans d’autres systèmes informatiques.
@@ -76,14 +80,14 @@ Afin que le maximum d’utilisateurs, internes ou externes à votre organisation
 * aisément réutilisable : un format aisément réutilisable sous-entend que toute personne ou machine peut réutiliser facilement le jeu de données.
 * exploitable par un système de traitement automatisé : un système de traitement automatisé permet de réaliser des opérations par des moyens automatiques, relatifs à l’exploitation des données. Par exemple, un fichier CSV est aisément exploitable par un système de traitement automatisé contrairement à un fichier PDF.
 
-**Rappel juridique**  : Toute organisation de plus de 50 agents chargée d’une mission de service public (les administrations, les collectivités de plus de 3500 habitants et les délégations de service public) est tenue de publier ses jeux de données dans un format ouvert, utilisable et exploitable par un système de traitement automatisé. 
+**Rappel juridique**  : Toute organisation de plus de 50 agents chargée d’une mission de service public (les administrations, les collectivités de plus de 3500 habitants et les délégations de service public) est tenue de publier ses jeux de données dans un format ouvert, utilisable et exploitable par un système de traitement automatisé.
 
 Les formats ouverts et communément acceptés sont les suivants :
 
 
 | Type de données | Formats conseillés | Documentation | Description |
 | -------- | -------- | -------- | -------- |
-| Données tabulaires     | CSV    |[Ici](https://opendatafrance.gitbook.io/odl-ressources/fiches-pratiques/premiers-pas/produire-un-fichier-csv-de-qualite#contexte)     | Un fichier CSV est constitué de lignes de données, où chaque champ est séparé par une virgule. Ce format est le standard le plus réutilisable, car ouvert et facilement exploitable par une machine. 
+| Données tabulaires     | CSV    |[Ici](https://opendatafrance.gitbook.io/odl-ressources/fiches-pratiques/premiers-pas/produire-un-fichier-csv-de-qualite#contexte)     | Un fichier CSV est constitué de lignes de données, où chaque champ est séparé par une virgule. Ce format est le standard le plus réutilisable, car ouvert et facilement exploitable par une machine.
 | Données statiques de transport     | GTFS/NeTEx| [Ici](https://transport.data.gouv.fr/guide)     |Le format GTFS est le format le plus utilisé en France par les services de mobilité d’information voyageur. Le format NeTEx est le format de référence européen qui vise l’interopérabilité des données entre États membres.	|
 | Données géographiques     | GeoJSON, Shapefile, MapInfo MIF/MID, MapInfo TAB et GML, pour les vecteurs / ECW, JPEG2000 et GeoTIFF, pour les données pixelisées (raster)     |   [ici](https://geo.data.gouv.fr/fr/doc/publish-your-data)     | Les données géographiques sont organisées sous forme d’ensemble de données hiérarchisées. Les formats proposés sont conçus spécifiquement pour être largement exploitables et être intégrés facilement dans des outils de cartographie.|
 | Données hiérarchiques   | JSON / XML / YAML     | indisponible     | Les données hiérarchiques décrivent des relations hiérarchiques entre différentes données. Le format JSON est préconisé lorsque les données sont liées entre elles sous forme d’arbres verticaux.  |

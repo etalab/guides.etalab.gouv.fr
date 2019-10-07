@@ -1,10 +1,14 @@
+---
+permalink: /qualite/documenter-les-donnees
+---
+
 # 2. Documenter les données
 
 Les données issues de votre organisation ont été produites dans un contexte métier particulier. Un individu externe à l’organisation n’est pas forcément familier avec cet environnement métier, ce qui peut le freiner dans l’exploitation des données diffusées.
 
 La documentation de vos jeux de données a une visée pédagogique etfacilite la réutilisation des données. Elle décrit les données et la structure des fichiers publiés.
 
-Il est conseillé de proposer votre documentation en ligne et non sous format PDF. Une documentation en ligne permet de s’assurer que les réutilisateurs des données disposent toujours de la version la plus à jour. Des portails de données, tels que data.gouv.fr, proposent des espaces dédiés à la documentation du jeu de données. Vous pouvez également héberger votre documentation sur des sites web statiques. Si le jeu de données a pour vocation de circuler en interne de votre organisation, nous vous conseillons à minima de proposer une documentation dans un fichier séparé aux données  Le fichier contenant les données a pour vocation d’être croisés et exploités. Le fichier contenant la documentation a lui pour vocation d’informer sur les données et la structure des fichiers. 
+Il est conseillé de proposer votre documentation en ligne et non sous format PDF. Une documentation en ligne permet de s’assurer que les réutilisateurs des données disposent toujours de la version la plus à jour. Des portails de données, tels que data.gouv.fr, proposent des espaces dédiés à la documentation du jeu de données. Vous pouvez également héberger votre documentation sur des sites web statiques. Si le jeu de données a pour vocation de circuler en interne de votre organisation, nous vous conseillons à minima de proposer une documentation dans un fichier séparé aux données  Le fichier contenant les données a pour vocation d’être croisés et exploités. Le fichier contenant la documentation a lui pour vocation d’informer sur les données et la structure des fichiers.
 
 >Dans le cadre de la publication des données de sauvetage en mer (opérations coordonnées par les CROSS), un site statique a été créé afin de présenter la documentation du jeu de données.
 >Image
@@ -27,7 +31,7 @@ La structure de votre jeu de données ainsi que son contenu sont intrinsèquemen
 * Quels sont les acteurs producteurs des données ? Si les données sont produites par plusieurs acteurs, quel modèle de gouvernance est mis en place pour centraliser les données ?
 * Les données sont-elles exhaustives ? Présentent-elles des limites dans leur qualité ?
 
-Il est également conseillé de préciser les points d’attention et précautions d’usage relatifs à la manipulation des données. Certains jeux de données ne peuvent pas être utilisés dans certains contextes, ou possèdent des limitations qui rendent impossible certaines analyses. Par exemple, conformément à l’article R112 A-3 du Livre des procédures fiscale, la réutilisation du jeu de données “Demandes de valeurs foncières” ne peut pas avoir ni pour objet ni pour effet de permettre la  ré-identifications des personnes liés à des transactions immobilières. 
+Il est également conseillé de préciser les points d’attention et précautions d’usage relatifs à la manipulation des données. Certains jeux de données ne peuvent pas être utilisés dans certains contextes, ou possèdent des limitations qui rendent impossible certaines analyses. Par exemple, conformément à l’article R112 A-3 du Livre des procédures fiscale, la réutilisation du jeu de données “Demandes de valeurs foncières” ne peut pas avoir ni pour objet ni pour effet de permettre la  ré-identifications des personnes liés à des transactions immobilières.
 
 À partir de la description du mode de production du jeu de données, le réutilisateur comprend la structure du jeu, la nature des données mais aussi les possibles manques ou incohérences figurant dans le fichier.
 
@@ -80,7 +84,7 @@ En pratique, il est souhaitable que le modèle de données et la nature de vos d
 >* La date du changement
 >* La nature du changement
 >* Les liens relatifs au changement
-> image 
+> image
 
 **Points de contact**
 Les réutilisateurs des données peuvent avoir des questions à propos des fichiers mis à disposition. Il est conseillé de proposer un espace d’échange entre les producteurs et réutilisateurs des données. Il est préférable que cet espace d’échange soit public afin qu’il puisse bénéficier aux personnes qui auraient des questions similaires. De plus, la collecte des retours d’usage permettra d’améliorer votre documentation de manière incrémentale.

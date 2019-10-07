@@ -1,10 +1,10 @@
-_Comment faciliter la réutilisation d’un jeu de données ?_ 
-
-Ce guide s’adresse aux acteurs publics ou privés qui souhaitent préparer leurs jeux de données à leur circulation - que ce soit en interne ou en open data. Des lignes directrices sont proposées afin de faciliter la prise en main, le croisement et l’exploitation des jeux de données par de le plus grand nombre d’acteurs tiers. 
+---
+permalink: /qualite/introduction
+---
 
 # Introduction
 
-Le partage de données entre acteurs, que ce soit à l’intérieur ou l’extérieur d’une organisation, est devenu un enjeu économique, politique et culturel.  La circulation des données démultiplie leur potentiel d’usage et rend possible leur réutilisation pour des finalités qui n’étaient pas envisagées lors de leur production. 
+Le partage de données entre acteurs, que ce soit à l’intérieur ou l’extérieur d’une organisation, est devenu un enjeu économique, politique et culturel.  La circulation des données démultiplie leur potentiel d’usage et rend possible leur réutilisation pour des finalités qui n’étaient pas envisagées lors de leur production.
 
 En France, le mouvement de l'ouverture des données publiques se fonde sur ces principes depuis 2011. En juin 2019, la plateforme data.gouv.fr comptait plus de 30 000 jeux de données pour 2350 organisations.  En interne, les organisations ont également pris conscience de l’intérêt que représente la circulation et l’exploitation croisées des données pour leurs activités.
 
