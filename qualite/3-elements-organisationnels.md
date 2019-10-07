@@ -14,7 +14,7 @@ La démarche de partage des données implique un engagement des équipes métier
 
 * **Animer la communauté de réutilisateurs** : il est nécessaire d’engager un dialogue constant avec la communauté de réutilisateurs des données afin de faciliter la réutilisation des données et évaluer les impacts. Il est notamment conseillé de proposer un espace d’échange en ligne (sous forme de modules de commentaire ou de forum) et d’organiser régulièrement des ateliers de discussion entre producteurs et réutilisateurs.
 
-# Les prochaines étapes 
+## Les prochaines étapes 
 
 La préparation de votre jeu de données à la circulation est le début de votre démarche d’ouverture et de circulation des données. Afin de poursuivre cette démarche, plusieurs questions peuvent se poser : 
 
