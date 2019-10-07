@@ -25,4 +25,7 @@ module.exports = {
   },
   locales: {'/': {lang: 'fr-FR'}},
   dest: 'public',
+  markdown: {
+    toc: { includeLevel: [2, 3, 4, 5] }
+  }
 }

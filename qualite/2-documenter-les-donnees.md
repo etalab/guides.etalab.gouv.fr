@@ -4,6 +4,7 @@ permalink: /qualite/documenter-les-donnees
 
 
 # Documenter les données
+
 [[toc]]
 
 Les données issues de votre organisation ont été produites dans un contexte métier particulier. Un individu externe à l’organisation n’est pas forcément familier avec cet environnement métier, ce qui peut le freiner dans l’exploitation des données diffusées.
@@ -78,7 +79,7 @@ Des formats standards de métadonnées existent afin de faciliter leur collecte,
 * Granularité spatiale
 * Mode privé
 
-Il est possible de consulter le guide de publication d'un jeu de données sur data.gouv.fr pour avoir des informations complémentaires sur ces métadonées. La description des métadonnées apportera à votre jeu de données une meilleure visibilité sur les catalogues. 
+Il est possible de consulter le guide de publication d'un jeu de données sur data.gouv.fr pour avoir des informations complémentaires sur ces métadonées. La description des métadonnées apportera à votre jeu de données une meilleure visibilité sur les catalogues.
 
 #### Description des changements majeurs
 
