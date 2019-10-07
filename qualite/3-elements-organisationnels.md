@@ -2,7 +2,7 @@
 permalink: /qualite/elements-organisationnels
 ---
 
-# 3. Éléments organisationnels
+# Éléments organisationnels
 
 La démarche de partage des données implique un engagement des équipes métiers. Afin de faciliter le processus et d’en tirer le maximum de bénéfices, il est indispensable de mettre en place une stratégie organisationnelle :
 
