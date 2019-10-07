@@ -1,16 +1,18 @@
-sidebar = [
-  {
-    title: 'Guide qualité',
-    path: '/qualite',
-    collapsable: false,
-    children: [
-      'qualite/0-introduction',
-      'qualite/1-preparer-le-jeu-de-donnees',
-      'qualite/2-documenter-les-donnees',
-      'qualite/3-elements-organisationnels'
-    ]
-  },
-]
+sidebar = {
+  '/qualite/': [
+    '',
+    '0-introduction',
+    '1-preparer-le-jeu-de-donnees',
+    '2-documenter-les-donnees',
+    '3-elements-organisationnels',
+  ],
+  // add other guides here, like this:
+  // '/dummy/': [
+  //   '',
+  //   'dummy-child',
+  //   'dummy-child-dir/dummy-child-dir-child'
+  // ]
+}
 
 module.exports = {
   title: 'guides.etalab.gouv.fr',
@@ -18,6 +20,9 @@ module.exports = {
   themeConfig: {
     sidebar: sidebar,
     sidebarDepth: 1,
+    logo: 'https://doc.data.gouv.fr/assets/images/logo-marianne.svg',
+    // lastUpdated: 'Dernière mise à jour',
   },
-  dest: 'public'
+  locales: {'/': {lang: 'fr-FR'}},
+  dest: 'public',
 }
