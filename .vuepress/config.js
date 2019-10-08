@@ -22,6 +22,9 @@ module.exports = {
     sidebarDepth: 1,
     logo: 'https://doc.data.gouv.fr/assets/images/logo-marianne.svg',
     // lastUpdated: 'Dernière mise à jour',
+    repo: 'etalab/guides',
+    editLinks: true,
+    editLinkText: 'Proposer des modifications sur cette page'
   },
   locales: {'/': {lang: 'fr-FR'}},
   dest: 'public',
