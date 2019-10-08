@@ -20,11 +20,14 @@ module.exports = {
   themeConfig: {
     sidebar: sidebar,
     sidebarDepth: 1,
-    logo: 'https://doc.data.gouv.fr/assets/images/logo-marianne.svg',
+    logo: '/images/logo-marianne.svg',
     // lastUpdated: 'Dernière mise à jour',
   },
   locales: {'/': {lang: 'fr-FR'}},
   dest: 'public',
+  head: [
+    ['link', { rel: 'icon', href: '/images/favicon.png' }],
+  ],
   markdown: {
     toc: { includeLevel: [2, 3, 4, 5] }
   }
