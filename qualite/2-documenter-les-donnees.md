@@ -16,7 +16,7 @@ Il est conseillé de proposer votre documentation en ligne et non sous format PD
 >Dans le cadre de la publication des données de sauvetage en mer (opérations coordonnées par les CROSS), un [site statique](https://mtes-mct.github.io/secmar-documentation/) a été créé afin de présenter la documentation du jeu de données.
 > ![](./images/doc_secmar.png)
 
-## Description générale du jeu de données :
+## Description générale du jeu de données 
 
 Afin de donner un aperçu rapide des informations mises à disposition, il est conseillé de commencer la documentation par une description synthétique du jeu de données.
 
@@ -29,7 +29,7 @@ La description peut couvrir les points suivants :
 > *Description générale du jeu de données du Répertoire national des élus*
 > ![](./images/description_rne.png)
 
-## Description du mode de production des données :
+## Description du mode de production des données 
 
 La structure de votre jeu de données ainsi que son contenu sont intrinsèquement liés au contexte de production des données. La description de cet environnement métier au réutilisateur des données est indispensable :
 * Comment ont été produites les données (saisie manuelle, collecte automatique, etc.) ?
@@ -40,7 +40,7 @@ Il est également conseillé de préciser les points d’attention et précautio
 
 À partir de la description du mode de production du jeu de données, le réutilisateur comprend la structure du jeu, la nature des données mais aussi les possibles manques ou incohérences figurant dans le fichier.
 
-## Description du modèle de données :
+## Description du modèle de données 
 Le jeu de données que vous mettez à disposition peut se composer de plusieurs éléments liés entre eux. Le modèle de données décrit la structure logique du jeu de données.
 Il est conseillé de faire apparaître ce modèle de données à l’aide de schémas et de tableaux. Si votre jeu de données se compose de plusieurs fichiers, il est souhaitable de faire apparaître les relations entre eux.
 
