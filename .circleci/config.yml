@@ -13,7 +13,7 @@ jobs:
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package-lock.json" }}
-      - run: yarn install
+      - run: npm install
       - save_cache:
           paths:
             - node_modules
@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Lint Markdown files
           command: |
-            yarn run lint-md
+            npm run lint-md
   extended-lint-md:
     <<: *default
     steps:
@@ -29,7 +29,7 @@ jobs:
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package-lock.json" }}
-      - run: yarn install
+      - run: npm install
       - save_cache:
           paths:
             - node_modules
@@ -37,7 +37,7 @@ jobs:
       - run:
           name: Lint Markdown files
           command: |
-            yarn run extended-lint-md
+            npm run extended-lint-md
 workflows:
   version: 2
   commit:
