@@ -1,6 +1,6 @@
 # Animer la communauté de réutilisateurs
 
-## a. Partager son jeu de données et ses ressources 
+## a. Partager son jeu de données et ses ressources 
 
 Une fois que votre jeu de données est publié sur data.gouv.fr, nous vous conseillons de partager cette publication sur les réseaux sociaux.
 
@@ -26,7 +26,7 @@ Les réutilisateurs des ressources publiées ont la possibilité de [référence
 > image - Carte de visualisation des données foncières proposée par MeilleursAgents
 ::: 
 
-## c. Répondre aux questions posées à propos d’un jeu de données
+## c. Répondre aux questions posées à propos d’un jeu de données
 
 Lorsque vous publiez un jeu de données ou une réutilisation sur data.gouv.fr, tout utilisateur qui dispose d’un compte data.gouv.fr peut ouvrir des discussions sur la page du jeu de données. Ces discussions permettent aux réutilisateurs des données de poser des questions au producteur, de faire remonter des erreurs constatées dans le jeu de données ou de proposer des améliorations. 
 
