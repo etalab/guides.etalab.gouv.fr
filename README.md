@@ -17,7 +17,7 @@ open http://localhost:8080
 
 Le contenu de ce dépôt est publié sous une double licence.
 
-- Le contenu des guides est publié sous [licence Ouverte 2.0](LICENCE.md) ;
+- Le contenu des guides est publié sous [licence Ouverte 2.0](LICENSE.md) ;
 - Le code nécessaire à la publication web de ces guides est sous [licence MIT](https://opensource.org/licenses/MIT).
 
 2019 DINSIC, Etalab.
