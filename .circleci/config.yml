@@ -1,0 +1,55 @@
+version: 2
+
+_default: &default
+  docker:
+    - image: circleci/node:latest
+  working_directory: ~/repo
+
+jobs:
+  lint-md:
+    <<: *default
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package-lock.json" }}
+      - run: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package-lock.json" }}
+      - run:
+          name: Lint Markdown files
+          command: |
+            npm run lint-md
+  extended-lint-md:
+    <<: *default
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package-lock.json" }}
+      - run: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package-lock.json" }}
+      - run:
+          name: Lint Markdown files
+          command: |
+            npm run extended-lint-md
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - lint-md
+  cron:
+    triggers:
+      - schedule:
+          cron: "20 1 * * 1"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - extended-lint-md

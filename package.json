@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev",
-    "build": "vuepress build"
+    "build": "vuepress build",
+    "lint-md": "remark --frail --use remark-validate-links **/*.md *.md",
+    "extended-lint-md": "remark --frail --use remark-validate-links --use remark-lint-no-dead-urls **/*.md *.md"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,12 @@
   },
   "homepage": "https://github.com/etalab/guides#readme",
   "dependencies": {
-    "vuepress": "^1.1.0"
+    "vuepress": "^1.1.0",
+    "markdown-it-abbr": "^1.0.4",
+    "remark": "^10.0.1",
+    "remark-cli": "^6.0.1",
+    "remark-lint": "^6.0.4",
+    "remark-lint-no-dead-urls": "^0.4.1",
+    "remark-validate-links": "^8.0.0"
   }
 }
