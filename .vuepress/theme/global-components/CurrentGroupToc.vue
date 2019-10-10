@@ -11,6 +11,12 @@ import { resolveSidebarItems } from '@vuepress/theme-default/util'
 export default {
   mounted() {
   },
+  props: {
+    includeIndex: {
+      type: Boolean,
+      default: false
+    }
+  },
   computed: {
     sidebarItems () {
       return resolveSidebarItems(
@@ -23,8 +29,8 @@ export default {
     localSidebarItems () {
       return this.sidebarItems.filter(item =>  {
         if (!item.relativePath) return
-        if (item.relativePath.endsWith('README.md')) return
-        if (item.relativePath.endsWith('index.md')) return
+        if (!this.includeIndex && item.relativePath.endsWith('README.md')) return
+        if (!this.includeIndex && item.relativePath.endsWith('index.md')) return
         return item
        })
     }

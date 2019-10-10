@@ -1,24 +1,10 @@
-sidebar = {
-  '/qualite/': [
-    '',
-    '0-introduction',
-    '1-preparer-le-jeu-de-donnees',
-    '2-documenter-les-donnees',
-    '3-elements-organisationnels',
-  ],
-  // add other guides here, like this:
-  // '/dummy/': [
-  //   '',
-  //   'dummy-child',
-  //   'dummy-child-dir/dummy-child-dir-child'
-  // ]
-}
+const {getSidebar} = require('./sidebar.js')
 
 module.exports = {
   title: 'guides.etalab.gouv.fr',
   description: 'Les guides d\'Etalab',
   themeConfig: {
-    sidebar: sidebar,
+    sidebar: getSidebar(),
     sidebarDepth: 1,
     logo: '/images/logo-marianne.svg',
     // lastUpdated: 'Dernière mise à jour',
