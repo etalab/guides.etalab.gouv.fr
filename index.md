@@ -1,3 +1,3 @@
 # Les guides d'Etalab
 
-- [Guide qualité](/qualite/)
+<CurrentGroupToc include-index></CurrentGroupToc>
