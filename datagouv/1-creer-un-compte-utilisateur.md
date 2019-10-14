@@ -1,4 +1,4 @@
-# 1. Créer un compte utilisateur
+# Créer un compte utilisateur
 
 La première étape pour publier des jeux de données sur data.gouv.fr est de créer un compte utilisateur. Une fois ce compte confirmé par email, vous avez la possibilité de :
 - mettre en ligne des données ;
