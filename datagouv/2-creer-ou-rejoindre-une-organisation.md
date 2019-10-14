@@ -1,10 +1,10 @@
-# 2. Créer ou rejoindre une organisation
+# Créer ou rejoindre une organisation
 
 En fonction de votre besoin, vous pouvez vouloir publier un jeu de données en tant qu’utilisateur individuel ou en tant qu’organisation. 
 
 ::: tip Qu'est ce qu'une organisation ? 
 Une organisation est une entité au travers de laquelle plusieurs utilisateurs peuvent collaborer sur des jeux de données. Les jeux de données publiés au nom de l’organisation peuvent être édités par les membres de l’organisation. Elle peut contenir plusieurs utilisateurs et un même utilisateur peut appartenir à plusieurs organisations.
-::: tip 
+:::  
 
 
 Nous vous conseillons de [créer une organisation](https://doc.data.gouv.fr/organisations/creer-une-organisation/) ou [rejoindre une organisation](https://doc.data.gouv.fr/organisations/creer-une-organisation/)existante si vous souhaitez :
