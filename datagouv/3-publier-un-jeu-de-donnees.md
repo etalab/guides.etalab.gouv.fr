@@ -1,6 +1,6 @@
 # Publier un jeu de données
 
-## a. Définir qui publie le jeu de données
+## Définir qui publie le jeu de données
 
 Un jeu de données peut être publié sous le nom de votre compte utilisateur ou sous la bannière d’une organisation.
 
@@ -10,7 +10,7 @@ Nous vous conseillons de publier un jeu de données sous le nom de votre compte 
 ### Quand est-il conseillé de publier au nom d’une organisation ?
 Nous vous conseillons de publier un jeu de données au nom d’une organisation s’il a été produit ou reçu dans le cadre des activités de cette organisation. Tous les jeux de données peuvent être édités par les membres de l’organisation. Les jeux de données seront centralisés et facilement accessibles pour les réutilisateurs et nouveaux membres de l’organisation. 
 
-## b. Décrire le jeu de données
+## Décrire le jeu de données
 
 Afin de présenter le jeu de données aux utilisateurs de data.gouv.fr, il est nécessaire de décrire les données que vous publiez. Cette étape est cruciale pour que vos jeux de données soient bien référencés et que les réutilisateurs s’approprient facilement les ressources partagées.  Lors de la création de la page de votre jeu de données, vous avez la possibilité de renseigner les informations suivantes: 
 
@@ -26,7 +26,7 @@ Afin de présenter le jeu de données aux utilisateurs de data.gouv.fr, il est n
 | Granularité spatiale                                                                                                                |   La granularité spatiale indique le niveau de détail géographique le plus fin que peut couvrir vos données.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 
 | Mode privé                                                                                                                          |   L’activation du mode privé permet de ne pas mettre en ligne le jeu de données. Cela laisse la possibilité de l’éditer avant sa publication.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 
 
-## c. Ajouter les ressources 
+## Ajouter les ressources 
 
 ::: tip  Qu’est ce qu’une ressource ? 
  Une ressource est un fichier téléchargeable  qui contient des informations à propos du jeu de données. Un jeu de données peut contenir plusieurs ressources (données mises à jour, données historisées, documentation, code source, API, lien, etc.).
@@ -34,7 +34,7 @@ Afin de présenter le jeu de données aux utilisateurs de data.gouv.fr, il est n
 
 Vous avez la possibilité d’importer vos ressources sur data.gouv.fr selon différents modes de mise à disposition. 
 
-### i. Mise à disposition directe sur data.gouv.fr
+### Mise à disposition directe sur data.gouv.fr
 
 > Image 
 Vous avez la possibilité d’importer vos ressources directement depuis la plateforme data.gouv.fr. Les étapes de cette publication reprend les étapes précédemment citées: 
@@ -47,7 +47,7 @@ Lors de l’étape “Ajoutez vos ressources”, deux options vous sont proposé
 
 > image 
 
-### ii. Mise à disposition par API
+### Mise à disposition par API
 
 ::: tip Qu’est ce qu’une API ?
 Une API est une interface, un contrat passé entre deux systèmes informatiques pour leur permettre de communiquer. Cette solution informatique permet d’automatiser des tâches depuis votre ordinateur ou vos serveurs.
@@ -80,7 +80,7 @@ Les appels à l’API sont soumis aux mêmes permissions que l’interface web. 
 Il ne vous reste plus qu'à publier votre jeu de données ! 
 > image 
 
-## D. Publier un catalogue de données existant par moissonnage 
+## Publier un catalogue de données existant par moissonnage 
 
 > image 
 
@@ -102,9 +102,9 @@ Le principe du moissonnage sur data.gouv.fr se décompose en plusieurs étapes :
 3. Le moissonneur de data.gouv.fr vient automatiquement récupérer les données de votre plateforme ;
 4. Les données de votre plateforme sont référencées et visibles sur data.gouv.fr.
 
-## e. Faire vivre son jeu de données
+## Faire vivre son jeu de données
 
-### i. Obtenir des informations à propos de votre jeu de données
+### Obtenir des informations à propos de votre jeu de données
 
 Afin de suivre la vie de votre jeu de données sur data.gouv.fr, vous avez la possibilité de suivre ses statistiques d’utilisation depuis votre compte administrateur. Un tableau de bord centralise les informations relatives au jeu de données :
 - Sa couverture temporelle, sa fréquence de mise à jour et ses mots-clés ; sa couverture spatiale ;
@@ -127,7 +127,7 @@ La qualité de votre jeu de données est fondamentale pour qu’il soit réutili
 
 > image 
 
-### ii. Mettre à jour ou modifier un jeu de données et/ou une ressource
+### Mettre à jour ou modifier un jeu de données et/ou une ressource
 
 Les données publiées sur data.gouv.fr peuvent être [mises à jour après leur publication](https://doc.data.gouv.fr/jeux-de-donnees/mettre-a-jour-un-jeu-de-donnees-ou-une-ressource/), que la modification porte sur un jeu de données (sa description, ses tags, etc.) ou sur l’une des ressources qu’il contient.
 
@@ -137,7 +137,7 @@ Un producteur qui s’engage dans une logique de publication de ses données a i
 Les producteurs de données dont la publication présente un intérêt économique, social, sanitaire ou environnemental sont tenus de mettre à jour régulièrement les jeux de données publiés (Article L312-1-1 du CRPA). 
 :::
 
-### iii. Transférer un jeu de données
+### Transférer un jeu de données
 
 Un jeu de données publié au nom d’un individu ou d’une organisation peut être [transféré vers un autre individu ou une autre organisation](https://doc.data.gouv.fr/jeux-de-donnees/transferer-un-jeu-de-donnees/).
 
