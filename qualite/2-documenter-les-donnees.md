@@ -26,8 +26,8 @@ La description peut couvrir les points suivants :
 * La description du format des fichiers
 * La fréquence de mise à jour.
 
-> *Description générale du jeu de données du Répertoire national des élus*
 > ![](./images/description_rne.png)
+> *Description générale du jeu de données du Répertoire national des élus*
 
 ## Description du mode de production des données 
 
