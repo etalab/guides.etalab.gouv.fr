@@ -143,7 +143,7 @@ Un jeu de données publié au nom d’un individu ou d’une organisation peut �
 
 > image 
 
-### iv. Supprimer un jeu de données ou une ressource
+### Supprimer un jeu de données ou une ressource
 
 > image
 
