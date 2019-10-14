@@ -25,11 +25,12 @@ Deux approches sont envisageables :
 
 ### Cas 1 - La structure du jeu de données correspond à un schéma de données existant
 
-#### Qu’est-ce qu’un schéma de données ?
 
+::: tip Schéma de données 
 Un schéma de données est un modèle qui permet de décrire de manière précise et univoque les différents champs et valeurs possibles qui composent un jeu de données.
 Il permet notamment de valider qu’un jeu de données se conforme à un schéma, de générer de la documentation automatiquement, de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
 Ces schémas facilitent la montée en qualité des données proposées en open data, surtout lorsque plusieurs producteurs de données sont amenés à produire un même jeu de données.
+:::
 
 Les schémas existants peuvent avoir été définis par voie :
 * Réglementaire : un modèle de données été défini de manière réglementaire, par décret ou arrêté. Un schéma est un moyen de faciliter l’adoption de ces modèles par les producteurs de données.Par exemple, le schéma de données relatif à la publication des données essentielles dans la commande publique est fixé par [arrêté depuis le 14 avril 2017](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034492587&categorieLien=id).
@@ -81,9 +82,9 @@ Ces questions doivent être posées en amont de l’automatisation des exports. 
 ## Le choix du format du jeu de données
 
 Afin que le maximum d’utilisateurs, internes ou externes à votre organisation, puisse s’approprier les données, il est conseillé de les faire circuler dans un format :
-* ouvert : un format ouvert n’impose pas de spécifications techniques qui entraveraient l’exploitation des données (par exemple l’utilisation d’un logiciel payant).
-* aisément réutilisable : un format aisément réutilisable sous-entend que toute personne ou machine peut réutiliser facilement le jeu de données.
-* exploitable par un système de traitement automatisé : un système de traitement automatisé permet de réaliser des opérations par des moyens automatiques, relatifs à l’exploitation des données. Par exemple, un fichier CSV est aisément exploitable par un système de traitement automatisé contrairement à un fichier PDF.
+* **Ouvert** : un format ouvert n’impose pas de spécifications techniques qui entraveraient l’exploitation des données (par exemple l’utilisation d’un logiciel payant).
+* **Aisément réutilisable** : un format aisément réutilisable sous-entend que toute personne ou machine peut réutiliser facilement le jeu de données.
+* **Exploitable par un système de traitement automatisé** : un système de traitement automatisé permet de réaliser des opérations par des moyens automatiques, relatifs à l’exploitation des données. Par exemple, un fichier CSV est aisément exploitable par un système de traitement automatisé contrairement à un fichier PDF.
 
 **Rappel juridique**  : Toute organisation de plus de 50 agents chargée d’une mission de service public (les administrations, les collectivités de plus de 3500 habitants et les délégations de service public) est tenue de publier ses jeux de données dans un format ouvert, utilisable et exploitable par un système de traitement automatisé.
 
@@ -104,9 +105,9 @@ Les formats ouverts et communément acceptés sont les suivants :
 ### Le titre du jeu de données
 
 Le titre de votre jeu de données doit pouvoir renseigner n’importe quel réutilisateur sur le contenu du fichier. Pour cela, il est nécessaire de :
-* ne pas donner un titre trop générique qui obligerait le réutilisateur à ouvrir le jeu de données pour comprendre son contenu (Par exemple “liste.csv” ou encore “balance comptable” sans indiquer l’organisation concernée);
-* ne pas donner un titre trop long qui rendrait la manipulation du fichier difficile (par exemple le titre du jeu de données “Fichier consolidés des données essentielles de la commande publique” ne revient pas sur toutes les sources de données utilisées pour agréger le jeu de données)  ;
-* ne pas donner un titre contenant des accents ou caractères spéciaux qui poseraient des problèmes d’interopérabilité des fichiers ;
+* Ne pas donner un titre trop générique qui obligerait le réutilisateur à ouvrir le jeu de données pour comprendre son contenu (Par exemple “liste.csv” ou encore “balance comptable” sans indiquer l’organisation concernée);
+* Ne pas donner un titre trop long qui rendrait la manipulation du fichier difficile (par exemple le titre du jeu de données “Fichier consolidés des données essentielles de la commande publique” ne revient pas sur toutes les sources de données utilisées pour agréger le jeu de données)  ;
+* Ne pas donner un titre contenant des accents ou caractères spéciaux qui poseraient des problèmes d’interopérabilité des fichiers ;
 * ne pas donner de titre trop technique issu de nomenclatures métier
 
 ### L’encodage du fichier
