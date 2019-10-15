@@ -39,10 +39,11 @@ Les schémas existants peuvent avoir été définis par voie :
 #### Pourquoi utiliser un schéma de données ?
 
 La création d’un jeu de données en conformité avec un schéma de données existant apporte plusieurs bénéfices :
-*Le jeu de données créé peut être facilement croisé avec d’autres jeux de données conformes au standard utilisé. L'interopérabilité des données et leur croisement est simplifié.
-*Si le jeu de données que vous créez est une agrégation de plusieurs fichiers produits par différents acteurs, la formalisation et le partage d’un standard  de données  facilite le travail d’agrégation des données ;
-*La formalisation d’un standard de données assure une pérennité des fichiers dans le temps ;
-*La documentation d’un standard de données existant est déjà rédigée et accessible.
+
+* Le jeu de données créé peut être facilement croisé avec d’autres jeux de données conformes au standard utilisé. L'interopérabilité des données et leur croisement est simplifié.
+* Si le jeu de données que vous créez est une agrégation de plusieurs fichiers produits par différents acteurs, la formalisation et le partage d’un standard  de données  facilite le travail d’agrégation des données ;
+* La formalisation d’un standard de données assure une pérennité des fichiers dans le temps ;
+* La documentation d’un standard de données existant est déjà rédigée et accessible.
 
 #### Comment identifier un schéma de données déjà existant ?
 
@@ -50,7 +51,7 @@ Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste 
 
 #### Comment produire un jeu de données conforme à un schéma de données ?
 
-Si le jeu de données n’est pas extrait d’un système d’information mais saisi manuellement, [l’outil CSV-GG](https://csv-gg.etalab.studio/?schema=etalab%2Fschema-decp-dpa) peut assister le processus de production. A partir d’un schéma de données sélectionné, il est possible de saisir les valeurs de chaque information et ainsi produire un fichier exhaustif et conforme.
+Si le jeu de données n’est pas extrait d’un système d’information mais saisi manuellement, [l’outil CSV-GG](https://csv-gg.etalab.studio/?schema=etalab%2Fschema-decp-dpa) peut assister le processus de production. À partir d’un schéma de données sélectionné, il est possible de saisir les valeurs de chaque information et ainsi produire un fichier exhaustif et conforme.
 
 ![](./images/csv_gg.png)
 _Outil CSV-GG_
@@ -59,7 +60,7 @@ _Outil CSV-GG_
 
 Il est possible de valider la conformité d’un jeu de données à un schéma de données existant grâce à différents outils :
 * L’outil [Validata](https://validata.fr/doku.php) intègre un outil de validation des schémas de données. Vous pouvez valider des jeux de données référencé ou proposer votre propre URL d’un schéma ;
-* Des solutions anglaises comme [goodtables.io](http://goodtables.io) ou [CSV Lint](https://csvlint.io/) proposent des validateurs de jeux de données,
+* Des solutions disponibles en anglais comme [goodtables.io](http://goodtables.io) ou [CSV Lint](https://csvlint.io/) proposent des validateurs de jeux de données,
 * Enfin, il est possible d’intégrer une fonction de validation d’un jeu directement dans la procédure de publication. C’est le cas pour les données d’adresses locales qui font l’objet d’une validation directement sur le site [adresse.data.gouv.fr](http://adresse.data.gouv.fr).
 
 ### Cas 2 - La structure du jeu de données ne correspond à aucun schéma de données existant
@@ -86,7 +87,9 @@ Afin que le maximum d’utilisateurs, internes ou externes à votre organisation
 * **Aisément réutilisable** : un format aisément réutilisable sous-entend que toute personne ou machine peut réutiliser facilement le jeu de données.
 * **Exploitable par un système de traitement automatisé** : un système de traitement automatisé permet de réaliser des opérations par des moyens automatiques, relatifs à l’exploitation des données. Par exemple, un fichier CSV est aisément exploitable par un système de traitement automatisé contrairement à un fichier PDF.
 
-**Rappel juridique**  : Toute organisation de plus de 50 agents chargée d’une mission de service public (les administrations, les collectivités de plus de 3500 habitants et les délégations de service public) est tenue de publier ses jeux de données dans un format ouvert, utilisable et exploitable par un système de traitement automatisé.
+::: tip Rappel juridique
+Toute organisation de plus de 50 agents chargée d’une mission de service public (les administrations, les collectivités de plus de 3500 habitants et les délégations de service public) est tenue de publier ses jeux de données dans un format ouvert, utilisable et exploitable par un système de traitement automatisé.
+:::
 
 Les formats ouverts et communément acceptés sont les suivants :
 
@@ -97,7 +100,6 @@ Les formats ouverts et communément acceptés sont les suivants :
 | Données statiques de transport     | GTFS/NeTEx| [Ici](https://transport.data.gouv.fr/guide)     |Le format GTFS est le format le plus utilisé en France par les services de mobilité d’information voyageur. Le format NeTEx est le format de référence européen qui vise l’interopérabilité des données entre États membres.	|
 | Données géographiques     | GeoJSON, Shapefile, MapInfo MIF/MID, MapInfo TAB et GML, pour les vecteurs / ECW, JPEG2000 et GeoTIFF, pour les données pixelisées (raster)     |   [ici](https://geo.data.gouv.fr/fr/doc/publish-your-data)     | Les données géographiques sont organisées sous forme d’ensemble de données hiérarchisées. Les formats proposés sont conçus spécifiquement pour être largement exploitables et être intégrés facilement dans des outils de cartographie.|
 | Données hiérarchiques   | JSON / XML / YAML     | indisponible     | Les données hiérarchiques décrivent des relations hiérarchiques entre différentes données. Le format JSON est préconisé lorsque les données sont liées entre elles sous forme d’arbres verticaux.  |
-
 
 
 ## Le contenu du jeu
@@ -118,13 +120,15 @@ Il est conseillé d’utiliser l’encodage UTF-8. Cet encodage permet d’encod
 
 ### L’entête des colonnes (pour le format tabulaire)
 
-Dans un fichier tabulaire, la première ligne du fichier peut être utilisée pour nommer chaque colonne et donner des informations sur les données associées. Plutôt que d’indiquer “Colonne n°X”, il est conseillé de donner un nom de colonne explicite. Le nom des colonnes doit être sans majuscule, abréviation, accents, ni espaces (préférez le caractère “_”) afin de faciliter la manipulation des fichiers.
+Dans un fichier tabulaire, la première ligne du fichier peut être utilisée pour nommer chaque colonne et donner des informations sur les données associées. Plutôt que d’indiquer “Colonne n°X”, il est conseillé de donner un nom de colonne explicite. Le nom des colonnes doit être sans majuscule, abréviation, accents, ni espaces (préférez le caractère `_) afin de faciliter la manipulation des fichiers.
 
 ### Le séparateur (pour le format tabulaire)
 
 Dans un fichier tabulaire, le séparateur permet de structurer les données sous forme de cellules. Il est conseillé d’utiliser la virgule comme séparateur.
 
-*Attention* : dans un fichier CSV, la virgule n’est pas considérée comme un séparateur décimal. Si votre fichier contient des valeurs décimales, il est nécessaire d’encapsuler chaque champ entre des guillemets. La plupart des tableurs (Excel, OpenOffice Calc, etc) proposent l’encapsulement des champs entre guillemets. Une seconde solution consiste à convertir l’ensemble des virgules utilisées pour des valeurs décimales par un point.
+:::warning Séparateurs décimaux
+dans un fichier CSV, la virgule n’est pas considérée comme un séparateur décimal. Si votre fichier contient des valeurs décimales, il est nécessaire d’encapsuler chaque champ entre des guillemets. La plupart des tableurs (Excel, OpenOffice Calc, etc) proposent l’encapsulement des champs entre guillemets. Une seconde solution consiste à convertir l’ensemble des virgules utilisées pour des valeurs décimales par un point.
+:::
 
 ### Gestion des champs non attribués
 
