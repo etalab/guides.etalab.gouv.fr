@@ -28,7 +28,6 @@ function getSidebar () {
   })
   // add a fallback with the guides list
   sidebar['/'] = guides.map(guide => `/${guide}/`)
-  console.log(sidebar)
   return sidebar
 }
 
