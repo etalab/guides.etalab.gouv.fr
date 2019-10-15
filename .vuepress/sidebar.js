@@ -1,15 +1,16 @@
 const dirTree = require('directory-tree')
 
 function getGuides () {
-    // look for non hidden or special dirs with md in them
-  return dirTree(`${__dirname}/..`, {extensions:/\.md/, exclude: [/node_modules/, /\.git/]}).children.filter(child => {
+  // look for non hidden or special dirs with md in them
+  const excludes = [/node_modules/, /\.git/, /public/]
+  return dirTree(`${__dirname}/..`, {extensions:/\.md/, exclude: excludes}).children.filter(child => {
     return child.type === 'directory' && !child.name.startsWith('.')
   }).map(child => {
     return child.name
   })
 }
 
-function getSidebar () {  
+function getSidebar () {
   // build the sidebar from "guides" directory structure
   const sidebar = {}
   const guides = getGuides()
@@ -27,6 +28,7 @@ function getSidebar () {
   })
   // add a fallback with the guides list
   sidebar['/'] = guides.map(guide => `/${guide}/`)
+  console.log(sidebar)
   return sidebar
 }
 
