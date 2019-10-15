@@ -28,6 +28,7 @@ La description peut couvrir les points suivants :
 
 > *Description générale du [jeu de données du Répertoire national des élus](https://www.data.gouv.fr/fr/datasets/repertoire-national-des-elus-1/)*
 > ![](./images/description_rne.png)
+> *Description générale du jeu de données du Répertoire national des élus*
 
 ## Description du mode de production des données 
 

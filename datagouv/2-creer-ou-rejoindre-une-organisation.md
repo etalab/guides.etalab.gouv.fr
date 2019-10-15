@@ -1,16 +1,17 @@
-# 2. Créer ou rejoindre une organisation
+# Créer ou rejoindre une organisation
 
 En fonction de votre besoin, vous pouvez vouloir publier un jeu de données en tant qu’utilisateur individuel ou en tant qu’organisation. 
 
 ::: tip Qu'est ce qu'une organisation ? 
 Une organisation est une entité au travers de laquelle plusieurs utilisateurs peuvent collaborer sur des jeux de données. Les jeux de données publiés au nom de l’organisation peuvent être édités par les membres de l’organisation. Elle peut contenir plusieurs utilisateurs et un même utilisateur peut appartenir à plusieurs organisations.
-::: tip 
+:::  
+
 
 Nous vous conseillons de [créer une organisation](https://doc.data.gouv.fr/organisations/creer-une-organisation/) ou [rejoindre une organisation](https://doc.data.gouv.fr/organisations/creer-une-organisation/)existante si vous souhaitez :
 1. publier des jeux de données pour le compte d’une organisation publique ou privé(administration, collectivité, association, entreprise, etc. );
 2.  permettre à des utilisateurs différents de publier et modifier des jeux de données sous le même nom, la même bannière.
 
-> image 
+![](./images/ajouter_une_organisation.JPG)
 
 **Une organisation se compose d’éditeurs et d’administrateurs **
 
@@ -36,4 +37,4 @@ L’ensemble des activités de votre organisation peuvent être consultées à p
 - les discussions ouvertes à propos des jeux publiés ;
 - l’activité des moissonneurs (Cf. partie 3.c.I). 
 
-> Image 
+![](./images/tableau_de_bord_d'une organisation.JPG)
