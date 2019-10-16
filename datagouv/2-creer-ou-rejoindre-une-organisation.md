@@ -1,3 +1,7 @@
+---
+permalink: /datagouv/creer-rejoindre-organisation
+---
+
 # Créer ou rejoindre une organisation
 
 En fonction de votre besoin, vous pouvez vouloir publier un jeu de données en tant qu’utilisateur individuel ou en tant qu’organisation.

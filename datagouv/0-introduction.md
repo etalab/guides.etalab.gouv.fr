@@ -1,3 +1,7 @@
+---
+permalink: /datagouv/introduction
+---
+
 # Introduction
 
 Tout le monde a la possibilité de publier des données sur data.gouv.fr, du moment qu’il s’agit de données d’intérêt général. Plus précisément, vous pouvez publier des données sur data.gouv.fr :

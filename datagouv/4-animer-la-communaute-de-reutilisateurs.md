@@ -1,3 +1,7 @@
+---
+permalink: /datagouv/animer-communaute-reutilisateurs
+---
+
 # Animer la communauté de réutilisateurs
 
 ## Partager son jeu de données et ses ressources 
