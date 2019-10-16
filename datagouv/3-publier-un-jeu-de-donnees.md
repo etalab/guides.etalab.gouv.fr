@@ -124,7 +124,7 @@ La qualité de votre jeu de données est fondamentale pour qu’il soit réutili
 - Le jeu de donnée est-il à jour ? 
 - Les ressources du jeu de données sont-elles accessibles ? 
 
-> Image
+![](./images/qualite.jpg)
 
 ### Mettre à jour ou modifier un jeu de données et/ou une ressource
 
