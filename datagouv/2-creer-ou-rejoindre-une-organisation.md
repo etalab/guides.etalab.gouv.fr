@@ -13,7 +13,7 @@ Nous vous conseillons de [créer une organisation](https://doc.data.gouv.fr/orga
 
 > image
 
-**Une organisation se compose d’éditeurs et d’administrateurs **
+**Une organisation se compose d’éditeurs et d’administrateurs**
 
 Un éditeur peut :
 - publier des jeux de données au nom de l’organisation ;
