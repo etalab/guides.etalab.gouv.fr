@@ -27,7 +27,7 @@ Afin de présenter le jeu de données aux utilisateurs de data.gouv.fr, il est n
 | [Mode privé](https://doc.data.gouv.fr/jeux-de-donnees/publier-un-jeu-de-donnees/#priv%C3%A9)                                                                                                                         |   L’activation du mode privé permet de ne pas mettre en ligne le jeu de données. Cela laisse la possibilité de l’éditer avant sa publication.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 
 
 
-*Il est obligatoire de renseigner ces informations. 
+*Il est obligatoire de renseigner ces informations.*
 
 ## Ajouter les ressources 
 
