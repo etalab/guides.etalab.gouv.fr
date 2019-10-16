@@ -37,9 +37,9 @@ Vous avez la possibilité d’importer vos ressources sur data.gouv.fr selon dif
 
 ### Mise à disposition directe sur data.gouv.fr
 
-
 Vous avez la possibilité d’importer vos ressources directement depuis la plateforme data.gouv.fr. Les étapes de cette publication reprend les étapes précédemment citées: 
 
+![](./images/nouveau_jeu_de_donnees.jpg)
 
 Lors de l’étape “Ajoutez vos ressources”, deux options vous sont proposées: 
 1. Vous pouvez télécharger vos ressources depuis votre ordinateur vers le serveur de data.gouv.fr. Vos ressources seront alors hébergées sur les serveurs de data.gouv.fr.
