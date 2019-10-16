@@ -9,6 +9,6 @@ de service public, à condition que ces données respectent le cadre légal déf
 Le téléchargement de jeux de données ne requiert pas d’inscription sur la plateforme data.gouv.fr. La publication de jeux de données, de réutilisations,
  de ressources communautaires ou de commentaires doivent elles se faire sous le nom d’un compte utilisateur ou d’une organisation. Voici les différentes étapes pour publier et faire vivre vos jeux de données. 
  
- ::: tip Qu'est ce qu'un jeu de données sur data.gouv.fr ? 
+ ::: tip Qu'est-ce qu'un jeu de données sur data.gouv.fr ?
  Un jeu de donnée sur data.gouv.fr est un ensemble cohérent de ressources ou d’informations (fichiers de données, fichiers d’explications, API, lien...) et de métadonnées (description, producteur, date de publication, mots-clefs, couverture géographique temporelle...) sur un thème donné.
  :::

@@ -31,7 +31,7 @@ Afin de présenter le jeu de données aux utilisateurs de data.gouv.fr, il est n
 
 ## Ajouter les ressources 
 
-::: tip  Qu’est ce qu’une ressource ? 
+::: tip  Qu’est-ce qu’une ressource ?
  Une ressource est un fichier téléchargeable  qui contient des informations à propos du jeu de données. Un jeu de données peut contenir plusieurs ressources (données mises à jour, données historisées, documentation, code source, API, lien, etc.).
 ::: 
 
@@ -51,7 +51,7 @@ Lors de l’étape “Ajoutez vos ressources”, deux options vous sont proposé
 
 ### Mise à disposition par API
 
-::: tip Qu’est ce qu’une API ?
+::: tip Qu’est-ce qu’une API ?
 Une API est une interface, un contrat passé entre deux systèmes informatiques pour leur permettre de communiquer. Cette solution informatique permet d’automatiser des tâches depuis votre ordinateur ou vos serveurs.
 :::
 
@@ -83,7 +83,7 @@ Il ne vous reste plus qu'à publier votre jeu de données !
 
 ## Publier un catalogue de données existant par moissonnage 
 
-::: tip Qu’est ce que le moissonnage ?
+::: tip Qu’est-ce que le moissonnage ?
  Le moissonnage est un mécanisme permettant de collecter les métadonnées sur un catalogue distant et de les stocker sur une autre plateforme afin de proposer un second point d’accès aux données.
  :::
 
@@ -147,7 +147,7 @@ Un jeu de données publié au nom d’un individu ou d’une organisation peut �
 
 Vous pouvez [supprimer un jeu de données, ou l’une des ressources qui le compose](https://doc.data.gouv.fr/jeux-de-donnees/mettre-a-jour-un-jeu-de-donnees-ou-une-ressource/), si vous êtes l’auteur du jeu de données en question, ou si vous appartenez à l’organisation qui en est à l’origine. La suppression d’un jeu de données ou d’une ressource est irréversible.
 
-::: tip Attention 
+::: warning Conservation des anciennes ressources
 Il est conseillé de supprimer le moins de ressources possibles de la plateforme data.gouv.fr. Même si vos données ne sont plus mises à jour il est possible que des utilisateurs utilisent tout de même ces données. De plus, la suppression de certaines ressources peut entraîner la maintenance de nombreux services ou produits qui reposent sur l’exploitation des données publiées. 
 :::
 
