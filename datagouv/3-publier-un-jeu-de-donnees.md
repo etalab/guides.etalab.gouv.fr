@@ -113,7 +113,7 @@ Afin de suivre la vie de votre jeu de données sur data.gouv.fr, vous avez la po
 - ses abonnés ; 
 - ses ressources communautaires.
 
-> Des statistiques d’audience et de téléchargement sont également disponibles sur stats.data.gouv.fr pour chacun de vos jeux de données. 
+> Des statistiques d’audience et de téléchargement sont également disponibles sur www.stats.data.gouv.fr pour chacun de vos jeux de données. 
 
 #### Qualité du jeu de données
 La qualité de votre jeu de données est fondamentale pour qu’il soit réutilisé par le plus d’utilisateurs possible. Afin de vous guider, un encart “Qualité” est mis à votre disposition dans le tableau de bord de chaque jeu de données. L’objectif est de vous aider à améliorer la qualité des (méta)données à partir de six critères :
