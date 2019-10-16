@@ -80,10 +80,8 @@ A partir de la clé API,  vous pouvez exécuter différentes opérations. Ces op
 Les appels à l’API sont soumis aux mêmes permissions que l’interface web.  Par exemple, si vous souhaitez publier ou modifier un jeu de données au nom d’une organisation, vous devez appartenir à cette organisation.
 
 Il ne vous reste plus qu'à publier votre jeu de données ! 
-> image 
 
 ## Publier un catalogue de données existant par moissonnage 
-
 
 ::: tip Qu’est ce que le moissonnage ?
  Le moissonnage est un mécanisme permettant de collecter les métadonnées sur un catalogue distant et de les stocker sur une autre plateforme afin de proposer un second point d’accès aux données.
@@ -142,14 +140,15 @@ Les producteurs de données dont la publication présente un intérêt économiq
 
 Un jeu de données publié au nom d’un individu ou d’une organisation peut être [transféré vers un autre individu ou une autre organisation](https://doc.data.gouv.fr/jeux-de-donnees/transferer-un-jeu-de-donnees/).
 
-> image 
+![](./images/transferer_jeu.jpg)
 
 ### Supprimer un jeu de données ou une ressource
 
-> image
 
 Vous pouvez [supprimer un jeu de données, ou l’une des ressources qui le compose](https://doc.data.gouv.fr/jeux-de-donnees/mettre-a-jour-un-jeu-de-donnees-ou-une-ressource/), si vous êtes l’auteur du jeu de données en question, ou si vous appartenez à l’organisation qui en est à l’origine. La suppression d’un jeu de données ou d’une ressource est irréversible.
 
 ::: tip Attention 
 Il est conseillé de supprimer le moins de ressources possibles de la plateforme data.gouv.fr. Même si vos données ne sont plus mises à jour il est possible que des utilisateurs utilisent tout de même ces données. De plus, la suppression de certaines ressources peut entraîner la maintenance de nombreux services ou produits qui reposent sur l’exploitation des données publiées. 
 :::
+
+![](./images/supprimer_jeu.jpg)
