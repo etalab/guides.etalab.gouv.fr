@@ -10,7 +10,7 @@ Plusieurs jeux de données peuvent être intégrés sur une même page web. Vous
 
 ## Valoriser les usages des données
 
-::: tip Qu’est ce qu’une réutilisation  ?
+::: tip Qu’est-ce qu’une réutilisation  ?
 Un réutilisation est le résultat de l’exploitation des ressources d’un jeu de données publiées à d’autres fins que celles pour lesquelles les données ont été produites. 
 :::
 
