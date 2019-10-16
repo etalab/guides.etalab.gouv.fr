@@ -25,6 +25,8 @@ Afin de présenter le jeu de données aux utilisateurs de data.gouv.fr, il est n
 | [Couverture temporelle](https://doc.data.gouv.fr/jeux-de-donnees/publier-un-jeu-de-donnees/#couverture-temporelle)                                                                                                               |   La couverture temporelle indique la portée dans le temps des données publiées                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |  
 | [Granularité spatiale](https://doc.data.gouv.fr/jeux-de-donnees/publier-un-jeu-de-donnees/#granularit%C3%A9-spatiale)                                                                                                                |   La granularité spatiale indique le niveau de détail géographique le plus fin que peut couvrir vos données.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 
 | [Mode privé](https://doc.data.gouv.fr/jeux-de-donnees/publier-un-jeu-de-donnees/#priv%C3%A9)                                                                                                                         |   L’activation du mode privé permet de ne pas mettre en ligne le jeu de données. Cela laisse la possibilité de l’éditer avant sa publication.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 
+
+
 *Il est obligatoire de renseigner ces informations. 
 
 ## Ajouter les ressources 
@@ -71,7 +73,7 @@ L’API de data.gouv.fr propose également des fonctionalités complémentaires
 ### Comment utiliser l’API de data.gouv.fr ?
 L’utilisation de l’API de data.gouv.fr se fait par le point d’entrée racine de l’API. Afin de pouvoir exécuter des opérations d’écriture, il est nécessaire d’obtenir une clé API. Cette clé est accessible depuis les paramètres de votre profil administrateur.
 
-> image
+![](./images/cle_api.jpg)
 
 A partir de la clé API,  vous pouvez exécuter différentes opérations. Ces opérations sont référencées dans [la documentation disponible sur doc.data.gouv.fr](https://doc.data.gouv.fr/api/reference/). 
 
@@ -82,7 +84,6 @@ Il ne vous reste plus qu'à publier votre jeu de données !
 
 ## Publier un catalogue de données existant par moissonnage 
 
-> image 
 
 ::: tip Qu’est ce que le moissonnage ?
  Le moissonnage est un mécanisme permettant de collecter les métadonnées sur un catalogue distant et de les stocker sur une autre plateforme afin de proposer un second point d’accès aux données.
@@ -125,7 +126,7 @@ La qualité de votre jeu de données est fondamentale pour qu’il soit réutili
 - Le jeu de donnée est-il à jour ? 
 - Les ressources du jeu de données sont-elles accessibles ? 
 
-> image 
+![](./images/qualite.png)
 
 ### Mettre à jour ou modifier un jeu de données et/ou une ressource
 
