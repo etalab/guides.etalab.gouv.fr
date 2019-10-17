@@ -1,5 +1,5 @@
 ---
-permalink: /datagouv/publier-jeu-de-donnees
+permalink: /data.gouv.fr/publier-jeu-de-donnees
 ---
 
 # Publier un jeu de données

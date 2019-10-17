@@ -1,5 +1,5 @@
 ---
-permalink: /datagouv/introduction
+permalink: /data.gouv.fr/introduction
 ---
 
 # Introduction

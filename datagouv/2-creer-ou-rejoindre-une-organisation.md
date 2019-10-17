@@ -1,5 +1,5 @@
 ---
-permalink: /datagouv/creer-rejoindre-organisation
+permalink: /data.gouv.fr/creer-rejoindre-organisation
 ---
 
 # Créer ou rejoindre une organisation

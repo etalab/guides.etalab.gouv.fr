@@ -1,5 +1,5 @@
 ---
-permalink: /datagouv/creer-compte-utilisateur
+permalink: /data.gouv.fr/creer-compte-utilisateur
 ---
 
 # Créer un compte utilisateur

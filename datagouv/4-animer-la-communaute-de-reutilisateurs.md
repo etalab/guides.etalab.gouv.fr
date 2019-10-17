@@ -1,5 +1,5 @@
 ---
-permalink: /datagouv/animer-communaute-reutilisateurs
+permalink: /data.gouv.fr/animer-communaute-reutilisateurs
 ---
 
 # Animer la communauté de réutilisateurs
