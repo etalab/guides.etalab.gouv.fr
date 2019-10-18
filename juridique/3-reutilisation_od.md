@@ -1,8 +1,12 @@
-# La réutilisation de documents administratifs 
+---
+permalink: /juridique/reutilisation
+---
+
+# La réutilisation
 
 ## Qu’est-ce qu’une réutilisation ?                    
 
-::: tip Définition 
+::: tip     
 La réutilisation des informations publiques désigne l’utilisation des données publiques par des tiers à d’autres fins que celle de la mission de service public pour laquelle les documents ont été produits ou reçus.           
 :::             
 
@@ -47,5 +51,6 @@ De plus, le réutilisateur est tenu de se conformer aux obligations légales qui
 * Vous êtes une administration productrice et ouvrez des données : la circulation des données vous permettra d’en améliorer la qualité, à l’aune des usages qui en sont faits.
 * Vous réutilisez des données ouvertes : vous accédez aux données produites par d’autres administrations, et grâce leur exploitation, vous pouvez élaborer des politiques publiques plus efficaces. Par exemple, en réutilisant les données d’accidents de la route publiées par le ministère de l’Intérieur, les départements optimisent leurs infrastructures routières.
 
-**L’ouverture des données bénéficie également aux acteurs privés et à la société civile** : À partir de la circulation, du croisement et de l'exploitation de données publiques, des solutions existantes peuvent être améliorées et de nouveaux services peuvent être créés. La circulation des données démultiplie le potentiel d'usage des données publiques et rend possible leur réutilisation pour des finalités qui n’étaient pas envisagées lors de leur production.        
+**L’ouverture des données bénéficie également aux acteurs privés et à la société civile** : 
+À partir de la circulation, du croisement et de l'exploitation de données publiques, des solutions existantes peuvent être améliorées et de nouveaux services peuvent être créés. La circulation des données démultiplie le potentiel d'usage des données publiques et rend possible leur réutilisation pour des finalités qui n’étaient pas envisagées lors de leur production.        
 

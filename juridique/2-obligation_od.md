@@ -1,4 +1,8 @@
-# L'ouverture       
+---
+permalink: /juridique/ouverture
+---
+
+#  L'ouverture       
 
 Le cadre juridique de l’open data public repose principalement sur les textes applicables en matière d'accès, de diffusion et de réutilisation des documents administratifs. Le cadre juridique relatif à l’ouverture de l’information publique a malgré tout considérablement évolué́ au fil des décennies, jusqu’à la[ loi pour une République numérique](https://www.legifrance.gouv.fr/affichLoiPubliee.do?idDocument=JORFDOLE000031589829&type=general&legislature=14) promulguée en 2016, qui fait de l’ouverture par défaut des données publiques la règle.        
 
@@ -29,18 +33,18 @@ Vous être tenus de diffuser en open data ([Article  L. 312-1-1 du CRPA](https:/
 
 Les documents administratifs diffusés doivent être achevés. C'est à dire qu'ils ont atteint leur version finale, à date.  Les brouillons, documents de travail, notes préalables, ne sont pas considérés comme des documents achevés. Si le document administratif contient une décision, cette dernière ne doit pas être en cours de délibération mais bien prise. 
 
-::: tip Qu'est-ce qu'une base de donnée ? 
-Ensemble de données organisé en vue de son utilisation des programmes correspondant à des applications distinctes. Ce sont par exemple des grands corpus de données tels que le registre des entreprises, l'annuaire des adresses, les données de demande de valeurs foncières, etc. 
+::: warning Lexique
+**Base de donnée** : ensemble de données organisé en vue de son utilisation des programmes correspondant à des applications distinctes. Ce sont par exemple des grands corpus de données tels que le registre des entreprises, l'annuaire des adresses, les données de demande de valeurs foncières, etc. 
 :::
 
 ### Comment publier ? 
 
 Les documents administratifs, informations publiques et données doivent être publiées dans un format ouvert, aisément réutilisable et exploitable par un système de traitement automatisé. 
 
-::: tip Lexique 
-* Standard ouvert : 
-* Standard aisément réutilisable : 
-* Standard exploitable par un système de traitement automatisé :  
+::: warning Lexique 
+* **Standard ouvert** : 
+* **Standard aisément réutilisable** : 
+* **Standard exploitable par un système de traitement automatisé** :  
 ::: 
 
 ### Que faire si mes documents administratifs contiennent des secrets légaux ? 
@@ -53,8 +57,8 @@ Si vos documents administratifs contiennent des secrets légaux, vous êtes tenu
  
 > Exemple d'anonymisation où le doc serait dénaturé ou vidé de son sens 
 
-::: tip Qu'est ce qu'une occultation par un traitement automatisé d’usage courant ? 
-C'est la suppression d’une ou plusieurs lignes ou colonnes contenant des données concernées par un secret défini par la loi. 
+::: lexique
+**Occultation par un traitement automatisé d’usage courant** : c'est la suppression d’une ou plusieurs lignes ou colonnes contenant des données concernées par un secret défini par la loi. 
 :::
 
 ### Que faire si mes documents administratifs contiennent des données à caractère personnel ? 
@@ -68,8 +72,8 @@ Les données à caractères personnelles contenues dans un document administrati
 
 Sinon, vous êtes tenus d'anonymiser le document administratif sans que cette opération implique des efforts disproportionnée ou que le document soit dénaturé ou vidé de son sens. Le cas échéant, vous n'êtes pas tenu de diffuser le document administratif.
 
-::: tip Qu'est ce que l'anonymisation des données ? 
-Processus consistant à traiter des données à caractère personnel afin d’empêcher totalement et de manière irréversible l’identification d’une personne physique. L’anonymisation suppose donc qu’il n’y ait plus aucun lien possible entre l’information concernée et la personne à laquelle elle se rattache.        
+::: warning Lexique 
+**Anonymisation des données** : processus consistant à traiter des données à caractère personnel afin d’empêcher totalement et de manière irréversible l’identification d’une personne physique. L’anonymisation suppose donc qu’il n’y ait plus aucun lien possible entre l’information concernée et la personne à laquelle elle se rattache.        
 :::
 
 Afin de vous guider, Etalab vous propose un logigramme dynamique qui revient sur les différentes questions à se poser avant de diffuser vos documents administratifs en open data. 

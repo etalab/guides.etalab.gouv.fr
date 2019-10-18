@@ -1,3 +1,7 @@
+---
+permalink: /juridique/opendata
+---
+
 # L'open data 
 
 ## Qu'est-ce que l'open data ? 
@@ -6,7 +10,7 @@ L’open data – ou l’ouverture des données – consiste à mettre à la dis
 
 Dans le cadre de leurs missions de service public, l’administration produit et reçoit des documents administratifs. L'ouverture des données publiques consiste à mettre à disposition de tous ces documents administratifs, avec les informations publiques et les données publiques qu'ils contiennent. 
 
-::: tip Lexique
+::: warning Lexique
 * **Administration** : l'administration englobe  l'Etat, les collectivités territoriales ainsi que les autres personnes de droit public ou les personnes de droit privé chargées d'une mission de service public  ([Article L300-2 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=38EE7903F1DB9BDF237E3916D5943464.tplgfr29s_3?idArticle=LEGIARTI000033218936&cidTexte=LEGITEXT000031366350&dateTexte=20170701https://))
 * **Document administratif** : tout document que vous avez pu produire (aussi bien une note de service qu’une base de données contenant des informations relatives à une mission de service public) ou recevoir (de la part d’une autre administration ou d’un prestataire, par exemple), dans le cadre de votre mission de service public ([Article L300-2 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=38EE7903F1DB9BDF237E3916D5943464.tplgfr29s_3?idArticle=LEGIARTI000033218936&cidTexte=LEGITEXT000031366350&dateTexte=20170701https://))
 * **Information publique** : information contenue dans un document administratif non couverte par des secrets légaux ni soumise à des droits de propriété intellectuelle détenu par des tiers ([Article L321-2](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=3D26427599551CBACAF75B4C44C8715B.tplgfr24s_3?idArticle=LEGIARTI000033218992&cidTexte=LEGITEXT000031366350&dateTexte=20191018))
