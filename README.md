@@ -6,7 +6,7 @@ Ce dépôt contient plusieurs guides rédigés par Etalab ainsi que le code util
 
 Pour ajouter un guide, il suffit d'ajouter un répertoire à la racine du dépôt. Ce répertoire doit contenir un fichier `README.md`. Le titre de ce fichier définit le titre du guide.
 
-Pour ajouter des chapitres au guide, il suffit d'ajouter des fichiers `.md` dans le répertoire précédemment, par exemple `0-introduction.md`. Les titres de ces fichiers définissent les titres des chapitres.
+Pour ajouter des chapitres au guide, il suffit d'ajouter des fichiers `.md` dans le répertoire précédemment créé, par exemple `0-introduction.md`. Les titres de ces fichiers définissent les titres des chapitres.
 
 Les chapitres apparaissent par ordre alphabétique dans les menus de navigation. Il est donc conseillé de préfixer le nom de fichier de chaque chapitre par son numéro, par exemple `0-introduction.md`, `1-chapitre-1.md`...
 
