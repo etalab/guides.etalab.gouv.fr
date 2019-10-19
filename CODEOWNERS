@@ -1,0 +1,10 @@
+# Read about this file:
+# https://help.github.com/en/articles/about-code-owners
+
+# Technical files
+.vuepress/ @abulte
+.circleci/ @AntoineAugusti
+
+# Documentation files
+qualite/ @mathildehg
+datagouv/ @mathildehg
