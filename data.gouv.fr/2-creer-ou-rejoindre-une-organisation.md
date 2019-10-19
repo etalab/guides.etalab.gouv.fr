@@ -39,6 +39,6 @@ L’ensemble des activités de votre organisation peuvent être consultées à p
 - les métriques rattachées à chaque jeu de données, ressources ou réutilisation publiée ;
 - les anomalies constatées à propos des jeux de données publiés ;
 - les discussions ouvertes à propos des jeux publiés ;
-- l’activité des moissonneurs ([voir la partie moissonnage de ce guide](https://guides.etalab.studio/datagouv/3-publier-un-jeu-de-donnees.html#publier-un-catalogue-de-donnees-existant-par-moissonnage)).
+- l’activité des moissonneurs ([voir la partie moissonnage de ce guide](3-publier-un-jeu-de-donnees.md#publier-un-catalogue-de-données-existant-par-moissonnage)).
 
 ![](./images/tableau_de_bord_organisation.jpg)
