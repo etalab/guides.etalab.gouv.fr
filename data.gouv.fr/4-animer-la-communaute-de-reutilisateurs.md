@@ -1,3 +1,7 @@
+---
+permalink: /data.gouv.fr/animer-communaute-reutilisateurs
+---
+
 # Animer la communauté de réutilisateurs
 
 ## Partager son jeu de données et ses ressources 

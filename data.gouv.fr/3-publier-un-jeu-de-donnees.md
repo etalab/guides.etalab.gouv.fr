@@ -1,3 +1,7 @@
+---
+permalink: /data.gouv.fr/publier-jeu-de-donnees
+---
+
 # Publier un jeu de données
 
 ## Définir qui publie le jeu de données

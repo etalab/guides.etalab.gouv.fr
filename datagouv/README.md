@@ -1,2 +1,0 @@
-# Guide data.gouv.fr
-
