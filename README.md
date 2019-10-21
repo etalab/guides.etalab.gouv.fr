@@ -28,8 +28,8 @@ Dans la majorité des cas, l'utilisation de GitHub par le biais de son interface
 
 Si nécessaire, voici comment faire tourner ce projet localement :
 ```sh
-yarn install
-yarn run vuepress dev
+npm install
+npm run dev
 open http://localhost:8080
 ```
 
