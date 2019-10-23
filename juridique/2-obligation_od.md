@@ -34,7 +34,7 @@ Vous être tenus de diffuser en open data ([Article  L. 312-1-1 du CRPA](https:/
 Les documents administratifs diffusés doivent être achevés. C'est à dire qu'ils ont atteint leur version finale, à date.  Les brouillons, documents de travail, notes préalables, ne sont pas considérés comme des documents achevés. Si le document administratif contient une décision, cette dernière ne doit pas être en cours de délibération mais bien prise. 
 
 ::: warning Lexique
-**Base de donnée** : ensemble de données organisé en vue de son utilisation des programmes correspondant à des applications distinctes. Ce sont par exemple des grands corpus de données tels que le registre des entreprises, l'annuaire des adresses, les données de demande de valeurs foncières, etc. 
+**Base de donnée** : ensemble de données organisé en vue de sa consultation ou de son utilisation par des personnes ou des programmes. A titre d'exemples, sont des bases de données : le registre des entreprises, l'annuaire des adresses, les données de demande de valeurs foncières, etc. 
 :::
 
 ### Comment publier ? 

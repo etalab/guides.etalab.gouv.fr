@@ -1,3 +1,6 @@
+---
+permalink: /juridique/chronologie
+---
 # Chronologie de l'open data
 
 La formalisation de l’ouverture des données publiques a été progressive, au niveau national et européen :
