@@ -1,8 +1,9 @@
-const {getSidebar} = require('./sidebar.js')
+const {getSidebar} = require('vuepress-theme-gouv-fr/sidebar.js')
 
 module.exports = {
   title: 'guides.etalab.gouv.fr',
   description: 'Les guides d\'Etalab',
+  theme: 'vuepress-theme-gouv-fr',
   themeConfig: {
     sidebar: getSidebar(),
     sidebarDepth: 1,

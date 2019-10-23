@@ -28,6 +28,7 @@
     "remark-lint": "^6.0.4",
     "remark-lint-no-dead-urls": "^0.4.1",
     "remark-validate-links": "^8.0.0",
-    "vuepress": "^1.1.0"
+    "vuepress": "^1.1.0",
+    "vuepress-theme-gouv-fr": "github:etalab/vuepress-theme-gouv-fr#new-theme-version"
   }
 }
