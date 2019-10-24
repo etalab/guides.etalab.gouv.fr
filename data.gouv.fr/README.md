@@ -6,8 +6,6 @@ permalink: /data.gouv.fr/
 
 <CurrentGroupToc></CurrentGroupToc>
 
-Introduction
-
 Tout le monde a la possibilité de publier des données sur data.gouv.fr, du moment qu’il s’agit de données d’intérêt général. Plus précisément, vous pouvez publier des données sur data.gouv.fr :
 - si vous produisez ou collectez des données dans le cadre d’une mission 
 de service public, à condition que ces données respectent le cadre légal défini par le code des relations entre le public et l’administration (CRPA). Les organisations concernées peuvent être des services ou directions métiers de ministères, des délégataires de service public ou encore des collectivités territoriales ;
