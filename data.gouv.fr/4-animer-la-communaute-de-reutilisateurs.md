@@ -35,4 +35,4 @@ Lorsque vous publiez un jeu de données ou une réutilisation sur data.gouv.fr, 
 
 Vous avez la possibilité de [récupérer le lien d’une discussion ou d’un commentaire, d’ajouter un commentaire et de fermer une discussion](https://doc.data.gouv.fr/reutilisations-et-discussions/moderer-une-discussion/). Les discussions publiées sont visibles par tous les visiteurs de data.gouv.fr.
 
-![](./images/)
+![](./images/commentaire.jpg)
