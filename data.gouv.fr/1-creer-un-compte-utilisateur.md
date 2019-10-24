@@ -11,6 +11,8 @@ La première étape pour publier des jeux de données sur data.gouv.fr est de cr
 - suivre les publication d’un autre utilisateur ;
 - créer, rejoindre, ou suivre une organisation.
 
+![](./images/creer_compte.jpg)
+
 Dès lors que vous disposez d’un compte utilisateur,  votre profil est rattaché à différentes informations : 
 - vos dernières activités sur data.gouv.fr (publication, mise à jour, 
 - commentaire, réutilisation etc.) ;
