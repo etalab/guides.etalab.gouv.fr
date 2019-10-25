@@ -39,11 +39,10 @@ Les documents administratifs diffusés doivent être achevés. C'est à dire qu'
 
 ### Comment publier ? 
 
-Les documents administratifs, informations publiques et données doivent être publiées dans un format: 
-*  ouvert : XXX
-*  aisément réutilisable : XXX
-*  exploitable par un système de traitement automatisé: XXX
-
+Les documents administratifs, informations publiques et données doivent être publiés dans un format : 
+*  ouvert : tout protocole de communication, d’interconnexion ou d’échange et tout format de données interopérable et dont les spécifications techniques sont publiques et sans restriction d’accès ni de mise en œuvre ;
+*  aisément réutilisable : le producteur prend en considérant les connaissances et besoins du réutilisateur lors de la publication ;
+*  exploitable par un système de traitement automatisé : la publication est optimisée pour une utilisation par un système de traitement automatisé et non pour une exploitation immédiate par des humains.
 
 ### Que faire si mes documents administratifs contiennent des secrets légaux ? 
 ::: tip Quels sont les documents couverts par un secret légal ? 
@@ -61,7 +60,7 @@ Si vos documents administratifs contiennent des secrets légaux, vous êtes tenu
 
 ### Que faire si mes documents administratifs contiennent des données à caractère personnel ? 
 
-::: tip Qu'est ce qu'une donnée à caractère personnel ?
+::: tip Qu'est-ce qu'une donnée à caractère personnel ?
 Toute information relative à une personne physique identifiée ou qui peut être identifiée, directement ou indirectement, par référence à un numéro d’identification (par exemple le numéro de sécurité sociale) ou à un ou plusieurs éléments qui lui sont propres          
 :::
 
