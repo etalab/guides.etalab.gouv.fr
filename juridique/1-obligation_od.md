@@ -2,7 +2,7 @@
 permalink: /juridique/ouverture
 ---
 
-#  L'ouverture       
+#  L'ouverture des données
 
 Le cadre juridique de l’open data public repose principalement sur les textes applicables en matière d'accès, de diffusion et de réutilisation des documents administratifs. Le cadre juridique relatif à l’ouverture de l’information publique a malgré tout considérablement évolué́ au fil des décennies, jusqu’à la[ loi pour une République numérique](https://www.legifrance.gouv.fr/affichLoiPubliee.do?idDocument=JORFDOLE000031589829&type=general&legislature=14) promulguée en 2016, qui fait de l’ouverture par défaut des données publiques la règle.        
 
@@ -40,9 +40,9 @@ Les documents administratifs diffusés doivent être achevés. C'est à dire qu'
 ### Comment publier ? 
 
 Les documents administratifs, informations publiques et données doivent être publiés dans un format : 
-*  ouvert : tout protocole de communication, d’interconnexion ou d’échange et tout format de données interopérable et dont les spécifications techniques sont publiques et sans restriction d’accès ni de mise en œuvre ;
-*  aisément réutilisable : le producteur prend en considérant les connaissances et besoins du réutilisateur lors de la publication ;
-*  exploitable par un système de traitement automatisé : la publication est optimisée pour une utilisation par un système de traitement automatisé et non pour une exploitation immédiate par des humains.
+*  **Ouvert** : tout protocole de communication, d’interconnexion ou d’échange et tout format de données interopérable et dont les spécifications techniques sont publiques et sans restriction d’accès ni de mise en œuvre ;
+*  **Aisément réutilisable** : le producteur prend en considérant les connaissances et besoins du réutilisateur lors de la publication ;
+*  **Exploitable par un système de traitement automatisé** : la publication est optimisée pour une utilisation par un système de traitement automatisé et non pour une exploitation immédiate par des humains.
 
 ### Que faire si mes documents administratifs contiennent des secrets légaux ? 
 ::: tip Quels sont les documents couverts par un secret légal ? 
@@ -52,26 +52,22 @@ Les documents administratifs, informations publiques et données doivent être p
 
 Si vos documents administratifs contiennent des secrets légaux, vous êtes tenus d'occulter ces secrets par un traitement d'usage courant,  sans que cette opération implique des efforts disproportionnée ou que le document soit dénaturé ou vidé de son sens. Le cas échéant, vous n'êtes pas tenu de diffuser le document administratif.
  
-> Exemple d'anonymisation où le doc serait dénaturé ou vidé de son sens 
 
-::: lexique
+::: warning Lexique
 **Occultation par un traitement automatisé d’usage courant** : c'est la suppression d’une ou plusieurs lignes ou colonnes contenant des données concernées par un secret défini par la loi. 
 :::
 
 ### Que faire si mes documents administratifs contiennent des données à caractère personnel ? 
-
-::: tip Qu'est-ce qu'une donnée à caractère personnel ?
-Toute information relative à une personne physique identifiée ou qui peut être identifiée, directement ou indirectement, par référence à un numéro d’identification (par exemple le numéro de sécurité sociale) ou à un ou plusieurs éléments qui lui sont propres          
-:::
 
 Les données à caractères personnelles contenues dans un document administratif doivent être publiées si ce document est nécessaire à l'information du public. Ce sont notamment les documents relatifs aux conditions d’organisation de l’administration, de la vie économique, associative, culturelle et sportive, des professions réglementées, etc.
 [Consulter le décret](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037797147&categorieLien=id)
 
 Sinon, vous êtes tenus d'anonymiser le document administratif sans que cette opération implique des efforts disproportionnée ou que le document soit dénaturé ou vidé de son sens. Le cas échéant, vous n'êtes pas tenu de diffuser le document administratif.
 
+Afin de vous guider, Etalab vous propose un logigramme dynamique qui revient sur les différentes questions à se poser avant de diffuser vos documents administratifs en open data. 
+[Découvrir le logigramme dynamique](https://guide-juridique-open-data.etalab.gouv.fr/#0)
+
 ::: warning Lexique 
+** Donnée à caractère personnel** : Toute information relative à une personne physique identifiée ou qui peut être identifiée, directement ou indirectement, par référence à un numéro d’identification (par exemple le numéro de sécurité sociale) ou à un ou plusieurs éléments qui lui sont propres.
 **Anonymisation des données** : processus consistant à traiter des données à caractère personnel afin d’empêcher totalement et de manière irréversible l’identification d’une personne physique. L’anonymisation suppose donc qu’il n’y ait plus aucun lien possible entre l’information concernée et la personne à laquelle elle se rattache.        
 :::
-
-Afin de vous guider, Etalab vous propose un logigramme dynamique qui revient sur les différentes questions à se poser avant de diffuser vos documents administratifs en open data. 
-[Découvrir le logigramme dynamique  ](https://guide-juridique-open-data.etalab.gouv.fr/#0)

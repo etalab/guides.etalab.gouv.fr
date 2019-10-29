@@ -2,7 +2,7 @@
 permalink: /juridique/reutilisation
 ---
 
-# La réutilisation
+# La réutilisation des données
 
 ## Qu’est-ce qu’une réutilisation ?                    
 
@@ -22,10 +22,6 @@ La réutilisation des informations publiques désigne l’utilisation des donné
 * Lorsque les données sont mises à disposition gratuitement, l’usage d’une licence est conseillé mais pas obligatoire. 
 * Si les données publiées sont mises à disposition contre le paiement d’une redevance, les administrations productrices sont dans l’obligation d’apposer une licence de réutilisation. 
 Comme indiqué précédemment, la réutilisation des données doit être libre. La licence doit répondre aux différents critères de libre réutilisation. A ce titre, la libre réutilisation ne peut être restreinte que pour des motifs d’intérêt général. Cette restriction doit être proportionnée et ne doit pas avoir pour effet ou objectif de limiter la concurrence.
-
-::: tip La licence ouverte 
--> Définition
-:::
 
 ##  Les restrictions à la réutilisation des données 
 
