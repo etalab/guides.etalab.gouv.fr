@@ -62,7 +62,7 @@ Si vos documents administratifs contiennent des secrets légaux, vous êtes tenu
 Les données à caractères personnelles contenues dans un document administratif doivent être publiées si ce document est nécessaire à l'information du public. Ce sont notamment les documents relatifs aux conditions d’organisation de l’administration, de la vie économique, associative, culturelle et sportive, des professions réglementées, etc.
 [Consulter le décret](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037797147&categorieLien=id)
 
-Sinon, vous êtes tenus d'anonymiser le document administratif sans que cette opération implique des efforts disproportionnée ou que le document soit dénaturé ou vidé de son sens. Le cas échéant, vous n'êtes pas tenu de diffuser le document administratif.
+Sinon, vous êtes tenus d'anonymiser le document administratif sans que cette opération implique des efforts disproportionnés ou que le document soit dénaturé ou vidé de son sens. Le cas échéant, vous n'êtes pas tenu de diffuser le document administratif.
 
 Afin de vous guider, Etalab vous propose un logigramme dynamique qui revient sur les différentes questions à se poser avant de diffuser vos documents administratifs en open data. 
 [Découvrir le logigramme dynamique](https://guide-juridique-open-data.etalab.gouv.fr/#0)
