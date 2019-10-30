@@ -26,7 +26,7 @@ Comme indiqué précédemment, la réutilisation des données doit être libre. 
 ##  Les restrictions à la réutilisation des données 
 
 Pour certaines catégories de documents administratifs, la réutilisation des données par des acteurs tiers est soumise à des restrictions ou conditions :
-* Les droits de propriété intellectuelle d’une personne privée ou publique exploitant un service public industriel et commercial soumis à la concurrence: dans ce cas, les données présentes dans le document administratif ne sont pas réutilisables ; 
+* Les droits de propriété intellectuelle d’une personne privée ou publique exploitant un service public industriel et commercial soumis à la concurrence : dans ce cas, les données présentes dans le document administratif ne sont pas réutilisables ;
 * Les droits de propriété intellectuelle détenus par des tiers : dans ce cas, l’administration qui a publié le document en open data doit indiquer à la personne qui demande à le réutiliser l’identité du producteur détenant les droits de propriété intellectuelle ;
 * Pour certains jeux de données, les individus peuvent réutiliser les données contre le paiement d’une redevance (données produites par l’IGN, Météo France et le SHOM, afin de financer leur activité principale). 
 
