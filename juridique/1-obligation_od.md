@@ -68,6 +68,6 @@ Afin de vous guider, Etalab vous propose un logigramme dynamique qui revient sur
 [Découvrir le logigramme dynamique](https://guide-juridique-open-data.etalab.gouv.fr/#0)
 
 ::: warning Lexique 
-** Donnée à caractère personnel** : Toute information relative à une personne physique identifiée ou qui peut être identifiée, directement ou indirectement, par référence à un numéro d’identification (par exemple le numéro de sécurité sociale) ou à un ou plusieurs éléments qui lui sont propres.
+**Donnée à caractère personnel** : Toute information relative à une personne physique identifiée ou qui peut être identifiée, directement ou indirectement, par référence à un numéro d’identification (par exemple le numéro de sécurité sociale) ou à un ou plusieurs éléments qui lui sont propres.
 **Anonymisation des données** : processus consistant à traiter des données à caractère personnel afin d’empêcher totalement et de manière irréversible l’identification d’une personne physique. L’anonymisation suppose donc qu’il n’y ait plus aucun lien possible entre l’information concernée et la personne à laquelle elle se rattache.        
 :::
