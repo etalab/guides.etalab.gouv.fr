@@ -16,7 +16,7 @@ Si l’administré demande en outre la diffusion en ligne de ce document adminis
  
 ##  La diffusion de vos documents administratifs 
 
-### Etes-vous concerné ? 
+### Êtes-vous concerné ? 
 
 Vous êtes concernés par la diffusion des documents administratifs si vous êtes : 
 * une administration centrale de plus de 50 agents ;
