@@ -30,7 +30,7 @@ Pour certaines catégories de documents administratifs, la réutilisation des do
 * Les droits de propriété intellectuelle détenus par des tiers : dans ce cas, l’administration qui a publié le document en open data doit indiquer à la personne qui demande à le réutiliser l’identité du producteur détenant les droits de propriété intellectuelle ;
 * Pour certains jeux de données, les individus peuvent réutiliser les données contre le paiement d’une redevance (données produites par l’IGN, Météo France et le SHOM, afin de financer leur activité principale). 
 
-A noter qu'en tant qu’administration, vous ne pouvez pas vous prévaloir de droits de propriété intellectuelle qui empêcheraient la réutilisation des données publiées en open data.        
+À noter qu'en tant qu’administration, vous ne pouvez pas vous prévaloir de droits de propriété intellectuelle qui empêcheraient la réutilisation des données publiées en open data.        
 
 ## Les obligations du réutilisateur
 
