@@ -44,7 +44,7 @@ De plus, le réutilisateur est tenu de se conformer aux obligations légales qui
 ##  Quels sont les bénéfices liés aux réutilisations ?
 
 **L’ouverture et la réutilisation des données bénéficie aux administrations** :
-* Vous êtes une administration productrice et ouvrez des données : la circulation des données vous permettra d’en améliorer la qualité, à l’aune des usages qui en sont faits.
+* Vous êtes une administration productrice et ouvrez des données : la circulation des données vous permettra d’en améliorer la qualité, à l’aune des usages qui en sont faits ;
 * Vous réutilisez des données ouvertes : vous accédez aux données produites par d’autres administrations, et grâce à leur exploitation, vous pouvez élaborer des politiques publiques plus efficaces.
 
 **L’ouverture des données bénéficie également aux acteurs privés et à la société civile** : 
