@@ -15,7 +15,7 @@ Nous vous conseillons de [créer une organisation](https://doc.data.gouv.fr/orga
 1. publier des jeux de données pour le compte d’une organisation publique ou privé(administration, collectivité, association, entreprise, etc. );
 2.  permettre à des utilisateurs différents de publier et modifier des jeux de données sous le même nom, la même bannière.
 
-![](./images/ajouter_organisation.jpg)
+![Création d'une organisation](./images/ajouter_organisation.jpg)
 
 **Une organisation se compose d’éditeurs et d’administrateurs**
 
@@ -41,4 +41,4 @@ L’ensemble des activités de votre organisation peuvent être consultées à p
 - les discussions ouvertes à propos des jeux publiés ;
 - l’activité des moissonneurs ([voir la partie moissonnage de ce guide](3-publier-un-jeu-de-donnees.md#publier-un-catalogue-de-données-existant-par-moissonnage)).
 
-![](./images/tableau_de_bord_organisation.jpg)
+![Tableau de bord d'une organisation](./images/tableau_de_bord_organisation.jpg)

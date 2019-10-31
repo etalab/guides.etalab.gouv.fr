@@ -45,13 +45,13 @@ Vous avez la possibilité d’importer vos ressources sur data.gouv.fr selon dif
 
 Vous avez la possibilité d’importer vos ressources directement depuis la plateforme data.gouv.fr. Les étapes de cette publication reprend les étapes précédemment citées: 
 
-![](./images/nouveau_jeu_de_donnees.jpg)
+![Création d'un jeu de données](./images/nouveau_jeu_de_donnees.jpg)
 
 Lors de l’étape “Ajoutez vos ressources”, deux options vous sont proposées: 
 1. Vous pouvez télécharger vos ressources depuis votre ordinateur vers le serveur de data.gouv.fr. Vos ressources seront alors hébergées sur les serveurs de data.gouv.fr.
 2. Vous pouvez créer un lien vers une ressource distante existante. Les informations contenues dans le fichier resteront hébergées sur le serveur distant fléché. 
 
-![](./images/ajouter_une_ressource.jpg)
+![Ajout d'une ressource](./images/ajouter_une_ressource.jpg)
 
 ### Mise à disposition par API
 
@@ -77,7 +77,7 @@ L’API de data.gouv.fr propose également des fonctionalités complémentaires
 ### Comment utiliser l’API de data.gouv.fr ?
 L’utilisation de l’API de data.gouv.fr se fait par le point d’entrée racine de l’API. Afin de pouvoir exécuter des opérations d’écriture, il est nécessaire d’obtenir une clé API. Cette clé est accessible depuis les paramètres de votre profil administrateur.
 
-![](./images/cle_api.jpg)
+![Générer une clé d'API](./images/cle_api.jpg)
 
 A partir de la clé API,  vous pouvez exécuter différentes opérations. Ces opérations sont référencées dans [la documentation disponible sur doc.data.gouv.fr](https://doc.data.gouv.fr/api/reference/). 
 
@@ -117,7 +117,7 @@ Afin de suivre la vie de votre jeu de données sur data.gouv.fr, vous avez la po
 - ses abonnés ; 
 - ses ressources communautaires.
 
-Des statistiques d’audience et de téléchargement sont également disponibles sur www.stats.data.gouv.fr pour chacun de vos jeux de données. 
+Des statistiques d’audience et de téléchargement sont disponibles sur le tableau de bord de votre compte administrateur.  
 
 #### Qualité du jeu de données
 La qualité de votre jeu de données est fondamentale pour qu’il soit réutilisé par le plus d’utilisateurs possible. Afin de vous guider, un encart “Qualité” est mis à votre disposition dans le tableau de bord de chaque jeu de données. L’objectif est de vous aider à améliorer la qualité des (méta)données à partir de six critères :
@@ -128,7 +128,7 @@ La qualité de votre jeu de données est fondamentale pour qu’il soit réutili
 - Le jeu de donnée est-il à jour ? 
 - Les ressources du jeu de données sont-elles accessibles ? 
 
-![](./images/qualite.png)
+![Module d'évaluation de la qualité d'un jeu de données](./images/qualite.png)
 
 ### Mettre à jour ou modifier un jeu de données et/ou une ressource
 
@@ -144,7 +144,7 @@ Les producteurs de données dont la publication présente un intérêt économiq
 
 Un jeu de données publié au nom d’un individu ou d’une organisation peut être [transféré vers un autre individu ou une autre organisation](https://doc.data.gouv.fr/jeux-de-donnees/transferer-un-jeu-de-donnees/).
 
-![](./images/transferer_jeu.jpg)
+![Transférer un jeu de données](./images/transferer_jeu.jpg)
 
 ### Supprimer un jeu de données ou une ressource
 
@@ -155,4 +155,4 @@ Vous pouvez [supprimer un jeu de données, ou l’une des ressources qui le comp
 Il est conseillé de supprimer le moins de ressources possibles de la plateforme data.gouv.fr. Même si vos données ne sont plus mises à jour il est possible que des utilisateurs utilisent tout de même ces données. De plus, la suppression de certaines ressources peut entraîner la maintenance de nombreux services ou produits qui reposent sur l’exploitation des données publiées. 
 :::
 
-![](./images/supprimer_jeu.jpg)
+![Supprimer un jeu de données](./images/supprimer_jeu.jpg)
