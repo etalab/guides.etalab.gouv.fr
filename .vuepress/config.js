@@ -10,6 +10,7 @@ module.exports = {
     logo: '/images/logo-marianne.svg',
     // lastUpdated: 'Dernière mise à jour',
     repo: 'etalab/guides',
+    repoLabel: 'Code source',
     editLinks: true,
     editLinkText: 'Proposer des modifications sur cette page',
     nav: [
