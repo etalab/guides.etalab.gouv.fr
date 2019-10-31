@@ -4,6 +4,9 @@ module.exports = {
   title: 'guides.etalab.gouv.fr',
   description: 'Les guides d\'Etalab',
   theme: 'vuepress-theme-gouv-fr',
+  nav: [
+    { text: 'Contacter Etalab', link: 'https://etalab.gouv.fr/contact' }
+  ],
   themeConfig: {
     sidebar: getSidebar(),
     sidebarDepth: 1,
