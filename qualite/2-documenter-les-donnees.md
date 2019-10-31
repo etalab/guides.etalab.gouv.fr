@@ -9,12 +9,12 @@ permalink: /qualite/documenter-les-donnees
 
 Les données issues de votre organisation ont été produites dans un contexte métier particulier. Un individu externe à l’organisation n’est pas forcément familier avec cet environnement métier, ce qui peut le freiner dans l’exploitation des données diffusées.
 
-La documentation de vos jeux de données a une visée pédagogique etfacilite la réutilisation des données. Elle décrit les données et la structure des fichiers publiés.
+La documentation de vos jeux de données a une visée pédagogique et facilite la réutilisation des données. Elle décrit les données et la structure des fichiers publiés.
 
-Il est conseillé de proposer votre documentation en ligne et non sous format PDF. Une documentation en ligne permet de s’assurer que les réutilisateurs des données disposent toujours de la version la plus à jour. Des portails de données, tels que www.data.gouv.fr, proposent des espaces dédiés à la documentation du jeu de données. Vous pouvez également héberger votre documentation sur des sites web statiques. Si le jeu de données a pour vocation de circuler en interne de votre organisation, nous vous conseillons à minima de proposer une documentation dans un fichier séparé aux données  Le fichier contenant les données a pour vocation d’être croisés et exploités. Le fichier contenant la documentation a lui pour vocation d’informer sur les données et la structure des fichiers.
+Il est conseillé de proposer votre documentation en ligne et non sous format PDF. Une documentation en ligne permet de s’assurer que les réutilisateurs des données disposent toujours de la version la plus à jour. Des portails de données, tels que www.data.gouv.fr, proposent des espaces dédiés à la documentation du jeu de données. Vous pouvez également héberger votre documentation sur des sites web statiques. Si le jeu de données a pour vocation de circuler en interne de votre organisation, nous vous conseillons à minima de proposer une documentation dans un fichier séparé aux données. Le fichier contenant les données doit être réservé au à la manipulation de ces dernières. Le fichier contenant la documentation a lui pour vocation d’informer sur la nature des données et sur la structure des fichiers.
 
 >Dans le cadre de la publication des données de sauvetage en mer (opérations coordonnées par les CROSS), un [site statique](https://mtes-mct.github.io/secmar-documentation/) a été créé afin de présenter la documentation du jeu de données.
-> ![](./images/doc_secmar.png)
+> ![Documentation SECMAR](./images/doc_secmar.png)
 
 ## Description générale du jeu de données 
 
@@ -23,11 +23,11 @@ Afin de donner un aperçu rapide des informations mises à disposition, il est c
 La description peut couvrir les points suivants :
 * Une description générale des données ;
 * La liste des fichiers mis à disposition ;
-* La description du format des fichiers
+* La description du format des fichiers ;
 * La fréquence de mise à jour.
 
 > *Description générale du [jeu de données du Répertoire national des élus](https://www.data.gouv.fr/fr/datasets/repertoire-national-des-elus-1/)*
-> ![](./images/description_rne.png)
+> ![Description Répertoire national des élus](./images/description_rne.png)
 > *Description générale du jeu de données du Répertoire national des élus*
 
 ## Description du mode de production des données 
@@ -46,7 +46,7 @@ Le jeu de données que vous mettez à disposition peut se composer de plusieurs 
 Il est conseillé de faire apparaître ce modèle de données à l’aide de schémas et de tableaux. Si votre jeu de données se compose de plusieurs fichiers, il est souhaitable de faire apparaître les relations entre eux.
 
 > [La documentation](https://mtes-mct.github.io/secmar-documentation/schema.html) du jeu de données des opérations de sauvetage en mer décrit le modèle de données utilisé. Ce modèle de données permet de comprendre rapidement les relations qui unissent les différents fichiers du jeu de données.
-> ![](./images/schema_secmar.png)
+> ![Schéma de données SECMAR](./images/schema_secmar.png)
 
 Si vous publiez des données tabulaires, vous pouvez produire un tableau récapitulatif indiquant, pour chaque colonne :
 * le nom de la colonne
@@ -55,13 +55,13 @@ Si vous publiez des données tabulaires, vous pouvez produire un tableau récapi
 * une ou plusieurs valeurs d’exemple.
 
 > La documentation du jeu de données de sauvetage en mer présente un tableau récapitulatif des différentes colonnes. La description des champs permet de faire le lien avec le fichier de données, ce qui facilite la lecture des données.
-> ![](./images/table_secmar.png)
+> ![Descriptif des colonnes du jeu de données SECMAR](./images/table_secmar.png)
 
 Les termes employés dans un jeu de données sont propres à un environnement métier. S’il existe des termes complexes ou des énumérations, il est conseillé de faire apparaitre un lexique de ces valeurs.
 Cet effort de définition fait gagner un temps considérable au réutilisateur lorsqu’il s’approprie le jeu de données. De plus, le partage de définitions formalisées et uniques permet de prévenir des contre-sens dans l’exploitation des données.
 
 > La base de données de demande de valeur foncière recense l’ensemble des transactions immobilières intervenues au cours des cinq dernières années. Le vocabulaire utilisé dans ce jeu de données est issu d’un environnement administratif, parfois difficile à appréhender. La Direction générale des Finances publiques met à disposition une [documentation](https://static.data.gouv.fr/resources/demande-de-valeurs-foncieres/20190419-091745/notice-descriptive-du-fichier-dvf.pdf)  qui comprend notamment un lexique de définition des termes rencontrés. Ce lexique facilite l’appropriation et la réutilisation des données par des acteurs tiers.
-> ![](./images/lexique_dvf.png)
+> ![Lexique des données du jeu de données Demande de valeur foncière](./images/lexique_dvf.png)
 
 ## Description des métadonnées
 
@@ -91,7 +91,7 @@ En pratique, il est souhaitable que le modèle de données et la nature de vos d
 >* La date du changement
 >* La nature du changement
 >* Les liens associés au changement
-> ![](./images/maj_secmar.png)
+> ![Liste des modifications réalisées sur le jeu de données SECMAR](./images/maj_secmar.png)
 
 ## Points de contact
 Les réutilisateurs des données peuvent avoir des questions à propos des fichiers mis à disposition. Il est conseillé de proposer un espace d’échange entre les producteurs et réutilisateurs des données. Il est préférable que cet espace d’échange soit public afin qu’il puisse bénéficier aux personnes qui auraient des questions similaires. De plus, la collecte des retours d’usage permettra d’améliorer votre documentation de manière incrémentale.

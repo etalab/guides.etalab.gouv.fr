@@ -23,9 +23,9 @@ La préparation de votre jeu de données à la circulation est le début de votr
 * Comment faire circuler les jeux de données entre organisations ? 
 
 Etalab propose différents guides pour vous accompagner sur ces sujets : 
-* Guide juridique de l’Open Data 
-* Guide de publication des données sur data.gouv.fr
-* Guide PANDA
+* Cadre légal de l'open data
+* Publication des données sur data.gouv.fr
+* Circulation des données entre acteurs
 
 ## Informations complémentaires
 Ce guide est à l’attention des acteurs qui souhaitent préparer leurs jeux de données à la circulation. Si vous avez des remarques sur son contenu, si vous souhaitez proposer des améliorations ou si vous ne trouvez pas de réponse à vos questions, vous pouvez nous contacter à l’adresse suivante : <ouverture@data.gouv.fr>
