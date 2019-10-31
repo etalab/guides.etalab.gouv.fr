@@ -46,8 +46,8 @@ Les documents administratifs, informations publiques et données doivent être p
 
 ### Que faire si mes documents administratifs contiennent des secrets légaux ? 
 ::: tip Quels sont les documents couverts par un secret légal ? 
-* Les documents dont la diffusion porterait atteinte au secret des délibérations du Gouvernement, au secret de la défense nationale ou de la sûreté de l’Etat, etc. 
-* Les documents dont la diffusion porterait atteinte à la protection de la vie privée, au secret médical et au secret des affaires. Les documents qui portent une appréciation ou un jugement de valeur sur une personne physique ou qui font apparaître le comportement d’une personne.                
+* Les documents dont la diffusion porterait atteinte au secret des délibérations du Gouvernement, au secret de la défense nationale ou de la sûreté de l’Etat, etc ([Article L. 311-5 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=B12CCBE39831FB4644322E0902EB97B9.tplgfr34s_1?idArticle=LEGIARTI000033265181&cidTexte=LEGITEXT000031366350&dateTexte=20170701)).  
+* Les documents dont la diffusion porterait atteinte à la protection de la vie privée, au secret médical et au secret des affaires. Les documents qui portent une appréciation ou un jugement de valeur sur une personne physique ou qui font apparaître le comportement d’une personne ( [Article L. 311-6 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=B12CCBE39831FB4644322E0902EB97B9.tplgfr34s_1?idArticle=LEGIARTI000033218964&cidTexte=LEGITEXT000031366350&dateTexte=20170701)).                
 :::
 
 Si vos documents administratifs contiennent des secrets légaux, vous êtes tenus d'occulter ces secrets par un traitement d'usage courant,  sans que cette opération implique des efforts disproportionnée ou que le document soit dénaturé ou vidé de son sens. Le cas échéant, vous n'êtes pas tenu de diffuser le document administratif.
