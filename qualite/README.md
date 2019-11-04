@@ -12,7 +12,7 @@ En France, le mouvement de l'ouverture des données publiques se fonde sur ces p
 
 ## Le critère de qualité des données
 
-Pour autant, la circulation des jeux de données n'entraîne pas directement leur réutilisation. Par exemple, il a été constaté que seuls certains jeux de données publiés sur la plateforme data.gouv.fr étaient régulièrement réutilisés. De la même manière, des organisations constatent que la création d’un data lake n'entraîne pas forcément l’exploitation des données par des équipes tierces.
+Pour autant, la circulation des jeux de données n'entraîne pas directement leur réutilisation. Par exemple, il a été constaté que seuls certains jeux de données publiés sur la plateforme data.gouv.fr étaient régulièrement réutilisés. De la même manière, des organisations constatent que la création d’un _data lake_ n'entraîne pas forcément l’exploitation des données par des équipes tierces.
 
 Ce constat s’explique notamment par les difficultés que rencontrent les réutilisateurs lorsqu’ils souhaitent s’approprier les données partagées. De manière générale, les jeux de données publiés sont produits dans un contexte propre à un processus métier et pour un usage particulier. Par exemple, la base de données des demandes de valeur foncière est historiquement produite par la Direction Générale des Finances publiques dans l’objectif de tenir un fichier immobilier et collecter l’impôt. Cet environnement métier, connu et compris par les agents de l’équipe productrice, n’est pas forcément familier aux individus tiers, qu’ils soient internes ou externes à l’organisation. Ces réutilisateurs peuvent rencontrer de nombreuses difficultés dans la compréhension de la structure du jeu de données et des données elles-mêmes.
 

@@ -26,7 +26,7 @@ Deux approches sont envisageables :
 ### Cas 1 - La structure du jeu de données correspond à un schéma de données existant
 
 
-::: tip Qu'est ce qu'un schéma de données
+::: tip Qu'est-ce qu'un schéma de données
 Un schéma de données est un modèle qui permet de décrire de manière précise et univoque les différents champs et valeurs possibles qui composent un jeu de données.
 Il permet notamment de valider qu’un jeu de données se conforme à un schéma, de générer de la documentation automatiquement, de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
 Ces schémas facilitent la montée en qualité et le croisement des données proposées en open data, surtout lorsque plusieurs producteurs de données sont amenés à produire un même jeu de données.
@@ -120,7 +120,7 @@ Il est conseillé d’utiliser l’encodage UTF-8. Cet encodage permet d’encod
 
 ### L’entête des colonnes (pour le format tabulaire)
 
-Dans un fichier tabulaire, la première ligne du fichier peut être utilisée pour nommer chaque colonne et donner des informations sur les données associées. Plutôt que d’indiquer “Colonne n°X”, il est conseillé de donner un nom de colonne explicite. Le nom des colonnes doit être sans majuscule, abréviation, accents, ni espaces (préférez le caractère `_'') afin de faciliter la manipulation des fichiers.
+Dans un fichier tabulaire, la première ligne du fichier peut être utilisée pour nommer chaque colonne et donner des informations sur les données associées. Plutôt que d’indiquer “Colonne n°X”, il est conseillé de donner un nom de colonne explicite. Le nom des colonnes doit être sans majuscule, abréviation, accents, ni espaces (préférez le caractère `_`) afin de faciliter la manipulation des fichiers.
 
 ### Le séparateur (pour le format tabulaire)
 
