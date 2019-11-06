@@ -24,5 +24,14 @@ module.exports = {
   ],
   markdown: {
     toc: { includeLevel: [2, 3, 4, 5] }
-  }
+  },
+  plugins: [
+    [
+      'vuepress-plugin-matomo',
+      {
+        siteId: 99,
+        trackerUrl: 'https://stats.data.gouv.fr/'
+      },
+    ]
+  ]
 }
