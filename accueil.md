@@ -1,5 +1,5 @@
 # Les guides d'Etalab
 
-Vous trouverez sur ce site les différents guides rédigés et maintenus par la mission Etalab.
+Découvrez les guides d'Etalab, qui vous accompagneront tout au long de votre stratégie *data*. 
 
 <CurrentGroupToc include-index></CurrentGroupToc>
