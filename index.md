@@ -7,7 +7,7 @@ actionText: Consulter les guides →
 actionLink: /accueil
 features:
 - title: Pour quel public ?
-  details: Ces guides s'adressent à différents publics de structures publiques ou privées:  *chief data officer*,  juristes,  experts métiers, chefs de projets ou encore simples curieux. 
+  details: Ces guides s'adressent à différents publics de structures publiques ou privées: chief data officer,  juristes,  experts métiers, chefs de projets ou encore simples curieux. 
 - title: Avec quel contenu ?
   details: Le contenu présenté couvre des thématiques juridiques, techniques ou encore organisationnelles.
 footer: Contenu publié sous Licence ouverte
