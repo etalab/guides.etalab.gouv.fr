@@ -32,6 +32,14 @@ module.exports = {
         siteId: 99,
         trackerUrl: 'https://stats.data.gouv.fr/'
       },
-    ]
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'lexique',
+        before: info => `<div class="lexique"><p class="title">Lexique : ${info}</p>`,
+        after: '</div>',
+      },
+    ],
   ]
 }
