@@ -12,7 +12,7 @@ pour une République numérique.
 
 La Loi pour une République numérique pose deux principes :
 
-- Celui de la communication des règles algorithmiques intervenant dans des décisions administratives individuelles. Ces traitements doivent faire l'objet d'une mention explicite et d'une information générale.  Les personnes (physiques ou morales) concernées par le traitement disposent d'un droit à l'information individuelle. Nous vous renvoyons vers le [guide des algorithmes publics](0-guide) qui détaille les enjeux et les obligations des administrations.
+- Celui de la communication des règles algorithmiques intervenant dans des décisions administratives individuelles. Ces traitements doivent faire l'objet d'une mention explicite et d'une information générale.  Les personnes (physiques ou morales) concernées par le traitement disposent d'un droit à l'information individuelle. Nous vous renvoyons vers le [guide des algorithmes publics](0-guide.md) qui détaille les enjeux et les obligations des administrations.
 
 - Celui de la communication des codes sources produits dans le cadre de la mise en oeuvre de l'ouverture des données administratives.
 
