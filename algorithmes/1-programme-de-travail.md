@@ -6,8 +6,8 @@ permalink: /algorithmes/programme
 
 ## Éléments de cadrage : les attentes des administrations
 
-- La première attente des administrations concerne la mise en conformité des traitements algorithmes existants avec les [nouvelles obligations](guide.md) issues de la loi pour une République numérique et du Réglement européen sur la protection des données (principe de transparence et de redevabilité). 
-- La seconde attente concerne la conception et l’utilisation de nouveaux systèmes algorithmiques, notamment ceux qui permettront la [prise de décisions automatisées](https://github.com/etalab/algorithmes-publics/blob/master/guide.md#décision-automatisée-ou-aide-à-la-décision-) : règles de conception à prendre en compte pour rendre ces systèmes transparents et redevables dès leur conception ("by design"), méthodologies pour assurer la maîtrise continue du traitement, ... 
+- La première attente des administrations concerne la mise en conformité des traitements algorithmes existants avec les [nouvelles obligations](0-guide.md) issues de la loi pour une République numérique et du Réglement européen sur la protection des données (principe de transparence et de redevabilité). 
+- La seconde attente concerne la conception et l’utilisation de nouveaux systèmes algorithmiques, notamment ceux qui permettront la [prise de décisions automatisées](0-guide.md#décision-automatisée-ou-aide-à-la-décision-) : règles de conception à prendre en compte pour rendre ces systèmes transparents et redevables dès leur conception ("by design"), méthodologies pour assurer la maîtrise continue du traitement, ... 
 - Enfin, le recours à des solutions développées par le secteur privé (développement ad hoc d’algorithmes, utilisation de solutions de type « AI as a service ») nécessite un appui dans l’évaluation de la solution, notamment au plan de sa solidité scientifique et technique mais aussi des conditions à fixer pour assurer la bonne mise en oeuvre de la législation existante.
 
 ## Les engagements pris au titre du plan d'action national de la France (PGO)
@@ -15,7 +15,7 @@ permalink: /algorithmes/programme
 L’engagement « Renforcer la transparence des algorithmes et des codes sources publics » du plan d’action national 2018-2020 de la France définit un ensemble d’actions en lien avec les algorithmes publics: 
 
 -	élaborer un [guide d’ouverture des codes sources](https://github.com/etalab/ouverture-des-codes-sources-publics) publics,
--	formuler des [recommandations](guide.md) sur l’application du principe de transparence des algorithmes introduits par la loi pour une République numérique,
+-	formuler des [recommandations](0-guide.md) sur l’application du principe de transparence des algorithmes introduits par la loi pour une République numérique,
 -	identifier les enjeux techniques, juridiques et sociétaux par le biais de 5 monographies d’algorithmes publics.
 
 Les engagements pris dans le cadre du Partenariat pour un Gouvernement ouvert (PGO) font l'objet d'une évaluation indépendante.
@@ -63,7 +63,7 @@ Par exemple, les concepteurs d’APB ont dû interpréter de manière univoque e
 
 - Le **programme EIG** - entrepreneurs d'intérêt général saisons 2 et 3 (Etalab / Dinsic)
 - Les lauréats du 1er appel à manifestation d'intérêt "**Intelligence artificielle**" (Etalab/Dinsic)
-- **Loup Cellard**, doctorant à l'Université de Warwick (UK), notamment pour l'écriture du [guide des algorithmes publics](guide.md),
+- **Loup Cellard**, doctorant à l'Université de Warwick (UK), notamment pour l'écriture du [guide des algorithmes publics](0-guide.md),
 - La **Fondation Internet nouvelle génération**, programme "[NosSystèmes](http://fing.org/?NosSystemes)" (Fing)
 - La **Chaire Innovation publique** (ENA & ENSCI Les Ateliers)
 - L'**Ecole nationale d'administration** (ENA)

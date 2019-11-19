@@ -1,10 +1,10 @@
 ---
-permalink: /algorithmes/ressources
+permalink: /algorithmes/0-ressources
 ---
 
 # Liste de ressources
 
-Nous vous proposons une sélection de ressources (études, articles, outils, évènements) liées au [programme de travail](programme-de-travail.md) d'Etalab sur les algorithmes publics. 
+Nous vous proposons une sélection de ressources (études, articles, outils, évènements) liées au [programme de travail](1-programme-de-travail.md) d'Etalab sur les algorithmes publics. 
 
 ## Études et rapports
 
@@ -50,7 +50,7 @@ Nous vous proposons une sélection de ressources (études, articles, outils, év
 
 🇫🇷 "[5 pistes d'innovation du programme NosSystèmes](http://fing.org/?Nos-Systemes-les-pistes-d)", Fing, juin 2017
 
-🇫🇷 "[Guide des algorithmes publics à l'usage des administrations](guide.md)", Etalab, mars 2019
+🇫🇷 "[Guide des algorithmes publics à l'usage des administrations](0-guide.md)", Etalab, mars 2019
 
 🇬🇧 "[20 questions for public sector use of algorithmic decision making](https://www.nesta.org.uk/blog/20-questions-public-sector-orgs-algorithms/)", Eddie Copeland, Nesta, juin 2018
 
