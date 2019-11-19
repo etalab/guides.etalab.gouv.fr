@@ -20,7 +20,7 @@ Ce guide est destiné à l'ensemble des administrations et organisations chargé
 
 ## Comment contribuer ?
 
-Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification dans la [version éditable](guide.md) du guide (sur Github) ou en contactant directement Simon Chignard (Mission Etalab - Direction interministérielle du numérique): `simon.chignard@data.gouv.fr`
+Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification dans la [version éditable](0-guide.md) du guide (sur Github) ou en contactant directement Simon Chignard (Mission Etalab - Direction interministérielle du numérique): `simon.chignard@data.gouv.fr`
 
 
 # 1- A quoi servent les algorithmes publics ?
