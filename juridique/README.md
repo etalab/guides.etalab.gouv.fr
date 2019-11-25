@@ -10,7 +10,7 @@ L'objectif de ce guide est de présenter de manière simple et synthétique le c
 ::: warning Attention
 Ce guide n'a pas vocation à : 
 * Traiter des obligations prévues par des législations spéciales
-* Remplacer le [guide de publication en ligne et réutilisation des données publiques](https://www.cnil.fr/fr/publication-en-ligne-et-reutilisation-des-donnees-publiques-open-data) proposé par la CNIL et la CADA. Nous vous invitons à consulter ce guide si vous souhaitez obtenir des informations juridiques plus détaillées. 
+* Les guides d'Etalab ayant une visée avant tout pratique et opérationnelle, nous vous invitons à consulter le [guide de publication en ligne et réutilisation des données publiques](https://www.cnil.fr/fr/publication-en-ligne-et-reutilisation-des-donnees-publiques-open-data) proposé par la CNIL et la CADA si vous souhaitez obtenir des informations juridiques plus détaillées. 
 :::
 
 

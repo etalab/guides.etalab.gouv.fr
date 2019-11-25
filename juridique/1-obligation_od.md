@@ -26,15 +26,15 @@ Vous êtes concernés par la diffusion des documents administratifs si vous ête
 ### Quelles sont vos obligations ? 
 
 Vous être tenus de diffuser en open data ([Article  L. 312-1-1 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=699E85A138CEA30E2185BB71F8735F9A.tplgfr24s_3?idArticle=LEGIARTI000033205512&cidTexte=LEGITEXT000031366350&dateTexte=20161009)) : 
-- Les données qui représentent un intérêt économique, social, sanitaire ou environnemental ;
+- Les documents administratifs que vous avez communiqué à des demandeurs ;
+- L'inventaire des documents administratifs que vous produisez dans le cadre de vos missions de service public ; 
 - Les bases de données produites et reçue dans le cadre des missions de service public. Ces bases de données doivent êtres mises à jour régulièrement ; 
-- l'inventaire des documents administratifs que vous produisez dans le cadre de vos missions de service public ; 
-- Les documents administratifs que vous avez communiqué à des demandeurs.
+- Les données dont la publication représente un intérêt économique, social, sanitaire ou environnemental ;
 
 Les documents administratifs diffusés doivent être achevés. C'est à dire qu'ils ont atteint leur version finale, à date.  Les brouillons, documents de travail, notes préalables, ne sont pas considérés comme des documents achevés. Si le document administratif contient une décision, cette dernière ne doit pas être en cours de délibération mais bien prise. 
 
-::: warning Lexique
-**Base de donnée** : ensemble de données organisé en vue de sa consultation ou de son utilisation par des personnes ou des programmes. A titre d'exemples, sont des bases de données : le registre des entreprises, l'annuaire des adresses, les données de demande de valeurs foncières, etc. 
+::: lexique Base de donnée
+On entend par base de données un recueil d'oeuvres, de données ou d'autres éléments indépendants, disposés de manière systématique ou méthodique, et individuellement accessibles par des moyens électroniques ou par tout autre moyen ([Article L112-3 du code de la propriété intellectuelle](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000006278879&cidTexte=LEGITEXT000006069414&dateTexte=19980702)). A titre d'exemples, sont des bases de données : le registre des entreprises, l'annuaire des adresses, les données de demande de valeurs foncières, etc. 
 :::
 
 ### Comment publier ? 
@@ -52,23 +52,29 @@ Les documents administratifs, informations publiques et données doivent être p
 
 Si vos documents administratifs contiennent des secrets légaux, vous êtes tenus d'occulter ces secrets par un traitement d'usage courant,  sans que cette opération implique des efforts disproportionnée ou que le document soit dénaturé ou vidé de son sens. Le cas échéant, vous n'êtes pas tenu de diffuser le document administratif.
  
-
-::: warning Lexique
-**Occultation par un traitement automatisé d’usage courant** : c'est la suppression d’une ou plusieurs lignes ou colonnes contenant des données concernées par un secret défini par la loi. 
-:::
+**Comment occulter les données par un traitement automatisé d'usage courant ? ** : L'occultation correspond au masquage ou au retrait des données identifiées comme confidentielles et non communicable.
 
 ### Que faire si mes documents administratifs contiennent des données à caractère personnel ? 
 
-Les données à caractères personnelles contenues dans un document administratif doivent être publiées si ce document est nécessaire à l'information du public. Ce sont notamment les documents relatifs aux conditions d’organisation de l’administration, de la vie économique, associative, culturelle et sportive, des professions réglementées, etc.
-[Consulter le décret](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037797147&categorieLien=id)
+::: lexique Donnée à caractère personnel
+Toute information relative à une personne physique identifiée ou qui peut être identifiée, directement ou indirectement, par référence à un numéro d’identification (par exemple le numéro de sécurité sociale) ou à un ou plusieurs éléments qui lui sont propres.
+:::
 
-Sinon, vous êtes tenus d'anonymiser le document administratif sans que cette opération implique des efforts disproportionnés ou que le document soit dénaturé ou vidé de son sens. Le cas échéant, vous n'êtes pas tenu de diffuser le document administratif.
+  Le cadre juridique général proscrit la diffusion en ligne sans anonymisation de documents administratifs contenant des données à caractère personnel.  Cependant, trois situations permettent la publication ces documents sans avoir recours à l'anonymisation : 
+* Si une disposition législative spécifique autorise la publication des données sans anonymisation ; 
+* Si les personnes concernées ont donné leur accord à la diffusion des données sans anonymisation ; 
+* Si les documents administratifs figurent dans la liste prévue par le [décret n°2018-1117 du 10 décembre 2018](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037797147&categorieLien=id) relatif aux catégories de documents administratifs pouvant être rendus publics sans faire l'objet d'un processus d'anonymisation. Ce sont notamment les documents relatifs aux conditions d’organisation de l’administration, de la vie économique, associative, culturelle et sportive, des professions réglementées, etc.
 
-Afin de vous guider, Etalab vous propose un logigramme dynamique qui revient sur les différentes questions à se poser avant de diffuser vos documents administratifs en open data. 
+Si votre document administratif contenant des données à caractère personnel ne correspond à aucune de ces situations, vous êtes tenus d'anonymiser le document administratif. Cette opération ne doit toutefois pas impliquer des efforts disproportionnés. L'anonymisation ne doit également pas dénaturer ou vider de son sens le document. Le cas échéant, vous n'êtes pas tenu de diffuser le document administratif.
+
+Si vous souhaitez obtenir d'avantage d'information juridique sur l'articulation entre open data et protection des données à caractère personnel, nous vous invitons à consulter le guide juridique open data proposé par la CADA et la CNIL. 
+
+::: lexique Anonymisation des données
+Processus consistant à traiter des données à caractère personnel afin d’empêcher totalement et de manière irréversible l’identification d’une personne physique. L’anonymisation suppose donc qu’il n’y ait plus aucun lien possible entre l’information concernée et la personne à laquelle elle se rattache.        
+:::
+
+## Découvrez si vos documents administratifs doivent être publiés en open data 
+
+Afin de vous guider, Etalab propose un logigramme dynamique qui revient sur les différentes questions à se poser avant de diffuser vos documents administratifs en open data. 
 [Découvrir le logigramme dynamique](https://guide-juridique-open-data.etalab.gouv.fr/#0)
 
-::: warning Lexique 
-**Donnée à caractère personnel** : Toute information relative à une personne physique identifiée ou qui peut être identifiée, directement ou indirectement, par référence à un numéro d’identification (par exemple le numéro de sécurité sociale) ou à un ou plusieurs éléments qui lui sont propres.
-
-**Anonymisation des données** : processus consistant à traiter des données à caractère personnel afin d’empêcher totalement et de manière irréversible l’identification d’une personne physique. L’anonymisation suppose donc qu’il n’y ait plus aucun lien possible entre l’information concernée et la personne à laquelle elle se rattache.        
-:::
