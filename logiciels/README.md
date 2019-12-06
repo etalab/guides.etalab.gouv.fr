@@ -43,13 +43,13 @@ Ce guide a pour vocation de répondre aux questions :
 
 Nous proposons de distinguer les quatre degrés d'ouverture suivants :
 
--   📘 Niveau A - \*contributif\* :: Le code source est publié, les
+-   **📘 Niveau A - contributif :** Le code source est publié, les
     contributions extérieures sont activement recherchées et traitées.
 
--   **📗 Niveau B - **ouvert**:** Le code source est publié, les contributions
+-   **📗 Niveau B - ouvert :** Le code source est publié, les contributions
     extérieures sont traitées mais non activement recherchées.
 
--   **📙 Niveau C - **publié**:** Le code source est publié mais les
+-   **📙 Niveau C - publié:** Le code source est publié mais les
     contributions extérieures ne sont pas traitées.
 
 -   **📕 Niveau D - non-communicable:** Le code source n'est pas
@@ -85,7 +85,7 @@ D est admissible, tant qu'aucun citoyen n'exige la communication du
 code source en question, selon le cadre juridique définit dans la loi
 pour République numérique.
 
-Bien sûr, ces critères sont *relatifs*: la modularité, la généricité et
+Bien sûr, ces critères sont *relatifs* : la modularité, la généricité et
 le potentiel de contribution des utilisateurs ne s'évaluent pas dans
 l'absolu.  Ces notions aident seulement à **prioriser les ouvertures
 logicielles**.  Le but est de **canaliser son énergie** sur les logiciels
@@ -101,7 +101,7 @@ la posture de l'administration dans le cas des publications simples.
     pertinent d'en faire un **logiciel libre « contributif »** (niveau A).
 
 -   Une administration développe un outil pour organiser la collecte de
-    données sur le web (*scraping*).  C'est un outil web « monolithique\_»
+    données sur le web (*scraping*).  C'est un outil web « monolithique »
     mais qui répond à un besoin rencontré hors de l'administration : il
     peut être publié comme **logiciel libre « ouvert »** (niveau B).
 
@@ -223,7 +223,7 @@ indiquant ce qui a été fait et ce qui sera fait.
 Par exemple, si le logiciel a fait l'objet d'un audit de sécurité par
 l'ANSSI ou si le logiciel a déjà été testé auprès d'agents qui s'y
 connaissent bien en sécurité, dire quand et quels ont été les
-résultats.  Si une opération de "bug bounty" (chasse aux bugs) est
+résultats.  Si une opération de "_bug bounty_" (chasse aux bugs) est
 prévue, dire quand et quelles sont les attentes.
 
 
