@@ -2,13 +2,13 @@
 
 Dans le cadre de vos missions, vous pouvez être amenés à produire, collecter ou utiliser des données, codes sources de logiciel ou algorithmes. Ces derniers représentent des sources de valeur pour votre organisation, mais également pour d'autres structures extérieures. La montée en qualité, la documentation, l'ouverture et la circulation de ces ressources ont vocation à améliorer la qualité de vos activités et à favoriser la création de nouveaux services innovants. Ces guides ont pour objectif de vous accompagner tout au long de ce travail. 
 
-# Des guides à l'attention des administrations... mais pas que ! 
+# Des guides à l'attention des administrations… mais pas que ! 
 
 Dans le cadre de sa mission de service public, l’administration produit et reçoit des documents administratifs. **La loi pour une République numérique, promulguée le 7 octobre 2016, a consacré le principe de communication, de diffusion et de réutilisation de ces documents administratifs.**
 
 ## Qu'est-ce que l'administration ? 
 
- L'administration englobe l'Etat, les collectivités territoriales ainsi que les autres personnes de droit public ou les personnes de droit privé chargées d'une mission de service public ([Article L300-2 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=38EE7903F1DB9BDF237E3916D5943464.tplgfr29s_3?idArticle=LEGIARTI000033218936&cidTexte=LEGITEXT000031366350&dateTexte=20170701https://) )
+ L'administration englobe l'État, les collectivités territoriales ainsi que les autres personnes de droit public ou les personnes de droit privé chargées d'une mission de service public ([Article L300-2 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000033218936&cidTexte=LEGITEXT000031366350&dateTexte=20161009) )
 
 ## Qu'est-ce qu'un document administratif ? 
 
@@ -31,7 +31,6 @@ Afin de vous guider dans la diffusion, la circulation et la réutilisation de ce
 ## L'ouverture des codes sources de logiciels
 
 <Button link="/logiciels/" text="Publier des logiciels" />
-
 
 
 
