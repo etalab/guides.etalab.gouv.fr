@@ -4,7 +4,7 @@ Dans le cadre de vos missions, vous pouvez être amenés à produire, collecter 
 
 # Des guides à l'attention des administrations... mais pas que ! 
 
-Dans le cadre de sa mission de service public, l’administration produit et reçoit des documents administratifs. **La loi pour une République numérique, promulguée le 7 octobre 2016, a consacré le principe de communication, de diffusion et de réutilisation de ces documents administratifs. **
+Dans le cadre de sa mission de service public, l’administration produit et reçoit des documents administratifs. **La loi pour une République numérique, promulguée le 7 octobre 2016, a consacré le principe de communication, de diffusion et de réutilisation de ces documents administratifs.**
 
 ## Qu'est-ce que l'administration ? 
 
@@ -16,21 +16,21 @@ Un document administratif correspond à tout document que l'administration a pu 
 
 Afin de vous guider dans la diffusion, la circulation et la réutilisation de ces documents administratifs, Etalab propose trois grandes entrées dans les guides, correspondant à trois types de documents administratifs : 
 
-## 1. L'ouverture et la circulation des données 
+## L'ouverture et la circulation des données
 
-Bouton 1 : Comment préparer des données à l'ouverture / la circulation ? 
+<Button link="/qualite/" text="Comment préparer des données à l'ouverture / la circulation ?" />
 
-Bouton 2 : Quels jeux de données doivent être publiés en open data ? 
+<Button link="/juridique/" text="Quels jeux de données doivent être publiés en open data ? " />
 
-Bouton 3 : Comment publier des jeux de données sur data.gouv.fr ? 
+<Button link="/data.gouv.fr/" text="Comment publier des jeux de données sur data.gouv.fr ?" />
 
-## 2. L'ouverture des algorithmes  
+## L'ouverture des algorithmes
 
-Bouton : 
+<Button link="/algorithmes/" text="Expliquer les algorithmes publics" />
 
-## 3. L'ouverture des codes sources de logiciels 
+## L'ouverture des codes sources de logiciels
 
-Bouton : 
+<Button link="/logiciels/" text="Publier des logiciels" />
 
 
 
