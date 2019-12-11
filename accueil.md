@@ -31,7 +31,3 @@ Afin de vous guider dans la diffusion, la circulation et la réutilisation de ce
 ## L'ouverture des codes sources de logiciels
 
 <Button link="/logiciels/" text="Publier des logiciels" />
-
-
-
-
