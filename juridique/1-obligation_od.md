@@ -54,6 +54,7 @@ Si vos documents administratifs contiennent des secrets légaux, vous êtes tenu
  
 **Comment occulter les données par un traitement automatisé d'usage courant ? ** : L'occultation correspond au masquage ou au retrait des données identifiées comme confidentielles et non communicable.
 
+
 ### Que faire si mes documents administratifs contiennent des données à caractère personnel ? 
 
 ::: lexique Donnée à caractère personnel
@@ -71,7 +72,7 @@ Si vous souhaitez obtenir d'avantage d'information juridique sur l'articulation 
 
 ::: lexique Anonymisation des données
 Processus consistant à traiter des données à caractère personnel afin d’empêcher totalement et de manière irréversible l’identification d’une personne physique. L’anonymisation suppose donc qu’il n’y ait plus aucun lien possible entre l’information concernée et la personne à laquelle elle se rattache.        
-:::
+
 
 ## Découvrez si vos documents administratifs doivent être publiés en open data 
 

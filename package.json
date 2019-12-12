@@ -29,6 +29,8 @@
     "remark-lint-no-dead-urls": "^0.4.1",
     "remark-validate-links": "^8.0.0",
     "vuepress": "^1.1.0",
+    "vuepress-plugin-container": "^2.1.0",
+    "vuepress-plugin-matomo": "^1.0.2",
     "vuepress-theme-gouv-fr": "^1.0.0"
   }
 }

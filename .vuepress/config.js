@@ -24,5 +24,22 @@ module.exports = {
   ],
   markdown: {
     toc: { includeLevel: [2, 3, 4, 5] }
-  }
+  },
+  plugins: [
+    [
+      'vuepress-plugin-matomo',
+      {
+        siteId: 99,
+        trackerUrl: 'https://stats.data.gouv.fr/'
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'lexique',
+        before: info => `<div class="lexique"><p class="title">Lexique : ${info}</p>`,
+        after: '</div>',
+      },
+    ],
+  ]
 }
