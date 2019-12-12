@@ -3,7 +3,7 @@ permalink: /juridique/chronologie
 ---
 # Chronologie de l'open data
 
-La formalisation de l’ouverture des données publiques a été progressive, au niveau national et européen :
+La formalisation de l’ouverture des données publiques a été progressive, au niveau national et européen&nbsp;:
 
 En France :
 * 1978 - [Loi n°78-753 du 17 juillet 1978, dite “loi CADA](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000339241)” : création du droit d’accès aux documents administratifs
