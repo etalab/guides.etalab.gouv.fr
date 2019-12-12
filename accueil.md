@@ -19,8 +19,6 @@ Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce t
 ## L'ouverture des codes sources de logiciels
 
 <Button link="/logiciels/" text="Codes sources du secteur public : lesquels ouvrir, pourquoi et comment ?" />
-
-<br>
 <br>
 <br>
 
