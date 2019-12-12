@@ -11,7 +11,7 @@ La réutilisation des informations publiques désigne l’utilisation des donné
 ###  Quelles sont ses caractéristiques ?                    
 
  La réutilisation des données doit être libre, c'est-à-dire :
-* Elle est gratuite. Les seuls organismes habilités à pratiquer des redevances sont l’Institut national de l’information géographique et forestière (IGN), Météo France et le Service hydrographique et océanographique de la Marine (SHOM) ([Décret n° 2016-1617](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000033500726)) ; 
+* Elle est gratuite. Les seuls organismes habilités à pratiquer des redevances sont l’Institut national de l’information géographique et forestière (IGN), Météo France et le Service hydrographique et océanographique de la Marine (SHOM) ([Décret n° 2016-1617](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000033500726&categorieLien=id)) ; 
 * Elle peut viser une autre finalité que le but initial de production du jeu de données ;
 * Elle peut être réalisée par tout acteur, qu'il soit public ou privé. Une administration ne peut demander à ce que le réutilisateur ait une qualité particulière pour accéder aux données.
 
