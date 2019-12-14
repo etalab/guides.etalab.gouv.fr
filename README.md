@@ -33,6 +33,12 @@ npm run dev
 open http://localhost:8080
 ```
 
+## Déploiement dokku
+
+```
+dokku config:set NGINX_ROOT=/app/www/public
+```
+
 ## Licence
 
 Le contenu de ce dépôt est publié sous une double licence.
