@@ -8,7 +8,8 @@
     "dev": "vuepress dev",
     "build": "vuepress build",
     "lint-md": "remark --frail --use remark-validate-links **/*.md *.md",
-    "extended-lint-md": "remark --frail --use remark-validate-links --use remark-lint-no-dead-urls **/*.md *.md"
+    "extended-lint-md": "remark --frail --use remark-validate-links --use remark-lint-no-dead-urls **/*.md *.md",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
