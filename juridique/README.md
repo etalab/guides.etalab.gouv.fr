@@ -8,12 +8,7 @@ En tant qu’organisme privé ou public en charge d’une mission de service pub
 L'objectif de ce guide est de présenter de manière simple et synthétique le cadre légal de l'open data. Afin de vous guider dans votre démarche d'ouverture, vous trouverez les questions essentielles à se poser avant de publier des fichiers en open data. 
 
 ::: warning Attention
-Ce guide n'a pas vocation à : 
-* Traiter des obligations prévues par des législations spéciales
-* Remplacer le [guide de publication en ligne et réutilisation des données publiques](https://www.cnil.fr/fr/publication-en-ligne-et-reutilisation-des-donnees-publiques-open-data) proposé par la CNIL et la CADA. Nous vous invitons à consulter ce guide si vous souhaitez obtenir des informations juridiques plus détaillées. 
+* Ce guide n'a pas vocation à traiter des obligations prévues par des législations spéciales
+* Les guides d'Etalab ont une visée avant tout pratique et opérationnelle.  Si vous souhaitez obtenir des informations juridiques plus détaillées, nous vous invitons à consulter le [guide de publication en ligne et réutilisation des données publiques](https://www.cnil.fr/fr/publication-en-ligne-et-reutilisation-des-donnees-publiques-open-data) proposé par la CNIL et la CADA.
 :::
 
-
-::: danger Attention
-Ce guide est encore en version Beta. Des améliorations à la marge sont à prévoir.
-:::
