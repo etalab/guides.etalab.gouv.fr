@@ -14,6 +14,7 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Proposer des modifications sur cette page',
     nav: [
+      { text: 'Sommaire', link: '/accueil.html' },
       { text: 'Contacter Etalab', link: 'https://etalab.gouv.fr/contact' }
     ]
   },
