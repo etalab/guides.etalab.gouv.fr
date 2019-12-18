@@ -2,7 +2,7 @@
 
 Dans le cadre de vos missions, vous pouvez être amenés à produire, collecter ou utiliser des données, codes sources de logiciel ou algorithmes. Ces derniers représentent des sources de valeur pour votre organisation, mais également pour d'autres structures. La montée en qualité, la documentation, l'ouverture et la circulation de ces ressources ont vocation à améliorer la qualité de vos activités et à favoriser la création de nouveaux services innovants.
 
-Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce travail. Trois points d’entrés, correspondant à trois types de documents administratifs, vous sont proposés.
+Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce travail. Trois points d’entrée, correspondant à trois types de documents administratifs, vous sont proposés.
 
 ## L'ouverture et la circulation des données
 
