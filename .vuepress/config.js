@@ -2,7 +2,7 @@ const {getSidebar} = require('vuepress-theme-gouv-fr/sidebar.js')
 
 module.exports = {
   title: 'guides.etalab.gouv.fr',
-  description: 'Les guides d\'Etalab',
+  description: "Les guides d'Etalab : vous accompagner dans la réalisation de vos projets relatifs aux données, algorithmes et codes sources.",
   theme: 'vuepress-theme-gouv-fr',
   themeConfig: {
     sidebar: getSidebar(),
