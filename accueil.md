@@ -1,3 +1,6 @@
+---
+sidebar: false
+---
 # Les guides d'Etalab 
 
 Dans le cadre de vos missions, vous pouvez être amenés à produire, collecter ou utiliser des données, codes sources de logiciel ou algorithmes. Ces derniers représentent des sources de valeur pour votre organisation, mais également pour d'autres structures. La montée en qualité, la documentation, l'ouverture et la circulation de ces ressources ont vocation à améliorer la qualité de vos activités et à favoriser la création de nouveaux services innovants.
