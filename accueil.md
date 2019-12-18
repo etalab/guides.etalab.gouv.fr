@@ -23,7 +23,7 @@ Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce t
 <br>
 
 ::: tip Quelles sont les activités d’Etalab ?  
-Etalab fait parti de la direction interministérielle du numérique de l’État ([DINUM](https://numerique.gouv.fr)). Le département coordonne et promeut l’action de l’État et des organismes placés sous sa tutelle en matière d’inventaire, de gouvernance, de production, de circulation, d’exploitation et d’ouverture des données, et notamment des codes sources.
+Etalab est un département de la direction interministérielle du numérique de l’État ([DINUM](https://numerique.gouv.fr)). Le département coordonne et promeut l’action de l’État et des organismes placés sous sa tutelle en matière d’inventaire, de gouvernance, de production, de circulation, d’exploitation et d’ouverture des données, et notamment des codes sources.
 
 Il organise, dans le respect de la protection des données personnelles et des secrets protégés par la loi, la meilleure exploitation des données de l’État et des organismes placés sous sa tutelle et leur plus large circulation.
 
