@@ -2,7 +2,7 @@
 permalink: /logiciels/guide
 ---
 
-# Guide de publication des logiciels
+# Introduction
 
 ## À qui s'adresse ce guide ?
 
