@@ -5,6 +5,9 @@
 .vuepress/ @abulte
 .circleci/ @AntoineAugusti
 
-# Documentation files
-qualite/ @mathildehg
-data.gouv.fr/ @mathildehg
+# Guides
+algorithmes/ @schignard
+data.gouv.fr/ @mathildehg @etalab/core
+juridique/ @mathildehg @AntoineAugusti
+qualite/ @mathildehg @AntoineAugusti
+logiciels/ @bzg
