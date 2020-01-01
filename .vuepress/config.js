@@ -16,7 +16,14 @@ module.exports = {
     nav: [
       { text: 'Sommaire', link: '/accueil.html' },
       { text: 'Contacter Etalab', link: 'https://etalab.gouv.fr/contact' }
-    ]
+    ],
+    sidebarTitles: {
+        '/qualite/': "Préparer des données à la circulation",
+        '/juridique/': "Cadre juridique de l'open data",
+        '/data.gouv.fr/': 'Publication sur data.gouv.fr',
+        '/algorithmes/': 'Les algorithmes publics',
+        '/logiciels/': 'Codes sources du secteur public',
+    }
   },
   locales: {'/': {lang: 'fr-FR'}},
   dest: 'public',
