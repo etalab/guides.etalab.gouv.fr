@@ -18,11 +18,11 @@ module.exports = {
       { text: 'Contacter Etalab', link: 'https://etalab.gouv.fr/contact' }
     ],
     sidebarTitles: {
-        '/qualite/': "Préparer des données à la circulation",
-        '/juridique/': "Cadre juridique de l'open data",
-        '/data.gouv.fr/': 'Publication sur data.gouv.fr',
-        '/algorithmes/': 'Les algorithmes publics',
-        '/logiciels/': 'Codes sources du secteur public',
+        '/qualite/': "Préparer les données",
+        '/juridique/': "Identifier les données à ouvrir",
+        '/data.gouv.fr/': 'Publier les données sur data.gouv.fr',
+        '/algorithmes/': 'Expliquer les algorithmes publics',
+        '/logiciels/': 'Ouvrir les codes sources',
     }
   },
   locales: {'/': {lang: 'fr-FR'}},
