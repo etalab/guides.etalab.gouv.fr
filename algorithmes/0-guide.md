@@ -2,7 +2,7 @@
 permalink: /algorithmes/guide
 ---
 
-# Guide des algorithmes publics
+# Les algorithmes publics
 
 ![](./images/logo-etalab-320x200.png)
 
@@ -14,7 +14,7 @@ Ce guide, ouvert aux contributions et publié dans le cadre du [programme de tra
 
 📎 Etalab propose par ailleurs d'autres ressources en lien avec ce sujet: la [liste des algorithmes publics publiés](https://github.com/etalab/algorithmes-publics/blob/master/liste.org) par les administrations  ainsi qu'un [guide sur l'ouverture des codes sources](https://github.com/etalab/ouverture-des-codes-sources-publics). 
 
-## A qui est-il destiné ?
+## À qui est-il destiné ?
 
 Ce guide est destiné à l'ensemble des administrations et organisations chargées d'une mission de service public qui conçoivent, développent et opèrent des traitements algorithmiques.
 

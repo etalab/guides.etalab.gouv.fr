@@ -2,7 +2,7 @@
 permalink: /data.gouv.fr/
 ---
 
-# Publication sur data.gouv.fr
+# Introduction
 
 <CurrentGroupToc></CurrentGroupToc>
 

@@ -1,8 +1,8 @@
 ---
-permalink: /logiciels/guide
+permalink: /logiciels/
 ---
 
-# Guide de publication des logiciels
+# Introduction
 
 ## À qui s'adresse ce guide ?
 

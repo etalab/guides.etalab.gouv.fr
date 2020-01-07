@@ -1,4 +1,8 @@
-# Les algorithmes publics
+---
+permalink: /algorithmes/
+---
+
+# Introduction
 
 La mission Etalab accompagne les administrations dans la mise en oeuvre du principe de transparence des algorithmes. 
 

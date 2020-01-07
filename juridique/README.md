@@ -1,4 +1,8 @@
-# Cadre juridique de l'open data
+---
+permalink: /juridique/
+---
+
+# Introduction
 
 ## Cadre général et opportunités   
 En tant qu’organisme public ou privé en charge d’une mission de service public, quelles données êtes-vous tenu de rendre publiques ? Quelles sont les règles à respecter ? À quoi cela sert-il ? Ce guide vous présente le cadre général actuel en la matière afin de vous aider à l’appliquer facilement.
