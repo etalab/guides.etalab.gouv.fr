@@ -1,3 +1,7 @@
+---
+permalink: /juridique/
+---
+
 # Introduction
 
 ## Cadre général et opportunités   

@@ -1,5 +1,5 @@
 ---
-permalink: /logiciels/guide
+permalink: /logiciels/
 ---
 
 # Introduction
