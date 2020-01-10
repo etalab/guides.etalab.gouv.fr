@@ -46,13 +46,13 @@ Les documents administratifs, informations publiques et données doivent être p
 
 ### Que faire si mes documents administratifs contiennent des secrets légaux ? 
 ::: tip Quels sont les documents couverts par un secret légal ? 
-* Les documents dont la diffusion porterait atteinte au secret des délibérations du Gouvernement, au secret de la défense nationale ou de la sûreté de l’Etat, etc ([Article L. 311-5 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=B12CCBE39831FB4644322E0902EB97B9.tplgfr34s_1?idArticle=LEGIARTI000033265181&cidTexte=LEGITEXT000031366350&dateTexte=20170701)).  
-* Les documents dont la diffusion porterait atteinte à la protection de la vie privée, au secret médical et au secret des affaires. Les documents qui portent une appréciation ou un jugement de valeur sur une personne physique ou qui font apparaître le comportement d’une personne ( [Article L. 311-6 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=B12CCBE39831FB4644322E0902EB97B9.tplgfr34s_1?idArticle=LEGIARTI000033218964&cidTexte=LEGITEXT000031366350&dateTexte=20170701)).                
+* Les documents dont la diffusion porterait atteinte au secret des délibérations du Gouvernement, au secret de la défense nationale ou de la sûreté de l’État, etc ([Article L. 311-5 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=B12CCBE39831FB4644322E0902EB97B9.tplgfr34s_1?idArticle=LEGIARTI000033265181&cidTexte=LEGITEXT000031366350&dateTexte=20170701)).
+* Les documents dont la diffusion porterait atteinte à la protection de la vie privée, au secret médical et au secret des affaires. Les documents qui portent une appréciation ou un jugement de valeur sur une personne physique ou qui font apparaître le comportement d’une personne ( [Article L. 311-6 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=B12CCBE39831FB4644322E0902EB97B9.tplgfr34s_1?idArticle=LEGIARTI000033218964&cidTexte=LEGITEXT000031366350&dateTexte=20170701)).
 :::
 
 Si vos documents administratifs contiennent des secrets légaux, vous êtes tenus d'occulter ces secrets par un traitement d'usage courant,  sans que cette opération implique des efforts disproportionnés ou que le document soit dénaturé ou vidé de son sens. Le cas échéant, vous n'êtes pas tenu de diffuser le document administratif.
  
-**Comment occulter les données par un traitement automatisé d'usage courant ?** L'occultation correspond au masquage ou au retrait des données identifiées comme confidentielles et non communicable.
+**Comment occulter les données par un traitement automatisé d'usage courant ?** L'occultation correspond au masquage ou au retrait des données identifiées comme confidentielles et non communicables.
 
 
 ### Que faire si mes documents administratifs contiennent des données à caractère personnel ? 
@@ -61,7 +61,8 @@ Si vos documents administratifs contiennent des secrets légaux, vous êtes tenu
 Toute information relative à une personne physique identifiée ou qui peut être identifiée, directement ou indirectement, par référence à un numéro d’identification (par exemple le numéro de sécurité sociale) ou à un ou plusieurs éléments qui lui sont propres.
 :::
 
-  Le cadre juridique général proscrit la diffusion en ligne sans anonymisation de documents administratifs contenant des données à caractère personnel.  Cependant, trois situations permettent la publication ces documents sans avoir recours à l'anonymisation : 
+Le cadre juridique général proscrit la diffusion en ligne sans anonymisation de documents administratifs contenant des données à caractère personnel.  Cependant, trois situations permettent la publication ces documents sans avoir recours à l'anonymisation :
+
 * Si une disposition législative spécifique autorise la publication des données sans anonymisation ; 
 * Si les personnes concernées ont donné leur accord à la diffusion des données sans anonymisation ; 
 * Si les documents administratifs figurent dans la liste prévue par le [décret n°2018-1117 du 10 décembre 2018](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037797147&categorieLien=id) relatif aux catégories de documents administratifs pouvant être rendus publics sans faire l'objet d'un processus d'anonymisation. Ce sont notamment les documents relatifs aux conditions d’organisation de l’administration, de la vie économique, associative, culturelle et sportive, des professions réglementées, etc.
@@ -78,3 +79,5 @@ Processus consistant à traiter des données à caractère personnel afin d’em
 
 Afin de vous guider, Etalab propose un logigramme dynamique qui revient sur les différentes questions à se poser avant de diffuser vos documents administratifs en open data. 
 [Découvrir le logigramme dynamique](https://guide-juridique-open-data.etalab.gouv.fr)
+
+[![Capture d'écran du logigramme dynamique](./images/logigramme.png)](https://guide-juridique-open-data.etalab.gouv.fr)
