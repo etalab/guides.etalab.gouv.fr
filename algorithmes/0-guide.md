@@ -4,8 +4,6 @@ permalink: /algorithmes/guide
 
 # Les algorithmes publics
 
-![](./images/logo-etalab-320x200.png)
-
 La mission [Etalab](https://www.etalab.gouv.fr) accompagne les administrations dans l'application du nouveau cadre juridique sur les algorithmes publics.
 Ce guide, ouvert aux contributions et publié dans le cadre du [programme de travail](1-programme-de-travail.md) d'Etalab, est composé de trois parties qui peuvent se lire de manière indépendante.
 - La première partie donne des **éléments de contexte**: qu'est-ce qu'un algorithme ? à quoi servent les algorithmes dans le secteur public ? 
