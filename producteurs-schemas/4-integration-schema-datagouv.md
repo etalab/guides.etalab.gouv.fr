@@ -16,7 +16,7 @@ Tout acteur est libre de proposer le référencement de schémas.
 Concrètement, vous pouvez être une administration, une entreprise privée, une association etc.
 
 ## Quels schémas sont acceptés ?
-`schema.data.gouv.fr` accepte des schémas décrivant des données publiques.
+[schema.data.gouv.fr](https://schema.data.gouv.fr) accepte des schémas décrivant des données publiques.
 
 Les schémas sont acceptés dès lros que leur l'existence est justifiée par voie :
 - **réglementaire** : le schéma a été introduit par une disposition réglementaire ;
@@ -26,13 +26,13 @@ Etalab se réserve le droit de refuser l'ajout de schémas en motivant son refus
 
 ## Quand référencer son schéma ?
 
-Nous vous invitions à référencer votre schéma le plus tôt possible, **dès la phase d'investigation**. En référençant votre schéma en amont, vous bénéficierez de l'accompagnement d'Etalab et de partenaires tout au long de la création de votre schéma : de l'investigation à la publication sur schema.data.gouv.fr.
+Nous vous invitions à référencer votre schéma le plus tôt possible, **dès la phase d'investigation**. En référençant votre schéma en amont, vous bénéficierez de l'accompagnement d'Etalab et de partenaires tout au long de la création de votre schéma : de l'investigation à la publication sur [schema.data.gouv.fr](https://schema.data.gouv.fr).
 
 Vous pouvez référencer votre schéma en ouvrant un ticket sur GitHub ou en entrant en contact avec notre équipe par e-mail. Nous avons créé [une page dédiée pour détailler la procédure](https://schema.data.gouv.fr/documentation/schemas-investigation-construction). Nous tenons à jour une liste de schémas actuellement en phase d'investigation ou de construction sur cette même page.
 
 ## Quels schémas sont acceptés ?
 
-`schema.data.gouv.fr` accepte des schémas décrivant des modèles de données à l'aide d'un standard. Les schémas décrits uniquement par de la documentation textuelle ou des tableaux ne sont pas acceptés.
+[schema.data.gouv.fr](https://schema.data.gouv.fr) accepte des schémas décrivant des modèles de données à l'aide d'un standard. Les schémas décrits uniquement par de la documentation textuelle ou des tableaux ne sont pas acceptés.
 
 ::: warning Aller au-delà de la documentation texte
 Un modèle de données décrit uniquement par du texte ou par un tableau se prive de nombreux avantages offerts par les schémas.
@@ -51,7 +51,7 @@ Les standards de schémas actuellement supportés sont les suivants :
 
 ::: lexique Validation d'un schéma
 
-La validation d'un schéma est l'étape permettant de vérifier qu'un schéma est conforme aux spécifications techniques du standard du schéma et aux prérequis de schema.data.gouv.fr. La validation d'un schéma s'intéresse uniquement au schéma et à la façon dont il est publié.
+La validation d'un schéma est l'étape permettant de vérifier qu'un schéma est conforme aux spécifications techniques du standard du schéma et aux prérequis de [schema.data.gouv.fr](https://schema.data.gouv.fr). La validation d'un schéma s'intéresse uniquement au schéma et à la façon dont il est publié.
 
 Il ne faut pas confondre la validation d'un schéma avec le fait de vérifier que des données correspondent à un schéma.
 ::: 
