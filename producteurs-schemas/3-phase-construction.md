@@ -32,7 +32,6 @@ Il est souvent possible de vérifier qu’un fichier correspond à un standard �
 Vous pouvez parcourir des fichiers de schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr) pour faciliter votre travail. Consultez par exemple [le fichier TableSchema décrivant les lieux de stationnement](https://schema.data.gouv.fr/schemas/etalab/schema-stationnement/latest/schema.json).
 :::
 
-
 ## Publier et diffuser votre schéma
 
 Une fois votre schéma créé, il est nécessaire de le publier et de le diffuser pour que d’autres personnes puissent en bénéficier. Nous vous recommandons de publier vos schémas en tant que logiciels libres, sur votre forge de développement ou par le biais de [GitLab](https://about.gitlab.com) ou [GitHub](https://github.com).
@@ -46,3 +45,9 @@ Vous trouverez plusieurs dépôts Git de schémas sur [schema.data.gouv.fr](http
 ## Référencer votre schéma sur schema.data.gouv.fr
 
 Pour faciliter la découverte de votre schéma et des données sous-jacentes, nous vous recommandons de faire référencer votre schéma sur [schema.data.gouv.fr](https://schema.data.gouv.fr). Nous avons rédigé [une page dédiée](4-integration-schema-datagouv.md) à ce sujet décrivant les plus-values, prérequis et démarches à suivre.
+
+## Faire évoluer votre schéma
+
+Une fois votre schéma défini et implémenté, le travail ne s’arrête pas là. Au-delà du besoin de diffusion et de promotion, il est probable que vous deviez faire des modifications : clarifications de la documentation, corrections d’erreurs, évolutions du cadre réglementaire etc. Autant de raisons où il est nécessaire de mettre en œuvre une nouvelle version.
+
+Posséder un dépôt Git pour votre schéma vous permettra d’avoir plusieurs versions et tags. Notez que [schema.data.gouv.fr](https://schema.data.gouv.fr) supporte plusieurs versions pour un schéma et affiche les modifications effectuées au fur et à mesure dès lors que ces modifications sont renseignées dans un fichier dédié.
