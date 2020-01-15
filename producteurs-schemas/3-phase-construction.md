@@ -12,7 +12,7 @@ Durant cette phase, vous devez mobiliser des personnes possédant des compétenc
 
 ## Choisir un standard
 
-Il existe plusieurs standards de schémas de données. Le standard est à choisir en fonction de la nature des données concernées et des habitudes de l'écosystème produisant ou réutilisant les données liées au schéma.
+Il existe plusieurs standards de schémas de données. Le standard est à choisir en fonction de la nature des données concernées et des habitudes de l’écosystème produisant ou réutilisant les données liées au schéma.
 
 Les principaux standards sont les suivants :
 
@@ -26,7 +26,7 @@ Notez que tous ces standards sont supportés par [schema.data.gouv.fr](https://s
 
 Une fois un standard choisi, il faudra créer les fichiers requis pour modéliser vos données. La documentation de chaque standard décrit le contenu des fichiers à renseigner. Reportez-vous aux documentations respectives pour tirer parti des fonctionnalités avancées offertes : types de données et contraintes sur les valeurs en particulier.
 
-Il est souvent possible de vérifier qu'un fichier correspond à un standard à l'aide d'outils en ligne ou en ligne de commande. Utilisez ces outils pour vérifier que vos productions correspondent au standard.
+Il est souvent possible de vérifier qu’un fichier correspond à un standard à l’aide d’outils en ligne ou en ligne de commande. Utilisez ces outils pour vérifier que vos productions correspondent au standard.
 
 ::: tip Exemples à votre disposition
 Vous pouvez parcourir des fichiers de schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr) pour faciliter votre travail. Consultez par exemple [le fichier TableSchema décrivant les lieux de stationnement](https://schema.data.gouv.fr/schemas/etalab/schema-stationnement/latest/schema.json).
@@ -35,7 +35,7 @@ Vous pouvez parcourir des fichiers de schémas sur [schema.data.gouv.fr](https:/
 
 ## Publier et diffuser votre schéma
 
-Une fois votre schéma créé, il est nécessaire de le publier et de le diffuser pour que d'autres personnes puissent en bénéficier. Nous vous recommandons de publier vos schémas en tant que logiciels libres, sur votre forge de développement ou par le biais de [GitLab](https://about.gitlab.com) ou [GitHub](https://github.com).
+Une fois votre schéma créé, il est nécessaire de le publier et de le diffuser pour que d’autres personnes puissent en bénéficier. Nous vous recommandons de publier vos schémas en tant que logiciels libres, sur votre forge de développement ou par le biais de [GitLab](https://about.gitlab.com) ou [GitHub](https://github.com).
 
 Vous bénéficierez alors des avantages habituels des dépôts de code Git en ligne : historique des modifications, fonctionnalités de tickets ou de demandes de modifications.
 
