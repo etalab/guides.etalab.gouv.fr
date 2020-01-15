@@ -30,3 +30,7 @@ Ce guide propose de vous accompagner lors des phases nécessaire à la création
 
 Il propose une processus à suivre, des bonnes pratiques et des outils.
 
+::: tip Conseil de lecture
+Nous vous recommandons de lire une première fois ce guide **en intégralité** afin de prendre connaissance des différentes phases. Vous pourrez ensuite vous référer aux pages pertinentes au fur et à mesure de votre avancée.
+:::
+
