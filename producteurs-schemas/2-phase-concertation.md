@@ -38,6 +38,6 @@ Nous avons listé ci-dessous plusieurs conseils qui vous permettront de construi
 
 ::: tip Exemples à votre disposition
 Vous pouvez parcourir des fichiers de schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr) pour faciliter votre travail. Consultez par exemple [le schéma des lieux de stationnement](https://schema.data.gouv.fr/etalab/schema-stationnement/latest.html).
-:::
 
-https://docs.google.com/document/d/1zMHb_98c5XA7yGKnL4u7-WFmA5BNTczJ3kBHCoWmtW4/edit#
+En complément, nous avons rédigé [un guide dédié à la préparation de jeux de données](../qualite/README.md) qui pourrait vous être utile pour définir votre schéma.
+:::
