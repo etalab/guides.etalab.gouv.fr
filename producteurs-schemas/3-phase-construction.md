@@ -32,6 +32,20 @@ Il est souvent possible de vérifier qu’un fichier correspond à un standard �
 Vous pouvez parcourir des fichiers de schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr) pour faciliter votre travail. Consultez par exemple [le fichier TableSchema décrivant les lieux de stationnement](https://schema.data.gouv.fr/schemas/etalab/schema-stationnement/latest/schema.json).
 :::
 
+## Documenter votre schéma
+
+En complément du fichier du schéma, nous vous conseillons de rédiger a minima 2 documents complémentaires :
+
+- **une documentation générale** : vous indiquerez le contexte, le cadre juridique, la finalité, les cas d’usage etc. Ce fichier est traditionnellement rédigé en Markdown et nommé `README.md` ;
+- **un fichier répertoriant les changements** : permettant de suivre les modifications, d’une version à une autre. Ce fichier est traditionnellement rédigé en Markdown et nommé `CHANGELOG.md`.
+
+La présence de ces fichiers représente un package complet (documentation, liste des changements et schéma technique), apprécié des réutilisateurs. [schema.data.gouv.fr](https://schema.data.gouv.fr) se repose sur ces éléments pour intégrer votre documentation et votre liste de changements sur une page web.
+
+::: tip Exemples à votre disposition
+Vous pouvez consulter [la documentation](https://github.com/etalab/schema-stationnement/blob/master/README.md) et [la liste des changements](https://github.com/etalab/schema-stationnement/blob/master/CHANGELOG.md) du schéma des lieux de stationnement.
+:::
+
+
 ## Publier et diffuser votre schéma
 
 Une fois votre schéma créé, il est nécessaire de le publier et de le diffuser pour que d’autres personnes puissent en bénéficier. Nous vous recommandons de publier vos schémas en tant que logiciels libres, sur votre forge de développement ou par le biais de [GitLab](https://about.gitlab.com) ou [GitHub](https://github.com).
