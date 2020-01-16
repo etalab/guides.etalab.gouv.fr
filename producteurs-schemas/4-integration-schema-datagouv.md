@@ -18,7 +18,7 @@ Concrètement, vous pouvez être une administration, une entreprise privée, une
 ## Quels schémas sont acceptés ?
 [schema.data.gouv.fr](https://schema.data.gouv.fr) accepte des schémas décrivant des données publiques.
 
-Les schémas sont acceptés dès lros que leur l’existence est justifiée par voie :
+Les schémas sont acceptés dès lors que leur l’existence est justifiée par voie :
 - **réglementaire** : le schéma a été introduit par une disposition réglementaire ;
 - **d’usage** : la réutilisation des données décrites par le schéma bénéficie à un grand nombre ou de nombreux producteurs sont amenés à utiliser ce schéma.
 
@@ -33,12 +33,6 @@ Vous pouvez référencer votre schéma en ouvrant un ticket sur GitHub ou en ent
 ## Quels schémas sont acceptés ?
 
 [schema.data.gouv.fr](https://schema.data.gouv.fr) accepte des schémas décrivant des modèles de données à l’aide d’un standard. Les schémas décrits uniquement par de la documentation textuelle ou des tableaux ne sont pas acceptés.
-
-::: warning Aller au-delà de la documentation texte
-Un modèle de données décrit uniquement par du texte ou par un tableau se prive de nombreux avantages offerts par les schémas.
-
-Les schémas décrits par des standards permettent, en plus d’une documentation textuelle ou sous forme d’un tableau, de valider que des données correspondent à un schéma, d’agréger des données similaires, de générer automatiquement des données respectant un schéma.
-:::
 
 ### Standards supportés
 Les standards de schémas actuellement supportés sont les suivants :

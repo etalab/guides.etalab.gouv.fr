@@ -22,6 +22,12 @@ Les principaux standards sont les suivants :
 
 Notez que tous ces standards sont supportés par [schema.data.gouv.fr](https://schema.data.gouv.fr).
 
+::: warning Aller au-delà de la documentation texte
+Un modèle de données décrit uniquement par du texte ou par un tableau se prive de nombreux avantages offerts par les schémas.
+
+Les schémas décrits par des standards permettent, en plus d’une documentation textuelle ou sous forme d’un tableau, de valider que des données correspondent à un schéma, d’agréger des données similaires, de générer automatiquement des données respectant un schéma.
+:::
+
 ## Créer votre schéma
 
 Une fois un standard choisi, il faudra créer les fichiers requis pour modéliser vos données. La documentation de chaque standard décrit le contenu des fichiers à renseigner. Reportez-vous aux documentations respectives pour tirer parti des fonctionnalités avancées offertes : types de données et contraintes sur les valeurs en particulier.
@@ -53,7 +59,7 @@ Une fois votre schéma créé, il est nécessaire de le publier et de le diffuse
 Vous bénéficierez alors des avantages habituels des dépôts de code Git en ligne : historique des modifications, fonctionnalités de tickets ou de demandes de modifications.
 
 ::: tip Exemples à votre disposition
-Vous trouverez plusieurs dépôts Git de schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr). Consultez par exemple [le dépôt TableSchema décrivant les lieux de stationnement](https://github.com/etalab/schema-stationnement) sur GitHub.
+Vous trouverez plusieurs dépôts Git de schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr). Consultez par exemple [le dépôt Git décrivant les lieux de stationnement](https://github.com/etalab/schema-stationnement) à l’aide d’un schéma TableSchema sur GitHub.
 :::
 
 ## Référencer votre schéma sur schema.data.gouv.fr
