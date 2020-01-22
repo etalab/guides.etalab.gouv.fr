@@ -26,28 +26,29 @@ Deux approches sont envisageables :
 ### Cas 1 - La structure du jeu de données correspond à un schéma de données existant
 
 
-::: tip Qu'est-ce qu'un schéma de données
+::: lexique Schéma de données
 Un schéma de données est un modèle qui permet de décrire de manière précise et univoque les différents champs et valeurs possibles qui composent un jeu de données.
 Il permet notamment de valider qu’un jeu de données se conforme à un schéma, de générer de la documentation automatiquement, de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
 Ces schémas facilitent la montée en qualité et le croisement des données proposées en open data, surtout lorsque plusieurs producteurs de données sont amenés à produire un même jeu de données.
 :::
 
 Les schémas existants peuvent avoir été définis par voie :
-* **Réglementaire** : un modèle de données été défini de manière réglementaire, par décret ou arrêté. Un schéma est un moyen de faciliter l’adoption de ces modèles par les producteurs de données.Par exemple, le schéma de données relatif à la publication des données essentielles dans la commande publique est fixé par [arrêté depuis le 14 avril 2017](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034492587&categorieLien=id).
+* **Réglementaire** : un modèle de données a été défini de manière réglementaire, par décret ou arrêté. Un schéma est un moyen de faciliter l’adoption de ces modèles par les producteurs de données.Par exemple, le schéma de données relatif à la publication des données essentielles dans la commande publique est fixé par [arrêté depuis le 14 avril 2017](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034492587&categorieLien=id).
 * **D’usage** : la réutilisation des données décrites par le schéma bénéficie à un grand nombre de réutilisateurs ou de nombreux producteurs sont amenés à utiliser ce schéma.
 
 #### Pourquoi utiliser un schéma de données ?
 
 La création d’un jeu de données en conformité avec un schéma de données existant apporte plusieurs bénéfices :
 
-* Le jeu de données créé peut être facilement croisé avec d’autres jeux de données conformes au standard utilisé. L'interopérabilité des données et leur croisement est simplifié.
+* Le jeu de données créé peut être facilement croisé avec d’autres jeux de données conformes au standard utilisé ;
+* L'interopérabilité des données et leur croisement est simplifié ;
 * Si le jeu de données que vous créez est une agrégation de plusieurs fichiers produits par différents acteurs, la formalisation et le partage d’un standard  de données  facilite le travail d’agrégation des données ;
 * La formalisation d’un standard de données assure une pérennité des fichiers dans le temps ;
 * La documentation d’un standard de données existant est déjà rédigée et accessible.
 
 #### Comment identifier un schéma de données déjà existant ?
 
-Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près. Le site schema.data.gouv.fr permet [d’intégrer les schémas de données et documentations associées](https://schema.data.gouv.fr/documentation/integration-autres-systemes)  dans d’autres systèmes informatiques.
+Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près. Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) permet [d’intégrer les schémas de données et documentations associées](https://schema.data.gouv.fr/documentation/integration-autres-systemes)  dans d’autres systèmes informatiques.
 
 #### Comment produire un jeu de données conforme à un schéma de données ?
 
@@ -59,8 +60,8 @@ Si le jeu de données n’est pas extrait d’un système d’information mais s
 #### Comment valider la conformité d’un jeu de données avec un schéma de données ?
 
 Il est possible de valider la conformité d’un jeu de données à un schéma de données existant grâce à différents outils :
-* L’outil [Validata](https://validata.fr/doku.php) intègre un outil de validation des schémas de données. Vous pouvez valider des jeux de données référencé ou proposer votre propre URL d’un schéma ;
-* Des solutions disponibles en anglais comme [goodtables.io](http://goodtables.io) ou [CSV Lint](https://csvlint.io/) proposent des validateurs de jeux de données,
+* L’outil [Validata](https://validata.fr/doku.php) intègre un outil de validation des schémas de données. Vous pouvez valider des jeux de données référencés ou proposer votre propre URL d’un schéma ;
+* Des solutions disponibles en anglais comme [goodtables.io](http://goodtables.io) ou [CSV Lint](https://csvlint.io/) proposent des validateurs de jeux de données ;
 * Enfin, il est possible d’intégrer une fonction de validation d’un jeu directement dans la procédure de publication. C’est le cas pour les données d’adresses locales qui font l’objet d’une validation directement sur le site [adresse.data.gouv.fr](http://adresse.data.gouv.fr).
 
 ### Cas 2 - La structure du jeu de données ne correspond à aucun schéma de données existant
@@ -70,9 +71,9 @@ Si les données que vous souhaitez faire circuler ne correspondent à aucun sch�
 Tant que les données de votre administration sont dans un environnement logiciel, leur usage reste adapté à des problématiques métiers spécifiques. L’ouverture de ces données en dehors de leur environnement logiciel les émancipent de ce contexte métier. La structure du jeu de données doit alors être pensée en fonction des attentes des réutilisateurs et non plus en fonction des besoins propres à l’organisation.
 
 Les bonnes pratiques à suivre sont les suivantes :
-* Occulter l’ensemble des colonnes dont les champs contiennent des données couvertes par un secret légal (se référer au guide juridique pour plus d’information)
-* Occulter l’ensemble des colonnes dont les champs contiennent des données à caractère personnel dont la publication n’est pas nécessaire à l’information du public (se référer au guide juridique pour plus d’information)
-* Privilégier la présence de variables pivots. Ces variables proposent des identifiants communs qui permettent de lier plusieurs jeux de données entre eux (ex. Le numéro d’identification SIRET de la base Sirene)
+* Occulter l’ensemble des colonnes dont les champs contiennent des données couvertes par un secret légal (se référer au guide juridique pour plus d’information) ;
+* Occulter l’ensemble des colonnes dont les champs contiennent des données à caractère personnel dont la publication n’est pas nécessaire à l’information du public (se référer au guide juridique pour plus d’information) ;
+* Privilégier la présence de variables pivots. Ces variables proposent des identifiants communs qui permettent de lier plusieurs jeux de données entre eux (ex. Le numéro d’identification SIRET de la base Sirene).
 
 Il est également nécessaire de mener une réflexion sur la granularité de votre jeu de données :
 * Faut-il proposer des données fines ou agrégées ?
@@ -83,8 +84,8 @@ Ces questions doivent être posées en amont de l’automatisation des exports. 
 ## Le choix du format du jeu de données
 
 Afin que le maximum d’utilisateurs, internes ou externes à votre organisation, puisse s’approprier les données, il est conseillé de les faire circuler dans un format :
-* **Ouvert** : un format ouvert n’impose pas de spécifications techniques qui entraveraient l’exploitation des données (par exemple l’utilisation d’un logiciel payant).
-* **Aisément réutilisable** : un format aisément réutilisable sous-entend que toute personne ou machine peut réutiliser facilement le jeu de données.
+* **Ouvert** : un format ouvert n’impose pas de spécifications techniques qui entraveraient l’exploitation des données (par exemple l’utilisation d’un logiciel payant) ;
+* **Aisément réutilisable** : un format aisément réutilisable sous-entend que toute personne ou machine peut réutiliser facilement le jeu de données ;
 * **Exploitable par un système de traitement automatisé** : un système de traitement automatisé permet de réaliser des opérations par des moyens automatiques, relatifs à l’exploitation des données. Par exemple, un fichier CSV est aisément exploitable par un système de traitement automatisé contrairement à un fichier PDF.
 
 ::: tip Rappel juridique
@@ -98,7 +99,7 @@ Les formats ouverts et communément acceptés sont les suivants :
 | -------- | -------- | -------- | -------- |
 | Données tabulaires     | CSV    |[Ici](https://opendatafrance.gitbook.io/odl-ressources/fiches-pratiques/premiers-pas/produire-un-fichier-csv-de-qualite#contexte)     | Un fichier CSV est constitué de lignes de données, où chaque champ est séparé par une virgule. Ce format est le standard le plus réutilisable, car ouvert et facilement exploitable par une machine.
 | Données statiques de transport     | GTFS/NeTEx| [Ici](https://transport.data.gouv.fr/guide)     |Le format GTFS est le format le plus utilisé en France par les services de mobilité d’information voyageur. Le format NeTEx est le format de référence européen qui vise l’interopérabilité des données entre États membres.	|
-| Données géographiques     | GeoJSON, Shapefile, MapInfo MIF/MID, MapInfo TAB et GML, pour les vecteurs / ECW, JPEG2000 et GeoTIFF, pour les données pixelisées (raster)     |   [ici](https://geo.data.gouv.fr/fr/doc/publish-your-data)     | Les données géographiques sont organisées sous forme d’ensemble de données hiérarchisées. Les formats proposés sont conçus spécifiquement pour être largement exploitables et être intégrés facilement dans des outils de cartographie.|
+| Données géographiques     | GeoJSON, Shapefile, MapInfo MIF/MID, MapInfo TAB et GML, pour les vecteurs / ECW, JPEG2000 et GeoTIFF, pour les données pixelisées (raster)     |   [Ici](https://geo.data.gouv.fr/fr/doc/publish-your-data)     | Les données géographiques sont organisées sous forme d’ensemble de données hiérarchisées. Les formats proposés sont conçus spécifiquement pour être largement exploitables et être intégrés facilement dans des outils de cartographie.|
 | Données hiérarchiques   | JSON / XML / YAML     | indisponible     | Les données hiérarchiques décrivent des relations hiérarchiques entre différentes données. Le format JSON est préconisé lorsque les données sont liées entre elles sous forme d’arbres verticaux.  |
 
 
@@ -108,9 +109,9 @@ Les formats ouverts et communément acceptés sont les suivants :
 
 Le titre de votre jeu de données doit pouvoir renseigner n’importe quel réutilisateur sur le contenu du fichier. Pour cela, il est nécessaire de :
 * Ne pas donner un titre trop générique qui obligerait le réutilisateur à ouvrir le jeu de données pour comprendre son contenu (Par exemple “liste.csv” ou encore “balance comptable” sans indiquer l’organisation concernée);
-* Ne pas donner un titre trop long qui rendrait la manipulation du fichier difficile (par exemple le titre du jeu de données “Fichier consolidés des données essentielles de la commande publique” ne revient pas sur toutes les sources de données utilisées pour agréger le jeu de données)  ;
+* Ne pas donner un titre trop long qui rendrait la manipulation du fichier difficile. Par exemple le titre du jeu de données “Fichier consolidés des données essentielles de la commande publique” est suffisamment générique pour ne pas revenir sur toutes les sources de données utilisées pour agréger le jeu de données  ;
 * Ne pas donner un titre contenant des accents ou caractères spéciaux qui poseraient des problèmes d’interopérabilité des fichiers ;
-* ne pas donner de titre trop technique issu de nomenclatures métier
+* Ne pas donner de titre trop technique issu de nomenclatures métier.
 
 ### L’encodage du fichier
 
