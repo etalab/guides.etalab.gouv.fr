@@ -8,12 +8,17 @@ permalink: /producteurs-schemas/
 Les schémas de données permettent de décrire des modèles de données. Ils indiquent clairement quels sont les différents champs, comment sont représentées les données, quelles sont les valeurs possibles etc.
 :::
 
-Les schémas permettent entre autres de valider qu’un jeu de données se conforme à un modèle de données, de générer de la documentation automatiquement, de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
+La création d’un jeu de données en conformité avec un schéma de données existant apporte plusieurs bénéfices :
+* Le jeu de données créé peut être facilement croisé avec d’autres jeux de données conformes au standard utilisé ;
+* L'interopérabilité des données et leur croisement est simplifié ;
+* Si le jeu de données que vous créez est une agrégation de plusieurs fichiers produits par différents acteurs, la formalisation et le partage d’un standard de données facilite le travail d’agrégation des données ;
+* La formalisation d’un standard de données assure une pérennité des fichiers dans le temps ;
+* La documentation d’un standard de données existant est déjà rédigée et accessible.
 
-Dans le cadre de l’open data, ils permettent une montée en qualité des données proposées, surtout lorsque plusieurs producteurs de données produisent un même jeu de données.
+Les schémas permettent également de valider qu’un jeu de données se conforme à un modèle de données, de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
 
 ::: tip schema.data.gouv.fr
-[schema.data.gouv.fr](https://schema.data.gouv.fr) est l’initiative de [data.gouv.fr](https://data.gouv.fr) de référencement des schémas de données publiques pour la France.
+Le site [Schema.data.gouv.fr](https://schema.data.gouv.fr) est l’initiative de la plateforme [data.gouv.fr](https://data.gouv.fr). L'objectif de ce site est de référencer les schémas de données publiques existants en France.
 :::
 
 ## À qui s’adresse ce guide ?
