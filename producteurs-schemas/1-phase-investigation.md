@@ -30,7 +30,7 @@ Ces situations sont des exemples où il est pertinent de créer un schéma :
 
     Il est pertinent de créer un schéma car ces données sont des données de référence. Un grand nombre de réutilisateurs est susceptible d’utiliser ces données. Il est primordial que ces réutilisateurs aient accès à une documentation de qualité, que la structure des fichiers des données reste stable dans le temps et que les données mises à disposition soient de bonne qualité.
 
-### Situations où la création d’un schéma ne semble pas nécessaire
+### Situations où le référencement d’un schéma sur schema.data.gouv.fr ne semble pas nécessaire
 
 Ces situations sont des exemples où il ne semble pas pertinent de créer ou diffuser un schéma :
 

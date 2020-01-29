@@ -25,7 +25,7 @@ Notez que tous ces standards sont supportés par [schema.data.gouv.fr](https://s
 ::: warning Aller au-delà de la documentation texte
 Un modèle de données décrit uniquement par du texte ou par un tableau se prive de nombreux avantages offerts par les schémas.
 
-Les schémas décrits par des standards permettent, en plus d’une documentation textuelle ou sous forme d’un tableau, de valider que des données correspondent à un schéma, d’agréger des données similaires, de générer automatiquement des données respectant un schéma.
+Les schémas décrits par des standards permettent, en plus d’une documentation textuelle ou sous forme d’un tableau, de valider que des données correspondent à un modèle de données, d’agréger des données similaires, de générer automatiquement des données respectant un schéma.
 :::
 
 ## Créer votre schéma

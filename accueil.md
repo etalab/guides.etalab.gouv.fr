@@ -15,7 +15,7 @@ Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce t
 
 <Button link="/data.gouv.fr/" text="Comment publier des jeux de données sur data.gouv.fr ?" />
 
-<Button link="/producteurs-schemas/" text="Comment créer un schéma de données ?" />
+<Button link="/producteurs-schemas/" text="Pourquoi et comment créer un schéma de données ?" />
 
 ## La transparence des algorithmes publics
 
