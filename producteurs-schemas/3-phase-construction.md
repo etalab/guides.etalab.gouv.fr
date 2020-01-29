@@ -71,3 +71,10 @@ Pour faciliter la découverte de votre schéma et des données sous-jacentes, no
 Une fois votre schéma défini et implémenté, le travail ne s’arrête pas là. Au-delà du besoin de diffusion et de promotion, il est probable que vous deviez faire des modifications : clarifications de la documentation, corrections d’erreurs, évolutions du cadre réglementaire etc. Autant de raisons où il est nécessaire de mettre en œuvre une nouvelle version.
 
 Posséder un dépôt Git pour votre schéma vous permettra d’avoir plusieurs versions et tags. Notez que [schema.data.gouv.fr](https://schema.data.gouv.fr) supporte plusieurs versions pour un schéma et affiche les modifications effectuées au fur et à mesure dès lors que ces modifications sont renseignées dans un fichier dédié.
+
+## Points de sortie
+À l’issue de cette phase, vous devriez :
+
+- Avoir implémenté votre schéma dans un des standards reconnus ;
+- Avoir publié votre travail en ligne, dans un répetoire Git dédié ;
+- Avoir pris contact avec les équipes de schema.data.gouv.fr dans le but de référencer votre schéma si nécessaire.

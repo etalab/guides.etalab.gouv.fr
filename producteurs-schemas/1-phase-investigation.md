@@ -42,3 +42,10 @@ Ces situations sont des exemples où il ne semble pas pertinent de créer ou dif
 ::: warning Bénéfices des schémas en interne
 Bien qu’il ne paraisse pas nécessaire dans certaines situations de créer et diffuser un schéma, vous pouvez choisir de le faire. En effet, les schémas comportent de nombreux avantages (documentation, montée en qualité, intégration avec d’autres systèmes etc.) qui sont bénéfiques, même lorsque les données sont utilisées uniquement en interne.
 :::
+
+## Points de sortie
+À l’issue de cette phase, vous devriez :
+
+- Connaître les schéma de données ;
+- Être en mesure de décider si votre projet requiert la création d’un schéma de données ;
+- Savoir si votre schéma sera référencé à terme sur schema.data.gouv.fr.

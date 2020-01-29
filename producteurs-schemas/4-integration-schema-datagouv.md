@@ -59,3 +59,10 @@ Pour tous les types de schéma, il faut que :
 ::: tip Critères complets de validation
 Cette page présente les grands principes de validation des schémas. Pour connaître en détail les prérequis propres à chaque type de schéma et accéder à des exemples, consultez [la page dédiée à la validation des schémas](https://schema.data.gouv.fr/documentation/validation-schemas).
 ::: 
+
+## Points de sortie
+À l’issue de cette phase, vous devriez :
+
+- Avoir pris connaissance des procédures de validation en place sur schema.data.gouv.fr ;
+- Avoir un dépôt Git conforme aux prérequis de schema.data.gouv.fr ;
+- Avoir effectué votre demande de référencement.

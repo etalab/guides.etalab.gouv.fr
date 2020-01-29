@@ -41,3 +41,9 @@ Vous pouvez parcourir des fichiers de schémas sur [schema.data.gouv.fr](https:/
 
 En complément, nous avons rédigé [un guide dédié à la préparation de jeux de données](../qualite/README.md) qui pourrait vous être utile pour définir votre schéma.
 :::
+
+## Points de sortie
+À l’issue de cette phase, vous devriez :
+
+- Avoir réuni divers partenaires afin de collaborer sur votre schéma ;
+- Avoir décidé des différents champs de votre schéma, leurs types et définitions.
