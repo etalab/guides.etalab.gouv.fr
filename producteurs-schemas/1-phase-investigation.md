@@ -13,7 +13,7 @@ La phase d’investigation permet de vérifier que la création d’un schéma e
 
 1. Lire attentivement les différentes sections de ce guide ;
 1. Organiser une réunion interne réunissant des acteurs métier, techniques et de potentiels réutilisateurs. Lors de cette réunion, vous débatterez de la pertinence de la création de votre schéma ;
-1. Entrer en contact avec les équipes d’Etalab et leurs partenaires en [référençant votre schéma](4-integration-schema-datagouv.md#qui-peut-référencer-des-schémas-) afin de bénéficier de conseils.
+1. Entrer en contact avec les équipes d’Etalab et leurs partenaires en [référençant votre schéma](4-integration-schema-datagouv.md#qui-peut-référencer-des-schémas-) afin de bénéficier de conseils lors de la création de votre schéma, d’une visibilité accrue pour votre schéma et d’une assistance d’experts.
 
 ## Exemples
 
