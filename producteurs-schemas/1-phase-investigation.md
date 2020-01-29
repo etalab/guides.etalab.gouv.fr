@@ -5,15 +5,15 @@ permalink: /producteurs-schemas/phase-investigation
 # Phase d’investigation
 
 ::: lexique Phase d’investigation
-La phase d’investigation est la 1ère phase de la création d’un schéma. Cette phase est celle où l’on envisage de créer un schéma de données. Elle a pour finalité de vérifier que la création d’un schéma est pertinente et d’aboutir à une décision de continuer ou d’abandonner.
+La phase d’investigation est la première phase de la création d’un schéma. Cette phase est celle où l’on envisage de créer un schéma de données. Elle a pour finalité de s'asssurer que la création d’un schéma est pertinente et d’aboutir à la décision de continuer ou de choisir une autre alternative.
 ::: 
 
 ## Étapes à suivre
-La phase d’investigation permet de vérifier que la création d’un schéma est pertinente. Pour prendre une décision afin de déterminer si vous allez créer ou non un schéma, nous vous recommandons de suivre les étapes suivantes :
+La phase d’investigation permet de vérifier que la création d’un schéma est pertinente. Afin de déterminer s'il est nécessaire de créer ou non un schéma, nous vous recommandons de suivre les étapes suivantes :
 
 1. Lire attentivement les différentes sections de ce guide ;
-1. Organiser une réunion interne réunissant des acteurs métier, techniques et de potentiels réutilisateurs. Lors de cette réunion, vous débatterez de la pertinence de la création de votre schéma ;
-1. Entrer en contact avec les équipes d’Etalab et leurs partenaires en [référençant votre schéma](4-integration-schema-datagouv.md#qui-peut-référencer-des-schémas-) afin de bénéficier de conseils lors de la création de votre schéma, d’une visibilité accrue pour votre schéma et d’une assistance d’experts.
+1. Organiser une réunion interne réunissant des acteurs métiers, techniques et de potentiels réutilisateurs. Lors de cette réunion, vous débatterez de la pertinence de la création de votre schéma ;
+1. Entrer en contact avec les équipes d’Etalab et leurs partenaires en [référençant votre schéma](4-integration-schema-datagouv.md#qui-peut-référencer-des-schémas-), afin de bénéficier de conseils lors de la création de votre schéma, d’une visibilité accrue pour celui-ci et d’une assistance d’experts.
 
 ## Exemples
 
@@ -46,6 +46,6 @@ Bien qu’il ne paraisse pas nécessaire dans certaines situations de créer et 
 ## Points de sortie
 À l’issue de cette phase, vous devriez :
 
-- Connaître les schéma de données ;
+- Connaître les schémas de données ;
 - Être en mesure de décider si votre projet requiert la création d’un schéma de données ;
 - Savoir si votre schéma sera référencé à terme sur schema.data.gouv.fr.
