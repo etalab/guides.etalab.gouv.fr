@@ -16,9 +16,9 @@ Il existe plusieurs standards de schémas de données. Le standard est à choisi
 
 Les principaux standards sont les suivants :
 
-- [Table Schema](https://frictionlessdata.io/specs/table-schema/), schéma au format JSON, permettant de décrire des données tabulaires (sous forme de tableurs ou de CSV) ;
-- [JSON Schema](https://json-schema.org), schéma au format JSON, permettant de décrire des documents JSON ;
-- [XML Schema Definition (XSD)](https://www.w3.org/TR/xmlschema11-1/), schéma au format XML, permettant de décrire des documents XML.
+- [Table Schema](https://frictionlessdata.io/specs/table-schema/) : schéma au format JSON, permettant de décrire des données tabulaires (sous forme de tableurs ou de CSV) ;
+- [JSON Schema](https://json-schema.org) : schéma au format JSON, permettant de décrire des documents JSON ;
+- [XML Schema Definition (XSD)](https://www.w3.org/TR/xmlschema11-1/) : schéma au format XML, permettant de décrire des documents XML.
 
 Notez que tous ces standards sont supportés par [schema.data.gouv.fr](https://schema.data.gouv.fr).
 
@@ -40,7 +40,7 @@ Vous pouvez parcourir des fichiers de schémas sur [schema.data.gouv.fr](https:/
 
 ## Documenter votre schéma
 
-En complément du fichier du schéma, nous vous conseillons de rédiger a minima 2 documents complémentaires :
+En complément du fichier du schéma, nous vous conseillons de rédiger a minima deux documents complémentaires :
 
 - **une documentation générale** : vous indiquerez le contexte, le cadre juridique, la finalité, les cas d’usage etc. Ce fichier est traditionnellement rédigé en Markdown et nommé `README.md` ;
 - **un fichier répertoriant les changements** : permettant de suivre les modifications, d’une version à une autre. Ce fichier est traditionnellement rédigé en Markdown et nommé `CHANGELOG.md`.
@@ -68,9 +68,9 @@ Pour faciliter la découverte de votre schéma et des données sous-jacentes, no
 
 ## Faire évoluer votre schéma
 
-Une fois votre schéma défini et implémenté, le travail ne s’arrête pas là. Au-delà du besoin de diffusion et de promotion, il est probable que vous deviez faire des modifications : clarifications de la documentation, corrections d’erreurs, évolutions du cadre réglementaire etc. Autant de raisons où il est nécessaire de mettre en œuvre une nouvelle version.
+Une fois votre schéma défini et implémenté, le travail ne s’arrête pas là. Au-delà du besoin de diffusion et de promotion, il est probable que vous deviez faire des modifications : clarifications de la documentation, corrections d’erreurs, évolutions du cadre réglementaire, etc. Autant de raisons où il est nécessaire de mettre en œuvre une nouvelle version.
 
-Posséder un dépôt Git pour votre schéma vous permettra d’avoir plusieurs versions et tags. Notez que [schema.data.gouv.fr](https://schema.data.gouv.fr) supporte plusieurs versions pour un schéma et affiche les modifications effectuées au fur et à mesure dès lors que ces modifications sont renseignées dans un fichier dédié.
+Posséder un dépôt Git pour votre schéma vous permettra d’avoir plusieurs versions et tags. Notez que [schema.data.gouv.fr](https://schema.data.gouv.fr) supporte plusieurs versions pour un schéma et affiche les modifications effectuées au fur et à mesure, dès lors que ces modifications sont renseignées dans un fichier dédié.
 
 ## Points de sortie
 À l’issue de cette phase, vous devriez :

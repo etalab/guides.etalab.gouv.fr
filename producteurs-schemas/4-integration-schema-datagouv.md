@@ -37,9 +37,9 @@ Vous pouvez référencer votre schéma en ouvrant un ticket sur GitHub ou en ent
 ### Standards supportés
 Les standards de schémas actuellement supportés sont les suivants :
 
-- [Table Schema](https://frictionlessdata.io/specs/table-schema/), schéma au format JSON, permettant de décrire des données tabulaires (sous forme de tableurs ou de CSV) ;
-- [JSON Schema](https://json-schema.org), schéma au format JSON, permettant de décrire des documents JSON ;
-- [XML Schema Definition (XSD)](https://www.w3.org/TR/xmlschema11-1/), schéma au format XML, permettant de décrire des documents XML.
+- [Table Schema](https://frictionlessdata.io/specs/table-schema/) : schéma au format JSON, permettant de décrire des données tabulaires (sous forme de tableurs ou de CSV) ;
+- [JSON Schema](https://json-schema.org) : schéma au format JSON, permettant de décrire des documents JSON ;
+- [XML Schema Definition (XSD)](https://www.w3.org/TR/xmlschema11-1/) : schéma au format XML, permettant de décrire des documents XML.
 
 ### Prérequis de validation des schémas
 
