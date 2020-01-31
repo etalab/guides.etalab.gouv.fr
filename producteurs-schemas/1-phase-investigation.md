@@ -5,11 +5,11 @@ permalink: /producteurs-schemas/phase-investigation
 # Phase d’investigation
 
 ::: lexique Phase d’investigation
-La phase d’investigation est la première phase de la création d’un schéma. Cette phase est celle où l’on envisage de créer un schéma de données. Elle a pour finalité de s'asssurer que la création d’un schéma est pertinente et d’aboutir à la décision de continuer ou de choisir une autre alternative.
+La phase d’investigation est la première phase de la création d’un schéma. Cette phase est celle où l’on envisage de créer un schéma de données. Elle a pour finalité de s’asssurer que la création d’un schéma est pertinente et d’aboutir à la décision de continuer ou de choisir une autre alternative.
 ::: 
 
 ## Étapes à suivre
-La phase d’investigation permet de vérifier que la création d’un schéma est pertinente. Afin de déterminer s'il est nécessaire de créer ou non un schéma, nous vous recommandons de suivre les étapes suivantes :
+La phase d’investigation permet de vérifier que la création d’un schéma est pertinente. Afin de déterminer s’il est nécessaire de créer ou non un schéma, nous vous recommandons de suivre les étapes suivantes :
 
 1. Lire attentivement les différentes sections de ce guide ;
 1. Organiser une réunion interne réunissant des acteurs métiers, techniques et de potentiels réutilisateurs. Lors de cette réunion, vous débatterez de la pertinence de la création de votre schéma ;

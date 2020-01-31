@@ -12,6 +12,10 @@ Durant cette phase, vous devez mobiliser des personnes possédant des compétenc
 
 ## Choisir un standard
 
+::: lexique Standard
+On utilise les termes « normes » et « standards » pour décrire un référentiel commun et documenté destiné à harmoniser l’activité d’un secteur.
+:::
+
 Il existe plusieurs standards de schémas de données. Le standard est à choisir en fonction de la nature des données concernées et des habitudes de l’écosystème produisant ou réutilisant les données liées au schéma.
 
 Les principaux standards sont les suivants :
@@ -42,7 +46,7 @@ Vous pouvez parcourir des fichiers de schémas sur [schema.data.gouv.fr](https:/
 
 En complément du fichier du schéma, nous vous conseillons de rédiger a minima deux documents complémentaires :
 
-- **une documentation générale** : vous indiquerez le contexte, le cadre juridique, la finalité, les cas d’usage etc. Ce fichier est traditionnellement rédigé en Markdown et nommé `README.md` ;
+- **une documentation générale** : vous indiquerez le contexte, les modalités de production des données, le cadre juridique, la finalité, les cas d’usage etc. Ce fichier est traditionnellement rédigé en Markdown et nommé `README.md` ;
 - **un fichier répertoriant les changements** : permettant de suivre les modifications, d’une version à une autre. Ce fichier est traditionnellement rédigé en Markdown et nommé `CHANGELOG.md`.
 
 La présence de ces fichiers représente un package complet (documentation, liste des changements et schéma technique), apprécié des réutilisateurs. [schema.data.gouv.fr](https://schema.data.gouv.fr) se repose sur ces éléments pour intégrer votre documentation et votre liste de changements sur une page web.

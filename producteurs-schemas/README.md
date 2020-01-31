@@ -10,7 +10,7 @@ Les schémas de données permettent de décrire des modèles de données. Ils in
 
 La création d’un jeu de données en conformité avec un schéma de données existant apporte plusieurs bénéfices :
 * Le jeu de données créé peut être facilement croisé avec d’autres jeux de données conformes au standard utilisé ;
-* L'interopérabilité des données et leur croisement est simplifié ;
+* L’interopérabilité des données et leur croisement est simplifié ;
 * Si le jeu de données que vous créez est une agrégation de plusieurs fichiers produits par différents acteurs, la formalisation et le partage d’un standard de données facilite le travail d’agrégation des données ;
 * La formalisation d’un standard de données assure une pérennité des fichiers dans le temps ;
 * La documentation d’un standard de données existant est déjà rédigée et accessible.
@@ -18,7 +18,7 @@ La création d’un jeu de données en conformité avec un schéma de données e
 Les schémas permettent également de valider qu’un jeu de données se conforme à un modèle de données, de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
 
 ::: tip schema.data.gouv.fr
-Le site [Schema.data.gouv.fr](https://schema.data.gouv.fr) est l’initiative de la plateforme [data.gouv.fr](https://data.gouv.fr). L'objectif de ce site est de référencer les schémas de données publiques existants en France.
+Le site [schema.data.gouv.fr](https://schema.data.gouv.fr) est l’initiative de la plateforme [data.gouv.fr](https://data.gouv.fr). L’objectif de ce site est de référencer les schémas de données publiques existants en France.
 :::
 
 ## À qui s’adresse ce guide ?

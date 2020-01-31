@@ -5,10 +5,10 @@ permalink: /producteurs-schemas/phase-concertation
 # Phase de concertation
 
 ::: lexique Phase de concertation
-La phase de concertation est l'étape où plusieurs parties prenantes se rassemblent pour définir un schéma de données.
+La phase de concertation est l’étape où plusieurs parties prenantes se rassemblent pour définir un schéma de données.
 :::
 
-La phase de concertation est la phase centrale de la création d’un schéma. En rassemblant diverses partie prenantes (producteurs, réutilisateurs, experts métiers et techniques), par le biais de discussions, vous allez définir votre schéma de données, c'est-à-dire :
+La phase de concertation est la phase centrale de la création d’un schéma. En rassemblant diverses partie prenantes (producteurs, réutilisateurs, experts métiers et techniques), par le biais de discussions, vous allez définir votre schéma de données, c’est-à-dire :
 
 - les champs ;
 - les types associés de ces champs ;

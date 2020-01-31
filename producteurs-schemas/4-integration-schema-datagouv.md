@@ -28,7 +28,7 @@ Etalab se réserve le droit de refuser l’ajout de schémas en motivant son ref
 
 Nous vous invitions à référencer votre schéma le plus tôt possible, **dès la phase d’investigation**. En référençant votre schéma en amont, vous bénéficierez de l’accompagnement d’Etalab et de partenaires tout au long de la création de votre schéma : de l’investigation à la publication sur [schema.data.gouv.fr](https://schema.data.gouv.fr).
 
-Vous pouvez référencer votre schéma en ouvrant un ticket sur GitHub ou en entrant en contact avec notre équipe par e-mail. Nous avons créé [une page dédiée pour détailler la procédure](https://schema.data.gouv.fr/documentation/schemas-investigation-construction). Nous tenons à jour une liste de schémas actuellement en phase d’investigation ou de construction sur cette même page.
+Vous pouvez référencer votre schéma en ouvrant un ticket sur GitHub ou en entrant en contact [avec notre équipe par e-mail](mailto:schema@data.gouv.fr) Nous avons créé [une page dédiée pour détailler la procédure](https://schema.data.gouv.fr/documentation/schemas-investigation-construction). Nous tenons à jour une liste de schémas actuellement en phase d’investigation ou de construction sur cette même page.
 
 ## Quels schémas sont acceptés ?
 
