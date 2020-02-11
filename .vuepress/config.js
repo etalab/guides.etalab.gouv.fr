@@ -18,7 +18,7 @@ module.exports = {
       { text: 'Contacter Etalab', link: 'https://etalab.gouv.fr/contact' }
     ],
     sidebarTitles: {
-        '/qualite/': "Préparer les données",
+        '/qualite/': "Préparer les données à l'ouverture et la circulation",
         '/juridique/': "Identifier les données à ouvrir",
         '/data.gouv.fr/': 'Publier les données sur data.gouv.fr',
         '/algorithmes/': 'Expliquer les algorithmes publics',
