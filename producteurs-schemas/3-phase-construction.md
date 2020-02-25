@@ -39,7 +39,7 @@ Une fois un standard choisi, il faudra créer les fichiers requis pour modélise
 Il est souvent possible de vérifier qu’un fichier correspond à un standard à l’aide d’outils en ligne ou en ligne de commande. Utilisez ces outils pour vérifier que vos productions correspondent au standard.
 
 ::: tip Exemples à votre disposition
-Vous pouvez parcourir des fichiers de schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr) pour faciliter votre travail. Consultez par exemple [le fichier TableSchema décrivant les lieux de stationnement](https://schema.data.gouv.fr/schemas/etalab/schema-stationnement/latest/schema.json).
+Nous vous conseillons vivement de partir d’un schéma existant. Vous pouvez parcourir des fichiers de schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr) pour faciliter votre travail. Consultez par exemple [le fichier TableSchema décrivant les lieux de stationnement](https://schema.data.gouv.fr/schemas/etalab/schema-stationnement/latest/schema.json).
 :::
 
 ## Documenter votre schéma
