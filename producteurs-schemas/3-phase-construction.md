@@ -60,7 +60,7 @@ Vous pouvez consulter [la documentation](https://github.com/etalab/schema-statio
 
 Une fois votre schéma créé, il est nécessaire de le publier et de le diffuser pour que d’autres personnes puissent en bénéficier. Nous vous recommandons de publier vos schémas en tant que logiciels libres, sur votre forge de développement ou par le biais de [GitLab](https://about.gitlab.com) ou [GitHub](https://github.com).
 
-Vous bénéficierez alors des avantages habituels des dépôts de code Git en ligne : historique des modifications, fonctionnalités de tickets ou de demandes de modifications.
+Vous bénéficierez alors des avantages habituels des dépôts de code Git en ligne : historique des modifications, fonctionnalités de tickets ou de demandes de modifications. Utilisez un compte d’organisation (dédié à votre entreprise, direction, service, ministère) et non votre compte personnel afin d’assurer une URL stable dans le temps.
 
 ::: tip Exemples à votre disposition
 Vous trouverez plusieurs dépôts Git de schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr). Consultez par exemple [le dépôt Git décrivant les lieux de stationnement](https://github.com/etalab/schema-stationnement) à l’aide d’un schéma TableSchema sur GitHub.
