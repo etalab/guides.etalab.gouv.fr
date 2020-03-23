@@ -23,6 +23,7 @@ module.exports = {
         '/data.gouv.fr/': 'Publier les données sur data.gouv.fr',
         '/algorithmes/': 'Expliquer les algorithmes publics',
         '/logiciels/': 'Ouvrir les codes sources',
+        '/producteurs-schemas/': 'Créer des schémas de données',
     }
   },
   locales: {'/': {lang: 'fr-FR'}},

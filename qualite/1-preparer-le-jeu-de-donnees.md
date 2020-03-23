@@ -28,8 +28,11 @@ Deux approches sont envisageables :
 
 ::: lexique Schéma de données
 Un schéma de données est un modèle qui permet de décrire de manière précise et univoque les différents champs et valeurs possibles qui composent un jeu de données.
+
 Il permet notamment de valider qu’un jeu de données se conforme à un schéma, de générer de la documentation automatiquement, de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
 Ces schémas facilitent la montée en qualité et le croisement des données proposées en open data, surtout lorsque plusieurs producteurs de données sont amenés à produire un même jeu de données.
+
+➡️ Consultez [notre guide à destination des producteurs de schémas](../producteurs-schemas/README.md)
 :::
 
 Les schémas existants peuvent avoir été définis par voie :
