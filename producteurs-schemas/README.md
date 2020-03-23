@@ -2,11 +2,11 @@
 permalink: /producteurs-schemas/
 ---
 
+# Introduction
+
 ::: tip Version bêta
 Ce guide a été publié initialement fin mars 2020. Il est amené à être ajusté suite aux retours de nos partenaires et lecteurs. Vous êtes invités à [entrer en contact avec nous](https://etalab.gouv.fr/contact).
 :::
-
-# Introduction
 
 ::: lexique Schémas de données
 Les schémas de données permettent de décrire la structure d'un jeu de données. Ils indiquent clairement quels sont les différents champs, comment sont représentées les données, quelles sont les valeurs possibles etc.
