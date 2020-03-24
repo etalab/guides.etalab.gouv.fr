@@ -6,7 +6,7 @@
 .circleci/ @AntoineAugusti
 
 # Guides
-algorithmes/ @schignard
+algorithmes/ @schignard @soizicpenicaud
 data.gouv.fr/ @mathildehg @etalab/core
 juridique/ @mathildehg @AntoineAugusti
 qualite/ @mathildehg @AntoineAugusti
