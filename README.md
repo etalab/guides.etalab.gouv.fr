@@ -35,7 +35,7 @@ open http://localhost:8080
 
 ## Licence
 
-Le contenu de ce dépôt est publié sous une double licence.
+Le contenu de ce dépôt est publié sous 2 licences.
 
 - Le contenu des guides est publié sous [licence Ouverte 2.0](LICENSE.md) ;
 - Le code nécessaire à la publication web de ces guides est sous [licence MIT](https://opensource.org/licenses/MIT).
