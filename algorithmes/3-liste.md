@@ -22,74 +22,90 @@ Pour le sujet particulier de l'ouverture des codes sources, voir [cette page](ht
 
 # Algorithmes publics aujourd'hui publiés
 
-<table>
-	<thead>
-	<tr>
-	  <th>Thème / objet</th>
-	  <th>Producteur</th>
-	  <th>URL de publication</th>
-	  <th>Informations complémentaires</th>
-	  <th>Licence</th>
-	</tr>
-      </thead>
-      <tbody>
-	<tr>
-	  <td>Calcul des Allocations Familiales</td>
-	  <td><a href="http://www.caf.fr/">CNAF</a></td>
-	  <td><a href="https://cdn2.nextinpact.com/medias/code-source-cnaf.zip">Nextimpact</a></td>
-	  <td><a href="https://www.nextinpact.com/news/106298-les-allocations-familales-nous-ouvrent-code-source-leur-calculateur-daides.htm">Nextimpact</a></td>
-	  <td>N/A*</td>
-	</tr>
-	<tr>
-	  <td>Calcul de la taxe d'habitation</td>
-	  <td><a href="https://www.economie.gouv.fr/dgfip">DGFIP</a></td>
-	  <td><a href="https://github.com/etalab/taxe-habitation">Github</a></td>
-	  <td><a href="https://www.etalab.gouv.fr/temoignage-peut-on-recoder-la-loi-lexemple-de-la-taxe-dhabitation">Blog Etalab</a></td>
-	  <td><a href="https://github.com/DGTresor/Opale/blob/master/LICENSE">CeCILL v2.1</a></td>
-	</tr>
-	<tr>
-	  <td>Parcours Sup</td>
-	  <td><a href="http://www.enseignementsup-recherche.gouv.fr/">MESRI</a></td>
-	  <td><a href="https://framagit.org/parcoursup/algorithmes-de-parcoursup">Framagit</a></td>
-	  <td><a href="https://framagit.org/parcoursup/algorithmes-de-parcoursup/blob/master/README.md">Framagit</a></td>
-	  <td><a href="https://framagit.org/parcoursup/algorithmes-de-parcoursup/blob/master/LICENSE">GNU GPL v3</a></td>
-	</tr>
-	<tr>
-	  <td>Impôt sur le revenu</td>
-	  <td><a href="https://www.economie.gouv.fr/dgfip">DGFIP</a></td>
-	  <td><a href="https://github.com/etalab/calculette-impots-m-source-code">Github</a></td>
-	  <td><a href="https://github.com/etalab/calculette-impots-m-source-code/blob/master/README.md">Github</a></td>
-	  <td><a href="https://github.com/DGTresor/Opale/blob/master/LICENSE">CeCILL v2.1</a></td>
-	</tr>
-	<tr>
-	  <td>Mésange</td>
-	  <td><a href="https://www.tresor.economie.gouv.fr/">Trésor</a> / <a href="https://www.insee.fr">INSEE</a></td>
-	  <td><a href="https://github.com/InseeFr/Mesange">Github</a></td>
-	  <td><a href="https://github.com/InseeFr/Mesange/blob/master/README.md">Github</a></td>
-	  <td><a href="https://github.com/DGTresor/Opale/blob/master/LICENSE">CeCILL v2.1</a></td>
-	</tr>
-	<tr>
-	  <td>Opale</td>
-	  <td><a href="https://www.tresor.economie.gouv.fr/">Trésor</a></td>
-	  <td><a href="https://github.com/DGTresor/Opale">Github</a> ou <a href="https://framagit.org/DGTresor/Opale">Framagit</a></td>
-	  <td><a href="https://github.com/DGTresor/Opale/blob/master/README.md">Github</a></td>
-	  <td><a href="https://github.com/DGTresor/Opale/blob/master/LICENSE">CeCILL v2.1</a></td>
-	</tr>
-	<tr>
-	  <td>Saphir</td>
-	  <td><a href="https://www.tresor.economie.gouv.fr/">Trésor</a></td>
-	  <td><a href="https://github.com/DGTresor/Saphir">Github</a> ou <a href="https://framagit.org/DGTresor/Saphir">Framagit</a></td>
-	  <td><a href="https://github.com/DGTresor/Saphir/blob/master/README.md">Github</a></td>
-	  <td><a href="https://github.com/DGTresor/Opale/blob/master/LICENSE">CeCILL v2.1</a></td>
-	</tr>
-	<tr>
-	  <td>Allocation de retour à l'emploi</td>
-	  <td><a href="https://www.pole-emploi.fr">Pôle emploi</a></td>
-	  <td><a href="https://www.data.gouv.fr/fr/datasets/calcul-de-lallocation-daide-au-retour-a-lemploi-are/">data.gouv.fr</a> ou <a href="https://www.pole-emploi.fr/candidat/algorithmes-@/index.jspz?id=568707">pole-emploi.fr</a></td>
-	  <td><a href="https://www.pole-emploi.fr/candidat/algorithmes-@/index.jspz?id=568707">Pôle emploi</a></td>
-	  <td><a href="http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html">CeCILL-C</a></td>
-	</tr>
-      </tbody>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+  <thead>
+    <tr>
+      <th>Thème / objet</th>
+      <th>Producteur</th>
+      <th>URL de publication</th>
+      <th>Informations complémentaires</th>
+      <th>Licence</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Calcul des Allocations Familiales</td>
+      <td>[CNAF](http://www.caf.fr/)</td>
+      <td>[Nextimpact](https://cdn2.nextinpact.com/medias/code-source-cnaf.zip)</td>
+      <td>[Nextimpact](https://www.nextinpact.com/news/106298-les-allocations-familales-nous-ouvrent-code-source-leur-calculateur-daides.htm)</td>
+      <td>N/A\*</td>
+    </tr>
+
+    <tr>
+      <td>Calcul de la taxe foncière</td>
+      <td>[DGFIP](https://www.economie.gouv.fr/dgfip)</td>
+      <td>[GitHub](https://github.com/etalab/taxe-fonciere)</td>
+      <td>[GitHub](https://github.com/etalab/taxe-fonciere/blob/master/README.md)</td>
+      <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
+    </tr>
+
+    <tr>
+      <td>Calcul de la taxe d'habitation</td>
+      <td>[DGFIP](https://www.economie.gouv.fr/dgfip)</td>
+      <td>[GitHub](https://github.com/etalab/taxe-habitation)</td>
+      <td>[Blog Etalab](https://www.etalab.gouv.fr/temoignage-peut-on-recoder-la-loi-lexemple-de-la-taxe-dhabitation)</td>
+      <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
+    </tr>
+
+    <tr>
+      <td>Parcours Sup</td>
+      <td>[MESRI](http://www.enseignementsup-recherche.gouv.fr/)</td>
+      <td>[Framagit](https://framagit.org/parcoursup/algorithmes-de-parcoursup)</td>
+      <td>[Framagit](https://framagit.org/parcoursup/algorithmes-de-parcoursup/blob/master/README.md)</td>
+      <td>[GNU GPL v3](https://framagit.org/parcoursup/algorithmes-de-parcoursup/blob/master/LICENSE)</td>
+    </tr>
+
+    <tr>
+      <td>Calculette de l'impôt sur le revenu</td>
+      <td>[DGFIP](https://www.economie.gouv.fr/dgfip)</td>
+      <td>[GitHub](https://github.com/etalab/calculette-impots-m-source-code)</td>
+      <td>[Github](https://github.com/etalab/calculette-impots-m-source-code/blob/master/README.md)</td>
+      <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
+    </tr>
+
+    <tr>
+      <td>Mésange</td>
+      <td>[Trésor](https://www.tresor.economie.gouv.fr/) / [INSEE](https://www.insee.fr)</td>
+      <td>[GitHub](https://github.com/InseeFr/Mesange)</td>
+      <td>[Github](https://github.com/InseeFr/Mesange/blob/master/README.md)</td>
+      <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
+    </tr>
+
+    <tr>
+      <td>Opale</td>
+      <td>[Trésor](https://www.tresor.economie.gouv.fr/)</td>
+      <td>[GitHub](https://github.com/DGTresor/Opale) ou [Framagit](https://framagit.org/DGTresor/Opale)</td>
+      <td>[Github](https://github.com/DGTresor/Opale/blob/master/README.md)</td>
+      <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
+    </tr>
+
+    <tr>
+      <td>Saphir</td>
+      <td>[Trésor](https://www.tresor.economie.gouv.fr/)</td>
+      <td>[GitHub](https://github.com/DGTresor/Saphir) ou [Framagit](https://framagit.org/DGTresor/Saphir)</td>
+      <td>[Github](https://github.com/DGTresor/Saphir/blob/master/README.md)</td>
+      <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
+    </tr>
+
+    <tr>
+      <td>Allocation de retour à l'emploi</td>
+      <td>[Pôle emploi](https://www.pole-emploi.fr)</td>
+      <td>[data.gouv.fr](https://www.data.gouv.fr/fr/datasets/calcul-de-lallocation-daide-au-retour-a-lemploi-are/) ou [pole-emploi.fr](https://www.pole-emploi.fr/candidat/algorithmes-@/index.jspz?id=568707)</td>
+      <td>[Pôle emploi](https://www.pole-emploi.fr/candidat/algorithmes-@/index.jspz?id=568707)</td>
+      <td>[CeCILL-C](http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html)</td>
+    </tr>
+  </tbody>
 </table>
 
 # Offre d'accompagnement d'Etalab
