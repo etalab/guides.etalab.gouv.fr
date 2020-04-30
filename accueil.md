@@ -17,6 +17,8 @@ Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce t
 
 <Button link="/producteurs-schemas/" text="Pourquoi et comment créer un schéma de données ?" />
 
+<Button link="/pseudonymisation/" text="Comment utiliser l'IA pour pseudonymiser des documents ?" />
+
 ## La transparence des algorithmes publics
 
 <Button link="/algorithmes/" text="Les algorithmes publics : pourquoi et comment les expliquer ?" />
