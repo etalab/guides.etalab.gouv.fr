@@ -35,4 +35,4 @@ Ce guide est composé de trois parties et d'un lexique :
 
 ## Comment contribuer ?
 
-Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification [sur GitHub](https://github.com/etalab-ia/pseudonymisation_decisions_ce) ou en [contactant directement](lab-ia@data.gouv.fr) l'équipe du Lab IA d'Etalab. 
+Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification [sur GitHub](https://github.com/etalab/guides.etalab.gouv.fr/edit/master/pseudonymisation/) ou en [contactant directement](mailto:lab-ia@data.gouv.fr) l'équipe du Lab IA d'Etalab. 
