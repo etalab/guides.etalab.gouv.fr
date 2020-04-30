@@ -19,7 +19,9 @@ La différence entre anonymisation et pseudonymisation réside ainsi dans le **c
 ::: tip Un exemple de différence entre pseudonymisation et anonymisation
 Supposons qu'une caisse d'allocations familiales (CAF) dispose d'une base de données contenant les noms, dates de naissance et adresses des demandeurs d'allocation logement en 2019, ainsi que les montants des allocations reçues et le nombre de personnes dans le foyer.
 
-Si la CAF souhaite **anonymiser** ces données, elles supprimera simplement les informations potentiellement identifiantes comme les noms, dates de naissances et adresses. Impossible de retrouver qui se cache derrière les allocations reçues, ce qui garantit la protection totale des données personnelles. Mais impossible aussi de comparer cette base avec celle des demandes de 2018 ou de 2020, puisque l'on ne peut identifier les bénéficiaires communs. Si elle souhaite **pseudonymiser** ces données, elle remplacera les noms et dates par un identifiant unique (au lieu de supprimer les colonnes) et remplacera les adresses complètes par les seuls codes postaux. On peut cette fois-ci comparer les identifiants entre bases pour retrouver les allocataires communs, sans pour autant être en mesure de connaître directement leur identité. Cependant, pour les codes postaux avec un faible nombre d'habitants, les informations sur les montants et la composition du foyer pourraient être recoupées avec d'autres informations afin d'identifier certains individus.
+Si la CAF souhaite **anonymiser** ces données, elles supprimera simplement les informations potentiellement identifiantes comme les noms, dates de naissances et adresses. Impossible de retrouver qui se cache derrière les allocations reçues, ce qui garantit la protection totale des données personnelles. Mais impossible aussi de comparer cette base avec celle des demandes de 2018 ou de 2020, puisque l'on ne peut identifier les bénéficiaires communs.
+
+Si elle souhaite **pseudonymiser** ces données, elle remplacera les noms et dates par un identifiant unique (au lieu de supprimer les colonnes) et remplacera les adresses complètes par les seuls codes postaux. On peut cette fois-ci comparer les identifiants entre bases pour retrouver les allocataires communs, sans pour autant être en mesure de connaître directement leur identité. Cependant, pour les codes postaux avec un faible nombre d'habitants, les informations sur les montants et la composition du foyer pourraient être recoupées avec d'autres informations afin d'identifier certains individus.
 :::
 
 Ainsi, si l'anonymisation seule garantit une totale protection des données à caractère personnel, elle implique parfois une importante perte d'information, nécessaire à empêcher la réidentification mais limitant les réutilisation possibles des données. La pseudonymisation est donc une alternative attractive, à condition de garantir une protection suffisante  
@@ -38,7 +40,7 @@ Pour satisfaire à l'obligation d'occulation, **la CNIL préconise d'anonymiser*
 
 Un bon exemple de document administratif pseudonymisé sont les décisions de justice, diffusées notamment sur le site Légifrance. Y sont retirés notamment les noms, prénoms, adresses, dates civiles (naissance, décès, mariage) des personnes physiques. D'autres catégories d'informations, comme les noms d'entreprises, la description de faits (dates et montants d'une transaction par exemple) pourraient permettre, en les recoupant avec d'autres informations, de réidentifier une personne physique. Cependant, retirer trop de catégories d'informations reviendrait à perdre beaucoup d'informations et appauvrirait le contenu d'une décision. **Il y a donc un arbitrage à faire entre la minimisation du risque de réidentification et la préservation de l'utilité des données.** Trouver le bon curseur n'est pas simple et doit passer par une double analyse des risques de réidentification, à la fois **juridique** (pour évaluer par exemple quelles données ne doivent pas pouvoir être réidentifiées) et **technique** (pour estimer la possibilité technique de réidentifier ces données). Juger de l'utilité de conserver ou non certaines catégories de données **dépendra aussi des usages envisagés** de ces données.
 
-![Extrait de décision pseudonymisée](images/extrait_decision.png)
+![Extrait de décision pseudonymisée](./images/extrait_decision.png)
 Un extrait de décision de justice pseudonymisée
 
 ::: tip Quelle quantité de données retirer ? Un exemple fictif
@@ -98,7 +100,7 @@ Afin de constituer un ensemble de documents annotés, il est nécessaire d'utili
 L'entraînement de modèles de traitement du langage récents, basés sur des réseaux de neurones profonds (deep learning), **nécessite des ressources dédiées et exigeantes**. D'une part, la volumétrie de données nécessaires pour l'entraînement peut mener à la constitution de corpus de plusieurs giga voire teraoctets et peut nécessiter des infrasructures de stockages dédiées, comme des **serveurs de stockage**. D'autre part, l'entraînement des modèles est pour sa part très gourmand en capacités de calcul, et s'appuie notamment des **processeurs graphiques** (*GPU* en anglais) qui permettent d'accélérer considérablement le temps de calcul. Même en disposant de GPU de dernières générations, il faut compter plusieurs jours voire plusieurs semaines pour un apprentissage complet du modèle.
 
 En résumé, de nombreuses conditions doivent être remplies avant de se lancer dans un projet d'utilisation de l'IA pour la pseudonymisation. Voici résumé le questionnement logique à suivre :
-![logigramme des prérequis](images/logigramme.svg)
+![logigramme des prérequis](./images/logigramme.svg)
 
 ## Ressources externes
 
