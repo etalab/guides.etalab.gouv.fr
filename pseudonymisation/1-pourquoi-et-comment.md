@@ -79,7 +79,7 @@ La qualité des données brutes (c'est-à-dire avant tout traitement) que l'on s
 
 ### Disposer d'un grand volume des données
 
-Essentiel également, le volume de documents annotés nécessaires dépendra de la complexité de la tâche de pseudonymisation, qui sera fonction, entre autres, du nombre de catégories d'entités nommées retenues et de la complexité du langage utilisé dans les documents. Il est en général nécessaire de disposer de l'ordre de **un à plusieurs milliers de documents afin d'obtenir des résultats optimaux**.
+Essentiel également, le volume de documents annotés nécessaires dépendra de la complexité de la tâche de pseudonymisation, qui sera fonction, entre autres, du nombre de catégories d'entités nommées retenues et de la complexité du langage utilisé dans les documents. Il est en général nécessaire de disposer de l'ordre de **plusieurs milliers de documents afin d'obtenir des résultats optimaux**.
 
 ### Avoir la possibilité d'annoter ses données
 
