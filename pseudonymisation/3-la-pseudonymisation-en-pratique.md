@@ -21,7 +21,7 @@ Afin de pouvoir utiliser les données annotées pour l'entraînement d'un algori
 
 Nous utilisons le format BIO, très utilisé pour les tâches de reconnaissance d'entités nommées, pour labéliser nos données. Le préfixe B- avant un label indique que le label est le début d'un groupe de mots, le préfixe I- indique que le label est à l'intérieur d'un groupe de mots, et le label O indique que le token n'a pas de label particulier.
 
-Pour aider au formatage des données, notre outil comporte une brique permettant de convertir des données au format *json* annotés par Doccano au format CONLL.  
+Pour aider au formatage des données, notre outil comporte une brique permettant de convertir des données au format JSON annotés par Doccano au format CONLL.  
 
 ::: tip Le format CoNLL
 CoNLL, pour "Conference on Natural Language Learning", est un format général, dont il existe de nombreuses versions, couramment employé pour les tâches de NLP, décrivant des données textuelles en colonne selon un nombre d'attribut (catégorie d'entité nommée, nature grammaticale, etc.). Le format BIO que nous utilisons fait partie des formats CoNLL. 
