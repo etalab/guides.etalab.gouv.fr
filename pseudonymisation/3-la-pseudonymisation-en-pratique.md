@@ -21,7 +21,7 @@ Afin de pouvoir utiliser les données annotées pour l'entraînement d'un algori
 
 Nous utilisons le format BIO, très utilisé pour les tâches de reconnaissance d'entités nommées, pour labéliser nos données. Le préfixe B- avant un label indique que le label est le début d'un groupe de mots, le préfixe I- indique que le label est à l'intérieur d'un groupe de mots, et le label O indique que le token n'a pas de label particulier.
 
-Pour aider au formatage des données, notre outil comporte une brique permettant de convertir des données au format *json* annotés par Doccano au format CONLL.  
+Pour aider au formatage des données, notre outil comporte une brique permettant de convertir des données au format JSON annotés par Doccano au format CONLL.  
 
 ::: tip Le format CoNLL
 CoNLL, pour "Conference on Natural Language Learning", est un format général, dont il existe de nombreuses versions, couramment employé pour les tâches de NLP, décrivant des données textuelles en colonne selon un nombre d'attribut (catégorie d'entité nommée, nature grammaticale, etc.). Le format BIO que nous utilisons fait partie des formats CoNLL. 
@@ -54,7 +54,7 @@ La phrase ci-dessus pourrait être tokenisée des manières suivantes :
 | Mes| amis| mes| enfants| l'avènement | de | la| pseudonymisation| automatique | est| proche|
 
 
-**Les tokens correspondent généralement aux mots**, mais il est important de comprendre qu'une autre unité peut être choisie, par exemple les caractères. D'autres choix dans la façon de tokeniser peuvent avoir un impact sur les résultats de l'algorithme. Par exemple, le choix de conserver ou non la ponctuation a son importance. De manière pratique, il est important de bien comprendre la méthode de tokénisation utilisée par les algorithmes, afin de prendre en compte ces choix lors de l'étape finale d'occultation d'éléments identifiants dans le texte. Notre outil utilise les tokenisateurs du package **NLTK**, en particulier **WordPunctTokenizer** pour tokeniser une phrase en éléments, et **PunktSentenceTokenizer** pour découper le document en phrases (ou plus communément *sentences*, en anglais).
+**Les tokens correspondent généralement aux mots**, mais il est important de comprendre qu'une autre unité peut être choisie, par exemple les caractères. D'autres choix dans la façon de tokeniser peuvent avoir un impact sur les résultats de l'algorithme. Par exemple, le choix de conserver ou non la ponctuation a son importance. De manière pratique, il est important de bien comprendre la méthode de tokénisation utilisée par les algorithmes, afin de prendre en compte ces choix lors de l'étape finale d'occultation d'éléments identifiants dans le texte. Notre outil utilise les tokenisateurs du package **NLTK**, en particulier `WordPunctTokenizer` pour tokeniser une phrase en éléments, et `PunktSentenceTokenizer` pour découper le document en phrases (ou plus communément *sentences*, en anglais).
 
 ## Entraîner son modèle
 
@@ -77,7 +77,7 @@ Notre module de génération de documents pseudonymisés permet de produire en s
 
 ## Pseudonymiser un document
 
-Le modèle entraîné permet d'attribuer une catégorie à chaque token du document à pseudonymiser. **Les sorties de l'algorithme de reconnaissance d'entités nommées ne permettent donc pas d'obtenir directement le document peudonymisé**(texte original dans lequel les éléments à caractère personnel ont été remplacés par des alias). Pour le bon fonctionnement de cette étape, il est très important de fournir à l'algorithme un document tokénisé selon une méthode identique à celle utilisée pour entraîner l'algorithme.  
+Le modèle entraîné permet d'attribuer une catégorie à chaque token du document à pseudonymiser. **Les sorties de l'algorithme de reconnaissance d'entités nommées ne permettent donc pas d'obtenir directement le document peudonymisé **(texte original dans lequel les éléments à caractère personnel ont été remplacés par des alias). Pour le bon fonctionnement de cette étape, il est très important de fournir à l'algorithme un document tokénisé selon une méthode identique à celle utilisée pour entraîner l'algorithme.  
 
 Générer un document pseudonymisé nécessite de reconstruire le texte orginal à partir des sorties de l'algorithme : notre outil propose un module permettant de tester la performance de l'algorithme de reconnaissance d'entités nommées fourni nativement par Flair, ou un modèle entraîné sur des données spécifiques, et de générer des documents pseudonymisés.
 
