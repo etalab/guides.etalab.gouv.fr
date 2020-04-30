@@ -4,7 +4,7 @@ permalink: /pseudonymisation/
 
 # Introduction
 
-## A quoi sert ce guide ?
+## À quoi sert ce guide ?
 
 De nombreuses administrations publiques sont confrontées à des problèmes de pseudonymisation dès lors qu'elles ont à publier des **documents textuels contenant des données à caractère personnel**. Ces documents recouvrent par exemple des décisions de justice, des décisions administratives, des notes, des circulaires, etc.
 
