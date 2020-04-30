@@ -95,7 +95,7 @@ Flair est la librairie que nous avons choisie pour le développement de notre ou
 ### Outils d'annotation
 
 Notre outil d'annotation est basé sur Doccano. [Doccano](https://github.com/doccano/doccano) est un outil d'annotation de texte open source. Il fournit des fonctionnalités d'annotation pour la classification de texte, la labélisation de mots et d'autres tâches classiques de NLP. Ainsi, il est possible de créer des données labélisées pour l'analyse des sentiments, **la reconnaissance d'entités nommées**, la synthèse de texte, etc. Il est possible de créer rapidement un jeu de données de documents labélisés en installant Doccano. Notre outil permet de transformer simplement les données annotées via Doccano en fichiers CoNLL.
-De nombreux autres logiciels d'annotation sont disponibles, dont beaucoup sont Open Source. 
+De nombreux autres logiciels d'annotation sont disponibles, dont beaucoup sont open source. 
 
 ## Voir la pseudonymisation en action
 
