@@ -28,9 +28,9 @@ Ce guide est composé de trois parties et d'un lexique :
 - Le [lexique proposé en annexe](lexique) vous permet finalement de retrouver une définition des termes techniques mentionnés tout au long du guide.
 
 ::: tip Ce que ce guide n'est pas
-- un guide juridique sur la protection des données à caractère personnel
-- un guide sur la pseudonymisation de données autres que textuelles (en particulier tabulaires)
-- un guide sur la sécurité des données
+- un guide juridique sur la protection des données à caractère personnel ;
+- un guide sur la pseudonymisation de données autres que textuelles (en particulier tabulaires) ;
+- un guide sur la sécurité des données.
 :::
 
 ## Comment contribuer ?
