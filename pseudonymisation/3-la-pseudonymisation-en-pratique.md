@@ -64,7 +64,7 @@ Pour permettre cette double analyse métriques/métiers, notre module de génér
 
 ## Pseudonymiser un nouveau document
 
-Le modèle entraîné permet d'attribuer une catégorie à chaque token du document à pseudonymiser. **Les sorties de l'algorithme de reconnaissance d'entités nommées ne permettent donc pas d'obtenir directement le document peudonymisé** (texte original dans lequel les éléments à caractère personnel ont été remplacés par des alias). Pour le bon fonctionnement de cette étape, il est très important de fournir à l'algorithme un document tokénisé selon une méthode identique à celle utilisée pour entraîner l'algorithme.
+Le modèle entraîné permet d'attribuer une catégorie à chaque token du document à pseudonymiser. **Les sorties de l'algorithme de reconnaissance d'entités nommées ne permettent donc pas d'obtenir directement le document peudonymisé**, mais est nécessaire d'ajouter une brique pour **remplacer les mots identifiés comme des données à caractère personnel par un alias**. Pour le bon fonctionnement de cette étape, il est très important de fournir à l'algorithme un document tokénisé selon une méthode identique à celle utilisée pour entraîner l'algorithme.
 
 ## Quelles ressources disponibles pour pseudonymiser ?
 
