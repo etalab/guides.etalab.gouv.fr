@@ -28,7 +28,7 @@ Il existe de très **nombreux logiciels ou solutions d'annotation de données te
 
 ## Tokéniser le texte
 
-À fin de mettre nos données sous format CoNLL, nous avons besoin d'abord d'identifier les mots individuels dans nos documents.
+Afin de mettre nos données sous format CoNLL, nous avons besoin d'abord d'identifier les mots individuels dans nos documents.
 
 Si l'on considère un document, composé de blocs de caractères, la tokénisation est la tâche qui consiste à découper ce document en éléments atomiques, en gardant ou supprimant la ponctuation. Par exemple :
 
