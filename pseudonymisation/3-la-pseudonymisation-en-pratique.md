@@ -2,7 +2,7 @@
 permalink: /pseudonymisation/en-pratique/
 ---
 
-# La pseudonymisation par l'IA en pratique [WIP]
+# La pseudonymisation par l'IA en pratique
 
 Après avoir vu dans les grandes lignes les étapes d'un projet de pseudonymisation grâce à l'IA, nous revenons plus en détails dans cette partie sur ces différentes étapes pour présenter les choix, arbitrages et préconisations techniques que nous avons tirés de nos travaux pour la création d'un moteur de pseudonymisation pour les décisions du Conseil d'État. Ceux-ci sont disponibles [sur GitHub](https://github.com/etalab-ia/pseudonymisation_decisions_ce).
 
