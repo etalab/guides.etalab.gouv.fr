@@ -81,7 +81,7 @@ Si SpaCy est la librairie la plus rapide, Flair est celle que nous avons choisie
 
 ### Outils d'annotation
 
-Comme dit précédemment, ils existent plusieurs types des interfaces d'annotation comme Doccano. [Doccano](https://github.com/doccano/doccano), [WebAnno](https://webanno.github.io/webanno/) et [UDT](https://universaldatatool.com/) sont des outils d'annotation de texte open source. Ils fournissent des fonctionnalités d'annotation pour la classification de texte, la labélisation de mots et d'autres tâches classiques de NLP. Ainsi, il est possible de créer des données labélisées pour l'analyse des sentiments, **la reconnaissance d'entités nommées**, la synthèse de texte, etc. Il est possible de créer rapidement un jeu de données de documents labélisés.
+Comme évoqué dans la partie précédente, il existe de nombreuses interfaces d'annotation, notamment en open source comme [Doccano](https://github.com/doccano/doccano), [WebAnno](https://webanno.github.io/webanno/) et [Universal Data Tool](https://universaldatatool.com/). Ces outils fournissent des fonctionnalités d'annotation pour la classification de texte, la labélisation de mots et d'autres tâches classiques de traitement du langage naturel. Il est ainsi possible de créer rapidement des données d'entraînement pour l'analyse des sentiments, la reconnaissance d'entités nommées, la synthèse de texte, etc.
 
 ## Voir la pseudonymisation en action
 
