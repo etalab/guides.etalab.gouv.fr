@@ -67,7 +67,7 @@ Il existe des méthodes assez intuitives permettant d'automatiser la tâche de p
 
 #### Une méthode plus complexe : l'intelligence artificielle
 
-L'utilisation de l'IA pour automatiser la pseudonymisation de documents peut être plus ou moins pertinente. Les solutions d'IA pour pseudonymiser des données textuelles sont en grande majorité des modèles supervisés. **Ces modèles d'IA dits d'apprentissage supervisé se sont beaucoup développés ces dernières années**, en particulier les modèles de réseaux de neurones profonds ( ou *deep learning*) qui sont aujourd'hui les plus performants.
+L'utilisation de l'IA pour automatiser la pseudonymisation de documents peut être plus ou moins pertinente. Les solutions d'IA pour pseudonymiser des données textuelles sont en grande majorité des modèles supervisés. **Ces modèles d'IA dits d'apprentissage supervisé se sont beaucoup développés ces dernières années**, en particulier les modèles de réseaux de neurones profonds (ou *deep learning*) qui sont aujourd'hui les plus performants.
 
 Ces modèles supervisés sont des algorithmes qui prennent en entrée des données avec des *labels* (ou étiquettes en français), dont ils vont chercher à « apprendre » la logique d'attribution. L'objectif est ainsi que lorsqu'on leur présente une nouvelle donnée « non-labelisée », l'algorithme soit capable de retrouver seul le bon label. 
 
