@@ -100,7 +100,7 @@ Afin de constituer un ensemble de documents annotés, il est nécessaire d'utili
 L'entraînement de modèles de traitement du langage récents, basés sur des réseaux de neurones profonds (deep learning), **nécessite des ressources dédiées et exigeantes**. D'une part, la volumétrie de données nécessaires pour l'entraînement peut mener à la constitution de corpus de plusieurs giga voire teraoctets et peut nécessiter des infrasructures de stockages dédiées, comme des **serveurs de stockage**. D'autre part, l'entraînement des modèles est pour sa part très gourmand en capacités de calcul, et s'appuie notamment des **processeurs graphiques** (*GPU* en anglais) qui permettent d'accélérer considérablement le temps de calcul. Même en disposant de GPU de dernières générations, il faut compter plusieurs jours voire plusieurs semaines pour un apprentissage complet du modèle.
 
 En résumé, de nombreuses conditions doivent être remplies avant de se lancer dans un projet d'utilisation de l'IA pour la pseudonymisation. Voici résumé le questionnement logique à suivre :
-![logigramme des prérequis](./images/logigramme.svg)
+![logigramme des prérequis](./images/logigramme.png)
 
 ## Ressources externes
 

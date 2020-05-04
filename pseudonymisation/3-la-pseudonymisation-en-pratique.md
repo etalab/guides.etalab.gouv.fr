@@ -68,7 +68,7 @@ Nous proposons un exemple de module permettant d'entrainer un algorithme de reco
 
 La validation des performances du modèle et la mise en production est un double processus reposant sur **l'analyse de métriques et sur l'expérience humaine**.
 
-![alt text](images/process.svg "Logo Title Text 1")
+![alt text](images/process.png "Logo Title Text 1")
 
 
 Notre module de génération de documents pseudonymisés permet de produire en sortie des fichiers labélisés, au format CoNLL. Ceci permet :
