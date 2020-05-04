@@ -14,7 +14,7 @@ Pour accompagner la publication de cet outil technique de pseudonymisation, nous
 
 ## À qui s'adresse ce guide ?
 
-Ce guide s'adresse principalement **aux organismes publics**, et plus particulièrement **aux personnes chargées du traitement et de la protection de données à caractère personnel** dans ces organismes. Ces personnes peuvent être des agents publics, internes à l'administration, mais aussi des prestataires. Dans ce dernier cas, le sous-traitant devra veiller au respect des obligations imposées par le RGPD (voir [le guide de la CNIL sur la sous-traitance des données à caractère personnel](https://www.cnil.fr/sites/default/files/atoms/files/rgpd-guide_sous-traitant-cnil.pdf)).
+Ce guide s'adresse principalement **aux organismes publics**, et plus particulièrement **aux personnes chargées du traitement et de la protection de données à caractère personnel** dans ces organismes. Ces personnes peuvent être des agents publics, internes à l'administration, mais aussi des prestataires. Dans ce dernier cas, le sous-traitant devra veiller au respect des obligations imposées par le RGPD (voir le [guide de la CNIL sur la sous-traitance des données à caractère personnel](https://www.cnil.fr/sites/default/files/atoms/files/rgpd-guide_sous-traitant-cnil.pdf)).
 
 Ce guide pourra également intéresser d'autres acteurs faisant face à un besoin de pseudonymisation de documents textuels, dans le cadre de développements de services ou de produits à partir de données à caractère personnel. 
 
@@ -28,11 +28,11 @@ Ce guide est composé de trois parties et d'un lexique :
 - Le [lexique proposé en annexe](lexique) vous permet finalement de retrouver une définition des termes techniques mentionnés tout au long du guide.
 
 ::: tip Ce que ce guide n'est pas
-- un guide juridique sur la protection des données à caractère personnel ;
-- un guide sur la pseudonymisation de données autres que textuelles (en particulier tabulaires) ;
+- un guide juridique sur la protection des données à caractère personnel ;
+- un guide sur la pseudonymisation de données autres que textuelles (en particulier tabulaires) ;
 - un guide sur la sécurité des données.
 :::
 
 ## Comment contribuer ?
 
-Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification [sur GitHub](https://github.com/etalab/guides.etalab.gouv.fr/edit/master/pseudonymisation/) ou en [contactant directement](mailto:lab-ia@data.gouv.fr) l'équipe du Lab IA d'Etalab. 
+Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification sur [GitHub](https://github.com/etalab/guides.etalab.gouv.fr/edit/master/pseudonymisation/) ou en [contactant directement](mailto:lab-ia@data.gouv.fr) l'équipe du Lab IA d'Etalab. 
