@@ -8,7 +8,7 @@ Après avoir vu dans les grandes lignes les étapes d'un projet de pseudonymisat
 
 ## Formater ses données annotées
 
-Afin de pouvoir utiliser les données annotées pour l'entraînement d'un algorithme d'apprentissage, **celles-ci doivent être converties dans un format spécifique**. Dans l'exemple ci-dessous, un document textuel (ici "Thomas CLAVIER aime beaucoup Paris.") est alors structuré en un tableau, avec un mot par ligne, et deux colonnes, une pour le mot (ou *token*) et une pour l'annotation linguistique. 
+Afin de pouvoir utiliser les données annotées pour l'entraînement d'un algorithme d'apprentissage, **celles-ci doivent être converties dans un format spécifique**. Dans l'exemple ci-dessous, un document textuel (ici « Thomas CLAVIER aime beaucoup Paris. ») est alors structuré en un tableau, avec un mot par ligne, et deux colonnes, une pour le mot (ou *token*) et une pour l'annotation linguistique. 
 
 | Token   | Label  | 
 | ----------| ----------| 
@@ -24,7 +24,7 @@ Nous utilisons le format BIO, très utilisé pour les tâches de reconnaissance 
 Pour aider au formatage des données, notre outil comporte une brique permettant de convertir des données au format JSON annotés par Doccano au format CONLL.  
 
 ::: tip Le format CoNLL
-CoNLL, pour "Conference on Natural Language Learning", est un format général, dont il existe de nombreuses versions, couramment employé pour les tâches de NLP, décrivant des données textuelles en colonne selon un nombre d'attribut (catégorie d'entité nommée, nature grammaticale, etc.). Le format BIO que nous utilisons fait partie des formats CoNLL. 
+CoNLL, pour « Conference on Natural Language Learning », est un format général, dont il existe de nombreuses versions, couramment employé pour les tâches de NLP, décrivant des données textuelles en colonne selon un nombre d'attribut (catégorie d'entité nommée, nature grammaticale, etc.). Le format BIO que nous utilisons fait partie des formats CoNLL. 
 :::
 
 Il existe de très **nombreux logiciels ou solutions d'annotation de données textuelle**s et les données annotées en sortie peuvent donc avoir différents formats (il existe en effet de multiples formats de données annotées). Pour transformer vos données annotées, un développement spécifique sera probablement nécessaire afin de les convertir au format BIO, le format des données d'entrée de l'algorithme de reconnaissance d'entités nommées que nous avons choisi. Plusieurs exemples de fonctions et de librairies développées pour le Conseil d'État constitueront néanmoins un point de départ dans le répertoire GitHub.
@@ -66,12 +66,11 @@ Nous proposons un exemple de module permettant d'entrainer un algorithme de reco
 
 ## Valider ses résultats
 
-La validation des performances du modèle et la mise en production est un double processus reposant sur **l'analyse de métriques et sur l'expérience humaine**.
+La validation des performances du modèle et la mise en production est un double processus reposant sur **l'analyse de métriques et sur l'expérience humaine**, comme nous l'avons vu dans la partie précédente. Comme illustré ci-dessous dans le cas de notre outil de pseudonymisation des décisions de justice, cette validation des résultats est charnière pour décider ou non du passage en production, c'est-à-dire du déploiement pour utilisation par les métiers.
 
-![alt text](images/process.png "Logo Title Text 1")
+![Le processus de conception de notre outil de pseudonymisation](./images/process.png)
 
-
-Notre module de génération de documents pseudonymisés permet de produire en sortie des fichiers labélisés, au format CoNLL. Ceci permet :
+Pour permettre cette double analyse métriques/métiers, notre module de génération de documents pseudonymisés permet de produire en sortie des fichiers labélisés, au format CoNLL, et ainsi :
 - d'utiliser des **métriques permettant de comparer**, pour un document ayant été annoté manuellement, la pseudonymisation par l'algorithme à celle réalisée manuellement. On utilise généralement le [score F1](https://fr.wikipedia.org/wiki/Pr%C3%A9cision_et_rappel) pour mesurer la performance du modèle ;
 - de charger dans notre outil d'annotation basé sur Doccano un fichier **mettant en avant les différences entre les annotations provenant de sources différentes**, indiquant en rouge les labels en désaccord et en vert les labels en accord.
 
@@ -99,4 +98,4 @@ De nombreux autres logiciels d'annotation sont disponibles, dont beaucoup sont o
 
 ## Voir la pseudonymisation en action
 
-Vous pouvez directement explorer et réutiliser le code de notre outil sur https://github.com/etalab-ia/pseudonymisation_decisions_ce.
+Vous pouvez directement explorer et réutiliser le code de notre outil sur (https://github.com/etalab-ia/pseudonymisation_decisions_ce)[https://github.com/etalab-ia/pseudonymisation_decisions_ce].
