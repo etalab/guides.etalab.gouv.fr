@@ -77,7 +77,7 @@ De nombreuses librairies open-source permettent d'entraîner et d'utiliser des a
 
 - [Stanza](https://stanfordnlp.github.io/stanza/) est une librairie Python de l'Université de Stanford qui utilise la très connue librairie [CoreNLP](https://stanfordnlp.github.io/CoreNLP/) comme moteur NLP. Elle est construite avec des composants qui permettent un entraînement et une évaluation efficace avec ses propres données annotées. La boîte à outils est conçue pour être parallèle entre plus de 70 langues, en utilisant le [formalisme des dépendances universelles](https://universaldependencies.org/).
 
-Si bien SpaCy est plus rapide, Flair est la librairie que nous avons choisie pour le développement de notre outil de pseudonymisation dû à la performance de l'algorithme derrière la reconnaissance d'entités.
+Si SpaCy est la librairie la plus rapide, Flair est celle que nous avons choisie pour le développement de notre outil de pseudonymisation, et ce pour la performance de son algorithme de reconnaissance d'entités.
 
 ### Outils d'annotation
 
