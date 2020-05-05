@@ -20,7 +20,7 @@ L'apprentissage supervisé est une catégorie de tâches de l'apprentissage auto
 
 - **Données tabulaires**
 
-Un jeu de données tabulaire se présente sous forme d'un tableau dont les lignes sont des entrées et les colonnes des catégories d'information. Par exemple, un tableur CSV ou une base SQL dans lequels chaque ligne correspond à un individu et chaque colonne à ses caractéristiques propres (nom, age, profession, etc.).
+Un jeu de données tabulaire se présente sous forme d'un tableau dont les lignes sont des entrées et les colonnes des catégories d'information. Par exemple, un tableur CSV ou une base SQL dans lequels chaque ligne correspond à un individu et chaque colonne a ses propres caractéristiques (nom, age, profession, etc.).
 
 - **Données non structurées**
 
