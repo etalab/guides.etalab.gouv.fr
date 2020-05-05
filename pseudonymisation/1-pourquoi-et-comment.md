@@ -24,7 +24,7 @@ Si la CAF souhaite **anonymiser** ces données, elle supprimera simplement les i
 Si elle souhaite **pseudonymiser** ces données, elle remplacera les noms et dates par un identifiant unique (au lieu de supprimer les colonnes) et remplacera les adresses complètes par les seuls codes postaux. On peut cette fois-ci comparer les identifiants entre bases pour retrouver les allocataires communs, sans pour autant être en mesure de connaître directement leur identité. Cependant, pour les codes postaux avec un faible nombre d'habitants, les informations sur les montants et la composition du foyer pourraient être recoupées avec d'autres informations afin d'identifier certains individus.
 :::
 
-Ainsi, si l'anonymisation seule garantit une totale protection des données à caractère personnel, elle implique parfois une importante perte d'information, nécessaire à empêcher la réidentification mais limitant les réutilisations possibles des données. La pseudonymisation est donc une alternative attractive, à condition de garantir une protection suffisante  
+Ainsi, si l'anonymisation seule garantit une totale protection des données à caractère personnel, elle implique parfois une importante perte d'information, nécessaire à empêcher la réidentification mais limitant les réutilisations possibles des données. La pseudonymisation est donc une alternative attractive, à condition de garantir une protection suffisante.
 
 ### Pourquoi pseudonymiser des documents administratifs ?
 
