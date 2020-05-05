@@ -30,7 +30,7 @@ Ce guide est composé de trois parties et d'un lexique :
 ::: tip Ce que ce guide n'est pas
 - un guide juridique sur la protection des données à caractère personnel ;
 - un guide sur la pseudonymisation de données autres que textuelles (en particulier tabulaires) ;
-- un guide sur la sécurité des données.
+- un guide sur la sécurité des données et des systèmes d'information.
 :::
 
 ## Comment contribuer ?
