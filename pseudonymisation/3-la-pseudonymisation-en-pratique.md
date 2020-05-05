@@ -85,4 +85,4 @@ Comme évoqué dans la partie précédente, il existe de nombreuses interfaces d
 
 ## Voir la pseudonymisation en action
 
-Vous pouvez directement explorer et réutiliser le code de notre outil sur (https://github.com/etalab-ia/pseudonymisation_decisions_ce)[https://github.com/etalab-ia/pseudonymisation_decisions_ce].
+Vous pouvez directement explorer et réutiliser le code de notre outil sur [https://github.com/etalab-ia/pseudonymisation_decisions_ce](https://github.com/etalab-ia/pseudonymisation_decisions_ce).
