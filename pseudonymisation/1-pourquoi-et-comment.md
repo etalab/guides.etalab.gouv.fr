@@ -85,7 +85,7 @@ Dans le cas de la pseudonymisation, les données d'entrées sont **chacun des mo
 
 Mais pour que ces modèles puissent arriver à de bonnes performances, ils nécessitent de remplir un certain nombre de prérequis. Assez exigeants, ils sont pourtant indispensables au succès de l'utilisation de l'IA appliquée à la pseudonymisation. Nous vous proposons de les passer en revue dans la section suivante.
 
-## Quels sont les prérequis pour utiliser l'intelligence artificielle pour pseudonymiser mes documents ?
+## Quels sont les prérequis pour utiliser l'intelligence artificielle pour pseudonymiser ?
 
 ### Disposer de données brutes de qualité
 
