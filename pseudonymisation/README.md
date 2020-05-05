@@ -14,7 +14,7 @@ Pour accompagner la publication de cet outil technique de pseudonymisation, nous
 
 ## À qui s'adresse ce guide ?
 
-Ce guide s'adresse principalement **aux organismes publics**, et plus particulièrement **aux personnes chargées du traitement et de la protection de données à caractère personnel** dans ces organismes. Ces personnes peuvent être des agents publics, internes à l'administration, mais aussi des prestataires. Dans ce dernier cas, le sous-traitant devra veiller au respect des obligations imposées par le RGPD (voir le [guide de la CNIL sur la sous-traitance des données à caractère personnel](https://www.cnil.fr/sites/default/files/atoms/files/rgpd-guide_sous-traitant-cnil.pdf)).
+Ce guide s'adresse principalement **aux organismes publics**, et plus particulièrement **aux personnes chargées du traitement et de la protection de données à caractère personnel** dans ces organismes. Ces personnes peuvent être des agents publics, internes à l'administration, mais aussi des prestataires. Dans ce dernier cas, le sous-traitant devra veiller au respect des obligations relatives à la sous-traitance imposées par le RGPD (voir le [guide de la CNIL sur la sous-traitance des données à caractère personnel](https://www.cnil.fr/sites/default/files/atoms/files/rgpd-guide_sous-traitant-cnil.pdf)).
 
 Ce guide pourra également intéresser d'autres acteurs faisant face à un besoin de pseudonymisation de documents textuels, dans le cadre de développements de services ou de produits à partir de données à caractère personnel. 
 
