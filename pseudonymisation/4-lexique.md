@@ -60,7 +60,7 @@ La reconnaissance optique de caractères, plus connue sous son acronyme anglais 
 
 - **Réseaux de neurones profonds**
 
-Les réseaux de neurones profonds, appelés *deep learning* en anglais, désignent des architectures complexes de réseaux de neurones artificiels basés sur de nombreuses couches de neurones successives. Ces réseaux cherche à modéliser des structures sous-jacentes des données avec un haut niveau d'abstraction pour des tâches d'IA complexes, comme la vision par ordinateur ou le traitement du langage naturel.
+Les réseaux de neurones profonds, appelés *deep learning* en anglais, désignent des architectures complexes de réseaux de neurones artificiels basés sur de nombreuses couches de neurones successives. Ces réseaux cherchent à modéliser des structures sous-jacentes des données avec un haut niveau d'abstraction pour des tâches d'IA complexes, comme la vision par ordinateur ou le traitement du langage naturel.
 
 - **Stop word**
 
