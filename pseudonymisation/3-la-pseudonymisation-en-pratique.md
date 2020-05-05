@@ -28,9 +28,7 @@ Il existe de très **nombreux logiciels ou solutions d'annotation de données te
 
 ## Tokeniser le texte
 
-Afin de mettre nos données sous format CoNLL, nous avons besoin d'abord d'identifier les mots individuels dans nos documents.
-
-Si l'on considère un document, composé de blocs de caractères, la tokenisation est la tâche qui consiste à découper ce document en éléments atomiques, en gardant ou supprimant la ponctuation. Par exemple :
+Afin de mettre nos données sous format CoNLL, nous avons besoin d'abord d'identifier les mots individuels dans nos documents. Si l'on considère un document, composé de blocs de caractères, **la tokenisation est la tâche qui consiste à découper ce document en éléments atomiques**, en gardant ou supprimant la ponctuation. Par exemple :
 
 | Phrase |
 | :------------- |
@@ -46,11 +44,11 @@ La phrase ci-dessus pourrait être tokenisée de cette manière :
 
 ## Entraîner son modèle
 
-Dans le code que nous avons développé, nous utilisons la librairie Open Source [Flair](https://github.com/flairNLP/flair). Celle-ci permet en effet d'utiliser de nombreux modèles de langage, et notamment les modèles [Flair, Bert et CamemBERT](https://github.com/flairNLP/flair/blob/master/resources/docs/TUTORIAL_3_WORD_EMBEDDING.md), et même de combiner plusieurs modèles de langages. **Ce modèle de langage permet pour chaque mot d'obtenir une représentation vectorielle** (ou *embedding*). Ces embeddings sont ensuite passés à un classificateur BiLSTM-CRF qui attribue à chaque mot une des classes du jeu de données d'entraînement.
+Dans le code que nous avons développé, nous utilisons la librairie Open Source [Flair](https://github.com/flairNLP/flair). Celle-ci permet en effet d'utiliser de nombreux modèles de langage, par exemple les modèles [Flair, Bert et CamemBERT](https://github.com/flairNLP/flair/blob/master/resources/docs/TUTORIAL_3_WORD_EMBEDDING.md) et même de combiner plusieurs de ces modèles. **Un modèle de langage permet pour chaque mot d'obtenir une représentation vectorielle** (ou *embedding*). Ces embeddings sont ensuite passés à un classificateur BiLSTM-CRF qui attribue à chaque mot une des classes du jeu de données d'entraînement.
 
-L'entrainement d'un tel classificateur nécessite de choisir la valeur d'un certain nombre d'**hyper-paramètres** (les hyper-paramètres sont les paramètres de l'algorithmes qui sont fixés avant l'apprentissage, par opposition aux paramètres de l'algorithmes qui sont fixés de manière itérative au cours de l'apprentissage). Des exemples de configuration avec des explications des différents hyper-paramètres et de leur impact sont disponibles dans la section correspondante du répertoire GitHub.
+L'entraînement d'un tel classificateur nécessite de choisir la valeur d'un certain nombre d'**hyper-paramètres**. Les hyper-paramètres sont les paramètres de l'algorithmes qui sont fixés avant l'apprentissage, par opposition aux paramètres de l'algorithmes qui sont fixés de manière itérative au cours de l'apprentissage. Des exemples de configuration avec des explications des différents hyper-paramètres et de leur impact sont disponibles dans la section correspondante du répertoire GitHub.
 
-Nous proposons un exemple de module permettant d'entrainer un algorithme de reconnaissance d'entités nommées via la librairie Flair à partir d'un corpus annoté. Enfin, pour aller plus loin, la librairie Flair propose [un module très pratique permettant de fixer les valeurs optimales des hyper-paramètres optimaux pour l'apprentissage](https://github.com/flairNLP/flair/blob/master/resources/docs/TUTORIAL_8_MODEL_OPTIMIZATION.md).
+Nous proposons un exemple de module permettant d'entraîner un algorithme de reconnaissance d'entités nommées via la librairie Flair à partir d'un corpus annoté. Enfin, pour aller plus loin, la librairie Flair propose [un module très pratique permettant de fixer les valeurs optimales des hyper-paramètres optimaux pour l'apprentissage](https://github.com/flairNLP/flair/blob/master/resources/docs/TUTORIAL_8_MODEL_OPTIMIZATION.md).
 
 ## Valider ses résultats
 
@@ -62,7 +60,7 @@ Pour permettre cette double analyse métriques/métiers, notre module de génér
 - d'utiliser des **métriques permettant de comparer**, pour un document ayant été annoté manuellement, la pseudonymisation par l'algorithme à celle réalisée manuellement. On utilise généralement le [score F1](https://fr.wikipedia.org/wiki/Pr%C3%A9cision_et_rappel) pour mesurer la performance du modèle ;
 - de charger dans notre outil d'annotation basé sur Doccano un fichier **mettant en avant les différences entre les annotations provenant de sources différentes**, indiquant en rouge les labels en désaccord et en vert les labels en accord.
 
-## Pseudonymiser un nouveau document
+## Pseudonymiser de nouveaux documents
 
 Le modèle entraîné permet d'attribuer une catégorie à chaque token du document à pseudonymiser. **Les sorties de l'algorithme de reconnaissance d'entités nommées ne permettent donc pas d'obtenir directement le document peudonymisé**, mais est nécessaire d'ajouter une brique pour **remplacer les mots identifiés comme des données à caractère personnel par un alias**. Pour le bon fonctionnement de cette étape, il est très important de fournir à l'algorithme un document tokenisé selon une méthode identique à celle utilisée pour entraîner l'algorithme.
 
@@ -74,8 +72,7 @@ De nombreuses librairies open-source permettent d'entraîner et d'utiliser des a
 
 - [Flair](https://github.com/flairNLP/flair) est un framework simple pour le NLP. Il permet d'utiliser des modèles de NLP à l'état de l'art sur des textes de tout genre, en particulier des algorithmes de reconnaissance d'entité nommées et des embeddings pré-entraînés
 - [SpaCy](https://spacy.io/usage/spacy-101) est un module Python à forte capacité d'industrialisation pour le NLP rédigée en Python et Cython. Il implémente les toutes dernières recherches dans le domaine du traitement du langage naturel et a été conçu pour être utilisé en production. Il possède des modèles statistiques et des embeddings pré-entraînés.
-
-- [Stanza](https://stanfordnlp.github.io/stanza/) est une librairie Python de l'Université de Stanford qui utilise la très connue librairie [CoreNLP](https://stanfordnlp.github.io/CoreNLP/) comme moteur NLP. Elle est construite avec des composants qui permettent un entraînement et une évaluation efficace avec ses propres données annotées. La boîte à outils est conçue pour être parallèle entre plus de 70 langues, en utilisant le [formalisme des dépendances universelles](https://universaldependencies.org/).
+- [Stanza](https://stanfordnlp.github.io/stanza/) est une librairie Python de l'Université de Stanford qui utilise la très connue librairie [CoreNLP](https://stanfordnlp.github.io/CoreNLP/) comme moteur NLP. Ses composants permettent un entraînement et une évaluation efficace avec vos propres données annotées. La boîte à outils est conçue pour être parallèle entre plus de 70 langues, en utilisant le [formalisme des dépendances universelles](https://universaldependencies.org/).
 
 Si SpaCy est la librairie la plus rapide, Flair est celle que nous avons choisie pour le développement de notre outil de pseudonymisation, et ce pour la performance de son algorithme de reconnaissance d'entités.
 
