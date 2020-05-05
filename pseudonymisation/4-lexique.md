@@ -40,7 +40,7 @@ En informatique, une librairie, aussi appelée « bibliothèque de code » ou «
 
 - **Modèle de langage**
 
-Un modèle de langage est un modèle qui permet d'associer à chaque mot une représentation sous forme d'un vecteur, aussi appelé *embedding*. De tels modèles sont nécessaire puisque les algorithmes d'IA ne savent travailler qu'avec des données numériques. Ces modèles, entrainés sur des millions de documents, ne sont pas spécifique à chaque projet mais souvent conçus en amont pour être réutilisées par la suite. On pourra par exemple citer [CamemBERT](https://camembert-model.fr/) pour le français.
+Un modèle de langage est un modèle qui permet d'associer à chaque mot une représentation sous forme d'un vecteur, aussi appelé *embedding*. De tels modèles sont nécessaire puisque les algorithmes d'IA ne savent travailler qu'avec des données numériques. Ces modèles, entrainés sur des millions de documents, ne sont pas spécifiques à chaque projet mais souvent conçus en amont pour être réutilisés par la suite. On pourra par exemple citer [CamemBERT](https://camembert-model.fr/) pour le français.
 
 - **Moteur de règles**
 
