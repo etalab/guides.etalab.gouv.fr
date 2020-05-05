@@ -48,10 +48,10 @@ Pour satisfaire à l'obligation d'occultation, **la CNIL préconise d'anonymiser
 
 Un bon exemple de document administratif pseudonymisé sont les décisions de justice, diffusées notamment sur le site Légifrance. Y sont retirés notamment les noms, prénoms, adresses, dates civiles (naissance, décès, mariage) des personnes physiques. D'autres catégories d'informations, comme les noms d'entreprises, la description de faits (dates et montants d'une transaction par exemple) pourraient permettre, en les recoupant avec d'autres informations, de réidentifier une personne physique. Cependant, retirer trop de catégories d'informations reviendrait à perdre beaucoup d'informations et appauvrirait le contenu d'une décision.
 
-**Il y a donc un arbitrage à faire entre la minimisation du risque de réidentification et la préservation de l'utilité des données.** Trouver le bon curseur n'est pas simple et doit passer par une double analyse des risques de réidentification, à la fois **juridique** (pour évaluer par exemple quelles données ne doivent pas pouvoir être réidentifiées) et **technique** (pour estimer la possibilité technique de réidentifier ces données). Juger de l'utilité de conserver ou non certaines catégories de données **dépendra aussi des usages envisagés** de ces données.
-
 ![Extrait de décision pseudonymisée](./images/extrait_decision.png)
-Un extrait de décision de justice pseudonymisée
+*Un extrait de décision de justice pseudonymisée*
+
+**Il y a donc un arbitrage à faire entre la minimisation du risque de réidentification et la préservation de l'utilité des données.** Trouver le bon curseur n'est pas simple et doit passer par une double analyse des risques de réidentification, à la fois **juridique** (pour évaluer par exemple quelles données ne doivent pas pouvoir être réidentifiées) et **technique** (pour estimer la possibilité technique de réidentifier ces données). Juger de l'utilité de conserver ou non certaines catégories de données **dépendra aussi des usages envisagés** de ces données.
 
 ::: tip Quelle quantité de données retirer ? Un exemple fictif
 Prenons l'exemple d'un extrait de décision de justice fictive : *« Monsieur Dupont est accusé d'avoir cambriolé l'établissement "Café de la Paix" à Gentioux-Pigerolles, en Creuse, situé en face de son domicile, et d'avoir dérobé la recette de la semaine évaluée à 1 000€ »*.
