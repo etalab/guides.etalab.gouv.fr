@@ -8,6 +8,12 @@ permalink: /pseudonymisation/pourquoi-comment/
 
 ### Quelle différence entre anonymisation et pseudonymisation ?
 
+Anonymisation et pseudonymisation sont deux notions parfois difficile à distinguer, et qui concernent toutes deux la **protection des données à caractère personnel**.
+
+::: lexique Donnée à caractère personnel
+Toute information relative à une personne physique identifiée ou qui peut être identifiée, directement ou indirectement, par référence à un nom, un numéro d’identification (par exemple le numéro de sécurité sociale) ou à un ou plusieurs éléments qui lui sont propres.
+:::
+
 Le [guide de la CNIL sur l'anonymisation des données](https://www.cnil.fr/fr/lanonymisation-des-donnees-un-traitement-cle-pour-lopen-data) présente bien la différence entre anonymisation et pseudonymisation :
 
 > **L’anonymisation** est un traitement qui consiste à utiliser un ensemble de techniques de manière à rendre **impossible, en pratique, toute identification de la personne** par quelque moyen que ce soit et ce de **manière irréversible**.
@@ -28,9 +34,9 @@ Ainsi, si l'anonymisation seule garantit une totale protection des données à c
 
 ### Pourquoi pseudonymiser des documents administratifs ?
 
-La [loi n°2016-1321 pour une République numérique](https://www.legifrance.gouv.fr/affichLoiPubliee.do?idDocument=JORFDOLE000031589829&type=general&legislature=14) fait de **l’ouverture des données publiques la règle par défaut**. Etalab a d'ailleurs publié [un guide détaillé sur l'ouverture de ces données](https://guides.etalab.gouv.fr/juridique/ouverture/).
+La [loi n°2016-1321 pour une République numérique](https://www.legifrance.gouv.fr/affichLoiPubliee.do?idDocument=JORFDOLE000031589829&type=general&legislature=14) fait de **l’ouverture des données publiques la règle par défaut**. Etalab propose par ailleurs [un guide détaillé sur l'ouverture de ces données](https://guides.etalab.gouv.fr/juridique/ouverture/).
 
-Lorsque les administrations diffusent dans ce cadre des documents contenant des données personnelles, **l'occultation préalable des éléments à caractère personnel est une obligation légale** qui s’impose à elles en application de l'[article L. 312-1-2](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000033205514&cidTexte=LEGITEXT000031366350&dateTexte=20161009)  du Code des relations entre le public et l’administration (CRPA). 
+Lorsque les administrations diffusent dans ce cadre des documents contenant des données personnelles, **l'occultation préalable des éléments à caractère personnel est généralement une obligation** qui s’impose à elles en application de l'[article L. 312-1-2](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000033205514&cidTexte=LEGITEXT000031366350&dateTexte=20161009) du Code des relations entre le public et l’administration, sauf dans [certains cas particuliers](https://guides.etalab.gouv.fr/juridique/ouverture/#la-diffusion-de-vos-documents-administratifs). 
 
 ### Quelles données personnelles dois-je retirer de mes données ?
 
@@ -40,7 +46,9 @@ Pour plus de détails sur les **différents cadres légaux**, vous pouvez consul
 
 Pour satisfaire à l'obligation d'occultation, **la CNIL préconise d'anonymiser** les documents administratifs avant de les diffuser, garantissant ainsi une parfaite impossibilité de réidentification. Néanmoins, pour les documents qui contiennent des données non structurées, en particulier du texte libre, le curseur de la « quantité d'information » à retirer d'un jeu de données pour éviter tout risque de réidentification est difficile à évaluer. De fait, **une complète anonymisation est difficile à atteindre et à évaluer** et peut aboutir à une trop grande perte d'informations.
 
-Un bon exemple de document administratif pseudonymisé sont les décisions de justice, diffusées notamment sur le site Légifrance. Y sont retirés notamment les noms, prénoms, adresses, dates civiles (naissance, décès, mariage) des personnes physiques. D'autres catégories d'informations, comme les noms d'entreprises, la description de faits (dates et montants d'une transaction par exemple) pourraient permettre, en les recoupant avec d'autres informations, de réidentifier une personne physique. Cependant, retirer trop de catégories d'informations reviendrait à perdre beaucoup d'informations et appauvrirait le contenu d'une décision. **Il y a donc un arbitrage à faire entre la minimisation du risque de réidentification et la préservation de l'utilité des données.** Trouver le bon curseur n'est pas simple et doit passer par une double analyse des risques de réidentification, à la fois **juridique** (pour évaluer par exemple quelles données ne doivent pas pouvoir être réidentifiées) et **technique** (pour estimer la possibilité technique de réidentifier ces données). Juger de l'utilité de conserver ou non certaines catégories de données **dépendra aussi des usages envisagés** de ces données.
+Un bon exemple de document administratif pseudonymisé sont les décisions de justice, diffusées notamment sur le site Légifrance. Y sont retirés notamment les noms, prénoms, adresses, dates civiles (naissance, décès, mariage) des personnes physiques. D'autres catégories d'informations, comme les noms d'entreprises, la description de faits (dates et montants d'une transaction par exemple) pourraient permettre, en les recoupant avec d'autres informations, de réidentifier une personne physique. Cependant, retirer trop de catégories d'informations reviendrait à perdre beaucoup d'informations et appauvrirait le contenu d'une décision.
+
+**Il y a donc un arbitrage à faire entre la minimisation du risque de réidentification et la préservation de l'utilité des données.** Trouver le bon curseur n'est pas simple et doit passer par une double analyse des risques de réidentification, à la fois **juridique** (pour évaluer par exemple quelles données ne doivent pas pouvoir être réidentifiées) et **technique** (pour estimer la possibilité technique de réidentifier ces données). Juger de l'utilité de conserver ou non certaines catégories de données **dépendra aussi des usages envisagés** de ces données.
 
 ![Extrait de décision pseudonymisée](./images/extrait_decision.png)
 Un extrait de décision de justice pseudonymisée
@@ -65,7 +73,7 @@ Lorsque les données à caractère personnel sont contenues dans du texte libre,
 
 #### Une méthode d'automatisation simple : les moteurs de règles
 
-Il existe des méthodes assez intuitives permettant d'automatiser la tâche de pseudonymisation, comme **les moteurs de règles**. Les moteurs de règles sont un ensemble de règles prédéfinies « à l'avance ». Par exemple, une règle de pseudonymisation pourrait être : « si le mot qui suit "Monsieur" ou "Madame" commence par une majuscule, alors ce mot est un prénom ». La complexité du langage naturel et la diversité des formulations qui se trouvent dans du texte libre fait que ce type de moteur de règles a de forte chance de faire beaucoup d'erreurs dans des textes administratifs dont la forme varie souvent.
+Il existe des méthodes assez intuitives permettant d'automatiser la tâche de pseudonymisation, comme **les moteurs de règles**. Les moteurs de règles sont un ensemble de règles prédéfinies « à l'avance ». Par exemple, une règle de pseudonymisation pourrait être : « si le mot qui suit "Monsieur" ou "Madame" commence par une majuscule, alors ce mot est un prénom ». La complexité du langage naturel et la diversité des formulations qui se trouvent dans du texte libre fait que ce type de moteur de règles a de forte chance de faire beaucoup d'erreurs dans des textes administratifs dont la forme varie souvent. Il est cependant bien adapté à des textes simples, ou lorsque la méthode a besoin d'être parfaitement explicable et simplement modifiable.
 
 #### Une méthode plus complexe : l'intelligence artificielle (IA)
 
@@ -77,7 +85,7 @@ Dans le cas de la pseudonymisation, les données d'entrées sont **chacun des mo
 
 Mais pour que ces modèles puissent arriver à de bonnes performances, ils nécessitent de remplir un certain nombre de prérequis. Assez exigeants, ils sont pourtant indispensables au succès de l'utilisation de l'IA appliquée à la pseudonymisation. Nous vous proposons de les passer en revue dans la section suivante.
 
-## Que dois-je vérifier afin d'utiliser l'intelligence artificielle pour pseudonymiser mes documents ?
+## Quels sont les prérequis pour utiliser l'intelligence artificielle pour pseudonymiser mes documents ?
 
 ### Disposer de données brutes de qualité
 
@@ -85,7 +93,7 @@ La qualité des données brutes (c'est-à-dire avant tout traitement) que l'on s
 
 ### Disposer d'un grand volume des données
 
-Essentiel également, le volume de documents annotés nécessaires dépendra de la complexité de la tâche de pseudonymisation, qui sera fonction, entre autres, du nombre de catégories d'entités nommées retenues et de la complexité du langage utilisé dans les documents. Il est en général nécessaire de disposer de l'ordre de **plusieurs milliers de documents afin d'obtenir des résultats optimaux**.
+Essentiel également, le volume de documents annotés nécessaires dépendra de la complexité de la tâche de pseudonymisation, qui sera fonction notamment du nombre de catégories d'entités nommées retenues et de la complexité du langage utilisé dans les documents. Il est en général nécessaire de disposer de l'ordre de **plusieurs milliers de documents afin d'obtenir des résultats optimaux**.
 
 ### Avoir la possibilité d'annoter ses données
 
