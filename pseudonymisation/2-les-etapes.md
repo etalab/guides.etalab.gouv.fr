@@ -4,7 +4,7 @@ permalink: /pseudonymisation/etapes/
 
 # Les étapes d'un projet de pseudonymisation grâce à l'IA
 
-Nous proposons dans cette partie de passer en revue les différentes étapes d'un projet de pseudonymisation de documents textuels de bout en bout. À ce stade, nous faisons l'hypothèse que l'on dispose déjà de données nettoyées prêtes à l'emploi. Le pré-traitement des données brutes évoqué plus tôt (OCR, conversion en format standard, etc.) n'est pas détaillé ici.
+Nous proposons dans cette partie de passer en revue les différentes étapes d'un projet de pseudonymisation de documents textuels. À ce stade, nous faisons l'hypothèse que nous disposons déjà de données nettoyées, prêtes à l'emploi. Le pré-traitement des données brutes évoqué plus tôt (OCR, conversion en format standard, etc.) n'est pas détaillé ici.
 
 ## Annoter ses données
 
