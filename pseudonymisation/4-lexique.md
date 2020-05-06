@@ -10,7 +10,7 @@ Dans cette annexe, nous vous proposons de retrouver les définitions des termes 
 
 ### Annotation
 
-L'annotation est la tâche manuelle (et donc humaine) qui consiste à attribuer à chaque donnée le label qui lui correspond. Par exemple, à attribuer le label « chien » ou « chat » à une base de photographies d'animaux. Ou encore à attribuer le label correct entre « nom », « prénom », « adresse », « date » ou « aucun » à chacun des mots d'un document. On conçoit ainsi une base de données annotée, utile pour l'[apprentissage supervisé](#apprentissage-supervise).
+L'annotation est la tâche manuelle (et donc humaine) qui consiste à attribuer à chaque donnée le label qui lui correspond. Par exemple, à attribuer le label « chien » ou « chat » à une base de photographies d'animaux. Ou encore à attribuer le label correct entre « nom », « prénom », « adresse », « date » ou « aucun » à chacun des mots d'un document. On conçoit ainsi une base de données annotée, utile pour l'[apprentissage supervisé](#apprentissage-supervisé).
 
 ### Anonymisation
 
@@ -34,7 +34,7 @@ Le format CoNLL, pour « Conference on Natural Language Learning », est un form
 
 ### Hyper-paramètre
 
-En apprentissage automatique, un hyperparamètre est un paramètre qui ne peut pas être appris lors de la phase d'apprentissage de l'algorithme. Par exemple, pour un [réseau de neurones profond](#reseaux-de-neurones-profonds), ce sera à l'utilisateur de fixer à la main le nombre de neurones qu'il souhaite mettre dans son réseau. Il ne s'agit cependant pas d'un choix arbitraire : chaque hyper-paramètre est ensuite optimisé par les data scientists pour sélectionner la valeur qui permet les meilleures performances.
+En apprentissage automatique, un hyperparamètre est un paramètre qui ne peut pas être appris lors de la phase d'apprentissage de l'algorithme. Par exemple, pour un [réseau de neurones profond](#réseaux-de-neurones-profonds), ce sera à l'utilisateur de fixer à la main le nombre de neurones qu'il souhaite mettre dans son réseau. Il ne s'agit cependant pas d'un choix arbitraire : chaque hyper-paramètre est ensuite optimisé par les data scientists pour sélectionner la valeur qui permet les meilleures performances.
 
 ### Librairie (code)
 
@@ -70,7 +70,7 @@ Un *stop word*, ou « mot vide » en français, est un mot très commun et peu p
 
 ### Tokenisation
 
-En traitement du langage naturel, la tokenisation désigne le fait de décomposer un texte sous forme d'éléments unitaires, des *tokens*, qui seront ensuite représentés sous forme de vecteurs (voir « [Modèle de langage](#modele-de-langage) »). La tokenisation la plus répandue consiste simplement à tokeniser une phrase sous forme d'un token par mot.
+En traitement du langage naturel, la tokenisation désigne le fait de décomposer un texte sous forme d'éléments unitaires, des *tokens*, qui seront ensuite représentés sous forme de vecteurs (voir « [Modèle de langage](#modèle-de-langage) »). La tokenisation la plus répandue consiste simplement à tokeniser une phrase sous forme d'un token par mot.
 
 ### Traitement automatique du langage naturel
 

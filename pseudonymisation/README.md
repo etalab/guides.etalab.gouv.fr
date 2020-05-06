@@ -22,10 +22,10 @@ Ce guide pourra également intéresser d'autres acteurs faisant face à un besoi
 
 Ce guide est composé de trois parties et d'un lexique :
 
-- La [première partie](pourquoi-comment) permet de **découvrir ce qu'est la pseudonymisation, pourquoi elle est utile dans les administrations publiques** et présente les méthodes de pseudonymisation existantes.
-- La [deuxième partie](etapes) expose une vue d'ensemble de la **méthode basée sur l'IA** que nous avons développée à Etalab.
-- La [troisième partie](en-pratique) s'adresse à un public plus technique, comme des data scientists, et **présente de manière plus détaillée la mise en œuvre de cette approche** basée sur l'IA.
-- Le [lexique proposé en annexe](lexique) vous permet finalement de retrouver une définition des termes techniques mentionnés tout au long du guide.
+- La [première partie](1-pourquoi-et-comment.md) permet de **découvrir ce qu'est la pseudonymisation, pourquoi elle est utile dans les administrations publiques** et présente les méthodes de pseudonymisation existantes.
+- La [deuxième partie](2-les-etapes.md) expose une vue d'ensemble de la **méthode basée sur l'IA** que nous avons développée à Etalab.
+- La [troisième partie](3-la-pseudonymisation-en-pratique.md) s'adresse à un public plus technique, comme des data scientists, et **présente de manière plus détaillée la mise en œuvre de cette approche** basée sur l'IA.
+- Le [lexique proposé en annexe](4-lexique.md) vous permet finalement de retrouver une définition des termes techniques mentionnés tout au long du guide.
 
 ::: tip Ce que ce guide n'est pas
 - un guide juridique sur la protection des données à caractère personnel ;
