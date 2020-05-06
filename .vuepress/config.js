@@ -24,6 +24,7 @@ module.exports = {
         '/algorithmes/': 'Expliquer les algorithmes publics',
         '/logiciels/': 'Ouvrir les codes sources',
         '/producteurs-schemas/': 'Créer des schémas de données',
+        '/pseudonymisation/': "Pseudonymiser des documents grâce à l'IA",
     }
   },
   locales: {'/': {lang: 'fr-FR'}},
