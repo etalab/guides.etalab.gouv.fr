@@ -59,4 +59,4 @@ Ce guide s'inspire du contenu rédigé par de nombreux partenaires, listés par 
 - [La FING](https://fing.org)
 - [OpenDataFrance](http://www.opendatafrance.net)
 
-L'équipe d'Etalab remercie chaleuresement ces partenaires de longue date qui contribuent activement à la politique open data française.
+Merci à eux !
