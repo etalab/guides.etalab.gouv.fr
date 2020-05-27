@@ -4,7 +4,7 @@ permalink: /pseudonymisation/en-pratique/
 
 # La pseudonymisation par l'IA en pratique
 
-Après avoir vu dans les grandes lignes les étapes d'un projet de pseudonymisation grâce à l'IA, nous revenons plus en détails dans cette partie sur ces différentes étapes pour présenter les choix, arbitrages et préconisations techniques que nous avons tirés de nos travaux pour la création d'un moteur de pseudonymisation pour les décisions du Conseil d'État. Ceux-ci sont disponibles [sur GitHub](https://github.com/etalab-ia/pseudonymisation_decisions_ce).
+Après avoir vu dans les grandes lignes les étapes d'un projet de pseudonymisation grâce à l'IA, nous revenons plus en détails dans cette partie sur ces différentes étapes pour présenter les choix, arbitrages et préconisations techniques que nous avons tirés de nos travaux pour la création d'un moteur de pseudonymisation pour les décisions du Conseil d'État. Ceux-ci sont disponibles [sur GitHub](https://github.com/etalab-ia/pseudo_conseil_etat).
 
 ## Formater ses données annotées
 
@@ -82,4 +82,4 @@ Comme évoqué dans la partie précédente, il existe de nombreuses interfaces d
 
 ## Voir la pseudonymisation en action
 
-Vous pouvez directement explorer et réutiliser le code de notre outil sur [https://github.com/etalab-ia/pseudonymisation_decisions_ce](https://github.com/etalab-ia/pseudonymisation_decisions_ce).
+Vous pouvez directement explorer et réutiliser le code de notre outil sur [http://datascience-01.infra.data.gouv.fr/pseudo/](https://github.com/etalab-ia/pseudo_app).
