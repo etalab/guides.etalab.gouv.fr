@@ -22,7 +22,7 @@ Pour le sujet particulier de l'ouverture des codes sources, voir [cette page](ht
 
 # Algorithmes publics aujourd'hui publiés
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table>
   <thead>
     <tr>
       <th>Thème / objet</th>
@@ -32,7 +32,6 @@ Pour le sujet particulier de l'ouverture des codes sources, voir [cette page](ht
       <th>Licence</th>
     </tr>
   </thead>
-
   <tbody>
     <tr>
       <td>Calcul des Allocations Familiales</td>
@@ -41,7 +40,6 @@ Pour le sujet particulier de l'ouverture des codes sources, voir [cette page](ht
       <td>[Nextimpact](https://www.nextinpact.com/news/106298-les-allocations-familales-nous-ouvrent-code-source-leur-calculateur-daides.htm)</td>
       <td>N/A\*</td>
     </tr>
-
     <tr>
       <td>Calcul de la taxe foncière</td>
       <td>[DGFIP](https://www.economie.gouv.fr/dgfip)</td>
@@ -49,7 +47,6 @@ Pour le sujet particulier de l'ouverture des codes sources, voir [cette page](ht
       <td>[GitHub](https://github.com/etalab/taxe-fonciere/blob/master/README.md)</td>
       <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
     </tr>
-
     <tr>
       <td>Calcul de la taxe d'habitation</td>
       <td>[DGFIP](https://www.economie.gouv.fr/dgfip)</td>
@@ -57,7 +54,6 @@ Pour le sujet particulier de l'ouverture des codes sources, voir [cette page](ht
       <td>[Blog Etalab](https://www.etalab.gouv.fr/temoignage-peut-on-recoder-la-loi-lexemple-de-la-taxe-dhabitation)</td>
       <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
     </tr>
-
     <tr>
       <td>Parcours Sup</td>
       <td>[MESRI](http://www.enseignementsup-recherche.gouv.fr/)</td>
@@ -65,7 +61,6 @@ Pour le sujet particulier de l'ouverture des codes sources, voir [cette page](ht
       <td>[Framagit](https://framagit.org/parcoursup/algorithmes-de-parcoursup/blob/master/README.md)</td>
       <td>[GNU GPL v3](https://framagit.org/parcoursup/algorithmes-de-parcoursup/blob/master/LICENSE)</td>
     </tr>
-
     <tr>
       <td>Calculette de l'impôt sur le revenu</td>
       <td>[DGFIP](https://www.economie.gouv.fr/dgfip)</td>
@@ -73,7 +68,6 @@ Pour le sujet particulier de l'ouverture des codes sources, voir [cette page](ht
       <td>[Github](https://github.com/etalab/calculette-impots-m-source-code/blob/master/README.md)</td>
       <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
     </tr>
-
     <tr>
       <td>Mésange</td>
       <td>[Trésor](https://www.tresor.economie.gouv.fr/) / [INSEE](https://www.insee.fr)</td>
@@ -81,7 +75,6 @@ Pour le sujet particulier de l'ouverture des codes sources, voir [cette page](ht
       <td>[Github](https://github.com/InseeFr/Mesange/blob/master/README.md)</td>
       <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
     </tr>
-
     <tr>
       <td>Opale</td>
       <td>[Trésor](https://www.tresor.economie.gouv.fr/)</td>
@@ -89,7 +82,6 @@ Pour le sujet particulier de l'ouverture des codes sources, voir [cette page](ht
       <td>[Github](https://github.com/DGTresor/Opale/blob/master/README.md)</td>
       <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
     </tr>
-
     <tr>
       <td>Saphir</td>
       <td>[Trésor](https://www.tresor.economie.gouv.fr/)</td>
@@ -97,7 +89,6 @@ Pour le sujet particulier de l'ouverture des codes sources, voir [cette page](ht
       <td>[Github](https://github.com/DGTresor/Saphir/blob/master/README.md)</td>
       <td>[CeCILL v2.1](https://github.com/DGTresor/Opale/blob/master/LICENSE)</td>
     </tr>
-
     <tr>
       <td>Allocation de retour à l'emploi</td>
       <td>[Pôle emploi](https://www.pole-emploi.fr)</td>
