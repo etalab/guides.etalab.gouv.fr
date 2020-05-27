@@ -44,3 +44,14 @@ Il propose un processus à suivre, des bonnes pratiques et des outils.
 ::: tip Conseil de lecture
 Nous vous recommandons de lire une première fois ce guide **en intégralité** afin de prendre connaissance des différentes phases. Vous pourrez ensuite vous référer aux pages pertinentes au fur et à mesure de votre avancée.
 :::
+
+## Sources
+
+Ce guide s'inspire du contenu rédigé par de nombreux partenaires, listés par ordre alphabétique :
+
+- [Charles Nepote](https://twitter.com/charlesnepote)
+- [Datactivist](https://datactivist.coop)
+- [La FING](https://fing.org)
+- [OpenDataFrance](http://www.opendatafrance.net)
+
+Merci à eux !
