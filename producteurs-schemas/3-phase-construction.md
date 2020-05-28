@@ -40,7 +40,9 @@ Une fois un standard technique choisi, il faudra créer les fichiers requis pour
 Il est souvent possible de vérifier qu’un fichier correspond à un standard à l’aide d’outils en ligne ou en ligne de commande. Utilisez ces outils pour vérifier que vos productions correspondent au standard.
 
 ::: tip Exemples à votre disposition
-Nous vous conseillons vivement de partir d’un schéma de données existant. Vous pouvez parcourir ces exemples sur [schema.data.gouv.fr](https://schema.data.gouv.fr) pour faciliter votre travail. Consultez par exemple [le fichier TableSchema décrivant les lieux de stationnement](https://schema.data.gouv.fr/schemas/etalab/schema-stationnement/latest/schema.json).
+Pour un schéma au format Table Schema, nous mettons à votre disposition [un modèle de départ](https://github.com/etalab/tableschema-template) pour créer un dépôt Git contenant un schéma au format Table Schema.
+
+Pour les autres formats de schémas, nous vous recommandons de consulter les schémas et dépôts Git listés sur [schema.data.gouv.fr](https://schema.data.gouv.fr).
 :::
 
 ## Documenter votre schéma de données
