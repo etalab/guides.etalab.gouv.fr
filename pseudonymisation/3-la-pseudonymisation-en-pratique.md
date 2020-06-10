@@ -82,4 +82,4 @@ Comme évoqué dans la partie précédente, il existe de nombreuses interfaces d
 
 ## Voir la pseudonymisation en action
 
-Vous pouvez directement explorer notre dèmo pseudonymisation [ici](https://datascience.etalab.studio/pseudo/). Aussi, vous pouvez retrouver le code de cet outil sur notre [dépôt Git](https://github.com/etalab-ia/pseudo_app).
+Vous pouvez explorer notre démo pseudonymisation [en ligne](https://datascience.etalab.studio/pseudo/) et retrouver le code de cet outil sur notre [dépôt Git](https://github.com/etalab-ia/pseudo_app).
