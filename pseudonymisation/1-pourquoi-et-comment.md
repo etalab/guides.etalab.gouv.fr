@@ -16,18 +16,22 @@ Toute information relative à une personne physique identifiée ou qui peut êtr
 
 Le [guide de la CNIL sur l'anonymisation des données](https://www.cnil.fr/fr/lanonymisation-des-donnees-un-traitement-cle-pour-lopen-data) présente bien la différence entre anonymisation et pseudonymisation :
 
-> **L’anonymisation** est un traitement qui consiste à utiliser un ensemble de techniques de manière à rendre **impossible, en pratique, toute identification de la personne** par quelque moyen que ce soit et ce de **manière irréversible**.
+::: lexique Anonymisation
+« **L’anonymisation** est un traitement qui consiste à utiliser un ensemble de techniques de manière à rendre **impossible, en pratique, toute identification de la personne** par quelque moyen que ce soit et ce de **manière irréversible**. »
+:::
 
-> **La pseudonymisation** est un traitement de données personnelles réalisé de manière à ce qu'on ne puisse plus attribuer les données relatives à une personne physique sans avoir recours à des informations supplémentaires. En pratique **la pseudonymisation consiste à remplacer les données directement identifiantes** (nom, prénom, etc.) d’un jeu de données par des données indirectement identifiantes (alias, numéro dans un classement, etc.). [...] En pratique, il est toutefois bien souvent possible de retrouver l’identité de ceux-ci grâce à des données tierces. C’est pourquoi des données pseudonymisées demeurent des données personnelles. **L’opération de pseudonymisation est réversible, contrairement à l’anonymisation**.
+::: lexique Pseudonymisation
+« **La pseudonymisation** est un traitement de données personnelles réalisé de manière à ce qu'on ne puisse plus attribuer les données relatives à une personne physique sans avoir recours à des informations supplémentaires. En pratique **la pseudonymisation consiste à remplacer les données directement identifiantes** (nom, prénom, etc.) d’un jeu de données par des données indirectement identifiantes (alias, numéro dans un classement, etc.). [...] En pratique, il est toutefois bien souvent possible de retrouver l’identité de ceux-ci grâce à des données tierces. C’est pourquoi des données pseudonymisées demeurent des données personnelles. **L’opération de pseudonymisation est réversible, contrairement à l’anonymisation**. »
+:::
 
 La différence entre anonymisation et pseudonymisation réside ainsi dans le **caractère réversible ou non** de la dissimulation des données à caractère personnel.
 
 ::: tip Un exemple de différence entre pseudonymisation et anonymisation
 Supposons qu'une caisse d'allocations familiales (CAF) dispose d'une base de données contenant les noms, dates de naissance et adresses des demandeurs d'allocation logement en 2019, ainsi que les montants des allocations reçues et le nombre de personnes dans le foyer.
+14:33 16/06/2020
+Si la CAF souhaite **anonymiser** ces données, elle pourra supprimer les informations potentiellement identifiantes comme les noms, dates de naissances et adresses, puis aggréger les montants des allocations en ne publiant par exemple que la moyenne par commune. Impossible d'identifier qui se cache derrière les allocations reçues, ce qui garantit la protection totale des données personnelles. Mais impossible aussi de comparer les bénéficiaires des années 2018 ou 2020 avec ceux de 2019, puisque l'on ne dispose pas des données à l'échelle individuelle.
 
-Si la CAF souhaite **anonymiser** ces données, elle supprimera simplement les informations potentiellement identifiantes comme les noms, dates de naissances et adresses. Impossible de retrouver qui se cache derrière les allocations reçues, ce qui garantit la protection totale des données personnelles. Mais impossible aussi de comparer cette base avec celle des demandes de 2018 ou de 2020, puisque l'on ne peut identifier les bénéficiaires communs.
-
-Si elle souhaite **pseudonymiser** ces données, elle remplacera les noms et dates par un identifiant unique (au lieu de supprimer les colonnes) et remplacera les adresses complètes par les seuls codes postaux. On peut cette fois-ci comparer les identifiants entre bases pour retrouver les allocataires communs, sans pour autant être en mesure de connaître directement leur identité. Cependant, pour les codes postaux avec un faible nombre d'habitants, les informations sur les montants et la composition du foyer pourraient être recoupées avec d'autres informations afin d'identifier certains individus.
+Si elle souhaite **pseudonymiser** ces données, elle remplacera les noms et dates par un identifiant unique (au lieu de supprimer les colonnes) et remplacera les adresses complètes par les seules communes. On peut cette fois-ci comparer les identifiants entre bases pour retrouver les allocataires communs, sans pour autant être en mesure de connaître directement leur identité. Cependant, pour les communes avec un faible nombre d'habitants, les informations sur la composition du foyer pourraient être suffisantes pour réidentifier certains bénéficiaires et ainsi connaître le montant qu'ils perçoivent.
 :::
 
 Ainsi, si l'anonymisation seule garantit une totale protection des données à caractère personnel, elle implique parfois une importante perte d'information, nécessaire à empêcher la réidentification mais limitant les réutilisations possibles des données. La pseudonymisation est donc une alternative attractive, à condition de garantir une protection suffisante.
