@@ -4,8 +4,8 @@ permalink: /algorithmes/mention
 
 # Fiche pratique : l'obligation de mention explicite 
 
-::: tip 
-Ce contenu a été mis à jour le 22 juin 2020.
+::: tip Mise à jour
+Ce contenu a été mis à jour le 24 juin 2020.
 :::
 
 L'obligation de mention explicite pour les décisions administratives individuelles prises sur le fondement d'un traitement algorithmique est définie à [l'article L311-3-1](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000031366350&idArticle=LEGIARTI000033205535&dateTexte=&categorieLien=cid) du code des relations entre le public et l'administration (CRPA). 
@@ -29,8 +29,7 @@ Si:
 
 Alors vous devez remplir les [obligations liées à la transparence des algorithmes](https://guides.etalab.gouv.fr/algorithmes/guide/#quelles-sont-ces-obligations-en-matiere-de-transparence), dont l'obligation de mention explicite.
 
-::: tip 
-**Rappels**
+::: tip **Rappels**
 * La notion de « traitement algorithmique » s'étend au-delà de l'intelligence artificielle ou des algorithmes de _machine learning_. **Un classeur Excel constitue un traitement algorithmique.** De même, un traitement algorithmique peut aussi exister sous la forme d'un document non-informatisé (par exemple une grille de notation d'un projet).
 * L'obligation de mention explicite s'applique également aux décisions non automatisées. Cependant, une disposition est spécifique aux traitements entièrement automatisés : **à compter du 1er juillet, une décision prise sur le seule fondement d'un traitement entièrement automatisé ne comportant pas mention explicite est nulle** (voir l'[article 47 de la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés](https://www.legifrance.gouv.fr/affichTexteArticle.do;jsessionid=BA2A3F5899F111B7EABC111BA4B752CE.tplgfr34s_2?idArticle=LEGIARTI000037823131&cidTexte=JORFTEXT000000886460&categorieLien=id&dateTexte=)).
 * Cette obligation s'applique pour les décisions individuelles envers des personnes physiques **et morales**. 
