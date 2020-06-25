@@ -10,7 +10,7 @@ Ce guide, ouvert aux contributions et publié dans le cadre du [programme de tra
 - La seconde partie détaille les **enjeux en termes d'éthique et de responsabilité**, 
 - La troisième partie présente le **cadre juridique applicable** en matière de transparence des algorithmes notamment suite à l'adoption de la loi pour une République numérique.
 
-📎 Etalab propose par ailleurs d'autres ressources en lien avec ce sujet: la [liste des algorithmes publics publiés](https://github.com/etalab/algorithmes-publics/blob/master/liste.org) par les administrations  ainsi qu'un [guide sur l'ouverture des codes sources](https://github.com/etalab/ouverture-des-codes-sources-publics). 
+📎 Etalab propose par ailleurs d'autres ressources en lien avec ce sujet, notamment un [guide sur l'ouverture des codes sources](https://github.com/etalab/ouverture-des-codes-sources-publics).
 
 ## À qui est-il destiné ?
 
