@@ -1,0 +1,37 @@
+name: "Build and deploy"
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Cache Node.js modules
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.OS }}-node-${{ hashFiles('package-lock.json') }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Lint Markdown files
+      run: npm run lint-md
+
+    - name: Build VuePress website
+      run: npm run build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/master'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: public
+        user_name: 'actions-user'
+        user_email: 'actions@github.com'
+        force_orphan: true
+        cname: guides.etalab.gouv.fr
