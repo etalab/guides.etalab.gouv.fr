@@ -31,6 +31,11 @@ jobs:
     - name: Build VuePress website
       run: npm run build
 
+    - uses: actions/upload-artifact@v2
+      with:
+        name: website
+        path: public/
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/master'
