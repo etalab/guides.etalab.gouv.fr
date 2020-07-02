@@ -9,7 +9,8 @@ La mission Etalab accompagne les administrations dans la mise en oeuvre du princ
 Ce dépôt contient: 
 - le [guide des algorithmes publics](0-guide.md) à l'usage des administrations, 
 - la présentation du [programme de travail d'Etalab](1-programme-de-travail.md) et des partenaires mobilisés,
-- une liste de [ressources](2-ressources.md) utiles (rapports, articles, outils, évènements, ...).
+- une liste de [ressources](2-ressources.md) utiles (rapports, articles, outils, évènements, ...),
+- un lien vers le [webinaire](https://www.dailymotion.com/video/x7uqnv9) "Mettre en oeuvre les obligations de transparence des algorithmes publics".
 
 [In english]
 
