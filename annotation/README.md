@@ -47,7 +47,7 @@ logiciel d'annotation. Cette partie concerne uniquement les logiciels d'annotati
 façon récurrente dans ce guide. 
 
 ::: tip Ce que ce guide n'est pas
-- xxx
+- xxxx
 :::
 
 ## Comment contribuer ?
