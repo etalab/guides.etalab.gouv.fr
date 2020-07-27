@@ -35,15 +35,38 @@ bonnes pratiques afin d'y parvenir.
 
 ## Des exemples de projets comportant une phase d'annotation 
 
+Les exemples de projets comportant une phase d'annotation sont nombreux. Cette partie présente quelques 
+exemples dans le secteur public. 
 
-Avant de présenter plus en détail les étapes d'un projet d'annotation, des exemples de projets impliquant
-une phase d'annotation permettront d'illustrer la suite. 
-Les exemples sont 
-- PIAF
+### PIAF (Pour des IA Francophones)
 
-- ASN 
+[PIAF](https://piaf.etalab.studio/) est un projet porté par le Lab IA d'Etalab qui a pour but de 
+constituer un jeu de données francophone pour entraîner des algorithmes d’intelligence artificielle (IA) 
+de questions-réponses. Ces derniers permettent de trouver des réponses à des questions précises 
+portant sur un ensemble de documents. Construire des algorithmes performants de questions-réponses 
+(question-answering en anglais) compte aujourd’hui parmi les tâches les plus complexes du 
+traitement du langage naturel. Or avant le lancement du projet en 2019, il n'existait pas de jeu de 
+données de ce type en français. Les algorithmes de questions-réponses sont pourtant utiles 
+dans plein de domaines, et les [cas d'usage](https://piaf.etalab.studio/cas-usage/) 
+sont nombreux, on y compte par exemple la création 
+d'agents conversationnels ou l'amélioration de moteurs de recherche. 
+
+La tâche d'annotation consiste ici à annoter des paragraphes de wikipédia. Pour chaque paragraphe, 
+l'annotateur a pour tâche de trouver cinq questions portant sur le paragraphe et 
+y souligner la réponse correpondante. Pour plus d'information, vous pouvez vous référer 
+au [protocole d'annotation](https://piaf.etalab.studio/img/fr_protocol.pdf). Une [plateforme d'annotation](https://app.piaf.etalab.studio/signup/) 
+a été développée est permet à toute personne francophone d'annoter des paragraphes afin d'alimenter le jeu de 
+données. 
+
  
-- Pseudo pour Cour de Cassation 
+### La pseudonymisation des décisions de justice à la Cour de Cassation  
+
+
+
+
+### Projet d'aide à la décision de l'Autorité de Sûreté Nucléaire (ASN) 
+
+
 
 ## Les différents objectifs de l'annotation 
 
