@@ -4,17 +4,18 @@ permalink: /annotation/
 
 # Introduction
 
-Le développement de solutions d'intelligence artificielle nécessite souvent des données 
+Le développement de solutions d'intelligence artificielle nécessite souvent de disposer de données 
 dites labélisées ou étiquetées. Ces étiquettes ou labels servent à catégoriser les différentes données, 
 on peut par exemple chercher à attribuer la catégorie chien ou chat à une photographie d'animal, 
 ou encore chercher à attribuer une thématique (sport, politique, économie) à un article de presse. 
 Dans beaucoup de situations, ces ensembles de données labélisées ne sont pas consitués. Une phase d'annotation 
-est alors nécessaire afin d'entraîner un algorithme à effectuer cette tâche de catégorisation 
+est alors nécessaire afin de construire un jeu de données labélisées, lequel permettra d'entraîner un algorithme 
+à effectuer cette tâche de catégorisation 
 sur de nouveaux exemples dont on ne connaitrait pas le label. L'annotation est la tâche manuelle (et donc humaine) 
 qui consiste à attribuer à chaque élément d'un ensemble de données le label qui lui correspond. Les données à annoter 
 peuvent prendre différentes formes (documents textuels, images, vidéos, fichiers audios). 
-Cette phase d'annotation, bien que déterminante pour le succès d'un projet d'intelligence artificielle,
-peut être complexe et coûteuse à mettre en place. 
+Cette phase d'annotation, déterminante pour le succès d'un projet d'intelligence artificielle,
+est souvent complexe et coûteuse à mettre en place. 
 
 
 ## À quoi sert ce guide ?
@@ -38,10 +39,10 @@ des profils techniques et des profils "métier".
 Ce guide est composé de trois parties et d'un lexique :
 
 - La [première partie](1-pourquoi-annoter.md) explicite dans quelles situations l'annotation est 
-nécessaire et fournit quelques exemples de projets avec une phase d'annotation. 
+nécessaire et fournit quelques exemples de projets comportant une phase d'annotation. 
 - La [deuxième partie](2-comment-annoter.md) détaille les différentes étapes d'un projet d'annotation et propose
 des lignes directrices pour les mener à bien.
-- La [troisième partie](3-les-logiciels-d'annotation.md) fournit les critères clés pour sélectionner un 
+- La [troisième partie](3-les-logiciels-d'annotation.md) fournit un ensemble de critères clés pour sélectionner un 
 logiciel d'annotation. Cette partie concerne uniquement les logiciels d'annotation de documents textuels. 
 - Le [lexique proposé en annexe](4-lexique.md) propose les définitions de termes techniques utilisés de 
 façon récurrente dans ce guide. 
