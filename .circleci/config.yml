@@ -12,9 +12,13 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install Alpine dependencies
+          command: |
+            apk add git python3 texlive texmf-dist-latexextra texmf-dist-fontsextra
+      - run:
           name: Install pandoc-guides
           command: |
-            git clone git@github.com:AntoineAugusti/pandoc-guides.git /tmp/pandoc-guides
+            git clone https://github.com/AntoineAugusti/pandoc-guides.git /tmp/pandoc-guides
             cp /tmp/pandoc-guides/* .
             python3 -m venv venv
             source venv/bin/activate
