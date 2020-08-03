@@ -5,7 +5,7 @@ permalink: /qualite/lier-les-donnees-a-un-referentiel
 # Lier les données à un référentiel
 
 
-Comme explicité dans la page [Préparer le jeu de données](1-preparer-le-jeu-de-donnees.md#cas-2-la-structure-du-jeu-de-donnees-ne-correspond-a-aucun-schema-de-donnees-existant), il peut être pertinent d'intégrer dans vos jeux de données des données pivots relevant d'un référentiel.
+Comme explicité dans la page [Préparer le jeu de données](1-preparer-le-jeu-de-donnees.md#cas-2-la-structure-du-jeu-de-donnees-ne-correspond-a-aucun-schema-de-donnees-existant), il est important d'intégrer dans vos jeux de données des données pivots relevant d'un référentiel.
 
 :::tip Exemple
 Mon jeu de données est une liste d'actions culturelles menées par ma région. Certaines de ces actions sont gérées par des associations. Il pourrait être intéressant de publier un jeu de données recensant ces actions avec un champs correspondant à l'identification des associations. Cet identifiant existe et est standardisé, il s'agit du N° RNA, identifiant national des associations porté par le ministère de l'intérieur.
@@ -13,12 +13,14 @@ Mon jeu de données est une liste d'actions culturelles menées par ma région. 
 
 ## Avantages
 
-L'utilisation de données pivot correspondant à un référentiel offre plusieurs avantages : 
+L'utilisation de données pivots correspondant à un référentiel offre plusieurs avantages : 
 - **une meilleure formalisation** : en se basant sur un référentiel, le producteur de données a l'assurance d'utiliser un format de données standard et partagé par un grand nombre de jeux de données.  
 - **une meilleure synthèse** : en se basant sur un référentiel, le producteur évite l’abondance de détails et va à l’essentiel. L'’obtention d’informations complémentaires se fera par le biais de la consultation du référentiel en lui-même.
 - **une meilleure compréhension** : en intégrant dans son jeu de données des données correspondant à un référentiel, le producteur facilite la compréhension de celui-ci par des éventuels utilisateurs car il se réfère à un standard largement adopté
 - **une meilleure réutilisation** : intégrer des données liées à un référentiel facilitera la réutilisation du jeu de données et permettra son enrichissement avec d'autres données partageant la même donnée pivot. 
 - **une meilleure interopérabilité** : intégrer des données pivots facilite le lien avec des données de référence fiables et à jour.
+
+
 
 ## Exemples de référentiels
 
@@ -80,6 +82,20 @@ Les référentiels techniques ne portent pas en eux-mêmes de significations mé
 
 
 ### Partager ses propres référentiels
+
+
+::: warning À noter
+Le [Cadre Commun d'Architecture des référentiels de données de l'Etat](https://references.modernisation.gouv.fr/sites/default/files/Cadre%20Commun%20d%27Architecture%20des%20R%C3%A9f%C3%A9rentiel%20de%20donn%C3%A9es%20v1.0_0.pdf) fait spécifiquement mention de l'importance des variables pivots dans le partage et la publication de données : 
+- D1 : les données sont un bien, un actif de l’État, elles doivent être gérées et valorisées en
+conséquence.
+- D2 : les données doivent être standardisées, définies sur la base d’un vocabulaire commun,
+contextualisées, et combinables les unes aux autres.
+- D3 : les données doivent être facilement réutilisables, partageables et accessibles à travers les
+frontières des administrations.
+- D4 : les données publiques doivent être mises à disposition librement et ouvertement sur
+internet
+- D5 : Sécurité et archivage des données
+:::
 
 Pour favoriser au mieux le partage et l'interopérabilité des données, il est donc encouragé pour chacun des acteurs de mettre en place ses propres référentiels internes ou de les paratager s'ils existent déjà. 
 
