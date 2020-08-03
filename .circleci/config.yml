@@ -6,6 +6,27 @@ _default: &default
   working_directory: ~/repo
 
 jobs:
+  pdf:
+    docker:
+      - image: pandoc/latex:latest
+    steps:
+      - checkout
+      - run:
+          name: Install pandoc-guides
+          command: |
+            git clone git@github.com:AntoineAugusti/pandoc-guides.git /tmp/pandoc-guides
+            cp /tmp/pandoc-guides/* .
+            python3 -m venv venv
+            source venv/bin/activate
+            pip install -r requirements.txt
+      - run:
+          name: Generate PDF files
+          command: |
+            source venv/bin/activate
+            python main.py producteurs-schemas "Créer un schéma de données" pdf/guide-schema.pdf
+            python main.py juridique "Identifier les données à ouvrir" pdf/guide-juridique.pdf
+      - store_artifacts:
+          path: pdf
   lint-md:
     <<: *default
     steps:
@@ -43,6 +64,7 @@ workflows:
   commit:
     jobs:
       - lint-md
+      - pdf
   cron:
     triggers:
       - schedule:
