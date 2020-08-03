@@ -11,9 +11,9 @@ Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce t
 
 <Button link="/qualite/" text="Comment préparer des données à l'ouverture / la circulation ?" />
 
-<Button link="/juridique/" text="Quels jeux de données doivent être publiés en open data ? " />
+<Button link="/juridique/" text="Quelles données doivent être publiées en open data ? " />
 
-<Button link="/data.gouv.fr/" text="Comment publier des jeux de données sur data.gouv.fr ?" />
+<Button link="/data.gouv.fr/" text="Comment publier des données sur data.gouv.fr ?" />
 
 <Button link="/producteurs-schemas/" text="Pourquoi et comment créer un schéma de données ?" />
 
