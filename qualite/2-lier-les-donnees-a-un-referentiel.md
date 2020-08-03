@@ -20,9 +20,6 @@ L'utilisation de données pivot correspondant à un référentiel offre plusieur
 - une meilleure réutilisation : intégrer des données liées à un référentiel facilitera la réutilisation du jeu de données et permettra son enrichissement avec d'autres données partageant la même donnée pivot. 
 - une meilleure interopérabilité : intégrer des données pivots facilite le lien avec des données de référence fiables et à jour.
 
-
-
-
 ## Exemples de référentiels
 
 ### Le service public de la donnée
@@ -91,7 +88,6 @@ Ainsi, il est pertinent de diffuser en même temps que votre jeu de données, la
 :::tip Exemple
 J'utilise en interne un numéro unique permettant d'identifier chaque type d'action culturelle (arts du spectacles, cirque, arts plastiques...). Il peut être pertinent de diffuser en parallèle à la diffusion de mon jeu de données, la liste de mon référentiel. Des communes de ma région pourraient potentiellement le réutiliser pour décrire leurs actions culturelles à une maille plus fine.
 :::
-
 
 ## Le cas spécifique des adresses
 
