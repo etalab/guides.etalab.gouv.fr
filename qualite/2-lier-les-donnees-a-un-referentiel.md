@@ -14,11 +14,11 @@ Mon jeu de données est une liste d'actions culturelles menées par ma région. 
 ## Avantages
 
 L'utilisation de données pivot correspondant à un référentiel offre plusieurs avantages : 
-- une meilleure formalisation : en se basant sur un référentiel, le producteur de données a l'assurance d'utiliser un format de données standard et partagé par un grand nombre de jeux de données.  
-- une meilleure synthèse : en se basant sur un référentiel, le producteur évite l’abondance de détails et va à l’essentiel. L'’obtention d’informations complémentaires se fera par le biais de la consultation du référentiel en lui-même.
-- une meilleure compréhension : en intégrant dans son jeu de données des données correspondant à un référentiel, le producteur facilite la compréhension de celui-ci par des éventuels utilisateurs car il se réfère à un standard largement adopté
-- une meilleure réutilisation : intégrer des données liées à un référentiel facilitera la réutilisation du jeu de données et permettra son enrichissement avec d'autres données partageant la même donnée pivot. 
-- une meilleure interopérabilité : intégrer des données pivots facilite le lien avec des données de référence fiables et à jour.
+- **une meilleure formalisation** : en se basant sur un référentiel, le producteur de données a l'assurance d'utiliser un format de données standard et partagé par un grand nombre de jeux de données.  
+- **une meilleure synthèse** : en se basant sur un référentiel, le producteur évite l’abondance de détails et va à l’essentiel. L'’obtention d’informations complémentaires se fera par le biais de la consultation du référentiel en lui-même.
+- **une meilleure compréhension** : en intégrant dans son jeu de données des données correspondant à un référentiel, le producteur facilite la compréhension de celui-ci par des éventuels utilisateurs car il se réfère à un standard largement adopté
+- **une meilleure réutilisation** : intégrer des données liées à un référentiel facilitera la réutilisation du jeu de données et permettra son enrichissement avec d'autres données partageant la même donnée pivot. 
+- **une meilleure interopérabilité** : intégrer des données pivots facilite le lien avec des données de référence fiables et à jour.
 
 ## Exemples de référentiels
 
@@ -71,7 +71,7 @@ Vous trouverez ci-dessous un recensement non exhaustif de différents référent
 
 #### Référentiels techniques
 
-Les référentiels techniques ne portent pas en eux-mêmes de significations métiers. Par contre, ils permettent de décrire une donnée de manière standardisée. Ces standards permettent aux utilisateurs et aux algorithmes de pouvoir automatiquement interpréter la donnée de manière correcte. C'est le cas notamment principalement des dates et des coordonnées géographiques pour lesquels nous listons ci-dessous deux exemples de standards largement adopté.
+Les référentiels techniques ne portent pas en eux-mêmes de significations métiers. Par contre, ils permettent de décrire une donnée de manière standardisée. Ces standards permettent aux utilisateurs et aux algorithmes de pouvoir automatiquement interpréter la donnée de manière correcte. C'est le cas notamment principalement des dates et des coordonnées géographiques pour lesquels nous listons ci-dessous deux exemples de standards largement adoptés.
 
 | Nom du référentiel | Description | Information |
 | --- | --- | --- |
@@ -81,7 +81,7 @@ Les référentiels techniques ne portent pas en eux-mêmes de significations mé
 
 ### Partager ses propres référentiels
 
-Pour favoriser au mieux le partage et l'interopérabilité des données, il est donc encourager pour chacun des acteurs de mettre en place ses propres référentiels internes ou de les paratager s'ils existent déjà. 
+Pour favoriser au mieux le partage et l'interopérabilité des données, il est donc encouragé pour chacun des acteurs de mettre en place ses propres référentiels internes ou de les paratager s'ils existent déjà. 
 
 Ainsi, il est pertinent de diffuser en même temps que votre jeu de données, la liste des valeurs possibles correspondant à votre propre référentiel métier. Celui-ci sera donc connu et potentiellement réutilisé par d'autres.
 
@@ -109,4 +109,4 @@ En utilisant l'outil avec un jeu de données contenant des adresses, l'applicati
 
 Le site https://adresse.data.gouv.fr est limité à des utilisations ponctuelles et des volumétries de données considérées faibles (moins d'un million de lignes). Si vous souhaitez géocoder un très gros jeu de données (plusieurs millions de lignes), il est recommandé d'installer votre propre environnement de géocodage, en utilisant par exemple le géocodeur [Addok](https://addok.readthedocs.io/fr/latest/). Vous pouvez consulter des ressources sur [github](https://github.com/etalab/addok-docker) pour vous aider dans l'installation de votre environnement.
 
-Qu'importe la méthode utilisée, le process de géocodage vous retournera une liste d'adresses standardisées avec leurs coordonnées géographiques associées. De plus, vous aurez également accès à une information `geo_score` correspondant au score de confiance que le géocodeur accorde à l'adresse retournée. Cet indicateur peut être utile à garder dans votre jeu de données final car il donnera une indication aux utilisateurs sur la performance du géocodage pour chaque adresse.
+Qu'importe la méthode utilisée, le processus de géocodage vous retournera une liste d'adresses standardisées avec leurs coordonnées géographiques associées. De plus, vous aurez également accès à une information `geo_score` correspondant au score de confiance que le géocodeur accorde à l'adresse retournée. Cet indicateur peut être utile à garder dans votre jeu de données final car il donnera une indication aux utilisateurs sur la performance du géocodage pour chaque adresse.
