@@ -10,11 +10,11 @@ jobs:
     docker:
       - image: pandoc/latex:latest
     steps:
-      - checkout
       - run:
           name: Install Alpine dependencies
           command: |
-            apk add git python3 texlive texmf-dist-latexextra texmf-dist-fontsextra
+            apk add git python3 texlive texmf-dist-most
+      - checkout
       - run:
           name: Install pandoc-guides
           command: |
