@@ -8,25 +8,28 @@ _default: &default
 jobs:
   pdf:
     docker:
-      - image: pandoc/latex:latest
+      - image: aergus/latex:latest
     steps:
       - run:
-          name: Install Alpine dependencies
+          name: Install dependencies
           command: |
-            apk update
-            apk add git python3 py-pip texlive texmf-dist texmf-dist-latexextra texmf-dist-fontsextra
+            apt update
+            apt install python3
       - checkout
       - run:
           name: Install pandoc-guides
           command: |
             git clone https://github.com/AntoineAugusti/pandoc-guides.git /tmp/pandoc-guides
             cp /tmp/pandoc-guides/* .
-            pip3 install -r requirements.txt
+            python3 -m venv venv
+            source venv/bin/activate
+            pip install -r requirements.txt
       - run:
           name: Generate PDF files
           command: |
-            python3 main.py producteurs-schemas "Créer un schéma de données" pdf/guide-schema.pdf
-            python3 main.py juridique "Identifier les données à ouvrir" pdf/guide-juridique.pdf
+            source venv/bin/activate
+            python main.py producteurs-schemas "Créer un schéma de données" pdf/guide-schema.pdf
+            python main.py juridique "Identifier les données à ouvrir" pdf/guide-juridique.pdf
       - store_artifacts:
           path: pdf
   lint-md:
