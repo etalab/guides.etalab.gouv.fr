@@ -76,7 +76,7 @@ Tant que les données de votre administration sont dans un environnement logicie
 Les bonnes pratiques à suivre sont les suivantes :
 * Occulter l’ensemble des colonnes dont les champs contiennent des données couvertes par un secret légal (se référer au guide juridique pour plus d’information) ;
 * Occulter l’ensemble des colonnes dont les champs contiennent des données à caractère personnel dont la publication n’est pas nécessaire à l’information du public (se référer au guide juridique pour plus d’information) ;
-* Privilégier la présence de variables pivots. Ces variables proposent des identifiants communs qui permettent de lier plusieurs jeux de données entre eux (ex. Le numéro d’identification SIRET de la base Sirene).
+* Privilégier la présence de variables pivots. Ces variables proposent des identifiants communs qui permettent de lier plusieurs jeux de données entre eux (ex. Le numéro d’identification SIRET de la base Sirene). Pour plus de détails, consultez la page [Lier les données à un référentiel](2-lier-les-donnees-a-un-referentiel.md)
 
 Il est également nécessaire de mener une réflexion sur la granularité de votre jeu de données :
 * Faut-il proposer des données fines ou agrégées ?
