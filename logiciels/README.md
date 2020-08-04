@@ -233,6 +233,3 @@ Ce document est maintenu par Bastien Guerry à Etalab.
 
 Pour toute question, vous pouvez écrire à `opensource@data.gouv.fr` ou
 directement à `bastien.guerry@data.gouv.fr`.
-
-Vous pouvez aussi contribuer avec des suggestions en [ouvrant une issue](https://github.com/etalab/opendata-logiciels/issues/new)
-ou en proposant une *pull request*.
