@@ -17,6 +17,12 @@ jobs:
             apt install -y python3-venv
       - checkout
       - run:
+          name: Install coloremoji
+          command: |
+            mkdir -p ~/texmf/tex/latex
+            cd ~/texmf/tex/latex
+            git clone git@github.com:mkskeller/coloremoji.sty.git
+      - run:
           name: Install pandoc-guides
           command: |
             git clone https://github.com/AntoineAugusti/pandoc-guides.git /tmp/pandoc-guides
