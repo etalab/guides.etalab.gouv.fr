@@ -28,8 +28,13 @@ jobs:
           name: Generate PDF files
           command: |
             source venv/bin/activate
-            python main.py producteurs-schemas "Créer un schéma de données" pdf/guide-schema.pdf
+            python main.py algorithmes 'Expliquer les algorithmes publics' pdf/guide-algorithmes.pdf
+            python main.py data.gouv.fr 'Publier les données sur data.gouv.fr' pdf/guide-data.gouv.fr.pdf
             python main.py juridique "Identifier les données à ouvrir" pdf/guide-juridique.pdf
+            python main.py logiciels 'Ouvrir les codes sources' pdf/guide-logiciels.pdf
+            python main.py producteurs-schemas 'Créer des schémas de données' pdf/guide-producteurs-schemas.pdf
+            python main.py pseudonymisation "Pseudonymiser des documents grâce à l'IA" pdf/guide-pseudonymisation.pdf
+            python main.py qualite "Préparer les données à l'ouverture et la circulation" pdf/guide-qualite.pdf
       - store_artifacts:
           path: pdf
   lint-md:
