@@ -19,9 +19,10 @@ jobs:
       - run:
           name: Install coloremoji
           command: |
-            mkdir -p ~/texmf/tex/latex
-            cd ~/texmf/tex/latex
-            git clone git@github.com:mkskeller/coloremoji.sty.git
+            TEXMFHOME=`kpsewhich -var-value TEXMFHOME`
+            mkdir -p ${TEXMFHOME}/tex/latex/local
+            cd ${TEXMFHOME}/tex/latex/local
+            git clone https://github.com/FlorianLudwig/coloremoji.sty.git
       - run:
           name: Install pandoc-guides
           command: |
