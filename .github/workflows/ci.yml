@@ -8,17 +8,20 @@ jobs:
     name: Publish to GitHub Pages
     needs: pdf
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
 
     steps:
     - name: Download website build
       uses: actions/download-artifact@v2
       with:
         name: website
+        path: public/
 
     - name: Download PDF build
       uses: actions/download-artifact@v2
       with:
         name: pdf
+        path: pdf/
 
     - name: Move PDF files
       run: mv pdf public/
@@ -104,14 +107,3 @@ jobs:
       with:
         name: website
         path: public/
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/master'
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: public
-        user_name: 'actions-user'
-        user_email: 'actions@github.com'
-        force_orphan: true
-        cname: guides.etalab.gouv.fr
