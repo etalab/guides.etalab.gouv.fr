@@ -41,7 +41,7 @@ Ce guide est composé de trois parties et d'un lexique :
 - La [première partie](1-pourquoi-annoter.md) explicite dans quelles situations l'annotation est 
 nécessaire et fournit quelques exemples de projets comportant une phase d'annotation. 
 - La [deuxième partie](2-comment-annoter.md) détaille les différentes étapes d'un projet d'annotation et propose
-des lignes directrices pour les mener à bien.
+des lignes directrices pour la conduite d'un tel projet.
 - La [troisième partie](3-les-logiciels-d'annotation.md) fournit un ensemble de critères clés pour sélectionner un 
 logiciel d'annotation. Cette partie concerne uniquement les logiciels d'annotation de documents textuels. 
 - Le [lexique proposé en annexe](4-lexique.md) propose les définitions de termes techniques utilisés de 
