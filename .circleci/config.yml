@@ -17,13 +17,6 @@ jobs:
             apt install -y python3-venv
       - checkout
       - run:
-          name: Install coloremoji
-          command: |
-            TEXMFHOME=`kpsewhich -var-value TEXMFHOME`
-            mkdir -p ${TEXMFHOME}/tex/latex/local
-            cd ${TEXMFHOME}/tex/latex/local
-            git clone https://github.com/FlorianLudwig/coloremoji.sty.git
-      - run:
           name: Install pandoc-guides
           command: |
             git clone https://github.com/AntoineAugusti/pandoc-guides.git /tmp/pandoc-guides
