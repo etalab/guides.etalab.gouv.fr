@@ -4,9 +4,77 @@ on:
   push:
 
 jobs:
-  build:
+  publish:
+    name: Publish to GitHub Pages
+    needs: pdf
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download website build
+      uses: actions/download-artifact@v2
+      with:
+        name: website
+
+    - name: Download PDF build
+      uses: actions/download-artifact@v2
+      with:
+        name: pdf
+
+    - name: Move PDF files
+      run: mv pdf public/
+
+    - name: Deploy to GitHub Pages
+    uses: peaceiris/actions-gh-pages@v3
+    if: github.ref == 'refs/heads/master'
+    with:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      publish_dir: public
+      user_name: 'actions-user'
+      user_email: 'actions@github.com'
+      force_orphan: true
+      cname: guides.etalab.gouv.fr
+
+  pdf:
+    name: Build PDF files
+    needs: build
     runs-on: ubuntu-latest
     container: aergus/latex:latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        apt update
+        apt install -y python3-venv
+
+    - name: Install pandoc-guides
+      run: |
+        git clone https://github.com/AntoineAugusti/pandoc-guides.git /tmp/pandoc-guides
+        cp /tmp/pandoc-guides/* .
+        python3 -m venv venv
+        source venv/bin/activate
+        pip install -r requirements.txt
+
+    - name: Generate PDF files
+      run: |
+        source venv/bin/activate
+        python main.py algorithmes 'Expliquer les algorithmes publics' pdf/guide-algorithmes.pdf
+        python main.py data.gouv.fr 'Publier les données sur data.gouv.fr' pdf/guide-data.gouv.fr.pdf
+        python main.py juridique "Identifier les données à ouvrir" pdf/guide-juridique.pdf
+        python main.py logiciels 'Ouvrir les codes sources' pdf/guide-logiciels.pdf
+        python main.py producteurs-schemas 'Créer des schémas de données' pdf/guide-producteurs-schemas.pdf
+        python main.py pseudonymisation "Pseudonymiser des documents grâce à l'IA" pdf/guide-pseudonymisation.pdf
+        python main.py qualite "Préparer les données à l'ouverture et la circulation" pdf/guide-qualite.pdf
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: pdf
+        path: pdf/
+
+  build:
+    name: Lint and build website
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -31,30 +99,6 @@ jobs:
 
     - name: Build VuePress website
       run: npm run build
-
-    - name: Install dependencies
-      run: |
-        apt update
-        apt install -y python3-venv
-
-    - name: Install pandoc-guides
-      run: |
-        git clone https://github.com/AntoineAugusti/pandoc-guides.git /tmp/pandoc-guides
-        cp /tmp/pandoc-guides/* .
-        python3 -m venv venv
-        source venv/bin/activate
-        pip install -r requirements.txt
-
-    - name: Generate PDF files
-      run: |
-        source venv/bin/activate
-        python main.py algorithmes 'Expliquer les algorithmes publics' public/pdf/guide-algorithmes.pdf
-        python main.py data.gouv.fr 'Publier les données sur data.gouv.fr' public/pdf/guide-data.gouv.fr.pdf
-        python main.py juridique "Identifier les données à ouvrir" public/pdf/guide-juridique.pdf
-        python main.py logiciels 'Ouvrir les codes sources' public/pdf/guide-logiciels.pdf
-        python main.py producteurs-schemas 'Créer des schémas de données' public/pdf/guide-producteurs-schemas.pdf
-        python main.py pseudonymisation "Pseudonymiser des documents grâce à l'IA" public/pdf/guide-pseudonymisation.pdf
-        python main.py qualite "Préparer les données à l'ouverture et la circulation" public/pdf/guide-qualite.pdf
 
     - uses: actions/upload-artifact@v2
       with:
