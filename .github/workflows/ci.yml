@@ -52,17 +52,20 @@ jobs:
       run: |
         git clone https://github.com/AntoineAugusti/pandoc-guides.git /tmp/pandoc-guides
         cp /tmp/pandoc-guides/* .
-        pip3 install -r requirements.txt
+        python3 -m venv venv
+        . venv/bin/activate
+        pip install -r requirements.txt
 
     - name: Generate PDF files
       run: |
-        python3 main.py algorithmes 'Expliquer les algorithmes publics' pdf/guide-algorithmes.pdf
-        python3 main.py data.gouv.fr 'Publier les données sur data.gouv.fr' pdf/guide-data.gouv.fr.pdf
-        python3 main.py juridique "Identifier les données à ouvrir" pdf/guide-juridique.pdf
-        python3 main.py logiciels 'Ouvrir les codes sources' pdf/guide-logiciels.pdf
-        python3 main.py producteurs-schemas 'Créer des schémas de données' pdf/guide-producteurs-schemas.pdf
-        python3 main.py pseudonymisation "Pseudonymiser des documents grâce à l'IA" pdf/guide-pseudonymisation.pdf
-        python3 main.py qualite "Préparer les données à l'ouverture et la circulation" pdf/guide-qualite.pdf
+        . venv/bin/activate
+        python main.py algorithmes 'Expliquer les algorithmes publics' pdf/guide-algorithmes.pdf
+        python main.py data.gouv.fr 'Publier les données sur data.gouv.fr' pdf/guide-data.gouv.fr.pdf
+        python main.py juridique "Identifier les données à ouvrir" pdf/guide-juridique.pdf
+        python main.py logiciels 'Ouvrir les codes sources' pdf/guide-logiciels.pdf
+        python main.py producteurs-schemas 'Créer des schémas de données' pdf/guide-producteurs-schemas.pdf
+        python main.py pseudonymisation "Pseudonymiser des documents grâce à l'IA" pdf/guide-pseudonymisation.pdf
+        python main.py qualite "Préparer les données à l'ouverture et la circulation" pdf/guide-qualite.pdf
 
     - uses: actions/upload-artifact@v2
       with:
