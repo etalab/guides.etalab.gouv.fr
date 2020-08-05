@@ -5,7 +5,7 @@ sidebar: false
 
 # Exports des guides en PDF
 
-Tous les guides présents sur ce site web sont télécheargeables au format PDF. Ceci vous permet de les lire lorsque vous n'avez pas accès à Internet ou les imprimer en cas de besoin.
+Tous les guides présents sur ce site web sont téléchargeables au format PDF. Ceci vous permet de les lire lorsque vous n'avez pas accès à Internet ou les imprimer en cas de besoin.
 
 <PDFExports/>
 
