@@ -7,8 +7,8 @@ permalink: /qualite/lier-les-donnees-a-un-referentiel
 
 Comme explicité dans la page [Préparer le jeu de données - *Cas 2 - La structure du jeu de données ne correspond à aucun schéma de données existant*](/qualite/preparer-le-jeu-de-donnees/#cas-2-la-structure-du-jeu-de-donnees-ne-correspond-a-aucun-schema-de-donnees-existant), il est important d'intégrer dans vos jeux de données des données pivots relevant d'un référentiel.
 
-:::tip Exemple
-Mon jeu de données est une liste d'actions culturelles menées par ma région. Certaines de ces actions sont gérées par des associations. Il pourrait être intéressant de publier un jeu de données recensant ces actions avec un champs correspondant à l'identification des associations. Cet identifiant existe et est standardisé, il s'agit du N° RNA, identifiant national des associations porté par le ministère de l'intérieur.
+::: tip Exemple
+Mon jeu de données est une liste d'actions culturelles menées par ma région. Certaines de ces actions sont gérées par des associations. Il pourrait être intéressant de publier un jeu de données recensant ces actions avec un champs correspondant à l'identification des associations. Cet identifiant existe et est standardisé, il s'agit du N° RNA, identifiant national des associations porté par le ministère de l'Intérieur.
 :::
 
 ## Avantages
@@ -16,7 +16,7 @@ Mon jeu de données est une liste d'actions culturelles menées par ma région. 
 L'utilisation de données pivots correspondant à un référentiel offre plusieurs avantages : 
 - **une meilleure formalisation** : en se basant sur un référentiel, le producteur de données a l'assurance d'utiliser un format de données standard et partagé par un grand nombre de jeux de données.  
 - **une meilleure synthèse** : en se basant sur un référentiel, le producteur évite l’abondance de détails et va à l’essentiel. L'’obtention d’informations complémentaires se fera par le biais de la consultation du référentiel en lui-même.
-- **une meilleure compréhension** : en intégrant dans son jeu de données des données correspondant à un référentiel, le producteur facilite la compréhension de celui-ci par des éventuels utilisateurs car il se réfère à un standard largement adopté
+- **une meilleure compréhension** : en intégrant dans son jeu de données des données correspondant à un référentiel, le producteur facilite la compréhension de celui-ci par des éventuels utilisateurs car il se réfère à un standard largement adopté.
 - **une meilleure réutilisation** : intégrer des données liées à un référentiel facilitera la réutilisation du jeu de données et permettra son enrichissement avec d'autres données partageant la même donnée pivot. 
 - **une meilleure interopérabilité** : intégrer des données pivots facilite le lien avec des données de référence fiables et à jour.
 
@@ -29,23 +29,22 @@ L'utilisation de données pivots correspondant à un référentiel offre plusieu
 Parmi les nombreux référentiels existants, nous pouvons citer le service public de la données (SPD) qui contient 9 jeux de données maintenus de manière pérenne par des administrations. 
 
 ![Service Public de la Donnée](./images/spd.png)
-*Vous pouvez consulter sur le site data.gouv.fr la liste des données du SPD sur [sa page dédiée](https://www.data.gouv.fr/fr/reference).*
+*Vous pouvez consulter sur le site data.gouv.fr la liste [des données du SPD](https://www.data.gouv.fr/fr/reference).*
 
 Parmi ces jeux de données, nous pouvons citer entre autres : 
-- la base SIRENE listant l'ensemble des entreprises française. Les identifiants principaux liés à cette base sont le N° SIREN (identifiant d'une unité légale) et le N° SIRET (identifiant d'un établissement).
+- la base Sirene listant l'ensemble des entreprises françaises. Les identifiants principaux liés à cette base sont le N° SIREN (identifiant d'une unité légale) et le N° SIRET (identifiant d'un établissement).
 - la base du répertoire national des associations (RNA). L'identifiant des associations est le N° RNA
-- le code officiel géographique (COG) décrivant les codes et libellés exacts des communes, des cantons, des arrondissements, des départements, des régions et des pays et territoires étrangers.
+- le code officiel géographique (COG) décrivant les codes et libellés des communes, des cantons, des arrondissements, des départements, des régions et des pays et territoires étrangers.
 
-:::tip Exemple
-Pour lister l'ensemble des actions culturelles de ma région, nous avons vu que le N° RNA pouvait être utile pour identifier les associations. Grâce à celui-ci, nous pouvons également récupérer le N° SIRET de l'association si celle-ci en possède un. Nous pouvons également détailler dans notre jeu de données le code commune et le code département de chaque action. Pour cela, on se réfèrera au Code officiel géographique. 
-<br>***Attention à bien respecter celui-ci. Par exemple, le code département de l'Ariège est le "09" et pas le "9". Ce type d'erreur pourrait entraîner des problèmes de réutilisation des données.***
+::: tip Exemple
+Pour lister l'ensemble des actions culturelles de ma région, nous avons vu que le N° RNA pouvait être utile pour identifier les associations. Grâce à celui-ci, nous pouvons également récupérer le N° SIRET de l'association si celle-ci en possède un. Nous pouvons également détailler dans notre jeu de données le code commune et le code département de chaque action. Pour cela, on se réfèrera au Code officiel géographique. **Attention à bien respecter celui-ci. Par exemple, le code département de l'Ariège est le "09" et pas le "9". Ce type d'erreur pourrait entraîner des problèmes de réutilisation des données.**
 :::
 
 ### Les autres référentiels
 
-Au-delà du service public de la données, il existe un grand nombre de données standardisées et communément partagées avec le plus grand nombre. N'hésitez pas à intégrer des données pivot vers ces référentiels dans vos jeux de données si vous pensez que ceux-ci pourraient être pertinents.
-:::tip Exemple
-L'identifiant unique d'une certification professionnelle est le [N° RNCP](https://www.data.gouv.fr/fr/datasets/repertoire-national-des-certifications-professionnelles-et-repertoire-specifique/). Ce jeu de données ne fait pas partie du service public de la données mais est largement partagé par les acteurs du domaine de la formation professionnelle.
+Au-delà du service public de la donnée, il existe un grand nombre de données standardisées et communément partagées avec le plus grand nombre. N'hésitez pas à intégrer des données pivots vers ces référentiels dans vos jeux de données si vous pensez que ceux-ci pourraient être pertinents.
+::: tip Exemple
+L'identifiant unique d'une certification professionnelle est le [N° RNCP](https://www.data.gouv.fr/fr/datasets/repertoire-national-des-certifications-professionnelles-et-repertoire-specifique/). Ce jeu de données ne fait pas partie du service public de la donnée mais est largement partagé par les acteurs du domaine de la formation professionnelle.
 :::
 
 Vous trouverez ci-dessous un recensement non exhaustif de différents référentiels sur lesquels vous pouvez vous appuyer pour la mise en place de vos variables pivots :
@@ -73,12 +72,12 @@ Vous trouverez ci-dessous un recensement non exhaustif de différents référent
 
 #### Référentiels techniques
 
-Les référentiels techniques ne portent pas en eux-mêmes de significations métiers. Par contre, ils permettent de décrire une donnée de manière standardisée. Ces standards permettent aux utilisateurs et aux algorithmes de pouvoir automatiquement interpréter la donnée de manière correcte. C'est le cas notamment principalement des dates et des coordonnées géographiques pour lesquels nous listons ci-dessous deux exemples de standards largement adoptés.
+Les référentiels techniques n'ont pas de significations métiers. Cependant, ils permettent de décrire une donnée de manière standardisée. Ces standards permettent aux utilisateurs et aux algorithmes de pouvoir automatiquement interpréter la donnée de manière correcte. C'est le cas notamment principalement des dates et des coordonnées géographiques pour lesquels nous listons ci-dessous deux exemples de standards largement adoptés.
 
 | Nom du référentiel | Description | Information |
 | --- | --- | --- |
 | WGS84 | Coordonnées géodésique d'un lieu | [Wikipedia](https://fr.wikipedia.org/wiki/WGS_84) |
-| ISO8601 | Représentation numéroque d'une date et d'une heure | [Wikipedia](https://fr.wikipedia.org/wiki/ISO_8601) |
+| ISO8601 | Représentation numérique d'une date et d'une heure | [Wikipedia](https://fr.wikipedia.org/wiki/ISO_8601) |
 
 
 ### Partager ses propres référentiels
@@ -86,23 +85,25 @@ Les référentiels techniques ne portent pas en eux-mêmes de significations mé
 
 ::: warning À noter
 Le [Cadre Commun d'Architecture des référentiels de données de l'Etat](https://references.modernisation.gouv.fr/sites/default/files/Cadre%20Commun%20d%27Architecture%20des%20R%C3%A9f%C3%A9rentiel%20de%20donn%C3%A9es%20v1.0_0.pdf) fait spécifiquement mention de l'importance des variables pivots dans le partage et la publication de données : 
-- D1 : les données sont un bien, un actif de l’État, elles doivent être gérées et valorisées en
+- les données sont un bien, un actif de l’État, elles doivent être gérées et valorisées en
 conséquence.
-- D2 : les données doivent être standardisées, définies sur la base d’un vocabulaire commun,
+- les données doivent être standardisées, définies sur la base d’un vocabulaire commun,
 contextualisées, et combinables les unes aux autres.
-- D3 : les données doivent être facilement réutilisables, partageables et accessibles à travers les
+- les données doivent être facilement réutilisables, partageables et accessibles à travers les
 frontières des administrations.
-- D4 : les données publiques doivent être mises à disposition librement et ouvertement sur
+- les données publiques doivent être mises à disposition librement et ouvertement sur
 internet
-- D5 : Sécurité et archivage des données
+- Sécurité et archivage des données
 :::
 
-Pour favoriser au mieux le partage et l'interopérabilité des données, il est donc encouragé pour chacun des acteurs de mettre en place ses propres référentiels internes ou de les paratager s'ils existent déjà. 
+Pour favoriser au mieux le partage et l'interopérabilité des données, les acteurs sont encouragés à mettre en place leurs propres référentiels internes ou à les partager s'ils existent déjà. 
 
 Ainsi, il est pertinent de diffuser en même temps que votre jeu de données, la liste des valeurs possibles correspondant à votre propre référentiel métier. Celui-ci sera donc connu et potentiellement réutilisé par d'autres.
 
-:::tip Exemple
-J'utilise en interne un numéro unique permettant d'identifier chaque type d'action culturelle (arts du spectacles, cirque, arts plastiques...). Il peut être pertinent de diffuser en parallèle à la diffusion de mon jeu de données, la liste de mon référentiel. Des communes de ma région pourraient potentiellement le réutiliser pour décrire leurs actions culturelles à une maille plus fine.
+La mise en place de référentiels fait également parti d'une stratégie de montée en qualité de la donnée. Mettre en place ne suffit pas : il faudra par la suite diffuser, former et vérifier que les données produites intègrent ces référentiels et n'en dérivent pas (contrôle humain ou tests automatiques).
+
+::: tip Exemple
+J'utilise en interne un numéro unique permettant d'identifier chaque type d'action culturelle (arts du spectacle, cirque, arts plastiques...). Il peut être pertinent de diffuser en parallèle à la diffusion de mon jeu de données la liste de mon référentiel. Des communes de ma région pourraient potentiellement le réutiliser pour décrire leurs actions culturelles à une maille plus fine.
 :::
 
 ## Le cas spécifique des adresses
@@ -117,12 +118,12 @@ Cependant, les producteurs se retrouvent régulièrement avec une liste d'adress
 
 Le géocodage consiste à affecter des coordonnées géographiques à une adresse postale. Cette opération peut être en partie automatisée grâce à des outils proposés par Etalab.
 
-Le site [https://adresse.data.gouv.fr/](https://adresse.data.gouv.fr/) permet de géocoder une liste d'adresse soit via un appel à une API, soit via le dépôt direct de fichier csv.
+Le site [https://adresse.data.gouv.fr/](https://adresse.data.gouv.fr/) permet de géocoder une liste d'adresse via un appel à une API ou par le dépôt de fichier csv.
 
-En utilisant l'outil avec un jeu de données contenant des adresses, l'applicatif nous retourne un jeu de données enrichi de coordonnées géographiques (longitude/latitude) ainsi que d’une adresse “corrigée” récupérée de la BAN. 
+En utilisant l'outil avec un jeu de données contenant des adresses, l'applicatif nous retourne un jeu de données enrichi de coordonnées géographiques (longitude/latitude) ainsi que d’une adresse « corrigée » récupérée de la BAN. 
 
 **Géocodage massif**
 
-Le site https://adresse.data.gouv.fr est limité à des utilisations ponctuelles et des volumétries de données considérées faibles (moins d'un million de lignes). Si vous souhaitez géocoder un très gros jeu de données (plusieurs millions de lignes), il est recommandé d'installer votre propre environnement de géocodage, en utilisant par exemple le géocodeur [Addok](https://addok.readthedocs.io/fr/latest/). Vous pouvez consulter des ressources sur [github](https://github.com/etalab/addok-docker) pour vous aider dans l'installation de votre environnement.
+Le site [adresse.data.gouv.fr](https://adresse.data.gouv.fr) est limité à des utilisations ponctuelles et des volumétries de données considérées faibles (moins d'un million de lignes). Si vous souhaitez géocoder un très gros jeu de données (plusieurs millions de lignes), il est recommandé d'installer votre propre environnement de géocodage, en utilisant par exemple le géocodeur [Addok](https://addok.readthedocs.io/fr/latest/). Vous pouvez consulter des ressources sur [GitHub](https://github.com/etalab/addok-docker) pour vous aider dans l'installation de votre environnement.
 
 Qu'importe la méthode utilisée, le processus de géocodage vous retournera une liste d'adresses standardisées avec leurs coordonnées géographiques associées. De plus, vous aurez également accès à une information `geo_score` correspondant au score de confiance que le géocodeur accorde à l'adresse retournée. Cet indicateur peut être utile à garder dans votre jeu de données final car il donnera une indication aux utilisateurs sur la performance du géocodage pour chaque adresse.
