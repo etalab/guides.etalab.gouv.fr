@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li v-for="item in pdfFiles" :key="item.path">
-        <a :href="item.path">📂 {{ item.name }}</a>
+        <a :href="item.path" target="_blank">📂 {{ item.name }}</a>
       </li>
     </ul>
   </div>
