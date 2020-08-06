@@ -61,30 +61,26 @@ données. Nous reviendrons plus tard sur la méthode de *crowd sourcing* des ann
  
 ### La pseudonymisation des décisions de justice à la Cour de Cassation  
 
-Parler du décret Open Data -> ouverture par défaut des décisions de justice 
-QUi implique d'occulter les données à caractère personnel : pseudonymisation. Pour plus d'information sur 
-ce sujet, vous pouvez consulter notre [guide pseudonymisation](https://guides.etalab.gouv.fr/pseudonymisation/#a-quoi-sert-ce-guide)
-Parler : 
-- projet Open Justice , [lien](https://entrepreneur-interet-general.etalab.gouv.fr/defis/2019/openjustice.html)
-- équipe d'une dizaine d'annotateur afin de créer un corpus d'entraînement 
-Objectif à termes de la solution d'IA: automatiser complètement le processus de pseudonymisation 
+La Cour de Cassation est chargée de la diffusion des décisions de justice. Le périmètre de diffision est 
+étendu depuis la publication du décret 
+sur [l'Open Data des décisions de justice](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000042055251). Cette 
+diffusion ne peut cependant se faire qu'après avoir occulté des décisions de justice les éléments à
+caractère personnel. Afin de mettre en oeuvre cette occultation, la Cour de Cassation a recours à une équipe 
+d'une dizaine d'annotateurs afin d'identifier dans les décisions les éléments à caractère personnel 
+à (noms, prénoms, adresses, dates de naissance) retirer avant diffusion. Afin d'automatiser ce processus, la cour 
+de cassation à des data scientists via le 
+programme [Entrepreneurs d'Intérêt Général](https://entrepreneur-interet-general.etalab.gouv.fr/index.html) pour 
+développer une solution d'Intelligence Artificielle de pseudonymisation des décisions : c'est le 
+projet  [Open Justice](https://entrepreneur-interet-general.etalab.gouv.fr/defis/2019/openjustice.html). Cette solution 
+est basée sur un algorithme entraîné à partir d'un corpus de décisions annotées par des annotateurs. Afin 
+d'optimiser le processus d'annotation, la Cour de cassation va développer un logiciel d'annotation via le projet
+[Label](https://entrepreneur-interet-general.etalab.gouv.fr/defis/2020/label.html).
+
+Pour plus d'information sur la pseudonymisation de documents textuels à l'aide de méthodes d'intelligence
+artificielle, vous pouvez consulter notre [guide pseudonymisation](https://guides.etalab.gouv.fr/pseudonymisation/#a-quoi-sert-ce-guide). 
 
 
-Annotation : [projet EIG Label](https://entrepreneur-interet-general.etalab.gouv.fr/defis/2020/label.html) 
-à venir : 
 
-
-
-
-Le principe de l’ouverture des décisions de justice a vocation à permettre une plus grande transparence de 
-la justice, mais nécessite l’occultation d’informations personnelles comme des noms et des adresses, afin 
-de respecter la vie privées des personnes mentionnées dans les décisions. A l’heure actuelle, ce travail 
-colossal doit être réalisée à la main (humaine), ce qui empêche une publication généralisée des 3,9 millions
- de décisions produites chaque année. Nous travaillons donc à l’automatisation de cette tâche, en ayant 
- recours à diverses approches de traitement automatique du langage, la plus évidente étant la reconnaissance 
- d’entités nommées qui consiste à reconnaitre la catégorie d’éléments d’une phrase : noms de personnes, noms 
- d’organisations ou d’entreprises, noms de lieux, quantités, dates, etc. Une fois ces éléments reconnus, il 
- suffit de retirer les éléments relevant de catégories comme les noms et les lieux.
 
 
 EN 3eme EXEMLE CHOISIR PARMI
@@ -99,20 +95,28 @@ homes, constructions en dur, piscines, navires. )
 
 ## Les différents objectifs de l'annotation 
 
+L'annotation permet de structurer des données afin de les rendre plus facilement exploitables, même si le 
+but final peut ne pas rentrer dans cette catégorie (comme c'est le cas pour la pseudonymisation, on 
+annote des documents afin d'occulter certains éléments, mais cela passe par une étape de structuration du texte 
+libre, en permettant d'identifier où sont les noms et prénoms de personnes physiques par exemple). 
+
+::: tip La différence entre données structurées et non structurée
+La structuration de la donnée permet : 
+- mieux connaitre son jeu de données 
+- réaliser des opérations / statistiques (moyennes, comptage par catégories, etc...)
+- faire de la visualisation de données, métriques d'intérêt
+:::
+
+### Annoter pour entraîner un algorithme d'intelligence articielle 
+
+En fonction notamment du volume de données à annoter et de la complexité de la tâche d'annotation, il est plus ou 
+moins pertinent d'envisager une solution d'intelligence artificielle pour automatiser le processus. 
+
 L'annotation pour entraîner un algorithme d'IA vs l'annotation pour structurer de la donnée
 
 Dépend aussi de l'objectif que l'on s'est fixé: 
 - analyse de données ex post 
 - flux continu de données et on souhaite automatisder le processus d'analyse 
-
-L'annotation est parfois la conséquence d'un SI mal configuré : 
-- ex des décisions de justice 
-
-La différence entre données structurées et non structurée
-La structuration de la donnée permet : 
-- mieux connaitre son jeu de données 
-- réaliser des opérations / statistiques (moyennes, comptage par catégories, etc...)
-- faire de la visualisation de données, métriques d'intérêt
 
 Effet de seuil en fonction de la taille du jeu de données à analyser : est ce qu'on annote 
 la totalité (et donc pas de recours à l'IA) ou est-ce qu'on annote une partie et on étend les labels à l'aide 
@@ -123,11 +127,20 @@ d'un modèle supervisé
 Les deux objectifs ne sont pas incompatibles 
 
 
+
+### Annoter ou repenser la façon de collecter de la donner 
+
+L'annotation est parfois la conséquence d'un SI mal configuré : 
+- ex des décisions de justice 
+
+
+
+
+
+
 ## Ressources externes (ou à mettre à la fin plutôt ?? )
 
 - Livre: Handbook of Linguistic Annotation, Springer, 2017
-
-- benchmark de Guillaume: https://airtable.com/shriJ539wx973NWEo/tblF1dF1WgXRaRp1o 
 
 - survey: https://github.com/alvations/annotate-questionnaire
 
