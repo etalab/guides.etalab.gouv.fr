@@ -139,19 +139,6 @@ S'assurer de la qualité
 	- Multi annoter plusieurs documents - > tests de cohérences 
 	- créer des indicateurs customs : tests de cohérence automatisés (traduction de règles métiers) : permet de faire remonter de facon automatique des documents annotés comportant un fort risque d'être mal annoté 
 
-
-
-
-### Etape 5: Accéler le processus 
-
-Un passage à l'échelle peut nécessiter de d'employer des méthodes automatiques ou semi-automatiques. 
-Préannotation 
-- Snorkel 
-- active learning 
-
-
-## Le suivi de la qualité des annotations 
-
 A faire tout au long du projet 
 
 - gold standard data set 
@@ -159,4 +146,18 @@ A faire tout au long du projet
 - contrôles aléatoires 
 - sample annotés par plusieurs annotateurs 
 - tests de cohérences automatisés 
+
+
+
+### Etape 5: Accéler le processus d'annotation 
+
+Un passage à l'échelle peut nécessiter de d'employer des méthodes automatiques ou semi-automatiques. 
+Préannotation 
+- Snorkel / règles métier 
+- active learning 
+
+
+
+
+
 
