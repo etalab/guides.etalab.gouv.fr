@@ -53,7 +53,7 @@ jobs:
 
     - name: Install pandoc-guides
       run: |
-        git clone https://github.com/AntoineAugusti/pandoc-guides.git /tmp/pandoc-guides
+        git clone https://github.com/etalab/pandoc-guides.git /tmp/pandoc-guides
         cp /tmp/pandoc-guides/* .
         python3 -m venv venv
         . venv/bin/activate
