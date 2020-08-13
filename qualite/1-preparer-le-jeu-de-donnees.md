@@ -51,7 +51,7 @@ La création d’un jeu de données en conformité avec un schéma de données e
 
 #### Comment identifier un schéma de données déjà existant ?
 
-Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près. Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) permet [d’intégrer les schémas de données et documentations associées](https://schema.data.gouv.fr/documentation/integration-autres-systemes)  dans d’autres systèmes informatiques.
+Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près. Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) permet [d’intégrer les schémas de données et documentations associées](https://schema.data.gouv.fr/documentation/integration-autres-systemes) dans d’autres systèmes informatiques.
 
 #### Comment produire un jeu de données conforme à un schéma de données ?
 
@@ -62,10 +62,17 @@ Si le jeu de données n’est pas extrait d’un système d’information mais s
 
 #### Comment valider la conformité d’un jeu de données avec un schéma de données ?
 
-Il est possible de valider la conformité d’un jeu de données à un schéma de données existant grâce à différents outils :
-* L’outil [Validata](https://validata.fr/doku.php) intègre un outil de validation des schémas de données. Vous pouvez valider des jeux de données référencés ou proposer votre propre URL d’un schéma ;
-* Des solutions disponibles en anglais comme [goodtables.io](http://goodtables.io) ou [CSV Lint](https://csvlint.io/) proposent des validateurs de jeux de données ;
-* Enfin, il est possible d’intégrer une fonction de validation d’un jeu directement dans la procédure de publication. C’est le cas pour les données d’adresses locales qui font l’objet d’une validation directement sur le site [adresse.data.gouv.fr](http://adresse.data.gouv.fr).
+Il est possible de valider la conformité d’un jeu de données à un schéma de données existant grâce à différents outils.
+
+Tout d'abord, il est possible d'indiquer que votre jeu de données correspond à un schéma depuis l'interface d'administration de data.gouv.fr. Lorsque vous déposez ou éditez une ressource, vous pouvez sélectionner le schéma correspondant à vos données dans une liste déroulante.
+
+![Capture d'écran de la sélection d'un schéma depuis l'interface d'administration de data.gouv.fr](./images/selection-schema.png)
+
+Le fait d'indiquer que votre ressource est censée respecter un schéma permet de bénéficier de vérifications de la qualité des données et d'indiquer aux réutilisateurs que vos données respectent un référentiel.
+
+![Capture d'écran de data.gouv.fr des informations disponibles sur la page d'un jeu de données lorsqu'un schéma est spécifié sur une ressource](./images/modal-schema.png)
+
+D'autres solutions en dehors de data.gouv.fr existent. Des solutions disponibles en anglais comme [goodtables.io](http://goodtables.io) ou [CSV Lint](https://csvlint.io/) proposent des validateurs de jeux de données. Enfin, il est possible d’intégrer une fonction de validation d’un jeu directement dans la procédure de publication. C’est le cas pour les données d’adresses locales qui font l’objet d’une validation directement sur le site [adresse.data.gouv.fr](https://adresse.data.gouv.fr).
 
 ### Cas 2 - La structure du jeu de données ne correspond à aucun schéma de données existant
 
