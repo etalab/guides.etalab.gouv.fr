@@ -47,9 +47,6 @@ logiciel d'annotation. Cette partie concerne uniquement les logiciels d'annotati
 - Le [lexique proposé en annexe](4-lexique.md) propose les définitions de termes techniques utilisés de 
 façon récurrente dans ce guide. 
 
-::: tip Ce que ce guide n'est pas
-- xxxxx
-:::
 
 ## Comment contribuer ?
 

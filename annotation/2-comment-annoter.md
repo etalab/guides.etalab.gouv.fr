@@ -71,25 +71,27 @@ L'annoteur a pour attributions de :
 
 L'annotation est généralement une étape liminaire d'un projet ayant une finalité plus large. Une réflexion globale 
 sur la problématique du projet est cependant indispensable avant le démarrage effectif de la phase d'annotation, afin
-les annotations réalisées permettent de répondre de manière efficace à la problématique. Il est donc important de 
+que les annotations réalisées permettent de répondre de manière efficace à la problématique. Il est donc important de 
 répondre à un certain nombre de questions. 
 
 #### A quel problème répond le projet ? 
 
-Bien cadrer la problématique du projet est une étape essentielle. 
-- Quel est le contexte du projet? 
+Bien cadrer la problématique du projet est une étape essentielle. Il est en particulier utile de se demander : 
 
-Dans quel service le projet s'inscrit?  A quelle mission de service public contribut le projet? 
-A quel problème doit répondre le projet ? Des solutions pour répondre à ce problème sont-elles déjà en place ? Si
-oui quelles sont leurs limites ou leurs défauts? 
+1. Quel est le contexte du projet? 
 
-- Quels sont les objectifs stratégiques du projet ? 
-Le projet répond-il a un nouvel objectif de politique publique par exemple?
+A quelle mission de service public contribut le projet? A quel problème doit répondre le projet ? Des solutions pour
+répondre à ce problème sont-elles déjà en place ? Si oui quelles sont leurs limites ou leurs défauts? 
 
-- Quels objectifs opérationnels du projet ?
-Quels sont les changements attendus dans le service concerné (du point de vue des agents publics et/ou des utilisateurs
-du service)?  
+2. Quels sont les objectifs stratégiques du projet ? 
+A quel objectif de mon organisation répond le projet (intérêt général, amélioration de la qualité d'un service, etc.)?
 
+3. Quels objectifs opérationnels du projet ?
+Quels sont les impacts attendus de la solution dans l'organisation du service (du point de vue des agents publics et/ou des utilisateurs
+du service)? 
+
+
+4. Existe-t-il des projets similaires desquels je gagnerais à prendre connaissance ? 
 Bien que chaque projet ait ses spécificités, il peut
 être utile de se renseigner sur d'autres projets ayant une problématique similaire. Parmi les grandes problématiques 
 en traitement du langage naturel, on trouve la classification de documents (par exemple, déterminer si un e-mail est un 
@@ -101,19 +103,33 @@ manquants dans un plainte déposée en ligne).
 
 #### Quel est le périmètre de la solution ? 
 Cette question aura en général un impact direct sur le périmètre des données à annoter, elle est donc très importante. 
-Le périmètre peut être géographique, fonctionnel, etc...
-
-#### Quel rôle joue l'annotation dans ce projet? (voir si on laisse cette question)
-- Etape intermédiare : entrainer un algorithme à effectuer un tache ? 
-- Structuration d'informations contenues dans des données non structurées
-
+Le périmètre peut être géographique, fonctionnel, etc.
 
 
 ### Etape 2 : Elaborer le schéma d'annotation 
 
+Le schéma d'annotation est un modèle qui permet décrire les annotations de votre projet. Il doit découler 
+de la problématique définie précédemment. Concrètement, il est consititué a minima d'un ensemble de labels (c'est-à-dire 
+des termes permettant de caractériser telle ou telle information dans un document) et d'une définition précise de ces différents
+labels. Pour certains projets, le schéma d'annotation peut en plus être défini 
+par une hiérarchisation entre les termes ou encore par des relations entre les termes. L'ensemble des labels peuvent en effet être 
+hiérarchisées entre eux (par exemple, un schéma peut se décliner en thèmes et sous thèmes, où à chaque thème correspond une liste spécifique 
+de sous-thèmes) ou être reliés entre eux (par exemple, une tâche d'annotation pourra être de relier un pronom au nom auquel il 
+se rapporte). 
+
+La problématique métier à laquelle le projet répond est souvent complexe, avec beaucoup de cas particuliers ou d'exceptions
+aux règles usuelles. Trouver un schéma d'annotation adéquat implique de trouver un équilibre entre la compléxité du 
+phénomène en question et la simplicité du modèle résultant du schéma. Afin de trouver cet équilibre, un processus itératif est 
+généralement la meilleure méthode à adopter. 
+
+Deux types de cycles d'itérations sont envisageables: 
+
+#### 1. Le cycle schéma / annotations 
+
+#### 2. Le cycle schéma / annotation / modèle IA 
 
 
-Problématique métier souvent complexe, avec beaucoup de cas particuliers, d'exception à la règle
+
 Etablir un schéma d'annotation passe souvent par un travail de simplification (qui implique parfois de perdre en précision 
 dans la solution )
 ex des catégories pour la pseudo : personne physique / organisation (adresse postale, lieux-dit; etc)
@@ -127,11 +143,6 @@ Questions à se poser:
 - Est ce que certaines tâches d'annotation peuvent 
 
 
-
-Il doit découler de la problématique 
-
-
-Il peut être amené à évoluer au cour de l'annotation (méthode itérative) : MAMA 
 
 #### Etape 3: La documentation 
 

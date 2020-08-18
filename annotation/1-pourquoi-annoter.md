@@ -103,7 +103,7 @@ homes, constructions en dur, piscines, navires. )
 L'annotation permet de structurer des données afin de les rendre plus facilement exploitables, même si le 
 but final peut être différent (comme c'est le cas pour la pseudonymisation, on 
 annote des documents afin d'occulter certains éléments, mais cela passe par une étape de structuration du texte 
-libre, en permettant d'identifier où sont les noms et prénoms de personnes physiques par exemple). 
+libre, en permettant d'identifier où sont les noms et prénoms de personnes physiques  dans le texte par exemple). 
 
 La structuration de la donnée permet de mieux connaître le jeu de données en rendant possible notamment: 
 - la réalisation d'opérations ou statistiques (moyennes, comptage par catégories, etc...)
@@ -116,11 +116,11 @@ donné, tri selon une variable, etc...)
 
 En fonction notamment du volume de données à annoter et de la complexité de la tâche d'annotation, il 
 est plus ou moins pertinent d'envisager une solution d'intelligence artificielle pour automatiser 
-le processus de structuration. 
+le processus de structuration de la donnée. 
 
 Il faut en effet dans un premier temps prendre en compte la nature des données à analyser (est-ce un 
-stock de données historiques qui ne sera pas alimenté dans le futur ou un flux de données alimenté 
-en continu ?) ainsi que de la volumétrie des données. 
+stock de données historiques qui ne sera pas réalimenté dans le futur ou un flux de données alimenté 
+en continu ?) ainsi que la volumétrie des données. 
 
 Si le volume de données est relativement limité, il n'est pas nécessairement
 pertinent d'envisager des méthodes d'IA pour structurer la donnée. Par exemple, vous souhaitez analyser les
@@ -129,7 +129,7 @@ par les répondants. Si le volume de données est faible, une étape d'annotatio
 objectif sans être trop coûteux en temps.  Nous ne donnons pas ici de seuil de nombre de documents 
 permettant de juger de la pertinence ou non de la mise en place de solutions d'IA car l'évalutation du temps
 nécessaire à l'annotation manuelle du jeu de données dépendra de la nature et de la longueur des documents, ainsi
-que de la complexité de la tâche d'annotation (qui dépendra des objectifs). 
+que de la complexité de la tâche d'annotation. 
 
 En revanche, dès lors que l'on est confronté à un volume important de documents ou à un flux continu, il est en 
 général pertinent d'envisager d'automatiser le processus d'annotation. Dans ce cas, la phase d'annotation aura 
@@ -141,9 +141,9 @@ dependra de la nature des documents et de la complexité de la tâche) afin d'en
 ### Annoter ou repenser la façon de collecter la donnée ? 
 
 Le besoin en annotation peut parfois mettre en lumière un mode de collecte de la donnée qui n'est pas adapté
-aux besoin des utilisateurs. Le travail d'annotation *ex post* aurait parfois pu être évité en 
+aux besoins des utilisateurs. Le travail d'annotation *ex post* aurait parfois pu être évité en 
 intégrant un processus de structuration de la donnée *ex ante*, cette dernière solution permettant un gain 
-de temps souvent significatif par rappory à la première. 
+de temps souvent significatif par rapport à la première. 
 
 Par exemple, l'enregistrement dans un système d'information d'une procédure ou d'une déclaration passe par
 une application permettant à des agents de remplir un certains nombre de champs. Certains champs à remplir
@@ -151,7 +151,7 @@ en texte libre peuvent ainsi nécessitant une annotation *ex post* afin d'utilis
 alors que la même information aurait pu être saisie via un menu déroulant pour être directement exploitable. 
 
 
-## Ressources externes (ou à mettre à la fin plutôt ?? )
+## Ressources externes 
 
 - Ouvrage collectif sur l'annotation lingustistique : Handbook of Linguistic Annotation, Springer, 2017
 - Un sondage sur les logiciels d'annotation consultable [ici](https://github.com/alvations/annotate-questionnaire)
