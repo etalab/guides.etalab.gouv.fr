@@ -17,11 +17,14 @@ nécessaires.
 
 ### Un chef de projet : l'expert métier 
 Un chef de projet disposant des connaissances métier sera nécessaire. Ses attributions seront de: 
+- Etablir le schéma d'annotation (conjointement avec les autres parties prenantes du projet)
 - Former les annotateurs (plus de détail dans la partie Etape 3: Former et mobiliser les annotateurs)
 - Estimer le temps moyen pour annoter un document afin de mesurer la charge de travail nécessaire 
 - Etablir un plan d'annotation prévisonnel définissant le nombre moyen de documents à annoter par annotateurs et par jour 
 - Suivre l'avancement des annotations 
 - S'assurer de la qualité des annotations
+
+En fonction de la complexité du projet, le chef de projet pourra faire appel à d'autres experts métier. 
 
 ### Le data scientist : l'expert technique 
 Un profil de type data scientist permettra, en complément du suivi qualitatif assuré par l'expert métier, de
@@ -84,14 +87,16 @@ A quelle mission de service public contribut le projet? A quel problème doit r�
 répondre à ce problème sont-elles déjà en place ? Si oui quelles sont leurs limites ou leurs défauts? 
 
 2. Quels sont les objectifs stratégiques du projet ? 
+
 A quel objectif de mon organisation répond le projet (intérêt général, amélioration de la qualité d'un service, etc.)?
 
 3. Quels objectifs opérationnels du projet ?
+
 Quels sont les impacts attendus de la solution dans l'organisation du service (du point de vue des agents publics et/ou des utilisateurs
 du service)? 
 
-
 4. Existe-t-il des projets similaires desquels je gagnerais à prendre connaissance ? 
+
 Bien que chaque projet ait ses spécificités, il peut
 être utile de se renseigner sur d'autres projets ayant une problématique similaire. Parmi les grandes problématiques 
 en traitement du langage naturel, on trouve la classification de documents (par exemple, déterminer si un e-mail est un 
@@ -113,47 +118,69 @@ de la problématique définie précédemment. Concrètement, il est consititué 
 des termes permettant de caractériser telle ou telle information dans un document) et d'une définition précise de ces différents
 labels. Pour certains projets, le schéma d'annotation peut en plus être défini 
 par une hiérarchisation entre les termes ou encore par des relations entre les termes. L'ensemble des labels peuvent en effet être 
-hiérarchisées entre eux (par exemple, un schéma peut se décliner en thèmes et sous thèmes, où à chaque thème correspond une liste spécifique 
+hiérarchisées entre eux (par exemple, un schéma peut se décliner en thèmes et sous-thèmes, où à chaque thème correspond une liste spécifique 
 de sous-thèmes) ou être reliés entre eux (par exemple, une tâche d'annotation pourra être de relier un pronom au nom auquel il 
 se rapporte). 
 
 La problématique métier à laquelle le projet répond est souvent complexe, avec beaucoup de cas particuliers ou d'exceptions
-aux règles usuelles. Trouver un schéma d'annotation adéquat implique de trouver un équilibre entre la compléxité du 
+aux règles usuelles. Elaborer un schéma d'annotation adéquat implique de trouver un équilibre entre la compléxité du 
 phénomène en question et la simplicité du modèle résultant du schéma. Afin de trouver cet équilibre, un processus itératif est 
 généralement la meilleure méthode à adopter. 
 
-Deux types de cycles d'itérations sont envisageables: 
 
-#### 1. Le cycle schéma / annotations 
+Compélter avec des exemples ????
+Etablir un schéma d'annotation passe souvent par un travail de simplification (qui implique parfois de perdre en précision dans la solution ) ex des catégories pour la pseudo : personne physique / organisation (adresse postale, lieux-dit; etc)
+Ex liste fermée / saisie libre -> va également impacter les fonctionnalités requises pour le logiciel d'annotation
 
-#### 2. Le cycle schéma / annotation / modèle IA 
+Deux types de cycles d'itérations sont envisageables: le cycle schéma / annotations et le cycle
+schéma / annotation / modèle IA, tous deux détaillés ci-dessous. 
 
+#### 1. Le cycle schéma / annotations
 
+Elaborer un schéma d'annotation nécessite de prendre en compte à la fois la problématique du projet et les caractéristiques des 
+documents à annoter. Ainsi élaborer un premier schéma d'annotation répondant à la problématique, le tester en annotant 
+des documents puis le réviser au fur et à mesure de l'annotation. C'est en général en annotatant que l'on s'aperçoit si le 
+schéma d'annotation est adapté aux documents. 
 
-Etablir un schéma d'annotation passe souvent par un travail de simplification (qui implique parfois de perdre en précision 
-dans la solution )
-ex des catégories pour la pseudo : personne physique / organisation (adresse postale, lieux-dit; etc)
+Par exemple, pour un projet d'annotation de réponses à un questionnaire en texte libre, on peut avoir une idée a priori 
+des thèmatiques abordées, ce qui permet d'élaborer une première version du schéma d'annotation, mais l'annotation des 
+réponses pourra faire émerger de nouvelles thématiques qui pourront venir compléter le schéma d'annotation. 
 
-Ex liste fermée / saisie libre -> va également impacter les fonctionnalités requises pour le logiciel d'annotation 
+#### 2. Le cycle schéma / annotation / modèle IA (est ce que je laisse cette partie ?? -> c'est souvent pas faisable en 
+réalité car boucle d'itération très longue)
 
-Questions à se poser:
-- liste des éléments à annoter, pour quels besoins, peut-on les hiérarchiser en fonction de leurs importance pour le projet / l'entraînement du modèle cible (ou des modèles cibles 
-- Est ce un type d'annotation qui s'approche d'une tâche standard de NLP : NER, relation extraction. Quel est le degré de proximité avec la tâche à effectuer 
-- Dans quel mesure la façon d'effectuer la tâche par deux personnes différentes risque de varier ? 
-- Est ce que certaines tâches d'annotation peuvent 
+Ce type de cycle d'itération ne concerne que les travaux d'annotation ayant pour but d'entraîner un algorithme supervisé. 
+Il peut alors être pertinent de compléter le cycle d'itérations précédent d'un cycle d'itérations faisant intervenir
+l'entraînement de l'algorithme supervisé. Il est en effet possible q'un schéma d'annotation paraisse adapté aux documents 
+lors de l'annotation manuelle, mais qu'un algorithme supervisé ait des difficultés à apprendre à automatiser la tâche (c'est-à-dire 
+ne parvienne pas à apprendre à partir du jeu de documents annotés, dit jeu d'apprentissage). 
 
+Si de mauvaises performances de l'algorithme entraîné sur les données annotées sont constatées, modifier le schéma d'annotation, puis 
+réannoter des documents avec le nouveau chemin et réentraîner l'algorithme  
+peut parfois permettre d'améliorer les performances. A noter que ce cycle est beaucoup plus long que le cycle d'itérations précédent, 
+et n'est donc pas nécessairement réalisable lorsque le temps du projet est contraint. 
+
+De mauvais résultats lors de 
+l'entraînement peuvent cependant être liés à d'autres facteurs que celui d'un schéma d'annotation mal adapté. En particulier, 
+la taille de l'échantillon d'apprentissage joue un rôle déterminant. 
 
 
 #### Etape 3: La documentation 
 
-Plusieurs niveaux de documentations s'adressant à différentes fonctions dans le projet d'annotation. 
+La documentation dans un projet d'annotation est essentielle. Elle permet de capitaliser sur la démarche et les difficultés rencontrer et 
+est utile pour former les annotateurs. 
 
-Documentation générale : haut niveau, toute personne qui souhaite comprendre le projet (management (top et 
+Plusieurs types de documentations s'adressant à différentes fonctions dans le projet sont utiles: une documentation générale, une 
+documentation pour les annotateurs et une documentation pour l'administrateur de la plateforme d'annotation. 
+
+
+##### Une Documentation générale 
+haut niveau, toute personne qui souhaite comprendre le projet (management (top et 
 intermédiaire, grand public à des fins de transparence )
 - documenter le cheminement intellectuel menant au schéma d'annotation , les arbitrages (regrouper certaines 
 catégories)
 
-- guide annotateurs 
+##### Un guide à destination des annotateurs 
 Partie très importante 
 - introduction 
 - description du projet (peut correspondre à la doc grand public )
@@ -166,7 +193,7 @@ annoté finalisé, etc...)
 
 Possibilité de compléter la doc par un quizz 
 
-- Guide admin de la plateforme d'annotation 
+##### Un guide à destination de l'administrateur de la plateforme d'annotation 
 
 - Comment créer des comptes aux annotateurs
 - Comment charger des doc 
