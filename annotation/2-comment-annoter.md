@@ -229,51 +229,52 @@ des annotations permet aussi de s'assurer de la qualité des annotations.
 #### Former les annotateurs 
 
 En amont du projet, il est important de bien expliquer les enjeux du projet à l'équipe d'annotateurs ainsi que le rôle clé
-de l'annotation dans le projet. Cet on-boarding peut aussi être un prétexte à acculturer les annotateurs à
-l'Intelligence Artificielle. C'est notamment le pari fait par le projet collaboratif PIAF (voir l'exemple présenter en
+de l'annotation dans le projet. Cet on-boarding peut aussi être l'opportunité d'acculturer les annotateurs à
+l'Intelligence Artificielle. C'est notamment le pari fait par le projet collaboratif [PIAF](https://piaf.etalab.studio/) (voir l'exemple présenter en
 partie 1), pour lequel ont été organisés des annotatons dont le but était de former les annotateurs à l'IA tout en récoltant
 des contributions au projet d'annotation. [Cet article](https://piaf.etalab.studio/enseignements-contributions/) détaille la
 méthodologie adoptée pour ce projet. Il peut aussi être
 bénéfique au projet d'impliquer les annotateurs dans l'élaboration du schéma d'annotation, dans la mesure où cette élaboration 
-passe par une phase d'itération entre schéma d'annotation et annotations de documents. L'implication des annotateurs aura également
+passe par une phase d'itération entre schéma et annotations de documents. L'implication des annotateurs aura également
 pour avantage une meilleure appropriation de leur part des tâches à effectuer. 
 
 La documentation (décrite dans le paragraphe Un guide à destination des annotateurs) est centrale pour la formation. 
 
 #### Mobiliser les annotateurs tout au long du projet 
-Afin de mobiliser les annotateurs tout au long du projet, il peut être utile de mettre en place des outils de partage 
-entre les annotateurs 
-(pas trop de top down, créer une communauté d'échange)-> partage des questions, difficultés, cohésion 
-de la communauté, encouragement
-Inclure les annotateurs dans la construction puis l'affinage du schéma d'annotation 
-Organiser des sessions d'harmonisation 
-Possibilité de gamification: attribuer des bagdes, montrer une jauge d'avancement des annotations globales (c'est plus motivant 
-de travailler quand on sait que c'est utile)
+Afin de mobiliser les annotateurs tout au long du projet, il est important de maintenir une dynamique d'échange. Il peut 
+être utile de mettre en place des outils de partage (messagerie instannée, forum de discussion, documents 
+collaboratifs) afin de permettre à l'équipe projet d'échanger sur leurs difficultés, de se poser des questions et
+de s'entraider. Des sessions d'harmonisation régulières peuvent aussi être mises en place afin de communiquer sur les avancées
+du projet et partager des éventuels changements ou points d'attention sur l'annotation. 
+
+Afin de rendre l'annotation plus ludique, il est envisageable de "gamifier" l'annoation, en attribuant des bagdes, 
+ou en faisant apparaître une jauge d'avancement des annotations (le fait de voir que le projet avance peut être une source 
+de motivation). 
 
 
 
 ### Etape 5: Annoter et s'assurer de la qualité 
 
-Lorsque le but
-de l'annotation est de développer un algorithme automatisant une tâche, la présence d'erreurs dans le corpus annoté servant
+Lorsque le but de l'annotation est de développer un algorithme automatisant une tâche, la présence d'erreurs dans le
+corpus annoté servant
 à l'entraînement est 
 
-S'assurer de la qualité 
+#### S'assurer de la qualité 
 	- Créer un gold standard data set 
 	- Multi annoter plusieurs documents - > tests de cohérences 
+	- Contrôler à la main de facon aléatoire certains documents 
 	- créer des indicateurs customs : tests de cohérence automatisés (traduction de règles métiers) : permet de faire remonter de facon automatique des documents annotés comportant un fort risque d'être mal annoté 
 
-A faire tout au long du projet 
 
-- gold standard data set 
-- les métriques de justesse (accuracy)
-- contrôles aléatoires 
-- sample annotés par plusieurs annotateurs 
-- tests de cohérences automatisés 
+
+#### Les métriques de justesse (accuracy)
 
 
 
-#### Etape 6: Accélérer le processus d'annotation 
+
+
+
+### Etape 6: Accélérer le processus d'annotation 
 
 Un passage à l'échelle peut nécessiter d'employer des méthodes automatiques ou semi-automatiques. 
 Pré-annotation 
