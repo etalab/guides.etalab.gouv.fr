@@ -4,6 +4,11 @@ permalink: /annotation/les-logiciels-d-annotation/
 
 # Les critères de sélection des logiciels d'annotation 
 
+Objectif de cette partie: lister un ensemble de critère à avoir en tête lorsqu'on 
+sélectionne un logiciel d'annotation. 
+
+Parler de l'arbitrage de développer logiciel custom (en forkant un projet open source par exemple)
+
 ## le caractère open source
 - développeurs actifs, développement continu de nouvelles fonctionnalités 
 - grosse communauté d'utilisateurs 
@@ -46,7 +51,6 @@ cf [artcile](https://cl.lingfil.uu.se/~nivre/docs/hsk.pdf), pour une application
     - correction 
     - résolution des conflits 
 
-- les équipes privées (linalgo )
 - le crowdsourcing 
 
 
@@ -56,7 +60,7 @@ cf [artcile](https://cl.lingfil.uu.se/~nivre/docs/hsk.pdf), pour une application
 
 
 ## la facilité d'installation : 
-- docker?
+- Docker
 - Saas ou On premise : 
 L'architecture SaaS, acronyme pour Software as a Service est une solution logicielle utilisable en ligne (on 
 parle aussi de Cloud ou de on demand). Le logiciel est délocalisé et accessible à distance par 

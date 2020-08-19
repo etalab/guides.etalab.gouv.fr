@@ -142,9 +142,14 @@ documents à annoter. Ainsi élaborer un premier schéma d'annotation répondant
 des documents puis le réviser au fur et à mesure de l'annotation. C'est en général en annotatant que l'on s'aperçoit si le 
 schéma d'annotation est adapté aux documents. 
 
+#### TO DO : rajouter un schéma du cycle 
+
 Par exemple, pour un projet d'annotation de réponses à un questionnaire en texte libre, on peut avoir une idée a priori 
 des thèmatiques abordées, ce qui permet d'élaborer une première version du schéma d'annotation, mais l'annotation des 
 réponses pourra faire émerger de nouvelles thématiques qui pourront venir compléter le schéma d'annotation. 
+
+
+
 
 #### 2. Le cycle schéma / annotation / modèle IA (est ce que je laisse cette partie ?? -> c'est souvent pas faisable en 
 réalité car boucle d'itération très longue)
@@ -160,71 +165,98 @@ réannoter des documents avec le nouveau chemin et réentraîner l'algorithme
 peut parfois permettre d'améliorer les performances. A noter que ce cycle est beaucoup plus long que le cycle d'itérations précédent, 
 et n'est donc pas nécessairement réalisable lorsque le temps du projet est contraint. 
 
+#### TO DO : rajouter un schéma du cycle 
+
+
 De mauvais résultats lors de 
 l'entraînement peuvent cependant être liés à d'autres facteurs que celui d'un schéma d'annotation mal adapté. En particulier, 
 la taille de l'échantillon d'apprentissage joue un rôle déterminant. 
 
 
-#### Etape 3: La documentation 
+### Etape 3: La documentation 
 
-La documentation dans un projet d'annotation est essentielle. Elle permet de capitaliser sur la démarche et les difficultés rencontrer et 
-est utile pour former les annotateurs. 
+La documentation dans un projet d'annotation est essentielle. En gardant une trace de la démarche adoptée et 
+en recensant les difficultés rencontrées, la documentation est très utile pour que tous les membres de l'équipe projet partagent 
+le même niveau d'information et peut également bénéficier à d'autres projets similaires. 
 
 Plusieurs types de documentations s'adressant à différentes fonctions dans le projet sont utiles: une documentation générale, une 
 documentation pour les annotateurs et une documentation pour l'administrateur de la plateforme d'annotation. 
 
 
 ##### Une Documentation générale 
-haut niveau, toute personne qui souhaite comprendre le projet (management (top et 
-intermédiaire, grand public à des fins de transparence )
-- documenter le cheminement intellectuel menant au schéma d'annotation , les arbitrages (regrouper certaines 
-catégories)
+Une documentation générale décrivant le contexte et les objectifs du projet, expliquant pourquoi l'annotation est nécessaire 
+est utile. Cette documentation s'adresse à toute personne qui souhaite comprendre le projet (directeur, grand public 
+si le projet est open source). 
+Il est également important de documenter le cheminement intellectuel menant au schéma d'annotation et les différentes itérations 
+s'il y en a eu. 
+
 
 ##### Un guide à destination des annotateurs 
-Partie très importante 
-- introduction 
-- description du projet (peut correspondre à la doc grand public )
-- schéma synthétique d'annotation
-- Détail des différentes tâches et sous-tâches 
-- Lister les cas particuliers, difficiles, donner des exemples concrets (captures d'écran du logiciel 
-d'annotation)/ Peut prendre la forme de Questions / Réponses
-- doc pour le logiciel d'annotation (se connecter, accéder aux doc, annoter, effacer, enregistrer un document 
+Cette documentation est notamment le support de formation des annotateurs, elle est donc très importante, et donc inclure 
+notamment: 
+- La description du projet
+- Le schéma synthétique d'annotation (c'est-à-dire la liste des labels du schéma d'annotation, hiérarchisés le cas échéant)
+- L'explication des différents labels (définitions et exemples pour chacun des labels)
+- S'il existe des relations à annoter entre les termes, explications et exemples pour chacune des relations 
+- Liste des cas particuliers ou des cas suceptibles de poser des difficultés, accompagnée d'exemples concrets (ne pas hésiter à 
+faire des captures d'écran du logiciel d'annotation). Cette partie peut prendre la forme d'une rubrique de Questions / Réponses. 
+- Documentation pour le logiciel d'annotation (comment se connecter, accéder aux documents à annoter, enregistrer un document 
 annoté finalisé, etc...)
 
 Possibilité de compléter la doc par un quizz 
 
 ##### Un guide à destination de l'administrateur de la plateforme d'annotation 
 
+Il est également important de documenter le fonctionnement de la plateforme d'annotation et de constituer un guide à destination
+de l'administrateur de la plateforme d'annotation. Ce guide pourra expliquer: 
 - Comment créer des comptes aux annotateurs
-- Comment charger des doc 
-- comment attribuer des doc
-- comment suivre l'avancement 
-- comment corriger les annotations 
-
-
+- Comment charger des documents sur la plateforme 
+- Comment attribuer des documents aux annotateurs 
+- Comment suivre l'avancement des annotations 
+- Comment corriger les annotations 
+- Comment exporter les documents annotés 
 
 
 ### Etape 4: Former et mobiliser les annotateurs
 
-Importance du facteur humain 
-Former les annotateurs 
-niveau de compétences dépend de la tâche (important de se poser la question)
+La formation et la mobilisation des annotateurs est un aspect très important. Le caractère répétitif - qui plus est
+souvent complexe - de la tâche d'annotation est susceptible d'entraîner des erreurs dans l'annotation (oubli d'une section
+de texte à annoter ou attribution d'un mauvais label par exemple). Bien former et mobiliser les annotateurs, au démarrage ainsi que tout
+au long du projet, permet de limiter ce risque d'erreurs. Nous verrons dans la partie suivante comment le contrôle de la qualité 
+des annotations permet aussi de s'assurer de la qualité des annotations. 
 
-importance de la documentation (est ce qu'on fait une sous partie dédiée à la doc? )
 
-Bien expliquer les enjeux du projet -> implication doit aller au delà de la simple exécution d'une tâche 
-souvent répétitive 
-Acculturer les annotateurs à l'IA 
+#### Former les annotateurs 
+
+En amont du projet, il est important de bien expliquer les enjeux du projet à l'équipe d'annotateurs ainsi que le rôle clé
+de l'annotation dans le projet. Cet on-boarding peut aussi être un prétexte à acculturer les annotateurs à
+l'Intelligence Artificielle. C'est notamment le pari fait par le projet collaboratif PIAF (voir l'exemple présenter en
+partie 1), pour lequel ont été organisés des annotatons dont le but était de former les annotateurs à l'IA tout en récoltant
+des contributions au projet d'annotation. [Cet article](https://piaf.etalab.studio/enseignements-contributions/) détaille la
+méthodologie adoptée pour ce projet. Il peut aussi être
+bénéfique au projet d'impliquer les annotateurs dans l'élaboration du schéma d'annotation, dans la mesure où cette élaboration 
+passe par une phase d'itération entre schéma d'annotation et annotations de documents. L'implication des annotateurs aura également
+pour avantage une meilleure appropriation de leur part des tâches à effectuer. 
+
+La documentation (décrite dans le paragraphe Un guide à destination des annotateurs) est centrale pour la formation. 
+
+#### Mobiliser les annotateurs tout au long du projet 
+Afin de mobiliser les annotateurs tout au long du projet, il peut être utile de mettre en place des outils de partage 
+entre les annotateurs 
 (pas trop de top down, créer une communauté d'échange)-> partage des questions, difficultés, cohésion 
 de la communauté, encouragement
 Inclure les annotateurs dans la construction puis l'affinage du schéma d'annotation 
 Organiser des sessions d'harmonisation 
-Gamification: attribuer des bagdes, montrer une jauge d'avancement des annotations globales (c'est plus motivant 
+Possibilité de gamification: attribuer des bagdes, montrer une jauge d'avancement des annotations globales (c'est plus motivant 
 de travailler quand on sait que c'est utile)
 
 
 
 ### Etape 5: Annoter et s'assurer de la qualité 
+
+Lorsque le but
+de l'annotation est de développer un algorithme automatisant une tâche, la présence d'erreurs dans le corpus annoté servant
+à l'entraînement est 
 
 S'assurer de la qualité 
 	- Créer un gold standard data set 
@@ -241,10 +273,10 @@ A faire tout au long du projet
 
 
 
-#### Etape 5: Accélérer le processus d'annotation 
+#### Etape 6: Accélérer le processus d'annotation 
 
-Un passage à l'échelle peut nécessiter de d'employer des méthodes automatiques ou semi-automatiques. 
-Préannotation 
+Un passage à l'échelle peut nécessiter d'employer des méthodes automatiques ou semi-automatiques. 
+Pré-annotation 
 - Snorkel / règles métier 
 - active learning 
 
