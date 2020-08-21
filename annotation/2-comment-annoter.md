@@ -127,10 +127,25 @@ aux règles usuelles. Elaborer un schéma d'annotation adéquat implique de trou
 phénomène en question et la simplicité du modèle résultant du schéma. Afin de trouver cet équilibre, un processus itératif est 
 généralement la meilleure méthode à adopter. 
 
+Etablir un schéma d'annotation implique souvent un travail de simplification (qui a également pour conséquence
+une perte d'information ou de précision). 
 
-Compélter avec des exemples ????
-Etablir un schéma d'annotation passe souvent par un travail de simplification (qui implique parfois de perdre en précision dans la solution ) ex des catégories pour la pseudo : personne physique / organisation (adresse postale, lieux-dit; etc)
-Ex liste fermée / saisie libre -> va également impacter les fonctionnalités requises pour le logiciel d'annotation
+Exemple du choix des catégories pour pseudonymiser les décisions de justice: afin de limiter au maximum le risque de réidentification, 
+il faut se demander quelles informations doivent être retirées et comment les catégoriser. Un nombre restreint de catégories
+(nom, prénom, adresse, date de naissance) par exemple aura pour avantage des consignes d'annotations plus simples, alors 
+qu'une catégorisation plus fine (personnes physiques, personnes morales, adresse complète, lieu de résidence par exemple) permettra 
+de mieux cibler certaines informations sensibles. 
+
+Il est important d'évaluer la clarté du schéma d'annotation et des consignes pour l'implémenter et de la reproductibilité des tâches
+d'annotation entre différentes annotateurs. En effet des consignes d'annotation peut claires ou intéreprétables de façon différentes
+par différents annotateurs auront pour conséquences: 
+- de rendre inopérable l'évaluation de la qualité des annotations 
+- de compromettre l'automatisation de la tâche par un algorithme d'intelligence artificielle 
+
+Exemple: Analyse de l'ironie dans des tweet.  Des interprétations différentes du langage, des prisese en compte différentes du contexte
+peuvent amener deux personnes différentes à percevoir caractériser différemment le caractère ironique ou non d'un tweet. [Ce papier](https://hal.archives-ouvertes.fr/hal-01429673/document) de chercheurs 
+en traitement automatique du langage présente un schéma d'annotation élaboré pour analyser l'ironie dans les tweets. 
+ 
 
 Deux types de cycles d'itérations sont envisageables: le cycle schéma / annotations et le cycle
 schéma / annotation / modèle IA, tous deux détaillés ci-dessous. 
@@ -147,8 +162,6 @@ schéma d'annotation est adapté aux documents.
 Par exemple, pour un projet d'annotation de réponses à un questionnaire en texte libre, on peut avoir une idée a priori 
 des thèmatiques abordées, ce qui permet d'élaborer une première version du schéma d'annotation, mais l'annotation des 
 réponses pourra faire émerger de nouvelles thématiques qui pourront venir compléter le schéma d'annotation. 
-
-
 
 
 #### 2. Le cycle schéma / annotation / modèle IA (est ce que je laisse cette partie ?? -> c'est souvent pas faisable en 
@@ -231,7 +244,7 @@ des annotations permet aussi de s'assurer de la qualité des annotations.
 En amont du projet, il est important de bien expliquer les enjeux du projet à l'équipe d'annotateurs ainsi que le rôle clé
 de l'annotation dans le projet. Cet on-boarding peut aussi être l'opportunité d'acculturer les annotateurs à
 l'Intelligence Artificielle. C'est notamment le pari fait par le projet collaboratif [PIAF](https://piaf.etalab.studio/) (voir l'exemple présenter en
-partie 1), pour lequel ont été organisés des annotatons dont le but était de former les annotateurs à l'IA tout en récoltant
+partie 1), pour lequel ont été organisés des *annotathons* dont le but était de former les annotateurs à l'IA tout en récoltant
 des contributions au projet d'annotation. [Cet article](https://piaf.etalab.studio/enseignements-contributions/) détaille la
 méthodologie adoptée pour ce projet. Il peut aussi être
 bénéfique au projet d'impliquer les annotateurs dans l'élaboration du schéma d'annotation, dans la mesure où cette élaboration 
@@ -256,34 +269,104 @@ de motivation).
 ### Etape 5: Annoter et s'assurer de la qualité 
 
 Lorsque le but de l'annotation est de développer un algorithme automatisant une tâche, la présence d'erreurs dans le
-corpus annoté servant
-à l'entraînement est 
-
-#### S'assurer de la qualité 
-	- Créer un gold standard data set 
-	- Multi annoter plusieurs documents - > tests de cohérences 
-	- Contrôler à la main de facon aléatoire certains documents 
-	- créer des indicateurs customs : tests de cohérence automatisés (traduction de règles métiers) : permet de faire remonter de facon automatique des documents annotés comportant un fort risque d'être mal annoté 
+corpus annoté servant à l'entraînement risque de conduire l'algorithme à reproduire les erreurs de l'annotation. Ce
+phénomène bien connu est désigné par l'expression *$"Garbage In, Garbage Out"*. S'assurer
+d'obtenir des annotations de qualité est donc particulièrement important. Nous proposons ci-après quelques recommandations
+pour le suivi de la qualité des annotations. 
 
 
+#### Créer un jeu de données "Gold Standard"
 
-#### Les métriques de justesse (accuracy)
+Un jeu de données que l'on appelle "Gold Standard" est consitué de documents annotés pour lesquels les annotations ont
+été vérifiées et sont donc de qualité certaine. Ce jeu de données peut être utilisé de plusieurs façons. 
+
+D'une part, les documents correspondants (sans les annotations) peuvent être donnés aux annotateurs au début de projet,
+pour s'assurer que la tâche soit bien comprise par les annotateurs ou pour vérifier que le schéma d'annotation ne 
+soit pas ambigu (c'est-à-dire puisse conduire deux annotateurs à annoter le même document de façon 
+correcte mais différente). En effet, en comparant les annotations réalisées par les annotateurs et celles dont on est certain 
+de la qualité, on peut faire remonter les erreurs ou ambiguités. Ces erreurs permettront soit d'identifier les éléments 
+du schéma d'annotation à réexpliquer, soit de corriger le schéma d'annotation afin de lever certaines ambiguités. 
+
+D'autre part, le jeu de données "Gold Standard" peut servir de jeu de données de test, afin d'évaluer l'algorithme développé
+sur un jeu de données de qualité la plus fiable possible. 
+
+### TO DO rajouter la déf de jeu d'apprentissage / jeu de test dans le lexique 
+
+#### Faire annoter une partie des documents par plusieurs annotateurs 
+
+Tout au long du projet, il est conseillé de faire annoter une partie des documents par plusieurs annotateurs, afin de
+comparer leurs annotations. Si des divergences trop importantes sont remontées lors de la comparaison (voir le paragraphe
+ci dessous sur les métriques de justesse), il faut alors identifier si la divergence provient d'une erreur d'un des annotateurs 
+ou si elle provient d'une ambiguité du schéma d'annotation qui peut conduire à deux façons correctes d'annoter le même document. 
 
 
+#### Relecture aléatoire de documents annotés par l'expert métier 
+Tout au long du projet, il est également conseillé que l'expert métier relise ponctuellement un certain nombre de documents 
+annotés sélectionnés aléatoirement afin de s'assurer de la qualité des annotations. 
+
+#### Implémenter des tests de cohérences sur les annotations 
+Pour certains projets, il est possible d'implémenter des tests automatiques traduisant des règles métier que les annotations 
+doivent respecter. Lorsque de tels tests sont implémentables, ils permettent de faire remonter de facon automatique 
+des documents annotés comportant un fort risque d'erreurs et qui seront donc à vérifier en priorité par l'expert métier.  
 
 
+#### Les métriques de concordances entre annotateurs (*Inter Annotater Agreement*)
+
+Des métriques existent pour comparer les annotations réalisées par différents annotateurs: le
+[Fleiss-Kappa](https://fr.wikipedia.org/wiki/Kappa_de_Fleiss) pour comparer les annotations entre *n* annotateurs 
+et le [Kappa de Cohen](https://fr.wikipedia.org/wiki/Kappa_de_Cohen) pour comparer les annotations de deux annotateurs
+seulement. Des librairies dans les langages open source R ou Python permettent d'implémenter ces métriques. 
 
 
 ### Etape 6: Accélérer le processus d'annotation 
 
-Un passage à l'échelle peut nécessiter d'employer des méthodes automatiques ou semi-automatiques. 
-Pré-annotation 
-- Snorkel / règles métier 
-- active learning 
+L'annotation manuelle étant un processus long et couteux en temps, il est souvent judicieux d'employer des méthodes 
+automatiques ou semi-automatiques afin d'accélérer le processus d'annotation. La pré-annotation consiste à annoter de 
+façon automatique les documents, afin que l’annotateur les vérifie, en les complétant ou en les corrigeant si nécessaire.
+Plusieurs possibilités sont envisageables pour mettre en oeuvre la pré-annotation. 
 
-Tests automatiques : faire remonter les annotations avec le plus de proba d'avoir des erreurs: 
-- règles 
-- modèle d'IA != annotations (discordance)
+
+#### La pré-annotation par des règles
+
+Cette méthode présente l'avantage de ne pas nécessiter de données annotées. Elle peut donc être implémentée dès le début 
+du projet. Dans certains cas, des règles simples peuvent permettre d'annoter des documents avec une performance plus ou moins
+bonne. Par exemple, afin de repérer les nom de personnes physiques dans un document, on peut utiliser la règle: tout ce qui suit 
+"Madame" ou "Monsieur" est un nom de personne physique. Bien évidemment, cette règle ne permettra pas de repérer tous les noms de personnes 
+physiques (certains noms ne seront pas précédés de Madame ou Monsieur) et conduira également à des faux-positifs (certains mots 
+qui suivent Monsieur ou Madame ne seront pas des personnes physiques). L'implémentation de ce type de règles par des méthodes 
+informatiques peut cependant permettre d'accéler le processus d'annotation, afin d'annoter les cas simples, c'est-à-dire ceux 
+qui sont conformes à certains règles métier ou d'usage. 
+
+La pertinence de cette méthode est à évaluer au cas par cas avec les experts métiers, afin d'identifier l'ensemble des règles 
+pertinentes. Une fois ces règles établies, il faudra les traduire informatiquement afin de pré-annoter les documents, un travail 
+à réaliser par un profil de data scientist. 
+
+[Snorkel](https://www.snorkel.org/) est un outil développé par une équipe de Standford University permettant d'annoter des documents 
+de façon automatique par le croisement de règles métier. Une librairie est disponible en Python pour implenter l'outil et de nombreux
+exemples et tutoriels sont proposés sur leur site. 
+
+#### La pré-annotation par un modèle de machine learning supervisé
+
+Ce type de méthodes nécessite un premier jeu de données annotées. Une fois qu'un premier jeu de données annotées est constitué, 
+il est alors de possible d'entraîner un premier algorithme d'apprentissage afin de labéliser les documents. Ce processus est itératif: 
+il est en effet difficile de connaître à l'avance la taille minimale requise du jeu d'apprentissage permettant de bonnes performances. 
+On peut alors, à partir d'un faible volume de données, entraîner un premier algorithme qui n'aura probablement pas des performances suffisantes
+pour passer en production, mais dont on peut cependant espérer qu'il permette d'accéler le processus d'annotation. Il faudra veiller à
+calibrer l'algorithme pour favoriser la précision au rappel, ce qui impliquera pour l'annotateur de corriger peu des champs annotés automatiquement 
+(car un taux de faux positifs faible) mais de rajouter les labels que l'algorithme omettra (taux de faux négatif plus élevé). 
+
+
+
+#### L'annotation à l'aide de l'active learning 
+
+
+ L'active learning est un champ de l'apprentissage automatique qui fait interagir l'algorithme d'apprentissage avec le système en
+ charge de la labélisation (l'annotateur dans notre cas). Cette méthode est particulièrement utile dans les situations où l'obtention de labels
+ est coûteuse. Au fur et à mesure de l'annotation, l'algorithme va apprendre à prioriser les documents à faire annoter afin de
+ maximiser le gain d'information de la nouvelle donnée annotée. L'idée sous-jacente est que tous les documents n'apporteront pas la
+ même contribution à l'algorithme d'apprentissage. 
+
+
 
 -> avantage : permet de faire remonter = 
 - des choses à clarifier dans les consignes d'annotations 
