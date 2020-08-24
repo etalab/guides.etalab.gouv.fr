@@ -62,28 +62,30 @@ des différents annotateurs.
     - le suivi de l'avancée des différentes tâches 
     - la facilité d'attribuer les docs aux différents annotateurs
 
-- le suivi de la qualité 
+- Le suivi de la qualité 
     - correction des annotations par le chef de projet 
     - résolution des conflits (lorsqu'une même document est annoté par plusieurs annotateurs)
 
-- le crowdsourcing : exemple de la plateforme d'annotation PIAF 
+- le crowdsourcing : le fait de pouvoir collecter des informations d'un public très large (exemple de la plateforme 
+d'annotation PIAF)
 
 
 ## La suggestion des annotations à l'aide de IA 
 Certains logiciels d'annotation incluent des modules de suggestions d'annotations (à l'aide de modèle de machine learning 
 notamment) ou permettent d'implémenter des règles de pré-annotation déterministes. 
-- suggestion de tags (active learning, implémentation de moteur de règles)
-- possibilité d'intégrer son propre modèle de préannotation 
+Les fonctionnalités à rechercher dans ce domaines peuvent être: 
+- La suggestion de tags par des modèles entraînés directement dans la plateforme 
+- La possibilité d'intégrer son propre modèle de pré-annotation 
 
 
 ## La facilité d'installation 
 
-- Docker
-- Saas ou On premise : 
-L'architecture SaaS, acronyme pour Software as a Service est une solution logicielle utilisable en ligne (on 
-parle aussi de Cloud ou de on demand). Le logiciel est délocalisé et accessible à distance par 
-réseau, moyennant un abonnement auprès de l’éditeur/hébergeur, sur n’importe quel navigateur.
+La facilité d'installation du logiciel d'annotation est également un critère à prendre en compte et le choix optimal 
+dépendra également des compétences disponibles dans votre équipe (certains logiciels open source nécessitent des compétences
+en développement informatique pour l'installation), de vos ressources informatiques (serveur disponible) de la sensibilité de vos données. 
+- Saas ou on premise : un logiciel SaaS (Software as a Service) est directement utilisable en ligne alors qu'un logiciel on 
+premise aura son architecture hébergée sur votre propre serveur
+- Docker ou non: Docker permet de faciliter le deploiement du logiciel sur un serveur
 
-A contrario, les solutions on premise sont les logiciels dont l’architecture est physiquement 
-présente au sein de l’entreprise (c’est à dire installée sur les serveurs de l’entreprise) qui 
-s’est acquittée d’une licence auprès de l’éditeur.
+Les solutions Saas présentent l'avantage de ne pas nécessiter ni de serveur ni d'installation. Si les données à annoter sont sensibles, il faudra 
+cependant s'assurer de les modalités de stockage des données sur la solution en ligne sont conformes aux exigences de sécurité et de protection des données. 

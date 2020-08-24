@@ -20,6 +20,9 @@ L'annotation est la tâche manuelle (et donc humaine) qui consiste à attribuer 
 L'apprentissage supervisé est une catégorie de tâches de l'apprentissage automatique, principal domaine de l'intelligence artificielle aujourd'hui. Les tâches qu'il recouvre se définissent par l'apprentissage d'un label correspondant à chaque donnée. Elles nécessitent donc en entrée une base de données annotées. En opposition, l'apprentissage non supervisé se caractérise par une situation où les données d'apprentissage ne disposent pas de labels.
 
 
+### Docker 
+
+
 ### Données d'apprentissage et données de test 
 
 ### Données tabulaires

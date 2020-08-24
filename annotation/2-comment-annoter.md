@@ -357,22 +357,20 @@ calibrer l'algorithme pour favoriser la précision au rappel, ce qui impliquera 
 
 
 
-#### L'annotation à l'aide de l'active learning 
+#### La priorisation des documents à annoter avec l'active learning
 
 
+ Dans un projet d'annotation, les documents à annoter sont souvent sélectionnés aléatoirement parmi l'ensemble des documents. 
  L'active learning est un champ de l'apprentissage automatique qui fait interagir l'algorithme d'apprentissage avec le système en
  charge de la labélisation (l'annotateur dans notre cas). Cette méthode est particulièrement utile dans les situations où l'obtention de labels
  est coûteuse. Au fur et à mesure de l'annotation, l'algorithme va apprendre à prioriser les documents à faire annoter afin de
- maximiser le gain d'information de la nouvelle donnée annotée. L'idée sous-jacente est que tous les documents n'apporteront pas la
- même contribution à l'algorithme d'apprentissage. 
+ maximiser le gain d'information de la nouvelle donnée annotée, et ainsi permettre de minimiser le nombre de documents nécessaires pour
+ entraîner un algorithmes avec de bonnes performances. L'idée sous-jacente est que tous les documents n'apporteront pas la
+ même contribution à l'algorithme d'apprentissage. Pour plus d'informations à ce sujet, [cet article](https://jlcl.org/content/2-allissues/4-Heft1-2016/jlcl-2016-1-5SkeppstedtEtAl.pdf) détaille 
+ comment implémenter des méthodes d'active learning appliquées à l'annotation de documents textuels. 
 
 
 
--> avantage : permet de faire remonter = 
-- des choses à clarifier dans les consignes d'annotations 
-- des cas ambigues (interprétables de 2 manières), ce qui peut vouloir dire qu'il faut modifier le schéma d'annotation
-- faire remonter des problèmes dont on n'avait pas connaissances dans les données (données incohérentes, erreurs 
-de saisies, etc)
 
 
 
