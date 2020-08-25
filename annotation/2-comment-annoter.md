@@ -29,7 +29,7 @@ Le data scientist pourra également mettre en oeuvre des méthodes informatiques
 Les attributions du profil de type data scientist sont de: 
 - S'assurer la qualité des annotations (par des tests de cohérence sur les données annotées) 
 - Pre-annotater les documents 
-- Prioriser les documents à annoter (par des méthodes de sampling à définir en fonction de différents critères à déterminer avec le métier)
+- Prioriser les documents à annoter (par des méthodes d'échantillonnage à définir en fonction de différents critères à déterminer avec le métier)
 - Si nécessaire, analyse et traitements des documents annotés afin de visualiser différentes métriques et/ou intégrer les documents annotés à la solution d'Intelligence Artificielle 
 
 ### L'administrateur de la plateforme d'annotation (expert SI)
@@ -87,13 +87,13 @@ La problématique métier à laquelle le projet répond est souvent complexe, av
 
 Etablir un schéma d'annotation implique souvent un travail de simplification (qui a également pour conséquence une perte d'information ou de précision). 
 
-Exemple du choix des catégories pour pseudonymiser les décisions de justice: afin de limiter au maximum le risque de réidentification, il faut se demander quelles informations doivent être retirées et comment les catégoriser. Un nombre restreint de catégories (nom, prénom, adresse, date de naissance) par exemple aura pour avantage des consignes d'annotations plus simples, alors qu'une catégorisation plus fine (personnes physiques, personnes morales, adresse complète, lieu de résidence par exemple) permettra de mieux cibler certaines informations sensibles. 
+::: tip Exemple du choix des catégories pour pseudonymiser les décisions de justice: afin de limiter au maximum le risque de réidentification, il faut se demander quelles informations doivent être retirées et comment les catégoriser. Un nombre restreint de catégories (nom, prénom, adresse, date de naissance) par exemple aura pour avantage des consignes d'annotations plus simples, alors qu'une catégorisation plus fine (personnes physiques, personnes morales, adresse complète, lieu de résidence par exemple) permettra de mieux cibler certaines informations sensibles. :::
 
 Il est important d'évaluer la clarté du schéma d'annotation et des consignes pour l'implémenter et de la reproductibilité des tâches d'annotation entre différentes annotateurs. En effet des consignes d'annotation peut claires ou intéreprétables de façon différentes par différents annotateurs auront pour conséquences: 
 - de rendre inopérable l'évaluation de la qualité des annotations 
 - de compromettre l'automatisation de la tâche par un algorithme d'intelligence artificielle 
 
-Exemple: Analyse de l'ironie dans des tweet.  Des interprétations différentes du langage, des prisese en compte différentes du contexte peuvent amener deux personnes différentes à percevoir caractériser différemment le caractère ironique ou non d'un tweet. [Ce papier](https://hal.archives-ouvertes.fr/hal-01429673/document) de chercheurs en traitement automatique du langage présente un schéma d'annotation élaboré pour analyser l'ironie dans les tweets. 
+::: tip Exemple: Analyse de l'ironie dans des tweet.  Des interprétations différentes du langage, des prisese en compte différentes du contexte peuvent amener deux personnes différentes à percevoir caractériser différemment le caractère ironique ou non d'un tweet. [Ce papier](https://hal.archives-ouvertes.fr/hal-01429673/document) de chercheurs en traitement automatique du langage présente un schéma d'annotation élaboré pour analyser l'ironie dans les tweets. :::
  
 
 Deux types de cycles d'itérations sont envisageables: le cycle schéma / annotations et le cycle schéma / annotation / modèle IA, tous deux détaillés ci-dessous. 
@@ -104,7 +104,7 @@ Elaborer un schéma d'annotation nécessite de prendre en compte à la fois la p
 
 #### TO DO : rajouter un schéma du cycle 
 
-Par exemple, pour un projet d'annotation de réponses à un questionnaire en texte libre, on peut avoir une idée a priori des thèmatiques abordées, ce qui permet d'élaborer une première version du schéma d'annotation, mais l'annotation des réponses pourra faire émerger de nouvelles thématiques qui pourront venir compléter le schéma d'annotation. 
+::: tip Par exemple, pour un projet d'annotation de réponses à un questionnaire en texte libre, on peut avoir une idée a priori des thèmatiques abordées, ce qui permet d'élaborer une première version du schéma d'annotation, mais l'annotation des réponses pourra faire émerger de nouvelles thématiques qui pourront venir compléter le schéma d'annotation. :::
 
 
 #### 2. Le cycle schéma / annotation / modèle IA (est ce que je laisse cette partie ?? -> c'est souvent pas faisable en 
@@ -142,7 +142,6 @@ faire des captures d'écran du logiciel d'annotation). Cette partie peut prendre
 - Documentation pour le logiciel d'annotation (comment se connecter, accéder aux documents à annoter, enregistrer un document 
 annoté finalisé, etc...)
 
-Possibilité de compléter la doc par un quizz 
 
 ##### Un guide à destination de l'administrateur de la plateforme d'annotation 
 
@@ -162,9 +161,13 @@ La formation et la mobilisation des annotateurs est un aspect très important. L
 
 #### Former les annotateurs 
 
-En amont du projet, il est important de bien expliquer les enjeux du projet à l'équipe d'annotateurs ainsi que le rôle clé de l'annotation dans le projet. Cet on-boarding peut aussi être l'opportunité d'acculturer les annotateurs à l'Intelligence Artificielle. C'est notamment le pari fait par le projet collaboratif [PIAF](https://piaf.etalab.studio/) (voir l'exemple présenter en partie 1), pour lequel ont été organisés des *annotathons* dont le but était de former les annotateurs à l'IA tout en récoltant des contributions au projet d'annotation. [Cet article](https://piaf.etalab.studio/enseignements-contributions/) détaille la méthodologie adoptée pour ce projet. Il peut aussi être bénéfique au projet d'impliquer les annotateurs dans l'élaboration du schéma d'annotation, dans la mesure où cette élaboration  passe par une phase d'itération entre schéma et annotations de documents. L'implication des annotateurs aura également pour avantage une meilleure appropriation de leur part des tâches à effectuer. 
+En amont du projet, il est important de bien expliquer les enjeux du projet à l'équipe d'annotateurs ainsi que le rôle clé de l'annotation dans le projet. Cet on-boarding peut aussi être l'opportunité d'acculturer les annotateurs à l'Intelligence Artificielle. 
 
-La documentation (décrite dans le paragraphe Un guide à destination des annotateurs) est centrale pour la formation. 
+::: tip C'est notamment le pari fait par le projet collaboratif [PIAF](https://piaf.etalab.studio/) (voir l'exemple présenter en partie 1), pour lequel ont été organisés des *annotathons* dont le but était de former les annotateurs à l'IA tout en récoltant des contributions au projet d'annotation. [Cet article](https://piaf.etalab.studio/enseignements-contributions/) détaille la méthodologie adoptée pour ce projet. :::
+
+Il peut aussi être bénéfique au projet d'impliquer les annotateurs dans l'élaboration du schéma d'annotation, dans la mesure où cette élaboration  passe par une phase d'itération entre schéma et annotations de documents. L'implication des annotateurs aura également pour avantage une meilleure appropriation de leur part des tâches à effectuer. 
+
+La documentation (décrite dans le paragraphe Un guide à destination des annotateurs) est centrale pour la formation. La documentation peut également complétée par un quizz qui récense les principaux types d'éléments à annoter et fournit des exemples des cas les plus difficiles. 
 
 #### Mobiliser les annotateurs tout au long du projet 
 Afin de mobiliser les annotateurs tout au long du projet, il est important de maintenir une dynamique d'échange. Il peut être utile de mettre en place des outils de partage (messagerie instannée, forum de discussion, documents collaboratifs) afin de permettre à l'équipe projet d'échanger sur leurs difficultés, de se poser des questions et de s'entraider. Des sessions d'harmonisation régulières peuvent aussi être mises en place afin de communiquer sur les avancées du projet et partager des éventuels changements ou points d'attention sur l'annotation. 
@@ -207,8 +210,11 @@ Des métriques existent pour comparer les annotations réalisées par différent
 
 ### Etape 6: Accélérer le processus d'annotation 
 
-L'annotation manuelle étant un processus long et couteux en temps, il est souvent judicieux d'employer des méthodes automatiques ou semi-automatiques afin d'accélérer le processus d'annotation. La pré-annotation consiste à annoter de façon automatique les documents, afin que l’annotateur les vérifie, en les complétant ou en les corrigeant si nécessaire.Plusieurs possibilités sont envisageables pour mettre en oeuvre la pré-annotation. 
+L'annotation manuelle étant un processus long et couteux en temps, il est souvent judicieux d'employer des méthodes automatiques ou semi-automatiques afin d'accélérer le processus d'annotation. 
 
+::: lexique La pré-annotation consiste à annoter de façon automatique les documents, afin que l’annotateur les vérifie, en les complétant ou en les corrigeant si nécessaire. :::
+
+Plusieurs possibilités sont envisageables pour mettre en oeuvre la pré-annotation, détaillées dans les deux paragraphes ci-dessous. 
 
 #### La pré-annotation par des règles
 
@@ -227,7 +233,11 @@ Ce type de méthodes nécessite un premier jeu de données annotées. Une fois q
 #### La priorisation des documents à annoter avec l'active learning
 
 
- Dans un projet d'annotation, les documents à annoter sont souvent sélectionnés aléatoirement parmi l'ensemble des documents. L'active learning est un champ de l'apprentissage automatique qui fait interagir l'algorithme d'apprentissage avec le système en charge de la labélisation (l'annotateur dans notre cas). Cette méthode est particulièrement utile dans les situations où l'obtention de labels est coûteuse. Au fur et à mesure de l'annotation, l'algorithme va apprendre à prioriser les documents à faire annoter afin de maximiser le gain d'information de la nouvelle donnée annotée, et ainsi permettre de minimiser le nombre de documents nécessaires pour entraîner un algorithmes avec de bonnes performances. L'idée sous-jacente est que tous les documents n'apporteront pas la même contribution à l'algorithme d'apprentissage. Pour plus d'informations à ce sujet, [cet article](https://jlcl.org/content/2-allissues/4-Heft1-2016/jlcl-2016-1-5SkeppstedtEtAl.pdf) détaille comment implémenter des méthodes d'active learning appliquées à l'annotation de documents textuels. 
+ Dans un projet d'annotation, les documents à annoter sont souvent sélectionnés aléatoirement parmi l'ensemble des documents. 
+ 
+ ::: lexique L'active learning est un champ de l'apprentissage automatique qui fait interagir l'algorithme d'apprentissage avec le système en charge de la labélisation (l'annotateur dans notre cas). Cette méthode est particulièrement utile dans les situations où l'obtention de labels est coûteuse. Au fur et à mesure de l'annotation, l'algorithme va apprendre à prioriser les documents à faire annoter afin de maximiser le gain d'information de la nouvelle donnée annotée, et ainsi permettre de minimiser le nombre de documents nécessaires pour entraîner un algorithmes avec de bonnes performances. :::
+ 
+ L'idée sous-jacente est que tous les documents n'apporteront pas la même contribution à l'algorithme d'apprentissage. Pour plus d'informations à ce sujet, [cet article](https://jlcl.org/content/2-allissues/4-Heft1-2016/jlcl-2016-1-5SkeppstedtEtAl.pdf) détaille comment implémenter des méthodes d'active learning appliquées à l'annotation de documents textuels. 
 
 
 

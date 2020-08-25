@@ -16,6 +16,15 @@ Les données structurées sont celle que l'on peut mettre dans un tableau, avec 
 
 Le caractère non structuré des données rend leur exploitation - notamment par des algorithmes d'intelligence artificielle - beaucoup plus complexe. Si l'on souhaite utiliser ces données pour développer des solutions d'intelligence artificielle, une phase d'annotation est souvent nécessaire. La phase d'annotation, qui consiste à assigner un ou plusieurs labels à des éléments d'un jeu de données, permet ainsi la constitution d'un jeu de données structuré, rendant possible l'entraînement d'algorithmes supervisés. 
 
+De façon plus générale, la structuration de la donnée permet de mieux connaître le jeu de données en rendant possible notamment: 
+- la réalisation d'opérations ou statistiques (moyennes, comptage par catégories, etc...)
+- la visualisation de certaines mértiques d'intérêt du jeu de données 
+- la recherche plus rapide d'une information précise (sélection d'un sous-ensemble selon un critère donné, tri selon une variable, etc...)
+
+::: lexique 
+L'annotation est la tâche qui consiste à attribuer à chaque donnée le label qui lui correspond. Par exemple, à attribuer le label « chien » ou « chat » à une base de photographies d'animaux. Ou encore à attribuer le label correct entre « nom », « prénom », « adresse », « date » ou « aucun » à chacun des mots d'un document. On distinguera **l'annotation manuelle**, lorsque cette tâche est effectuée par un humain, de **l'annotation automatique**, lorsque cette tâche est effectuée par un programme informatique. 
+::: 
+
 Les solutions d'IA qui ont recours à des modèles de machine learning sont en très grande majorité des algorithmes supervisés. L'élaboration d'un modèle performant dépend fortement de la qualité des données, dont la qualité des labels est une dimension importante, même si d'autres aspects qualitatifs peuvent entrer en jeu (complétude des variables explicatives, valeurs abérrantes, etc...). La phase d'annotation doit donc être réalisée en veillant à obtenir des labels de bonne qualité. Ce guide présente les étapes clés et quelques bonnes pratiques afin d'y parvenir. 
 
 
@@ -46,19 +55,12 @@ EN 3eme EXEMLE CHOISIR PARMI
 Identification et qualification manuelle d'objets sur des images satellites (caravanes, mobile 
 homes, constructions en dur, piscines, navires. )
 
+## L'annotation: une tâche automatisable ? 
+
+De façon générale, l'annotation permet de structurer des données afin de les rendre plus facilement exploitables, même si le but final peut être différent (comme c'est le cas pour la pseudonymisation, on annote des documents afin d'occulter certains éléments, mais cela passe par une étape de structuration du texte libre, en permettant d'identifier où sont les noms et prénoms de personnes physiques  dans le texte par exemple). 
 
 
-## Les différents objectifs de l'annotation 
-
-L'annotation permet de structurer des données afin de les rendre plus facilement exploitables, même si le but final peut être différent (comme c'est le cas pour la pseudonymisation, on annote des documents afin d'occulter certains éléments, mais cela passe par une étape de structuration du texte libre, en permettant d'identifier où sont les noms et prénoms de personnes physiques  dans le texte par exemple). 
-
-La structuration de la donnée permet de mieux connaître le jeu de données en rendant possible notamment: 
-- la réalisation d'opérations ou statistiques (moyennes, comptage par catégories, etc...)
-- la visualisation de certaines mértiques d'intérêt du jeu de données 
-- la recherche plus rapide d'une information précise (sélection d'un sous-ensemble selon un critère donné, tri selon une variable, etc...)
-
-
-### Annoter pour entraîner un algorithme d'intelligence articielle 
+### Annoter manuellement pour entraîner un algorithme d'intelligence articielle 
 
 En fonction notamment du volume de données à annoter et de la complexité de la tâche d'annotation, il est plus ou moins pertinent d'envisager une solution d'intelligence artificielle pour automatiser le processus de structuration de la donnée. 
 
@@ -73,14 +75,10 @@ En revanche, dès lors que l'on est confronté à un volume important de documen
 
 Le besoin en annotation peut parfois mettre en lumière un mode de collecte de la donnée qui n'est pas adapté aux besoins des utilisateurs. Le travail d'annotation *ex post* aurait parfois pu être évité en intégrant un processus de structuration de la donnée *ex ante*, cette dernière solution permettant un gain de temps souvent significatif par rapport à la première. 
 
-Par exemple, l'enregistrement dans un système d'information d'une procédure ou d'une déclaration passe par une application permettant à des agents de remplir un certains nombre de champs. Certains champs à remplir en texte libre peuvent ainsi nécessitant une annotation *ex post* afin d'utiliser l'information alors que la même information aurait pu être saisie via un menu déroulant pour être directement exploitable. 
+Par exemple, l'enregistrement dans un système d'information d'une procédure ou d'une déclaration est réalisé via une application permettant à des agents de remplir un certains nombre de champs. Certains champs à remplir en texte libre peuvent ainsi nécessitant une annotation *ex post* afin d'utiliser l'information alors que la même information aurait pu être saisie via un menu déroulant comportant une liste pré-définie de champs pour être directement exploitable. 
 
 
-## Ressources externes 
 
-- Ouvrage collectif sur l'annotation lingustistique : Handbook of Linguistic Annotation, Springer, 2017
-- Un sondage sur les logiciels d'annotation consultable [ici](https://github.com/alvations/annotate-questionnaire)
-- Un [benchmark de 78 outils d'annotation](https://academic.oup.com/bib/article/doi/10.1093/bib/bbz130/5670958#190144135 ) avec bcp de critères pris en compte 
 
 
 
