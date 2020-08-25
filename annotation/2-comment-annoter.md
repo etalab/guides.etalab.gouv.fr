@@ -102,7 +102,7 @@ Deux types de cycles d'itérations sont envisageables: le cycle schéma / annota
 
 Elaborer un schéma d'annotation nécessite de prendre en compte à la fois la problématique du projet et les caractéristiques des documents à annoter. Ainsi élaborer un premier schéma d'annotation répondant à la problématique, le tester en annotant des documents puis le réviser au fur et à mesure de l'annotation. C'est en général en annotatant que l'on s'aperçoit si le schéma d'annotation est adapté aux documents. 
 
-#### TO DO : rajouter un schéma du cycle 
+![cycle iteration 1](./images/cycle_iteration_1.drawio)
 
 ::: tip Par exemple, pour un projet d'annotation de réponses à un questionnaire en texte libre, on peut avoir une idée a priori des thèmatiques abordées, ce qui permet d'élaborer une première version du schéma d'annotation, mais l'annotation des réponses pourra faire émerger de nouvelles thématiques qui pourront venir compléter le schéma d'annotation. :::
 
