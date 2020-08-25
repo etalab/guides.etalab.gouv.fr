@@ -47,17 +47,13 @@ La Cour de Cassation est chargée de la diffusion des décisions de justice. Le 
 Pour plus d'information sur la pseudonymisation de documents textuels à l'aide de méthodes d'intelligence artificielle, vous pouvez consulter notre [guide pseudonymisation](https://guides.etalab.gouv.fr/pseudonymisation/#a-quoi-sert-ce-guide). 
 
 
-EN 3eme EXEMLE CHOISIR PARMI
-
-### Projet d'aide à la décision de l'Autorité de Sûreté Nucléaire (ASN) 
-### CARTO FRICHE ou c'est de l'annotation d'images?
 ### Projet DDTM Hérault : annotation d'images satellites 
-Identification et qualification manuelle d'objets sur des images satellites (caravanes, mobile 
-homes, constructions en dur, piscines, navires. )
+Ce projet, réalisé dans le cadre de la première saison de l'[Appel à Manifestation d'Intérêt en Intelligence Artificielle](https://www.etalab.gouv.fr/intelligence-artificielle-decouvrez-les-6-projets-laureats-de-lappel-a-manifestation-dinteret-ia) à la [DDTM de l'Hérault](http://www.herault.gouv.fr/Services-de-l-Etat/Agriculture-environnement-amenagement-et-logement/Direction-Departementale-des-Territoires-et-de-la-Mer-de-l-Herault-DDTM-34) , vise a développer un modèle d’analyse d’images aériennes ou satellites pour automatiser le pré-repérage des infractions potentielles liées à la cabanisation. Cette automatisation nécessite une phase d'annotation manuelle d'images satellites. La tâche d'annotation consiste à repérer sur l'image les zones correspondant à plusieurs types d'objet types d’objets (caravanes, mobile homes, constructions en dur, piscines, navires) et à leur attribuer le label correspondant. Un logiciel d'annotation d'image a été développé à cet effet. 
+
 
 ## L'annotation: une tâche automatisable ? 
 
-De façon générale, l'annotation permet de structurer des données afin de les rendre plus facilement exploitables, même si le but final peut être différent (comme c'est le cas pour la pseudonymisation, on annote des documents afin d'occulter certains éléments, mais cela passe par une étape de structuration du texte libre, en permettant d'identifier où sont les noms et prénoms de personnes physiques  dans le texte par exemple). 
+De façon générale, l'annotation permet de structurer des données afin de les rendre plus facilement exploitables, même si le but final peut être différent (comme c'est le cas pour la pseudonymisation, on annote des documents afin d'occulter certains éléments, mais cela passe par une étape de structuration du texte libre, en permettant d'identifier où sont les noms et prénoms de personnes physiques  dans le texte par exemple). L'annotation manuelle étant une tâche longue et souvent coûteuse, il est souvent pertinent d'envisager d'automatiser (au moins en partie) l'annotation. On parle alors d'annotation automatique. 
 
 
 ### Annoter manuellement pour entraîner un algorithme d'intelligence articielle 
@@ -75,7 +71,7 @@ En revanche, dès lors que l'on est confronté à un volume important de documen
 
 Le besoin en annotation peut parfois mettre en lumière un mode de collecte de la donnée qui n'est pas adapté aux besoins des utilisateurs. Le travail d'annotation *ex post* aurait parfois pu être évité en intégrant un processus de structuration de la donnée *ex ante*, cette dernière solution permettant un gain de temps souvent significatif par rapport à la première. 
 
-Par exemple, l'enregistrement dans un système d'information d'une procédure ou d'une déclaration est réalisé via une application permettant à des agents de remplir un certains nombre de champs. Certains champs à remplir en texte libre peuvent ainsi nécessitant une annotation *ex post* afin d'utiliser l'information alors que la même information aurait pu être saisie via un menu déroulant comportant une liste pré-définie de champs pour être directement exploitable. 
+::: tip Par exemple, l'enregistrement dans un système d'information d'une procédure ou d'une déclaration est réalisé via une application permettant à des agents de remplir un certains nombre de champs. Certains champs à remplir en texte libre peuvent ainsi nécessitant une annotation *ex post* afin d'utiliser l'information alors que la même information aurait pu être saisie via un menu déroulant comportant une liste pré-définie de champs pour être directement exploitable. :::
 
 
 
