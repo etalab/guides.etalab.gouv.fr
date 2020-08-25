@@ -4,8 +4,8 @@ permalink: /algorithmes/guide
 
 # Les algorithmes publics
 
-La mission [Etalab](https://www.etalab.gouv.fr) accompagne les administrations dans l'application du nouveau cadre juridique sur les algorithmes publics.
-Ce guide, ouvert aux contributions et publié dans le cadre du [programme de travail](1-programme-de-travail.md) d'Etalab, est composé de trois parties qui peuvent se lire de manière indépendante.
+Le département [Etalab](https://www.etalab.gouv.fr) accompagne les administrations dans l'application du nouveau cadre juridique sur les algorithmes publics.
+Ce guide, ouvert aux contributions, est composé de trois parties qui peuvent se lire de manière indépendante.
 - La première partie donne des **éléments de contexte**: qu'est-ce qu'un algorithme ? à quoi servent les algorithmes dans le secteur public ? 
 - La seconde partie détaille les **enjeux en termes d'éthique et de responsabilité**, 
 - La troisième partie présente le **cadre juridique applicable** en matière de transparence des algorithmes notamment suite à l'adoption de la loi pour une République numérique.
@@ -18,15 +18,19 @@ Ce guide est destiné à l'ensemble des administrations et organisations chargé
 
 ## Comment contribuer ?
 
-Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification dans la [version éditable](0-guide.md) du guide (sur Github) ou en contactant directement Simon Chignard (Mission Etalab - Direction interministérielle du numérique): `simon.chignard@data.gouv.fr`
+Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification dans la [version éditable](0-guide.md) du guide (sur GitHub) ou en contactant directement Simon Chignard (département Etalab - Direction interministérielle du numérique): `simon.chignard@data.gouv.fr` et l'équipe en charge des algorithmes publics : algorithmes@etalab.gouv.fr. 
 
 
 # 1- A quoi servent les algorithmes publics ?
 
-Commencons tout d'abord par une définition: **qu'est-ce qu'un algorithme** ? 
+Commençons tout d'abord par une définition: **qu'est-ce qu'un algorithme** ? 
 > Selon le Larousse, un algorithme est un "*ensemble de règles opératoires dont l'application permet de résoudre un problème énoncé au moyen d'un nombre fini d'opérations. Un algorithme peut être traduit, grâce à un langage de programmation, en un programme exécutable par un ordinateur*".
 
 📍 Retenons que, selon cette définition, un algorithme peut donc exister **indépendamment d'un traitement informatique**. Une grille de notation "papier" utilisée par une administration peut donc être considérée comme un algorithme.
+
+La CNIL [définit](https://www.cnil.fr/fr/definition/algorithme) un algorithme comme _"la description d'une suite d'étapes permettant d'obtenir un résultat à partir d'éléments fournis en entrée."_
+
+Quant au [répertoire terminologique 2000 publié au journal officiel du 22 septembre 2000](https://www.marche-public.fr/Marches-publics/Textes/Definition/Repertoire-terminologique-2000.pdf), il définit "algorithmique" comme l'_"étude de la résolution de problèmes par la mise en œuvre de suites d'opérations élémentaires selon un processus défini aboutissant à une solution."_ 
 
 Nous avons recensé plusieurs types d'**usages des algorithmes** dans les administrations, avec une série d'exemples associés.
 
@@ -40,7 +44,7 @@ Nous avons recensé plusieurs types d'**usages des algorithmes** dans les admini
 ## Décision automatisée ou aide à la décision ?
 
 Certains algorithmes peuvent être utilisés pour prendre des décisions. On les distingue selon le **degré d'intervention humaine** dans cette prise de décision: 
-- Certains fonctionnent sans intervention humaine (par exemple le calcul de l'impôt des 37 millions de foyers fiscaux). On parle alors de **traitement automatisé**.
+- Certains fonctionnent sans intervention humaine (par exemple le calcul de l'impôt des 37 millions de foyers fiscaux). On parle alors de **traitement automatisé** ou de **décision automatisée**.
 
 - D'autres sont des outils d'**aide à la décision**: ils aident l'humain à prendre une décision, par exemple en classant des dossiers selon des critères de priorité pour qu'ils soient ensuite étudiés par une commission qui prendra formellement la décision.
 
@@ -90,7 +94,16 @@ Nous avons identifié dans la [littérature scientifique](https://arxiv.org/pdf/
 
 # 3 - Le cadre juridique applicable
 
-La loi pour une République numérique, et plus récemment le Réglement sur la protection des données à caractère personnel (RGPD) ont introduit de nouvelles dispositions concernant les algorithmes publics. Ces dispositions visent à introduire une **plus grande transparence et** une plus grande **redevabilité** de l'administration dans l'usage de ces systèmes, en particulier quand ils sont utilisés pour prendre des décisions.
+La loi pour une République numérique, et plus récemment le Règlement sur la protection des données à caractère personnel (RGPD) ont introduit de nouvelles dispositions concernant les algorithmes publics. Ces dispositions visent à introduire une **plus grande transparence et** une plus grande **redevabilité** de l'administration dans l'usage de ces systèmes, en particulier quand ils sont utilisés pour prendre des décisions.
+
+On distingue :
+* Les obligations liées au **traitement de données personnelles** : l'article 39 de la loi Informatique et Libertés, qui s'applique tant au secteur public que privé, précise que "toute personne physique justifiant de son identité a le droit d'interroger le responsable d'un traitement à caractère personnel en vue d'obtenir (...) 5° les informations permettant de connaître et de contester la logique qui sous-tend le traitement automatisé en cas de décision prise sur le fondement de celui-ci et produisant des effets juridiques à l'égard de l'interessé" ; 
+* Les obligations liées à **l'ouverture des codes sources** (voir le [guide d'Etalab sur l'ouverture des codes sources de logiciels](https://guides.etalab.gouv.fr/algorithmes/)) ; 
+* Les obligations spécifiques de transparence des algorithmes du code des relations entre le public et l'administration (CRPA), qui sont détaillées dans la section suivante.
+
+::: tip Rappel
+En résumé : même si un algorithme n'est pas concerné par les obligation de transparence du CRPA, il peut être soumis aux autres obligations précitées.
+:::
 
 ## Qui est concerné par la transparence des algorithmes ?
 
