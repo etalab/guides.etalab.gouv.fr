@@ -20,7 +20,6 @@ Ce guide est destiné à l'ensemble des administrations et organisations chargé
 
 Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification dans la [version éditable](0-guide.md) du guide (sur GitHub) ou en contactant directement Simon Chignard (département Etalab - Direction interministérielle du numérique): `simon.chignard@data.gouv.fr` et l'équipe en charge des algorithmes publics : algorithmes@etalab.gouv.fr. 
 
-
 # 1- A quoi servent les algorithmes publics ?
 
 Commençons tout d'abord par une définition: **qu'est-ce qu'un algorithme** ? 
@@ -28,9 +27,7 @@ Commençons tout d'abord par une définition: **qu'est-ce qu'un algorithme** ?
 
 📍 Retenons que, selon cette définition, un algorithme peut donc exister **indépendamment d'un traitement informatique**. Une grille de notation "papier" utilisée par une administration peut donc être considérée comme un algorithme.
 
-La CNIL [définit](https://www.cnil.fr/fr/definition/algorithme) un algorithme comme _"la description d'une suite d'étapes permettant d'obtenir un résultat à partir d'éléments fournis en entrée."_
-
-Quant au [répertoire terminologique 2000 publié au journal officiel du 22 septembre 2000](https://www.marche-public.fr/Marches-publics/Textes/Definition/Repertoire-terminologique-2000.pdf), il définit "algorithmique" comme l'_"étude de la résolution de problèmes par la mise en œuvre de suites d'opérations élémentaires selon un processus défini aboutissant à une solution."_ 
+La CNIL [définit](https://www.cnil.fr/sites/default/files/atoms/files/cnil_rapport_garder_la_main_web.pdf) un algorithme comme _"une suite finie et non ambigüe d’instructions permettant d’aboutir à un résultat à partir de données fournies en entrée."_ (rapport "Comment permettre à l'Homme de garder la main ? Les enjeux éthiques des algorithmes et de l'intelligence artificielle", décembre 2017)
 
 Nous avons recensé plusieurs types d'**usages des algorithmes** dans les administrations, avec une série d'exemples associés.
 
@@ -97,7 +94,7 @@ Nous avons identifié dans la [littérature scientifique](https://arxiv.org/pdf/
 La loi pour une République numérique, et plus récemment le Règlement sur la protection des données à caractère personnel (RGPD) ont introduit de nouvelles dispositions concernant les algorithmes publics. Ces dispositions visent à introduire une **plus grande transparence et** une plus grande **redevabilité** de l'administration dans l'usage de ces systèmes, en particulier quand ils sont utilisés pour prendre des décisions.
 
 On distingue :
-* Les obligations liées au **traitement de données personnelles** : l'article 39 de la loi Informatique et Libertés, qui s'applique tant au secteur public que privé, précise que "toute personne physique justifiant de son identité a le droit d'interroger le responsable d'un traitement à caractère personnel en vue d'obtenir (...) 5° les informations permettant de connaître et de contester la logique qui sous-tend le traitement automatisé en cas de décision prise sur le fondement de celui-ci et produisant des effets juridiques à l'égard de l'interessé" ; 
+* Les obligations liées au **traitement de données personnelles** : l'article 39 de la loi Informatique et Libertés, qui s'applique **tant au secteur public que privé**, précise que "toute personne physique justifiant de son identité a le droit d'interroger le responsable d'un traitement à caractère personnel en vue d'obtenir (...) 5° les informations permettant de **connaître et de contester** la logique qui sous-tend le traitement automatisé en cas de décision prise sur le fondement de celui-ci et produisant des effets juridiques à l'égard de l'intéressé".
 * Les obligations liées à **l'ouverture des codes sources** (voir le [guide d'Etalab sur l'ouverture des codes sources de logiciels](https://guides.etalab.gouv.fr/algorithmes/)) ; 
 * Les obligations spécifiques de transparence des algorithmes du code des relations entre le public et l'administration (CRPA), qui sont détaillées dans la section suivante.
 
@@ -111,13 +108,21 @@ Le code des relations entre le public et l'administration (CRPA) précise le pé
 
 📝 **Si**: 
 - vous êtes **une administration d’Etat, une collectivité, un organisme de droit public ou de droit privé intervenant dans le cadre d’une mission de service public** [(article L.300-2)](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000031366350&idArticle=LEGIARTI000031367689&dateTexte=&categorieLien=cid),
-- vous utilisez un **traitement algorithmique** (cf. la [définition](0-guide.md#1--a-quoi-servent-les-algorithmes-publics-) ci-dessus),
-- à l’aide de ce traitement, vous prenez des **décisions administratives individuelles envers des personnes physiques ou morales, de droit public ou privé nommément désignées**,
+- vous utilisez un **traitement algorithmique** (cf. la [définition](0-guide.md#1--a-quoi-servent-les-algorithmes-publics-) ci-dessus. Pour rappel, cela inclut les traitements automatisés **et** les outils d'aide à la décision),
+- à l’aide de ce traitement, vous prenez des **décisions administratives individuelles envers des personnes physiques ou morales, de droit public ou privé nommément désignées** [(article L311-3-1)](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=21CA8A3C6491AED0CE70B15139E716A3.tplgfr27s_2?idArticle=LEGIARTI000033205535&cidTexte=LEGITEXT000031366350&dateTexte=20200826),
 - et que ce traitement n’est **pas couvert par l’un des secrets définis par la loi** [(2° de l'article L.311-5)](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000031366350&idArticle=LEGIARTI000031367708), et notamment: délibérations du Gouvernement, défense nationale, conduite de la politique extérieure, sûreté de l’Etat, sécurité publique, sécurité des personnes ou des systèmes d’information, recherche et prévention d’infractions, etc. 
 
 **Alors** vous devez remplir les nouvelles obligations liées à la **transparence des algorithmes**.
 
-📍On notera que les décisions administratives "individuelles" ne concernent pas uniquement des personnes physiques mais aussi **les personnes morales**. C'est à dire qu'une décision prise par une administration envers une association, une entreprise ou un autre acteur public à l'aide d'un traitement algorithmique sera aussi concernée par ces obligations. 
+::: tip Zoom sur la décision administrative individuelle
+
+📍On notera que les décisions administratives "individuelles" ne concernent pas uniquement des personnes physiques mais aussi **les personnes morales** pour la définition de décision administrative individuelle). C'est à dire qu'une décision prise par une administration envers une association, une entreprise ou un autre acteur public à l'aide d'un traitement algorithmique sera aussi concernée par ces obligations. 
+
+L'[article L200-1 du CRPA](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000031367495&cidTexte=LEGITEXT000031366350&dateTexte=20160101) et [la circulaire du 24 décembre 1997 relative à la mise en oeuvre de la déconcentration des décisions administratives individuelles](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000752779&categorieLien=id#:~:text=Le%20d%C3%A9cret%20du%2015%20janvier%201997%20autorise%20la%20d%C3%A9concentration%20de,autorit%C3%A9s%20autres%20que%20le%20pr%C3%A9fet.&text=%2D%20ces%20exceptions%20doivent%20avoir%20%C3%A9t%C3%A9,24%20d%C3%A9cembre%201997%20(2).) détaillent les caractéristiques des décisions administratives individuelles. 
+
+:::
+
+La notion de décision administrative individuelle est 
 
 ## Quelles sont ces obligations en matière de transparence ?
 
@@ -133,11 +138,14 @@ Concrètement, si vous remplissez les conditions, alors vous devrez:
 - au titre de la mention explicite: **faire figurer en ligne et sur les documents** (avis, notifications) une mention précisant les finalités du traitement, le rappel du droit de communication, les modalités d’exercice de ce droit,
 - au titre de l'information individuelle: **fournir à la demande de l’intéressé** : le degré et le mode de contribution du traitement algorithmique à la prise de décision, les données traitées et leurs sources, les paramètres de traitement et leur pondération, appliqués à la situation de l'intéressé, les opérations effectuées par le traitement.
 
+## Obligations spécifiques aux traitements automatisés
+
 On notera que ces obligations s'appliquent à l'ensemble des traitements qui fondent des décisions administratives individuelles, **quel que soit le degré d'intervention humaine**. Elles concernent donc aussi bien les traitements automatisés que les outils d'aide à la décision.
 
-📍Cependant, le législateur a introduit en 2018 dans la loi dite "Informatique et libertés" ([article 10](https://www.legifrance.gouv.fr/affichTexteArticle.do;jsessionid=244F9CD5D2EFCDA76E8894D66088713F.tplgfr28s_1?idArticle=LEGIARTI000037090394&cidTexte=LEGITEXT000006068624&dateTexte=20190307) de la loi du 6 janvier 1978) une obligation supplémentaire concernant les traitements automatisés (c'est à dire sans intervention humaine): à compter du 1er juillet 2020, tout traitement automatisé devra comporter, **à peine de nullité**, l'obligation de mention explicite. Par ailleurs le même article précise que "le responsable du traitement s'assure de la maîtrise du traitement algorithmique et de ses évolutions afin de pouvoir expliquer, **en détail et sous une forme intelligible**, à la personne concernée, la manière dont le traitement a été mis en oeuvre à son égard".
+📍Le législateur a introduit en 2018 dans la loi dite "Informatique et libertés" ([article 10](https://www.legifrance.gouv.fr/affichTexteArticle.do;jsessionid=244F9CD5D2EFCDA76E8894D66088713F.tplgfr28s_1?idArticle=LEGIARTI000037090394&cidTexte=LEGITEXT000006068624&dateTexte=20190307) de la loi du 6 janvier 1978) une obligation supplémentaire concernant les traitements automatisés (c'est à dire sans intervention humaine): à compter du 1er juillet 2020, tout traitement automatisé devra comporter, **à peine de nullité**, l'obligation de mention explicite. 
+Par ailleurs le même article précise que "le responsable du traitement s'assure de la maîtrise du traitement algorithmique et de ses évolutions afin de pouvoir expliquer, **en détail et sous une forme intelligible**, à la personne concernée, la manière dont le traitement a été mis en oeuvre à son égard". Cela implique notamment que les traitements de machine learning qui ne peuvent pas être expliqués peuvent être utilisés uniquement comme des outils d'aide à la décision, en gardant un humain dans la boucle. 
 
-Enfin, rappelons que l'article 39 de la loi Informatique et Libertés, qui s'applique **tant au secteur public que privé**, précise que "toute personne physique justifiant de son identité a le droit d'interroger le responsable d'un traitement à caractère personnel en vue d'obtenir (...) 5° les informations permettant de **connaître et de contester** la logique qui sous-tend le traitement automatisé en cas de décision prise sur le fondement de celui-ci et produisant des effets juridiques à l'égard de l'interessé".
+Pour plus de détails sur la mention explicite, vous pouvez consulter la [fiche pratique](4-mention.md) sur le sujet. 
 
 ![](./images/Algo-obligations-1.png)
 ![](./images/Algo-obligations-2.png)
@@ -150,10 +158,28 @@ Nous vous proposons un outil sous la forme d'un quizz pour tester votre connaiss
 
 ![Quizz algorithmes](./images/Algo-quizz.png)
 
+### Réponses au quiz
+
+1.Le Ministère de l'Education nationale met en place un système de gestion de la mutation des personnels enseignants du premier degré : oui
+
+2.Le département de la Lozère décide de l'attribution de l'allocation personnalisée d'autonomie (APA) pour une personne âgée dépendante : oui
+
+3.Avec le service en ligne la Bonne Boîte, Pôle Emploi aide les demandeurs d'emploi à cibler les entreprises qui vont prochainement recruter sur un territoire : **non**, car il n'emporte pas de décision de la part de l'administration. C'est un outil utilisé pour orienter. 
+
+4.Au sein du Ministère de l'Intérieur, la Direction générale des collectivités locales calcule la dotation globale de fonctionnement pour les collectivités : oui.  
+
+5.La commission d'attribution des logements d'un bailleur social priorise les demandes suivant de nombreux critères (dont situation familiale, handicap, taille du logement demandé) : oui.
+
+6.La Direction générale des finances publiques utilise un traitement algorithmique pour cibler les contrôles de lutte contre la fraude fiscale (CFVR) : **non**. Ce traitement est couvert par l'un des secrets prévus par la loi (2° de l'article L.311-5 du CRPA) : la recherche et la prévention d'infractions. 
+
+7.Le centre d'appel de SOS Médecins Grand Paris utilise un algorithme pour classer les appels selon le niveau d'urgence : oui. La question pourrait se poser de savoir si SOS Médecins est investi d'une mission de service public. C'est le cas. Par ailleurs, la CADA a rendu un avis sur l'algorithme de tri de la Brigade des Sapeurs pompiers de Paris et du SAMU, considérant qu'il s'agissait bien d'une décision administrative individuelle. 
+
+8.La Préfecture des Pays de la Loire priorise les demandes de places en crèche pour les fonctionnaires d'Etat : oui.
+
 ## Les prochaines étapes
 
-La **première action** à mener, en tant qu'administration, est de **recenser les algorithmes** potentiellement concernés par l'obligation de transparence et de redevabilité.
+La **première action** à mener, en tant qu'administration, est de **recenser les algorithmes** potentiellement concernés par l'obligation de transparence et de redevabilité, et de publier cette liste en la rendant facilement trouvable. 
 
-La mission Etalab est à votre disposition pour vous accompagner dans la mise en oeuvre de ce recensement et plus globalement dans la mise en oeuvre de ces nouvelles obligations.
+Le département Etalab est à votre disposition pour vous accompagner dans la mise en oeuvre de ce recensement et plus globalement dans la mise en oeuvre de ces nouvelles obligations. Pour nous contacter : algorithmes@etalab.gouv.fr. 
 
-D'autres contenus seront **prochainement publiés** pour compléter ce guide, notamment des fiches pratiques sur une méthodologie d'identification des algorithmes ainsi que des exemples de mention et d'information détaillée.
+Etalab met également à disposition une [fiche pratique](4-mention.md) sur la mention explicite.  
