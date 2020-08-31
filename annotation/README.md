@@ -3,7 +3,7 @@ permalink: /annotation/
 ---
 # Guide pour préparer et conduire votre campagne d'annotation 
 
-# Introduction : pourquoi annoter ? 
+## Introduction : pourquoi annoter ? 
 
 Pour analyser le contenu de vos données, entraîner des algorithmes supervisés et mener à bien votre projet d’intelligence artificielle, vous aurez besoin de données « structurées » ou « annotées ». 
 
