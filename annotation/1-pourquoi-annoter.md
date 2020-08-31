@@ -2,9 +2,9 @@
 permalink: /annotation/pourquoi-annoter/
 ---
 
-* Votre projet d'IA nécessite-t-il une phase d'annotation ? 
+# Votre projet d'IA nécessite-t-il une phase d'annotation ? 
 
-** 	Connaissance et analyse de votre corpus de données 
+## 	Connaissance et analyse de votre corpus de données 
 
 /Annotation manuelle ou annotation automatique ?/
 
@@ -20,7 +20,7 @@ En revanche, si l’on est confronté à un volume important de documents ou un 
 
 Nous nous intéressons principalement ici à l’annotation manuelle : c’est une phase très fastidieuse, qui nécessite un travail de qualité constante et un équilibre entre qualité attendue, coût et volume à annoter.
 
-** Exemples de projets comportant une phase d’annotation  
+## Exemples de projets comportant une phase d’annotation  
 (Faire davantage un focus concis sur l’annotation de chaque projet (problématique, équipe projet, nombre d’annotateurs, temps requis, cible et résultats obtenus, etc.))
 
 Les exemples de projets comportant une phase d'annotation sont nombreux. Par exemple plus de la moitié des projets sélectionnés dans le cadres de l'Appel à Manifestation d'Intérêt pour l'intelligence artificielle (AMI IA 1 et 2) ont nécessité une phase d'annotation. Cette partie présente quelques exemples dans le secteur public. 
