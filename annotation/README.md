@@ -1,6 +1,7 @@
 ---
 permalink: /annotation/
 ---
+# Guide pour préparer et conduire votre campagne d'annotation 
 
 # Introduction : pourquoi annoter ? 
 
