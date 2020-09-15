@@ -1,5 +1,5 @@
 ---
-permalink: /annotation/comment-annoter/
+permalink: /annotation/preparer-campagne-annotation/
 ---
 
 # Organiser votre campagne d'annotation 
