@@ -31,20 +31,17 @@ Nous le verrons, réussir une campagne d’annotation nécessite d’impliquer c
 
 ## Sommaire
 
-Ce guide est composé de trois parties et d'un lexique :
+Ce guide est composé de quatre parties et d'un lexique :
 
 Introduction : pourquoi annoter ? 
 
-I. [Votre projet nécessite-t-il une phase d’annotation ?](1-pourquoi-annoter.md) 
-- Analyser votre corpus de données 
-- Exemples de projets comportant une phase d'annotation 
+I. [Mon projet nécessite-t-il une phase d'annotation ?](1-annotation-ia.md) 
 
-II. [Organiser et conduire votre campagne d’annotation](2-comment-annoter.md) 
--	Planifier votre campagne d’annotation 
--	Conduire votre campagne d’annotation 
--	Evaluer votre campagne d’annotation  
+II. [Organiser et conduire votre campagne d’annotation](2-preparer-campagne-annotation.md) 
 
-III. [Critères de sélection d’un logiciel d’annotation de documents textuels ](4-les-logiciels-d'annotation.md) 
+III. [Critères de sélection d’un logiciel d’annotation de documents textuels ](3-conduire-campagne-annotation.md) 
+
+VI. [Critères de sélection d’un logiciel d’annotation de documents textuels ](4-les-logiciels-d-annotation.md) 
 
 Le [lexique](5-lexique.md) propose les définitions de termes techniques utilisés de façon récurrente dans ce guide. 
 
@@ -55,6 +52,7 @@ Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améli
 
 ## Ressources externes 
 
+- [Thèse de doctorat](https://tel.archives-ouvertes.fr/tel-00797760v1/document) portant sur la préparation et l'organisation de campagnes d'annotation 
 - Ouvrage collectif sur l'annotation lingustistique : *Handbook of Linguistic Annotation*, Springer, 2017
 - Un sondage sur les logiciels d'annotation consultable [ici](https://github.com/alvations/annotate-questionnaire)
 - Un [benchmark de 78 outils d'annotation](https://academic.oup.com/bib/article/doi/10.1093/bib/bbz130/5670958#190144135 ) avec de nombreux critères pris en compte 
