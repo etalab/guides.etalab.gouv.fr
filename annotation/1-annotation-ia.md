@@ -36,47 +36,36 @@ Un moteur de règles est un ensemble de règles prédéfinies « à l'avance ».
  Concrèteemnt, avec un moteur de règles, le passage de la données structurées à de la données structurée se fait par un programme informatique qui implémente des règles déterministes. Si ce type de méthode fournit des résultats satisfaisants, cette méthode s'avère alors beaucoup moins coûteuse que l'annotation manuelle. Si en revanche, un moteur de règles ne permet pas d'attendre des résultats avec le niveau de précision souhaité, vous devrez probablement avoir recours à de l'annotation manuelle. 
 
 ::: Tip Exemple avec des données textuelles: Extraction d'informations à partir de formulaires word: 
-Vous disposez d'un ensemble de documents textuels 
-
+Vous disposez d'un ensemble de documents textuels comme des réponses à un questionnaire. Vous cherchez à extraire une certain nombre d'informations de ces documents (nom, prénom, adresse par exemple). Des règles informatiques simples de recherche textuelle (le texte entre "Nom" et "Prénom" permet d'extraire le nom, le texte entre "Prénom" et "Adresse" permet d'extraire le nom) peuvent dans certains cas d'extraire les informations. 
 :::
 
 
 ::: Tip Exemple avec des données images : anonymisation des bulletins de salaires scannés
-Vous disposez de bulletins de salaire au format image que vous souhaitez anonymiser 
+Vous disposez de bulletins de salaire au format image que vous souhaitez anonymiser (par exemple, retirer les données à caractère personnel comme les noms, prénoms, adresses). Il est très probables que tous les bulletins aient le même format et donc que les informations à retirer se retrouvent précisément au même endroit de l'image. Appliquer des règles déterminites du type mettre un carré noir de taille *lxL* aux coordonnées *xy* permet d'éviter de recourir à une annotation manuelle de tous les documents, qui reviendrait à demander à une personne, à l'aide d'un outil d'annotation d'image, d'identifier sur chaque document les endroits où se trouves les informations à caractère personnel. 
 :::
 
 ## Automatiser l'annotation manuelle à l'aide de l'intelligence artificielle : dans quels cas est-ce pertinent ?
 
 
-![schema_annoter_ou_non](./images/schema_annoter_ou_non.png)
-*Schéma du questionnement à suivre pour déterminer si mon projet nécessite une phase d'annotation*
-
 Si le volume des données est relativement limité, il n’est pas nécessairement pertinent d’envisager des méthodes d’IA pour structurer la donnée. Par exemple, vous souhaitez analyser les réponses en texte libre à un questionnaire, afin d’en tirer des conclusions précises sur les thématiques abordées par les répondants. Si le volume des données est faible, une étape d’annotation seule pourra répondre à votre objectif sans être trop couteux en temps. Nous ne donnons pas ici de seuil de nombre de documents permettant de juger de la pertinence ou non de la mise en place de solutions d’IA car l’évaluation du temps nécessaire à l’annotation manuelle du jeu de données dépendra de la nature et de la longueur des documents, ainsi que de la complexité de la tâche d’annotation. 
 
 En revanche, si l’on est confronté à un volume important de documents ou un flux continu, il est en général pertinent d’envisager d’automatiser le processus d’annotation. Dans ce cas, la phase d’annotation aura pour objectif d’annoter une partie des documents (encore une fois, le volume nécessaire de documents annotés dépendra de la nature des documents et de la complexité de la tâche) afin d’entraîner un algorithme supervisé à automatiser cette tâche. 
 
+Pour résumer, voici un schéma du questionnement à suivre pour déterminer si un projet nécessite ou non une phase d'annotation et choisir la bonne stratégie d'annotation. 
+
+![schema_annoter_ou_non](./images/schema_annoter_ou_non.png)
+*Schéma du questionnement à suivre pour déterminer si un projet nécessite une phase d'annotation*
+
+
+Ce schéma simplifie une réalité souvent plus complexe, et vous pourrez en pratique être amené à tester différentes méthodes, voire à combiner ces différentes méthodes. Par exemple, un moteur de règles pourra s'avérer insuffisant en termes de performance mais pourra être utile comme aide à l'annotation. On parle alors de pré-annotation (sujet qui sera détaillé dans la partie [Conduire votre campagne d'annotation](3-conduire-campagne-annotation.md)). De plus, la plupart des questions n'ont en général pas de réponses univoques, en particulier: 
+ - "Puis-je extraire les informations dont j'ai besoin à l'aide d'un moteur de règles avec une précision suffisante?" : la question du seuil de précision minimale résulte souvent d'un arbitrage avec d'autres variables et en particulier avec les ressources à disposition pour l'annotation 
+ - "Ai-je beaucoup de données à annoter ou ai-je un flux continu de données?" Le seuil maximal de données dépendra notamment de la complexité de la tâche d'annotation, des ressources disponibles pour l'annotation manuelle comparées aux ressources pour l'automatisation 
 
 ## Annoter ou repenser la façon de collecter la donnée ? 
 
 Le besoin en annotation peut parfois mettre en lumière un mode de collecte de la donnée qui n'est pas adapté aux besoins des utilisateurs. Le travail d'annotation *ex post* aurait parfois pu être évité en intégrant un processus de structuration de la donnée *ex ante*, cette dernière solution permettant un gain de temps souvent significatif par rapport à la première. 
 
 ::: tip Par exemple, l'enregistrement dans un système d'information d'une procédure ou d'une déclaration est réalisé via une application permettant à des agents de remplir un certains nombre de champs. Certains champs à remplir en texte libre peuvent ainsi nécessitant une annotation *ex post* afin d'utiliser l'information alors que la même information aurait pu être saisie via un menu déroulant comportant une liste pré-définie de champs pour être directement exploitable. :::
-
-
-## Conclusion: ces trois modes d'automatisation ne sont pas exclusifs: 
-- ils peuvent se combiner (moteurs de règles pour la pré annotation par exemple )
-- s'utililser de facon séquentielle ou itérative 
-    - on commence par tester un moteur de règles
-    - on vérifie manuellelmement : en fonction des réultats, on décide ou non d'annotater manuellement 
-    - une fois qu'un corpus de données annotées manuellelement est consititué, on peut pré-annoter les algo 
-
-
-
-
-
-
-
-
 
 
 

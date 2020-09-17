@@ -37,9 +37,9 @@ Introduction : pourquoi annoter ?
 
 I. [Mon projet nécessite-t-il une phase d'annotation ?](1-annotation-ia.md) 
 
-II. [Organiser et conduire votre campagne d’annotation](2-preparer-campagne-annotation.md) 
+II. [Préparer votre campagne d’annotation](2-preparer-campagne-annotation.md) 
 
-III. [Critères de sélection d’un logiciel d’annotation de documents textuels ](3-conduire-campagne-annotation.md) 
+III. [Conduire votre campagne d'annotation](3-conduire-campagne-annotation.md) 
 
 VI. [Critères de sélection d’un logiciel d’annotation de documents textuels ](4-les-logiciels-d-annotation.md) 
 
