@@ -5,7 +5,9 @@ permalink: /annotation/preparer-campagne-annotation/
 # Organiser votre campagne d'annotation 
 
 
-(Introduire ici importance du travail préparatoire : identification des acteurs/connaissance du corpus/écriture documentation)? Nous avons présenté dans la partie précédente les différents objectifs de l'annotation. Nous détaillons maintenant les différents rôles à attribuer dans une équipe d'un projet d'annotation ainsi que ses différentes étapes. Les recommendations données ici ne seront pas nécessairement toutes pertinentes pour tous les projets, chaque projet comportant ses spécificités. 
+
+
+Nous avons présenté dans la partie précédente les différentes stratégies d'annotation possibles. Nous décrivons dans cette partie le travail préparatoire à la campagne d'annotation, particulièrement important pour réussir une campagne d'annotation. Les recommendations données ici ne seront pas nécessairement toutes pertinentes pour tous les projets, chaque projet comportant ses spécificités. 
 
 ## Identification de l'équipe projet 
 
@@ -81,7 +83,7 @@ Il est important d'évaluer la clarté du schéma d'annotation et des consignes 
  
 Deux types de cycles d'itérations sont envisageables: le cycle schéma / annotations et le cycle schéma / annotation / modèle IA, tous deux détaillés ci-dessous. 
 
-####  1. Le cycle schéma / annotations
+### Le cycle schéma / annotations
 
 Elaborer un schéma d'annotation nécessite de prendre en compte à la fois la problématique du projet et les caractéristiques des documents à annoter. Ainsi élaborer un premier schéma d'annotation répondant à la problématique, le tester en annotant des documents puis le réviser au fur et à mesure de l'annotation. C'est en général en annotatant que l'on s'aperçoit si le schéma d'annotation est adapté aux documents. 
 
