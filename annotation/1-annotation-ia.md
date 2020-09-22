@@ -33,7 +33,7 @@ On parle alors de structuration de la donnée ou d'annotation par moteur de règ
 
 Un moteur de règles est un ensemble de règles prédéfinies « à l'avance ». Par exemple, une règle de pseudonymisation pourrait être « si le mot qui suit "Monsieur" ou "Madame" commence par une majuscule, alors ce mot est un prénom ». La complexité du langage naturel et la diversité des formulations qui se trouvent dans les documents fait que ce type de moteur de règles a de forte chance de faire beaucoup d'erreurs dans des textes complexes, ou dont la forme varie souvent. :::
 
- Concrètement, avec un moteur de règles, le passage de la données structurées à de la données structurée se fait par un programme informatique qui implémente des règles déterministes. Si ce type de méthode fournit des résultats satisfaisants, cette méthode s'avère alors beaucoup moins coûteuse que l'annotation manuelle. Si en revanche, un moteur de règles ne permet pas d'attendre des résultats avec le niveau de précision souhaité, vous devrez probablement avoir recours à de l'annotation manuelle. 
+ Concrètement, avec un moteur de règles, le passage de la données structurées à de la données structurée se fait par un programme informatique qui implémente des règles déterministes. Si ce type de méthode fournit des résultats satisfaisants, cette méthode s'avère alors beaucoup moins coûteuse que l'annotation manuelle. Si en revanche, un moteur de règles ne permet pas d'attendre des résultats avec le niveau de précision souhaité, vous devrez probablement avoir recours à de l'annotation manuelle. Nous verrons dans la partie [Conduire votre campagne d'annotation](3-conduire-campagne-annotation.md) comment les moteurs de règles, lorsqu'ils ne donnent pas de résultats assez satisfaisant pour se passer d'annotation, peuvent tout de même permettre d'accélérer le processus d'annotation grâce à la pré-annotation. 
 
 ::: Tip Exemple avec des données textuelles: Extraction d'informations à partir de formulaires au format *word*: 
 Vous disposez d'un ensemble de documents textuels comme des réponses à un questionnaire. Vous cherchez à extraire un certain nombre d'informations de ces documents (nom, prénom, adresse par exemple). Des règles informatiques simples de recherche textuelle (le texte entre "Nom" et "Prénom" permet d'extraire le nom, le texte entre "Prénom" et "Adresse" permet d'extraire le nom) peuvent dans certains cas d'extraire les informations. 
@@ -77,11 +77,11 @@ Les exemples de projets comportant une phase d'annotation sont nombreux. Par exe
 ### PIAF (Pour des IA Francophones)
 
 ::: tip Le projet en quelques chiffres : 
-- le projet: Annoter des paragraphes wikipedia en rédigeant 5 paires de questions/réponses 
-- le temps moyen pour annoter un paragraphe : eniron 5 min par paragraphe
-- l'équipe d'annoteurs : équipe de contributeurs volontaires ( 640 contributeurs en septembre 2020)
-- le nombre de questions-réponses réalisées en septembre 2020: 8640 
-- le schéma synthétique d'annotaton : trouver 5 questions portant sur un paragraphe donné et souligner la réponse correspondante dans le texte du paragraphe ::: 
+- Le projet : Annoter des paragraphes *Wikipedia* afin de constituer une jeu de données francophone de questions-réponses
+- Le temps moyen pour annoter un paragraphe : eniron 5 min par paragraphe
+- L'équipe d'annotateurs : équipe de contributeurs volontaires ( 640 contributeurs en septembre 2020)
+- Le nombre de paires de questions-réponses réalisées en septembre 2020: 8640 
+- Le schéma synthétique d'annotation : trouver 5 questions portant sur un paragraphe donné et souligner la réponse correspondante dans le texte du paragraphe ::: 
 
 
 ![piaf_anno](./images/piaf_anno.png)
@@ -90,19 +90,19 @@ Les exemples de projets comportant une phase d'annotation sont nombreux. Par exe
 
 [PIAF](https://piaf.etalab.studio/) est un projet porté par le Lab IA d'Etalab qui a pour but de constituer un jeu de données francophone pour entraîner des algorithmes d’intelligence artificielle (IA) de questions-réponses. Ces derniers permettent de trouver des réponses à des questions précises portant sur un ensemble de documents. Construire des algorithmes performants de questions-réponses (question-answering en anglais) compte aujourd’hui parmi les tâches les plus complexes du traitement du langage naturel. Or avant le lancement du projet en 2019, il n'existait pas de jeu de données de ce type en français. Les algorithmes de questions-réponses sont pourtant utiles dans plein de domaines, et les [cas d'usage](https://piaf.etalab.studio/cas-usage/) sont nombreux, on y compte par exemple la création d'agents conversationnels ou l'amélioration de moteurs de recherche. 
 
-La tâche d'annotation consiste ici à annoter des paragraphes de wikipédia. Pour chaque paragraphe, l'annotateur a pour tâche de trouver cinq questions portant sur le paragraphe et y souligner la réponse correpondante. Pour plus d'information, vous pouvez vous référer au [protocole d'annotation](https://piaf.etalab.studio/img/fr_protocol.pdf). Une [plateforme d'annotation](https://app.piaf.etalab.studio/signup/) a été développée est permet à toute personne francophone d'annoter des paragraphes afin d'alimenter le jeu de données. Nous reviendrons plus tard sur la méthode de *crowd sourcing* des annotations. 
+La tâche d'annotation consiste ici à annoter des paragraphes de *Wikipédia*. Pour chaque paragraphe, l'annotateur a pour tâche de trouver cinq questions portant sur le paragraphe et y souligner la réponse correspondante. Pour plus d'information, vous pouvez vous référer au [protocole d'annotation](https://piaf.etalab.studio/img/fr_protocol.pdf). Une [plateforme d'annotation](https://app.piaf.etalab.studio/signup/) a été développée est permet à toute personne francophone d'annoter des paragraphes afin d'alimenter le jeu de données. Nous reviendrons plus tard sur la méthode de *crowd sourcing* des annotations. 
 
  
 ### La pseudonymisation des décisions de justice à la Cour de Cassation  
 
 ::: tip Le projet en quelques chiffres : 
-- le volume de documents: 180 000 décisions (bases de données « Jurinet » et « Jurica ») par an, un stock de 3 millions de décisions de justice à diffuser
-- le temps moyen pour annoter un document : entre 5 et 10 min par décision 
-- l'équipe d'annoteurs : 10 ETP à temps plein
-- le schéma synthétique d'annotaton : nom et prénom de personne physique, date de naissance, adresse 
-- résultats obtenus : l'algorithme d'IA entraîner arrive à un taux d'erreur moyen de 1% ::: 
+- Le volume de documents : 180 000 décisions (bases de données « Jurinet » et « Jurica ») par an, un stock de 3 millions de décisions de justice à diffuser
+- Le temps moyen pour annoter un document : entre 5 et 10 min par décision 
+- L'équipe d'annotateurs : 10 ETP à temps plein
+- Le schéma synthétique d'annotation : nom et prénom de personne physique, date de naissance, adresse 
+- Résultats obtenus : l'algorithme d'IA entraîner arrive à un taux d'erreur moyen de 1% ::: 
 
-La Cour de Cassation est chargée de la diffusion des décisions de justice. Le périmètre de diffision est étendu depuis la publication du décret sur [l'Open Data des décisions de justice](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000042055251). Cette diffusion ne peut cependant se faire qu'après avoir occulté des décisions de justice les éléments àcaractère personnel. Afin de mettre en oeuvre cette occultation, la Cour de Cassation a recours à une équipe d'une dizaine d'annotateurs afin d'identifier dans les décisions les éléments à caractère personnel à (noms, prénoms, adresses, dates de naissance) retirer avant diffusion. Afin d'automatiser ce processus, la cour de cassation à des data scientists via le programme [Entrepreneurs d'Intérêt Général](https://entrepreneur-interet-general.etalab.gouv.fr/index.html) pour développer une solution d'Intelligence Artificielle de pseudonymisation des décisions : c'est le projet  [Open Justice](https://entrepreneur-interet-general.etalab.gouv.fr/defis/2019/openjustice.html). Cette solution est basée sur un algorithme entraîné à partir d'un corpus de décisions annotées par des annotateurs. Afin d'optimiser le processus d'annotation, la Cour de cassation va développer un logiciel d'annotation via le projet [Label](https://entrepreneur-interet-general.etalab.gouv.fr/defis/2020/label.html).
+La Cour de Cassation est chargée de la diffusion des décisions de justice. Le périmètre de diffusion est étendu depuis la publication du décret sur [l'Open Data des décisions de justice](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000042055251). Cette diffusion ne peut cependant se faire qu'après avoir occulté des décisions de justice les éléments à caractère personnel. Afin de mettre en œuvre cette occultation, la Cour de Cassation a recours à une équipe d'une dizaine d'annotateurs afin d'identifier dans les décisions les éléments à caractère personnel à (noms, prénoms, adresses, dates de naissance) retirer avant diffusion. Afin d'automatiser ce processus, la cour de cassation à des data scientists via le programme [Entrepreneurs d'Intérêt Général](https://entrepreneur-interet-general.etalab.gouv.fr/index.html) pour développer une solution d'Intelligence Artificielle de pseudonymisation des décisions : c'est le projet  [Open Justice](https://entrepreneur-interet-general.etalab.gouv.fr/defis/2019/openjustice.html). Cette solution est basée sur un algorithme entraîné à partir d'un corpus de décisions annotées par des annotateurs. Afin d'optimiser le processus d'annotation, la Cour de cassation va développer un logiciel d'annotation via le projet [Label](https://entrepreneur-interet-general.etalab.gouv.fr/defis/2020/label.html).
 
 Pour plus d'information sur la pseudonymisation de documents textuels à l'aide de méthodes d'intelligence artificielle, vous pouvez consulter notre [guide pseudonymisation](https://guides.etalab.gouv.fr/pseudonymisation/#a-quoi-sert-ce-guide). 
 
@@ -110,10 +110,10 @@ Pour plus d'information sur la pseudonymisation de documents textuels à l'aide 
 ### Projet DDTM Hérault : annotation d'images satellites 
 
 ::: tip Le projet en quelques chiffres : 
-- le projet: Développer un outil d'intelligence artificielle  qui repère automatiquement les constructions illégales 
-- l'équipe d'annoteurs : 4 agents sur une période de 4 semaines, à raison d'1 à 2 heures par jour
-- volume de documents annotés: 6 000 images 
-- le schéma synthétique d'annotaton : caravane, mobiles homes, construction en dur, construction légère, piscine, décharge, déchets industriels, navires ::: 
+- Le projet: Développer un outil d'intelligence artificielle  qui repère automatiquement les constructions illégales 
+- L'équipe d'annotateurs : 4 agents sur une période de 4 semaines, à raison d'1 à 2 heures par jour
+- Volume de documents annotés: 6 000 images 
+- Le schéma synthétique d'annotation : caravane, mobiles homes, construction en dur, construction légère, piscine, décharge, déchets industriels, navires ::: 
 
 ![ddtm_annotation](./images/ddtm_annotation.png)
 
