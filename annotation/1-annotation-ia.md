@@ -83,7 +83,8 @@ Les exemples de projets comportant une phase d'annotation sont nombreux. Par exe
 - le schéma synthétique d'annotaton : trouver 5 questions portant sur un paragraphe donné et souligner la réponse correspondante dans le texte du paragraphe ::: 
 
 
-![piaf_anno](./images/piaf_anno.png)
+![piaf_anno](./images/piaf_anno.png=100x)
+
 *Capture d'écran de la plateforme d'annotation Piaf, en bas de l'écran, un exemple d'une question rédigée par un annotateur et de la réponse correspondante que l'annotateur doit souligner dans le texte en haut de l'écran*
 
 [PIAF](https://piaf.etalab.studio/) est un projet porté par le Lab IA d'Etalab qui a pour but de constituer un jeu de données francophone pour entraîner des algorithmes d’intelligence artificielle (IA) de questions-réponses. Ces derniers permettent de trouver des réponses à des questions précises portant sur un ensemble de documents. Construire des algorithmes performants de questions-réponses (question-answering en anglais) compte aujourd’hui parmi les tâches les plus complexes du traitement du langage naturel. Or avant le lancement du projet en 2019, il n'existait pas de jeu de données de ce type en français. Les algorithmes de questions-réponses sont pourtant utiles dans plein de domaines, et les [cas d'usage](https://piaf.etalab.studio/cas-usage/) sont nombreux, on y compte par exemple la création d'agents conversationnels ou l'amélioration de moteurs de recherche. 
@@ -114,6 +115,7 @@ Pour plus d'information sur la pseudonymisation de documents textuels à l'aide 
 - le schéma synthétique d'annotaton : caravane, mobiles homes, construction en dur, construction légère, piscine, décharge, déchets industriels, navires ::: 
 
 ![ddtm_annotation](./images/ddtm_annotation.png)
+
 *Une capture d'écran du logiciel d'annotation développé pour la DDTM de l'Hérault*
 
 Ce projet, réalisé dans le cadre de la première saison de l'[Appel à Manifestation d'Intérêt en Intelligence Artificielle](https://www.etalab.gouv.fr/intelligence-artificielle-decouvrez-les-6-projets-laureats-de-lappel-a-manifestation-dinteret-ia) à la [DDTM de l'Hérault](http://www.herault.gouv.fr/Services-de-l-Etat/Agriculture-environnement-amenagement-et-logement/Direction-Departementale-des-Territoires-et-de-la-Mer-de-l-Herault-DDTM-34) , vise a développer un modèle d’analyse d’images aériennes ou satellites pour automatiser le pré-repérage des infractions potentielles liées à la cabanisation. Cette automatisation nécessite une phase d'annotation manuelle d'images satellites. La tâche d'annotation consiste à repérer sur l'image les zones correspondant à plusieurs types d'objet types d’objets (caravanes, mobile homes, constructions en dur, piscines, navires) et à leur attribuer le label correspondant. Un logiciel d'annotation d'image a été développé à cet effet. 
