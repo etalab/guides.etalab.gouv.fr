@@ -61,7 +61,7 @@ Pour certains projets, il est possible d'implémenter des tests automatiques tra
 
 Des métriques existent pour comparer les annotations réalisées par différents annotateurs: le [Fleiss-Kappa](https://fr.wikipedia.org/wiki/Kappa_de_Fleiss) pour comparer les annotations entre *n* annotateurs et le [Kappa de Cohen](https://fr.wikipedia.org/wiki/Kappa_de_Cohen) pour comparer les annotations de deux annotateurs seulement. Des librairies dans les langages open source R ou Python permettent d'implémenter ces métriques.
 
-Calculer ces métriques suppose cependant des choix méthodologiques plus ou moins complexes selon la complexité du schéma et des consignes d'annotation. Ces choix méthodologiques sont très bien détaillés dans la partie intitulée "Mesure des accords inter- et intra-annotateur"* de la [thèse de doctorat](https://tel.archives-ouvertes.fr/tel-00797760v1/document) citée dans les ressources.
+Calculer ces métriques suppose cependant des choix méthodologiques plus ou moins complexes selon la complexité du schéma et des consignes d'annotation. Ces choix méthodologiques sont très bien détaillés dans la partie intitulée *"Mesure des accords inter- et intra-annotateur"* de la [thèse de doctorat](https://tel.archives-ouvertes.fr/tel-00797760v1/document) citée dans les ressources.
 
 
 
