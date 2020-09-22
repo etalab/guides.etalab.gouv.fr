@@ -54,6 +54,7 @@ En revanche, si l’on est confronté à un volume important de documents ou un 
 Pour résumer, voici un schéma du questionnement à suivre pour déterminer si un projet nécessite ou non une phase d'annotation et choisir la bonne stratégie d'annotation. 
 
 ![schema_annoter_ou_non](./images/schema_annoter_ou_non.png)
+
 *Schéma du questionnement à suivre pour déterminer si un projet nécessite une phase d'annotation*
 
 
