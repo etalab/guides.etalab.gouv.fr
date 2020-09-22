@@ -83,7 +83,7 @@ Les exemples de projets comportant une phase d'annotation sont nombreux. Par exe
 - le schéma synthétique d'annotaton : trouver 5 questions portant sur un paragraphe donné et souligner la réponse correspondante dans le texte du paragraphe ::: 
 
 
-![piaf_anno](./images/piaf_anno.png=100x)
+![piaf_anno](./images/piaf_anno.png =100x)
 
 *Capture d'écran de la plateforme d'annotation Piaf, en bas de l'écran, un exemple d'une question rédigée par un annotateur et de la réponse correspondante que l'annotateur doit souligner dans le texte en haut de l'écran*
 
