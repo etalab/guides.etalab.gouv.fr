@@ -23,11 +23,12 @@ Ce guide propose des étapes et bonnes pratiques pour conduire une campagne d’
 
 ## À qui s'adresse ce guide ?
 
-Ce guide est susceptible d'intéresser différents types de profils :
+Ce guide est susceptible d'intéresser différents types de profils amenés à être impliqués dans une campgane d'annotation:
 -	Chef de projet/responsable de la mise en œuvre d’une campagne d’annotation 
 -	Expert métier 
 -	Data scientist, développeur ou designer  
-Nous le verrons, réussir une campagne d’annotation nécessite d’impliquer conjointement des profils techniques et des profils « métier ».
+
+Nous le verrons, réussir une campagne d’annotation nécessite d’impliquer conjointement des profils techniques et des profils «métier».
 
 ## Sommaire
 
