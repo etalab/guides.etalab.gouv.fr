@@ -19,7 +19,7 @@ En amont du projet, il est important de bien expliquer les enjeux du projet à l
 
 Il peut aussi être bénéfique au projet d'impliquer les annotateurs dans l'élaboration du schéma d'annotation, dans la mesure où cette élaboration  passe par une phase d'itération entre schéma et annotations de documents. L'implication des annotateurs aura également pour avantage une meilleure appropriation de leur part des tâches à effectuer.
 
-La documentation (décrite dans le paragraphe Un guide à destination des annotateurs) est centrale pour la formation. La documentation peut également complétée par un quizz qui récense les principaux types d'éléments à annoter et fournit des exemples des cas les plus difficiles.
+La documentation (décrite dans la partie [Préparer votre campagne d’annotation](2-preparer-campagne-annotation.md)) est centrale pour la formation. La documentation peut également complétée par un quizz qui récense les principaux types d'éléments à annoter et fournit des exemples des cas les plus difficiles.
 
 
 ### Mobiliser les annotateurs
@@ -29,9 +29,6 @@ Afin de mobiliser les annotateurs tout au long du projet, il est important de ma
 
 Afin de rendre l'annotation plus ludique, il est envisageable de "gamifier" l'annoation, en attribuant des bagdes, ou en faisant apparaître une jauge d'avancement des annotations (le fait de voir que le projet avance peut être une source de motivation).
 
-"En cas d’absence de lien hiérarchique direct avec les annotateurs, besoin de support hiérarchique, dans la mesure où cette tâche n’est pas leur tâche prioritaire : nous n’avons pu, en tant que gestionnaire, nous assurer de leur disponibilité pour permettre la continuité de l’annotation. La campagne s’en est retrouvée rallongée et la qualité s’en est ressentie. Préférable que le gestionnaire, s’il est aussi expert, travaille avec d’autres experts." source: https://tel.archives-ouvertes.fr/tel-00797760v1/document (point qui pourrait s'ajouter ici avec un exemple citation projet AMI IA)
-
-(Ajouter un point sur la diversité et représentativité des annotateurs? exemple si différentes interprétations/activités. exemple avec un projet AMI IA?)
 
 ## Annoter et s'assurer de la qualité
 
@@ -41,11 +38,14 @@ Lorsque le but de l'annotation est de développer un algorithme automatisant une
 
 Un jeu de données que l'on appelle "Gold Standard" est consitué de documents annotés pour lesquels les annotations ont été vérifiées et sont donc de qualité certaine. Ce jeu de données peut être utilisé de plusieurs façons.
 
-D'une part, les documents correspondants (sans les annotations) peuvent être donnés aux annotateurs au début de projet, pour s'assurer que la tâche soit bien comprise par les annotateurs ou pour vérifier que le schéma d'annotation ne soit pas ambigu (c'est-à-dire puisse conduire deux annotateurs à annoter le même document de façon correcte mais différente). En effet, en comparant les annotations réalisées par les annotateurs et celles dont on est certain de la qualité, on peut faire remonter les erreurs ou ambiguités. Ces erreurs permettront soit d'identifier les éléments du schéma d'annotation à réexpliquer, soit de corriger le schéma d'annotation afin de lever certaines ambiguités.
+D'une part, les documents correspondants (sans les annotations) peuvent être donnés à annoter aux annotateurs au début de projet, pour s'assurer que la tâche soit bien comprise par les annotateurs ou pour vérifier que le schéma d'annotation ne soit pas ambigu (c'est-à-dire qu'il puisse conduire deux annotateurs à annoter le même document de façon correcte mais différente). En effet, en comparant les annotations réalisées par les annotateurs et celles dont on est certain de la qualité, on peut faire remonter les erreurs ou ambiguités. Ces erreurs permettront soit d'identifier les éléments du schéma d'annotation à réexpliquer, soit de corriger le schéma d'annotation afin de lever certaines ambiguités.
 
 D'autre part, le jeu de données "Gold Standard" peut servir de jeu de données de test, afin d'évaluer l'algorithme développé sur un jeu de données de qualité la plus fiable possible.
 
-### TO DO rajouter la déf de jeu d'apprentissage / jeu de test dans le lexique
+
+::: lexique Jeu de données d'apprentissage et jeu de données de test
+
+Afin de développer un modèle d'apprentissage supervisé, un jeu de données labélisées est nécessaire. Ce jeu de données est alors divisé en deux (en général par un échantillonnage aléatoire) : un jeu de données d'apprentissage et un jeu de données de test. Le **jeu d'apprentissage**, comme son nom l'indique, est utilisé pendant la phase d'apprentissage, afin de trouver une fonction qui permette de prédire le label à partir des variables en entrée. Afin de s'assurer que l'algorithme ait de bonnes performances sur des exemples différents de ceux utilisés lors de la phase d'apprentissage, les différentes métriques de performance de l'algorithme (justesse, précision, rappel, ...) sont calculées sur le **jeu de données de test**. ::
 
 ### Faire annoter une partie des documents par plusieurs annotateurs
 
@@ -61,7 +61,11 @@ Pour certains projets, il est possible d'implémenter des tests automatiques tra
 
 Des métriques existent pour comparer les annotations réalisées par différents annotateurs: le [Fleiss-Kappa](https://fr.wikipedia.org/wiki/Kappa_de_Fleiss) pour comparer les annotations entre *n* annotateurs et le [Kappa de Cohen](https://fr.wikipedia.org/wiki/Kappa_de_Cohen) pour comparer les annotations de deux annotateurs seulement. Des librairies dans les langages open source R ou Python permettent d'implémenter ces métriques.
 
-## Accélérer le processus d'annotation : pré-annoter ou pas ?
+Calculer ces métriques supposent cependant des choix méthodologiques plus ou moins complexes selon la complexité du schéma et des consignes d'annotation. Ces choix méthodologiques sont très bien détaillés dans la partie intitulée "Mesure des accords inter- et intra-annotateur"* de la [thèse de doctorat](https://tel.archives-ouvertes.fr/tel-00797760v1/document) citée dans les ressources.
+
+
+
+## Accélérer le processus d'annotation grâce à la préannotation
 
 L'annotation manuelle étant un processus long et couteux en temps, il est souvent judicieux d'employer des méthodes automatiques ou semi-automatiques afin d'accélérer le processus d'annotation.
 
@@ -69,7 +73,7 @@ L'annotation manuelle étant un processus long et couteux en temps, il est souve
 
 Plusieurs possibilités sont envisageables pour mettre en oeuvre la pré-annotation, détaillées dans les deux paragraphes ci-dessous.
 
-#### La pré-annotation par des règles
+### La pré-annotation par moteur de règles
 
 Cette méthode présente l'avantage de ne pas nécessiter de données annotées. Elle peut donc être implémentée dès le début du projet. Dans certains cas, des règles simples peuvent permettre d'annoter des documents avec une performance plus ou moins bonne. Par exemple, afin de repérer les nom de personnes physiques dans un document, on peut utiliser la règle: tout ce qui suit "Madame" ou "Monsieur" est un nom de personne physique. Bien évidemment, cette règle ne permettra pas de repérer tous les noms de personnes physiques (certains noms ne seront pas précédés de Madame ou Monsieur) et conduira également à des faux-positifs (certains mots qui suivent Monsieur ou Madame ne seront pas des personnes physiques). L'implémentation de ce type de règles par des méthodes informatiques peut cependant permettre d'accéler le processus d'annotation, afin d'annoter les cas simples, c'est-à-dire ceux qui sont conformes à certains règles métier ou d'usage.
 
@@ -77,24 +81,60 @@ La pertinence de cette méthode est à évaluer au cas par cas avec les experts 
 
 [Snorkel](https://www.snorkel.org/) est un outil développé par une équipe de Standford University permettant d'annoter des documents de façon automatique par le croisement de règles métier. Une librairie est disponible en Python pour implenter l'outil et de nombreuxexemples et tutoriels sont proposés sur leur site.
 
-#### La pré-annotation par un modèle de machine learning supervisé
+### La pré-annotation par un modèle de machine learning supervisé
 
 Ce type de méthodes nécessite un premier jeu de données annotées. Une fois qu'un premier jeu de données annotées est constitué, il est alors de possible d'entraîner un premier algorithme d'apprentissage afin de labéliser les documents. Ce processus est itératif: il est en effet difficile de connaître à l'avance la taille minimale requise du jeu d'apprentissage permettant de bonnes performances. On peut alors, à partir d'un faible volume de données, entraîner un premier algorithme qui n'aura probablement pas des performances suffisantes pour passer en production, mais dont on peut cependant espérer qu'il permette d'accéler le processus d'annotation. Il faudra veiller à calibrer l'algorithme pour favoriser la précision au rappel, ce qui impliquera pour l'annotateur de corriger peu des champs annotés automatiquement (car un taux de faux positifs faible) mais de rajouter les labels que l'algorithme omettra (taux de faux négatif plus élevé).
 
 
 
-#### La priorisation des documents à annoter avec l'active learning
+## La priorisation des documents à annoter avec l'active learning
 
 
  Dans un projet d'annotation, les documents à annoter sont souvent sélectionnés aléatoirement parmi l'ensemble des documents.
 
- ::: lexique L'active learning est un champ de l'apprentissage automatique qui fait interagir l'algorithme d'apprentissage avec le système en charge de la labélisation (l'annotateur dans notre cas). Cette méthode est particulièrement utile dans les situations où l'obtention de labels est coûteuse. Au fur et à mesure de l'annotation, l'algorithme va apprendre à prioriser les documents à faire annoter afin de maximiser le gain d'information de la nouvelle donnée annotée, et ainsi permettre de minimiser le nombre de documents nécessaires pour entraîner un algorithmes avec de bonnes performances. :::
+ ::: lexique L'active learning est un champ de l'apprentissage automatique qui fait interagir l'algorithme d'apprentissage avec le système en charge de la labélisation (l'annotateur dans notre cas). Cette méthode est particulièrement utile dans les situations où l'obtention de labels est coûteuse. Au fur et à mesure de l'annotation, l'algorithme va apprendre à prioriser les documents à faire annoter afin de maximiser le gain d'information du nouveau document annoté, et ainsi permettre de minimiser le nombre de documents nécessaires pour entraîner un algorithmes avec de bonnes performances. :::
 
  L'idée sous-jacente est que tous les documents n'apporteront pas la même contribution à l'algorithme d'apprentissage. Pour plus d'informations à ce sujet, [cet article](https://jlcl.org/content/2-allissues/4-Heft1-2016/jlcl-2016-1-5SkeppstedtEtAl.pdf) détaille comment implémenter des méthodes d'active learning appliquées à l'annotation de documents textuels.
 
-## Evaluer votre campagne d'annotation manuelle
+## Faire le bilan de votre campagne d'annotation manuelle
 
-(Ajouter ici contenu?) et aussi éventulelement comment on finalise la campagne d'annotation ? (correction, manuelle ou non du corpus annoté, avant sa publication? indicateurs? publier/réviser/renoncer à la publication etc.? faire une liste de questions à se poser si pertinent?
+Conduire une campagne d'annotation est souvent complexe. Une fois la campagne terminée, en faire le bilan pourra s'avérer fort utile à de futurs projets impliquant de l'annotation, en documentant la démarche, le déroulement de la campagne ainsi que les mértiques clés. Nous proposons dans cette partie une liste, non exhaustive, de métriques et de questions à se poser pour faire le bilan de votre campagne d'annotation et en tirer des enseignements.
+
+### Les métriques d'évaluation de la campagne
+
+### Les métriques quantitatives
+- Durée de la campgane d'annotation
+- Nombre d'annotateurs mobilisés
+- Volume total de documents annotés
+- Temps moyen passé à annoter un document
+
+Dans le cas où une solution d'automatisation de l'annotation a été développée à l'aide d'outils d'intelligence artificielle:
+- métriques de performance de l'algorithme d'automatisation de l'annotation (juste, précision, rappel, F1-Score) globales et ventilées selon les différentes catégories d'annotations si pertinent
+- Evolution de ces différentes métriques en fonction de la taille de l'échantillon d'apprentissage
+
+### Les métriques qualitatives
+
+- Adéquation du logiciel d'annotation (au vu notamment des différents critères listés dans la partie [Critères de sélection d’un logiciel d’annotation de documents textuels ](4-les-logiciels-d-annotation.md))
+- Adéquation du schéma d'annotation (lisibilité, reproductibilité, couverture des cas particuliers)
+- Si les objectifs de volumes de docume nts à annoter initialement prévus ont tété revus à la baisse, en identifier les raisons, qui peuvent être liées:
+     - aux difficulté de mobiliser les annotateurs
+     - au temps d'annotation par document plus long que prévu
+     - aux itérations pour trouver un schéma d'annotation plus nombreuses que prévu, ce qui a ralenti le démarrage effectif de la campagne
+
+
+### Evaluer les arbitrages effectués une fois la campgane terminée
+
+Certains arbitrages ayant dû être opérés avec une connaissance imparfaite de certains paramètres (temps moyen de l'annotation, nombre de documents nécessaires pour entrainer un algorithme d'intelligence artificielle), la fin de la campgane d'annotation peut être l'opportunité de revenir sur ces différents arbitrages et d'évaluer *a posteriori* les choix effectués.
+
+
+### Constituer de ressources mutualisables
+
+Au delà de la documentation développée au cours du projet et en fin de projet qui constituent des ressources potentiellement utiles à d'autres projets, une campgane d'annotation peut aussi l'opportunité de constituer des ressources mutualisables. Lorsque les règles de protection de données le permette, publier en open data un corpus de données annotées peut permettre à d'autres projets de se réaliser. Si la publication en open data n'est pas envisageable, le corpus de données annotées pourra s'avérer utile à de futurs projets de votre organisation. Il est donc utile de conserver ce corpus avec la documentation associée.
+
+Lorsqu'un logiciel d'annotation est développé pour répondre au besoin spécifique de voyre projet, il peut également être intéressant de publier le code source de l'application sur un repertoire public de type GitHub, on parle alors de code *open source*.
+
+
+
 
 
 

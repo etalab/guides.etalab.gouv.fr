@@ -15,7 +15,7 @@ Il faut dans un premier temps prendre en compte la nature des données à analys
 
 Les réponses à ces différentes questions seront déterminantes pour les choix à effectuer en termes d'annotation: dois-je annoter ou non ? Quelle stratégie adopter ? Nous revenons d'abord sur la différence entre annotation manuelle et annotation automatique, puis nous présenterons les différentes façons d'automatiser l'annotation. 
 
-## Différence entre annotation et annotation manuelle 
+## Différence entre annotation manuelle et annotation automatique 
 L'annotation manuelle est la tâche réalisée par un humain qui consiste à attribuer à un label à un document ou à un sous ensemble d'un document. On parle d'annotation automatique lorsque cette tâche est réalisée par un programme informatique. L'automatisation de l'annotation peut être réalisée par différentes méthodes. On distingue parmi les méthodes les plus courantes que: 
 - les moteurs de règles
 - les algorithlmes d'apprentissage supervisé qui nécessitent une phase d'annotation au préalable 
@@ -82,6 +82,10 @@ Les exemples de projets comportant une phase d'annotation sont nombreux. Par exe
 - le nombre de questions-réponses réalisées en septembre 2020: 8640 
 - le schéma synthétique d'annotaton : trouver 5 questions portant sur un paragraphe donné et souligner la réponse correspondante dans le texte du paragraphe ::: 
 
+
+![piaf_anno](./images/piaf_anno.png)
+*Capture d'écran de la plateforme d'annotation Piaf, en bas de l'écran, un exemple d'une question rédigée par un annotateur et de la réponse correspondante que l'annotateur doit souligner dans le texte en haut de l'écran*
+
 [PIAF](https://piaf.etalab.studio/) est un projet porté par le Lab IA d'Etalab qui a pour but de constituer un jeu de données francophone pour entraîner des algorithmes d’intelligence artificielle (IA) de questions-réponses. Ces derniers permettent de trouver des réponses à des questions précises portant sur un ensemble de documents. Construire des algorithmes performants de questions-réponses (question-answering en anglais) compte aujourd’hui parmi les tâches les plus complexes du traitement du langage naturel. Or avant le lancement du projet en 2019, il n'existait pas de jeu de données de ce type en français. Les algorithmes de questions-réponses sont pourtant utiles dans plein de domaines, et les [cas d'usage](https://piaf.etalab.studio/cas-usage/) sont nombreux, on y compte par exemple la création d'agents conversationnels ou l'amélioration de moteurs de recherche. 
 
 La tâche d'annotation consiste ici à annoter des paragraphes de wikipédia. Pour chaque paragraphe, l'annotateur a pour tâche de trouver cinq questions portant sur le paragraphe et y souligner la réponse correpondante. Pour plus d'information, vous pouvez vous référer au [protocole d'annotation](https://piaf.etalab.studio/img/fr_protocol.pdf). Une [plateforme d'annotation](https://app.piaf.etalab.studio/signup/) a été développée est permet à toute personne francophone d'annoter des paragraphes afin d'alimenter le jeu de données. Nous reviendrons plus tard sur la méthode de *crowd sourcing* des annotations. 
@@ -109,6 +113,8 @@ Pour plus d'information sur la pseudonymisation de documents textuels à l'aide 
 - volume de documents annotés: 6 000 images 
 - le schéma synthétique d'annotaton : caravane, mobiles homes, construction en dur, construction légère, piscine, décharge, déchets industriels, navires ::: 
 
+![ddtm_annotation](./images/ddtm_annotation.png)
+*Une capture d'écran du logiciel d'annotation développé pour la DDTM de l'Hérault*
 
 Ce projet, réalisé dans le cadre de la première saison de l'[Appel à Manifestation d'Intérêt en Intelligence Artificielle](https://www.etalab.gouv.fr/intelligence-artificielle-decouvrez-les-6-projets-laureats-de-lappel-a-manifestation-dinteret-ia) à la [DDTM de l'Hérault](http://www.herault.gouv.fr/Services-de-l-Etat/Agriculture-environnement-amenagement-et-logement/Direction-Departementale-des-Territoires-et-de-la-Mer-de-l-Herault-DDTM-34) , vise a développer un modèle d’analyse d’images aériennes ou satellites pour automatiser le pré-repérage des infractions potentielles liées à la cabanisation. Cette automatisation nécessite une phase d'annotation manuelle d'images satellites. La tâche d'annotation consiste à repérer sur l'image les zones correspondant à plusieurs types d'objet types d’objets (caravanes, mobile homes, constructions en dur, piscines, navires) et à leur attribuer le label correspondant. Un logiciel d'annotation d'image a été développé à cet effet. 
 

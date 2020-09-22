@@ -23,7 +23,7 @@ Les logiciels d'annotation n'offrent pas tous les mêmes fonctionnalités. Il es
 - Question-Réponse
 - Parsing syntaxique (ex : Treebank, cf [artcile](https://cl.lingfil.uu.se/~nivre/docs/hsk.pdf), pour une application en français voir [The French Question Bank](http://alpage.inria.fr/Treebanks/FQB/lrec2016_QuestionBank.pdf) )
 
-## L'UX pour l'annotateur 
+## L'expérience utilisateur (UX) pour l'annotateur 
 L'UX est également un aspect important. Parmi les critère de l'expérience utilisateurs, on compte:
 - la sélection des segments 
 - la facilité à sélectionner parmi différents tags
