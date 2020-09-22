@@ -2,25 +2,25 @@
 permalink: /annotation/annotation-ia/
 ---
 
-# Mon projet nécessite-t-il une phase d'annotation ?
+# Mon projet nécessite-t-il une phase d'annotation et quelle stratégie d'annotation adopter ?
 
 Beaucoup de projets réalisés à partir de données non structurées nécessitent une phase d'annotation, le recours à l'annotation n'est pourtant pas systématique. A cette question préalable de la nécessité ou non d'une phase d'annptation, s'ajoute celle de la stratégie d'annotation à adopter: annoter le corpus de données à la main ou automatiser le processus d'annotation ?
 
 ## Bien connaître son corpus de données 
 
 Il faut dans un premier temps prendre en compte la nature des données à analyser : 
-- Mes données sont elles structurées, semi-structurées, non structurées? 
+- Les données sont elles structurées, semi-structurées, non structurées? 
 - Est-ce un stock de données historiques qui ne sera pas réalimenté dans le futur ou un flux de données alimenté en continu ? 
 - Quel est le volume des données ? 
 
-Les réponses à ces différentes questions seront déterminantes pour les choix à effectuer en termes d'annotation: dois-je annoter ou non ? Quelle stratégie adopter ? Nous revenons d'abord sur la différence entre annotation manuelle et annotation automatique, puis nous présenterons les différentes façons d'automatiser l'annotation. 
+Les réponses à ces différentes questions seront déterminantes pour les choix à effectuer en termes d'annotation: dois-je annoter ou non ? Quelle stratégie d'annotation adopter ? Nous revenons d'abord sur la différence entre annotation manuelle et annotation automatique, puis nous présenterons les différentes façons d'automatiser l'annotation. 
 
 ## Différence entre annotation manuelle et annotation automatique 
 L'annotation manuelle est la tâche réalisée par un humain qui consiste à attribuer à un label à un document ou à un sous ensemble d'un document. On parle d'annotation automatique lorsque cette tâche est réalisée par un programme informatique. L'automatisation de l'annotation peut être réalisée par différentes méthodes. On distingue parmi les méthodes les plus courantes que: 
 - les moteurs de règles
 - les algorithlmes d'apprentissage supervisé qui nécessitent une phase d'annotation au préalable 
 
-Ces méthodes, ainsi que dans quelles cas de figures elles sont appropriées, sont détaillés dans la suite de cette partie. 
+Ces méthodes, ainsi que dans quels cas de figures elles sont appropriées, sont détaillés dans la suite de cette partie. 
 
 
 ## Annoter par des règles métier permet dans certaines situations de se passer d'annotation manuelle
