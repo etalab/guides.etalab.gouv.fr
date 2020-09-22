@@ -23,7 +23,7 @@ Ce guide propose des étapes et bonnes pratiques pour conduire une campagne d’
 
 ## À qui s'adresse ce guide ?
 
-Ce guide est susceptible d'intéresser différents types de profils amenés à être impliqués dans une campgane d'annotation:
+Ce guide est susceptible d'intéresser différents types de profils amenés à être impliqués dans une campagne d'annotation:
 -	Chef de projet/responsable de la mise en œuvre d’une campagne d’annotation 
 -	Expert métier 
 -	Data scientist, développeur ou designer  
@@ -54,6 +54,6 @@ Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améli
 ## Ressources externes 
 
 - [Thèse de doctorat](https://tel.archives-ouvertes.fr/tel-00797760v1/document) portant sur la préparation et l'organisation de campagnes d'annotation 
-- Ouvrage collectif sur l'annotation lingustistique : *Handbook of Linguistic Annotation*, Springer, 2017
+- Ouvrage collectif sur l'annotation linguistique : *Handbook of Linguistic Annotation*, Springer, 2017
 - Un sondage sur les logiciels d'annotation consultable [ici](https://github.com/alvations/annotate-questionnaire)
 - Un [benchmark de 78 outils d'annotation](https://academic.oup.com/bib/article/doi/10.1093/bib/bbz130/5670958#190144135 ) avec de nombreux critères pris en compte 
