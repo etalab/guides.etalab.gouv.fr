@@ -13,7 +13,6 @@ Nous avons présenté dans la partie précédente les différentes stratégies d
 
 Mener à bien un projet d'annotation nécessite la mobilisation d'une équipe dont les membres remplissent des fonctions bien précises. En plus des personnes en charge de réaliser les annotations (on parlera d'annotateurs), un profil ayant des connaissances métier (chef de projet) ainsi qu'un profil technique (data scientist) seront nécessaires. 
 
-("Nombre variable mais le gestionnaire doit être une personne unique, pour éviter les incohérences dans la campagne. Préférable que le gestionnaire, s'il est aussi expert, travaille avec d'autres experts". https://tel.archives-ouvertes.fr/tel-00797760v1/document)
 
 ### Un chef de projet : l'expert métier 
 Un chef de projet disposant des connaissances métier sera nécessaire. Ses attributions seront de: 
@@ -69,9 +68,8 @@ L'annotation est généralement une étape liminaire d'un projet ayant une final
 
 Le schéma d'annotation est un modèle qui permet d'écrire les annotations de votre projet. Il doit découler de la problématique définie précédemment. Concrètement, il est consititué a minima d'un ensemble d'étiquettes (c'est-à-dire des termes permettant de caractériser telle ou telle information dans un document) et d'une définition précise de ces différentes étiquettes. Pour certains projets, le schéma d'annotation peut en plus être défini par une hiérarchisation entre les termes ou encore par des relations entre les termes. L'ensemble des étiquettes peuvent en effet être hiérarchisées entre eux (par exemple, un schéma peut se décliner en thèmes et sous-thèmes, où à chaque thème correspond une liste spécifique de sous-thèmes) ou être reliés entre eux (par exemple, une tâche d'annotation pourra être de relier un pronom au nom auquel il se rapporte). 
 
-La problématique métier à laquelle le projet répond est souvent complexe, avec beaucoup de cas particuliers ou d'exceptions aux règles usuelles. Elaborer un schéma d'annotation adéquat implique de trouver un équilibre entre la compléxité du phénomène en question et la simplicité du modèle résultant du schéma. Afin de trouver cet équilibre, un processus itératif est généralement la meilleure méthode à adopter. 
+La problématique métier à laquelle le projet répond est souvent complexe, avec beaucoup de cas particuliers ou d'exceptions aux règles usuelles. Etablir un schéma d'annotation implique souvent un travail de simplification (qui a également pour conséquence une perte d'information ou de précision).  Il est important cependant ne pas simplifier à l'extrême, et donc de trouver un bon équilibre entre simplicité et adéquation à la problématique métier. Afin de trouver cet équilibre, un processus itératif est généralement la meilleure méthode à adopter. Si l'annotation a pour objectif d'entraîner un algorithme d'intelligence artificielle, il ne faut pas exclure a priori des spécificités ou des consignes qui seraient trop difficiles à reproduire par une solution automatique. 
 
-Etablir un schéma d'annotation implique souvent un travail de simplification (qui a également pour conséquence une perte d'information ou de précision). 
 
 ::: tip Exemple du choix des catégories pour pseudonymiser les décisions de justice: afin de limiter au maximum le risque de réidentification, il faut se demander quelles informations doivent être retirées et comment les catégoriser. Un nombre restreint de catégories (nom, prénom, adresse, date de naissance par exemple) aura pour avantage des consignes d'annotations plus simples, alors qu'une catégorisation plus fine (personnes physiques, personnes morales, adresse complète, lieu de résidence par exemple) permettra de mieux cibler certaines informations sensibles. :::
 
@@ -80,12 +78,11 @@ Il est important d'évaluer la clarté du schéma d'annotation et des consignes 
 - de compromettre l'automatisation de la tâche par un algorithme d'intelligence artificielle 
 
 ::: tip Exemple: Analyse de l'ironie dans des tweet.  Des interprétations différentes du langage, des prisese en compte différentes du contexte peuvent amener deux personnes différentes à percevoir caractériser différemment le caractère ironique ou non d'un tweet. [Ce papier](https://hal.archives-ouvertes.fr/hal-01429673/document) de chercheurs en traitement automatique du langage présente un schéma d'annotation élaboré pour analyser l'ironie dans les tweets. :::
- 
-Deux types de cycles d'itérations sont envisageables: le cycle schéma / annotations et le cycle schéma / annotation / modèle IA, tous deux détaillés ci-dessous. 
+
 
 ### Le cycle schéma / annotations
 
-Elaborer un schéma d'annotation nécessite de prendre en compte à la fois la problématique du projet et les caractéristiques des documents à annoter. Ainsi élaborer un premier schéma d'annotation répondant à la problématique, le tester en annotant des documents puis le réviser au fur et à mesure de l'annotation. C'est en général en annotatant que l'on s'aperçoit si le schéma d'annotation est adapté aux documents. 
+Elaborer un schéma d'annotation nécessite de prendre en compte à la fois la problématique du projet et les caractéristiques des documents à annoter. Ainsi élaborer un premier schéma d'annotation répondant à la problématique, le tester en annotant des documents puis le réviser au fur et à mesure de l'annotation. C'est en général en annotatant que l'on s'aperçoit si le schéma d'annotation est adapté ou non aux documents. 
 
 ![cycle iteration 1](./images/cycle_iteration_1.png)
 
@@ -99,22 +96,15 @@ Votre documentation est essentielle est doit évoluer tout au long de votre camp
 
 Plusieurs types de documentations s'adressant à différentes fonctions dans le projet sont utiles: une documentation générale, une documentation pour les annotateurs et une documentation pour l'administrateur de la plateforme d'annotation. 
 
-Source: https://tel.archives-ouvertes.fr/tel-00797760v1/document
-"Comment écrire un guide d'annotation : 
-- Indiquer ce qu'il faut annoter plutôt que comment annoter 
-- Ne pas exclure a priori ce qui serait douteux ou trop difficile à reproduire par un outil automatique
-- Donner aux annotateurs une vision claire de l'application visée
-- Ajouter des définitions précises, justifier les choix méthodologiques effectués et donner la logique de l'annotation visée (ne pas se contenter de donner des exemples)"
-"Objectif: responsabiliser et motiver les annotateurs en leur donnant accès à la logique sous-jacente. Les annotateurs étant des experts à qui on a intérêt à donner la plus grande autonomie possible". 
 
 ### Une Documentation générale 
 Une documentation générale décrivant le contexte et les objectifs du projet, expliquant pourquoi l'annotation est nécessaire est utile. Cette documentation s'adresse à toute personne qui souhaite comprendre le projet (directeur, grand public si le projet est open source). Il est également important de documenter le cheminement intellectuel menant au schéma d'annotation et les différentes itérations s'il y en a eu. 
 
 ### Un guide à destination des annotateurs 
 Cette documentation est notamment le support de formation des annotateurs, elle est donc très importante, et donc inclure notamment: 
-- La description du projet
+- La description du projet, qui permet de donner aux annotateurs une vision claire de l'application visée
 - Le schéma synthétique d'annotation (c'est-à-dire la liste des labels du schéma d'annotation, hiérarchisés le cas échéant)
-- L'explication des différents labels (définitions et exemples pour chacun des labels)
+- L'explication des différents labels: définitions précises qui gagnent à être complétées par l'explication des choix méthodologiques effectués et de la logique de l'annotation visée 
 - S'il existe des relations à annoter entre les termes, explications et exemples pour chacune des relations 
 - Liste des cas particuliers ou des cas suceptibles de poser des difficultés, accompagnée d'exemples concrets (ne pas hésiter à 
 faire des captures d'écran du logiciel d'annotation). Cette partie peut prendre la forme d'une rubrique de Questions / Réponses. 
