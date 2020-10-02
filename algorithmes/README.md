@@ -4,10 +4,10 @@ permalink: /algorithmes/
 
 # Introduction
 
-Le département Etalab accompagne les administrations dans la mise en oeuvre du principe de transparence des algorithmes. 
+Le département Etalab accompagne les administrations dans la mise en oeuvre du principe de transparence des algorithmes.
 
-Dans ce cadre, Etalab développe un certain nombre de ressources pour : 
-- **Comprendre** les enjeux et les obligations légales, avec le [guide des algorithmes publics](0-guide.md) à l'usage des administrations, 
+Dans ce cadre, Etalab développe un certain nombre de ressources pour :
+- **Comprendre** les enjeux et les obligations légales, avec le [guide des algorithmes publics](./0-guide.md) à l'usage des administrations, 
 - **Faire**, avec des ressources pour mettre en oeuvre ces principes et obligations :
 	* La [fiche pratique](1-mention.md) sur l'obligation de mention explicite ;
 	* Le [webinaire](https://www.dailymotion.com/video/x7uqnv9) "Mettre en oeuvre les obligations de transparence des algorithmes publics".
