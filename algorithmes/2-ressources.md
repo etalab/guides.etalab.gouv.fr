@@ -4,7 +4,7 @@ permalink: /algorithmes/0-ressources
 
 # Liste de ressources
 
-Nous vous proposons une sélection de ressources (études, articles, outils, évènements) liées au [programme de travail](README.md) d'Etalab sur les algorithmes publics. 
+Nous vous proposons une sélection de ressources (études, articles, outils, évènements) sur les algorithmes publics. 
 
 ## Études et rapports
 

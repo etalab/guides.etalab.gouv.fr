@@ -18,7 +18,7 @@ Ce guide est destiné à l'ensemble des administrations et organisations chargé
 
 ### Comment contribuer ?
 
-Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification dans la [version éditable](0-guide.md) du guide (sur GitHub) ou en contactant directement Simon Chignard (département Etalab - Direction interministérielle du numérique): `simon.chignard@data.gouv.fr` et l'équipe en charge des algorithmes publics : `algorithmes@etalab.gouv.fr`.  
+Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification dans la [version éditable](0-guide.md) du guide (sur GitHub) ou en contactant directement l'équipe en charge des algorithmes publics (Simon Chignard, Cindy Kus et Soizic Pénicaud) : `algorithmes@etalab.gouv.fr`.  
 
 ## 1- A quoi servent les algorithmes publics ?
 
@@ -27,7 +27,7 @@ Commençons tout d'abord par une définition: **qu'est-ce qu'un algorithme** ?
 
 📍 Retenons que, selon cette définition, un algorithme peut donc exister **indépendamment d'un traitement informatique**. Une grille de notation "papier" utilisée par une administration peut donc être considérée comme un algorithme.
 
-La CNIL définit un algorithme comme _"une suite finie et non ambigüe d’instructions permettant d’aboutir à un résultat à partir de données fournies en entrée."_ (rapport ["Comment permettre à l'Homme de garder la main ? Les enjeux éthiques des algorithmes et de l'intelligence artificielle", décembre 2017](https://www.cnil.fr/sites/default/files/atoms/files/cnil_rapport_garder_la_main_web.pdf))
+La CNIL définit un algorithme comme _"une suite finie et non ambigüe d’instructions permettant d’aboutir à un résultat à partir de données fournies en entrée."_ (rapport ["Comment permettre à l'Homme de garder la main ? Les enjeux éthiques des algorithmes et de l'intelligence artificielle", décembre 2017](https://www.cnil.fr/sites/default/files/atoms/files/cnil_rapport_garder_la_main_web.pdf)
 
 Nous avons recensé plusieurs types d'**usages des algorithmes** dans les administrations, avec une série d'exemples associés.
 
@@ -75,19 +75,6 @@ Ce ne sont pas tant les algorithmes eux-mêmes que les administrations qui les m
 - **permettre la contestation**, en indiquant les voies de recours possibles.
 
 Il faut noter que plusieurs manières de rendre des comptes (se signaler, décrire, justifier, expliquer, ...) correspondent à des **obligations légales** introduites par la loi pour une République numérique ou plus récemment le Règlement général sur la protection des données (RGPD). La troisième partie de ce document présente le cadre juridique applicable.
-
-### Comment rendre des décisions "justes" à l'aide des algorithmes ? ##
-
-La prise de décision (automatisée ou non) constitue l'un des principaux usages des algorithmes dans le secteur public - par exemple pour déterminer le droit à une aide sociale ou encore gérer la mobilité des enseignants.
-Nous nous intéressons ici au **principe de justice**: quelles sont les conditions requises pour qu'un individu concerné par la décision la juge "juste" ?
-
-Nous avons identifié dans la [littérature scientifique](https://arxiv.org/pdf/1801.10408.pdf) **quatre critères** à respecter pour qu'une décision prise à l'aide d'un algorithme soit considérée comme juste:
-- la **transparence**: il faut que la procédure soit décrite,
-- l'**intelligibilité**: il faut que la procédure soit compréhensible par les intéressés,
-- la **loyauté**: il faut que la procédure décrite soit effectivement utilisée de manière complète et fidèle,
-- l'**égalité de traitement**: il faut qu'aucun individu n'ait fait l'objet d'un traitement plus favorable (ou défavorable) que les autres individus concernés.
-
-📍On notera qu'un individu peut tout à fait considérer comme juste une décision qui ne lui est pas favorable (si par exemple la décision consiste à lui refuser une indemnité car il n'est pas éligible selon les critères fixés par la loi).
 
 ## 3 - Le cadre juridique applicable
 
@@ -180,6 +167,6 @@ Nous vous proposons un outil sous la forme d'un quizz pour tester votre connaiss
 
 La **première action** à mener, en tant qu'administration, est de **recenser les algorithmes** potentiellement concernés par l'obligation de transparence et de redevabilité, et de publier cette liste en la rendant facilement trouvable.
 
-Le département Etalab est à votre disposition pour vous accompagner dans la mise en oeuvre de ce recensement et plus globalement dans la mise en oeuvre de ces nouvelles obligations. Pour nous contacter : `algorithmes@etalab.gouv.fr.
+Le département Etalab est à votre disposition pour vous accompagner dans la mise en oeuvre de ce recensement et plus globalement dans la mise en oeuvre de ces nouvelles obligations. Pour nous contacter : `algorithmes@etalab.gouv.fr` (qui permet de contacter Simon Chignard, Cindy Kus et Soizic Pénicaud).
 
-Etalab met également à disposition une [fiche pratique](1-mention.md) sur la mention explicite.  
+Etalab met également à disposition une [fiche pratique](./1-mention.md) sur la mention explicite.  
