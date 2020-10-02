@@ -59,8 +59,8 @@ Pour résumer, voici un schéma du questionnement à suivre pour déterminer si 
 
 
 Ce schéma simplifie une réalité souvent plus complexe, et vous pourrez en pratique être amené à tester différentes méthodes, voire à combiner ces différentes méthodes. Par exemple, un moteur de règles pourra s'avérer insuffisant en termes de performance mais pourra être utile comme aide à l'annotation. On parle alors de pré-annotation (sujet qui sera détaillé dans la partie [Conduire votre campagne d'annotation](3-conduire-campagne-annotation.md)). De plus, la plupart des questions n'ont en général pas de réponses univoques, en particulier : 
- - "Puis-je extraire les informations dont j'ai besoin à l'aide d'un moteur de règles avec une précision suffisanten?" : la question du seuil de précision minimale résulte souvent d'un arbitrage avec d'autres variables et en particulier avec les ressources à disposition pour l'annotation 
- - "Ai-je beaucoup de données à annoter ou ai-je un flux continu de données ?" Le seuil maximal de données dépendra notamment de la complexité de la tâche d'annotation, des ressources disponibles pour l'annotation manuelle comparées aux ressources pour l'automatisation 
+ - "Puis-je extraire les informations dont j'ai besoin à l'aide d'un moteur de règles avec une précision suffisante ?" : la question du seuil de précision minimale résulte souvent d'un arbitrage avec d'autres variables et en particulier avec les ressources à disposition pour l'annotation 
+ - "Ai-je beaucoup de données à annoter ou ai-je un flux continu de données ?" Le seuil maximal de données dépendra notamment de la complexité de la tâche d'annotation, des ressources disponibles pour l'annotation manuelle comparées aux ressources pour l'automatisation.
 
 ## Annoter ou repenser la façon de collecter la donnée ? 
 
