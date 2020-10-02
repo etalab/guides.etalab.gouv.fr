@@ -94,7 +94,7 @@ Ce type de méthodes nécessite un premier jeu de données annotées. Une fois q
 
  ::: lexique L'active learning est un champ de l'apprentissage automatique qui fait interagir l'algorithme d'apprentissage avec le système en charge de la labélisation (l'annotateur dans notre cas). Cette méthode est particulièrement utile dans les situations où l'obtention de labels est coûteuse. Au fur et à mesure de l'annotation, l'algorithme va apprendre à prioriser les documents à faire annoter afin de maximiser le gain d'information du nouveau document annoté, et ainsi permettre de minimiser le nombre de documents nécessaires pour entraîner un algorithme avec de bonnes performances. :::
 
- L'idée sous-jacente est que tous les documents n'apporteront pas la même contribution à l'algorithme d'apprentissage. Pour plus d'informations à ce sujet, [cet article](https://jlcl.org/content/2-allissues/4-Heft1-2016/jlcl-2016-1-5SkeppstedtEtAl.pdf) détaille comment implémenter des méthodes d'active learning appliquées à l'annotation de documents textuels.
+ L'idée sous-jacente est que tous les documents n'apporteront pas la même contribution à l'algorithme d'apprentissage. Pour plus d'informations à ce sujet, [cet article](https://pdfs.semanticscholar.org/799c/1a76e9ef45d543cb0b0169550e761376e975.pdf?_ga=2.78090388.1614533376.1600861526-210375121.1588074514) détaille comment implémenter des méthodes d'active learning appliquées à l'annotation de documents textuels.
 
 ## Faire le bilan de votre campagne d'annotation manuelle
 
