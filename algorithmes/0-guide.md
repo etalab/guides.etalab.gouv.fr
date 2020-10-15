@@ -170,3 +170,5 @@ La **première action** à mener, en tant qu'administration, est de **recenser l
 Le département Etalab est à votre disposition pour vous accompagner dans la mise en oeuvre de ce recensement et plus globalement dans la mise en oeuvre de ces nouvelles obligations. Pour nous contacter : `algorithmes@etalab.gouv.fr` (qui permet de contacter Simon Chignard, Cindy Kus et Soizic Pénicaud).
 
 Etalab met également à disposition une [fiche pratique](./1-mention.md) sur la mention explicite.  
+
+_Nous remercions toutes les personnes qui ont partagé des retours sur la première version du guide et ont contribué à le faire évoluer, notamment les participantes et participants à l'atelier de mars 2020 organisé par Etalab._
