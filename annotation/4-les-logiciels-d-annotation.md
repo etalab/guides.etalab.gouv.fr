@@ -21,7 +21,7 @@ Les logiciels d'annotation n'offrent pas tous les mêmes fonctionnalités. Il es
 - Sequence to sequence (NER, POS Tagging, extraction d'information ): attribuer un label à un sous-ensemble de mots du documents 
 - Relations : fonction qui permet deux entités annotées entre elles (les liens peuvent dirigés ou non)
 - Question-Réponse
-- Parsing syntaxique (ex : Treebank, voir l'[artcile](https://cl.lingfil.uu.se/~nivre/docs/hsk.pdf) et pour une application en français voir [The French Question Bank](http://alpage.inria.fr/Treebanks/FQB/lrec2016_QuestionBank.pdf) )
+- Parsing syntaxique (ex : Treebank, voir l'[article](https://cl.lingfil.uu.se/~nivre/docs/hsk.pdf) et pour une application en français voir [The French Question Bank](http://alpage.inria.fr/Treebanks/FQB/lrec2016_QuestionBank.pdf) )
 
 ## L'expérience utilisateur (UX) pour l'annotateur 
 L'UX est également un aspect important. Parmi les critères de l'expérience utilisateur, on compte :
@@ -72,6 +72,7 @@ La facilité d'installation du logiciel d'annotation est également un critère 
 - *Saas* ou *on premise* : un logiciel *SaaS* (Software as a Service) est directement utilisable en ligne alors qu'un logiciel *on premise* aura son architecture hébergée sur votre propre serveur
 - Docker ou non : Docker permet de faciliter le déploiement du logiciel sur un serveur
 
-::: lexique [Docker](https://www.docker.com/) est un logiciel libre permettant de lancer des applications dans des conteneurs logiciels. Il permet ainsi de faciliter le déploiement d'une application sur un serveur. :::
+::: lexique [Docker](https://www.docker.com/) est un logiciel libre permettant de lancer des applications dans des conteneurs logiciels. Il permet ainsi de faciliter le déploiement d'une application sur un serveur. 
+:::
 
 Les solutions *Saas* présentent l'avantage de ne nécessiter ni serveur ni installation. Si les données à annoter sont sensibles, il faudra cependant s'assurer que les modalités de stockage des données sur la solution en ligne sont conformes aux exigences de sécurité et de protection des données. 
