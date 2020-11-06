@@ -69,13 +69,17 @@ Le schéma d'annotation est un modèle qui permet de décrire les annotations de
 La problématique métier à laquelle le projet répond est souvent complexe, avec beaucoup de cas particuliers ou d'exceptions aux règles usuelles. Etablir un schéma d'annotation implique souvent un travail de simplification (qui a également pour conséquence une perte d'information ou de précision).  Il est important cependant ne pas simplifier à l'extrême, et donc de trouver un bon équilibre entre simplicité et adéquation à la problématique métier. Afin de trouver cet équilibre, un processus itératif est généralement la meilleure méthode à adopter. Si l'annotation a pour objectif d'entraîner un algorithme d'intelligence artificielle, il ne faut pas exclure a priori des spécificités ou des consignes qui seraient trop difficiles à reproduire par une solution automatique. 
 
 
-::: tip Exemple du choix des catégories pour pseudonymiser les décisions de justice: afin de limiter au maximum le risque de réidentification, il faut se demander quelles informations doivent être retirées et comment les catégoriser. Un nombre restreint de catégories (nom, prénom, adresse, date de naissance par exemple) aura pour avantage des consignes d'annotations plus simples, alors qu'une catégorisation plus fine (personnes physiques, personnes morales, adresse complète, lieu de résidence par exemple) permettra de mieux cibler certaines informations sensibles. :::
+::: tip Exemple du choix des catégories pour pseudonymiser les décisions de justice: 
+Afin de limiter au maximum le risque de réidentification, il faut se demander quelles informations doivent être retirées et comment les catégoriser. Un nombre restreint de catégories (nom, prénom, adresse, date de naissance par exemple) aura pour avantage des consignes d'annotations plus simples, alors qu'une catégorisation plus fine (personnes physiques, personnes morales, adresse complète, lieu de résidence par exemple) permettra de mieux cibler certaines informations sensibles. 
+:::
 
 Il est important d'évaluer la clarté du schéma d'annotation ainsi que la reproductibilité des tâches d'annotation entre différents annotateurs. En effet des consignes d'annotation peu claires ou intéreprétables de façon différente par différents annotateurs auront pour conséquences : 
 - De rendre inopérable l'évaluation de la qualité des annotations 
 - De compromettre l'automatisation de la tâche par un algorithme d'intelligence artificielle 
 
-::: tip Exemple: Analyse de l'ironie dans des tweet.  Des interprétations différentes du langage, des prises en compte différentes du contexte peuvent amener deux personnes différentes à percevoir différemment le caractère ironique ou non d'un tweet. [Ce papier](https://hal.archives-ouvertes.fr/hal-01429673/document) de chercheurs en traitement automatique du langage présente un schéma d'annotation permettant d'analyser l'ironie dans les tweets. :::
+::: tip Exemple: Analyse de l'ironie dans des tweet.  
+Des interprétations différentes du langage, des prises en compte différentes du contexte peuvent amener deux personnes différentes à percevoir différemment le caractère ironique ou non d'un tweet. [Ce papier](https://hal.archives-ouvertes.fr/hal-01429673/document) de chercheurs en traitement automatique du langage présente un schéma d'annotation permettant d'analyser l'ironie dans les tweets. 
+:::
 
 
 ### Le cycle schéma / annotations
@@ -84,7 +88,8 @@ Elaborer un schéma d'annotation nécessite de prendre en compte à la fois la p
 
 ![cycle iteration 1](./images/cycle_iteration_1.png)
 
-::: tip Par exemple, pour un projet d'annotation de réponses à un questionnaire en texte libre, on peut avoir une idée a priori des thématiques abordées, ce qui permet d'élaborer une première version du schéma d'annotation, mais l'annotation des réponses pourra faire émerger de nouvelles thématiques qui pourront venir compléter ou modifier le schéma d'annotation. :::
+::: tip Par exemple, pour un projet d'annotation de réponses à un questionnaire en texte libre, on peut avoir une idée a priori des thématiques abordées, ce qui permet d'élaborer une première version du schéma d'annotation, mais l'annotation des réponses pourra faire émerger de nouvelles thématiques qui pourront venir compléter ou modifier le schéma d'annotation. 
+:::
 
 
 
