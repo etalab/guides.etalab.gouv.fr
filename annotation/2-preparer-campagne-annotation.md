@@ -26,7 +26,7 @@ En fonction de la complexité du projet, le chef de projet pourra faire appel à
 ### Le data scientist : l'expert technique 
 Un profil de type data scientist permettra, en complément du suivi qualitatif assuré par l'expert métier, de mettre en oeuvre un suivi de l'avancement et de la qualité des annotations par des méthodes de data science (plus de détails sur les métriques de qualité dans la suite). L'avantage de ce type de suivi est d'être généralisable à un grand nombre de documents annotés sans nécessiter de coût humain supplémentaire. Par opposition, le suivi qualitatif de l'expert métier permettra de prendre en compte les cas particuliers et les spécificités métier mais le temps nécessaire au suivi sera proportionnel au nombre de documents vérifiés. Les deux types de suivi sont donc complémentaires. 
 
-Le data scientist pourra également mettre en oeuvre des méthodes informatiques ou de machine learning afin de pré-annoter les documents et permettre d'accélérer le processus d'annotation (plus de détails à ce sujet dans la partie [Conduire votre campagne d'annotation](3-conduire-campagne-annotation.md), au paragraphele paragraphe **Etape 6 : Accéler le processus d'annotation**).
+Le data scientist pourra également mettre en oeuvre des méthodes informatiques ou de machine learning afin de pré-annoter les documents et permettre d'accélérer le processus d'annotation (plus de détails à ce sujet dans la partie [Conduire votre campagne d'annotation](3-conduire-campagne-annotation.md), au paragraphe **Etape 6 : Accéler le processus d'annotation**).
  
 Les attributions du profil de type data scientist sont de : 
 - S'assurer de la qualité des annotations (par des tests de cohérence sur les données annotées) 
