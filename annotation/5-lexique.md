@@ -64,7 +64,7 @@ Le [guide de la CNIL sur l'anonymisation des données](https://www.cnil.fr/fr/la
 
 ### Reconnaissance d'entités nommées
 
-La reconnaissance d'entités nommées, ou *Named Entity Recognition* (NER) en anglais, est une tâche d'apprentissage supervisée où les données d'entrées sont chacun des mots d'un document et le label qu'on leur attribue est une catégorie sémantique à laquelle il se rattache : par exemple « verbe », « adjectif » ou « adverbe » dans un cas général et « nom », « prénom », « adresse », « date » pour une tâche de pseudonymisation.
+La reconnaissance d'entités nommées, ou *Named Entity Recognition* (NER) en anglais, est une tâche d'apprentissage supervisée où les données d'entrées sont chacun des mots d'un document et le label qu'on leur attribue est une catégorie sémantique à laquelle il se rattache : par exemple « nom », « prénom », « adresse », « date ».
 
 
 ### Traitement automatique du langage ou traitement du langage naturel 
