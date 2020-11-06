@@ -2,7 +2,7 @@
 permalink: /annotation/preparer-campagne-annotation/
 ---
 
-# Organiser votre campagne d'annotation 
+# Préparer votre campagne d'annotation 
 
 
 Nous avons présenté dans la partie précédente les différentes stratégies d'annotation possibles. Nous décrivons dans cette partie le travail préparatoire à la campagne d'annotation, particulièrement important pour réussir une campagne d'annotation. 
