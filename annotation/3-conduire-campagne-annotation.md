@@ -15,7 +15,8 @@ La formation et la mobilisation des annotateurs est un aspect très important. L
 
 En amont du projet, il est important de bien expliquer les enjeux du projet à l'équipe d'annotateurs ainsi que le rôle clé de l'annotation dans le projet. Cet *on-boarding* peut aussi être l'opportunité d'acculturer les annotateurs à l'Intelligence Artificielle.
 
-::: tip C'est notamment le pari fait par le projet collaboratif [PIAF](https://piaf.etalab.studio/) (voir l'exemple présenté en partie [Mon projet nécessite-t-il une phase d'annotation et quelle stratégie d'annotation adopter ?](1-annotation-ia.md)), pour lequel ont été organisés des *annotathons* dont le but était de former les annotateurs à l'IA tout en récoltant des contributions au projet d'annotation. [Cet article](https://piaf.etalab.studio/enseignements-contributions/) détaille la méthodologie adoptée pour ce projet. :::
+::: tip C'est notamment le pari fait par le projet collaboratif [PIAF](https://piaf.etalab.studio/) (voir l'exemple présenté en partie [Mon projet nécessite-t-il une phase d'annotation et quelle stratégie d'annotation adopter ?](1-annotation-ia.md)), pour lequel ont été organisés des *annotathons* dont le but était de former les annotateurs à l'IA tout en récoltant des contributions au projet d'annotation. [Cet article](https://piaf.etalab.studio/enseignements-contributions/) détaille la méthodologie adoptée pour ce projet.
+:::
 
 Il peut aussi être bénéfique au projet d'impliquer les annotateurs dans l'élaboration du schéma d'annotation, dans la mesure où cette élaboration  passe par une phase d'itérations entre définition du schéma et annotation de documents. L'implication des annotateurs aura également pour avantage une meilleure appropriation de leur part des tâches à effectuer.
 
@@ -44,8 +45,8 @@ D'autre part, le jeu de données "Gold Standard" peut servir de jeu de données 
 
 
 ::: lexique Jeu de données d'apprentissage et jeu de données de test
-
-Afin de développer un modèle d'apprentissage supervisé, un jeu de données labélisées est nécessaire. Ce jeu de données est alors divisé en deux (en général par un échantillonnage aléatoire) : un jeu de données d'apprentissage et un jeu de données de test. Le **jeu d'apprentissage**, comme son nom l'indique, est utilisé pendant la phase d'apprentissage, afin de trouver une fonction qui permette de prédire le label à partir des variables en entrée. Afin de s'assurer que l'algorithme ait de bonnes performances sur des exemples différents de ceux utilisés lors de la phase d'apprentissage, les différentes métriques de performance de l'algorithme (justesse, précision, rappel, ...) sont calculées sur le **jeu de données de test**. ::
+Afin de développer un modèle d'apprentissage supervisé, un jeu de données labélisées est nécessaire. Ce jeu de données est alors divisé en deux (en général par un échantillonnage aléatoire) : un jeu de données d'apprentissage et un jeu de données de test. Le **jeu d'apprentissage**, comme son nom l'indique, est utilisé pendant la phase d'apprentissage, afin de trouver une fonction qui permette de prédire le label à partir des variables en entrée. Afin de s'assurer que l'algorithme ait de bonnes performances sur des exemples différents de ceux utilisés lors de la phase d'apprentissage, les différentes métriques de performance de l'algorithme (justesse, précision, rappel, ...) sont calculées sur le **jeu de données de test**.
+:::
 
 ### Faire annoter une partie des documents par plusieurs annotateurs
 
@@ -69,7 +70,9 @@ Calculer ces métriques suppose cependant des choix méthodologiques plus ou moi
 
 L'annotation manuelle étant un processus long et couteux en temps, il est souvent judicieux d'employer des méthodes automatiques ou semi-automatiques afin d'accélérer le processus d'annotation.
 
-::: lexique La pré-annotation consiste à annoter de façon automatique les documents, afin que l’annotateur les vérifie, en les complétant ou en les corrigeant si nécessaire. :::
+::: lexique La pré-annotation
+La pré-annotation consiste à annoter de façon automatique les documents, afin que l’annotateur les vérifie, en les complétant ou en les corrigeant si nécessaire.
+:::
 
 Plusieurs possibilités sont envisageables pour mettre en œuvre la pré-annotation, détaillées dans les deux paragraphes ci-dessous.
 
@@ -92,7 +95,9 @@ Ce type de méthodes nécessite un premier jeu de données annotées. Une fois q
 
  Dans un projet d'annotation, les documents à annoter sont souvent sélectionnés aléatoirement parmi l'ensemble des documents.
 
- ::: lexique L'active learning est un champ de l'apprentissage automatique qui fait interagir l'algorithme d'apprentissage avec le système en charge de la labélisation (l'annotateur dans notre cas). Cette méthode est particulièrement utile dans les situations où l'obtention de labels est coûteuse. Au fur et à mesure de l'annotation, l'algorithme va apprendre à prioriser les documents à faire annoter afin de maximiser le gain d'information du nouveau document annoté, et ainsi permettre de minimiser le nombre de documents nécessaires pour entraîner un algorithme avec de bonnes performances. :::
+ ::: lexique Active learning
+ L'active learning est un champ de l'apprentissage automatique qui fait interagir l'algorithme d'apprentissage avec le système en charge de la labélisation (l'annotateur dans notre cas). Cette méthode est particulièrement utile dans les situations où l'obtention de labels est coûteuse. Au fur et à mesure de l'annotation, l'algorithme va apprendre à prioriser les documents à faire annoter afin de maximiser le gain d'information du nouveau document annoté, et ainsi permettre de minimiser le nombre de documents nécessaires pour entraîner un algorithme avec de bonnes performances.
+ :::
 
  L'idée sous-jacente est que tous les documents n'apporteront pas la même contribution à l'algorithme d'apprentissage. Pour plus d'informations à ce sujet, [cet article](https://pdfs.semanticscholar.org/799c/1a76e9ef45d543cb0b0169550e761376e975.pdf?_ga=2.78090388.1614533376.1600861526-210375121.1588074514) détaille comment implémenter des méthodes d'active learning appliquées à l'annotation de documents textuels.
 

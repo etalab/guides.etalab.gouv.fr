@@ -13,7 +13,9 @@ Par opposition, vous aurez probablement besoin d’annoter vos données si elles
 
 La phase d’annotation, qui consiste à assigner une ou plusieurs étiquettes à des éléments d’un jeu de données, permet ainsi la constitution d’un jeu de données structuré, rendant possible l’entraînement d’algorithmes supervisés. 
 
-::: lexique L'annotation est la tâche qui consiste à attribuer à chaque donnée le label qui lui correspond. Par exemple, à attribuer le label « chien » ou « chat » à une base de photographies d'animaux. Ou encore à attribuer le label correct entre « nom », « prénom », « adresse », « date » ou « aucun » à chacun des mots d'un document. On distinguera **l'annotation manuelle**, lorsque cette tâche est effectuée par un humain, de **l'annotation automatique**, lorsque cette tâche est effectuée par un programme informatique. :::
+::: lexique 
+L'annotation est la tâche qui consiste à attribuer à chaque donnée le label qui lui correspond. Par exemple, à attribuer le label « chien » ou « chat » à une base de photographies d'animaux. Ou encore à attribuer le label correct entre « nom », « prénom », « adresse », « date » ou « aucun » à chacun des mots d'un document. On distinguera **l'annotation manuelle**, lorsque cette tâche est effectuée par un humain, de **l'annotation automatique**, lorsque cette tâche est effectuée par un programme informatique. 
+:::
 
 La pertinence et la performance de votre solution d’IA dépendra fortement de la qualité des données, dont la qualité des étiquettes est une dimension importante ; même si d’autres aspects qualitatifs peuvent entrer en jeu (complétude des variables explicatives, valeurs aberrantes, etc.). La phase d’annotation doit donc être réalisée en veillant à obtenir des étiquettes de bonne qualité. Ce guide présente les étapes clés et quelques bonnes pratiques afin d’y parvenir.
 
