@@ -15,7 +15,8 @@ La formation et la mobilisation des annotateurs est un aspect très important. L
 
 En amont du projet, il est important de bien expliquer les enjeux du projet à l'équipe d'annotateurs ainsi que le rôle clé de l'annotation dans le projet. Cet *on-boarding* peut aussi être l'opportunité d'acculturer les annotateurs à l'Intelligence Artificielle.
 
-::: tip C'est notamment le pari fait par le projet collaboratif [PIAF](https://piaf.etalab.studio/) (voir l'exemple présenté en partie [Mon projet nécessite-t-il une phase d'annotation et quelle stratégie d'annotation adopter ?](1-annotation-ia.md)), pour lequel ont été organisés des *annotathons* dont le but était de former les annotateurs à l'IA tout en récoltant des contributions au projet d'annotation. [Cet article](https://piaf.etalab.studio/enseignements-contributions/) détaille la méthodologie adoptée pour ce projet.
+::: tip PIAF: un projet collaboratif
+C'est notamment le pari fait par le projet collaboratif [PIAF](https://piaf.etalab.studio/) (voir l'exemple présenté en partie [Mon projet nécessite-t-il une phase d'annotation et quelle stratégie d'annotation adopter ?](1-annotation-ia.md)), pour lequel ont été organisés des *annotathons* dont le but était de former les annotateurs à l'IA tout en récoltant des contributions au projet d'annotation. [Cet article](https://piaf.etalab.studio/enseignements-contributions/) détaille la méthodologie adoptée pour ce projet.
 :::
 
 Il peut aussi être bénéfique au projet d'impliquer les annotateurs dans l'élaboration du schéma d'annotation, dans la mesure où cette élaboration  passe par une phase d'itérations entre définition du schéma et annotation de documents. L'implication des annotateurs aura également pour avantage une meilleure appropriation de leur part des tâches à effectuer.
