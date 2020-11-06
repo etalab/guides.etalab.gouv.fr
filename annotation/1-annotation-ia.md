@@ -31,11 +31,13 @@ On parle alors de structuration de la donnée ou d'annotation par moteur de règ
  
 ::: lexique Moteur de règles
 
-Un moteur de règles est un ensemble de règles prédéfinies « à l'avance ». Par exemple, une règle de pseudonymisation pourrait être « si le mot qui suit "Monsieur" ou "Madame" commence par une majuscule, alors ce mot est un prénom ». La complexité du langage naturel et la diversité des formulations rencontrées dans les documents fait que ce type de moteur de règles a de fortes chances de faire beaucoup d'erreurs dans des textes complexes, ou dont la forme varie souvent. :::
+Un moteur de règles est un ensemble de règles prédéfinies « à l'avance ». Par exemple, une règle de pseudonymisation pourrait être « si le mot qui suit "Monsieur" ou "Madame" commence par une majuscule, alors ce mot est un prénom ». La complexité du langage naturel et la diversité des formulations rencontrées dans les documents fait que ce type de moteur de règles a de fortes chances de faire beaucoup d'erreurs dans des textes complexes, ou dont la forme varie souvent. 
+:::
 
  Concrètement, avec un moteur de règles, le passage de la donnée non-structurée à de la données structurée se fait par un programme informatique qui implémente des règles déterministes. Si cette méthode fournit des résultats satisfaisants, elle s'avère alors beaucoup moins coûteuse que l'annotation manuelle. Si en revanche, un moteur de règles ne permet pas d'attendre des résultats avec le niveau de précision souhaité, vous devrez probablement avoir recours à l'annotation manuelle. Nous verrons dans la partie [Conduire votre campagne d'annotation](3-conduire-campagne-annotation.md) comment les moteurs de règles, lorsqu'ils ne donnent pas de résultats assez satisfaisant pour se passer d'annotation, peuvent tout de même permettre d'accélérer le processus d'annotation grâce à la pré-annotation. 
 
-::: Tip Exemple avec des données textuelles: Extraction d'informations à partir de formulaires au format *word*: 
+::: Tip Exemple avec des données textuelles
+ Extraction d'informations à partir de formulaires au format *word*
 Vous disposez d'un ensemble de documents textuels comme des réponses à un questionnaire. Vous cherchez à extraire un certain nombre d'informations de ces documents (nom, prénom, adresse par exemple). Des règles informatiques simples de recherche textuelle (le texte entre "Nom" et "Prénom" permet d'extraire le nom, le texte entre "Prénom" et "Adresse" permet d'extraire le prénom) peuvent dans certains cas permettre d'extraire les informations. 
 :::
 
@@ -66,7 +68,8 @@ Ce schéma simplifie une réalité souvent plus complexe, et vous pourrez en pra
 
 Le besoin en annotation peut parfois mettre en lumière un mode de collecte de la donnée qui n'est pas adapté aux besoins des utilisateurs. Le travail d'annotation *ex post* aurait parfois pu être évité en intégrant un processus de structuration de la donnée *ex ante*, cette dernière solution permettant un gain de temps souvent significatif par rapport à la première. 
 
-::: tip Par exemple, l'enregistrement dans un système d'information d'une procédure ou d'une déclaration est réalisé via une application permettant à des agents de remplir un certain nombre de champs. Certains champs à remplir en texte libre peuvent ainsi nécessiter une annotation *ex post* afin d'utiliser l'information qu'ils contiennent alors que la même information aurait pu être saisie via un menu déroulant comportant une liste prédéfinie de champs pour être directement exploitable. :::
+::: tip Par exemple, l'enregistrement dans un système d'information d'une procédure ou d'une déclaration est réalisé via une application permettant à des agents de remplir un certain nombre de champs. Certains champs à remplir en texte libre peuvent ainsi nécessiter une annotation *ex post* afin d'utiliser l'information qu'ils contiennent alors que la même information aurait pu être saisie via un menu déroulant comportant une liste prédéfinie de champs pour être directement exploitable. 
+:::
 
 
 
@@ -81,7 +84,8 @@ Les exemples de projets comportant une phase d'annotation sont nombreux. Par exe
 - Le temps moyen pour annoter un paragraphe : eniron 5 min par paragraphe
 - L'équipe d'annotateurs : équipe de contributeurs volontaires ( 640 contributeurs en septembre 2020)
 - Le nombre de paires de questions-réponses réalisées en septembre 2020: 8640 
-- Le schéma synthétique d'annotation : trouver 5 questions portant sur un paragraphe donné et souligner la réponse correspondante dans le texte du paragraphe ::: 
+- Le schéma synthétique d'annotation : trouver 5 questions portant sur un paragraphe donné et souligner la réponse correspondante dans le texte du paragraphe 
+::: 
 
 
 ![piaf_anno](./images/piaf_anno.png)
@@ -100,7 +104,8 @@ La tâche d'annotation consiste ici à annoter des paragraphes de *Wikipédia*. 
 - Le temps moyen pour annoter un document : entre 5 et 10 min par décision 
 - L'équipe d'annotateurs : 10 ETP à temps plein
 - Le schéma synthétique d'annotation : nom et prénom de personne physique, date de naissance, adresse 
-- Résultats obtenus : l'algorithme d'IA développé permet d'obtenir un taux d'erreur moyen de 1% ::: 
+- Résultats obtenus : l'algorithme d'IA développé permet d'obtenir un taux d'erreur moyen de 1% 
+::: 
 
 La Cour de Cassation est chargée de la diffusion des décisions de justice. Le périmètre de diffusion est étendu depuis la publication du décret sur [l'Open Data des décisions de justice](https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000042055251). Cette diffusion ne peut cependant se faire qu'après avoir occulté des décisions de justice les éléments à caractère personnel. Afin de mettre en œuvre cette occultation, la Cour de Cassation a recours à une équipe d'une dizaine d'annotateurs afin d'identifier dans les décisions les éléments à caractère personnel (noms, prénoms, adresses, dates de naissance), qui doivent être retirés avant diffusion. Afin d'automatiser ce processus, la cour de cassation à fait appel à des data scientists via le programme [Entrepreneurs d'Intérêt Général](https://entrepreneur-interet-general.etalab.gouv.fr/index.html) pour développer une solution d'Intelligence Artificielle de pseudonymisation des décisions : c'est le projet  [Open Justice](https://entrepreneur-interet-general.etalab.gouv.fr/defis/2019/openjustice.html). Cette solution est basée sur un algorithme entraîné à partir d'un corpus de décisions annotées manuellement. Afin d'optimiser le processus d'annotation, la Cour de cassation va développer un logiciel d'annotation via le projet [Label](https://entrepreneur-interet-general.etalab.gouv.fr/defis/2020/label.html).
 
@@ -113,7 +118,8 @@ Pour plus d'information sur la pseudonymisation de documents textuels à l'aide 
 - Le projet: Développer un outil d'intelligence artificielle  capable de repérer automatiquement les constructions illégales 
 - L'équipe d'annotateurs : 4 agents sur une période de 4 semaines, à raison d'1 à 2 heures par jour
 - Volume de documents annotés: 6 000 images 
-- Le schéma synthétique d'annotation : caravane, mobiles homes, construction en dur, construction légère, piscine, décharge, déchets industriels, navires ::: 
+- Le schéma synthétique d'annotation : caravane, mobiles homes, construction en dur, construction légère, piscine, décharge, déchets industriels, navires 
+::: 
 
 ![ddtm_annotation](./images/ddtm_annotation.png)
 
