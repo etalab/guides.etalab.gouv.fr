@@ -7,7 +7,7 @@ Dans le cadre de vos missions, vous pouvez être amenés à produire, collecter 
 
 Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce travail. Trois points d’entrée, correspondant à trois types de documents administratifs, vous sont proposés.
 
-## L'ouverture et la circulation des données
+## L'ouverture, l'exploitation et la circulation des données
 
 <Button link="/qualite/" text="Comment préparer des données à l'ouverture / la circulation ?" />
 
@@ -18,6 +18,8 @@ Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce t
 <Button link="/producteurs-schemas/" text="Pourquoi et comment créer un schéma de données ?" />
 
 <Button link="/pseudonymisation/" text="Comment utiliser l'IA pour pseudonymiser des documents ?" />
+
+<Button link="/annotation/" text="Guide pour préparer et conduire votre campagne d'annotation?" />
 
 ## La transparence des algorithmes publics
 
