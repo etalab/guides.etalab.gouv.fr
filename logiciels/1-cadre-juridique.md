@@ -15,9 +15,8 @@ autre donnée administrative publiable en open data, celles « dont la
 publication présente un intérêt économique, social, sanitaire ou
 environnemental. »
 
-Voir les articles [L323-2](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=BCCCCF5B5E15C3F6CABA0952E9B5A818.tplgfr21s_3?idArticle=LEGIARTI000033219073&cidTexte=LEGITEXT000031366350&dateTexte=20190307) et [D323-2-1](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=6A856B120BAA63F8153E8D6C8CDF40D4.tplgfr21s_3?idArticle=LEGIARTI000034504991&cidTexte=LEGITEXT000031366350&dateTexte=20190307) (pour les licences) du Code des
-relations entre le public et les administrations, ainsi que l'article
-46, II, 4 de la [loi pour une République numérique](https://www.legifrance.gouv.fr/affichLoiPubliee.do?idDocument=JORFDOLE000031589829&type=general&legislature=14).
+Pour les licences, voir les articles [L323-2](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=BCCCCF5B5E15C3F6CABA0952E9B5A818.tplgfr21s_3?idArticle=LEGIARTI000033219073&cidTexte=LEGITEXT000031366350&dateTexte=20190307) et [D323-2-1](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=6A856B120BAA63F8153E8D6C8CDF40D4.tplgfr21s_3?idArticle=LEGIARTI000034504991&cidTexte=LEGITEXT000031366350&dateTexte=20190307) du Code des
+relations entre le public et les administrations.
 
 ## Pour qu'un code source soit communicable
 
