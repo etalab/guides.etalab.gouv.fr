@@ -1,5 +1,5 @@
 ---
-permalink: /algorithmes/0-ressources
+permalink: /algorithmes/3-ressources
 ---
 
 # Liste de ressources
