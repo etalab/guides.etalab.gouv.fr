@@ -65,7 +65,7 @@ Certaines de ces informations seront également utiles pour répondre à des dem
 | ----------- | ---------- |
 | Nom de l'algorithme       | _S'il n'en a pas, indiquer la décision mise en oeuvre. Exemple : calcul de la taxe de séjour._       |
 | Contexte global           | _Pourquoi une décision administrative est-elle prise ? Qui sont les acteurs de la décision ? Quelles sont les tâches à accomplir ?_            |
-| Finalité de l'algorithme | _À quoi sert cet algorithme ? Exemple : l'algorithme sert à calculer la taxe de séjour due._           |
+| Finalité de l'algorithme | _À quoi sert cet algorithme ? Exemple : l'algorithme sert à calculer la taxe de séjour due. <br> Cette catégorie peut également comporter des éléments de justification : pourquoi un algorithme a-t-il été utilisé dans ce processus ?_          |
 | Comment et quand l'algorithme intervient-il dans la prise de décision ? |_Pour effectuer lesdites tâches, à quel moment s'insère l'algorithme dans le processus de décision ? Quel est le processus complet et quelle(s) partie(s) l'algorithme prend-il en charge ?_            | 
 | Niveau d'automatisation de la décision | _Préciser si la décision est entièrement automatisée ou s'il s'agit d'un outil d'aide à la décision._          |
 | Fondements juridiques  | _Le(s) fondement(s) juridique(s) de la mise en oeuvre de la décision individuelle et, le cas échéant, du traitement des données._           |
