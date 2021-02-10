@@ -9,12 +9,12 @@ Ce contenu a été mis à jour le 11 février 2021.
 :::
 
 ::: tip Version beta
-Cette fiche pratique a été élaborée dans le cadre d'un [groupe de travail sur les inventaires](https://www.etalab.gouv.fr/faire-linventaire-des-algorithmes-publics-point-detape-sur-les-actions-detalab) animé par Etalab et composé de quatre administrations (centrales et territoriales). C'est une "V1" que nous allons continuer à améliorer.
-Nous remercions chaleureusement Anthony Claverie, Maryse Le Bras, Cécile Le Guen et Nathalie Vernus-Prost pour nos échanges. Ce travail n'aurait pas pu avoir lieu sans leurs avancées, leurs retours et leur motivation. 
-Pour toute remarque concernant cette liste, vous pouvez contacter Etalab à l'adresse algorithmes@etalab.gouv.fr (qui renvoie vers Simon Chignard, Cindy Kus et Soizic Pénicaud).
+Cette fiche pratique a été élaborée dans le cadre d'un [groupe de travail sur les inventaires](https://www.etalab.gouv.fr/faire-linventaire-des-algorithmes-publics-point-detape-sur-les-actions-detalab) animé par Etalab et composé de quatre administrations (centrales et territoriales). C'est une "V1" que nous allons continuer à améliorer.<br>
+Nous remercions chaleureusement Anthony Claverie, Maryse Le Bras, Cécile Le Guen et Nathalie Vernus-Prost pour nos échanges. Ce travail n'aurait pas pu avoir lieu sans leurs avancées, leurs retours et leur motivation.<br> 
+Pour toute remarque concernant cette fiche, vous pouvez contacter Etalab à l'adresse algorithmes@etalab.gouv.fr (qui renvoie vers Simon Chignard, Cindy Kus et Soizic Pénicaud).
 :::
 
-L'obligation pour une administration de réaliser un inventaire de ses principaux traitements algorithmiques utilisés pour prendre des décisions administratives individuelles et de leurs règles est prévue par [l'article L312-1-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033205516/) du code des relations entre le public et l'administration (CRPA). 
+L'obligation pour une administration de réaliser un inventaire des principaux traitements algorithmiques utilisés pour prendre des décisions administratives individuelles et de leurs règles est prévue par [l'article L312-1-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033205516/) du code des relations entre le public et l'administration (CRPA). 
 
 Elle rentre dans le cadre des obligations de transparence des administrations ayant recours à des traitements algorithmiques. Le code des relations entre le public et l'administration (CRPA) précise le périmètre des administrations et traitement concernés. 
 
