@@ -78,6 +78,7 @@ Certaines de ces informations seront également utiles pour répondre à des dem
 |  Nombre de décisions administratives prises par an           |            |
 | Portée de la décision            | _Préciser si la décision a une portée externe (par exemple : pour un usager) ou concerne une procédure interne (par exemple : traitement de la mobilité des agents)._           |
 | Public concerné par la décision            | _Qui est affecté par cette décision ? Est-ce que la décision emporte des effets importants sur ce public ?_           |
+| Ressources connexes ||
 
 
 ### Informations sur le fonctionnement interne de l'algorithme
@@ -89,6 +90,7 @@ Certaines de ces informations seront également utiles pour répondre à des dem
 | Mode de collecte des données traitées*            | _Comment les données sont-elles initialement collectées ? Exemple : "Les inscriptions sont très majoritairement prises en charge au sein d'un portail virtuel dédié aux familles, plus exceptionnellement par voie papier"._      |
 | Type d'algorithme            | _Préciser s'il s'agit d'un système de règles (les règle de calculs sont codées par des personnes) ou d'un algorithme reposant sur l'apprentissage machine (machine learning)._           |
 | Opérations effectuées par l'algorithme             | _Donnez des détails sur les opérations techniques effectuées par l'algorithme. Cette catégorie peut être simple ou complexe, en fonction du type d'algorithme mobilisé._           |
+| Ressources connexes | _Notamment des liens vers les dépôts de code source ou vers un logigramme._
 
 ::: tip Sur les données, leur(s) source(s) et leur(s) mode(s) de collecte
 * *Les catégories "données traitées", "source des données" et "mode de collecte des données" doivent être pensées ensemble. Un même algorithme peut traiter des données de sources différentes. L'information doit alors être recueillie séparément pour les différents types de données.
