@@ -22,7 +22,7 @@ permalink: /qualite/preparer-le-jeu-de-donnees
 
 Par convention, les images des guides sont stockées dans un répertoire `images` dans le répertoire de chaque guide.
 
-## Développement local
+## Développement bla
 
 Dans la majorité des cas, l'utilisation de GitHub par le biais de son interface web vous suffira. Vous pouvez directement éditer le contenu des guides par le biais de *pull-requests* et profiter d'une prévisualisation ensuite.
 
