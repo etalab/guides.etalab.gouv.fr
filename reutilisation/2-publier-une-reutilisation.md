@@ -46,9 +46,9 @@ Lors de la création de la page de votre réutilisation, vous avez la possibilit
 
 Pour bien décrire votre réutilisation, nous vous conseillons de saisir des précisions sur : 
 
-- **La méthode de création de la réutilisation : ** il est particulièrement intéressant de décrire comment vous avez réutilisé les données : quels outils avez-vous utilisés ? Avez-vous dû nettoyer les données au préalable ? Les avez-vous croisées avec d’autres sources ? Quels freins avez-vous rencontrés dans l’exploitation des données ? Quelles données aurait pu vous aider à améliorer votre réutilisation ? Ces informations permettent notamment aux producteurs des données de mieux comprendre les usages et d’en améliorer la qualité.
-- **Ce que la réutilisation permet de faire ou de montrer : ** à ****quoi sert votre réutilisation ? Quelles conclusions peut-on tirer de vos travaux ?
-- **L’auteur de la réutilisation : ** Il est intéressant d’expliciter ce qui vous a donné envie de réutiliser les données. Décrivez vous, ou votre organisation brièvement. Êtes-vous un journaliste, une entreprise, une association, une administration ? Il est préférable de garder un ton neutre sur la réutilisation et son auteur. En effet, si la réutilisation ressemble trop à un message promotionnel par exemple il est possible que nous la supprimions.
+- **La méthode de création de la réutilisation :** il est particulièrement intéressant de décrire comment vous avez réutilisé les données : quels outils avez-vous utilisés ? Avez-vous dû nettoyer les données au préalable ? Les avez-vous croisées avec d’autres sources ? Quels freins avez-vous rencontrés dans l’exploitation des données ? Quelles données aurait pu vous aider à améliorer votre réutilisation ? Ces informations permettent notamment aux producteurs des données de mieux comprendre les usages et d’en améliorer la qualité.
+- **Ce que la réutilisation permet de faire ou de montrer :** à quoi sert votre réutilisation ? Quelles conclusions peut-on tirer de vos travaux ?
+- **L’auteur de la réutilisation :** Il est intéressant d’expliciter ce qui vous a donné envie de réutiliser les données. Décrivez vous, ou votre organisation brièvement. Êtes-vous un journaliste, une entreprise, une association, une administration ? Il est préférable de garder un ton neutre sur la réutilisation et son auteur. En effet, si la réutilisation ressemble trop à un message promotionnel par exemple il est possible que nous la supprimions.
 
 ## **Associer des jeux de données à la réutilisation**
 
