@@ -1,5 +1,5 @@
 ---
-permalink: /réutilisation/
+permalink: /reutilisation/
 ---
 
 <CurrentGroupToc></CurrentGroupToc>
