@@ -15,6 +15,8 @@ Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce t
 
 <Button link="/data.gouv.fr/" text="Comment publier des données sur data.gouv.fr ?" />
 
+<Button link="/reutilisation/" text="Comment publier des réutilisations sur data.gouv.fr ?" />
+
 <Button link="/producteurs-schemas/" text="Pourquoi et comment créer un schéma de données ?" />
 
 <Button link="/pseudonymisation/" text="Comment utiliser l'IA pour pseudonymiser des documents ?" />
