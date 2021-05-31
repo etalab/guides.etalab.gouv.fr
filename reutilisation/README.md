@@ -2,9 +2,9 @@
 permalink: /reutilisation/
 ---
 
-<CurrentGroupToc></CurrentGroupToc>
-
 # Introduction
+
+<CurrentGroupToc></CurrentGroupToc>
 
 La plateforme [data.gouv.fr](http://data.gouv.fr/) rassemble et met à disposition librement les données produites par les organisations chargées d’une mission de service public ou encore par des entreprises, citoyens, journalistes, etc. C’est également un lieu d’échange entre producteurs et réutilisateurs, notamment grâce aux fonctionnalités de publication de réutilisations de données ou de discussion autour des données disponibles.
 
