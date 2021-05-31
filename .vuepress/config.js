@@ -32,6 +32,7 @@ module.exports = {
         {path: 'pdf/guide-qualite.pdf', name: "Préparer les données à l'ouverture et la circulation"},
         {path: 'pdf/guide-juridique.pdf', name: "Identifier les données à ouvrir"},
         {path: 'pdf/guide-data.gouv.fr.pdf', name: 'Publier les données sur data.gouv.fr'},
+        {path: 'pdf/guide-reutilisation.pdf', name: 'Publier des réutilisations sur data.gouv.fr'},
         {path: 'pdf/guide-algorithmes.pdf', name: 'Expliquer les algorithmes publics'},
         {path: 'pdf/guide-logiciels.pdf', name: 'Ouvrir les codes sources'},
         {path: 'pdf/guide-producteurs-schemas.pdf', name: 'Créer des schémas de données'},
