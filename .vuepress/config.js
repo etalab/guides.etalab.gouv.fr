@@ -22,7 +22,7 @@ module.exports = {
         '/qualite/': "Préparer les données à l'ouverture et la circulation",
         '/juridique/': "Identifier les données à ouvrir",
         '/data.gouv.fr/': 'Publier les données sur data.gouv.fr',
-        '/reutilisation': 'Publier des réutilisations sur data.gouv.fr',
+        '/reutilisation/': 'Publier des réutilisations sur data.gouv.fr',
         '/algorithmes/': 'Expliquer les algorithmes publics',
         '/logiciels/': 'Ouvrir les codes sources',
         '/producteurs-schemas/': 'Créer des schémas de données',
