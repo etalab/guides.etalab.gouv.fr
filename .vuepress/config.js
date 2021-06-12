@@ -17,6 +17,7 @@ module.exports = {
       { text: '📚 Sommaire', link: '/accueil.html' },
       { text: '💾 Télécharger les guides', link: '/pdf.html' },
       { text: '✉️ Contacter Etalab', link: 'https://www.etalab.gouv.fr/contact' }
+      { text: '✉️ Contacter data.gouv.fr', link: 'https://support.data.gouv.fr/' }
     ],
     sidebarTitles: {
         '/qualite/': "Préparer les données à l'ouverture et la circulation",
