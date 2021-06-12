@@ -26,7 +26,7 @@ Comme indiqué précédemment, la réutilisation des données doit être libre. 
 ::: tip Licences de réutilisation autorisées
 Dans le but d'avoir un nombre restreint de licences, la loi pour une République numérique a prévu la création d’une liste, [fixée par décret](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034502557&categorieLien=id), de licences qui peuvent être utilisées par les administrations pour la réutilisation à titre gratuit de leurs informations publiques.
 
-Les administrations peuvent choisir parmi cette liste de licences lorsqu'elles publient des éléments en ligne. Les administrations souhaitant recourir à une licence ne figurant pas dans la liste des licences autorisées par décret doivent au préalable demander son homologation auprès de la direction interministérielle du numérique (DINUM).
+Les administrations peuvent choisir parmi cette liste de licences lorsqu'elles publient des éléments en ligne. Les administrations souhaitant recourir à une licence ne figurant pas dans la liste des licences autorisées par décret doivent au préalable [demander son homologation auprès de la direction interministérielle du numérique (DINUM)](https://support.data.gouv.fr/administration-centrale/licence).
 
 Vous pouvez consulter [la liste des licences autorisées par décret](https://www.data.gouv.fr/fr/licences).
 :::
