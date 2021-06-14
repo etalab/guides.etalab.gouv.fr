@@ -67,6 +67,8 @@ jobs:
         python main.py producteurs-schemas 'Créer des schémas de données' pdf/guide-producteurs-schemas.pdf
         python main.py pseudonymisation "Pseudonymiser des documents grâce à l'IA" pdf/guide-pseudonymisation.pdf
         python main.py qualite "Préparer les données à l'ouverture et la circulation" pdf/guide-qualite.pdf
+        python main.py reutilisation "Publier des réutilisations sur data.gouv.fr" pdf/guide-reutilisation.pdf
+
 
     - uses: actions/upload-artifact@v2
       with:
