@@ -33,6 +33,11 @@ Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce t
 <br>
 <br>
 
+## Autres guides thématiques
+- [Documentation du portail data.gouv.fr](https://doc.data.gouv.fr/)
+- [Documentation de transport.data.gouv.fr](https://doc.transport.data.gouv.fr/)
+- [Guides de l’adressage](https://adresse.data.gouv.fr/guides)
+
 ::: tip Quelles sont les activités d’Etalab ?  
 Etalab est un département de la direction interministérielle du numérique de l’État ([DINUM](https://numerique.gouv.fr)). Le département coordonne et promeut l’action de l’État et des organismes placés sous sa tutelle en matière d’inventaire, de gouvernance, de production, de circulation, d’exploitation et d’ouverture des données, et notamment des codes sources.
 
