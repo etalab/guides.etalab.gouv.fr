@@ -9,7 +9,7 @@ Le cadre juridique de l’open data public repose principalement sur les textes 
 Le [livre III du Code des relations entre le public et l’administration (CRPA)](https://search.piaf.etalab.studio/crpa) définit le cadre général de l’ouverture des données publiques. Il intègre tous les textes applicables en matière de communication, de diffusion et de réutilisation des documents administratifs.
 
 ::: tip Une question sur le Code des relations entre le public et l’administration (CRPA) ? 
-Etalab met à disposition un moteur de recherche ainsi qu'une FAQ dedié au Code des relations entre le public et l'administration. 
+Etalab met à disposition un moteur de recherche ainsi qu'une FAQ dediée au Code des relations entre le public et l'administration. 
 [Découvrez le CRPA simplifié](https://search.piaf.etalab.studio/crpa)
 :::
  
