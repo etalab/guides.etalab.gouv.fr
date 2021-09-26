@@ -1,3 +1,18 @@
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/60264344/134811322-1133f329-dc35-48d1-863a-0d86254d3d7e.png">  
+</p>
+<p align="center">
+    <i>📚 Les guides d'Etalab 📚</i>
+    <br>
+    <br>
+    <img src="https://img.shields.io/github/issues/etalab/guides.etalab.gouv.fr">
+    <img src="https://img.shields.io/github/issues-closed/etalab/guides.etalab.gouv.fr">
+    <img src="https://img.shields.io/github/contributors/etalab/guides.etalab.gouv.fr">
+    <img src="https://img.shields.io/github/license/etalab/guides.etalab.gouv.fr">
+    <img src="https://img.shields.io/github/commit-activity/m/etalab/guides.etalab.gouv.fr">
+</p>
+
+
 # Guides d'Etalab
 
 Ce dépôt contient plusieurs guides rédigés par Etalab ainsi que le code utilisé pour fournir un site web présentant ces guides.
