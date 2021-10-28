@@ -23,6 +23,8 @@ Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce t
 
 <Button link="/annotation/" text="Guide pour préparer et conduire votre campagne d'annotation" />
 
+<Button link="/apis-geo/" text='Utiliser les API à composante "Géo"' />
+
 ## La transparence des algorithmes publics
 
 <Button link="/algorithmes/" text="Les algorithmes publics : pourquoi et comment les expliquer ?" />
