@@ -40,6 +40,24 @@ Avec les limites administratives et le cadastre seulement
 
 TODO
 
+### Hébergez les tuiles du cadastre ou faire une extrait sur votre zone
+
+```bash
+wget https://cadastre.data.gouv.fr/data/etalab-cadastre/2021-07-01/mbtiles/france/cadastre.mbtiles
+npm install -g @mapbox/tilelive @mapbox/mbtiles
+
+tilelive-copy \
+    --minzoom=0 --maxzoom=24 \
+    --bounds="-1.6029,47.18438,-1.501276,47.244547" \
+    cadastre.mbtiles cadastre-extract-for-nantes-city.mbtiles
+
+npm i -g ThomasG77/mbview#no-api-key
+mbview cadastre-extract-for-nantes-city.mbtiles
+```
+
+Ouvrir http://localhost:3000/#16.17/47.215211/-1.567287
+
+
 ## Les bibliothèques pour consommer les tuiles vectorielles
 
 - OpenLayers
