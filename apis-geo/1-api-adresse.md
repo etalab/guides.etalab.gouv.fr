@@ -59,6 +59,12 @@ Python seul
 
 TODO avec <https://stackoverflow.com/questions/4956984/how-do-you-split-reading-a-large-csv-file-into-evenly-sized-chunks-in-python>
 
+Soit
+https://github.com/MTES-MCT/bulk-geocoding-python-client
+
+Soit
+https://addok.readthedocs.io/en/latest/examples/
+
 **Attention si vous consommez beaucoup de ressources**
 
 Vous êtes un organisme public? Vous pouvez faire une demande pour augmenter les quotas par défaut sur l'API publique api-adresse.data.gouv.fr
