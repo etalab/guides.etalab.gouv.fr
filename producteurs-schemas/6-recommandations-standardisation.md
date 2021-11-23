@@ -8,7 +8,7 @@ La pertinence de la mise en place d'un standard de données réside dans son ad�
 
 Il ne s'agit donc pas de règles mais de recommandations, visant à faciliter la création de nouveaux schémas et **leur intégration dans une chaîne de validation et de publication généralisable**. 
 
-## Recommandations pour le formatage des fichiers csv
+## Recommandations pour le formatage des fichiers csv <a name="formatage-csv"></a>
 
 Un des formats privilégiés pour les standards de données est le [CSV](https://fr.wikipedia.org/wiki/Comma-separated_values) \(Comma Separated Values, valeurs séparées par des virgules\). Il s'agit d'un format de données "à plat", **adéquat pour les structures de données simples**. Cependant ce format simple ne dispose pas de spécifications contraignant la saisie des données. Pour cela un schéma en Json est ajouté dont la structure est défini par le standard [TableSchema](https://specs.frictionlessdata.io/table-schema/). TableSchema permet d'indiquer les formats des données attendus, de spécifier des contraintes (types de valeurs, cardinalité) et de documenter les différents champs composant le schéma.
 
@@ -323,7 +323,7 @@ Les fichiers doivent, sauf exception et autant que possible, respecter les règl
 - **AAAAMMJJ** : Date de création du fichier
 - **idProducteur** : Numéro [SIREN](https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27identification_du_r%C3%A9pertoire_des_entreprises) sur 9 chiffres pour identifier le producteur
 - **nom-du-fichier** Chaîne de caractères dont les termes, en minuscules non accentuées, sont séparés par un tiret du milieu
-- **.extension** : Si les [règles de formatage](#recommandations-pour-le-formatage-des-fichiers) sont respectées, l'extension est .csv
+- **.extension** : Si les [règles de formatage](#formatage-csv) sont respectées, l'extension est .csv
 
 Les 3 éléments constitutifs de la chaîne principale avant l'extension sont assemblés en un seul tenant et séparés par un tiret du bas.
 
