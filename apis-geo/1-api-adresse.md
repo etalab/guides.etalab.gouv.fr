@@ -3,7 +3,7 @@
 ## Introduction
 
 ::: tip Les ressources existantes
-Si vous êtes familiers des APIs vous pouvez directement vous référez à : 
+Si vous êtes familiers des APIs vous pouvez directement vous référer à : 
 - La documentation générale autour de l'adresse <https://doc.adresse.data.gouv.fr>
 - La documentation de l'API Adresse <https://adresse.data.gouv.fr/api-doc/adresse>
 
