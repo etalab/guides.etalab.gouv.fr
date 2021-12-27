@@ -92,12 +92,9 @@ Vous êtes un particulier, vous pouvez récupérez les coordonnées de votre com
 Vous avez-besoin de faire de l'auto-complétion dans un outil web?
 
 - <https://github.com/entrepreneur-interet-general/leaflet-geocoder-ban>
-
+- <https://github.com/komoot/leaflet.photon>
 - <https://github.com/webgeodatavore/ol3-photon>
 - <https://viglino.github.io/ol-ext/examples/search/map.control.searchban.html>
-
-Générique à adapter selon vos besoins
-
 
 ### Utilisateurs du logiciel SIG QGIS
 

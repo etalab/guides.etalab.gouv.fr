@@ -51,9 +51,9 @@ Ce guide s'adresse à plusieurs types de profils:
 ## Sommaire
 Ce guide est composé de trois parties:
 
-I. [Utiliser l'API adresse pour récupérer les coordonnées depuis une liste d'adresse ou récupérer les adresses depuis des coordonnées](1-api-adresse.md)
-II. [Utiliser l'API découpage administratif](2-api-decoupage-administratif.md)
-III. [Consommer des tuiles vecteur](3-tuiles-vecteur.md)
+1. [Utiliser l'API adresse pour récupérer les coordonnées depuis une liste d'adresse ou récupérer les adresses depuis des coordonnées](1-api-adresse.md)
+2. [Utiliser l'API découpage administratif](2-api-decoupage-administratif.md)
+3. [Consommer des tuiles vecteur](3-tuiles-vecteur.md)
 
 
 ## Comment contribuer ?
