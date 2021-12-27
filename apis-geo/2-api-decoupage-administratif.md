@@ -18,3 +18,8 @@ Faire de l'auto-complétion depuis l'API soit pour remplir un formulaire, soit p
 <https://geo.api.gouv.fr/decoupage-administratif>
 
 ## FAQ
+
+De la longueur des noms de commune https://twitter.com/JulesGrandin/status/1448563444601532422
+
+La normalisation des noms de communes
+https://www.collectivites-locales.gouv.fr/sites/default/files/Accueil/Notes%20de%20la%20DGCL/2021/Instruction%20des%20demandes%20de%20changement%20de%20nom%20des%20communes.pdf
