@@ -39,7 +39,7 @@ Un géocodeur est capable de faire du géocodage dit inverse c'est à dire qu'en
 
 ### Limites du géocodage
 
-Nous allons nous concentrer sur les cas liés aux géocodages sur des adresses, le géocodeur utilisé par adresse.data.gouv.fr étant ciblé spécifiquement pour ce besoin.
+Nous allons nous concentrer sur les cas liés aux géocodages sur des adresses, le géocodeur utilisé par <https://adresse.data.gouv.fr> étant ciblé spécifiquement pour ce besoin.
 
 - **Plusieurs communes pour un code postal**. Cela pose problème par exemple si on omet le nom de la commune dans une adresse. On a 68,9% des codes postaux associés à plus d'une commune et on a jusqu'à 46 communes rattachées à un même code postal.
 
@@ -78,7 +78,7 @@ Après avoir posée ces quelques bases, nous allons entrer dans des scénarios p
 
 L'adresse n'est pas trouvée: comprendre ce qui peut l'expliquer
 
-- vérifier en utilisant l'autocomplétion sur https://adresse.data.gouv.fr/base-adresse-nationale#4.4/46.9/1.7
+- vérifier en utilisant l'autocomplétion sur <https://adresse.data.gouv.fr/base-adresse-nationale#4.4/46.9/1.7>
   - tapez vote adresse. Par exemple, "20 Avenue de Ségur". Si dans les résultats vous voyez que le numéro est bien proposé et que la commune est la bonne pour le premier résultat, c'est la manière dont vous avez récupéré l'adresse qui est en cause. Si vous êtes en mode "batch", la première adresse retournée peut être mauvaise et c'est la 2ème ou 3ème adresse que vous attendiez.
   - imaginons que vous pensiez que le numéro existe mais ne le trouvez pas dans votre résultat de géocodage. Essayez alors de trouver la rue. Essayons "87 avenue de Ségur". On ne voit que des rues qui sont retournées suite à la recherche. Cliquez sur la rue qui semble correspondre à votre recherche. Cela va zoomer. Vous allez pouvoir voir s'il y a des adresses et lesquelles sont inventoriées.
 
@@ -108,7 +108,7 @@ Il existe plusieurs solutions pour cela. Vous pouvez vous appuyer sur de nombreu
 - <https://github.com/entrepreneur-interet-general/leaflet-geocoder-ban>
 - <https://github.com/komoot/leaflet.photon>
 
-*Exemples*:
+**Exemples**:
 
 - https://entrepreneur-interet-general.github.io/leaflet-geocoder-ban/demo/demo_control.html
 - https://entrepreneur-interet-general.github.io/leaflet-geocoder-ban/demo/demo_search_bar.html
@@ -119,15 +119,15 @@ Il existe plusieurs solutions pour cela. Vous pouvez vous appuyer sur de nombreu
 - <https://github.com/webgeodatavore/photon-geocoder-autocomplete>
 - <https://viglino.github.io/ol-ext/examples/search/map.control.searchban.html>
 
-*Exemples*:
+**Exemples**:
 
-- https://raw.githack.com/webgeodatavore/photon-geocoder-autocomplete/master/demo/index-ol.html
+- <https://raw.githack.com/webgeodatavore/photon-geocoder-autocomplete/master/demo/index-ol.html>
 
 #### Solutions indépendantes de bibliothèques cartographiques
 
 - <https://github.com/webgeodatavore/photon-geocoder-autocomplete>
 
-*Exemples*:
+**Exemples**:
 
 - [Exemple avec Maplibre mais non lié à Maplibre](https://raw.githack.com/webgeodatavore/photon-geocoder-autocomplete/master/demo/index-maplibre.html)
 - [Exemple avec OpenLayers mais non lié à OpenLayers](https://gist.githack.com/ThomasG77/0b99013795f76699c5c9a0d7daf4411e/raw/a6b65c033efa73cecb3ea8473ba83aabc973d373/demo-ban-openlayers.html)
@@ -156,6 +156,8 @@ if len(j.get('features')) > 0:
 else:
     print('No result')
 ```
+
+En JavaScript, vous pouvez utiliser les exemples de <https://addok.readthedocs.io/en/latest/examples/#using-javascript-client-side> selon si c'est un usage côté navigateur ou côté serveur (Node.js/deno)
 
 ### Géocodage massif
 
@@ -250,8 +252,7 @@ consolidate_multiple_csv(myfiles, 'myresult.csv')
 
 #### JavaScript
 
-- Geocodage massif avec une solution en ligne de commande utilisant Node.js https://github.com/jdesboeufs/addok-geocode-stream
-- les exemples de https://addok.readthedocs.io/en/latest/examples/#using-javascript-client-side selon si c'est un usage côté navigateur ou côté serveur (Node.js/deno)
+- Geocodage massif avec une solution en ligne de commande utilisant Node.js <https://github.com/jdesboeufs/addok-geocode-stream>
 
 ### Autres outils utilisant la BAN
 
