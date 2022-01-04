@@ -16,6 +16,8 @@ L'objet de ce guide est de compléter la documentation existante par des ressour
 
 > Le géocodage consiste à affecter des coordonnées géographiques (longitude/latitude) à une adresse postale ([Wikipédia](https://fr.wikipedia.org/wiki/G%C3%A9ocodage))
 
+Il permet ainsi depuis des adresses de les positionner sur une carte. Il permet aussi lorsque vous voyagez à trouver les points de départ et d'arrivée pour déterminer votre trajet.
+
 Pour cela, il est nécessaire d'avoir
 
 - des données de référence contenant numéro, nom de rue, code INSEE, code postal, nom de commune ainsi que des coordonnées géographiques x et y qui sont généralement la longitude pour le x et la latitude pour le y.
@@ -33,6 +35,7 @@ Dans certains cas, les coordonnées d'une adresse sont interpolées: on a pris u
 Un géocodeur va transformer la donnée textuelle des données de référence en utilisant des algorithmes qui séparent l'adresse en syllabes, mots et groupes de mots. On indexe ces différents éléments. Ensuite, avec des algorithmes relatifs à du traitement textuel, le géocodeur pourra comparer la similarité entre les mots constituants l'adresse à rechercher et ceux qui sont indexés depuis les données de référence. Un algorithme permet généralement d'ordonner les résultats: on veut que lorsque plusieurs résultats sont proposés, les plus proches de coordonnées fixes soit les premiers ou bien que ce soit ceux dont la population est la plus forte. On peut aussi filtrer selon des critères comme le pays si le géocodeur a une vocation internationale, comme par exemple [Nominatim](https://nominatim.openstreetmap.org) ou bien par type de résultat. Dans les faits, un certain nombre de géocodeurs cherchent à gérer de la recherche de communes, de POIs (Points Of Interest ou points d'intérêts) et pas seulement des adresses
 
 Un géocodeur est capable de faire du géocodage dit inverse c'est à dire qu'en envoyant des coordonnées, celui-ci retourne une adresse. Pour que cela fonctionne, la principale condition est de trouver la donnée de référence la plus proche des coordonnées envoyées. Ceci est généralement réalisé avec un index spatial qui accélère la recherche des points les plus proches des coordonnées x, y en entrée.
+
 
 ### Limites du géocodage
 
@@ -65,85 +68,207 @@ Dans un premier temps, il faut comprendre comment la BAN est constituée. La don
 
 A terme, ces dernières devraient devenir la seule source. La commune doit certifier ces adresses c'est à dire valider que les adresses saisies sont justes.
 
-L'image ci-dessous résume la situation
+L'image ci-dessous résume la situation pour consolider les données adresse
 
 ![](./images/schema-donnees-ban.svg)
 
-par SVG https://adresse.data.gouv.fr/_next/image?url=%2Fimages%2Fdonnees-nationales%2Fschema-donnees-ban.svg&w=2048&q=75 issue de https://adresse.data.gouv.fr/donnees-nationales
+Après avoir compris comment les données adresse étaient créés, il fauut comprendre comment on accède aux données. On peut soit directement récupérer les données mais c'est pour des utilisateurs avancés et nous allons volontairement omettre ce cas, soit passer par l'API de recherche. Cette API peut rechercher des adresses soit via un appel unique par adresse soit en mode "batch", c'est à dire où l'on passe un fichier avec une liste d'adresse, une par ligne et on retourne la première adresse retournée pour chacun des lignes.
 
+Après avoir posée ces quelques bases, nous allons entrer dans des scénarios pratiques.
 
 L'adresse n'est pas trouvée: comprendre ce qui peut l'expliquer
 
 - vérifier en utilisant l'autocomplétion sur https://adresse.data.gouv.fr/base-adresse-nationale#4.4/46.9/1.7
-  - tapez vote adresse. Par exemple, "20 Avenue de Ségur". Si dans les résultats vous voyez que le numéro est bien proposé et que la commune est la bonne, c'est la manière dont vous avez récupéré l'adresse qui est en cause.
-  - imaginons que vous pensiez que le numéro existe mais ne le trouvez pas. Essayez alors de trouver la rue. Essayons "87 avenue de Ségur". On ne voit que des rues qui sont retournées suite à la recherche. Cliquez sur la rue qui semble correspondre à votre recherche. Cela va zoomer. Vous allez pouvoir voir s'il y a des adresses et lesquelles sont inventoriées.
+  - tapez vote adresse. Par exemple, "20 Avenue de Ségur". Si dans les résultats vous voyez que le numéro est bien proposé et que la commune est la bonne pour le premier résultat, c'est la manière dont vous avez récupéré l'adresse qui est en cause. Si vous êtes en mode "batch", la première adresse retournée peut être mauvaise et c'est la 2ème ou 3ème adresse que vous attendiez.
+  - imaginons que vous pensiez que le numéro existe mais ne le trouvez pas dans votre résultat de géocodage. Essayez alors de trouver la rue. Essayons "87 avenue de Ségur". On ne voit que des rues qui sont retournées suite à la recherche. Cliquez sur la rue qui semble correspondre à votre recherche. Cela va zoomer. Vous allez pouvoir voir s'il y a des adresses et lesquelles sont inventoriées.
+
 - la donnée de référence n'est pas présente: c'est un oubli ou personne ne l'a encore produite
+- le résultat est une adresse BAL. Votre commune est entrée dans une démarche de recensement et valorisation de ces adresses. Vous pouvez confirmer si l'adresse existe
 - adresse IGN vs adresse cadastre vs adresse BAL
 
 - la donnée est présente mais les termes de recherche ne permettent pas de la trouver
 
 Vous êtes un particulier, vous pouvez récupérez les coordonnées de votre commune pour lui faire part de vos retours en passant par https://adresse.data.gouv.fr/contribuer puis en cherchant votre commune.
 
-
 ## Usages
+
+Ils sont de 2 natures principalement:
+
+- trouver par un formulaire une adresse pour la corriger et/ou récupérer des coordonnées en ayant une liste de choix pour trouver le résultat: c'est l'autocomplétion
+- fournir un fichier tabulaire pour obtenir en retour une version enrichie des coordonnées et d'autres informations
 
 ### Autocomplétion
 
 Vous avez-besoin de faire de l'auto-complétion dans un outil web?
 
+Il existe plusieurs solutions pour cela. Vous pouvez vous appuyer sur de nombreueses bibliothèques. Elles sont généralement liées à des bibliothèques cartographiques 
+
+#### Solutions basées sur Leaflet
+
 - <https://github.com/entrepreneur-interet-general/leaflet-geocoder-ban>
 - <https://github.com/komoot/leaflet.photon>
-- <https://github.com/webgeodatavore/ol3-photon>
+
+*Exemples*:
+
+- https://entrepreneur-interet-general.github.io/leaflet-geocoder-ban/demo/demo_control.html
+- https://entrepreneur-interet-general.github.io/leaflet-geocoder-ban/demo/demo_search_bar.html
+- <https://gist.githack.com/ThomasG77/0b99013795f76699c5c9a0d7daf4411e/raw/a6b65c033efa73cecb3ea8473ba83aabc973d373/demo-ban-leaflet-photon.html>
+
+#### Solutions basées sur OpenLayers
+
+- <https://github.com/webgeodatavore/photon-geocoder-autocomplete>
 - <https://viglino.github.io/ol-ext/examples/search/map.control.searchban.html>
 
-### Utilisateurs du logiciel SIG QGIS
+*Exemples*:
 
-Vous faites du SIG, néophyte comme expert
+- https://raw.githack.com/webgeodatavore/photon-geocoder-autocomplete/master/demo/index-ol.html
 
-- Recherchez des adresses <https://oslandia.gitlab.io/qgis/french_locator_filter/>
-- Géocodez des tables depuis une table dans QGIS QBano <https://www.data.gouv.fr/en/reuses/plugin-experimental-qbano-pour-qgis/>
-- TODO: adapter <https://gis.stackexchange.com/a/395415/638>
+#### Solutions indépendantes de bibliothèques cartographiques
+
+- <https://github.com/webgeodatavore/photon-geocoder-autocomplete>
+
+*Exemples*:
+
+- [Exemple avec Maplibre mais non lié à Maplibre](https://raw.githack.com/webgeodatavore/photon-geocoder-autocomplete/master/demo/index-maplibre.html)
+- [Exemple avec OpenLayers mais non lié à OpenLayers](https://gist.githack.com/ThomasG77/0b99013795f76699c5c9a0d7daf4411e/raw/a6b65c033efa73cecb3ea8473ba83aabc973d373/demo-ban-openlayers.html)
+- [Formulaire exemple 1](https://raw.githack.com/webgeodatavore/photon-geocoder-autocomplete/master/demo/index-no-map.html)
+- [Formulaire exemple 2](https://gist.githack.com/ThomasG77/0b99013795f76699c5c9a0d7daf4411e/raw/a6b65c033efa73cecb3ea8473ba83aabc973d373/demo-ban-form-only-alternate.html)
+
+
+### Géocodage par adresse unitaire
+
+En utilisant Python et par appel unitaire, vous pouvez faire
+
+```python
+import requests
+ADDOK_URL = 'http://api-adresse.data.gouv.fr/search/'
+params = {
+    'q': '24 Rue des Diables Bleus 73000 Chambéry',
+    'limit': 5
+}
+response = requests.get(ADDOK_URL, params=params)
+j = response.json()
+if len(j.get('features')) > 0:
+    first_result = j.get('features')[0]
+    lon, lat = first_result.get('geometry').get('coordinates')
+    first_result_all_infos = { **first_result.get('properties'), **{"lon": lon, "lat": lat}}
+    print(first_result_all_infos)
+else:
+    print('No result')
+```
 
 ### Géocodage massif
 
-Gros warning: le formatage du CSV
+Pour cela, il faut généralement vérifier le formatage de votre CSV.
 
-Avec Pandas (TODO: incomplet)
+### Python seul
+
+- https://github.com/MTES-MCT/bulk-geocoding-python-client (attention, la solution fait des appels unitaires plutôt que des appels CSV)
+
+Soit en partant des exemples https://addok.readthedocs.io/en/latest/examples/
+
+
+```python
+import os
+import math
+import shutil
+import requests
+
+# Use http://localhost:7878 if you run a local instance.
+ADDOK_URL = 'http://api-adresse.data.gouv.fr/search/csv/'
+
+def geocode(filepath_in, requests_options, filepath_out='geocoded.csv'):
+    with open(filepath_in, 'rb') as f:
+        filename, response = post_to_addok(filepath_in, f.read(), requests_options)
+        write_response_to_disk(filepath_out, response)
+
+
+def geocode_chunked(filepath_in, filename_pattern, chunk_by_approximate_lines, requests_options):
+    b = os.path.getsize(filepath_in)
+    output_files = []
+    with open(filepath_in, 'r') as bigfile:
+        row_count = sum(1 for row in bigfile)
+    with open(filepath_in, 'r') as bigfile:
+        headers = bigfile.readline()
+        chunk_by = math.ceil(b / row_count * chunk_by_approximate_lines)
+        current_lines = bigfile.readlines(chunk_by)
+        i = 1
+        # import ipdb;ipdb.set_trace()
+        while current_lines:
+            current_filename = filename_pattern.format(i)
+            current_csv = ''.join([headers] + current_lines)
+            # import ipdb;ipdb.set_trace()
+            filename, response = post_to_addok(current_filename, current_csv, requests_options)
+            write_response_to_disk(current_filename, response)
+            current_lines = bigfile.readlines(chunk_by)
+            i += 1
+            output_files.append(current_filename)
+    return output_files
+
+
+def write_response_to_disk(filename, response, chunk_size=1024):
+    with open(filename, 'wb') as fd:
+        for chunk in response.iter_content(chunk_size=chunk_size):
+            fd.write(chunk)
+
+
+def post_to_addok(filename, filelike_object, requests_options):
+    files = {'data': (filename, filelike_object)}
+    response = requests.post(ADDOK_URL, files=files, data=requests_options)
+    # You might want to use https://github.com/g2p/rfc6266
+    content_disposition = response.headers['content-disposition']
+    filename = content_disposition[len('attachment; filename="'):-len('"')]
+    return filename, response
+
+def consolidate_multiple_csv(files, output_name):
+    with open(output_name, 'wb') as outfile:
+        for i, fname in enumerate(files):
+            with open(fname, 'rb') as infile:
+                if i != 0:
+                    infile.readline()  # Throw away header on all but first file
+                # Block copy rest of file from input to output without parsing
+                shutil.copyfileobj(infile, outfile)
+
+
+# Geocode your file all at once if it is small.
+geocode(
+    'annuaire-des-debits-de-tabac-2018-utf8-20lines.csv',
+    {"columns": ['ADRESSE','CODE POSTAL','COMMUNE']},
+    'annuaire-des-debits-de-tabac-2018-utf8-20lines.geocoded.csv'
+)
+# => data.geocoded.csv
+
+Alternatively, geocode it by chunks when it is big.
+chunk_by = 1000  # approximative number of lines.
+myfiles = geocode_chunked('annuaire-des-debits-de-tabac-2018-utf8.csv', 'result-{}.csv', chunk_by, {"columns": ['ADRESSE','CODE POSTAL','COMMUNE']})
+# Merge files
+consolidate_multiple_csv(myfiles, 'myresult.csv')
+# Clean files
+[os.remove(f) for f in myfiles if os.path.isfile(f)]
 
 ```
-import pandas as pd
-import numpy as np
-import time
 
-start = time.time()
-#read data in chunks of 1 million rows at a time
-chunks = pd.read_csv('huge_data.csv',chunksize=1000000)
-end = time.time()
-print("Read csv with chunks: ",(end-start),"sec")
-for i, chunk in enumerate(chunks):
-    print(f'{i}'.zfill(5))
-    print(chunk)
+#### JavaScript
 
-#pd_df = pd.concat(chunks, ignore_index=True)
+- Geocodage massif avec une solution en ligne de commande utilisant Node.js https://github.com/jdesboeufs/addok-geocode-stream
+- les exemples de https://addok.readthedocs.io/en/latest/examples/#using-javascript-client-side selon si c'est un usage côté navigateur ou côté serveur (Node.js/deno)
 
-# Adapté de https://medium.com/analytics-vidhya/optimized-ways-to-read-large-csvs-in-python-ab2b36a7914e
-```
+### Autres outils utilisant la BAN
 
-Python seul
+Vous faites du SIG, néophyte comme expert et utilisez le logiciel SIG QGIS?
 
-TODO avec <https://stackoverflow.com/questions/4956984/how-do-you-split-reading-a-large-csv-file-into-evenly-sized-chunks-in-python>
+- Recherchez des adresses <https://oslandia.gitlab.io/qgis/french_locator_filter/>
+- Géocodez des tables depuis une table dans QGIS QBano <https://www.data.gouv.fr/en/reuses/plugin-experimental-qbano-pour-qgis/>. A ce jour, le plugin est mal maintenu, il faut mieux récupérer [ce zip](https://labs.webgeodatavore.com/partage/QBano.zip) puis installer le plugin depuis celui-ci.
+- Avec PyQGIS, vous pouvez aussi géocoder en partant de <https://gis.stackexchange.com/a/395415/638>
 
-Soit
-https://github.com/MTES-MCT/bulk-geocoding-python-client
+Vous utilisez d'autres outils?
 
-Soit
-https://addok.readthedocs.io/en/latest/examples/
+- Vous faites du R? <https://cran.r-project.org/web/packages/banR/index.html>
+- Vous souhaitez intégrer la recherche dans le CMS SPIP? <http://plugins.spip.net/gisban.html>
 
-Avec NodeJS, https://github.com/jdesboeufs/addok-geocode-stream
+## Gros consommateurs de l'API api-adresse.data.gouv.fr?
 
-**Attention si vous consommez beaucoup de ressources**
-
-Vous êtes un organisme public? Vous pouvez faire une demande pour augmenter les quotas par défaut sur l'API publique api-adresse.data.gouv.fr
+Si vous êtes un organisme public, vous pouvez faire une demande pour augmenter les quotas par défaut sur l'API publique api-adresse.data.gouv.fr
 
 Si ce n'est pas le cas, vous pouvez vous auto-héberger. Dans ce cas, le plus simple est de passer par l'utilisation de Docker
 
@@ -153,27 +278,14 @@ Il est possible aussi de regarder du côté de Addok, le logiciel open-source de
 
 - <https://github.com/addok/addok>
 
+## Géocodeurs alternatifs
 
-### Autres
-
-- Vous faites du R? <https://cran.r-project.org/web/packages/banR/index.html>
-- Vous souhaitez intégrer la recherche dans le CMS SPIP? <http://plugins.spip.net/gisban.html>
-
-## Géocodeurs alternatifs à Addok, utilisé par adresse.data.gouv.fr
+Même si nous avons abordé l'usage du géocodeur Addok, utilisé par adresse.data.gouv.fr, il existe d'autres possibilités. Vous pouvez ainsi installer des solutions OpenSource comme celles ci-dessous
 
 - [Pelias](https://github.com/pelias/pelias)
 - [Photon](https://github.com/komoot/photon)
 - [Nominatim](https://github.com/osm-search/Nominatim)
 
-Il est aussi possible de détourner Addok pour lui faire effectuer d'autres types de recherche, par exemple des POIs en utilisant le projet https://github.com/osm-fr/osmpoi4addok
+Il est aussi possible de détourner Addok pour lui faire effectuer d'autres types de recherche, par exemple des POIs en utilisant le projet <https://github.com/osm-fr/osmpoi4addok> par exemple
 
-https://geoservices.ign.fr/services-web-experts-calcul (voir les sections "Services de géocodage" et "Service de recherche Look4")
-
-https://geoservices.ign.fr/documentation/services/services-beta/nouveau-service-de-geocodage-demonstrateur
-
-
-Usage des géocodeurs
-
-Autocompletion
-recherche automatique en batch
-routing: recherche pour trouver les coordonnées pour ensuite trouver le point du graphe le plus proche de ces coordonnées
+En dernier lieu, vous pouvez aussi vous appuyez sur les services mis à disposition par l'IGN pour le géocodage <https://geoservices.ign.fr/services-web-experts-calcul> (voir les sections "Services de géocodage" et "Service de recherche Look4"). Vous pouvez aussi regardez [leur nouveau service de géocodage](https://geoservices.ign.fr/documentation/services/services-beta/nouveau-service-de-geocodage-demonstrateur)
