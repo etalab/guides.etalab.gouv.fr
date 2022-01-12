@@ -82,7 +82,7 @@ utilisateurs ne sont pas du tout des contributeurs potentiels.)
 
 Pour les logiciels ne répondant à aucun des trois critères, le niveau
 D est admissible, tant qu'aucun citoyen n'exige la communication du
-code source en question, selon le cadre juridique définit dans la loi
+code source en question, selon le cadre juridique défini dans la loi
 pour République numérique.
 
 Bien sûr, ces critères sont *relatifs* : la modularité, la généricité et
