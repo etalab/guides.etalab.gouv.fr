@@ -4,8 +4,8 @@ permalink: /producteurs-schemas/
 
 # Introduction
 
-::: tip Version bêta
-Ce guide a été publié initialement fin mars 2020. Il est amené à être ajusté suite aux retours de nos partenaires et lecteurs. Vous êtes invités à [entrer en contact avec nous](https://etalab.gouv.fr/contact).
+::: tip Rédaction de ce guide
+Ce guide a été publié initialement fin mars 2020 et est mis à jour de manière régulière. Il résulte d'une co-rédaction entre les équipes d'[Etalab](https://www.etalab.gouv.fr/) et d'[OpenDataFrance](https://www.opendatafrance.net/). Si vous souhaitez faire des propositions pour le faire évoluer, vous êtes invités à [entrer en contact avec nous](https://etalab.gouv.fr/contact).
 :::
 
 ::: lexique Schémas de données

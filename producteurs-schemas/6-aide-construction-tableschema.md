@@ -1,8 +1,8 @@
 ---
-permalink: /producteurs-schemas/recommandations-standardisation
+permalink: /producteurs-schemas/aide-construction-tableschema
 ---
 
-# Recommandations relatives aux jeux de données
+# Aide à la construction d'un schéma TableSchema
 
 La pertinence de la mise en place d'un standard de données réside dans son adéquation entre les capacités de sa mise en oeuvre par les producteurs de données et les outils permattant l'automatisation des jeux de données valides par rapport à cette spécification. Cette standardisation doit permettre de **faciliter la mise en relation des jeux de données** issus de différents producteurs.
 
@@ -156,7 +156,7 @@ Un assistant graphique en ligne [yohours](https://projets.pavie.info/yohours) pe
 
 La possibilité est laissée de décrire les points de géolocalisation d'une donnée à l'intérieur d'un champ unique (geopoint) ou à l'aide de 2 champs (latitude et longitude).
 
-#### latitude
+#### Latitude
 * **Description** : ce type de données permet de saisir la coordonnée de latitude exprimée en [WGS 84](https://fr.wikipedia.org/wiki/WGS_84) permettant de localiser un équipement. Le signe de séparation entre les parties entière et décimale du nombre est le point. Précision : 6 décimales maximum.
 * **Type** : number
 * **Exemple** : 48.563433
@@ -184,18 +184,18 @@ La possibilité est laissée de décrire les points de géolocalisation d'une do
 Ce type de champ permet de décrire l'adresse postale d'un équipement. Il est décomposé entre 3 champs permettant de distinguer et de faciliter le tri à l'intérieur des informations de voirie, de code postal et de commune. Le numéro et le nom de la voie sont séparés par une virgule.
 
 #### Voie
-* **Description** : ce type de champs permet de saisir le numéro et le nom de la voie sur laquelle se trouve l'équipement à décrire
+* **Description** : ce type de champs permet de saisir le numéro et le nom de la voie
 * **Type** : string
 * **Exemple** : 34, rue de Latresne
 * **Nommage** : abreviation-du-schemaVoie
-#### Code postal
-* **Description** : ce type de champs permet de saisir le code postal de la commune dans laquelle se situe l'équipement
+#### Code postal ou Code INSEE
+* **Description** : ce type de champs permet de saisir le code postal (ou le code INSEE) de la commune
 * **Type** : number
 * **Exemple** : 45800
 * **Nommage** : abreviation-du-schemaCodePostal
 
 #### Commune
-* **Description** : ce type de champs permet de saisir le nom de la commune dans laquelle se situe l'équipement
+* **Description** : ce type de champs permet de saisir le nom de la commune
 * **Type** : string
 * **Exemple** : Saint-Jean-de-Braye
 * **Nommage** : abreviation-du-schemaCommune
@@ -323,7 +323,7 @@ Les fichiers doivent, sauf exception et autant que possible, respecter les règl
 - **AAAAMMJJ** : Date de création du fichier
 - **idProducteur** : Numéro [SIREN](https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27identification_du_r%C3%A9pertoire_des_entreprises) sur 9 chiffres pour identifier le producteur
 - **nom-du-fichier** Chaîne de caractères dont les termes, en minuscules non accentuées, sont séparés par un tiret du milieu
-- **.extension** : Si les [règles de formatage](#formatage-csv) sont respectées, l'extension est .csv
+- **.extension** : Si les règles de formatage sont respectées, l'extension est .csv
 
 Les 3 éléments constitutifs de la chaîne principale avant l'extension sont assemblés en un seul tenant et séparés par un tiret du bas.
 
