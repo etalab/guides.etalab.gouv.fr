@@ -87,14 +87,9 @@ Nous avons pris le parti d'une approche pratique. Vous trouverez ainsi quelques 
 
 ### Consommez les tuiles vectorielles seules
 
-TODO avec exemples
-
-- Maplibre
-- OpenLayers
-- Leaflet
-- Tangram
-
-
+- Maplibre <https://raw.githack.com/webgeodatavore/openmaptiles-geo-data-gouv-fr/master/maplibre-gl-js/maplibre-gl-js-openmaptiles-with-overlay.html>
+- OpenLayers <https://raw.githack.com/webgeodatavore/openmaptiles-geo-data-gouv-fr/master/openlayers/openlayers-openmaptiles-with-overlay.html>
+- Leaflet <https://raw.githack.com/webgeodatavore/openmaptiles-geo-data-gouv-fr/master/leaflet/leaflet-openmaptiles-with-overlay.html>
 
 ### Hébergez les tuiles du cadastre ou faire une extrait sur votre zone
 
