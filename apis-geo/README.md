@@ -48,6 +48,12 @@ Ce guide s'adresse à plusieurs types de profils:
 - Intégrateur web
 - Spécialiste du secteur géospatial
 
+## Recommandations logiciels
+
+Il est recommandé d'avoir un navigateur web en ayant installé [l'extension JSONView](https://jsonview.com/) pour faciliter la compréhension des retours JSON.
+
+Vous pouvez aussi installer un éditeur de texte plus agréable à utiliser que le Bloc-Notes/Notepad par défaut si vous êtes sous Windows. Il vous permettra en particulier lorsque vous faites des tests sur les URLs de les modifier avant de les copier dans la barre d'adresse de votre navigateur. Il peut s'agit de [Notepad++](https://notepad-plus-plus.org/downloads/) si vous êtes sous Windows ou bien de [Microsoft Visual Studio Code](https://code.visualstudio.com/) quel que soit votre système d'exploitation. Une liste plus complète d'éditeurs de texte est disponible sur <https://fr.wikipedia.org/wiki/%C3%89diteur_de_texte#%C3%89diteurs_de_texte_couramment_utilis%C3%A9s>
+
 ## Sommaire
 Ce guide est composé de trois parties:
 
