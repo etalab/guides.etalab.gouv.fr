@@ -83,12 +83,16 @@ L'adresse n'est pas trouvée: comprendre ce qui peut l'expliquer
   - imaginons que vous pensiez que le numéro existe mais ne le trouvez pas dans votre résultat de géocodage. Essayez alors de trouver la rue. Essayons "87 avenue de Ségur". On ne voit que des rues qui sont retournées suite à la recherche. Cliquez sur la rue qui semble correspondre à votre recherche. Cela va zoomer. Vous allez pouvoir voir s'il y a des adresses et lesquelles sont inventoriées.
 
 - la donnée de référence n'est pas présente: c'est un oubli ou personne ne l'a encore produite
-- le résultat est une adresse BAL. Votre commune est entrée dans une démarche de recensement et valorisation de ces adresses. Vous pouvez confirmer si l'adresse existe
+- le résultat est une adresse BAL. Votre commune est entrée dans une démarche de recensement et valorisation de ces adresses. Vous pouvez confirmer si l'adresse existe en allant sur <https://adresse.data.gouv.fr/deploiement-bal>. Zoomez sur la carte pour trouvez votre commune ou l'organisme qui porte votre BAL, par exemple un intercommunalité. Cliquez sur le polygone. Allons par exemple à [la communauté d'agglomération Arles Crau Camargue Montagnette](https://adresse.data.gouv.fr/bases-locales/jeux-de-donnees/601402f5818a575b16081fe3) Descendons et recherchons une commune puis cliquons dessus, par exemple [Arles](https://adresse.data.gouv.fr/base-adresse-nationale/13004) On peut maintenant chercher par nom de voie ou lieu dit pour vérifier que la voie existe. Prenons [l'allée des Manades](https://adresse.data.gouv.fr/base-adresse-nationale/13004_2865#15.05/43.66235/4.6205) Nous pouvons ensuite vérifier dans la liste l'existence du numéro.
+
 - adresse IGN vs adresse cadastre vs adresse BAL
 
 - la donnée est présente mais les termes de recherche ne permettent pas de la trouver
 
-Vous êtes un particulier, vous pouvez récupérez les coordonnées de votre commune pour lui faire part de vos retours en passant par https://adresse.data.gouv.fr/contribuer puis en cherchant votre commune.
+Vous êtes un particulier, vous pouvez récupérez les coordonnées de votre commune pour lui faire part de vos retours en passant par <https://adresse.data.gouv.fr/contribuer> puis en cherchant votre commune.
+
+     Base Adresse Locale sur le territoire de la communauté d'agglomération ACCM 
+
 
 ## Usages
 
@@ -101,7 +105,7 @@ Ils sont de 2 natures principalement:
 
 Vous avez-besoin de faire de l'auto-complétion dans un outil web?
 
-Il existe plusieurs solutions pour cela. Vous pouvez vous appuyer sur de nombreueses bibliothèques. Elles sont généralement liées à des bibliothèques cartographiques 
+Il existe plusieurs solutions pour cela. Vous pouvez vous appuyer sur de nombreueses bibliothèques. Elles sont généralement liées à des bibliothèques cartographiques
 
 #### Solutions basées sur Leaflet
 
@@ -110,8 +114,8 @@ Il existe plusieurs solutions pour cela. Vous pouvez vous appuyer sur de nombreu
 
 **Exemples**:
 
-- https://entrepreneur-interet-general.github.io/leaflet-geocoder-ban/demo/demo_control.html
-- https://entrepreneur-interet-general.github.io/leaflet-geocoder-ban/demo/demo_search_bar.html
+- <https://entrepreneur-interet-general.github.io/leaflet-geocoder-ban/demo/demo_control.html>
+- <https://entrepreneur-interet-general.github.io/leaflet-geocoder-ban/demo/demo_search_bar.html>
 - <https://gist.githack.com/ThomasG77/0b99013795f76699c5c9a0d7daf4411e/raw/a6b65c033efa73cecb3ea8473ba83aabc973d373/demo-ban-leaflet-photon.html>
 
 #### Solutions basées sur OpenLayers
@@ -137,118 +141,24 @@ Il existe plusieurs solutions pour cela. Vous pouvez vous appuyer sur de nombreu
 
 ### Géocodage par adresse unitaire
 
-En utilisant Python et par appel unitaire, vous pouvez faire
-
-```python
-import requests
-ADDOK_URL = 'http://api-adresse.data.gouv.fr/search/'
-params = {
-    'q': '24 Rue des Diables Bleus 73000 Chambéry',
-    'limit': 5
-}
-response = requests.get(ADDOK_URL, params=params)
-j = response.json()
-if len(j.get('features')) > 0:
-    first_result = j.get('features')[0]
-    lon, lat = first_result.get('geometry').get('coordinates')
-    first_result_all_infos = { **first_result.get('properties'), **{"lon": lon, "lat": lat}}
-    print(first_result_all_infos)
-else:
-    print('No result')
-```
+Avec Python, pour faire des appels unitaires, vous pouvez utilisez [le code de ce script](https://gist.githubusercontent.com/ThomasG77/32329a8557135f11cb5656e3bfd4d35c/raw/9bd7883be31d2c9758d4393d72e9dc1ae4c5bed3/geocode-addok-unit-call.py)
 
 En JavaScript, vous pouvez utiliser les exemples de <https://addok.readthedocs.io/en/latest/examples/#using-javascript-client-side> selon si c'est un usage côté navigateur ou côté serveur (Node.js/deno)
 
 ### Géocodage massif
 
-Pour cela, il faut généralement vérifier le formatage de votre CSV.
+Lorsqu'on choisit cette option, on privilégie l'appel par le endpoint CSV de l'API. Il faut préalablement s'assurer que son CSV est bien formaté. En effet, il s'avère que le géocodage peut ponctuellement dysfonctionner si le CSV n'est pas bien formaté.
+
+### Option manuelle
+
+Il existe une interface graphique pour envoyer des fichiers CSV sur <https://adresse.data.gouv.fr/csv> dont la taille maximum est de 50Mo. Pour tester, téléchargeons [le fichier exemple](https://gist.githubusercontent.com/ThomasG77/32329a8557135f11cb5656e3bfd4d35c/raw/9bd7883be31d2c9758d4393d72e9dc1ae4c5bed3/annuaire-des-debits-de-tabac-2018-utf8-20lines.csv) puis suivez l'exemple en utilisant le GIF animé ci-dessous.
+
+![](./images/geocodage-csv-manuel.gif)
 
 ### Python seul
 
-- https://github.com/MTES-MCT/bulk-geocoding-python-client (attention, la solution fait des appels unitaires plutôt que des appels CSV)
-
-Soit en partant des exemples https://addok.readthedocs.io/en/latest/examples/
-
-
-```python
-import os
-import math
-import shutil
-import requests
-
-# Use http://localhost:7878 if you run a local instance.
-ADDOK_URL = 'http://api-adresse.data.gouv.fr/search/csv/'
-
-def geocode(filepath_in, requests_options, filepath_out='geocoded.csv'):
-    with open(filepath_in, 'rb') as f:
-        filename, response = post_to_addok(filepath_in, f.read(), requests_options)
-        write_response_to_disk(filepath_out, response)
-
-
-def geocode_chunked(filepath_in, filename_pattern, chunk_by_approximate_lines, requests_options):
-    b = os.path.getsize(filepath_in)
-    output_files = []
-    with open(filepath_in, 'r') as bigfile:
-        row_count = sum(1 for row in bigfile)
-    with open(filepath_in, 'r') as bigfile:
-        headers = bigfile.readline()
-        chunk_by = math.ceil(b / row_count * chunk_by_approximate_lines)
-        current_lines = bigfile.readlines(chunk_by)
-        i = 1
-        # import ipdb;ipdb.set_trace()
-        while current_lines:
-            current_filename = filename_pattern.format(i)
-            current_csv = ''.join([headers] + current_lines)
-            # import ipdb;ipdb.set_trace()
-            filename, response = post_to_addok(current_filename, current_csv, requests_options)
-            write_response_to_disk(current_filename, response)
-            current_lines = bigfile.readlines(chunk_by)
-            i += 1
-            output_files.append(current_filename)
-    return output_files
-
-
-def write_response_to_disk(filename, response, chunk_size=1024):
-    with open(filename, 'wb') as fd:
-        for chunk in response.iter_content(chunk_size=chunk_size):
-            fd.write(chunk)
-
-
-def post_to_addok(filename, filelike_object, requests_options):
-    files = {'data': (filename, filelike_object)}
-    response = requests.post(ADDOK_URL, files=files, data=requests_options)
-    # You might want to use https://github.com/g2p/rfc6266
-    content_disposition = response.headers['content-disposition']
-    filename = content_disposition[len('attachment; filename="'):-len('"')]
-    return filename, response
-
-def consolidate_multiple_csv(files, output_name):
-    with open(output_name, 'wb') as outfile:
-        for i, fname in enumerate(files):
-            with open(fname, 'rb') as infile:
-                if i != 0:
-                    infile.readline()  # Throw away header on all but first file
-                # Block copy rest of file from input to output without parsing
-                shutil.copyfileobj(infile, outfile)
-
-
-# Geocode your file all at once if it is small.
-geocode(
-    'annuaire-des-debits-de-tabac-2018-utf8-20lines.csv',
-    {"columns": ['ADRESSE','CODE POSTAL','COMMUNE']},
-    'annuaire-des-debits-de-tabac-2018-utf8-20lines.geocoded.csv'
-)
-# => data.geocoded.csv
-
-Alternatively, geocode it by chunks when it is big.
-chunk_by = 1000  # approximative number of lines.
-myfiles = geocode_chunked('annuaire-des-debits-de-tabac-2018-utf8.csv', 'result-{}.csv', chunk_by, {"columns": ['ADRESSE','CODE POSTAL','COMMUNE']})
-# Merge files
-consolidate_multiple_csv(myfiles, 'myresult.csv')
-# Clean files
-[os.remove(f) for f in myfiles if os.path.isfile(f)]
-
-```
+- solution partant d'appels unitaires plutôt que des appels CSV <https://github.com/MTES-MCT/bulk-geocoding-python-client>
+- solution partant d'appels à l'API CSV. Il suffit de récupérer [le zip](https://gist.github.com/ThomasG77/32329a8557135f11cb5656e3bfd4d35c/archive/3681bd0c070540abfdae55e6ff0bf9a41795cf42.zip), de décompresser le fichier. Ensuite, il vous suffit de lancer le script Python avec `python chunk-csv-python.py`. Cela permettra de faire l'appel vers l'API CSV soit en une fois, soit en plusieurs phases. On obtiendra ainsi le fichier `annuaire-des-debits-de-tabac-2018-utf8-20lines.geocoded.csv` qui est la version géocodée par l'API CSV d'un fichier de 20 lignes ainsi que `myresults.csv` qui est une version qui résulte d'une phase de découpage d'un gros fichier en plusieurs morceaux, d'appels à l'API CSV à partir de chacun de ces fichiers, puis du réassemblage des fichiers ainsi retournés. Vous n'avez plus qu'à adapter le code du fichier `chunk-csv-python.py`.
 
 #### JavaScript
 
@@ -281,7 +191,9 @@ Il est possible aussi de regarder du côté de Addok, le logiciel open-source de
 
 ## Géocodeurs alternatifs
 
-Même si nous avons abordé l'usage du géocodeur Addok, utilisé par adresse.data.gouv.fr, il existe d'autres possibilités. Vous pouvez ainsi installer des solutions OpenSource comme celles ci-dessous
+Même si nous avons abordé l'usage du géocodeur Addok, utilisé par adresse.data.gouv.fr, il existe d'autres possibilités pour géocoder. Leurs principaux intérêts sont de pouvoir chercher des POIs comme par exemple un centre commercial ou une enseigne ainsi que de marcher sur des données internationales, contrairement à [l'instance publique de Addok](https://adresse.data.gouv.fr/api-doc/adresse).
+
+Vous pouvez ainsi installer des solutions OpenSource comme celles ci-dessous
 
 - [Pelias](https://github.com/pelias/pelias)
 - [Photon](https://github.com/komoot/photon)
