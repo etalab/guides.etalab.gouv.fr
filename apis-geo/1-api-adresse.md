@@ -105,7 +105,7 @@ Cette situation s’explique en particulier avec la création des communes nouve
     - Il peut exister des différences liées à la vision sur la position du numéro de l’adresse (entrée principale, boîte aux lettres, bâtiment, cage d’escalier, logement, parcelle, position dérivée du segment de la voie de rattachement, point d’accès technique, etc.) ;
     - Des référentiels différents selon les acteurs même si la BAN (Base Adresse Nationale) et les BAL (Bases Adresses Locales) amènent à une amélioration et une uniformisation des référentiels: données héritées de la Poste, de l’IGN, du cadastre, d’OpenStreetMap, des opérateurs réseaux (fibre, etc.).
 
-# Cas pratiques
+## Cas pratiques
 
 ## **Comment faire si une recherche d’adresse ne fonctionne pas  ?**
 
