@@ -187,7 +187,7 @@ Pour réaliser un géocodage massif, il faut généralement vérifier le formata
 
 - Geocodage massif avec une solution en ligne de commande utilisant Node.js [https://github.com/jdesboeufs/addok-geocode-stream](https://github.com/jdesboeufs/addok-geocode-stream)
 
-# **Autres outils utilisant la BAN**
+### Autres outils utilisant la BAN
 
 Vous faites du SIG, néophyte comme expert et utilisez le logiciel SIG QGIS?
 
