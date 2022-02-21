@@ -37,7 +37,7 @@ Les usages de l’API adresse sont principalement de deux natures :
 - trouver par un formulaire une adresse pour la corriger et/ou récupérer des coordonnées en ayant une liste de choix pour trouver le résultat: c’est l’autocomplétion ;
 - fournir un fichier tabulaire pour obtenir en retour une version enrichie des coordonnées et d’autres informations.
 
-# **Qu’est-ce que le géocodage ?**
+## Qu’est-ce que le géocodage ?
 
 ::: lexique Géocodage Le géocodage consiste à affecter des coordonnées géographiques (longitude/latitude) à une adresse postale (Wikipédia).
 
