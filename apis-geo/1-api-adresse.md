@@ -200,7 +200,7 @@ Vous utilisez d’autres outils?
 - Vous faites du R? [https://cran.r-project.org/web/packages/banR/index.html](https://cran.r-project.org/web/packages/banR/index.html)
 - Vous souhaitez intégrer la recherche dans le CMS SPIP? [http://plugins.spip.net/gisban.html](http://plugins.spip.net/gisban.html)
 
-# **Gros consommateurs de l’API [api-adresse.data.gouv.fr](http://api-adresse.data.gouv.fr/)?**
+## Gros consommateurs de l’API [api-adresse.data.gouv.fr](http://api-adresse.data.gouv.fr/)?
 
 Si vous êtes un organisme public, vous pouvez faire une demande pour augmenter les quotas par défaut sur l’API publique [api-adresse.data.gouv.fr](http://api-adresse.data.gouv.fr/)
 
