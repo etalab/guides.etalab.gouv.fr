@@ -165,7 +165,7 @@ Avec Python, pour faire des appels unitaires, vous pouvez
 
 En JavaScript, vous pouvez utiliser [ces exemples](https://addok.readthedocs.io/en/latest/examples/#using-javascript-client-side) que ce soit pour un usage côté navigateur ou côté serveur (Node.js/deno).
 
-## **Géocodage massif**
+## Géocodage massif
 
 Lorsqu'on choisit cette option, on privilégie l'appel par le endpoint CSV de l'API. Il faut préalablement s'assurer que son CSV est bien formaté. En effet, il s'avère que le géocodage peut ponctuellement dysfonctionner si le CSV n'est pas bien formaté.
 
