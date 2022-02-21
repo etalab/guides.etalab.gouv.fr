@@ -212,7 +212,7 @@ Il est possible aussi de regarder du côté de Addok, le logiciel open source de
 
 - [https://github.com/addok/addok](https://github.com/addok/addok)
 
-# **Géocodeurs alternatifs**
+## Géocodeurs alternatifs
 
 Même si nous avons abordé l’usage du géocodeur Addok, utilisé par adresse.data.gouv.fr, il existe d'autres possibilités pour géocoder. Leurs principaux intérêts sont de pouvoir chercher des POIs comme par exemple un centre commercial ou une enseigne ainsi que de marcher sur des données internationales, contrairement à [l'instance publique de Addok](https://adresse.data.gouv.fr/api-doc/adresse).
 
