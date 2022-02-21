@@ -63,7 +63,7 @@ En pratique, un certain nombre de géocodeurs visent à réaliser des recherches
 
 Le **géocodage peut aussi se faire de façon inverse**, c’est-à-dire retourner une adresse en envoyant une coordonnée. Dans ce cas de figure, il s’agit de trouver la donnée de référence la plus proche des coordonnées envoyées.
 
-### **Les limites du géocodage**
+### Les limites du géocodage
 
 Nous nous concentrons ici sur les cas liés aux adresses, le géocodeur utilisé par [adresse.data.gouv.fr](http://adresse.data.gouv.fr/) étant spécifiquement conçu pour répondre à ce besoin.
 
