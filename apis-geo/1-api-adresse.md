@@ -119,7 +119,7 @@ Cette situation s’explique en particulier avec la création des communes nouve
 
 Vous êtes un particulier, vous pouvez récupérer les coordonnées de votre commune pour lui faire part de vos retours en passant par [https://adresse.data.gouv.fr/contribuer](https://adresse.data.gouv.fr/contribuer) puis en cherchant votre commune.
 
-## Comment faire de l’a**utocomplétion d’adresse ?**
+## Comment faire de l’**autocomplétion d’adresse ?**
 
 Il existe plusieurs solutions pour faire de l’autocomplétion dans un outil web.
 
