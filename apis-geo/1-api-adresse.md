@@ -8,7 +8,7 @@ Ce guide a pour objectif de compléter la documentation existante par des ressou
 
 ➡️ Consultez [la documentation de l’API Adresse](https://adresse.data.gouv.fr/api-doc/adresse) :::
 
-# Les données d’adresses
+## Les données d’adresses
 
 ### Comment les données d’adresses sont-elles constituées ?
 
