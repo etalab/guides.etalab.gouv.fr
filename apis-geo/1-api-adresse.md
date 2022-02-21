@@ -107,7 +107,7 @@ Cette situation s’explique en particulier avec la création des communes nouve
 
 ## Cas pratiques
 
-## **Comment faire si une recherche d’adresse ne fonctionne pas  ?**
+### Comment faire si une recherche d’adresse ne fonctionne pas  ?
 
 - Vérifier en utilisant l’[autocomplétion](https://adresse.data.gouv.fr/base-adresse-nationale#4.4/46.9/1.7) :
     - tapez vote adresse. Par exemple, "20 avenue de Ségur". Si le numéro est bien proposé et que la commune est la bonne pour le premier résultat, c’est la manière dont vous avez récupéré l’adresse qui est en cause. Si vous êtes en mode "batch", la première adresse retournée peut être mauvaise et c’est la 2ème ou 3ème adresse que vous attendiez.
