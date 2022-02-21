@@ -10,7 +10,7 @@ Ce guide a pour objectif de compléter la documentation existante par des ressou
 
 # Les données d’adresses
 
-### **Comment les données d’adresses sont-elles constituées ?**
+### Comment les données d’adresses sont-elles constituées ?
 
 La donnée adresse qui  compose la Base Adresse Nationale (BAN) est soit :
 
