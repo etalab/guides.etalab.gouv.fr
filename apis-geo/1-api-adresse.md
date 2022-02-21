@@ -23,7 +23,7 @@ L’image ci-dessous résume la situation pour consolider les données adresses
 
 ![](./images/schema-donnees-ban.svg)
 
-### **Comment accéder aux données d’adresses ?**
+### Comment accéder aux données d’adresses ?
 
 Il existe plusieurs méthodes pour accéder aux données
 
