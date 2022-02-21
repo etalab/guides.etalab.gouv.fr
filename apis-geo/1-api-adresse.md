@@ -49,7 +49,7 @@ Pour réaliser un géocodage, il est nécessaire de disposer :
 - des **coordonnées géographiques** x et y qui sont généralement la longitude(x) et la latitude(y) ;
 - une entrée correspondant à l’adresse recherchée.
 
-### **Comment fonctionne un géocodeur ?**
+### Comment fonctionne un géocodeur ?
 
 Un géocodeur transforme une donnée textuelle des données de référence en utilisant des algorithmes qui séparent l’adresse en syllabes, mots et groupes de mots.
 
