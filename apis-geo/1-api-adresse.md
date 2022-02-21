@@ -1,12 +1,13 @@
-# **Introduction**
+# **API Adresse**
 
 Ce guide a pour objectif de compléter la documentation existante par des ressources pratiques pour vous apprendre à utiliser l’API adresse.
 
-::: Familier des APIs ? Vous pouvez directement vous référer à :
+::: tip Familier des APIs ? Vous pouvez directement vous référer à :
 
 ➡️ Consultez [la documentation générale autour de l’adresse](https://doc.adresse.data.gouv.fr)
 
-➡️ Consultez [la documentation de l’API Adresse](https://adresse.data.gouv.fr/api-doc/adresse) :::
+➡️ Consultez [la documentation de l’API Adresse](https://adresse.data.gouv.fr/api-doc/adresse)
+:::
 
 ## Les données d’adresses
 
@@ -41,7 +42,8 @@ Les usages de l’API adresse sont principalement de deux natures :
 
 ::: lexique Géocodage Le géocodage consiste à affecter des coordonnées géographiques (longitude/latitude) à une adresse postale (Wikipédia).
 
-Il permet ainsi de positionner des adresses sur une carte ou encore de trouver les points de départ et d’arrivée pour déterminer votre trajet lorsque vous voyagez par exemple. :::
+Il permet ainsi de positionner des adresses sur une carte ou encore de trouver les points de départ et d’arrivée pour déterminer votre trajet lorsque vous voyagez par exemple.
+:::
 
 Pour réaliser un géocodage, il est nécessaire de disposer :
 
