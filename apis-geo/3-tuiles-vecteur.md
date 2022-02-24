@@ -84,7 +84,7 @@ Nous avons pris le parti d'une approche pratique. Vous trouverez ainsi quelques 
 
 **Avec le fond de plan et le cadastre**
 
-- Avec MapLibre <https://gist.github.com/ThomasG77/2c0f884c209eebb2710648e316052382>
+- Avec MapLibre <https://bl.ocks.org/ThomasG77/2c0f884c209eebb2710648e316052382>
 
 **Avec uniquement le fond de plan**
 
@@ -123,7 +123,7 @@ Si vous souhaitez héberger vous-même, nous vous recommandons de passer par [Ti
 
 Selon vos besoins, vous pouvez choisir d'utiliser l'API de tuiles vecteur de l'IGN plutôt que celles que nous mettons à disposition. Voici 2 exemples:
 
-- OpenLayers <https://gist.github.com/ThomasG77/3047b6072f0411d11d23cfed1fdb2c5c>
-- Maplibre <https://gist.github.com/ThomasG77/5a122812635a85af7f762858ecf052a3>
+- OpenLayers <https://bl.ocks.org/ThomasG77/3047b6072f0411d11d23cfed1fdb2c5c>
+- Maplibre <https://bl.ocks.org/ThomasG77/5a122812635a85af7f762858ecf052a3>
 
 Ici, nous avons utilisé le plan Standard dont l'URL est <https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/essentiels/standard.json>. Vous verrez qu'il est possible de choisir d'autres styles et même d'avoir des tuiles vectorielles pour d'autres éléments que les fonds de plan. Pour cela, consultez la documentation officielle côté IGN, <https://geoservices.ign.fr/documentation/services/api-et-services-ogc/vecteur-tuile-tmswmts>. Nous vous recommandons en complément de regarder <https://geoservices.ign.fr/services-web-essentiels> car la 1ère documentation à date mentionne encore une clé d'API alors que bien que présente, celle-ci est publique et s'appelle `essentiels`, ce que vous pouvez voir dans les démos mises à disposition.
