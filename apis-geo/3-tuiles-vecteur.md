@@ -8,6 +8,15 @@ Ce service est consommé par plusieurs autres produits d'Etalab ainsi que par d'
 
 Ces tuiles ont une structure standardisée par un schéma <https://openmaptiles.org/schema/>, ainsi que des styles par défaut associés à cette structure <https://openmaptiles.org/styles/>
 
+Ce service s'appuie sur les données du [projet OpenStreetMap](https://openstreetmap.org). 
+
+> OpenStreetMap (ou "OSM") est une carte du monde entier librement modifiable, faite par des gens comme vous.
+> OpenStreetMap vous permet de voir, modifier et utiliser des données géographiques de n'importe quel endroit dans le monde.
+
+Si vous trouvez des données manquantes sur la carte, vous pouvez contribuer sur <https://openstreetmap.org> et vous verrez les changements au plus tard une semaine après. En effet, les tuiles vecteur des fonds de plan sont mises à jour une fois par semaine.
+
+Il faut aussi noter que vous devez obligatoirement [créditer OpenStreetMap et ses contributeurs](https://www.openstreetmap.org/copyright/fr) quand vous utilisez les fonds de plan.
+
 Bien que ce service réponde à de nombreux besoins, il a ses limitations.
 
 **Les cas où vous ne devriez pas utiliser OpenMapTiles:**
@@ -18,7 +27,7 @@ Bien que ce service réponde à de nombreux besoins, il a ses limitations.
 
 - si vous voulez les données sur une autre couverture que la France
 
-- si vous avez un besoin qui vous parait correspondre à celui des tuiles vectorielles et styles associés de l'IGN (voir des exemples en fin de guide). Ces tuiles sont un peu plus lourdes mais elles sont par nature plus homogènes en terme de contenu car elles utilisent les données de l'IGN. Celles du projet OpenMapTiles étant basées sur OpenStreetMap, il y a parfois quelques manques à la campagne.
+- si vous avez un besoin qui vous parait correspondre à celui des tuiles vectorielles et styles associés de l'IGN (voir des exemples en fin de guide). Ces tuiles sont un peu plus lourdes mais elles sont par nature plus homogènes en terme de contenu car elles utilisent les données de l'IGN. Celles du projet OpenMapTiles étant basées sur OpenStreetMap, la complétude dépend des contributions à OpensStreetMap.
 
 ## Rappel sur les tuiles vecteur
 
