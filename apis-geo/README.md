@@ -21,7 +21,7 @@ Ce guide vise à vous accompagner dans l'usage des API géographiques opérées 
 
 
 ::: tip API Adresse (Base Adresse Nationale - BAN) 
-L'API Adresse permet d'interrogez la Base Adresse Nationale, base de données de l’intégralité des adresses du territoire français. 
+L'API Adresse permet d'interroger la Base Adresse Nationale, base de données de l’intégralité des adresses du territoire français. 
 En intégrant l'API dans votre système d'information, vous pouvez facilement rechercher une adresse et notamment :
 - faire de l'autocomplétion et de la vérification d'adresse ;
 - géolocaliser une adresse sur une carte ;
@@ -29,14 +29,17 @@ En intégrant l'API dans votre système d'information, vous pouvez facilement re
 :::
 
 ::: tip API Découpage Administratif - (API Geo)
-L'API Découpage Administratif permet d'interrogez les référentiels géographiques plus facilement. 
+L'API Découpage Administratif permet d'interroger les référentiels géographiques plus facilement. 
 En intégrant l'API dans votre système d'information, vous pouvez notamment :
 - rechercher une commune par nom, code postal ou coordonnées géographiques
 - rechercher un département par son nom
 - rechercher une région par son nom
 :::
 
-::: tip Les tuiles vectorielles openmaptiles.geo.data.gouv.fr
+::: tip Les tuiles vecteur openmaptiles.geo.data.gouv.fr
+Cette API permet de mettre à disposition des tuiles vectorielles qui sont affichables sur des cartes géographiques interactives.
+Elles servent principalement à afficher des fonds de plan mais aussi les contours cadastrales et les limites administratives en France.
+Cela permet de vous affranchir d'APIs cartographiques comme Google Maps.
 :::
 
 ## À quoi sert ce guide ?
