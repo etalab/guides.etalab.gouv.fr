@@ -105,7 +105,7 @@ Cette situation s’explique en particulier avec la création des communes nouve
 
 - **Plusieurs coordonnées pour une même adresse**
     - Il peut exister des différences liées à la vision sur la position du numéro de l’adresse (entrée principale, boîte aux lettres, bâtiment, cage d’escalier, logement, parcelle, position dérivée du segment de la voie de rattachement, point d’accès technique, etc.) ;
-    - Des référentiels différents selon les acteurs même si la BAN (Base Adresse Nationale) et les BAL (Bases Adresses Locales) amènent à une amélioration et une uniformisation des référentiels: données héritées de la Poste, de l’IGN, du cadastre, d’OpenStreetMap, des opérateurs réseaux (fibre, etc.).
+    - Des référentiels différents selon les acteurs même si la BAN (Base Adresse Nationale) et les BAL (Bases Adresses Locales) amènent à une amélioration et une uniformisation des référentiels: données héritées de la Poste, de l’IGN, du cadastre, des opérateurs réseaux (fibre, etc.).
 
 ## Cas pratiques
 
@@ -216,7 +216,7 @@ Il est possible aussi de regarder du côté de Addok, le logiciel open source de
 
 ## Géocodeurs alternatifs
 
-Même si nous avons abordé l’usage du géocodeur Addok, utilisé par adresse.data.gouv.fr, il existe d'autres possibilités pour géocoder. Leurs principaux intérêts sont de pouvoir chercher des POIs comme par exemple un centre commercial ou une enseigne ainsi que de marcher sur des données internationales, contrairement à [l'instance publique de Addok](https://adresse.data.gouv.fr/api-doc/adresse).
+Même si nous avons abordé l’usage du géocodeur Addok, utilisé par adresse.data.gouv.fr, il existe d'autres possibilités pour géocoder. Leurs principaux intérêts sont de pouvoir chercher des POIs, par exemple un centre commercial ou une enseigne ainsi que de marcher sur des données internationales, contrairement à [l'instance publique de Addok](https://adresse.data.gouv.fr/api-doc/adresse).
 
 Vous pouvez ainsi installer des solutions OpenSource comme celles ci-dessous
 
@@ -224,6 +224,8 @@ Vous pouvez ainsi installer des solutions OpenSource comme celles ci-dessous
 - [Photon](https://github.com/komoot/photon)
 - [Nominatim](https://github.com/osm-search/Nominatim)
 
-Il est aussi possible de détourner Addok pour lui faire effectuer d’autres types de recherche, par exemple des POIs en utilisant le projet [https://github.com/osm-fr/osmpoi4addok](https://github.com/osm-fr/osmpoi4addok) par exemple
+Il est aussi possible de détourner Addok pour lui faire effectuer d’autres types de recherche, par exemple des POIs en utilisant le projet [https://github.com/osm-fr/osmpoi4addok](https://github.com/osm-fr/osmpoi4addok) par exemple.
+
+Une instance alternative d'Addok http://demo.addok.xyz est mise à disposition et contient des données venant de la BANO, des POIs d'OpenStreetMap ainsi que des intersections de rues/routes.
 
 En dernier lieu, vous pouvez aussi vous appuyer sur les services mis à disposition par l’IGN pour le géocodage [https://geoservices.ign.fr/services-web-experts-calcul](https://geoservices.ign.fr/services-web-experts-calcul) (voir les sections "Services de géocodage" et "Service de recherche Look4"). Vous pouvez aussi regarder [leur nouveau service de géocodage.](https://geoservices.ign.fr/documentation/services/services-beta/nouveau-service-de-geocodage-demonstrateur)
