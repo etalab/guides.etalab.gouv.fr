@@ -216,7 +216,7 @@ Le jeu de données et la documentation officielle sont disponible [la page offic
 
 #### Différents produits Admin Express
 
-Il existe des **différences entre les produits Admin-Express**, nous vous invitons à consulter cet [article résumant ces différences](https://geoservices.ign.fr/admin-express-passe-la-grande-echelle)
+Il existe des **différences entre les produits Admin Express**, nous vous invitons à consulter cet [article résumant ces différences](https://geoservices.ign.fr/admin-express-passe-la-grande-echelle)
 
 Ce qu'il faut retenir pour choisir les produits:
 
