@@ -36,7 +36,7 @@ Les cas où vous ne devriez pas utiliser OpenMapTiles:
 - si votre besoin nécessite des tuiles dont les informations ne sont pas dans les couches OpenMapTiles, un grand nombre d’acteurs commerciaux [https://switch2osm.org/providers/#tile-hosting](https://switch2osm.org/providers/#tile-hosting) proposent de consommer des tuiles vectorielles en créant un compte, sans coût.
 - Si vous avez besoin d’une qualité de service garantie, là encore, adressez-vous à ces mêmes acteurs commerciaux ou autohébergez-vous. Dans ce cas, pour des outils pour gérer vos propres tuiles vecteur en autohébergé, allez sur [https://github.com/mapbox/awesome-vector-tiles#servers](https://github.com/mapbox/awesome-vector-tiles#servers).
 - Si vous souhaitez des données sur une autre couverture que la France.
-- Si vous avez un besoin qui vous parait correspondre à celui des tuiles vectorielles et styles associés de l’IGN (voir des exemples en fin de guide). Ces tuiles sont un peu plus lourdes, mais elles sont par nature plus homogènes en termes de contenu, car elles utilisent les données de l’IGN. Celles du projet OpenMapTiles étant basées sur OpenStreetMap, il y a parfois quelques manques en zone rurale.
+si vous avez un besoin qui vous parait correspondre à celui des tuiles vectorielles et styles associés de l’IGN (voir des exemples en fin de guide). Ces tuiles sont un peu plus lourdes mais elles sont par nature plus homogènes en terme de contenu car elles utilisent les données de l’IGN. Celles du projet OpenMapTiles étant basées sur OpenStreetMap, la complétude dépend des contributions à OpenStreetMap.
 
 ## Rappel sur les tuiles vecteur
 
