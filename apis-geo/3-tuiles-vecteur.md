@@ -76,7 +76,9 @@ Ici, nous avons choisi de nous concentrer sur la consommation des tuiles. Il exi
 
 Ils permettent d'indiquer pour quelles couches, pour quelles caractéristiques comme la population et quels zooms il faut appliquer un style. Ces styles sont par exemple, l'épaisseur du trait, sa couleur pour le contour communal. Ils s'appuient sur le standard ["Mapbox/Maplibre GL JS Style Specification"](https://maplibre.org/maplibre-gl-js-docs/style-spec/) qui indique quelles sont les ressources "tuiles" (l'URL) à consommer puis quelles couches de cette ressource doivent être utilisées puis comment les styles doivent être appliqués.
 
-C'est avant tout la combinaison des tuiles vectorielles et des styles qui a permis à ce standard de s'imposer. 
+C'est avant tout la combinaison des tuiles vectorielles et des styles qui a permis à ce standard de s'imposer.
+
+On peut par exemple aller sur <https://maputnik.github.io/editor/#3.71/45.57/3.43> puis dans le menu supérieur, cliquer sur "Open". Dans la popup qui apparaît, dans la section "Load from URL", collez l'URL `https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json` puis sur le bouton "Open URL" pour voir le style utilisé par défaut sur les tuiles vectorielles.
 
 Généralement, on consomme ces tuiles vectorielles via une bibliothèque cartographique JavaScript. Il faut également noter que selon les bibliothèques il est possible de profiter de la combinaison des deux mais que certains ne permettent pas de gérer les styles mais simplement de consommer les tuiles vectorielles, les `pbf` mais en devant styler selon la syntaxe propre à la bibliothèque. Cela joue fortement sur les choix techniques à adopter selon votre besoin. Seuls Maplibre et OpenLayers via une bibliothèque intermédiaire sont à même de correctement utiliser les deux.
 
