@@ -14,7 +14,7 @@ Les usages départements ou régions bien que pratiquent semblent moins intéres
 
 L’API est très utile pour permettre de faire **l'auto-complétion** qu’il s’agisse d’un formulaire ou pour permettre de zoomer sur une commune trouvée dans un contexte web
 
-- [http://bl.t.org/ThomasG77/0b99013795f76699c5c9a0d7daf4411e](http://bl.ocks.org/ThomasG77/0b99013795f76699c5c9a0d7daf4411e)
+- [http://bl.ocks.org/ThomasG77/0b99013795f76699c5c9a0d7daf4411e](http://bl.ocks.org/ThomasG77/0b99013795f76699c5c9a0d7daf4411e)
 
 La partie importante se base sur un simple [Fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API)
 
