@@ -198,7 +198,7 @@ Quand on a besoin de travailler avec les données France entière et qu'on a un 
 
 #### Contexte
 
-Historiquement, il existait un produit nommé Geofla pour avoir les communes qui a été depuis remplacé par un nouveau jeu de données dit Admin-Express qui contient les données suivantes :
+Historiquement, il existait un produit nommé Geofla pour avoir les communes qui a été depuis remplacé par un nouveau jeu de données dit Admin Express qui contient les données suivantes :
 - DEPARTEMENT (Polygon)
 - COMMUNE_ASSOCIEE_OU_DELEGUEE (Polygon)
 - COMMUNE (Polygon)
