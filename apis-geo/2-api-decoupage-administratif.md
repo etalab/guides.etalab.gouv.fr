@@ -212,7 +212,7 @@ Historiquement, il existait un produit nommé Geofla pour avoir les communes qui
 - CHFLIEU_ARRONDISSEMENT_MUNICIPAL (Point)
 - ARRONDISSEMENT (Polygon)
 
-Le jeu de données et la documentation officielle sont disponible [ici](https://geoservices.ign.fr/adminexpress). 
+Le jeu de données et la documentation officielle sont disponible [la page officielle Admin Express](https://geoservices.ign.fr/adminexpress). 
 
 #### Différents produits Admin Express
 
