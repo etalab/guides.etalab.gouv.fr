@@ -12,6 +12,15 @@ Le service proposé par Etalab permet de
 - mettre à disposition des tuiles avec un style pour avoir un fond de plan de tuiles vecteur. Ce style est publié en s’appuyant sur une version d’OpenMapTiles déployée par Etalab sur la France.
 - servir les tuiles des limites administratives ainsi que celles du cadastre.
 
+Ce service s'appuie sur les données du [projet OpenStreetMap](https://openstreetmap.org).
+
+OpenStreetMap (ou "OSM") est une carte du monde entier librement modifiable, faite par des gens comme vous.
+OpenStreetMap vous permet de voir, modifier et utiliser des données géographiques de n'importe quel endroit dans le monde.
+
+Si vous trouvez des données manquantes sur la carte, vous pouvez contribuer sur <https://openstreetmap.org> et vous verrez les changements au plus tard une semaine après. En effet, les tuiles vecteur des fonds de plan sont mises à jour une fois par semaine.
+
+Il faut aussi noter que vous devez obligatoirement [créditer OpenStreetMap et ses contributeurs](https://www.openstreetmap.org/copyright/fr) quand vous utilisez les fonds de plan.
+
 **Qui utilise ce service ?**
 
 Ce service est utilisé par plusieurs produits d’Etalab ainsi que par d’autres acteurs institutionnels en raison de la légèreté des tuiles vectorielles et des styles associés en comparaison à ceux mis à disposition actuellement par l’IGN.
