@@ -135,7 +135,7 @@ Dans les 2 cas, on sait quelles sont les colonnes disponibles. On pourra réutil
 
 Nous avons appris quelles couches contiennent un WFS, quelle est la structure d'une couche comme ses noms de champs. Maintenant on va pouvoir consommer la couche pour la filtrer.
 
-Il est possible de le faire via un appel à une URL ou en passant pas des utilitaires associés à GDAL utiles pour notre besoin:
+Il est possible de le faire via un appel à une URL ou en passant pas des utilitaires associés à GDAL, utiles pour notre besoin:
 
 - le premier `ogrinfo` permet d'inspecter le contenu d'une source de données, dans ce cas particulier, un WFS.
 - le second `ogr2ogr` permet de consommer le WFS en utilisant si nécessaire la pagination et surtout de transformer le GML dans d'autres formats géographiques comme le SHP (Shapefile), le GPKG (Geopackage), le GeoJSON, le CSV parmi les formats géospatiaux les plus courants.
