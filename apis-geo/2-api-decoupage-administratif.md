@@ -110,7 +110,7 @@ Astuce: recommencez avec l'option `--DEBUG ON` comme ci-dessous
 ogrinfo --DEBUG ON -so WFS:https://wxs.ign.fr/administratif/geoportail/wfs
 ```
 
-L'intérêt de la manoeuvre et de pouvoir comprendre les appels HTTP utilisés lors de l'usage du WFS plutôt que devoir apprendre la spécification WFS.
+L'intérêt de la manoeuvre est de pouvoir comprendre les appels HTTP utilisés lors de l'usage du WFS plutôt que devoir apprendre la spécification WFS.
 
 #### Trouver la structure du WFS
 
