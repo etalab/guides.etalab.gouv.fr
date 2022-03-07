@@ -86,7 +86,7 @@ Pour avoir un aperçu, vous pouvez vous rendre sur
 
 - <https://openmaptiles.geo.data.gouv.fr>
 
-Pour le moment les versions dites `latest` permettent d'assurer la transition entre deux versions des tuiles. Nous avions historiquement des tuiles datant de 2019 avec un schéma OpenMapTiles qui a un peu évolué entre temps. Ces URLs sont amenées à remplacer les tuilles actuellement en production. Les versions `latest` ont été mises à jour en janvier 2022.
+Les versions des tuiles pour les fonds de plan ont été mises à jour en mars 2022 et sont mises à jour une fois par semaine.
 
 ### Consommer les styles
 Nous abordons principalement l'usage avec MapLibre qui est capable de nativement gérer les tuiles et les styles associés. Nous aborderons pas Mapbox GL JS, la bibliothèque JavaScript de Mapbox car elle n'est maintenant plus OpenSource depuis la version 2.x et c'est MapLibre une version forkée de la dernière version de Mapbox GL JS avant son passage en version non libre qui a pris sa succession. 
