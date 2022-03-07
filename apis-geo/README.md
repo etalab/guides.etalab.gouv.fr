@@ -7,7 +7,7 @@ permalink: /apis-geo/
 # Introduction
 
 ::: tip Version bêta
-Ce guide a été publié initialement en [mois années]. Il est amené à être ajusté suite aux retours de nos partenaires et lecteurs. Vous pouvez contribuer à l'améliorer en [proposant une modification](https://github.com/etalab/guides.etalab.gouv.fr/edit/master/apis-geo/) ou en [contactant directement](mailto:geo@data.gouv.fr) l'équipe Géo d'Etalab. 
+Ce guide a été publié initialement en mars 2022. Il est amené à être ajusté suite aux retours de nos partenaires et lecteurs. Vous pouvez contribuer à l'améliorer en [proposant une modification](https://github.com/etalab/guides.etalab.gouv.fr/edit/master/apis-geo/) ou en [contactant directement](mailto:geo@data.gouv.fr) l'équipe Géo d'Etalab. 
 :::
 
 ::: lexique API
