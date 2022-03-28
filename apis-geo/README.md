@@ -17,10 +17,10 @@ Une API est un outil informatique qui permet à un site internet ou à un logici
 
 
 # Que contient ce guide ? 
-Ce guide vise à vous accompagner dans l'usage des API géographiques opérées par Etalab :
+Ce guide vise à vous accompagner dans l'usage des API géographiques principalement opérées par Etalab, la [Base Adresse Nationale étant désormais portée par l'IGN](https://www.numerique.gouv.fr/espace-presse/la-base-adresse-nationale-ban-franchit-de-nouvelles-etapes-en-poursuivant-son-action-au-sein-de-lign/).
 
 
-::: tip API Adresse (Base Adresse Nationale - BAN) 
+::: tip <a href="1-api-adresse">API Adresse (Base Adresse Nationale - BAN)</a>
 L'API Adresse permet d'interroger la Base Adresse Nationale, base de données de l’intégralité des adresses du territoire français. 
 En intégrant l'API dans votre système d'information, vous pouvez facilement rechercher une adresse et notamment :
 - faire de l'autocomplétion et de la vérification d'adresse ;
@@ -28,7 +28,7 @@ En intégrant l'API dans votre système d'information, vous pouvez facilement re
 - faire une recherche géographique inversée (trouver la rue la plus proche de coordonnées géographiques).
 :::
 
-::: tip API Découpage Administratif - (API Geo)
+::: tip <a href="2-api-decoupage-administratif">API Découpage Administratif - (API Geo)</a>
 L'API Découpage Administratif permet d'interroger les référentiels géographiques plus facilement. 
 En intégrant l'API dans votre système d'information, vous pouvez notamment :
 - rechercher une commune par nom, code postal ou coordonnées géographiques
@@ -36,7 +36,7 @@ En intégrant l'API dans votre système d'information, vous pouvez notamment :
 - rechercher une région par son nom
 :::
 
-::: tip Les tuiles vecteur openmaptiles.geo.data.gouv.fr
+::: tip <a href="3-tuiles-vecteur">Les tuiles vectorielles openmaptiles.geo.data.gouv.fr</a>
 Cette API permet de mettre à disposition des tuiles vectorielles qui sont affichables sur des cartes géographiques interactives.
 Elles servent principalement à afficher des fonds de plan mais aussi les contours cadastrales et les limites administratives en France.
 Cela permet de vous affranchir d'APIs cartographiques comme Google Maps.
@@ -62,7 +62,7 @@ Ce guide est composé de trois parties:
 
 1. [Utiliser l'API adresse pour récupérer les coordonnées depuis une liste d'adresse ou récupérer les adresses depuis des coordonnées](1-api-adresse.md)
 2. [Utiliser l'API découpage administratif](2-api-decoupage-administratif.md)
-3. [Consommer des tuiles vecteur](3-tuiles-vecteur.md)
+3. [Consommer des tuiles vectorielles](3-tuiles-vecteur.md)
 
 
 ## Comment contribuer ?
