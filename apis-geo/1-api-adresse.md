@@ -85,7 +85,7 @@ Dans d’autres cas, les coordonnées peuvent avoir été interpolées : les adr
 
 - **Plusieurs communes pour un code postal**.
 
-Cette problématique se pose par exemple lorsqu’omet le nom de la commune dans une adresse. En effet, 68,9% des codes postaux sont associés à plus d’une commune et jusqu’à 46 communes sont rattachées à un même code postal.
+Cette problématique se pose par exemple lorsqu’on met le nom de la commune dans une adresse. En effet, 68,9% des codes postaux sont associés à plus d’une commune et jusqu’à 46 communes sont rattachées à un même code postal.
 
 - **Plusieurs codes postaux pour une commune**.
 
