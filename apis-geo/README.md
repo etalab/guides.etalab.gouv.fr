@@ -17,7 +17,7 @@ Une API est un outil informatique qui permet à un site internet ou à un logici
 
 
 # Que contient ce guide ? 
-Ce guide vise à vous accompagner dans l'usage des API géographiques principalement opérées par Etalab, la BAN étant maintenant dans le périmètre IGN
+Ce guide vise à vous accompagner dans l'usage des API géographiques principalement opérées par Etalab, la [Base Adresse Nationale étant désormais portée par l'IGN](https://www.numerique.gouv.fr/espace-presse/la-base-adresse-nationale-ban-franchit-de-nouvelles-etapes-en-poursuivant-son-action-au-sein-de-lign/).
 
 
 ::: tip <a href="1-api-adresse">API Adresse (Base Adresse Nationale - BAN)</a>
