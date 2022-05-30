@@ -23,6 +23,6 @@ Dans cet algorithme sont implémentées trois types de méthodes :
     
 ### Anonymisation dans PostgreSQL Anonymizer
 
-Cette extension de PostgreSQL ropose toute une batterie de (mécanismes d'occultation](https://postgresql-anonymizer.readthedocs.io/en/latest/masking_functions/]
+Cette extension de PostgreSQL ropose toute une batterie de [mécanismes d'occultation](https://postgresql-anonymizer.readthedocs.io/en/latest/masking_functions/)
 
 [Guide d'installation de cette extension](https://www.postgresql.org/about/news/postgresql-anonymizer-10-privacy-by-design-for-postgres-2452/)
