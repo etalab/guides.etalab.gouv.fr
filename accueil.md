@@ -19,6 +19,8 @@ Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce t
 
 <Button link="/producteurs-schemas/" text="Pourquoi et comment créer un schéma de données ?" />
 
+<Button link="/anonymisation/" text="Comment anonymiser des bases de données ?" />
+
 <Button link="/pseudonymisation/" text="Comment utiliser l'IA pour pseudonymiser des documents ?" />
 
 <Button link="/annotation/" text="Guide pour préparer et conduire votre campagne d'annotation" />
