@@ -8,10 +8,21 @@ Ci-dessous quelques outils qui peuvent aider à anonymiser des bases de données
 
 :warning: Attention, l'utilisation de ces outils n'est pas nécessairement suffisante pour valider les trois critères de l'anonymisation [lorsqu'il n'est plus possible d'indivualider, de corréler, et d'inférer d'informations sur les individus](/anonymiser/1-quand.md). Une analyse approfondie des risques de ré-identification est nécessaire si l'on décide de s'appuyer sur une solution sur étagère.
 
-### ARX
-_http://arx.deidentifier.org/_
+### ARX Deidentifier
 
-Une fois nos données chargées dans ARX, et une fois variables sélectionnés, l'on peut appliquer des algorithmes de K-anonymisation et de L-diversité notamment. Au préalable, il faut choisir un ordre de variables. En général, on place les variables les moins importantes en premières et les variables dont le coût de modification est le plus grand en dernière position.
+ARX Deidentifier est un logiciel qui propose des solutions d'anonymisation approximative et une solution d'analyse de risque.
+
+##### Modèles utilisés
+
+Description des modèles proposés par le logiciel : 
+https://arx.deidentifier.org/overview/privacy-criteria/
+https://arx.deidentifier.org/publications/
+
+##### Installation
+https://arx.deidentifier.org/downloads/
+
+##### Utilisation
+Une fois nos données chargées dans ARX Deidentifier, et une fois variables sélectionnés, l'on peut appliquer des algorithmes de K-anonymisation et de L-diversité notamment. Au préalable, il faut choisir un ordre de variables. En général, on place les variables les moins importantes en premières et les variables dont le coût de modification est le plus grand en dernière position.
 Dans cet algorithme sont implémentées trois types de méthodes :
 
     méthode "into_unknown" : lorsque l'algorithme repère une ligne non k-anonymisée, il remplace la modalité par une modalité définie au préalable (non renseigné par exemple). Si cette opération ne permet pas de construire un groupe de "non renseigné" suffisamment conséquent, l'algorithme renvoie une base remplie de valeurs "unknown".
@@ -23,6 +34,8 @@ Dans cet algorithme sont implémentées trois types de méthodes :
     
 ### Anonymisation dans PostgreSQL Anonymizer
 
+##### Modèles utilisés
 Cette extension de PostgreSQL ropose toute une batterie de [mécanismes d'occultation](https://postgresql-anonymizer.readthedocs.io/en/latest/masking_functions/)
 
+##### Installation
 [Guide d'installation de cette extension](https://www.postgresql.org/about/news/postgresql-anonymizer-10-privacy-by-design-for-postgres-2452/)

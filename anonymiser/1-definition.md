@@ -8,13 +8,13 @@ L'anonymisation est l'opération de protection des données personnelles qui vis
 
 Une base de données est considérée comme anonymisée si les trois critères suivants sont réunis :
 
-- il n'est pas possible d'isoler un individu ("individualisation") ;
+- *critère de non-individualisation* : il n'est pas possible d'isoler un individu (") ;
 
-- il n'est pas possible de corréler des ensembles de données distincts concernant un même individu ("corrélation") ;
+- *critère de non-corrélation* : il n'est pas possible de corréler des ensembles de données distincts concernant un même individu ;
 
-- il n'est pas possible de déduire, de façon certaine, de nouvelles informations sur un individu ("inférence").
+- *critère de non-inférence* : il n'est pas possible de déduire, de façon certaine, de nouvelles informations sur un individu.
 
-Si ces trois critères ne sont pas réunis simultanément après l'opération d'anonymisation, il faut procéder à une analyse des risques détaillée des risques de ré-identification sur la base de données ainsi stransformée avant d'envisager une publication des données. 
+Si ces trois critères ne sont pas réunis après l'opération d'anonymisation, il faut procéder à une analyse approfondie des risques de ré-identification sur la base de données ainsi stransformée avant d'envisager une publication des données. 
 
 Remarque : si de nouvelles données anonymisées sont publiées régulièrement (ce qui est le cas par exemple d'une base de données personnelles qui serait anonymisée "au vol" au fur et à mesure que les utilisateurs requièrent de nouvelles données), il faut que les publications ultérieures ne compromettent pas la confidentialité des données déjà publiées.
 
@@ -26,7 +26,7 @@ Dans les cas où l'anonymisation des données avant publication n'est pas une ob
 
 L'anonymisation des données est nécessaire pour de nombreux usages (protéger des données personnelles ou des données sensibles) mais provoque, par fin, la suppression ou l'altération d'informations. Pour s'assurer que la base de données est correctement anonymisée (ce qui est exigeant) tout en s'efforçant 
 
-
+Une bonne anonymisation doit prendre en compte que les possibilités techniques de croiser des données issues de sources externes évoluent rapidement, et qu'il en va de même des méthodes d'anonymisation.s
 
 
 Un ensemble de techniques contribue à l'anonymisation des bases de données, m
@@ -60,3 +60,7 @@ _Il s’agit notamment du nom et du prénom d'une personne qui ne font pas, par 
 _Entrent, également, dans cette catégorie les données dont on estime que le public doit avoir connaissance, soit au titre de l'organisation du service public, soit afin de pouvoir exercer pleinement son droit de recours. Il en va ainsi par exemple d'un arrêté de nomination d'un agent communal, des mentions relatives au nom et à l'adresse du bénéficiaire d'une autorisation d'urbanisme ou encore des informations librement consignées sur des registres d'enquête publique par les personnes ayant formulé des observations sur le projet soumis à enquête._
 
 _Lorsqu'un document administratif comporte de telles données à caractère personnel, il peut être communiqué à toute personne qui en fait la demande. En revanche et par principe, la diffusion des données à caractère personnel en ligne est proscrite. Tout document contenant de telles données doit avoir préalablement fait l'objet d'un traitement permettant de rendre impossible l'identification des personnes (anonymisation). "_
+
+# Exemples et retours d'expérience
+
+_A venir_
