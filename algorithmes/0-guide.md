@@ -18,7 +18,7 @@ Ce guide est destiné à l'ensemble des administrations et organisations chargé
 
 ### Comment contribuer ?
 
-Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification dans la [version éditable](0-guide.md) du guide (sur GitHub) ou en contactant directement l'équipe en charge des algorithmes publics (Simon Chignard, Cindy Kus et Soizic Pénicaud) : `algorithmes@etalab.gouv.fr`.  
+Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification dans la [version éditable](https://github.com/etalab/guides.etalab.gouv.fr) du guide (sur GitHub) ou en contactant directement l'équipe en charge des algorithmes publics (Cindy Kus) : `algorithmes@etalab.gouv.fr`.
 
 ## 1- A quoi servent les algorithmes publics ?
 
@@ -153,7 +153,7 @@ Nous vous proposons un outil sous la forme d'un quizz pour tester votre connaiss
 
 3.Avec le service en ligne la Bonne Boîte, Pôle Emploi aide les demandeurs d'emploi à cibler les entreprises qui vont prochainement recruter sur un territoire : **non**, car il n'emporte pas de décision de la part de l'administration. C'est un outil utilisé pour orienter.
 
-4.Au sein du Ministère de l'Intérieur, la Direction générale des collectivités locales calcule la dotation globale de fonctionnement pour les collectivités : oui.  
+4.Au sein du Ministère de l'Intérieur, la Direction générale des collectivités locales calcule la dotation globale de fonctionnement pour les collectivités : oui.
 
 5.La commission d'attribution des logements d'un bailleur social priorise les demandes suivant de nombreux critères (dont situation familiale, handicap, taille du logement demandé) : oui.
 
@@ -167,8 +167,8 @@ Nous vous proposons un outil sous la forme d'un quizz pour tester votre connaiss
 
 La **première action** à mener, en tant qu'administration, est de **recenser les algorithmes** potentiellement concernés par l'obligation de transparence et de redevabilité, et de publier cette liste en la rendant facilement trouvable.
 
-Le département Etalab est à votre disposition pour vous accompagner dans la mise en oeuvre de ce recensement et plus globalement dans la mise en oeuvre de ces nouvelles obligations. Pour nous contacter : `algorithmes@etalab.gouv.fr` (qui permet de contacter Simon Chignard, Cindy Kus et Soizic Pénicaud).
+Le département Etalab est à votre disposition pour vous accompagner dans la mise en oeuvre de ce recensement et plus globalement dans la mise en oeuvre de ces nouvelles obligations. Pour nous contacter : `algorithmes@etalab.gouv.fr` (qui permet de contacter Cindy Kus).
 
-Etalab met également à disposition une [fiche pratique](./1-mention.md) sur la mention explicite.  
+Etalab met également à disposition une [fiche pratique](./1-mention.md) sur la mention explicite.
 
 _Nous remercions toutes les personnes qui ont partagé des retours sur la première version du guide et ont contribué à le faire évoluer, notamment les participantes et participants à l'atelier de mars 2020 organisé par Etalab._
