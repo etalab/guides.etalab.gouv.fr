@@ -23,7 +23,8 @@ https://arx.deidentifier.org/downloads/
 
 ##### Utilisation
 Une fois nos données chargées dans ARX Deidentifier, et une fois variables sélectionnés, l'on peut appliquer des algorithmes de K-anonymisation et de L-diversité notamment. Au préalable, il faut choisir un ordre de variables. En général, on place les variables les moins importantes en premières et les variables dont le coût de modification est le plus grand en dernière position.
-Dans cet algorithme sont implémentées trois types de méthodes :
+
+Dans cet algorithme sont implémentées plusieurs types de méthodes, qui remplacent, suppriment ou regroupent les valeurs sensibles :
 
     méthode "into_unknown" : lorsque l'algorithme repère une ligne non k-anonymisée, il remplace la modalité par une modalité définie au préalable (non renseigné par exemple). Si cette opération ne permet pas de construire un groupe de "non renseigné" suffisamment conséquent, l'algorithme renvoie une base remplie de valeurs "unknown".
     méthode "remove" : lorsque l'algorithme repère une ligne non k-anonymisée, il supprime cette ligne.

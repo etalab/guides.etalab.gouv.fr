@@ -12,27 +12,29 @@ En particulier, le lab IA d'Etalab est preneur de tout retour d'expérience pour
 
 ## À quoi sert ce guide ?
 
-Ce guide est une introduction à <b>des techniques d'anonymisation de données tabulaires</b>. Il vous propose un accompagnement méthodologique dans votre procédure d'anonymisation, afin de limiter les risques que des personnes issues de votre base anonymisée soit ré-identifiée a postériori.
+Ce guide est une introduction à <b>des techniques d'anonymisation de données tabulaires</b>. Il vous propose un accompagnement méthodologique dans votre procédure d'anonymisation, afin de limiter les risques que des personnes issues de votre base anonymisée ne soient ré-identifiées par des analyses a postériori.
 
-Il est important de garder à l'esprit que la publication de données personnelles est encadrée légalement, et qu'il y a plusieurs niveaux d'occultation, depuis le simple brouillage des éléments directement identifiants jusqu'à des techniques plus poussées pour prévenir que des informations sensibles ne puissent être déduites d'analyse de corrélations effectuées sur la base anonymisée.
+Il est important de garder à l'esprit que la <b>publication de données personnelles est encadrée légalement</b>, et qu'il y a divers niveaux d'occultation nécessaires selon la nature des données, depuis le simple brouillage des éléments directement identifiants jusqu'à des techniques plus poussées pour prévenir que des informations sensibles ne puissent être déduites d'analyse de corrélations effectuées sur la base anonymisée. 
+
+Ce guide se contentera de proposer des méthodologies pour anonymiser des données. En particulier, ce guide n'est pas une référence légale permettant de caractériser le niveau minimal d'occultation requis pour chaque type de données.
 
 ## À qui s'adresse ce guide ?
 
-Ce guide s'intéresse à des personnes désireuses de publier des données, notamment dans le cadre de l'_open data_, tout en protégeant la confidentialité de données à caractère personnel (ce qui constitue dans bien des cas une obligation légale) ou de données jugées sensibles.
+Ce guide s'adresse à des personnes désireuses de <b>publier des données</b>, notamment dans le cadre de l'_open data_, tout en protégeant la confidentialité de données à caractère personnel ou de données jugées sensibles.
 
-Ce guide pourra également intéresser d'autres acteurs faisant face à un besoin d'anonymisation de bases tabulaires, dans le cadre de développements de services ou de produits à partir de données à caractère personnel ou sensible. 
+Ce guide intéressera également les équipes effectuant des <b>traitements de données personnelles</b>, et qui seraient dans l'obligation légale d'anonymiser ces bases tabulaires avant tout traitement.
 
 ## Sommaire
 
 Ce guide est composé de quatre parties :
-- une définition et des exemples dr projets d'anonymisation ;
-- une revue de quelques méthodes d'anonymisation ;
-- une mesure du niveau de brouillage d'une base anonymisée ;
-- une présentation non exhaustive de quelques solutions techniques pour aider à l'anonymisation.
+- une <b>définition</b> et des exemples de projets d'anonymisation ;
+- une revue de quelques <b>méthodes d'anonymisation</b> ;
+- une <b>mesure du niveau de confidentialité</b> d'une base anonymisée ;
+- une présentation non exhaustive de quelques solutions techniques pouvant aider à l'anonymisation.
 
 ::: tip Ce que ce guide n'est pas
 - un guide juridique sur la protection des données à caractère personnel ;
-- un guide sur l'anonymisation de textes ;
+- un guide prêt à emploi sur l'anonymisation de données textuelles (qui doivent d'abord être transformées en données tabulaires) ;
 - un guide sur la sécurité des données et des systèmes d'information.
 :::
 

@@ -1,5 +1,5 @@
 ---
-permalink: /anonymisation/comment/
+permalink: /anonymisation/methodes/
 ---
 
 # Mécanismes
@@ -7,9 +7,14 @@ permalink: /anonymisation/comment/
 _Dans ce ci qui suit, appellons "base transformée" la base de données sur laquelle on a effectué un certain nombre d'opérations pour tenter de la rendre anonymisée. Les exemples traiteront de bases de données personnelles, mais les mécanismes décrits peuvent également servir à anonymiser des données non personnelles, si un cas d'usage s'y prête._
 
 
+_Avec des informations tierces, il est assez facile de se douter que telle ou telle personne figure dans la base de données. L'étape d'anonymisation doit suffisamment brouiller les pistes pour qu'on ne puisse pas trouver dans la base anonymisée des informations qui permettraient de relier à un individu à des informations sensibles ou personnelles._
+
 ## K-anonymisation (en anglais : _K-anonymity_)
 
+
 _On appelle quasi-identifiants les champs qui, considérés isolément, ne suffisent pas à identifier un unique individu avec certitude (contrairement à un numéro de pièce d'identité, par exemple), mais dont la combinaison permet de retrouver une identité sans ambiguïté. Ainsi, le nom, le prénom, le sexe, le code postal, la date de naissance, entre autres, sont des quasi-identifiants, car la combinaison de ces champs suffit généralement à identifier une unique personne._
+
+_On appelle champs sensibles les champs de données donnant des informations sensibles sur les personnes (données de santé, adresse, informations financières, etc.). L'on veut empêcher qu'une personne malveillante ne puisse déduire des informations sensibles sur une personne en combinant la base anonymisée à des informations extérieures_
 
 La K-anonymisation se propose de "cacher les individus dans la foule". Pour ce faire, l'algorithme supprime ou regroupe les valeurs de suffisamment de quasi-identifiants afin que, pour chaque combinaison de quasi-identifiants publiés, il y ait au moins K individus possibles.
 
@@ -27,22 +32,15 @@ Plus K est grand, meilleure est la confidentialité de la base. Mais atteindre u
 
 Limites de la K-anonymisation :
 - plus il y a de champs de quasi-identifiants publiés, plus la K-anonymisation est difficile à atteindre. Pour des bases de données de haute dimension, la K-anonymisaiton n'est pas adaptée.
-- la K-anonymisation n'empêche pas l'inférence de données sensibles
-
-Attaques contre la k-anonymisation : 
-- 
+- la K-anonymisation n'empêche pas l'inférence de données sensibles. Par exemple, dans le cas où les K personnes anonymisées avec les mêmes quasi-identifiants partagent toutes la même caractéristique sensible, on déduit beaucoup d'information sensible (pour faire une analogie : si tous les électeurs d'une commune votent pour le même candidat, le secret du vote est éventé). Et même dans des cas moins extrêmes, dès lors qu'il y a peu de variété dans les valeurs des champs sensibles, on peut déduire beaucoup de chose sur les indivus.
 
 ## La L-diversité
 
-Le but de la L-diversité est de restreindre autant que possible le risque qu'on puisse inférer une information sensible sur un individu de la base transformée.
+Le but de la L-diversité est de limiter autant que possible le risque décrit dans le paraphe ci-dessus, à savoir que l'on puisse inférer une information sensible sur un individu de la base transformée.
 
-Pour ce faire, on doit faire en sorte que pour chaque combinaison de quasi-identifiants, 
-
-## Confidentialité différentielle
+Pour ce faire, on doit faire en sorte que pour chaque combinaison de quasi-identifiants, il y ait au moins L valeurs possibles. Pour reprendre l'analogie factice du vote, si L = 4, on ne publie pas de registres de participation électorale dans les bureaux de vote où il y a moins de 4 candidats qui ont recueilli des suffrages.
 
 L'anonymisation est dynamique : on anonymise à chaque requête plutôt qu'une fois pour toutes. L'anonymisation repose sur l'ajout de bruit sur les champs renvoyés au requêteur.
-
-On mesure le _privacy budget_ avec ε, défini à la page [Mesures](3-mesures.md)
 
 
 ### La confidentialité différentielle
@@ -59,6 +57,8 @@ La mesure de la privacy peut être faite avec la differential privacy :
 
 Soit ε > 0 et A un algorithme de randomisation qui prend en entrée une base de données et génère une base de données anonymisée. Notons Image(A) l'ensemble des bases de données anonymisées qui pourraient être générées par A (et qui contient donc l'ensemble des bases de données anonymisées qu'on pourrait être amené à publier)
 
+_ε est le privacy budget_
+
 L'algorithme A est dit ε-différentiel si, pour toute base de données  D1 et D2 qui ne diffèrent que d'une seule personne, et pour toute base dérivée O dans Image(A) :
 
 ![encadrement de la probabilité de remonter à la base de données à partir de l'image](images/formule-confidentialité.png)
@@ -72,7 +72,7 @@ Exemple d'une mesure de confidentialité différentielle d'un mécanisme souvent
 
 
 Limites :
-- les résulats de chaque requête est légèrement bruitée, pour empêcher qu'un adversaire mal intentionné sache exactement quelles étaient les valeurs initiales dans la base à de donnée. Mais à chaque requête supplémentaire, l'adversaire diminue le doute qu'il a sur les valeurs initiales... si bien qu'il peut estimer de plus en plus finement les paramètres initiaux de la base de données. Il faut donc prévenir cette stragégie, en limitant le nombre de requêtes qu'un adversaire pourra faire sur la base de données (notion de _query budget_). 
+- les résulats de chaque requête sont légèrement bruités, pour empêcher qu'un adversaire mal intentionné ne sache exactement quelles étaient les valeurs initiales dans la base à de donnée. Mais à chaque requête supplémentaire, l'adversaire diminue le doute qu'il a sur les valeurs initiales... si bien qu'il peut estimer de plus en plus finement les paramètres initiaux de la base de données. Il faut donc prévenir cette stragégie, en limitant le nombre de requêtes qu'un adversaire pourra faire sur la base de données (notion de _query budget_). 
 
 ## Méthodes adverses
 
