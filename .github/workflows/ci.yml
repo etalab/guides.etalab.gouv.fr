@@ -56,7 +56,7 @@ jobs:
         python3 -m venv venv
         . venv/bin/activate
         pip install -U pip
-        pip install pypandoc==1.7
+        pip install pypandoc==1.7 emoji==1.6.3
         pip install -r requirements.txt
 
     - name: Generate PDF files
