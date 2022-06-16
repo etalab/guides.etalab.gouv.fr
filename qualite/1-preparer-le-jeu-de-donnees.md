@@ -55,7 +55,7 @@ Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste 
 
 #### Comment produire un jeu de données conforme à un schéma de données ?
 
-Si le jeu de données n’est pas extrait d’un système d’information mais saisi manuellement, [l’outil publier.etalab.studio]([https://csv-gg.etalab.studio/?schema=etalab%2Fschema-decp-dpa](https://publier.etalab.studio) peut assister le processus de production. À partir d’un schéma de données sélectionné, il est possible de saisir les valeurs de chaque information et ainsi produire un fichier exhaustif et conforme.
+Si le jeu de données n’est pas extrait d’un système d’information mais saisi manuellement, [l’outil publier.etalab.studio](https://publier.etalab.studio) peut assister le processus de production. À partir d’un schéma de données sélectionné, il est possible de saisir les valeurs de chaque information et ainsi produire un fichier exhaustif et conforme.
 
 #### Comment valider la conformité d’un jeu de données avec un schéma de données ?
 
