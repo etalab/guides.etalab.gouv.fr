@@ -100,10 +100,12 @@ Si vous mettez en ligne des données publiques sur une plateforme ouverte, dans 
 Il est possible de demander au moissonneur d’importer l’ensemble des données ou de ne sélectionner que certains jeux de données au moyen de filtres. Il n’est pas nécessaire de créer un moissonneur par jeu de données à importer, un seul moissonneur par portail suffit.
 
 Le principe du moissonnage sur data.gouv.fr se décompose en plusieurs étapes :
-1. Vous [créez un moissonneur sur data.gouv.fr](https://doc.data.gouv.fr/jeux-de-donnees/demander-a-datagouvfr-de-moisonner-votre-site/)afin que la plateforme suive l’activité de votre plateforme ;
+1. Vous [créez un moissonneur sur data.gouv.fr](https://doc.data.gouv.fr/jeux-de-donnees/demander-a-datagouvfr-de-moisonner-votre-site/) afin que data.gouv.fr suive l’activité de votre plateforme ;
 2. Vous publiez des données sur votre plateforme d’open data ;
-3. Le moissonneur de data.gouv.fr vient automatiquement récupérer les données de votre plateforme ;
-4. Les données de votre plateforme sont référencées et visibles sur data.gouv.fr.
+3. Vous demandez validation de votre moissonneur sur [le support data.gouv.fr](https://support.data.gouv.fr/collectivite-territoriale/referencement/moissonnage#support-tree) ;
+4. La configuration du moissonneur est validée par l’équipe en charge de data.gouv.fr ;
+5. Le moissonneur de data.gouv.fr vient automatiquement récupérer les données de votre plateforme ;
+6. Les données de votre plateforme sont référencées et visibles sur data.gouv.fr.
 
 ## Faire vivre son jeu de données
 
