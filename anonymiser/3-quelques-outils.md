@@ -6,7 +6,7 @@ permalink: /anonymisation/outils/
 
 Ci-dessous quelques outils qui peuvent aider à anonymiser des bases de données. Cette liste n'est évidemment pas exhaustive, et tout retour d'expérience que vous [souhaiteriez nous apporter](mailto:lab-ia@data.gouv.fr)) permettra d'étayer cette page.
 
-:warning: Attention, l'utilisation de ces outils n'est pas nécessairement suffisante pour valider les trois critères de l'anonymisation [lorsqu'il n'est plus possible d'indivualider, de corréler, et d'inférer d'informations sur les individus](/anonymiser/1-quand.md). Une analyse approfondie des risques de ré-identification est nécessaire si l'on décide de s'appuyer sur une solution sur étagère.
+:warning: Attention, l'utilisation de ces outils n'est pas nécessairement suffisante pour valider les trois critères de l'anonymisation [lorsqu'il n'est plus possible d'indivualider, de corréler, et d'inférer d'informations sur les individus](/anonymiser/1-principe.md). Une analyse approfondie des risques de ré-identification est nécessaire si l'on décide de s'appuyer sur une solution sur étagère.
 
 ### ARX Deidentifier
 
