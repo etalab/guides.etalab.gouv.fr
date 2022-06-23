@@ -5,7 +5,9 @@ permalink: /anonymisation/
 # Introduction
 
 ::: tip Rédaction de ce guide
-Ce guide a été publié initialement en juin 2022 et sera mis à jour de manière régulière. 
+Ce guide d'anonymisation est en cours de rédaction (juin 2022). La version présente pourra être enrichie en fonction de vos commentaires.
+
+Il sera régulièrement et progressivement mis à jour. 
 :::
 
 ## À quoi sert ce guide ?
