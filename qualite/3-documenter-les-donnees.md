@@ -107,17 +107,11 @@ Ce tableau a pour vocation de vous aider à comprendre et améliorer votre score
 
 | Critère | Description |
 | --- | --- |
-| Description des données | - La description des données est de qualité (la description du jeu de données suffisamment longue).  |
-| Mise à jour | - La fréquence de mise à jour est renseignée.
-- La fréquence de mise à jour est respectée. |
-| Licence | - La licence est renseignée. 
-- La licence est ouverte.
-Voir [la page licence](https://www.data.gouv.fr/fr/pages/legal/licences/) pour plus d’information. |
-| Métadonnées des ressources | - Les ressources sont décrites ou présence d’au moins une ressource de type documentation.
-- Présence d’au moins une ressource avec un format ouvert déclaré.
- |
-| Couverture spatiale | - La couverture spatiale est renseignée.
-- La granularité spatiale est renseignée.  |
-| Couverture temporelle | - La couverture temporelle des données est renseignée.  |
+| Description des données | La description des données est de qualité (la description du jeu de données suffisamment longue).  |
+| Mise à jour | - La fréquence de mise à jour est renseignée. <br> - La fréquence de mise à jour est respectée. |
+| Licence | - La licence est renseignée. <br> - La licence est ouverte. <br> [Voir la page licence pour plus d’information](https://www.data.gouv.fr/fr/pages/legal/licences/). |
+| Métadonnées des ressources | Présence d’au moins une ressource avec un format ouvert déclaré.
+| Couverture spatiale | - La couverture spatiale est renseignée. <br> - La granularité spatiale est renseignée.  |
+| Couverture temporelle | La couverture temporelle des données est renseignée.  |
 
 Le poids de chaque critère sera ajusté en fonction de [vos retours](https://support.data.gouv.fr/particulier/retour-plateforme). De nouveaux critères seront ajoutés progressivement notamment pour intégrer la notion de schéma de données.
