@@ -99,8 +99,8 @@ Les réutilisateurs des données peuvent avoir des questions à propos des fichi
 ## Le score de qualité des métadonnées  
 
 Nous avons mis en place sur [data.gouv.fr](http://data.gouv.fr/) un score de qualité des métadonnées pour répondre principalement aux deux problématiques suivantes :
-• D’une part, les réutilisateurs de données peinent à identifier les jeux de données de qualité et à évaluer si tel ou tel jeu de donnée est digne d’intérêt ;
-• D’autre part, les producteurs de données ne sont pas suffisamment incités et accompagnés à améliorer la qualité de leurs données.
+* D’une part, les réutilisateurs de données peinent à identifier les jeux de données de qualité et à évaluer si tel ou tel jeu de donnée est digne d’intérêt ;
+* D’autre part, les producteurs de données ne sont pas suffisamment incités et accompagnés à améliorer la qualité de leurs données.
 Ce score est encore en phase d’expérimentation.
 
 Ce tableau a pour vocation de vous aider à comprendre et améliorer votre score :
