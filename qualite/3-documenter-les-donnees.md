@@ -112,7 +112,7 @@ Ce tableau a pour vocation de vous aider à comprendre et améliorer votre score
 - La fréquence de mise à jour est respectée. |
 | Licence | - La licence est renseignée. 
 - La licence est ouverte.
-Voir la page licence pour plus d’information. |
+Voir [la page licence](https://www.data.gouv.fr/fr/pages/legal/licences/) pour plus d’information. |
 | Métadonnées des ressources | - Les ressources sont décrites ou présence d’au moins une ressource de type documentation.
 - Présence d’au moins une ressource avec un format ouvert déclaré.
  |
