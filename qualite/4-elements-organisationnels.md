@@ -29,3 +29,6 @@ Etalab propose différents guides pour vous accompagner sur ces sujets :
 
 ## Informations complémentaires
 Ce guide est à l’attention des acteurs qui souhaitent préparer leurs jeux de données à la circulation. Si vous avez des remarques sur son contenu, si vous souhaitez proposer des améliorations ou si vous ne trouvez pas de réponse à vos questions, vous pouvez nous contacter à partir du formulaire sur [support.data.gouv.fr](https://support.data.gouv.fr/).
+
+## Pour aller plus loin
+Le portail européen des données ouvertes [data.europa.eu](https://data.europa.eu/) a redigé une guide contenant des lignes directrices pour la qualité des données. La guide est disponible ici, en anglais uniquement.
