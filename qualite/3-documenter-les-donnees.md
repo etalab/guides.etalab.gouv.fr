@@ -95,3 +95,23 @@ En pratique, il est souhaitable que le modèle de données et la nature de vos d
 
 ## Points de contact
 Les réutilisateurs des données peuvent avoir des questions à propos des fichiers mis à disposition. Il est conseillé de proposer un espace d’échange entre les producteurs et réutilisateurs des données. Il est préférable que cet espace d’échange soit public afin qu’il puisse bénéficier aux personnes qui auraient des questions similaires. De plus, la collecte des retours d’usage permettra d’améliorer votre documentation de manière incrémentale.
+
+## Le score de qualité des métadonnées  
+
+Nous avons mis en place sur [data.gouv.fr](http://data.gouv.fr/) un score de qualité des métadonnées pour répondre principalement aux deux problématiques suivantes :
+* D’une part, les réutilisateurs de données peinent à identifier les jeux de données de qualité et à évaluer si tel ou tel jeu de donnée est digne d’intérêt ;
+* D’autre part, les producteurs de données ne sont pas suffisamment incités et accompagnés à améliorer la qualité de leurs données.
+Ce score est encore en phase d’expérimentation.
+
+Ce tableau a pour vocation de vous aider à comprendre et améliorer votre score :
+
+| Critère | Description |
+| --- | --- |
+| Description des données | La description des données est de qualité (la description du jeu de données suffisamment longue).  |
+| Mise à jour | - La fréquence de mise à jour est renseignée. <br> - La fréquence de mise à jour est respectée. |
+| Licence | - La licence est renseignée. <br> - La licence est ouverte. <br> [Voir la page licence pour plus d’information](https://www.data.gouv.fr/fr/pages/legal/licences/). |
+| Métadonnées des ressources | Présence d’au moins une ressource avec un format ouvert déclaré.
+| Couverture spatiale | - La couverture spatiale est renseignée. <br> - La granularité spatiale est renseignée.  |
+| Couverture temporelle | La couverture temporelle des données est renseignée.  |
+
+Le poids de chaque critère sera ajusté en fonction de [vos retours](https://app.evalandgo.com/form/372035/s/?id=JTk5cSU5NWwlOUMlQTk%253D&a=JTk3cCU5M2glOTklQUU%253D). De nouveaux critères seront ajoutés progressivement notamment pour intégrer la notion de schéma de données.
