@@ -114,4 +114,4 @@ Ce tableau a pour vocation de vous aider à comprendre et améliorer votre score
 | Couverture spatiale | - La couverture spatiale est renseignée. <br> - La granularité spatiale est renseignée.  |
 | Couverture temporelle | La couverture temporelle des données est renseignée.  |
 
-Le poids de chaque critère sera ajusté en fonction de [vos retours](https://app.evalandgo.com/form/372035/s/?id=JTk5cSU5NWwlOUMlQTk%253D&a=JTk3cCU5M2glOTklQUU%253D). De nouveaux critères seront ajoutés progressivement notamment pour intégrer la notion de schéma de données.
+Le poids de chaque critère sera ajusté en fonction de [vos retours](https://app.evalandgo.com/form/372035/s/?id=JTk5cSU5NWwlOUMlQTk%3D&a=JTk3cCU5M2glOTklQUU%3D). De nouveaux critères seront ajoutés progressivement notamment pour intégrer la notion de schéma de données.
