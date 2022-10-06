@@ -32,7 +32,19 @@ Si <b>ces trois critères sont réussis, on peut considérer que la base est par
 
 Si en revanche ces trois critères ne sont pas réunis après l'opération d'anonymisation, il faut procéder à une analyse approfondie des risques de ré-identification sur la base de données ainsi transformée avant d'envisager une publication des données. 
 
-Il n'est déjà pas évident de valider ces critères lors de la publication ponctuelle d'une base de données. A fortiori il importe d'être encore plus vigilant si de nouvelles données anonymisées sont publiées régulièrement (ce qui est le cas par exemple d'une base de données qui serait anonymisée "au vol" au fur et à mesure que les utilisateurs requièrent de nouvelles données), car il faut s'assurer que les publications ultérieures ne compromettent pas rétroactivement la confidentialité des données déjà publiées (ce sujet est développé [sur cette autre page](/anonymiser/2-methodes.md#la-confidentialité-différentielle)).
+Il n'est déjà pas évident de valider ces critères lors de la publication ponctuelle d'une base de données. A fortiori il importe d'être encore plus vigilant si de nouvelles données anonymisées sont publiées régulièrement (ce qui est le cas par exemple d'une base de données qui serait anonymisée "au vol" au fur et à mesure que les utilisateurs requièrent de nouvelles données), car il faut s'assurer que les publications ultérieures ne compromettent pas rétroactivement la confidentialité des données déjà publiées (ce sujet est développé [sur cette autre page](/anonymiser/2c-methodes-differentielle.md)).
+
+## Les champs de données à protéger lors de la publication de documents administratifs
+
+La loi française définit les documents administratifs pouvant être publiés sans processus d'anonymisation ([Article 1 du décret 2018-1117 du 10 décembre 2018](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037797147/)). 
+
+Certains documents ne sont en pas communicables au public ([Article L311-5 du Code des relations entre le public et l'administration](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033265181/)), ou seulement au public concerné ([Article L311-6 du Code des relations entre le public et l'administration](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037269056/)), tandis que d'autres doivent faire l'objet de processus d'anonymisation, en vue de protéger les secrets suivants :  
+- les données personnelles des personnes physiques : données identifiantes, données ayant trait à la confession, à l'orientation politique, ou à l'origine ethnique ;
+- les données couvertes par le secret médical ;
+- les données soumises au secret statistique, qui font l'objet d'un cadre juridique spécifique ;
+- les données protégées par le secret des affaires.
+
+Ces secrets doivent être protégés autant que possible en suivant les trois critères d'anonymisation décrits plus haut.
 
 ## Rechercher le juste équilibre entre l'occultation nécessaire d'informations confidentielles et la préservation souhaitable d'information collective à des fins de traitement
 
