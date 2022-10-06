@@ -38,7 +38,7 @@ Il n'est déjà pas évident de valider ces critères lors de la publication pon
 
 La loi française définit les documents administratifs pouvant être publiés sans processus d'anonymisation ([Article 1 du décret 2018-1117 du 10 décembre 2018](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037797147/)). 
 
-Certains documents ne sont en pas communicables au public ([Article L311-5 du Code des relations entre le public et l'administration](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033265181/)), ou seulement au public concerné ([Article L311-6 du Code des relations entre le public et l'administration](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037269056/)), tandis que d'autres doivent faire l'objet de processus d'anonymisation, en vue de protéger les secrets suivants :  
+Certains documents ne sont en pas communicables au public ([Article L311-5 du Code des relations entre le public et l'administration](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033265181/)), ou seulement au public concerné ([Article L311-6 du Code des relations entre le public et l'administration](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037269056/), à l'instar du secret médical), tandis que d'autres doivent faire l'objet de processus d'anonymisation, en vue de protéger les secrets suivants :  
 - les données personnelles des personnes physiques : données identifiantes, données ayant trait à la confession, à l'orientation politique, ou à l'origine ethnique ;
 - les données couvertes par le secret médical ;
 - les données soumises au secret statistique, qui font l'objet d'un cadre juridique spécifique ;
