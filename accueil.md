@@ -25,6 +25,8 @@ Les guides d’Etalab ont pour objectif de vous accompagner tout au long de ce t
 
 <Button link="/apis-geo/" text='Utiliser les API à composante géographique' />
 
+<Button link="/geo/" text='Trouver et exploiter les données géographiques inventoriées data.gouv.fr' />
+
 ## La transparence des algorithmes publics
 
 <Button link="/algorithmes/" text="Les algorithmes publics : pourquoi et comment les expliquer ?" />
