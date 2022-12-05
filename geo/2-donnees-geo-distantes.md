@@ -8,24 +8,95 @@ Nous allons nous concentrer sur le dernier cas en nous concentrant sur une parti
 
 Dans un passé pas si lointain, Etalab entretenait le site geo.data.gouv.fr mais la maintenance étant consommatrice de ressources, des choix pour le décommissionner ont été fait. Voir [l'article "Extinction de geo.data.gouv.fr" pour en savoir plus](https://www.data.gouv.fr/fr/posts/extinction-de-geo-data-gouv-fr/)
 
-La problématique est que la plateforme permettait de mettre en cache des données géospatiales qui sont normalement mises à disposition sous forme de service web, difficilement accessibles pour les néophytes, en particulier pour les personnes qui ne sont pas spécialisés dans les données géographiques comme les professionnels qu'on désigne sous des termes peu connu comme géomaticiens (métier associé au mot géographie et informatique), spécialiste SIG (Système d'Information Géographique) ou SIGiste.
+La problématique est que la plateforme permettait de mettre en cache des données géospatiales qui sont normalement mises à disposition sous forme de service web, difficilement accessibles pour les néophytes. Généralement, ces formats ne sont bien compris par des spécialistes dans les données géographiques qu'on désigne sous des termes peu connu comme géomaticiens (métier associé au mot géographie et informatique), spécialiste SIG (Système d'Information Géographique) ou SIGiste. Le but est de rémédier à cette situation en facilitant la compréhension pour mieux réutiliser la donnée.
 
 La plateforme data.gouv.fr avec l'extinction de geo.data.gouv consomme maintenant les données de catalogues contenant des données géospatiales, en particulier le geocatalogue. On parle de métadonnées. Ces dernières contiennent les descriptions des jeux de données et des listes de service.
+
 Ces services peuvent prendre la forme:
 
 - de service pour l'affichage sous forme d'image et l'interrogation ponctuelle (WMS),
 - de service pour afficher des données vecteur et/ou télécharger la donnée sous forme de flux (WFS)
 - de services pour consommer des fichiers directement téléchargeables (Atom)
 
-Nous allons ainsi voir comment les consommer
+## L'intérêt des 3 cas illustrés:
+
+Nous n'insistons pas ici sur les modalités pour faire les opérations mais sur l'intérêt que cela présente
+
+### WMS
+
+Vous ne souhaitez pas télécharger les données mais les regarder dans votre SIG ou dans votre WebSIG, vous passez par un WMS. Pour illustrer, voici un exemple ci-dessous avec la superposition "Modelisation de l'urbanisation  taches urbaines situation en 1980 en Franche Comte" ([url de l'image consultable dans le navigateur](https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=47.22558937316511418,5.983535451947194161,47.2768081055695788,6.065107850359938269&CRS=EPSG:4326&WIDTH=1345&HEIGHT=845&LAYERS=Tache_urbaine_1980_R43&STYLES=&FORMAT=image/png&DPI=192&MAP_RESOLUTION=192&FORMAT_OPTIONS=dpi:192&TRANSPARENT=TRUE)) sur un fond de plan IGN
+
+![](./images/wms_overlay_qgis.png)
+
+### WFS
+
+**Cas 1**:
+
+Vous souhaitez disposer de données mises à jour régulièrement. Le WFS est un bon moyen pour cela car il contient les géométries et les attributs des données. Il vous permet d'avoir d'un côté la possibilité de styler comme si vous aviez un fichier SIG local type Shapefile/shp. Ainsi, on peut styler le WFS très facilement comme ci-dessous où on appliqué des motifs et où on a surtout accès aux attributs de la donnée visualisable sous forme tabulaire.
+[url pour l'accès aux données sous forme GML, ouvrable dans le navigateur](https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=ms:Tache_urbaine_1980_R43&TYPENAME=ms:Tache_urbaine_1980_R43&STARTINDEX=0&COUNT=1000&SRSNAME=urn:ogc:def:crs:EPSG::3857&BBOX=668531.10646645340602845,5980808.73755011521279812,673071.40539349929895252,5985008.62458097562193871,urn:ogc:def:crs:EPSG::3857)
+
+Il économise de l'espace disque et/ou de la bande passante car il permet de ne récupérer la donnée que sur une emprise géographique ou des filtres suivant des conditions dans les champs et pas uniquement tout le jeu de données.
+
+Les inconvénients: il peut s'avérer long à afficher car le contenu distant peut s'avérer lourd donc long à récupérer via votre connexion internet. Vous risquez d'avoir un jour le flux qui s'arrête donc plus rien à consommer.
 
 
-Insister sur le pourquoi?
+![](./images/wfs_overlay_qgis_with_attribute_table.png)
 
+**Cas 2**:
+
+Vous pouvez aussi récupérer ce WFS et l'avoir sous forme de fichier sur votre machine. Cela évite si la donnée n'est pas mis à jour de la récupérer en permanence et d'avoir la lenteur du réseau qui vous affecte et ne plus dépendre du service si celui-ci disparait ou change (par exemple, ajout/suppression de colonnes ou nouvelle manière de remplir un même champ). Si c'est possible, il souvent recommandé de passer par le flux Atom s'il est disponible.
+
+### Flux Atom
+
+Il s'agit d'un format qui permet de diffuser une liste de flux pour permettre de suivre les mises à jour de données. *Il permet aussi de récupérer les données associées à un WFS et/ou un WMS.*
+
+Dans le meilleur des cas, on a correspondance entre un flux WMS pour visualiser sous forme image, un WFS pour de la consultation en ligne vecteur ou du téléchargement et un flux Atom pour télécharger. Dans cette configuration, il faut généralement privilégier le flux Atom si on veut les données sur sa machine.
+
+C'est le cas pour les données précédemment montrées en aperçu https://demo.data.gouv.fr/fr/datasets/service-de-telechargement-simple-atom-du-jeu-de-donnees-modelisation-de-lurbanisation-taches-urbaines-situation-en-1980-en-franche-comte/
+
+
+Dans ce cas précis, vous allez récupérer un ensemble de fichiers qui viennent du logiciel MapInfo car ils contiennent un fichier tab accompagné d'autres fichiers portant le même nom mais avec une autre extension (on parle de [format MapInfo Tab](https://en.wikipedia.org/wiki/MapInfo_TAB_format)) et un xml qui contient les métadonnées du fichier.
+
+Ministère de la Transition écologique, Pôle national de données de Biodiversité, DREAL, DRAAF, DRIEE, CEREMA, DDT, DDTM, DEAL
 
 ## Consommer le WMS
 
-Utiliser un proxy comme https://data.europa.eu/deu-proxy?
+### Le standard WMS
+
+Des exemples de
+
+- GetCapabilities
+- GetFeatureInfo
+- GetMap
+
+Versions 1.1.0 et 1.3.0
+
+Doc https://georezo.net/wiki/main/standards/wms
+
+### L'écosystème pour consommer des WMS
+
+TODO
+
+```
+ECOSYSTEME autour:
+
+Ne pas trop rentrer dans le détail et donner des exemples de comment intégrer avec des librairies tierces côté client, côté SIG lourds (QGIS en particulier), bibliothèques liés à des languages de programmation
+```
+
+Trois besoins:
+
+- Vous voulez vous ballader sur la donnée dans un logiciel SIG client lourd, type QGIS
+- Vous voulez consulter la donnée sur votre Web SIG, sur un site en ligne
+- Vous souhaitez avoir une vignette d'une zone sous forme image, pour un aperçu
+
+#### Logiciel SIG lourd
+
+
+
+#### Client léger web
+
+Pour le web, il faut généralement utiliser un proxy comme https://data.europa.eu/deu-proxy? ou https://corsproxy.io/?
+
 
 Sans proxy (plante à cause de CORS)
 
@@ -147,20 +218,7 @@ else:
 ```
 
 
-URL obtenue via la bibliothèque Owslib qui encode les caractères `/`,`,` et `:` et c'est normal
-
-http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38178/908a2fc2-6752-4eae-952a-142393e657b7.internet.map&service=WMS&version=1.3.0&request=GetMap&layers=N_PERIM_MAET_ZINF_S_R11&styles=&width=800&height=648&crs=EPSG%3A4326&bbox=48.1107%2C1.44041%2C49.2484%2C3.56583&format=image%2Fpng&transparent=FALSE&bgcolor=0xFFFFFF&exceptions=XML
-
-vs
-
-Fonctionne
-
-http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38178/908a2fc2-6752-4eae-952a-142393e657b7.internet.map&service=WMS&version=1.3.0&request=GetMap&layers=N_PERIM_MAET_ZINF_S_R11&styles=&width=800&height=648&crs=EPSG:4326&bbox=48.1107,1.44041,49.2484,3.56583&format=image/png&transparent=FALSE&bgcolor=0xFFFFFF&exceptions=XML
-
-Conclusion:
-Sur le proxy côté GeoIDE, il faudrait décoder les paramètres. Cela ne semble pas être fait
-
-
+```
 from owslib.wms import WebMapService
 
 wms = WebMapService('https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38178/908a2fc2-6752-4eae-952a-142393e657b7.internet.map', version='1.3.0')
@@ -173,33 +231,22 @@ response = wms.getmap(layers=['N_PERIM_MAET_ZINF_S_R11',],
 )
 with open(f"N_PERIM_MAET_ZINF_S_R11.png", 'wb') as out:
     out.write(response.read())
+```
 
 
 ## Prérequis:
 
 Installation QGIS: trouver une doc claire d'installation pour pointer dessus
 
-## WMS
+## Consommer le WFS
 
-Des exemples de
-
-- GetCapabilities
-- GetFeatureInfo
-
-Versions 1.1.0 et 1.3.0
-
-Doc https://georezo.net/wiki/main/standards/wms
-
-
-ECOSYSTEME autour:
-
-Ne pas trop rentrer dans le détail et donner des exemples de comment intégrer avec des librairies tierces côté client, côté SIG lourds (QGIS en particulier), bibliothèques liés à des languages de programmation
-
-## WFS
+### Le standard WFS
 
 - GetCapabilities
 - GetFeature + aperçu avec limit 1
 - DescribeFeatureType
+
+On ne détaille pas le WFS-T qui veut dire transactionnel, c'est à dire qui permet de la mise à jour de la base de données depuis un service WFS qui permet l'écriture et pas seulement la lecture.
 
 Doc https://georezo.net/wiki/main/standards/wfs + https://docs.geoserver.org/stable/en/user/services/wfs/reference.html
 
@@ -226,4 +273,5 @@ Guide: consommer les données géographiques sous tous leurs formats
 - WFS/WMS (palliatif disparition geo.data.gouv)
 - les autres formats usuels et leur exploitation: reprise mais avec quelques cas sur des jeux de données hébergés
 
-Logique de teaser: insister sur l'intérêt avant d'insister sur le comment
+
+http://opengeospatial.github.io/e-learning/wfs/text/operations.html
