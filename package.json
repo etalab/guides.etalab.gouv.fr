@@ -33,6 +33,6 @@
     "vuepress-theme-gouv-fr": "^1.1.1"
   },
   "engines": {
-    "node": ">12 <=18"
+    "node": ">12 <17"
   }
 }
