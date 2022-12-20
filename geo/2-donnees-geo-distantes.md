@@ -58,7 +58,7 @@ Vous ne souhaitez pas télécharger les données mais les regarder dans votre SI
 
 ## Prérequis:
 
-Il est utile, voire nécessaire d'installer QGIS sur votre machine. Allez sur https://www.qgis.org/fr/site/forusers/download.html puis déplier le menu "Téléchargement pour Windows". Un gros bouton vert "Télécharger QGIS 3.28". Si vous voulez les dernières fonctionnalités, téléchargez puis faites du "Suivant Suivant" pour installer QGIS.
+Il est utile, voire nécessaire d'installer QGIS sur votre machine. Allez sur [la page officielle QGIS "Téléchargez QGIS"](https://www.qgis.org/fr/site/forusers/download.html) puis déplier le menu "Téléchargement pour Windows". Un gros bouton vert "Télécharger QGIS 3.28" apparaît . Si vous voulez les dernières fonctionnalités, téléchargez le fichier puis faites du "Suivant Suivant" pour installer QGIS.
 
 Il faut noter la présence d'un texte juste en dessous du gros bouton vert, "En quête de la version la plus stable? Télécharger QGIS 3.22 LTR". Ceux qui prennent cette version cherche un support plus long dans le temps même s'ils ne disposeront de ce fait pas des fonctionnalités récemment introduites. Généralement, ce sont des entreprises, des collectivités qui préfèrent cette option afin de faire une mise à jour moins régulière pour maintenir leurs parcs de machine.
 
@@ -70,13 +70,13 @@ WFS comme Web Feature Service est un standard créé par [l'OGC](https://www.ogc
 
 Il existe plusieurs types de requêtes pour interroger un serveur WFS
 
-- GetCapabilities. Cette opération permet de lister les informations sur le producteur du service, les lister les opérations autorisées, d'inventorier les couches d'information disponibles <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities>.
+- `GetCapabilities`. Cette opération permet de lister les informations sur le producteur du service, les lister les opérations autorisées, d'inventorier les couches d'information disponibles <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities>.
 
-- GetFeature. Cette opération permet de retourner les features (objets géographiques). Ils peuvent être filtrés et paginés selon la configuration. Voir les exemples pour une couche mais en limitant à une objet.
+- `GetFeature`. Cette opération permet de retourner les features (objets géographiques). Ils peuvent être filtrés et paginés selon la configuration. Voir les exemples pour une couche mais en limitant à une objet (pour limiter le temps de réponse du WFS).
   * WFS 2.0 <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typenames=ms:Tache_urbaine_1980_R43&count=1>
   * WFS 1.1.0 <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&typenames=ms:Tache_urbaine_1980_R43&maxFeatures=1>
 
-- DescribeFeatureType. Cela permet de connaitre la structure des colonnes du flux WFS. Voir par exemple <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&service=wfs&version=2.0.0&request=DescribeFeatureType&typeNames=ms:Tache_urbaine_1980_R43> qui retourne une sortie du type
+- `DescribeFeatureType`. Cela permet de connaitre la structure des colonnes du flux WFS. Voir par exemple <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&service=wfs&version=2.0.0&request=DescribeFeatureType&typeNames=ms:Tache_urbaine_1980_R43> qui retourne une sortie du type
 
 ```xml
 <?xml version='1.0' encoding="UTF-8" ?>
@@ -111,13 +111,13 @@ Il existe plusieurs types de requêtes pour interroger un serveur WFS
 </schema>
 ```
 
-On déduit les colonnes sont `Id` de type `string`, `Annee_tache` de type `integer` et `Surface_ha` de type `double`.
+On déduit que la couche `Tache_urbaine_1980_R43` dispose des colonnes `Id` de type `string`, `Annee_tache` de type `integer` et `Surface_ha` de type `double` et que la couche dispose d'une géométrie de type polygone.
 
-On ne détaille pas les opérations liées WFS-T qui veut dire transactionnel, c'est à dire qui permet de la mise à jour de la base de données depuis un service WFS qui permet l'écriture et pas seulement la lecture.
+Il existe une version du WFS dite WFS-T comme Transactionnel. C'est à dire qui permet de la mise à jour de la base de données depuis un service WFS qui permet l'écriture et pas seulement la lecture. On ne détaille pas les opérations liées à ce dernier, étant dans une logique de consommation des données.
 
 #### Pour en savoir plus
 
-Voir les doccumentations suivantes :
+Voir les documentations suivantes :
 
 - [Fiche WFS sur GeoRezo](https://georezo.net/wiki/main/standards/wfs)
 - [Documentation WFS Geoserver (anglais)](https://docs.geoserver.org/stable/en/user/services/wfs/reference.html)
@@ -131,6 +131,18 @@ Voir les doccumentations suivantes :
 
 Pour QGIS, vous pouvez prendre [le guide mis à disposition par l'IGN "Utiliser les données IGN en flux WFS"]( https://geoservices.ign.fr/documentation/services/utilisation-sig/tutoriel-qgis/wfs). Les instructions sont similaires, la seule chose qui change est l'URL à remplir.
 
+#### WFS client léger
+
+Pour l'affichage de carte en WFS,
+
+- [OpenLayers](https://openlayers.org/en/latest/examples/?q=wfs)
+- Maplibre GL JS COMPLIQUÉ SAUF SI GEOJSON RETOURNÉ PAR LE WEBSERVICE (dépend du server WFS, au cas par cas...)
+- Leaflet DÉMO PERSO
+
+#### bibliothèques WFS côté serveur
+
+- ogrinfo + ogr2ogr
+- owslib (Python)
 
 WARNING: TO CLEAN Ne pas trop rentrer dans le détail et donner des exemples de comment intégrer avec des librairies tierces côté client, côté SIG lourds (QGIS en particulier), bibliothèques liés à des languages de programmation
 GDAL (reprendre/bouger <https://guides.etalab.gouv.fr/apis-geo/2-api-decoupage-administratif.html#les-sources-alternatives-pour-les-communes>)
@@ -139,7 +151,7 @@ GDAL (reprendre/bouger <https://guides.etalab.gouv.fr/apis-geo/2-api-decoupage-a
 
 ### Le standard WMS
 
-Ce standard est ancien (1999). Il est comme le WFS, produit par l'OGC. Il est basé sur SOAP. La spécification a 2 versions officielles. Les serveurs généralement supportent 2 versions, la version 1.1.1 et la 1.3.0.
+Ce standard WMS comme Web Map Service est ancien (1999). Il est comme le WFS, produit par l'OGC. Il est basé sur SOAP. La spécification a 2 versions officielles. Les serveurs généralement supportent 2 versions, la version 1.1.1 et la 1.3.0.
 
 #### Les deux principaux types de requêtes
 
@@ -156,9 +168,14 @@ Ils existent des opérations optionnelles qui selon les serveurs sont activées 
 - `DescribeLayer`: permet de spécifier à d'autres outils, où aller chercher la description de la structure des couches <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=DescribeLayer&LAYERS=Tache_urbaine_1980_R43&SLD_VERSION=1.1.0> C'est surtout important si vous utilisez des styles dit SLD (pour "Styled Layer Descriptor"). Vous ne serez généralement pas concerné par cet usage.
 - `GetLegendGraphic`: retourne la légende de la carte. Voici [un exemple d'appel à ce type d'opération](https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetLegendGraphic&LAYER=Tache_urbaine_1980_R43&FORMAT=image/png&SLD_VERSION=1.1.0). Comme pour `GetMap`, on peut spécifier un style si nécessaire.
 
-Versions 1.1.0 et 1.3.0
+#### Pour en savoir plus
 
-Doc <https://georezo.net/wiki/main/standards/wms>
+Voir les documentations suivantes :
+
+- [Fiche WMS sur GeoRezo](https://georezo.net/wiki/main/standards/wms)
+- [Documentation WMS Geoserver (anglais)](https://docs.geoserver.org/stable/en/user/services/wms/reference.html)
+- [Documentation de l'OGC sur le WMS (anglais)](http://opengeospatial.github.io/e-learning/wms/text/basic-index.html)
+- [Spécifications OGC du WMS (anglais)](https://www.ogc.org/standards/wms)
 
 ### L'écosystème pour consommer des WMS
 
