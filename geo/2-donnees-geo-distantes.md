@@ -136,16 +136,14 @@ Pour QGIS, vous pouvez prendre [le guide mis à disposition par l'IGN "Utiliser 
 Pour l'affichage de carte en WFS,
 
 - [OpenLayers](https://openlayers.org/en/latest/examples/?q=wfs)
-- Maplibre GL JS COMPLIQUÉ SAUF SI GEOJSON RETOURNÉ PAR LE WEBSERVICE (dépend du server WFS, au cas par cas...)
-- Leaflet DÉMO PERSO
+- Maplibre GL JS. Démo non fournie car compliquée à gérer. Cela dépend en effet selon si le serveur WFS retourne les données sous forme GeoJSON ou pas, ce qui relève de WFS au cas par cas.
+- Leaflet ([Démo dédiée](https://gist.githack.com/ThomasG77/ca2496faeca7b908ef88435a8d195c92/raw/ef2b761e4b22696a87d02606fe45a2ec1f6242db/index.html))
 
 #### bibliothèques WFS côté serveur
 
-- ogrinfo + ogr2ogr
-- owslib (Python)
+- Utiliaires de GDAL `ogrinfo` et `ogr2ogr`. Pour comprendre leur utilisation, voir le tutoriel pour le [WFS de l'IGN](https://guides.etalab.gouv.fr/apis-geo/2-api-decoupage-administratif.html#les-sources-alternatives-pour-les-communes). Ce qui change ici est le fait que les URLs changent mais les principes restent les mêmes.
+- [owslib](https://geopython.github.io/OWSLib/usage.html#wfs) (Python)
 
-WARNING: TO CLEAN Ne pas trop rentrer dans le détail et donner des exemples de comment intégrer avec des librairies tierces côté client, côté SIG lourds (QGIS en particulier), bibliothèques liés à des languages de programmation
-GDAL (reprendre/bouger <https://guides.etalab.gouv.fr/apis-geo/2-api-decoupage-administratif.html#les-sources-alternatives-pour-les-communes>)
 
 ## Consommer le WMS
 
@@ -183,36 +181,7 @@ Voir les documentations suivantes :
 
 Pour QGIS, vous pouvez prendre [le guide mis à disposition par l'IGN "Utiliser les données IGN en flux WMS/WMTS"](https://geoservices.ign.fr/documentation/services/utilisation-sig/tutoriel-qgis/wms-wmts). Les instructions sont similaires, la seule chose qui change est l'URL à remplir.
 
-```
-ECOSYSTEME autour:
-
-Ne pas trop rentrer dans le détail et donner des exemples de comment intégrer avec des librairies tierces côté client, côté SIG lourds (QGIS en particulier), bibliothèques liés à des languages de programmation
-```
-
-Trois besoins:
-
-- Vous voulez vous ballader sur la donnée dans un logiciel SIG client lourd, type QGIS
-- Vous voulez consulter la donnée sur votre Web SIG, sur un site en ligne
-- Vous souhaitez avoir la liste des couches et leur description ou bien une vignette d'une zone sous forme image, pour un aperçu
-
-#### Logiciel SIG lourd
-
-
-
 #### Client léger web
-
-Vous pouvez avoir un aperçu via
-
-Avec proxy
-
-<https://dds2010.github.io/mviewer/?x=706890&y=6242153&z=7&config=demo/addlayers.xml&addLayer={\%22url\%22:\%22https://data.europa.eu/deu-proxy?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map%3D\/opt\/data\/carto\/geoide-catalogue\/1.4\/org_5443264\/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map\%22,\%22name\%22:\%22AGENDA21_S_R44\%22,\%22title\%22:\%22AGENDA21_S_R44\%22}#>
-
-ou avec un autre proxy
-
-<https://dds2010.github.io/mviewer/?x=706890&y=6242153&z=7&config=demo/addlayers.xml&addLayer={\%22url\%22:\%22https://corsproxy.io/?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map%3D\/opt\/data\/carto\/geoide-catalogue\/1.4\/org_5443264\/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map\%22,\%22name\%22:\%22AGENDA21_S_R44\%22,\%22title\%22:\%22AGENDA21_S_R44\%22}#>
-
-
-*Warning*: Pour le web, il faut généralement utiliser un proxy car tous les serveurs ne supportent pas qu'on accède depuis une page web à leur contenu hébergé sur un autre domaine. Il existe des proxy publics comme https://data.europa.eu/deu-proxy? ou https://corsproxy.io/? mais nous vous recommandons d'installer le vôtre si vous avez un usage en production. Il en existe dans la plupart des languages de programmation. Vous pouvez trouvez une liste sur <https://github.com/topics/cors-proxy?o=desc&s=stars> (filtrez selon votre language de programmation)
 
 Pour utiliser les "capabilities" WMS,
 
@@ -222,6 +191,16 @@ Pour utiliser les "capabilities" WMS,
 - Via [JSONIX](https://github.com/highsource/jsonix) avec [ogc-schemas](https://www.npmjs.com/package/@ogc-schemas/ogc-schemas) (fonctionnement client comme serveur)
 - Via Openlayers ([exemple officiel "WMS Capabilities Parsing" disponible](https://openlayers.org/en/latest/examples/wms-capabilities.html)) (fonctionnement client comme serveur)
 - Via le [contrôle WMS Capabilities de la bibliothèque ol-ext](http://viglino.github.io/ol-ext/examples/layer/map.wmscapabilities.html?lon=2.344347&lat=48.855181&z=14.5) (extensions liées à la bibliothèque OpenLayers)
+
+Pour l'affichage de carte en WMS (opération `GetMap`),
+
+- [OpenLayers](https://openlayers.org/en/latest/examples/?q=wms)
+- Maplibre GL JS
+- Leaflet
+
+Vous avoir un aperçu visuel rapide d'un couche, vous pouvez passer par le projet MViewer comme illustré via [cet exemple via un proxy](https://dds2010.github.io/mviewer/?x=706890&y=6242153&z=7&config=demo/addlayers.xml&addLayer={\%22url\%22:\%22https://data.europa.eu/deu-proxy?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map%3D\/opt\/data\/carto\/geoide-catalogue\/1.4\/org_5443264\/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map\%22,\%22name\%22:\%22AGENDA21_S_R44\%22,\%22title\%22:\%22AGENDA21_S_R44\%22}#) ou [ce même exemple via un autre proxy](https://dds2010.github.io/mviewer/?x=706890&y=6242153&z=7&config=demo/addlayers.xml&addLayer={\%22url\%22:\%22https://corsproxy.io/?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map%3D\/opt\/data\/carto\/geoide-catalogue\/1.4\/org_5443264\/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map\%22,\%22name\%22:\%22AGENDA21_S_R44\%22,\%22title\%22:\%22AGENDA21_S_R44\%22}#)
+
+*Warning*: Pour le web, il faut généralement utiliser un proxy car tous les serveurs ne supportent pas qu'on accède depuis une page web à leur contenu hébergé sur un autre domaine. Il existe des proxy publics comme https://data.europa.eu/deu-proxy? ou https://corsproxy.io/? mais nous vous recommandons d'installer le vôtre si vous avez un usage en production. Il en existe dans la plupart des languages de programmation. Vous pouvez trouvez une liste sur <https://github.com/topics/cors-proxy?o=desc&s=stars> (filtrez selon votre language de programmation)
 
 
 #### liste des couches et leur description ou bien une vignette d'une zone sous forme image, pour un aperçu
@@ -271,11 +250,7 @@ for name, content_metadata in wms.items():
 Pour les autres languages de programmation, il faut vous appuyer sur le parsing XML natif ou fournit par des bibliothèques tierces.
 
 
-Pour l'affichage de carte en WMS,
 
-- [OpenLayers](https://openlayers.org/en/latest/examples/?q=wms)
-- Maplibre GL JS
-- Leaflet
 
 #### Manipulation côté serveur
 
