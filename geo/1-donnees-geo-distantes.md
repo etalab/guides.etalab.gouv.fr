@@ -195,15 +195,14 @@ Pour utiliser les "capabilities" WMS,
 Pour l'affichage de carte en WMS (opération `GetMap`),
 
 - [OpenLayers](https://openlayers.org/en/latest/examples/?q=wms)
-- Maplibre GL JS
-- Leaflet
+- Maplibre GL JS. [Exemple non tuilé](https://gist.githack.com/ThomasG77/87da9421f89fc8290e6c3cc59251bdc9/raw/847bdec7c8d95cf9de0da6aad6d6b77e77f10bc9/index.html) et [tuilé](https://gist.githack.com/ThomasG77/6459d9b75a6c6bc2d757049c2e3d5858/raw/a1b5751afee6bbd06fc15bab8ff6846f31021ab7/index.html)
+- Leaflet ([exemple](https://gist.githack.com/ThomasG77/f27f62d1e3fb6ea79b406fbfa5d004bb/raw/e25b4bef7574074ff1bfa1b2261e4a81ff3265eb/index.html))
 
 Vous avoir un aperçu visuel rapide d'un couche, vous pouvez passer par le projet MViewer comme illustré via [cet exemple via un proxy](https://dds2010.github.io/mviewer/?x=706890&y=6242153&z=7&config=demo/addlayers.xml&addLayer={\%22url\%22:\%22https://data.europa.eu/deu-proxy?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map%3D\/opt\/data\/carto\/geoide-catalogue\/1.4\/org_5443264\/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map\%22,\%22name\%22:\%22AGENDA21_S_R44\%22,\%22title\%22:\%22AGENDA21_S_R44\%22}#) ou [ce même exemple via un autre proxy](https://dds2010.github.io/mviewer/?x=706890&y=6242153&z=7&config=demo/addlayers.xml&addLayer={\%22url\%22:\%22https://corsproxy.io/?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map%3D\/opt\/data\/carto\/geoide-catalogue\/1.4\/org_5443264\/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map\%22,\%22name\%22:\%22AGENDA21_S_R44\%22,\%22title\%22:\%22AGENDA21_S_R44\%22}#)
 
 *Warning*: Pour le web, il faut généralement utiliser un proxy car tous les serveurs ne supportent pas qu'on accède depuis une page web à leur contenu hébergé sur un autre domaine. Il existe des proxy publics comme https://data.europa.eu/deu-proxy? ou https://corsproxy.io/? mais nous vous recommandons d'installer le vôtre si vous avez un usage en production. Il en existe dans la plupart des languages de programmation. Vous pouvez trouvez une liste sur <https://github.com/topics/cors-proxy?o=desc&s=stars> (filtrez selon votre language de programmation)
 
-
-#### liste des couches et leur description ou bien une vignette d'une zone sous forme image, pour un aperçu
+#### Liste des couches et leur description ou bien une vignette d'une zone sous forme image, pour un aperçu
 
 **Python**
 
@@ -250,9 +249,7 @@ for name, content_metadata in wms.items():
 Pour les autres languages de programmation, il faut vous appuyer sur le parsing XML natif ou fournit par des bibliothèques tierces.
 
 
-
-
-#### Manipulation côté serveur
+#### Manipulations WMS côté serveur
 
 Python
 
@@ -305,6 +302,7 @@ else:
 
 ```
 
+Exemple retournant une image statique
 
 ```python
 from owslib.wms import WebMapService
@@ -323,70 +321,8 @@ with open(f"N_PERIM_MAET_ZINF_S_R11.png", 'wb') as out:
 
 ## ATOM = WFS sans la complication
 
-Le plus simple: assimilable à des fichiers SIG + autres données (données attributaires + doc PDF +...)
+ATOM est le format qui est utilisé dans les flux RSS. Il est enrichi dans le cas des catalogues de données géographiques.
 
-## Investigation:
+Il contient pour le cas des données géographiques les URLs des données à télécharger. C'est le plus simple à utiliser si le seul pub est de récupérer la donnée puis de la traiter, l'ouvrir dans ses propres outils. On télécharge les données des liens RSS. Il s'agit généralement de données géographiques dans des formats communément admis même si on peut parfois avoir des données attributaires et/ou des fichiers PDF par exemple.
 
-Voir ce qu'il est possible d'améliorer en ligne
-
-Retours après relecture
-
-
-Guide: consommer les données géographiques sous tous leurs formats
-
-- WFS/WMS (palliatif disparition geo.data.gouv)
-- les autres formats usuels et leur exploitation: reprise mais avec quelques cas sur des jeux de données hébergés
-
-
-<http://opengeospatial.github.io/e-learning/wfs/text/operations.html>
-
-
-## Voir ultérieurement ce qu'on exploite de ce contenu
-
-Partage
-
-https://dds2010.github.io/mviewer/?x=706890&y=6242153&z=7&l=epci%2CAGENDA21_S_R44*&lb=positron&config=demo/addlayers.xml&mode=d
-
-https://dds2010.github.io/mviewer/?x=439666&y=6394416&z=7&config=demo/addlayers.xml&addLayer=%7B%5C%22url%5C%22:%5C%22https://www.geo2france.fr/geoserver/hdf_common/ows%5C%22,%5C%22name%5C%22:%5C%22Antennes__HdF_EnService_Agreg%5C%22,%5C%22title%5C%22:%5C%22Antennes_test%5C%22%7D
-
-https://corsproxy.io/?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map&service=WMS&cersion=1.3.0&request=GetCapabilities
-
-https://corsproxy.io/?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map
-
-https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38066/9a623f0c-bd2e-498e-b67b-2b363a5d6e0d.internet.map&service=WFS&request=GetCapabilities
-
-https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38066/025777cb-1837-4898-bafc-71d60c44d7eb.internet.map&service=WFS&typeNames=ms:N_INT1_GENERATEUR_SUP_S_062&request=DescribeFeatureType&version=2.0.0
-
-https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38066/025777cb-1837-4898-bafc-71d60c44d7eb.internet.map&service=WFS&VERSION=2.0.0&typeNames=ms:N_INT1_GENERATEUR_SUP_S_062&MaxFeatures=1&request=getfeature
-
-https://jsonformatter.org/xml-formatter/?url=https%3A%2F%2Fogc.geo-ide.developpement-durable.gouv.fr%2Fwxs%3Fmap%3D%2Fopt%2Fdata%2Fcarto%2Fgeoide-catalogue%2F1.4%2Forg_38066%2F9a623f0c-bd2e-498e-b67b-2b363a5d6e0d.internet.map%26service%3DWFS%26request%3DGetCapabilities
-
-curl -X 'GET' \
-  'https://demo.data.gouv.fr/api/1/datasets/service-de-visualisation-cartographique-wms-du-jeu-de-donnees-driaaf-idf-territoire-maet-en-ile-de-france/' \
-  -H 'accept: application/json'
-
-
-```javascript
-var url_str = 'https://demo.data.gouv.fr/fr/datasets/service-de-visualisation-cartographique-wms-du-jeu-de-donnees-driaaf-idf-territoire-maet-en-ile-de-france/';
-
-var url = new URL(url_str);
-var baseUrl = url.origin;
-var slug = url.pathname.split('/').filter(el => el != '').slice(-1)[0]
-var api_url = `${baseUrl}/api/1/datasets/${slug}`
-console.log(api_url)
-
-fetch(api_url)
-.then(resp => resp.json())
-.then(json => {
-  console.log(json);
-  var wms = json.resources.filter(el => el.description.includes('WMS') || el.title.includes('WMS'))
-  if (wms[0]) {
-    wms[0].url
-  }
-}).catch(function (err) {
-  // There was an error
-  console.warn('Something went wrong.', err);
-});
-```
-
-Ministère de la Transition écologique, Pôle national de données de Biodiversité, DREAL, DRAAF, DRIEE, CEREMA, DDT, DDTM, DEAL
+Dans le meilleur des cas, on a un WMS avec un WFS et un flux ATOM mais cela dépend des flux de chaque fournisseur de données.
