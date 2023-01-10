@@ -141,7 +141,7 @@ Pour l'affichage de carte en WFS,
 
 #### bibliothèques WFS côté serveur
 
-- Utiliaires de GDAL `ogrinfo` et `ogr2ogr`. Pour comprendre leur utilisation, voir le tutoriel pour le [WFS de l'IGN](https://guides.etalab.gouv.fr/apis-geo/2-api-decoupage-administratif.html#les-sources-alternatives-pour-les-communes). Ce qui change ici est le fait que les URLs changent mais les principes restent les mêmes.
+- Utilitaires en ligne de commande de [GDAL](https://gdal.org) `ogrinfo` et `ogr2ogr`. Pour comprendre leur utilisation, voir le tutoriel pour le [WFS de l'IGN](https://guides.etalab.gouv.fr/apis-geo/2-api-decoupage-administratif.html#les-sources-alternatives-pour-les-communes). Ce qui change ici est le fait que les URLs changent mais les principes restent les mêmes.
 - [owslib](https://geopython.github.io/OWSLib/usage.html#wfs) (Python)
 
 
@@ -198,7 +198,7 @@ Pour l'affichage de carte en WMS (opération `GetMap`),
 - Maplibre GL JS. [Exemple non tuilé](https://gist.githack.com/ThomasG77/87da9421f89fc8290e6c3cc59251bdc9/raw/847bdec7c8d95cf9de0da6aad6d6b77e77f10bc9/index.html) et [tuilé](https://gist.githack.com/ThomasG77/6459d9b75a6c6bc2d757049c2e3d5858/raw/a1b5751afee6bbd06fc15bab8ff6846f31021ab7/index.html)
 - Leaflet ([exemple](https://gist.githack.com/ThomasG77/f27f62d1e3fb6ea79b406fbfa5d004bb/raw/e25b4bef7574074ff1bfa1b2261e4a81ff3265eb/index.html))
 
-Vous avoir un aperçu visuel rapide d'un couche, vous pouvez passer par le projet MViewer comme illustré via [cet exemple via un proxy](https://dds2010.github.io/mviewer/?x=706890&y=6242153&z=7&config=demo/addlayers.xml&addLayer={\%22url\%22:\%22https://data.europa.eu/deu-proxy?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map%3D\/opt\/data\/carto\/geoide-catalogue\/1.4\/org_5443264\/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map\%22,\%22name\%22:\%22AGENDA21_S_R44\%22,\%22title\%22:\%22AGENDA21_S_R44\%22}#) ou [ce même exemple via un autre proxy](https://dds2010.github.io/mviewer/?x=706890&y=6242153&z=7&config=demo/addlayers.xml&addLayer={\%22url\%22:\%22https://corsproxy.io/?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map%3D\/opt\/data\/carto\/geoide-catalogue\/1.4\/org_5443264\/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map\%22,\%22name\%22:\%22AGENDA21_S_R44\%22,\%22title\%22:\%22AGENDA21_S_R44\%22}#)
+Vous avoir un aperçu visuel rapide d'un couche, vous pouvez passer par le projet [mviewer](https://mviewer.netlify.app) comme illustré via [cet exemple via un proxy](https://kartenn.region-bretagne.fr/kartoviz/?x=706890&y=6242153&z=7&config=demo/addlayers.xml&addLayer={\%22url\%22:\%22https://corsproxy.io/?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map%3D\/opt\/data\/carto\/geoide-catalogue\/1.4\/org_5443264\/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map\%22,\%22name\%22:\%22AGENDA21_S_R44\%22,\%22title\%22:\%22AGENDA21_S_R44\%22}#)
 
 *Warning*: Pour le web, il faut généralement utiliser un proxy car tous les serveurs ne supportent pas qu'on accède depuis une page web à leur contenu hébergé sur un autre domaine. Il existe des proxy publics comme https://data.europa.eu/deu-proxy? ou https://corsproxy.io/? mais nous vous recommandons d'installer le vôtre si vous avez un usage en production. Il en existe dans la plupart des languages de programmation. Vous pouvez trouvez une liste sur <https://github.com/topics/cors-proxy?o=desc&s=stars> (filtrez selon votre language de programmation)
 
@@ -247,7 +247,6 @@ for name, content_metadata in wms.items():
 ```
 
 Pour les autres languages de programmation, il faut vous appuyer sur le parsing XML natif ou fournit par des bibliothèques tierces.
-
 
 #### Manipulations WMS côté serveur
 
@@ -323,6 +322,6 @@ with open(f"N_PERIM_MAET_ZINF_S_R11.png", 'wb') as out:
 
 ATOM est le format qui est utilisé dans les flux RSS. Il est enrichi dans le cas des catalogues de données géographiques.
 
-Il contient pour le cas des données géographiques les URLs des données à télécharger. C'est le plus simple à utiliser si le seul pub est de récupérer la donnée puis de la traiter, l'ouvrir dans ses propres outils. On télécharge les données des liens RSS. Il s'agit généralement de données géographiques dans des formats communément admis même si on peut parfois avoir des données attributaires et/ou des fichiers PDF par exemple.
+Il contient pour le cas des données géographiques les URLs des données à télécharger. C'est le plus simple à utiliser si le seul but est de récupérer la donnée puis de la traiter, l'ouvrir dans ses propres outils. On télécharge les données des liens RSS. Il s'agit généralement de données géographiques dans des formats communément admis même si on peut parfois avoir des données attributaires et/ou des fichiers PDF par exemple.
 
-Dans le meilleur des cas, on a un WMS avec un WFS et un flux ATOM mais cela dépend des flux de chaque fournisseur de données.
+Dans le meilleur des cas, on a un WMS avec un WFS et un flux ATOM mais cela dépend des flux de chaque fournisseur de données et on a le choix en fonction de nos usages souhaités.
