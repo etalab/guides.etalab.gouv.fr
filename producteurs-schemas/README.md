@@ -9,7 +9,7 @@ Ce guide a été publié initialement fin mars 2020 et est mis à jour de maniè
 :::
 
 ::: lexique Schémas de données
-Les schémas de données permettent de décrire la structure d'un jeu de données. Ils indiquent clairement quels sont les différents champs, comment sont représentées les données, quelles sont les valeurs possibles etc.
+Les schémas de données permettent de décrire la structure d'un jeu de données. Ils indiquent clairement quels sont les différents champs, comment sont représentées les données, quelles sont les valeurs possibles, leur format, etc.
 
 Synonymes : *modèle de données*, *modèle logique de données*, *schéma*.
 :::
@@ -20,6 +20,7 @@ La création d’un jeu de données en conformité avec un schéma de données e
 * Si le jeu de données que vous créez est une agrégation de plusieurs fichiers produits par différents acteurs, la formalisation et le partage d’un schéma de données facilite le travail d’agrégation des données - ce schéma devient donc un standard pour votre communauté ;
 * La formalisation d’un schéma de données assure une pérennité des fichiers dans le temps ;
 * La documentation d’un schéma de données existant est déjà rédigée et accessible.
+* La présence d'un schéma de données existant peut faciliter l'ouverture des données, les producteurs ayant directement une procédure claire à suivre.
 
 Il est également possible de vérifier la conformité d'un jeu de données vis-à-vis d'un schéma de données, ce qui permet de valider un premier niveau de qualité de votre jeu de données. Par ailleurs, il est aussi possible de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
 
@@ -37,7 +38,9 @@ Ce guide propose de vous accompagner lors des phases nécessaires à la créatio
 
 1. **Phase d’investigation** : envisager de créer un schéma de données ;
 1. **Phase de concertation** : rassembler plusieurs parties prenantes pour créer un schéma de données ;
-1. **Phase de construction** : implémenter le schéma de données obtenu après la phase de concertation.
+1. **Phase de construction** : implémenter le schéma de données obtenu après la phase de concertation;
+1. **Phase de maintien/diffusion/promotion** : faire évoluer le schéma si besoin, en faire la promotion auprès d'autres parties prenantes (inclus le dernier paragraphe de la phase 3) ?
+
 
 Il propose un processus à suivre, des bonnes pratiques et des outils.
 

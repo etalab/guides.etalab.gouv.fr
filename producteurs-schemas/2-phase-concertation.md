@@ -20,7 +20,7 @@ Pour spécifier un schéma de données, il est nécessaire de définir :
 
 Nous conseillons de mener cette phase de concertation en travaillant sur un document partagé, accessible en ligne, tel qu’un [Framapad](https://framapad.org) ou Google Doc. L’important est que plusieurs contributeurs puissent contribuer (modifier ou mettre des commentaires) sans avoir besoin d’être présents physiquement ou de recevoir des versions intermédiaires par e-mails.
 
-En complément de ce document partagé, nous vous conseillons d’organiser plusieurs réunions afin de débattre du schéma de données à produire. L’implication d’une multitude d’acteurs est clé : vous devez rassembler des producteurs, experts métiers, experts techniques et réutilisateurs. La richesse des profils et des enjeux permettra d’aboutir à une solution la plus adaptée.
+En complément de ce document partagé, nous vous conseillons d’organiser plusieurs réunions afin de débattre du schéma de données à produire. L’implication d’une multitude d’acteurs est clé : vous devez rassembler des producteurs, experts métiers, experts techniques et réutilisateurs. La richesse des profils et des enjeux permettra d’aboutir à la solution la plus adaptée.
 
 ::: tip Référencer votre schéma
 Référencer votre schéma sur [schema.data.gouv.fr](https://schema.data.gouv.fr) vous permettra de bénéficier de conseils de la part d’Etalab et de ses partenaires institutionnels et associatifs. Découvrez comment [référencer votre schéma en cours de concertation](4-integration-schema-datagouv.md).
@@ -30,9 +30,9 @@ Référencer votre schéma sur [schema.data.gouv.fr](https://schema.data.gouv.fr
 Nous avons listé ci-dessous plusieurs conseils qui vous permettront de construire un schéma de données de qualité.
 
 - **Profiter de l’existant.** De nombreux standards existent déjà, qu’ils concernent des formats de données ou des formats de champs. Certains standards sont devenus incontournables aujourd’hui, comme [ISO-8601](https://fr.wikipedia.org/wiki/ISO_8601) pour les dates ou [WGS 84](https://fr.wikipedia.org/wiki/WGS_84) pour les coordonnées géographiques.
-- **Identifier et associer l’écosystème.** Les personnes/organisations que vous associez sont la meilleure garantie d’un schéma de données efficace et largement adopté, permettant d'aboutir à un véritable standard.
-    - Les producteurs d’une part qui connaissent la réalité de leurs données, de la collecte, etc. et qui ont leurs propres usages. 
-    - Les usagers d'autre part, leurs besoins et leurs difficultés d’autres part, qu’ils soient déjà connus, « sous le radar » ou en devenir.
+- **Identifier et associer l’écosystème.** Les personnes/organisations que vous associez sont la meilleure garantie d’un schéma de données efficace et largement adopté, permettant d'aboutir à un véritable standard :
+    - D'un côté les producteurs, qui connaissent la réalité de leurs données, de la collecte, etc. et qui ont leurs propres usages. 
+    - De l'autre les usagers, avec leurs besoins et leurs difficultés, qu’ils soient déjà connus, « sous le radar » ou en devenir.
 - **Prendre le temps.** Un schéma de données est susceptible de concerner beaucoup de producteurs et d’usagers. Sa modification peut avoir un impact important. Il est donc crucial de prendre le temps d’obtenir tous les retours avant de publier un schéma utilisable par le plus grand nombre. Un schéma de données devrait être publié quand il est prêt, non pas en fonction d’un impératif de délai.
 - **Lever les implicites et les ambiguïtés.** Le diable est dans les détails… Toutes les spécifications d’un schéma de données doivent être les plus claires possibles, y compris pour des cas/données qui n’existent pas encore mais pourraient apparaître à l’avenir.
 - **Éviter la redondance mais sans l’exclure absolument.** Trois champs pour définir une latitude et une longitude (`latitude`, `longitude`, `lat-lon`) est inutilement redondant. Toutefois, préciser le nom d’une commune en plus de son code INSEE rend les données plus faciles à lire et à exploiter.
