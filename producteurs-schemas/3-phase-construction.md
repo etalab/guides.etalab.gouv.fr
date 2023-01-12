@@ -71,7 +71,7 @@ Vous trouverez plusieurs dépôts Git de schémas sur [schema.data.gouv.fr](http
 
 ## Référencer votre schéma de données sur schema.data.gouv.fr
 
-Pour faciliter la découverte de votre schéma de données et des données sous-jacentes, nous vous recommandons de le faire référencer sur [schema.data.gouv.fr](https://schema.data.gouv.fr). Nous avons rédigé [une page dédiée](4-integration-schema-datagouv.md) à ce sujet décrivant les plus-values, prérequis et démarches à suivre.
+Pour faciliter la découverte de votre schéma de données et des données sous-jacentes, nous vous recommandons de le faire référencer sur [schema.data.gouv.fr](https://schema.data.gouv.fr). Nous avons rédigé [une page dédiée](5-integration-schema-datagouv.md) à ce sujet décrivant les plus-values, prérequis et démarches à suivre.
 
 ## Points de sortie
 À l’issue de cette phase, vous devriez :
