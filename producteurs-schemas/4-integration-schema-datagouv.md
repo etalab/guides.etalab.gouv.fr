@@ -28,7 +28,7 @@ Etalab se réserve le droit de refuser l’ajout de schémas en motivant son ref
 
 Nous vous invitions à référencer votre schéma de données le plus tôt possible, **dès la phase d’investigation**. En référençant celui-ci en amont, vous bénéficierez de l’accompagnement d’Etalab et de partenaires tout au long de la création de votre schéma de données : de l'investigation à la publication sur [schema.data.gouv.fr](https://schema.data.gouv.fr).
 
-Vous pouvez référencer votre schéma de données en ouvrant un ticket sur GitHub ou en entrant en contact [avec notre équipe par e-mail](mailto:schema@data.gouv.fr) Nous avons créé [une page dédiée pour détailler la procédure](https://schema.data.gouv.fr/documentation/schemas-investigation-construction). Nous tenons à jour une liste de schémas actuellement en phase d’investigation ou de construction sur cette même page.
+Vous pouvez référencer votre schéma de données en ouvrant un ticket sur GitHub ou en entrant en contact [avec notre équipe par e-mail](mailto:schema@data.gouv.fr) Nous avons créé [une page dédiée pour détailler la procédure](https://schema.data.gouv.fr/contribuer.html). Nous tenons également à jour une liste de schémas actuellement en phase d’[investigation](https://schema.data.gouv.fr/schemas.html?q=&statut=En%20investigation) ou de [construction](https://schema.data.gouv.fr/schemas.html?q=&statut=En%20construction).
 
 ## Quels schémas de données sont acceptés ?
 
@@ -57,7 +57,7 @@ Pour tous les types de schéma de données, il faut que :
 - passer avec succès les tests spécifiques au type de schéma de données que votre dépôt contient.
 
 ::: tip Critères complets de validation
-Cette page présente les grands principes de validation des schémas de données. Pour connaître en détail les prérequis propres à chaque type de schéma de données et accéder à des exemples, consultez [la page dédiée à la validation des schémas de données](https://schema.data.gouv.fr/documentation/validation-schemas).
+Cette page présente les grands principes de validation des schémas de données. Pour connaître en détail les prérequis propres à chaque type de schéma de données et accéder à des exemples, consultez [la page dédiée à la validation des schémas de données](https://schema.data.gouv.fr/validation.html).
 ::: 
 
 ## Points de sortie

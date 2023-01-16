@@ -51,7 +51,7 @@ La création d’un jeu de données en conformité avec un schéma de données e
 
 #### Comment identifier un schéma de données déjà existant ?
 
-Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près. Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) permet [d’intégrer les schémas de données et documentations associées](https://schema.data.gouv.fr/documentation/integration-autres-systemes) dans d’autres systèmes informatiques.
+Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près.
 
 #### Comment produire un jeu de données conforme à un schéma de données ?
 
