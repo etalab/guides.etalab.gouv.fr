@@ -2,11 +2,11 @@
 
 Le portail data.gouv.fr référence de nombreuses données OpenData. Certaines sont directement mises à disposition sur le site, d'autres jeux de données référencent des pages tierces avec les jeux de données ou bien un jeu de donnée référence une URL distante.
 
-Nous allons nous concentrer sur le dernier cas en nous concentrant sur une partie spécifique, la donnée géospatiale. Si vous êtes plutôt intéressés par les API, nous documentons déjà [l'API Adresse](/apis-geo/1-api-adresse.html), [l'API découpage administratif](/apis-geo/2-api-decoupage-administratif.html) et [les API d'accès aux tuiles vectorielles](/apis-geo/3-tuiles-vecteur.html)
+Nous allons nous concentrer sur le dernier cas en nous concentrant sur une partie spécifique, la donnée géospatiale. Si vous êtes plutôt intéressés par les API, nous documentons déjà [l'API Adresse](/apis-geo/1-api-adresse.html), [l'API découpage administratif](/apis-geo/2-api-decoupage-administratif.html) et [les API d'accès aux tuiles vectorielles](/apis-geo/3-tuiles-vecteur.html).
 
 ## Pourquoi abordons nous spécifiquement ce cas?
 
-Dans un passé pas si lointain, Etalab entretenait le site geo.data.gouv.fr mais la maintenance étant consommatrice de ressources, des choix pour le décommissionner ont été fait. Voir [l'article "Extinction de geo.data.gouv.fr" pour en savoir plus](https://www.data.gouv.fr/fr/posts/extinction-de-geo-data-gouv-fr/)
+Dans un passé pas si lointain, Etalab entretenait le site geo.data.gouv.fr mais la maintenance étant consommatrice de ressources, des choix pour le décommissionner ont été fait. Voir [l'article "Extinction de geo.data.gouv.fr" pour en savoir plus](https://www.data.gouv.fr/fr/posts/extinction-de-geo-data-gouv-fr/).
 
 La problématique est que la plateforme permettait de mettre en cache des données géospatiales qui sont normalement mises à disposition sous forme de service web, difficilement accessibles pour les néophytes. Généralement, ces formats ne sont bien compris par des spécialistes dans les données géographiques qu'on désigne sous des termes peu connu comme géomaticiens (métier associé au mot géographie et informatique), spécialiste SIG (Système d'Information Géographique) ou SIGiste. Le but est de rémédier à cette situation en facilitant la compréhension pour mieux réutiliser la donnée.
 
@@ -20,14 +20,14 @@ Ces services peuvent prendre la forme:
 
 ## L'intérêt des 3 cas illustrés:
 
-Nous n'insistons pas ici sur les modalités pour faire les opérations mais sur l'intérêt que cela présente
+Nous n'insistons pas ici sur les modalités pour faire les opérations mais sur l'intérêt que cela présente.
 
 ### WFS (Web Feature Service)
 
 **Cas 1**:
 
 Vous souhaitez disposer de données mises à jour régulièrement. Le WFS est un bon moyen pour cela car il contient les géométries et les attributs des données. Il vous permet d'avoir d'un côté la possibilité de rajouter un style comme si vous aviez un fichier SIG local type Shapefile/shp. Ainsi, on peut appliquer un style sur le WFS très facilement comme ci-dessous où on applique des motifs et où on a surtout accès aux attributs de la donnée visualisable sous forme tabulaire.
-[url pour l'accès aux données sous forme GML ("Geography Markup Language", un dérivé de XML pour les données géographiques), ouvrable dans le navigateur](https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=ms:Tache_urbaine_1980_R43&TYPENAME=ms:Tache_urbaine_1980_R43&STARTINDEX=0&COUNT=1000&SRSNAME=urn:ogc:def:crs:EPSG::3857&BBOX=668531.10646645340602845,5980808.73755011521279812,673071.40539349929895252,5985008.62458097562193871,urn:ogc:def:crs:EPSG::3857)
+[url pour l'accès aux données sous forme GML ("Geography Markup Language", un dérivé de XML pour les données géographiques), ouvrable dans le navigateur](https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=ms:Tache_urbaine_1980_R43&TYPENAME=ms:Tache_urbaine_1980_R43&STARTINDEX=0&COUNT=1000&SRSNAME=urn:ogc:def:crs:EPSG::3857&BBOX=668531.10646645340602845,5980808.73755011521279812,673071.40539349929895252,5985008.62458097562193871,urn:ogc:def:crs:EPSG::3857).
 
 Il économise de l'espace disque et/ou de la bande passante car il permet de ne récupérer la donnée que sur une emprise géographique ou des filtres suivant des conditions dans les champs et pas uniquement tout le jeu de données.
 
@@ -52,15 +52,15 @@ Dans ce cas précis, vous allez récupérer un ensemble de fichiers qui viennent
 
 ### WMS (Web Map Service)
 
-Vous ne souhaitez pas télécharger les données mais les regarder dans votre SIG ou dans votre WebSIG, vous passez par un WMS. Pour illustrer, voici un exemple ci-dessous avec la superposition "Modelisation de l'urbanisation  taches urbaines situation en 1980 en Franche Comte" ([url de l'image consultable dans le navigateur](https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=47.22558937316511418,5.983535451947194161,47.2768081055695788,6.065107850359938269&CRS=EPSG:4326&WIDTH=1345&HEIGHT=845&LAYERS=Tache_urbaine_1980_R43&STYLES=&FORMAT=image/png&DPI=192&MAP_RESOLUTION=192&FORMAT_OPTIONS=dpi:192&TRANSPARENT=TRUE)) sur un fond de plan IGN
+Vous ne souhaitez pas télécharger les données mais les regarder dans votre SIG ou dans votre WebSIG, vous passez par un WMS. Pour illustrer, voici un exemple ci-dessous avec la superposition "Modelisation de l'urbanisation  taches urbaines situation en 1980 en Franche Comte" ([url de l'image consultable dans le navigateur](https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=47.22558937316511418,5.983535451947194161,47.2768081055695788,6.065107850359938269&CRS=EPSG:4326&WIDTH=1345&HEIGHT=845&LAYERS=Tache_urbaine_1980_R43&STYLES=&FORMAT=image/png&DPI=192&MAP_RESOLUTION=192&FORMAT_OPTIONS=dpi:192&TRANSPARENT=TRUE)) sur un fond de plan IGN.
 
 ![](./images/wms_overlay_qgis.png)
 
 ## Prérequis:
 
-Il est utile, voire nécessaire d'installer QGIS sur votre machine. Allez sur [la page officielle QGIS "Téléchargez QGIS"](https://www.qgis.org/fr/site/forusers/download.html) puis déplier le menu "Téléchargement pour Windows". Un gros bouton vert "Télécharger QGIS 3.28" apparaît . Si vous voulez les dernières fonctionnalités, téléchargez le fichier puis faites du "Suivant Suivant" pour installer QGIS.
+Il est utile, voire nécessaire d'installer QGIS sur votre machine. Allez sur [la page officielle QGIS "Téléchargez QGIS"](https://www.qgis.org/fr/site/forusers/download.html) puis déplier le menu "Téléchargement pour Windows". Un gros bouton vert "Télécharger QGIS 3.xx" apparaît . Si vous voulez les dernières fonctionnalités, téléchargez le fichier puis faites du "Suivant Suivant" pour installer QGIS.
 
-Il faut noter la présence d'un texte juste en dessous du gros bouton vert, "En quête de la version la plus stable? Télécharger QGIS 3.22 LTR". Ceux qui prennent cette version cherche un support plus long dans le temps même s'ils ne disposeront de ce fait pas des fonctionnalités récemment introduites. Généralement, ce sont des entreprises, des collectivités qui préfèrent cette option afin de faire une mise à jour moins régulière pour maintenir leurs parcs de machine.
+Il faut noter la présence d'un texte juste en dessous du gros bouton vert, "En quête de la version la plus stable? Télécharger QGIS 3.xx LTR". Ceux qui prennent cette version cherche un support plus long dans le temps même s'ils ne disposeront de ce fait pas des fonctionnalités récemment introduites. Généralement, ce sont des entreprises, des collectivités qui préfèrent cette option afin de faire une mise à jour moins régulière pour maintenir leurs parcs de machine.
 
 ## Consommer le WFS
 
@@ -114,7 +114,7 @@ Il existe plusieurs types de requêtes pour interroger un serveur WFS
 
 On déduit que la couche `Tache_urbaine_1980_R43` dispose des colonnes `Id` de type `string`, `Annee_tache` de type `integer` et `Surface_ha` de type `double` et que la couche dispose d'une géométrie de type polygone.
 
-Il existe une version du WFS dite WFS-T comme Transactionnel. C'est à dire qui permet de la mise à jour de la base de données depuis un service WFS qui permet l'écriture et pas seulement la lecture. On ne détaille pas les opérations liées à ce dernier, étant dans une logique de consommation des données.
+Vous pouvez tomber sur d'autres types d'opération pour le WFS. Ils s'expliquent par l'existence d'un version du WFS dite WFS-T comme Transactionnel. C'est à dire qui permet de la mise à jour de la base de données depuis un service WFS qui permet l'écriture et pas seulement la lecture. On n'aborde pas ces opérations liées à ce dernier, étant dans une logique de consommation des données.
 
 #### Pour en savoir plus
 
@@ -131,6 +131,11 @@ Voir les documentations suivantes :
 #### Client lourd SIG bureautique QGIS
 
 Pour QGIS, vous pouvez prendre [le guide mis à disposition par l'IGN "Utiliser les données IGN en flux WFS"]( https://geoservices.ign.fr/documentation/services/utilisation-sig/tutoriel-qgis/wfs). Les instructions sont similaires, la seule chose qui change est l'URL à remplir.
+
+Pour mieux comprendre le WFS, un des meilleurs moyens est de passer par le pannel "Débogage/Outils de Développement" (raccourci clavier F12) pour pouvoir comprendre les requêtes réseaux effectuées par QGIS lorsqu'il fait les appels WFS. Voir la capture ci-dessous
+
+![](./images/wfs_qgis_debug_dev_panel.png)
+
 
 #### WFS client léger
 
@@ -154,7 +159,7 @@ Ce standard WMS comme Web Map Service est ancien (1999). Il est comme le WFS, pr
 
 #### Les deux principaux types de requêtes
 
-- `GetCapabilities` qui décrit ce que peut retourner le serveur pour un flux. Généralement, cela indique les informations du service comme la description, les contacts via le bloc `Service`; les opérations autorisées via le block `Request` les couches via des blocs `<Layer>` avec leur nom, leur description et les projections supportées. Vous pouvez inspecter cela via l'URL suivante <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities>
+- `GetCapabilities` qui décrit ce que peut retourner le serveur pour un flux. Généralement, cela indique les informations du service comme la description, les contacts via le bloc `Service`; les opérations autorisées via le block `Request` les couches via des blocs `<Layer>` avec leur nom, leur description et les projections supportées. Vous pouvez inspecter cela via l'URL suivante <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities>.
 
 - `GetMap` qui permet de retourner une image en passant dans l'URL la taille de l'image souhaitée, le nom de la ou les couches souhaitées, la projection de l'image, les coordonnées de l'étendue de l'image (les "4 coins"), le format de l'image (jpeg, png) et d'autres options. C'est ce qu'on voit dans l'URL <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=47.22558937316511418,5.983535451947194161,47.2768081055695788,6.065107850359938269&CRS=EPSG:4326&WIDTH=1345&HEIGHT=845&LAYERS=Tache_urbaine_1980_R43&STYLES=&FORMAT=image/png&DPI=192&MAP_RESOLUTION=192&FORMAT_OPTIONS=dpi:192&TRANSPARENT=TRUE>. Il est par ailleurs possible d'indiquer des styles soit internes soit externes dans l'appel pour que l'image change de style.
 
@@ -162,9 +167,9 @@ Ce standard WMS comme Web Map Service est ancien (1999). Il est comme le WFS, pr
 
 Ils existent des opérations optionnelles qui selon les serveurs sont activées ou non selon ce qui est indiqué dans le bloc `<Request>` de `GetCapabilities`
 
-- `GetFeatureInfo`: permet d'interroger l'information qui est sous-jacente à l'image, généralement lors d'un clic ou d'un survol souris. <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=47.24844174314760181,6.02724062451449427,47.24849566040156645,6.0273200523610484&CRS=EPSG:4326&WIDTH=2&HEIGHT=2&LAYERS=Tache_urbaine_1980_R43&STYLES=&FORMAT=image/png&QUERY_LAYERS=Tache_urbaine_1980_R43&INFO_FORMAT=application/vnd.ogc.gml&I=0&J=1&FEATURE_COUNT=10>
+- `GetFeatureInfo`: permet d'interroger l'information qui est sous-jacente à l'image, généralement lors d'un clic ou d'un survol souris. <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=47.24844174314760181,6.02724062451449427,47.24849566040156645,6.0273200523610484&CRS=EPSG:4326&WIDTH=2&HEIGHT=2&LAYERS=Tache_urbaine_1980_R43&STYLES=&FORMAT=image/png&QUERY_LAYERS=Tache_urbaine_1980_R43&INFO_FORMAT=application/vnd.ogc.gml&I=0&J=1&FEATURE_COUNT=10>.
 
-- `DescribeLayer`: permet de spécifier à d'autres outils, où aller chercher la description de la structure des couches <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=DescribeLayer&LAYERS=Tache_urbaine_1980_R43&SLD_VERSION=1.1.0> C'est surtout important si vous utilisez des styles dit SLD (pour "Styled Layer Descriptor"). Vous ne serez généralement pas concerné par cet usage.
+- `DescribeLayer`: permet de spécifier à d'autres outils, où aller chercher la description de la structure des couches <https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=DescribeLayer&LAYERS=Tache_urbaine_1980_R43&SLD_VERSION=1.1.0>. C'est surtout important si vous utilisez des styles dit SLD (pour "Styled Layer Descriptor"). Vous ne serez généralement pas concerné par cet usage.
 - `GetLegendGraphic`: retourne la légende de la carte. Voici [un exemple d'appel à ce type d'opération](https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38154/aea04585-605e-4372-abec-ade0d2380076.internet.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetLegendGraphic&LAYER=Tache_urbaine_1980_R43&FORMAT=image/png&SLD_VERSION=1.1.0). Comme pour `GetMap`, on peut spécifier un style si nécessaire.
 
 #### Pour en savoir plus
@@ -199,13 +204,17 @@ Pour l'affichage de carte en WMS (opération `GetMap`),
 - Maplibre GL JS. [Exemple non tuilé](https://gist.githack.com/ThomasG77/87da9421f89fc8290e6c3cc59251bdc9/raw/847bdec7c8d95cf9de0da6aad6d6b77e77f10bc9/index.html) et [tuilé](https://gist.githack.com/ThomasG77/6459d9b75a6c6bc2d757049c2e3d5858/raw/a1b5751afee6bbd06fc15bab8ff6846f31021ab7/index.html)
 - Leaflet ([exemple](https://gist.githack.com/ThomasG77/f27f62d1e3fb6ea79b406fbfa5d004bb/raw/e25b4bef7574074ff1bfa1b2261e4a81ff3265eb/index.html))
 
-Vous avoir un aperçu visuel rapide d'un couche, vous pouvez passer par le projet [mviewer](https://mviewer.netlify.app) comme illustré via [cet exemple via un proxy](https://kartenn.region-bretagne.fr/kartoviz/?x=706890&y=6242153&z=7&config=demo/addlayers.xml&addLayer={\%22url\%22:\%22https://corsproxy.io/?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map%3D\/opt\/data\/carto\/geoide-catalogue\/1.4\/org_5443264\/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map\%22,\%22name\%22:\%22AGENDA21_S_R44\%22,\%22title\%22:\%22AGENDA21_S_R44\%22}#)
+Vous avoir un aperçu visuel rapide d'un couche, vous pouvez passer par le projet [mviewer](https://mviewer.netlify.app) comme illustré via [cet exemple via un proxy](https://kartenn.region-bretagne.fr/kartoviz/?x=706890&y=6242153&z=7&config=demo/addlayers.xml&addLayer={\%22url\%22:\%22https://corsproxy.io/?https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map%3D\/opt\/data\/carto\/geoide-catalogue\/1.4\/org_5443264\/ccf16ee8-5b97-4cf5-9257-c88102c106e2.internet.map\%22,\%22name\%22:\%22AGENDA21_S_R44\%22,\%22title\%22:\%22AGENDA21_S_R44\%22}#).
 
-*Attention*: Pour le web, il faut généralement utiliser un proxy car tous les serveurs ne supportent pas qu'on accède depuis une page web à leur contenu hébergé sur un autre domaine. Il existe des proxy publics comme https://data.europa.eu/deu-proxy? ou https://corsproxy.io/? mais nous vous recommandons d'installer le vôtre si vous avez un usage en production. Il en existe dans la plupart des languages de programmation. Vous pouvez trouvez une liste sur <https://github.com/topics/cors-proxy?o=desc&s=stars> (filtrez selon votre language de programmation)
+*Attention*: Pour le web, il faut généralement utiliser un proxy car tous les serveurs ne supportent pas qu'on accède depuis une page web à leur contenu hébergé sur un autre domaine. Il existe des proxy publics comme https://data.europa.eu/deu-proxy? ou https://corsproxy.io/? mais nous vous recommandons d'installer le vôtre si vous avez un usage en production. Il en existe dans la plupart des languages de programmation. Vous pouvez trouvez une liste sur <https://github.com/topics/cors-proxy?o=desc&s=stars> (filtrez selon votre language de programmation).
 
-#### Liste des couches et leur description ou bien une vignette d'une zone sous forme image, pour un aperçu
+#### Accès languages serveur WMS
 
-**Python**
+Il sert à adresser l'accès à la liste des couches et leur description ou bien encore un aperçu image d'une couche. Voir ci-dessous pour des exemples en Python
+
+**Liste des informations du WMS**
+
+***Python***
 
 Avec [Owslib](https://geopython.github.io/OWSLib/)
 
@@ -249,9 +258,9 @@ for name, content_metadata in wms.items():
 
 Pour les autres languages de programmation, il faut vous appuyer sur le parsing XML natif ou fournit par des bibliothèques tierces.
 
-#### Manipulations WMS côté serveur
+**Liste des couches et aperçu image de la couche**
 
-Python
+***Python***
 
 ```python
 import json
@@ -302,7 +311,9 @@ else:
 
 ```
 
-Exemple retournant une image statique
+**Exemple retournant une image statique**
+
+***Python***
 
 ```python
 from owslib.wms import WebMapService
@@ -319,7 +330,7 @@ with open(f"N_PERIM_MAET_ZINF_S_R11.png", 'wb') as out:
     out.write(response.read())
 ```
 
-## ATOM = WFS sans la complication
+## ATOM, une alternative au WFS sans complication
 
 ATOM est le format qui est utilisé dans les flux RSS. Il est enrichi dans le cas des catalogues de données géographiques.
 
