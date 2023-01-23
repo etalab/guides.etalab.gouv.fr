@@ -24,18 +24,30 @@ Au-delà de la dimension légale, l'ouverture des données est une preuve de tra
 
 ## Maintenir votre schéma de données
 
-(remplace le dernier paragraphe de la partie 3)
-
 Aussi exhaustive qu'ait été la phase de concertation, il est possible que des modifications soient nécessaires afin de rendre plus précis ou plus accessible par exemple. Clarifications de la documentation, corrections d’erreurs, évolutions du cadre réglementaire, etc. sont autant de raisons où il est indispensable de mettre en œuvre une nouvelle version.
 
 Posséder un dépôt Git pour votre schéma de données vous permettra d’avoir plusieurs versions et tags. Notez que [schema.data.gouv.fr](https://schema.data.gouv.fr) supporte plusieurs versions pour un même schéma de données et affiche les modifications effectuées au fur et à mesure, dès lors que ces modifications sont renseignées dans un fichier dédié.
 
 Si un schéma que vous maintenez doit être modifié, vous pouvez suivre les étapes suivantes :
 1. faire une nouvelle [phase de concertation](2-phase-concertation.md) afin d'évoquer les problématiques qui imposent un changement et de trouver la solution la plus adaptée ;
-2. lorsqu'un accord est trouvé, mettre à jour techniquement le schéma lui-même ;
+2. lorsqu'un accord est trouvé, mettre à jour techniquement le schéma lui-même (cf. le paragraphe ci-après);
 3. mettre à jour la documentation du schéma ;
 4. déployer les mises à jour sous un nouveau tag de version ;
 5. communiquer sur cette mise à jour.
+
+Lorsque les modifications à faire à un schéma font consensus, il est nécessaire de les implémenter et de déployer une nouvelle version. Pour ce faire, vous pouvez suivre les étapes suivantes :
+1. répertorier toutes les changements à faire avant de les implémenter : anticiper l'impact sur les fichiers techniques et sur la documentation (notamment l'incrémentation de la version)
+2. faire les modifications listées à l'étape précédente :
+    - en local, puis pousser les changements avec les commandes git (add, commit et push)
+    - ou directement sur Github
+3. créer une release (nouvelle version) :
+    - sur la page Github de votre schéma, cliquer sur "X tags" (à côté des branches) : ici sont listées toutes les versions du schéma
+    - cliquer sur "Releases" puis "Draft a new release"
+    - indiquer le nom de la nouvelle version dans "Choose a tag" : par exemple si la version actuelle est v1.0.1, la nouvelle sera v1.0.2 (dans certains cas, il sera opportun de passer en 1.1.1 ou en 2.0.1)
+    - la branche cible ("target") est normalement la branche "main"
+    - documenter la nouvelle version : ajouter un titre et une description exhaustive des changements
+    - publier la release ("Publish release")
+
 
 Que ce soit pour des considérations techniques ou "philosphiques", [les équipes d’Etalab](https://www.etalab.gouv.fr/contact) sont disponibles pour vous accompagner dans le processus de mise à jour de votre schéma.
 
