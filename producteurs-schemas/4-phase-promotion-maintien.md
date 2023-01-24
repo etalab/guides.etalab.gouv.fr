@@ -27,13 +27,12 @@ Au-delà de la dimension légale, l'ouverture des données est une preuve de tra
 
 Aussi exhaustive qu'ait été la phase de concertation, il est possible que des modifications soient nécessaires afin de rendre plus précis ou plus accessible par exemple. Clarifications de la documentation, corrections d’erreurs, évolutions du cadre réglementaire, etc. sont autant de raisons où il est indispensable de mettre en œuvre une nouvelle version.
 
-schema.data.gouv.fr récupère le contenu de votre dépôt via des `releases` de celui-ci, c'est à dire des versions packagées de votre code (schéma + documentation). Avec ce système, il est alors possible pour schema.data.gouv.fr de suivre l'évolution formelle de votre schéma et de référencer les différentes versions au cours du temps. Cela permet également au concepteur de schémas de considérer les branches Git (`main` ou autre) comme un espace de développement qui est dissocié du référencement sur schema.data.gouv.fr
+[schema.data.gouv.fr](https://schema.data.gouv.fr/) récupère le contenu de votre dépôt via des `releases` de celui-ci, c'est à dire des versions packagées de votre code (schéma + documentation). Avec ce système, il est alors possible pour schema.data.gouv.fr de suivre l'évolution formelle de votre schéma et de référencer les différentes versions au cours du temps. Cela permet également au concepteur de schémas de considérer les branches Git (`main` ou autre) comme un espace de développement qui est dissocié du référencement sur schema.data.gouv.fr
 
 Une fois que l'état de votre branche principale, `main` par exemple, vous conviendra, vous pourrez sur Github ou Gitlab créé une release. Pour cela, il suffit d'ajouter un tag et une version correspondant à la version que vous souhaitez publier. Celle-ci sera par la suite automatiquement récupérée par schema.data.gouv.fr et affichée.
 
 Si un schéma que vous maintenez doit être modifié, vous pouvez suivre les étapes suivantes :
 1. faire une nouvelle [phase de concertation](2-phase-concertation.md) afin d'évoquer les problématiques qui imposent un changement et de trouver la solution la plus adaptée ; Si vous n'avez pas d'espace pour cela, nous vous conseillons de publier une [`issue` sur le dépôt Github de schema.data.gouv.fr](https://github.com/etalab/schema.data.gouv.fr/issues).
-
 2. lorsqu'un accord est trouvé, mettre à jour techniquement le schéma lui-même (cf. le paragraphe ci-après);
 3. mettre à jour la documentation du schéma ;
 4. déployer les mises à jour sous un nouveau tag de version ;
@@ -45,12 +44,12 @@ Lorsque les modifications à faire à un schéma font consensus, il est nécessa
     - en local, puis pousser les changements avec les commandes git (add, commit et push)
     - ou directement sur Github
 3. créer une release (nouvelle version) :
-    - sur la page Github de votre schéma, cliquer sur "X tags" (à côté des branches) : ici sont listées toutes les versions du schéma
-    - cliquer sur "Releases" puis "Draft a new release"
-    - indiquer le nom de la nouvelle version dans "Choose a tag" : par exemple si la version actuelle est v1.0.1, la nouvelle sera v1.0.2 (dans certains cas, il sera opportun de passer en 1.1.1 ou en 2.0.1)
-    - la branche cible ("target") est normalement la branche "main"
+    - sur la page Github de votre schéma, cliquer sur `X tags` (à côté des branches) : ici sont listées toutes les versions du schéma
+    - cliquer sur `Releases` puis `Draft a new release`
+    - indiquer le nom de la nouvelle version dans `Choose a tag` : par exemple si la version actuelle est v1.0.1, la nouvelle sera v1.0.2 (dans certains cas, il sera opportun de passer en 1.1.1 ou en 2.0.1)
+    - la branche cible (`target`) doit être la branche principale, si des développements ont été faits sur d'autres branches, il est nécessaire de les `merge` avec la branche principale (après validation des modifications)
     - documenter la nouvelle version : ajouter un titre et une description exhaustive des changements
-    - publier la release ("Publish release")
+    - publier la release (`Publish release`)
 
 
 Que ce soit pour des considérations techniques ou "conceptuelles", [les équipes d’Etalab](https://www.etalab.gouv.fr/contact) sont disponibles pour vous accompagner dans le processus de mise à jour de votre schéma.
