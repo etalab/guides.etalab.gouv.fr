@@ -39,7 +39,7 @@ Ce guide propose de vous accompagner lors des phases nécessaires à la créatio
 1. **Phase d’investigation** : envisager de créer un schéma de données ;
 1. **Phase de concertation** : rassembler plusieurs parties prenantes pour créer un schéma de données ;
 1. **Phase de construction** : implémenter le schéma de données obtenu après la phase de concertation;
-1. **Phase de maintien/diffusion/promotion** : faire la promotion d'un schéma auprès d'autres parties prenantes et le faire évoluer si besoin
+1. **Phase de maintien et de promotion** : faire la promotion d'un schéma auprès d'autres parties prenantes et le faire évoluer si besoin
 
 
 Il propose un processus à suivre, des bonnes pratiques et des outils.
