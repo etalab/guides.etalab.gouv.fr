@@ -47,7 +47,7 @@ Lorsque les modifications à faire à un schéma font consensus, il est nécessa
     - sur la page Github de votre schéma, cliquer sur `X tags` (à côté des branches) : ici sont listées toutes les versions du schéma
     - cliquer sur `Releases` puis `Draft a new release`
     - indiquer le nom de la nouvelle version dans `Choose a tag` : par exemple si la version actuelle est v1.0.1, la nouvelle sera v1.0.2 (dans certains cas, il sera opportun de passer en 1.1.1 ou en 2.0.1)
-    - la branche cible (`target`) doit être la branche principale, si des développements ont été faits sur d'autres branches, il est nécessaire de les `merge` avec la branche principale (après validation des modifications)
+    - la branche cible (`target`) doit être la branche principale, si des développements ont été faits sur d'autres branches, il est nécessaire de les `merge` avec la branche principale via une [`pull request`](https://docs.github.com/fr/pull-requests) (après validation des modifications)
     - documenter la nouvelle version : ajouter un titre et une description exhaustive des changements
     - publier la release (`Publish release`)
 
