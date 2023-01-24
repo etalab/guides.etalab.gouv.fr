@@ -26,7 +26,9 @@ Au-delà de la dimension légale, l'ouverture des données est une preuve de tra
 
 Aussi exhaustive qu'ait été la phase de concertation, il est possible que des modifications soient nécessaires afin de rendre plus précis ou plus accessible par exemple. Clarifications de la documentation, corrections d’erreurs, évolutions du cadre réglementaire, etc. sont autant de raisons où il est indispensable de mettre en œuvre une nouvelle version.
 
-Posséder un dépôt Git pour votre schéma de données vous permettra d’avoir plusieurs versions et tags. Notez que [schema.data.gouv.fr](https://schema.data.gouv.fr) supporte plusieurs versions pour un même schéma de données et affiche les modifications effectuées au fur et à mesure, dès lors que ces modifications sont renseignées dans un fichier dédié.
+schema.data.gouv.fr récupère le contenu de votre dépôt via des `releases` de celui-ci, c'est à dire des versions packagées de votre code (schéma + documentation). Avec ce système, il est alors possible pour schema.data.gouv.fr de suivre l'évolution formelle de votre schéma et de référencer les différentes versions au cours du temps. Cela permet également au concepteur de schémas de considérer les branches Git (`main` ou autre) comme un espace de développement qui est dissocié du référencement sur schema.data.gouv.fr
+
+Une fois que l'état de votre branche principale, `main` par exemple, vous conviendra, vous pourrez sur Github ou Gitlab créé une release. Pour cela, il suffit d'ajouter un tag et une version correspondant à la version que vous souhaitez publier. Celle-ci sera par la suite automatiquement récupérée par schema.data.gouv.fr et affichée.
 
 Si un schéma que vous maintenez doit être modifié, vous pouvez suivre les étapes suivantes :
 1. faire une nouvelle [phase de concertation](2-phase-concertation.md) afin d'évoquer les problématiques qui imposent un changement et de trouver la solution la plus adaptée ;
