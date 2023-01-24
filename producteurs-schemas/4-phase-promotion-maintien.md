@@ -8,7 +8,8 @@ permalink: /producteurs-schemas/phase-promotion-maintien
 La phase de maitien est la dernière phase du cycle de vie d'un schéma. Elle consiste à itérer sur la version actuelle en prenant en compte des évolutions du terrain et des retours des producteurs et des réutilisateurs pour peaufiner la structure du schéma. Elle est étroitement liée à la promotion du schéma qui permettra, grâce à son adoption par le plus de parties prenantes possibles, une montée en qualité et en quantité d'utilisations.
 :::
 
-Cette phase est dépendante de votre degré de proactivité. Faire vivre un schéma, que vous en soyez à l'origine ou un.e réutilisateur.rice peut s'avérer gratifiant et permettre de tisser des relations durables avec des acteurs parfois insoupçonnés.
+Modifier ou commenter un schéma contribue à faire vivre l'écosystème open data et permettra de vous identifier comme contributeur.rice sur un schéma spécifique.
+
 
 ## Promouvoir votre schéma de données
 
