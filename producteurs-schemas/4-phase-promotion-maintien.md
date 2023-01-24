@@ -52,7 +52,8 @@ Lorsque les modifications à faire à un schéma font consensus, il est nécessa
     - publier la release ("Publish release")
 
 
-Que ce soit pour des considérations techniques ou "philosphiques", [les équipes d’Etalab](https://www.etalab.gouv.fr/contact) sont disponibles pour vous accompagner dans le processus de mise à jour de votre schéma.
+Que ce soit pour des considérations techniques ou "conceptuelles", [les équipes d’Etalab](https://www.etalab.gouv.fr/contact) sont disponibles pour vous accompagner dans le processus de mise à jour de votre schéma.
+
 
 ## Points de sortie
 À l’issue de cette phase, vous devriez :
