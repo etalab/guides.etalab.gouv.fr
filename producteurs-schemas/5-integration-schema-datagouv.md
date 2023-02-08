@@ -32,7 +32,7 @@ Vous pouvez référencer votre schéma de données en ouvrant un ticket sur GitH
 
 ## Quels schémas de données sont acceptés ?
 
-[schema.data.gouv.fr](https://schema.data.gouv.fr) accepte des schémas de données décrit par un standard technique (voir la page ["Phase de construction"](./3-phase-construction.md) de ce présent guide). Les schémas de données décrits uniquement par de la documentation textuelle ou des tableaux ne sont pas acceptés.
+[schema.data.gouv.fr](https://schema.data.gouv.fr) accepte des schémas de données décrit par un standard technique (voir la page ["Phase de construction"](/producteurs-schemas/phase-construction) de ce présent guide). Les schémas de données décrits uniquement par de la documentation textuelle ou des tableaux ne sont pas acceptés.
 
 ### Standards techniques supportés
 Les standards techniques de schémas de données actuellement supportés sont les suivants :

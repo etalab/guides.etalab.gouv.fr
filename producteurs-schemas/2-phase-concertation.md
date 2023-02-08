@@ -23,7 +23,7 @@ Nous conseillons de mener cette phase de concertation en travaillant sur un docu
 En complément de ce document partagé, nous vous conseillons d’organiser plusieurs réunions afin de débattre du schéma de données à produire. L’implication d’une multitude d’acteurs est clé : vous devez rassembler des producteurs, experts métiers, experts techniques et réutilisateurs. La richesse des profils et des enjeux permettra d’aboutir à la solution la plus adaptée.
 
 ::: tip Référencer votre schéma
-Référencer votre schéma sur [schema.data.gouv.fr](https://schema.data.gouv.fr) vous permettra de bénéficier de conseils de la part d’Etalab et de ses partenaires institutionnels et associatifs. Découvrez comment [référencer votre schéma en cours de concertation](5-integration-schema-datagouv.md).
+Référencer votre schéma sur [schema.data.gouv.fr](https://schema.data.gouv.fr) vous permettra de bénéficier de conseils de la part d’Etalab et de ses partenaires institutionnels et associatifs. Découvrez comment [référencer votre schéma en cours de concertation](/producteurs-schemas/integration-schema-datagouv).
 :::
 
 ## Grands principes

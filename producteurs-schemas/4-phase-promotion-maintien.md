@@ -32,7 +32,7 @@ Aussi exhaustive qu'ait été la phase de concertation, il est probable que des 
 Une fois que l'état de votre branche principale, `main` par exemple, vous conviendra, vous pourrez sur Github ou Gitlab créer une release. Pour cela, il suffit d'ajouter un tag et une version correspondant à la nouvelle version que vous souhaitez publier. Celle-ci sera par la suite automatiquement récupérée par schema.data.gouv.fr et publiée (généralement sous 24h).
 
 Si un schéma que vous maintenez doit être modifié, vous pouvez suivre les étapes suivantes :
-1. faire une nouvelle [phase de concertation](2-phase-concertation.md) afin d'évoquer les problématiques qui imposent un changement et de trouver la solution la plus adaptée ; Si vous n'avez pas d'espace pour cela, nous vous conseillons de publier une [`issue` sur le dépôt Github de schema.data.gouv.fr](https://github.com/etalab/schema.data.gouv.fr/issues).
+1. faire une nouvelle [phase de concertation](/producteurs-schemas/phase-concertation) afin d'évoquer les problématiques qui imposent un changement et de trouver la solution la plus adaptée ; Si vous n'avez pas d'espace pour cela, nous vous conseillons de publier une [`issue` sur le dépôt Github de schema.data.gouv.fr](https://github.com/etalab/schema.data.gouv.fr/issues).
 2. lorsqu'un accord est trouvé, mettre à jour techniquement le schéma lui-même (cf. le paragraphe ci-après);
 3. mettre à jour la documentation du schéma ;
 4. déployer les mises à jour sous un nouveau tag de version ;
