@@ -51,14 +51,14 @@ La création d’un jeu de données en conformité avec un schéma de données e
 
 #### Comment identifier un schéma de données déjà existant ?
 
-Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près. Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) permet [d’intégrer les schémas de données et documentations associées](https://schema.data.gouv.fr/documentation/integration-autres-systemes) dans d’autres systèmes informatiques.
+Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près.
 
 #### Comment produire un jeu de données conforme à un schéma de données ?
 
-Si le jeu de données n’est pas extrait d’un système d’information mais saisi manuellement, [l’outil CSV-GG](https://csv-gg.etalab.studio/?schema=etalab%2Fschema-decp-dpa) peut assister le processus de production. À partir d’un schéma de données sélectionné, il est possible de saisir les valeurs de chaque information et ainsi produire un fichier exhaustif et conforme.
+Si le jeu de données n’est pas extrait d’un système d’information mais saisi manuellement, [l’outil publier.etalab.studio](https://publier.etalab.studio/) peut assister le processus de production. À partir d’un schéma de données sélectionné, il est possible de saisir les valeurs de chaque information et ainsi produire un fichier exhaustif et conforme.
 
 
-::: tip CSV-GG mode d'emploi
+::: tip Publier un jeu de données selon un schéma : mode d'emploi
 Cet outil vous permet de créer un fichier CSV en vous assurant qu'il est conforme à un schéma, c'est-à-dire que ses données sont complètes, valides et structurées.
 1. Sélectionnez le schéma qui vous intéresse dans la liste déroulante, les schémas disponibles ici étant ceux référencés sur schema.data.gouv.fr.
 2. Remplissez le formulaire à l'aide des descriptions des différents champs et des valeurs d'exemples. Les champs indiqués par un astérisque rouge doivent obligatoirement être renseignés au moment de la saisie.
@@ -72,11 +72,15 @@ Cet outil vous permet de créer un fichier CSV en vous assurant qu'il est confor
 
 Il est possible de valider la conformité d’un jeu de données à un schéma de données existant grâce à différents outils.
 
+La solution [Validata](https://validata.fr/) a été développée spécifiquement dans ce but. Vous pouvez y choisir le schéma, parmi la liste déroulante ou via une URL, selon lequel vous souhaitez valider un fichier tabulaire. Vous pouvez ensuite faire valider ce fichier, soit en l'important au format csv, soit en renseignant son URL.
+
+![Capture d'écran du menu de validata](./images/validata.png)
+
 Tout d'abord, il est possible d'indiquer que votre jeu de données correspond à un schéma depuis l'interface d'administration de data.gouv.fr. Lorsque vous déposez ou éditez une ressource, vous pouvez sélectionner le schéma correspondant à vos données dans une liste déroulante.
 
 ![Capture d'écran de la sélection d'un schéma depuis l'interface d'administration de data.gouv.fr](./images/selection-schema.png)
 
-Le fait d'indiquer que votre ressource est censée respecter un schéma permet de bénéficier de vérifications de la qualité des données et d'indiquer aux réutilisateurs que vos données respectent un référentiel.
+Le fait d'indiquer que votre ressource est censée respecter un schéma permet de bénéficier de vérifications de la qualité des données, d'indiquer aux réutilisateurs que vos données respectent un référentiel, ainsi que de contribuer aux fichiers aggrégés (par exemple [pour les données IRVE](https://www.data.gouv.fr/fr/datasets/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/)).
 
 ![Capture d'écran de data.gouv.fr des informations disponibles sur la page d'un jeu de données lorsqu'un schéma est spécifié sur une ressource](./images/modal-schema.png)
 
@@ -89,9 +93,9 @@ Si les données que vous souhaitez faire circuler ne correspondent à aucun sch�
 Tant que les données de votre administration sont dans un environnement logiciel, leur usage reste adapté à des problématiques métiers spécifiques. L’ouverture de ces données en dehors de leur environnement logiciel les émancipent de ce contexte métier. La structure du jeu de données doit alors être pensée en fonction des attentes des réutilisateurs et non plus en fonction des besoins propres à l’organisation.
 
 Les bonnes pratiques à suivre sont les suivantes :
-* Occulter l’ensemble des colonnes dont les champs contiennent des données couvertes par un secret légal (se référer au guide juridique pour plus d’information) ;
-* Occulter l’ensemble des colonnes dont les champs contiennent des données à caractère personnel dont la publication n’est pas nécessaire à l’information du public (se référer au guide juridique pour plus d’information) ;
-* Privilégier la présence de variables pivots. Ces variables proposent des identifiants communs qui permettent de lier plusieurs jeux de données entre eux (ex. Le numéro d’identification SIRET de la base Sirene). Pour plus de détails, consultez la page [Lier les données à un référentiel](2-lier-les-donnees-a-un-referentiel.md).
+* Occulter l’ensemble des colonnes dont les champs contiennent des données couvertes par un secret légal (se référer au [guide juridique](https://guides.etalab.gouv.fr/juridique) pour plus d’informations) ;
+* Occulter l’ensemble des colonnes dont les champs contiennent des données à caractère personnel dont la publication n’est pas nécessaire à l’information du public (se référer au [guide juridique](https://guides.etalab.gouv.fr/juridique) pour plus d’informations) ;
+* Privilégier la présence de variables pivots. Ces variables proposent des identifiants communs qui permettent de lier plusieurs jeux de données entre eux (ex. Le numéro d’identification SIRET de la base Sirene). Pour plus de détails, consultez la page [Lier les données à un référentiel](/qualite/lier-les-donnees-a-un-referentiel).
 
 Il est également nécessaire de mener une réflexion sur la granularité de votre jeu de données :
 * Faut-il proposer des données fines ou agrégées ?

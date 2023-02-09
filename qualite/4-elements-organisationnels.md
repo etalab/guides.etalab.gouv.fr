@@ -12,7 +12,7 @@ La démarche de partage des données implique un engagement des équipes métier
 
 * **Valoriser la publication de nouveaux jeux de données à fort impact ou la mise en place d’une démarche de circulation des données en interne** : la rédaction d’articles de blog, le relais sur les réseaux sociaux et l’organisation de _data session_ et de hackathons sont des moyens de mettre en avant la démarche de circulation, de valoriser le travail des équipes métiers et de favoriser les réutilisations.
 
-* **Animer la communauté de réutilisateurs** : il est nécessaire d’engager un dialogue constant avec la communauté de réutilisateurs des données afin de faciliter la réutilisation des données et évaluer les impacts. Il est notamment conseillé de proposer un espace d’échange en ligne (sous forme de modules de commentaire ou de forum) et d’organiser régulièrement des ateliers de discussion entre producteurs et réutilisateurs.
+* **Animer la communauté de réutilisateurs** : il est nécessaire d’engager un dialogue constant avec la communauté de réutilisateurs des données afin de faciliter la réutilisation des données et évaluer les impacts. Il est notamment conseillé de proposer un espace d’échange en ligne (sous forme de modules de commentaire comme c'est possible sur data.gouv.fr, ou de forum) et d’organiser régulièrement des ateliers de discussion entre producteurs et réutilisateurs.
 
 ## Les prochaines étapes
 
@@ -23,8 +23,8 @@ La préparation de votre jeu de données à la circulation est le début de votr
 * Comment faire circuler les jeux de données entre organisations ?
 
 Etalab propose différents guides pour vous accompagner sur ces sujets :
-* Cadre légal de l'open data
-* Publication des données sur data.gouv.fr
+* [Cadre légal de l'open data](/juridique/)
+* [Publication des données sur data.gouv.fr](/data.gouv.fr/)
 * Circulation des données entre acteurs
 
 ## Informations complémentaires

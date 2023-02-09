@@ -9,7 +9,7 @@ Ce guide a été publié initialement fin mars 2020 et est mis à jour de maniè
 :::
 
 ::: lexique Schémas de données
-Les schémas de données permettent de décrire la structure d'un jeu de données. Ils indiquent clairement quels sont les différents champs, comment sont représentées les données, quelles sont les valeurs possibles, leur format, etc.
+Les schémas de données permettent de décrire la structure d'un fichier d'un jeu de données. Ils indiquent clairement quels sont les différents champs, comment sont représentées les données, quelles sont les valeurs possibles, leur format, etc.
 
 Synonymes : *modèle de données*, *modèle logique de données*, *schéma*.
 :::
