@@ -24,7 +24,7 @@ Ces situations sont des exemples où il est pertinent de créer un schéma de do
 -
     > Le ministère chargé des transports souhaite consolider une base nationale des lieux pouvant servir de points de covoiturage. Les collectivités territoriales sont en charge de la création, recensement et aménagement de ces lieux.
 
-    Il est pertinent de créer un schéma de données car un grand nombre de producteurs de données doivent produire le même jeu de données. Un schéma facilitera la diffusion des prérequis, permettra la validation des données et facilitera l’agrégation nationale.
+    Il est pertinent de créer un schéma de données car un grand nombre de producteurs de données doivent produire des données dans un format homogène. Un schéma facilitera la diffusion des prérequis, permettra la validation des données et facilitera l’agrégation nationale.
 -
     > L’INSEE souhaite diffuser le Code Officiel Géographique. Il rassemble des données sur des communes, des cantons, des arrondissements, des départements, des régions et des pays. Ce fichier est actualisé tous les ans.
 
