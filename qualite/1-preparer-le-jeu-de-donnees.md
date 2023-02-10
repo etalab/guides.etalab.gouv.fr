@@ -27,7 +27,7 @@ Deux approches sont envisageables :
 
 
 ::: lexique Schéma de données
-Un schéma de données est un modèle qui permet de décrire de manière précise et univoque les différents champs et valeurs possibles qui composent un fichier.
+Un schéma de données est un document qui permet de décrire de manière précise et univoque les différents champs et valeurs possibles qui composent un fichier.
 
 Il permet notamment de valider qu’un fichier se conforme à un schéma, de générer de la documentation automatiquement, de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
 Ces schémas facilitent la montée en qualité et le croisement des données proposées en open data, surtout lorsque plusieurs producteurs de données sont amenés à produire un même jeu de données.
@@ -41,7 +41,7 @@ Les schémas existants peuvent avoir été définis par voie :
 
 #### Pourquoi utiliser un schéma de données ?
 
-La création de données en conformité avec un schéma de données existant apporte plusieurs bénéfices :
+La publication de données en conformité avec un schéma de données existant apporte plusieurs bénéfices :
 
 * Les données créées peuvent être facilement croisées avec d’autres jeux de données conformes au standard utilisé ;
 * L'interopérabilité des données et leur croisement est simplifié ;
@@ -155,4 +155,4 @@ Dans un fichier CSV, la virgule n’est pas considérée comme un séparateur d�
 
 ### Gestion des champs non attribués
 
-Il est possible qu’un champ d'un fichier ne soit pas attribué. Il convient de laisser ce champ vide plutôt que d’attribuer la valeur 0. Le zéro correspond à une valeur, qui peut dénaturer le sens de votre fichier.
+Il est possible que certaines occurrences d’un champ d'un fichier ne soit pas attribuées. Il convient de laisser ces occurrences vides plutôt que d’attribuer la valeur 0 (ou une autre valeur par défaut). Le zéro correspond à une valeur, qui peut dénaturer le sens de votre fichier.

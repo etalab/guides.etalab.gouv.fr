@@ -5,7 +5,7 @@ permalink: /qualite/lier-les-donnees-a-un-referentiel
 # Lier les données à un référentiel
 
 
-Comme explicité dans la page [Préparer le jeu de données - *Cas 2 - La structure de vos données ne correspond à aucun schéma de données existant*](/qualite/preparer-le-jeu-de-donnees/#cas-2-la-structure-du-jeu-de-donnees-ne-correspond-a-aucun-schema-de-donnees-existant), il est important d'intégrer dans vos jeux de données des données pivots relevant d'un référentiel.
+Comme explicité dans la page [Préparer le jeu de données - *Cas 2 - La structure de vos données ne correspond à aucun schéma de données existant*](/qualite/preparer-le-jeu-de-donnees/#cas-2-la-structure-de-vos-donnees-ne-correspond-a-aucun-schema-de-donnees-existant), il est important d'intégrer dans vos jeux de données des données pivots relevant d'un référentiel.
 
 ::: tip Exemple
 Mon jeu de données est une liste d'actions culturelles menées par ma région. Certaines de ces actions sont gérées par des associations. Il peut être intéressant de publier un jeu de données recensant ces actions avec un champ correspondant à l'identification des associations. Cet identifiant existe et est standardisé, il s'agit du numéro RNA, identifiant national des associations dont le répertoire est opéré par le ministère de l'Intérieur.
