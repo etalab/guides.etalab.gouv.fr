@@ -5,15 +5,13 @@ permalink: /qualite/documenter-les-donnees
 
 # Documenter les données
 
-[[toc]]
-
 Les données issues de votre organisation ont été produites dans un contexte métier particulier. Un individu externe à l’organisation n’est pas forcément familier avec cet environnement métier, ce qui peut le freiner dans l’exploitation des données diffusées.
 
 La documentation de vos jeux de données a une visée pédagogique et facilite la réutilisation des données. Elle décrit les données et la structure des fichiers publiés.
 
-Il est conseillé de proposer votre documentation en ligne et non sous format PDF. Une documentation en ligne permet de s’assurer que les réutilisateurs des données disposent toujours de la version la plus à jour. Des portails de données, tels que www.data.gouv.fr, proposent des espaces dédiés à la documentation du jeu de données. Vous pouvez également héberger votre documentation sur des sites web statiques. Si le jeu de données a pour vocation de circuler en interne de votre organisation, nous vous conseillons à minima de proposer une documentation dans un fichier séparé aux données. Le fichier contenant les données doit être réservé au à la manipulation de ces dernières. Le fichier contenant la documentation a lui pour vocation d’informer sur la nature des données et sur la structure des fichiers.
+Il est conseillé de proposer votre documentation en ligne et non sous format PDF. Une documentation en ligne permet de s’assurer que les réutilisateurs des données disposent toujours de la version la plus à jour. Des portails de données, tels que [data.gouv.fr](https://www.data.gouv.fr), proposent des espaces dédiés à la documentation du jeu de données. Vous pouvez également héberger votre documentation sur des sites web statiques. Si le jeu de données a pour vocation de circuler en interne de votre organisation, nous vous conseillons a minima de proposer une documentation dans un fichier séparé des données. Le fichier contenant les données doit être réservé au à la manipulation de ces dernières. Le fichier contenant la documentation a lui pour vocation d’informer sur la nature des données et sur la structure des fichiers.
 
->Dans le cadre de la publication des données de sauvetage en mer (opérations coordonnées par les CROSS), un [site statique](https://mtes-mct.github.io/secmar-documentation/) a été créé afin de présenter la documentation du jeu de données.
+> Exemple : Dans le cadre de la publication des données de sauvetage en mer (opérations coordonnées par les CROSS), un [site statique](https://mtes-mct.github.io/secmar-documentation/) a été créé afin de présenter la documentation du jeu de données.
 > ![Documentation SECMAR](./images/doc_secmar.png)
 
 ## Description générale du jeu de données 
@@ -26,9 +24,8 @@ La description peut couvrir les points suivants :
 * La description du format des fichiers ;
 * La fréquence de mise à jour.
 
-> *Description générale du [jeu de données du Répertoire national des élus](https://www.data.gouv.fr/fr/datasets/repertoire-national-des-elus-1/)*
+> Description générale du [jeu de données du Répertoire national des élus](https://www.data.gouv.fr/fr/datasets/repertoire-national-des-elus-1/)
 > ![Description Répertoire national des élus](./images/description_rne.png)
-> *Description générale du jeu de données du Répertoire national des élus*
 
 ## Description du mode de production des données 
 
@@ -41,14 +38,21 @@ Il est également conseillé de préciser les points d’attention et précautio
 
 À partir de la description du mode de production du jeu de données, le réutilisateur comprend la structure du jeu, la nature des données mais aussi les possibles manques ou incohérences figurant dans le fichier.
 
-## Description du modèle de données 
+## Description du modèle de données
+
+::: lexique Schéma de données VS modèle de données
+S'ils peuvent être utilisés dans des contextes proches, les termes "schéma" et "modèle" sont bien différents :
+* un schéma décrit la structure d'un fichier (ses champs et leur format)
+* un modèle décrit les relations entre plusieurs fichiers qui forment un jeu de données. Si plusieurs fichiers sont inclus dans un modèle, chacun de ces fichiers peut être soumis à son propre schéma (c'est même préférable, pour une qualité maximale).
+:::
+
 Le jeu de données que vous mettez à disposition peut se composer de plusieurs éléments liés entre eux. Le modèle de données décrit la structure logique du jeu de données.
 Il est conseillé de faire apparaître ce modèle de données à l’aide de schémas et de tableaux. Si votre jeu de données se compose de plusieurs fichiers, il est souhaitable de faire apparaître les relations entre eux.
 
 > [La documentation](https://mtes-mct.github.io/secmar-documentation/schema.html) du jeu de données des opérations de sauvetage en mer décrit le modèle de données utilisé. Ce modèle de données permet de comprendre rapidement les relations qui unissent les différents fichiers du jeu de données.
-> ![Schéma de données SECMAR](./images/schema_secmar.png)
+> ![Modèle de données SECMAR](./images/schema_secmar.png)
 
-Si vous publiez des données tabulaires, vous pouvez produire un tableau récapitulatif indiquant, pour chaque colonne :
+Si vous publiez des données tabulaires, vous pouvez produire un tableau récapitulatif, basé sur un schéma (si le fichier s'inscrit dans un schéma), indiquant pour chaque colonne :
 * le nom de la colonne
 * son type de données (entier, chaîne de caractères, nombre décimal etc.)
 * la description de la donnée contenue dans cette colonne
@@ -60,7 +64,7 @@ Si vous publiez des données tabulaires, vous pouvez produire un tableau récapi
 Les termes employés dans un jeu de données sont propres à un environnement métier. S’il existe des termes complexes ou des énumérations, il est conseillé de faire apparaitre un lexique de ces valeurs.
 Cet effort de définition fait gagner un temps considérable au réutilisateur lorsqu’il s’approprie le jeu de données. De plus, le partage de définitions formalisées et uniques permet de prévenir des contre-sens dans l’exploitation des données.
 
-> La base de données de demande de valeur foncière recense l’ensemble des transactions immobilières intervenues au cours des cinq dernières années. Le vocabulaire utilisé dans ce jeu de données est issu d’un environnement administratif, parfois difficile à appréhender. La Direction générale des Finances publiques met à disposition une [documentation](https://static.data.gouv.fr/resources/demande-de-valeurs-foncieres/20190419-091745/notice-descriptive-du-fichier-dvf.pdf)  qui comprend notamment un lexique de définition des termes rencontrés. Ce lexique facilite l’appropriation et la réutilisation des données par des acteurs tiers.
+> La base de données de [demande de valeur foncière](https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/) recense l’ensemble des transactions immobilières intervenues au cours des cinq dernières années. Le vocabulaire utilisé dans ce jeu de données est issu d’un environnement administratif, parfois difficile à appréhender. La Direction générale des Finances publiques met à disposition une [documentation](https://static.data.gouv.fr/resources/demande-de-valeurs-foncieres/20190419-091745/notice-descriptive-du-fichier-dvf.pdf)  qui comprend notamment un lexique de définition des termes rencontrés. Ce lexique facilite l’appropriation et la réutilisation des données par des acteurs tiers.
 > ![Lexique des données du jeu de données Demande de valeur foncière](./images/lexique_dvf.png)
 
 ## Description des métadonnées
