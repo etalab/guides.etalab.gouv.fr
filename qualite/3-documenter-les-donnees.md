@@ -43,7 +43,7 @@ Il est également conseillé de préciser les points d’attention et précautio
 ::: lexique Schéma de données VS modèle de données
 S'ils peuvent être utilisés dans des contextes proches, les termes "schéma" et "modèle" sont bien différents :
 * un schéma décrit la structure d'un fichier (ses champs et leur format)
-* un modèle décrit les relations entre plusieurs éléments (fichiers) qui forment un jeu de données. Si plusieurs fichiers sont inclus dans un modèle, chacun de ces fichiers peut être soumis à son propre schéma (c'est même préférable, pour une qualité maximale).
+* un modèle décrit les relations entre plusieurs fichiers qui forment un jeu de données. Si plusieurs fichiers sont inclus dans un modèle, chacun de ces fichiers peut être soumis à son propre schéma (c'est même préférable, pour une qualité maximale).
 :::
 
 Le jeu de données que vous mettez à disposition peut se composer de plusieurs éléments liés entre eux. Le modèle de données décrit la structure logique du jeu de données.
