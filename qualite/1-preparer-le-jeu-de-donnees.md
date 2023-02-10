@@ -39,16 +39,6 @@ Les schémas existants peuvent avoir été définis par voie :
 * **Réglementaire** : un modèle de données a été défini de manière réglementaire, par décret ou arrêté. Un schéma est un moyen de faciliter l’adoption de ces modèles par les producteurs de données.Par exemple, le schéma de données relatif à la publication des données essentielles dans la commande publique est fixé par [arrêté depuis le 14 avril 2017](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034492587&categorieLien=id).
 * **D’usage** : la réutilisation des données décrites par le schéma bénéficie à un grand nombre de réutilisateurs ou de nombreux producteurs sont amenés à utiliser ce schéma.
 
-#### Pourquoi utiliser un schéma de données ?
-
-La publication de données en conformité avec un schéma de données existant apporte plusieurs bénéfices :
-
-* Les données créées peuvent être facilement croisées avec d’autres jeux de données conformes au standard utilisé ;
-* L'interopérabilité des données et leur croisement est simplifié ;
-* Si le jeu de données que vous créez est une agrégation de plusieurs fichiers produits par différents acteurs, la formalisation et le partage d’un standard  de données  facilite le travail d’agrégation des données ;
-* La formalisation d’un standard de données assure une pérennité des fichiers dans le temps ;
-* La documentation d’un standard de données existant est déjà rédigée et accessible.
-
 #### Comment identifier un schéma de données déjà existant ?
 
 Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près.
