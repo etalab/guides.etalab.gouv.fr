@@ -8,7 +8,7 @@ L’API découpage administratif permet d’obtenir des données administratives
 
 L'API Découpage Administratif est principalement destinée à un besoin de recherches pour des formulaires en partant du nom de la commune, du code postal ou bien du code INSEE. 
 
-Les usages départements ou régions bien que pratiquent semblent moins intéressant car les données ne changent quasiment jamais dans le temps et le nombre limités d'éléments fait qu'il est possible de gérer ces informations côté client.
+Les usages départements ou régions, bien que pratiques, semblent moins intéressant car les données ne changent quasiment jamais dans le temps et le nombre limité d'éléments fait qu'il est possible de gérer ces informations côté client.
 
 ## Utilisation de l'API dans un site web
 
@@ -88,7 +88,7 @@ Même s'il est possible de retrouver comment fonctionne le WFS en regardant le [
 
 Si vous avez besoin de récupérer toutes les communes, il est plutôt recommandé de récupérer les données brutes depuis [Admin Express](https://geoservices.ign.fr/adminexpress), documenté aussi sur cette page. Nous vous recommandons d'avoir installé [GDAL](https://gdal.org/), un utilitaire en ligne de commande.
 
-Son principal intérêt est de pallier à certains scénarios que n'adresse pas pour le moment l'API Découpage Administratif. Il nécessite de comprendre quelques préalables.
+Son principal intérêt est de pallier certains scénarios que n'adresse pas pour le moment l'API Découpage Administratif. Il nécessite de comprendre quelques préalables.
 
 #### Lister les couches d'un endpoint WFS
 
