@@ -13,14 +13,19 @@ Pour spécifier un schéma de données, il est nécessaire de définir :
 - les champs ;
 - les types associés de ces champs (une date, un nombre, une chaîne de caractère etc.) ;
 - les contraintes de chaque champ (entier positif, texte dans une liste fermée etc.) ;
+- les relations de dépendance entre deux champs
 - la description de chaque champ ;
 - une documentation associée au schéma de données décrivant le contexte, les acteurs, les cas d’usages.
+
+Pour obtenir ce résultat, il peut être utile de réaliser au préalable un modèle de données qui présente les entités "métier" (définies par un ensemble d'attributs) et les relations qui existent entre deux entités.
+   
+La modélisation ne prend pas en compte les contraintes d'implémentation, elle est un outil de dialogue entre les différents intervenants.
 
 ## Procédure de collaboration
 
 Nous conseillons de mener cette phase de concertation en travaillant sur un document partagé, accessible en ligne, tel qu’un [Framapad](https://framapad.org) ou Google Doc. L’important est que plusieurs contributeurs puissent contribuer (modifier ou mettre des commentaires) sans avoir besoin d’être présents physiquement ou de recevoir des versions intermédiaires par e-mails.
 
-En complément de ce document partagé, nous vous conseillons d’organiser plusieurs réunions afin de débattre du schéma de données à produire. L’implication d’une multitude d’acteurs est clé : vous devez rassembler des producteurs, experts métiers, experts techniques et réutilisateurs. La richesse des profils et des enjeux permettra d’aboutir à la solution la plus adaptée.
+En complément de ce document partagé, nous vous conseillons d’organiser plusieurs réunions afin de débattre du modèle de données construit et du schéma de données à produire. L’implication d’une multitude d’acteurs est clé : vous devez rassembler des producteurs, experts métiers, experts techniques et réutilisateurs. La richesse des profils et des enjeux permettra d’aboutir à la solution la plus adaptée.
 
 ::: tip Référencer votre schéma
 Référencer votre schéma sur [schema.data.gouv.fr](https://schema.data.gouv.fr) vous permettra de bénéficier de conseils de la part d’Etalab et de ses partenaires institutionnels et associatifs. Découvrez comment [référencer votre schéma en cours de concertation](/producteurs-schemas/integration-schema-datagouv).
@@ -29,6 +34,7 @@ Référencer votre schéma sur [schema.data.gouv.fr](https://schema.data.gouv.fr
 ## Grands principes
 Nous avons listé ci-dessous plusieurs conseils qui vous permettront de construire un schéma de données de qualité.
 
+- **Construire un modèle de données.** Il est important de disposer d'un outil visuel qui présente les entités "métier" mais surtout les dépendances et relations entre ces "entités". Ce modèle peut être enrichi de tous les attributs nécessaires au fur et à mesure de la concertation.
 - **Profiter de l’existant.** De nombreux standards existent déjà, qu’ils concernent des formats de données ou des formats de champs. Certains standards sont devenus incontournables aujourd’hui, comme [ISO-8601](https://fr.wikipedia.org/wiki/ISO_8601) pour les dates ou [WGS 84](https://fr.wikipedia.org/wiki/WGS_84) pour les coordonnées géographiques.
 - **Identifier et associer l’écosystème.** Les personnes/organisations que vous associez sont la meilleure garantie d’un schéma de données efficace et largement adopté, permettant d'aboutir à un véritable standard :
     - D'un côté les producteurs, qui connaissent la réalité de leurs données, de la collecte, etc. et qui ont leurs propres usages. 
@@ -48,4 +54,5 @@ En complément, nous avons rédigé [un guide dédié à la préparation de jeux
 À l’issue de cette phase, vous devriez :
 
 - Avoir réuni divers partenaires afin de collaborer sur votre schéma de données;
+- Disposer d'un modèle de données validé;
 - Avoir décidé des différents champs de votre schéma de données, leurs types et définitions et produit une documentation associée.
