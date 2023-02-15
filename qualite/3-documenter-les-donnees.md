@@ -42,21 +42,29 @@ Il est également conseillé de préciser les points d’attention et précautio
 
 ::: lexique Schéma de données VS modèle de données
 S'ils peuvent être utilisés dans des contextes proches, les termes "schéma" et "modèle" sont bien différents :
-* un schéma décrit la structure d'un fichier (ses champs et leur format)
-* un modèle décrit les relations entre plusieurs fichiers qui forment un jeu de données. Si plusieurs fichiers sont inclus dans un modèle, chacun de ces fichiers peut être soumis à son propre schéma (c'est même préférable, pour une qualité maximale).
+* un schéma décrit la structure d'un fichier (ses champs et leur format).
+* un modèle décrit la structure logique du jeu de données sous la forme d'objets (ou entités) et de relations (ou associations). Les objets sont définis par une liste d'attributs.
+Les champs d'un schéma sont la traduction physique des attributs des entités du modèle.
 :::
 
-Le jeu de données que vous mettez à disposition peut se composer de plusieurs éléments liés entre eux. Le modèle de données décrit la structure logique du jeu de données.
-Il est conseillé de faire apparaître ce modèle de données à l’aide de schémas et de tableaux. Si votre jeu de données se compose de plusieurs fichiers, il est souhaitable de faire apparaître les relations entre eux.
+Le modèle de données est avant tout un outil de dialogue entre les différents intervenants. 
+Il est conseillé de faire apparaître ce modèle de données à l’aide de schémas et de tableaux. Si votre jeu de données se compose de plusieurs entités, il est souhaitable de faire apparaître les relations entre elles.
+    
+Une fois le modèle établi, il convient de définir le découpage en fichiers. On peut décider de regrouper des entités dans un même fichier ou au contraire d'associer une seule entité à un fichier.
 
-> [La documentation](https://mtes-mct.github.io/secmar-documentation/schema.html) du jeu de données des opérations de sauvetage en mer décrit le modèle de données utilisé. Ce modèle de données permet de comprendre rapidement les relations qui unissent les différents fichiers du jeu de données.
+> [La documentation](https://mtes-mct.github.io/secmar-documentation/schema.html) du jeu de données des opérations de sauvetage en mer décrit le modèle de données utilisé. Ce modèle de données permet de comprendre rapidement les relations qui unissent les différentes entités du jeu de données.
+> Dans cet exemple, il a été choisi d'associer un fichier par entité.
 > ![Modèle de données SECMAR](./images/schema_secmar.png)
 
-Si vous publiez des données tabulaires, vous pouvez produire un tableau récapitulatif, basé sur un schéma (si le fichier s'inscrit dans un schéma), indiquant pour chaque colonne :
+## Description du schéma de données
+
+Si vous publiez des données tabulaires, vous pouvez produire un tableau récapitulatif indiquant, pour chaque colonne :
 * le nom de la colonne
 * son type de données (entier, chaîne de caractères, nombre décimal etc.)
 * la description de la donnée contenue dans cette colonne
 * une ou plusieurs valeurs d’exemple.
+
+Mais la méthode recommandée est plutôt de produire un schéma de données. Le guide 'créer des schémas de données' permet d'obtenir toutes les informations nécessaires à sa mise en oeuvre.
 
 > La documentation du jeu de données de sauvetage en mer présente un tableau récapitulatif des différentes colonnes. La description des champs permet de faire le lien avec le fichier de données, ce qui facilite la lecture des données.
 > ![Descriptif des colonnes du jeu de données SECMAR](./images/table_secmar.png)
