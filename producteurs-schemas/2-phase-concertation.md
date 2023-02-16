@@ -13,12 +13,11 @@ Pour spécifier un schéma de données, il est nécessaire de définir :
 - les champs ;
 - les types associés de ces champs (une date, un nombre, une chaîne de caractère etc.) ;
 - les contraintes de chaque champ (entier positif, texte dans une liste fermée etc.) ;
-- les relations de dépendance entre deux champs
 - la description de chaque champ ;
 - une documentation associée au schéma de données décrivant le contexte, les acteurs, les cas d’usages.
 
-Pour obtenir ce résultat, il peut être utile de réaliser au préalable un modèle de données qui présente les entités "métier" (définies par un ensemble d'attributs) et les relations qui existent entre deux entités.
-   
+Pour obtenir ce résultat, il peut être utile de réaliser au préalable un [modèle de données](https://guides.etalab.gouv.fr/qualite/documenter-les-donnees/#description-du-modele-de-donnees) qui présente la structuration des informations.
+
 La modélisation ne prend pas en compte les contraintes d'implémentation, elle est un outil de dialogue entre les différents intervenants.
 
 ## Procédure de collaboration
@@ -34,7 +33,7 @@ Référencer votre schéma sur [schema.data.gouv.fr](https://schema.data.gouv.fr
 ## Grands principes
 Nous avons listé ci-dessous plusieurs conseils qui vous permettront de construire un schéma de données de qualité.
 
-- **Construire un modèle de données.** Il est important de disposer d'un outil visuel qui présente les entités "métier" mais surtout les dépendances et relations entre ces "entités". Ce modèle peut être enrichi de tous les attributs nécessaires au fur et à mesure de la concertation.
+- **Construire un [modèle de données](https://guides.etalab.gouv.fr/qualite/documenter-les-donnees/#description-du-modele-de-donnees).** Il est important de disposer d'un outil visuel qui présente les entités "métier" mais surtout les dépendances et relations entre ces "entités". Ce [modèle](https://guides.etalab.gouv.fr/qualite/documenter-les-donnees/#description-du-modele-de-donnees) peut être enrichi de tous les attributs nécessaires au fur et à mesure de la concertation.
 - **Profiter de l’existant.** De nombreux standards existent déjà, qu’ils concernent des formats de données ou des formats de champs. Certains standards sont devenus incontournables aujourd’hui, comme [ISO-8601](https://fr.wikipedia.org/wiki/ISO_8601) pour les dates ou [WGS 84](https://fr.wikipedia.org/wiki/WGS_84) pour les coordonnées géographiques.
 - **Identifier et associer l’écosystème.** Les personnes/organisations que vous associez sont la meilleure garantie d’un schéma de données efficace et largement adopté, permettant d'aboutir à un véritable standard :
     - D'un côté les producteurs, qui connaissent la réalité de leurs données, de la collecte, etc. et qui ont leurs propres usages. 
@@ -54,5 +53,4 @@ En complément, nous avons rédigé [un guide dédié à la préparation de jeux
 À l’issue de cette phase, vous devriez :
 
 - Avoir réuni divers partenaires afin de collaborer sur votre schéma de données;
-- Disposer d'un modèle de données validé;
 - Avoir décidé des différents champs de votre schéma de données, leurs types et définitions et produit une documentation associée.
