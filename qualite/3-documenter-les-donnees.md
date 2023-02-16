@@ -45,6 +45,13 @@ S'ils peuvent être utilisés dans des contextes proches, les termes "schéma" e
 * un schéma décrit la structure d'un fichier (ses champs et leur format).
 * un modèle décrit la structure logique du jeu de données sous la forme d'objets (ou entités) et de relations (ou associations). Les objets sont définis par une liste d'attributs.
 Les champs d'un schéma sont la traduction physique des attributs des entités du modèle.
+
+>Par exemple dans le jeu de données des IRVE (infrastructures de recharge des véhicules électriques) on peut identifier:
+>- une entité "station" définie par les attributs "id_station_itinerance" et "nom_station"
+>- une entité "point de charge" définie par les attributs "id_pdc_itinerance" et "puissance nominale"
+>
+>Une "station" contient un ou plusieurs "point de charge" (relation).
+>Chaque attribut de ce modèle simplifié donne lieu à un champ dans le schéma de données IRVE.
 :::
 
 Le modèle de données est avant tout un outil de dialogue entre les différents intervenants. 
@@ -64,7 +71,7 @@ Si vous publiez des données tabulaires, vous pouvez produire un tableau récapi
 * la description de la donnée contenue dans cette colonne
 * une ou plusieurs valeurs d’exemple.
 
-Mais la méthode recommandée est plutôt de produire un schéma de données. Le guide 'créer des schémas de données' permet d'obtenir toutes les informations nécessaires à sa mise en oeuvre.
+Cela constituera une base solide en vue de la création d'un schéma de données, dont le processus est détaillé [ici](https://github.com/producteurs-schemas/).
 
 > La documentation du jeu de données de sauvetage en mer présente un tableau récapitulatif des différentes colonnes. La description des champs permet de faire le lien avec le fichier de données, ce qui facilite la lecture des données.
 > ![Descriptif des colonnes du jeu de données SECMAR](./images/table_secmar.png)
