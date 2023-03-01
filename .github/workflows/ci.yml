@@ -86,7 +86,6 @@ jobs:
       run: |
         sudo npm install -g n
         sudo n 16.19.1
-        node --version
 
     - name: Cache Node.js modules
       uses: actions/cache@v2
