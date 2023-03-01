@@ -6,7 +6,7 @@ jobs:
   publish:
     name: Publish to GitHub Pages
     needs: pdf
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     if: github.ref == 'refs/heads/master'
 
     steps:
@@ -38,7 +38,7 @@ jobs:
   pdf:
     name: Build PDF files
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     container: aergus/latex:2022-07-30
 
     steps:
@@ -77,7 +77,7 @@ jobs:
 
   build:
     name: Lint and build website
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v2
