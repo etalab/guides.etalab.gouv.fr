@@ -104,6 +104,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        npm --version
         nvm use 16.19.1
         npm install
 
