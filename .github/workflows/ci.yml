@@ -82,14 +82,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install right Nodejs version
-      run: |
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-        export NVM_DIR="$HOME/.nvm"
-        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-        nvm install 16.19.1
-
     - name: Cache Node.js modules
       uses: actions/cache@v2
       with:
@@ -104,8 +96,12 @@ jobs:
 
     - name: Install dependencies
       run: |
-        npm --version
-        nvm use 16.19.1
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+        nvm install
+        nvm use
         npm install
 
     - name: Lint Markdown files
