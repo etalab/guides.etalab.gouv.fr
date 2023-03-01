@@ -103,7 +103,9 @@ jobs:
         key: ${{ runner.OS }}-vuepress
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        nvm use 16.19.1
+        npm install
 
     - name: Lint Markdown files
       run: npm run lint-md
