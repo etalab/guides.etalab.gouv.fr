@@ -97,7 +97,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo apt install nodejs=16.19.1
+        nvm install v16.19.1
         npm install
 
     - name: Lint Markdown files
