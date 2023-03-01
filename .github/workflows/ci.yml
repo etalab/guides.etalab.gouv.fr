@@ -47,7 +47,7 @@ jobs:
     - name: Install dependencies
       run: |
         apt update
-        apt install nodejs=16.19.1
+        sudo apt install nodejs=16.19.1
         apt install -y python3-venv
 
     - name: Install pandoc-guides
@@ -96,9 +96,7 @@ jobs:
         key: ${{ runner.OS }}-vuepress
 
     - name: Install dependencies
-      run: |
-        apt install
-        apt install nodejs=16.19.1
+      run: npm install
 
     - name: Lint Markdown files
       run: npm run lint-md
