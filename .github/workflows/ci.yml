@@ -84,8 +84,8 @@ jobs:
 
     - name: Install right Nodejs version
       run: |
-        npm install -g n
-        n 16.19.1
+        sudo npm install -g n
+        sudo n 16.19.1
         node --version
 
     - name: Cache Node.js modules
