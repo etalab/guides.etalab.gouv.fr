@@ -6,7 +6,7 @@ jobs:
   publish:
     name: Publish to GitHub Pages
     needs: pdf
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-lastest
     if: github.ref == 'refs/heads/master'
 
     steps:
@@ -38,7 +38,7 @@ jobs:
   pdf:
     name: Build PDF files
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     container: aergus/latex:2022-07-30
 
     steps:
@@ -47,7 +47,6 @@ jobs:
     - name: Install dependencies
       run: |
         apt update
-        sudo apt install nodejs=16.19.1
         apt install -y python3-venv
 
     - name: Install pandoc-guides
@@ -83,6 +82,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Install right Nodejs version
+      run: |
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+        source ~/.nvm/nvm.sh
+        nvm install 16.19.1
+
     - name: Cache Node.js modules
       uses: actions/cache@v2
       with:
@@ -96,9 +101,7 @@ jobs:
         key: ${{ runner.OS }}-vuepress
 
     - name: Install dependencies
-      run: |
-        npm install
-        nvm install v16.19.1
+      run: npm install
 
     - name: Lint Markdown files
       run: npm run lint-md
