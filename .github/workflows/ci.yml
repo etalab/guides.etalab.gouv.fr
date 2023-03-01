@@ -86,7 +86,7 @@ jobs:
       run: |
         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
         source ~/.nvm/nvm.sh
-        nvm install 18.14.2
+        nvm install 16.19.1
 
     - name: Cache Node.js modules
       uses: actions/cache@v2
