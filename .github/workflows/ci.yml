@@ -6,7 +6,7 @@ jobs:
   publish:
     name: Publish to GitHub Pages
     needs: pdf
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
 
     steps:
@@ -38,7 +38,7 @@ jobs:
   pdf:
     name: Build PDF files
     needs: build
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     container: aergus/latex:2022-07-30
 
     steps:
@@ -103,18 +103,12 @@ jobs:
         key: ${{ runner.OS }}-vuepress
 
     - name: Install dependencies
-      with:
-        node-version: 16.19.1
       run: npm install
 
     - name: Lint Markdown files
-      with:
-        node-version: 16.19.1
       run: npm run lint-md
 
     - name: Build VuePress website
-      with:
-        node-version: 16.19.1
       run: npm run build
 
     - uses: actions/upload-artifact@v2
