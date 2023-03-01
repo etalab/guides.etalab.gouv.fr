@@ -84,8 +84,8 @@ jobs:
 
     - name: Install right Nodejs version
       run: |
-        curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-        sudo apt install -y nodejs
+        curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+        apt-get install -y nodejs
         node --version
 
     - name: Cache Node.js modules
