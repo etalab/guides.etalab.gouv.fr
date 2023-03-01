@@ -96,7 +96,9 @@ jobs:
         key: ${{ runner.OS }}-vuepress
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        sudo apt install nodejs=16.19.1
+        npm install
 
     - name: Lint Markdown files
       run: npm run lint-md
