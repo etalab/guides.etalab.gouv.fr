@@ -97,8 +97,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        nvm install v16.19.1
         npm install
+        nvm install v16.19.1
 
     - name: Lint Markdown files
       run: npm run lint-md
