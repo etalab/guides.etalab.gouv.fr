@@ -8,7 +8,7 @@ permalink: /producteurs-schemas/phase-construction
 La phase de construction consiste à implémenter techniquement le schéma de données obtenu après la phase de concertation. Pour cela, il est nécessaire de choisir un standard technique, créer les fichiers requis, les tester et les diffuser.
 :::
 
-Durant cette phase, vous devez mobiliser des personnes possédant des compétences techniques. Cette phase consiste à transcrire les décisions prises lors de la phase de concertation pour un schéma de données.
+Durant cette phase, vous devez mobiliser des personnes possédant des compétences techniques. Cette phase consiste à transcrire les décisions prises lors de la phase de concertation en un ou plusieurs schémas de données suivant le découpage en fichiers retenu.
 
 ## Choisir un standard technique pour la description de votre schéma de données
 
