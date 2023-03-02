@@ -82,6 +82,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Install right Nodejs version
+      run: |
+        sudo npm install -g n
+        sudo n 16.19.1
+
     - name: Cache Node.js modules
       uses: actions/cache@v2
       with:
