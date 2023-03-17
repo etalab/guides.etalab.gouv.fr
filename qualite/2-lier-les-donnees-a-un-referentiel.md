@@ -5,7 +5,7 @@ permalink: /qualite/lier-les-donnees-a-un-referentiel
 # Lier les données à un référentiel
 
 
-Comme explicité dans la page [Préparer le jeu de données - *Cas 2 - La structure du jeu de données ne correspond à aucun schéma de données existant*](/qualite/preparer-le-jeu-de-donnees/#cas-2-la-structure-du-jeu-de-donnees-ne-correspond-a-aucun-schema-de-donnees-existant), il est important d'intégrer dans vos jeux de données des données pivots relevant d'un référentiel.
+Comme explicité dans la page [Préparer le jeu de données - *Cas 2 - La structure de vos données ne correspond à aucun schéma de données existant*](/qualite/preparer-le-jeu-de-donnees/#cas-2-la-structure-de-vos-donnees-ne-correspond-a-aucun-schema-de-donnees-existant), il est important d'intégrer dans vos jeux de données des données pivots relevant d'un référentiel.
 
 ::: tip Exemple
 Mon jeu de données est une liste d'actions culturelles menées par ma région. Certaines de ces actions sont gérées par des associations. Il peut être intéressant de publier un jeu de données recensant ces actions avec un champ correspondant à l'identification des associations. Cet identifiant existe et est standardisé, il s'agit du numéro RNA, identifiant national des associations dont le répertoire est opéré par le ministère de l'Intérieur.
@@ -26,7 +26,7 @@ L'intégration dans votre jeu de données de données pivots qui correspondent �
 
 ### Le service public de la donnée
 
-Parmi les nombreux référentiels existants, nous pouvons citer le service public de la donnée (SPD) qui référence 9 jeux de données maintenus de manière pérenne par des administrations.
+Parmi les nombreux référentiels existants, nous pouvons citer le service public de la donnée (SPD) qui référence les jeux de données maintenus de manière pérenne par des administrations.
 
 ![Service Public de la Donnée](./images/spd.png)
 *Vous pouvez consulter sur le site data.gouv.fr la liste [des données du service public de la donnée](https://www.data.gouv.fr/fr/reference).*
@@ -83,7 +83,7 @@ Les référentiels techniques n'ont pas de significations métiers. Cependant, i
 ### Partager ses propres référentiels
 
 
-::: info Cadre Commun d'Architecture des référentiels de données de l'État
+::: tip Cadre Commun d'Architecture des référentiels de données de l'État
 Le [Cadre Commun d'Architecture des référentiels de données de l'État](https://references.modernisation.gouv.fr/sites/default/files/Cadre%20Commun%20d%27Architecture%20des%20R%C3%A9f%C3%A9rentiel%20de%20donn%C3%A9es%20v1.0_0.pdf) fait spécifiquement mention de l'importance des variables pivots dans le partage et la publication de données. Il stipule notamment que :
 - Les données sont un bien, un actif de l’État, elles doivent être gérées et valorisées en conséquence ;
 - Les données doivent être standardisées, définies sur la base d’un vocabulaire commun, contextualisées, et combinables les unes aux autres ;

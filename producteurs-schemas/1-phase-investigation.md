@@ -13,7 +13,7 @@ Afin de déterminer s’il est nécessaire de créer ou non un schéma de donné
 
 1. Lire attentivement les différentes sections de ce guide ;
 1. Organiser une réunion réunissant des acteurs métiers, techniques et de potentiels réutilisateurs. Lors de cette réunion, vous débatterez de la pertinence de la création de votre schéma de données;
-1. Entrer en contact avec [les équipes d’Etalab](https://www.etalab.gouv.fr/contact) et leurs partenaires en [référençant votre schéma](4-integration-schema-datagouv.md#qui-peut-référencer-des-schémas-), afin de bénéficier de conseils lors de la création de votre schéma de données, d’une visibilité accrue pour celui-ci et d’une assistance d’experts.
+1. Entrer en contact avec [les équipes d’Etalab](https://www.etalab.gouv.fr/contact) et leurs partenaires en [référençant votre schéma](/producteurs-schemas/integration-schema-datagouv#qui-peut-referencer-des-schemas), afin de bénéficier de conseils lors de la création de votre schéma de données, d’une visibilité accrue pour celui-ci et d’une assistance d’experts.
 
 ## Exemples
 
@@ -24,7 +24,7 @@ Ces situations sont des exemples où il est pertinent de créer un schéma de do
 -
     > Le ministère chargé des transports souhaite consolider une base nationale des lieux pouvant servir de points de covoiturage. Les collectivités territoriales sont en charge de la création, recensement et aménagement de ces lieux.
 
-    Il est pertinent de créer un schéma de données car un grand nombre de producteurs de données doivent produire le même jeu de données. Un schéma facilitera la diffusion des prérequis, permettra la validation des données et facilitera l’agrégation nationale.
+    Il est pertinent de créer un schéma de données car un grand nombre de producteurs de données doivent produire des données dans un format homogène. Un schéma facilitera la diffusion des prérequis, permettra la validation des données et facilitera l’agrégation nationale.
 -
     > L’INSEE souhaite diffuser le Code Officiel Géographique. Il rassemble des données sur des communes, des cantons, des arrondissements, des départements, des régions et des pays. Ce fichier est actualisé tous les ans.
 

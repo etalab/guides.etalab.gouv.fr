@@ -20,16 +20,16 @@ Quel que soit le mode d’export des données, il est recommandé  d’automatis
 Les jeux de données qui ont vocation à circuler seront réutilisés par des acteurs tiers qui ne connaissent pas l’environnement de votre administration. Il est nécessaire de proposer une structure de jeu de données compréhensible et appropriable par tous.
 
 Deux approches sont envisageables :
-* La structure de votre jeu de données correspond à un schéma de données existant ;
-* La structure de votre jeu de données ne correspond pas à aucun schéma de données existant. Un travail de modélisation est nécessaire en amont de la création du jeu de données.
+* La structure de vos données correspond à un schéma de données existant ;
+* La structure de vos données ne correspond pas à aucun schéma de données existant. Un travail de modélisation est nécessaire en amont de la création du jeu de données.
 
-### Cas 1 - La structure du jeu de données correspond à un schéma de données existant
+### Cas 1 - La structure des données correspond à un schéma de données existant
 
 
 ::: lexique Schéma de données
-Un schéma de données est un modèle qui permet de décrire de manière précise et univoque les différents champs et valeurs possibles qui composent un jeu de données.
+Un schéma de données est un document qui permet de décrire de manière précise et univoque les différents champs et valeurs possibles qui composent un fichier.
 
-Il permet notamment de valider qu’un jeu de données se conforme à un schéma, de générer de la documentation automatiquement, de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
+Il permet notamment de valider qu’un fichier se conforme à un schéma, de générer de la documentation automatiquement, de générer des jeux de données d’exemple ou de proposer des formulaires de saisie standardisés.
 Ces schémas facilitent la montée en qualité et le croisement des données proposées en open data, surtout lorsque plusieurs producteurs de données sont amenés à produire un même jeu de données.
 
 ➡️ Consultez [notre guide à destination des producteurs de schémas](../producteurs-schemas/README.md)
@@ -39,26 +39,16 @@ Les schémas existants peuvent avoir été définis par voie :
 * **Réglementaire** : un modèle de données a été défini de manière réglementaire, par décret ou arrêté. Un schéma est un moyen de faciliter l’adoption de ces modèles par les producteurs de données.Par exemple, le schéma de données relatif à la publication des données essentielles dans la commande publique est fixé par [arrêté depuis le 14 avril 2017](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000034492587&categorieLien=id).
 * **D’usage** : la réutilisation des données décrites par le schéma bénéficie à un grand nombre de réutilisateurs ou de nombreux producteurs sont amenés à utiliser ce schéma.
 
-#### Pourquoi utiliser un schéma de données ?
-
-La création d’un jeu de données en conformité avec un schéma de données existant apporte plusieurs bénéfices :
-
-* Le jeu de données créé peut être facilement croisé avec d’autres jeux de données conformes au standard utilisé ;
-* L'interopérabilité des données et leur croisement est simplifié ;
-* Si le jeu de données que vous créez est une agrégation de plusieurs fichiers produits par différents acteurs, la formalisation et le partage d’un standard  de données  facilite le travail d’agrégation des données ;
-* La formalisation d’un standard de données assure une pérennité des fichiers dans le temps ;
-* La documentation d’un standard de données existant est déjà rédigée et accessible.
-
 #### Comment identifier un schéma de données déjà existant ?
 
-Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près. Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) permet [d’intégrer les schémas de données et documentations associées](https://schema.data.gouv.fr/documentation/integration-autres-systemes) dans d’autres systèmes informatiques.
+Le site [schema.data.gouv.fr](http://schema.data.gouv.fr) référence une liste de schémas de données existants. Il offre également la possibilité à tout utilisateur de soumettre de nouveaux schémas de données. Lorsque les données que vous souhaitez faire circuler correspondent à un schéma existant, nous vous conseillons de l’appliquer au plus près.
 
-#### Comment produire un jeu de données conforme à un schéma de données ?
+#### Comment produire des données conforme à un schéma de données ?
 
-Si le jeu de données n’est pas extrait d’un système d’information mais saisi manuellement, [l’outil CSV-GG](https://csv-gg.etalab.studio/?schema=etalab%2Fschema-decp-dpa) peut assister le processus de production. À partir d’un schéma de données sélectionné, il est possible de saisir les valeurs de chaque information et ainsi produire un fichier exhaustif et conforme.
+Si les données ne sont pas extraites d’un système d’information mais saisies manuellement, [l’outil publier.etalab.studio](https://publier.etalab.studio/) peut assister le processus de production. À partir d’un schéma de données sélectionné, il est possible de saisir les valeurs de chaque information et ainsi produire un fichier exhaustif et conforme.
 
 
-::: tip CSV-GG mode d'emploi
+::: tip Publier des données selon un schéma : mode d'emploi
 Cet outil vous permet de créer un fichier CSV en vous assurant qu'il est conforme à un schéma, c'est-à-dire que ses données sont complètes, valides et structurées.
 1. Sélectionnez le schéma qui vous intéresse dans la liste déroulante, les schémas disponibles ici étant ceux référencés sur schema.data.gouv.fr.
 2. Remplissez le formulaire à l'aide des descriptions des différents champs et des valeurs d'exemples. Les champs indiqués par un astérisque rouge doivent obligatoirement être renseignés au moment de la saisie.
@@ -68,30 +58,34 @@ Cet outil vous permet de créer un fichier CSV en vous assurant qu'il est confor
 :::
 
 
-#### Comment valider la conformité d’un jeu de données avec un schéma de données ?
+#### Comment valider la conformité d’un fichier avec un schéma de données ?
 
-Il est possible de valider la conformité d’un jeu de données à un schéma de données existant grâce à différents outils.
+Il est possible de valider la conformité d’un fichier à un schéma de données existant grâce à différents outils.
 
-Tout d'abord, il est possible d'indiquer que votre jeu de données correspond à un schéma depuis l'interface d'administration de data.gouv.fr. Lorsque vous déposez ou éditez une ressource, vous pouvez sélectionner le schéma correspondant à vos données dans une liste déroulante.
+La solution [Validata](https://validata.fr/) a été développée spécifiquement dans ce but. Vous pouvez y choisir le schéma, parmi la liste déroulante ou via une URL, selon lequel vous souhaitez valider un fichier tabulaire. Vous pouvez ensuite faire valider ce fichier, soit en l'important au format csv, soit en renseignant son URL.
+
+![Capture d'écran du menu de validata](./images/validata.png)
+
+Tout d'abord, il est possible d'indiquer que votre fichier correspond à un schéma depuis l'interface d'administration de data.gouv.fr. Lorsque vous déposez ou éditez une ressource, vous pouvez sélectionner le schéma correspondant à vos données dans une liste déroulante.
 
 ![Capture d'écran de la sélection d'un schéma depuis l'interface d'administration de data.gouv.fr](./images/selection-schema.png)
 
-Le fait d'indiquer que votre ressource est censée respecter un schéma permet de bénéficier de vérifications de la qualité des données et d'indiquer aux réutilisateurs que vos données respectent un référentiel.
+Le fait d'indiquer que votre ressource est censée respecter un schéma permet de bénéficier de vérifications de la qualité des données, d'indiquer aux réutilisateurs que vos données respectent un référentiel, ainsi que de contribuer aux fichiers aggrégés (par exemple [pour les données IRVE](https://www.data.gouv.fr/fr/datasets/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/)).
 
 ![Capture d'écran de data.gouv.fr des informations disponibles sur la page d'un jeu de données lorsqu'un schéma est spécifié sur une ressource](./images/modal-schema.png)
 
 D'autres solutions en dehors de data.gouv.fr existent. Des solutions disponibles en anglais comme [goodtables.io](http://goodtables.io) ou [CSV Lint](https://csvlint.io/) proposent des validateurs de jeux de données. Enfin, il est possible d’intégrer une fonction de validation d’un jeu directement dans la procédure de publication. C’est le cas pour les données d’adresses locales qui font l’objet d’une validation directement sur le site [adresse.data.gouv.fr](https://adresse.data.gouv.fr).
 
-### Cas 2 - La structure du jeu de données ne correspond à aucun schéma de données existant
+### Cas 2 - La structure de vos données ne correspond à aucun schéma de données existant
 
 Si les données que vous souhaitez faire circuler ne correspondent à aucun schéma de données existant, il est nécessaire de réfléchir en amont à la meilleure structure pour vos données.
 
 Tant que les données de votre administration sont dans un environnement logiciel, leur usage reste adapté à des problématiques métiers spécifiques. L’ouverture de ces données en dehors de leur environnement logiciel les émancipent de ce contexte métier. La structure du jeu de données doit alors être pensée en fonction des attentes des réutilisateurs et non plus en fonction des besoins propres à l’organisation.
 
 Les bonnes pratiques à suivre sont les suivantes :
-* Occulter l’ensemble des colonnes dont les champs contiennent des données couvertes par un secret légal (se référer au guide juridique pour plus d’information) ;
-* Occulter l’ensemble des colonnes dont les champs contiennent des données à caractère personnel dont la publication n’est pas nécessaire à l’information du public (se référer au guide juridique pour plus d’information) ;
-* Privilégier la présence de variables pivots. Ces variables proposent des identifiants communs qui permettent de lier plusieurs jeux de données entre eux (ex. Le numéro d’identification SIRET de la base Sirene). Pour plus de détails, consultez la page [Lier les données à un référentiel](2-lier-les-donnees-a-un-referentiel.md).
+* Occulter l’ensemble des colonnes dont les champs contiennent des données couvertes par un secret légal (se référer au [guide juridique](https://guides.etalab.gouv.fr/juridique) pour plus d’informations) ;
+* Occulter l’ensemble des colonnes dont les champs contiennent des données à caractère personnel dont la publication n’est pas nécessaire à l’information du public (se référer au [guide juridique](https://guides.etalab.gouv.fr/juridique) pour plus d’informations) ;
+* Privilégier la présence de variables pivots. Ces variables proposent des identifiants communs qui permettent de lier plusieurs jeux de données entre eux (ex. Le numéro d’identification SIRET de la base Sirene). Pour plus de détails, consultez la page [Lier les données à un référentiel](/qualite/lier-les-donnees-a-un-referentiel).
 
 Il est également nécessaire de mener une réflexion sur la granularité de votre jeu de données :
 * Faut-il proposer des données fines ou agrégées ?
@@ -127,7 +121,7 @@ Les formats ouverts et communément acceptés sont les suivants :
 
 Le titre de votre jeu de données doit pouvoir renseigner n’importe quel réutilisateur sur le contenu du fichier. Pour cela, il est nécessaire de :
 * Ne pas donner un titre trop générique qui obligerait le réutilisateur à ouvrir le jeu de données pour comprendre son contenu (Par exemple “liste.csv” ou encore “balance comptable” sans indiquer l’organisation concernée);
-* Ne pas donner un titre trop long qui rendrait la manipulation du fichier difficile. Par exemple le titre du jeu de données “Fichier consolidés des données essentielles de la commande publique” est suffisamment générique pour ne pas revenir sur toutes les sources de données utilisées pour agréger le jeu de données  ;
+* Ne pas donner un titre trop long qui rendrait la manipulation du fichier difficile. Par exemple le titre du jeu de données “Fichiers consolidés des données essentielles de la commande publique” est suffisamment générique pour ne pas revenir sur toutes les sources de données utilisées pour agréger le jeu de données  ;
 * Ne pas donner un titre contenant des accents ou caractères spéciaux qui poseraient des problèmes d’interopérabilité des fichiers ;
 * Ne pas donner de titre trop technique issu de nomenclatures métier.
 
@@ -151,4 +145,4 @@ Dans un fichier CSV, la virgule n’est pas considérée comme un séparateur d�
 
 ### Gestion des champs non attribués
 
-Il est possible qu’un champ de votre jeu de données ne soit pas attribué. Il convient de laisser ce champ vide plutôt que d’attribuer la valeur 0. Le zéro correspond à une valeur, qui peut dénaturer le sens de votre fichier.
+Il est possible que certaines occurrences d’un champ d'un fichier ne soit pas attribuées. Il convient de laisser ces occurrences vides plutôt que d’attribuer la valeur 0 (ou une autre valeur par défaut). Le zéro correspond à une valeur, qui peut dénaturer le sens de votre fichier.

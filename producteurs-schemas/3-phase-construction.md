@@ -8,7 +8,7 @@ permalink: /producteurs-schemas/phase-construction
 La phase de construction consiste à implémenter techniquement le schéma de données obtenu après la phase de concertation. Pour cela, il est nécessaire de choisir un standard technique, créer les fichiers requis, les tester et les diffuser.
 :::
 
-Durant cette phase, vous devez mobiliser des personnes possédant des compétences techniques. Cette phase consiste à transcrire les décisions prises lors de la phase de concertation pour un schéma de données.
+Durant cette phase, vous devez mobiliser des personnes possédant des compétences techniques. Cette phase consiste à transcrire les décisions prises lors de la phase de concertation en un ou plusieurs schémas de données suivant le découpage en fichiers retenu.
 
 ## Choisir un standard technique pour la description de votre schéma de données
 
@@ -71,13 +71,7 @@ Vous trouverez plusieurs dépôts Git de schémas sur [schema.data.gouv.fr](http
 
 ## Référencer votre schéma de données sur schema.data.gouv.fr
 
-Pour faciliter la découverte de votre schéma de données et des données sous-jacentes, nous vous recommandons de le faire référencer sur [schema.data.gouv.fr](https://schema.data.gouv.fr). Nous avons rédigé [une page dédiée](4-integration-schema-datagouv.md) à ce sujet décrivant les plus-values, prérequis et démarches à suivre.
-
-## Faire évoluer votre schéma de données
-
-Une fois votre schéma de données défini et implémenté, le travail ne s’arrête pas là. Au-delà du besoin de diffusion et de promotion, il est probable que vous deviez faire des modifications : clarifications de la documentation, corrections d’erreurs, évolutions du cadre réglementaire, etc. Autant de raisons où il est nécessaire de mettre en œuvre une nouvelle version.
-
-Posséder un dépôt Git pour votre schéma de données vous permettra d’avoir plusieurs versions et tags. Notez que [schema.data.gouv.fr](https://schema.data.gouv.fr) supporte plusieurs versions pour un même schéma de données et affiche les modifications effectuées au fur et à mesure, dès lors que ces modifications sont renseignées dans un fichier dédié.
+Pour faciliter la découverte de votre schéma de données et des données sous-jacentes, nous vous recommandons de le faire référencer sur [schema.data.gouv.fr](https://schema.data.gouv.fr). Nous avons rédigé [une page dédiée](/producteurs-schemas/integration-schema-datagouv) à ce sujet décrivant les plus-values, prérequis et démarches à suivre.
 
 ## Points de sortie
 À l’issue de cette phase, vous devriez :

@@ -39,7 +39,7 @@ jobs:
     name: Build PDF files
     needs: build
     runs-on: ubuntu-latest
-    container: aergus/latex:latest
+    container: aergus/latex:2022-07-30
 
     steps:
     - uses: actions/checkout@v2
@@ -81,6 +81,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Install right Nodejs version
+      run: |
+        sudo npm install -g n
+        sudo n 16.19.1
 
     - name: Cache Node.js modules
       uses: actions/cache@v2
