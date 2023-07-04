@@ -39,7 +39,7 @@ jobs:
     name: Build PDF files
     needs: build
     runs-on: ubuntu-latest
-    container: aergus/latex:2022-07-30
+    container: aergus/latex:2023-06-16
 
     steps:
     - uses: actions/checkout@v2
