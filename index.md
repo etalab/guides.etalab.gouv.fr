@@ -2,9 +2,7 @@
 home: true
 heroImage: /images/bibliotheque.jpg
 heroText: Les guides d'Etalab
-tagline: Pour vous accompagner dans la réalisation de vos projets relatifs aux données, algorithmes et codes sources. 
-actionText: Consulter les guides →
-actionLink: /accueil
+tagline: 💡 Une nouvelle version des guides est disponible [ici](https://etalab-2.gitbook.io/guides/) . 
 actionText: Consulter les guides →
 actionLink: /accueil
 features:
