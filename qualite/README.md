@@ -4,7 +4,7 @@
 ::: tip 💡 Découvrez nos nouveaux guides !
 Nous avons travaillé à la refonte des guides et une nouvelle version beta est disponible.
 
-<Button link="https://etalab-2.gitbook.io/guides/publier-des-donnees/guide-qualite" text="Découvrir les nouveaux guides"/>
+<Button link="https://guides.data.gouv.fr/publier-des-donnees/guide-qualite" text="Découvrir les nouveaux guides"/>
 :::
 
 ::: lexique Un jeu de données
