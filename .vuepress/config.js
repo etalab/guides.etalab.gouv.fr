@@ -15,7 +15,7 @@ module.exports = {
     editLinkText: 'Proposer des modifications sur cette page',
     nav: [
       { text: '📚 Sommaire', link: '/accueil.html' },
-      { text: '💾 Télécharger les guides', link: '/pdf.html' },
+      { text: '💡 Découvrir nos nouveaux guides', link: 'https://guides.data.gouv.fr/' },
       { text: '✉️ Contacter Etalab', link: 'https://www.etalab.gouv.fr/contact' },
       { text: '✉️ Contacter data.gouv.fr', link: 'https://support.data.gouv.fr/' }
     ],
