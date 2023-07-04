@@ -8,7 +8,7 @@ permalink: /apis-geo/
 ::: tip 💡 Découvrez nos nouveaux guides !
 Nous avons travaillé à la refonte des guides et une nouvelle version beta est disponible.
 
-<Button link="https://etalab-2.gitbook.io/guides/reutiliser-des-donnees/utiliser-les-api-geographiques" text="Découvrir les nouveaux guides"/>
+<Button link="https://guides.data.gouv.fr/reutiliser-des-donnees/utiliser-les-api-geographiques" text="Découvrir les nouveaux guides"/>
 :::
 
 
