@@ -4,6 +4,12 @@ permalink: /producteurs-schemas/
 
 # Introduction
 
+::: tip 💡 Découvrez nos nouveaux guides !
+Nous avons travaillé à la refonte des guides et une nouvelle version beta est disponible.
+
+<Button link="https://etalab-2.gitbook.io/guides/publier-des-donnees/guide-qualite/maitriser-les-schemas-de-donnees" />
+:::
+
 ::: tip Rédaction de ce guide
 Ce guide a été publié initialement fin mars 2020 et est mis à jour de manière régulière. Il résulte d'une co-rédaction entre les équipes d'[Etalab](https://www.etalab.gouv.fr/) et d'[OpenDataFrance](https://www.opendatafrance.net/). Si vous souhaitez faire des propositions pour le faire évoluer, vous êtes invités à [entrer en contact avec nous](https://etalab.gouv.fr/contact).
 :::
