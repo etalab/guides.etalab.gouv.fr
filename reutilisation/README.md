@@ -2,7 +2,17 @@
 permalink: /reutilisation/
 ---
 
+
 # Introduction
+
+::: tip 💡 Découvrez nos nouveaux guides !
+Nous avons travaillé à la refonte des guides et une nouvelle version beta est disponible.
+
+<Button link="https://etalab-2.gitbook.io/guides/publier-des-donnees/guide-data.gouv.fr/reutilisations" text="Découvrir les nouveaux guides"/>
+
+
+:::
+
 
 <CurrentGroupToc></CurrentGroupToc>
 

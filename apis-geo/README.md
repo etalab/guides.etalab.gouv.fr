@@ -2,9 +2,15 @@
 permalink: /apis-geo/
 ---
 
-
-
 # Introduction
+
+
+::: tip 💡 Découvrez nos nouveaux guides !
+Nous avons travaillé à la refonte des guides et une nouvelle version beta est disponible.
+
+<Button link="https://etalab-2.gitbook.io/guides/reutiliser-des-donnees/utiliser-les-api-geographiques" text="Découvrir les nouveaux guides"/>
+:::
+
 
 ::: tip Version bêta
 Ce guide a été publié initialement en mars 2022. Il est amené à être ajusté suite aux retours de nos partenaires et lecteurs. Vous pouvez contribuer à l'améliorer en [proposant une modification](https://github.com/etalab/guides.etalab.gouv.fr/edit/master/apis-geo/) ou en [contactant directement](mailto:geo@data.gouv.fr) l'équipe Géo d'Etalab. 
