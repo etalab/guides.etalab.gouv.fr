@@ -5,6 +5,8 @@ heroText: Les guides d'Etalab
 tagline: Pour vous accompagner dans la réalisation de vos projets relatifs aux données, algorithmes et codes sources. 
 actionText: Consulter les guides →
 actionLink: /accueil
+actionText: Consulter les guides →
+actionLink: /accueil
 features:
 - title: Pour quel public ?
   details: "Ces guides s'adressent à différents publics de structures publiques ou privées : chief data officer,  juristes,  experts métiers, chefs de projets ou encore simples curieux."
