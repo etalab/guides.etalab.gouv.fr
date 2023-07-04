@@ -7,7 +7,7 @@ permalink: /producteurs-schemas/
 ::: tip 💡 Découvrez nos nouveaux guides !
 Nous avons travaillé à la refonte des guides et une nouvelle version beta est disponible.
 
-<Button link="https://etalab-2.gitbook.io/guides/publier-des-donnees/guide-qualite/maitriser-les-schemas-de-donnees" />
+<Button link="https://etalab-2.gitbook.io/guides/publier-des-donnees/guide-qualite/maitriser-les-schemas-de-donnees" text="Découvrir les nouveaux guides"/>
 :::
 
 ::: tip Rédaction de ce guide
