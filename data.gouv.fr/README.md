@@ -2,7 +2,14 @@
 permalink: /data.gouv.fr/
 ---
 
+
 # Introduction
+
+::: tip 💡 Découvrez nos nouveaux guides !
+Nous avons travaillé à la refonte des guides et une nouvelle version beta est disponible.
+
+<Button link="https://guides.data.gouv.fr/publier-des-donnees/guide-data.gouv.fr" text="Découvrir les nouveaux guides" />
+:::
 
 <CurrentGroupToc></CurrentGroupToc>
 

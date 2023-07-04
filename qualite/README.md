@@ -1,4 +1,11 @@
+
 # Introduction
+
+::: tip 💡 Découvrez nos nouveaux guides !
+Nous avons travaillé à la refonte des guides et une nouvelle version beta est disponible.
+
+<Button link="https://guides.data.gouv.fr/publier-des-donnees/guide-qualite" text="Découvrir les nouveaux guides"/>
+:::
 
 ::: lexique Un jeu de données
 Un jeu de données est un ensemble de ressources : il contient a minima des fichiers contenant des données (csv, json, etc.), de la documentation pour décrire le contenus de ces données, ainsi que la licence sous laquelle le jeu est publié.
