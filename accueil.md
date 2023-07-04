@@ -1,7 +1,7 @@
 ---
 sidebar: false
 ---
-::: tip Découvrez nos nouveaux guides !
+::: tip 💡 Découvrez nos nouveaux guides !
 Nous avons travaillé à la refonte des guides et une nouvelle version beta est disponible.
 
 <Button link="https://etalab-2.gitbook.io/guides/" text="Découvrir les nouveaux guides" />
