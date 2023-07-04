@@ -2,6 +2,12 @@
 permalink: /juridique/
 ---
 
+::: tip 💡 Découvrez nos nouveaux guides !
+Nous avons travaillé à la refonte des guides et une nouvelle version beta est disponible.
+
+<Button link="https://etalab-2.gitbook.io/guides/publier-des-donnees/guide-juridique" />
+:::
+
 # Introduction
 
 ## Cadre général et opportunités   
