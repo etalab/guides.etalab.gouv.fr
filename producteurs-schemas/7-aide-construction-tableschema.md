@@ -16,7 +16,7 @@ Un des formats privilégiés pour les standards de données est le [CSV](https:/
 L'outil de validation utilisé pour vérifier la conformité d'un fichier csv au standard auquel il fait référence s'appuie sur la structure tabulaire des données. Elles peuvent donc être contenues dans un tableur numérique au format .xls, .xlsx ou .ods ou dans un fichier texte au format .csv, .txt ou autre.
 :::
 
-La question du séparateur utilisé pour séparer deux champs de données dans un fichier .csv n'est donc pas essentielle. Cependant, certains outils se basent sur la valeur de ce séparateur pour traiter et publier des jeux de données. Nous vous proposons donc un certain nombre de recommandations afin de favoriser la généralisation d'un usage contribuant à l'interpoérabilité des données produites. 
+La question du séparateur utilisé pour séparer deux champs de données dans un fichier .csv n'est donc pas essentielle. Cependant, certains outils se basent sur la valeur de ce séparateur pour traiter et publier des jeux de données. Nous vous proposons donc un certain nombre de recommandations afin de favoriser la généralisation d'un usage contribuant à l'interopérabilité des données produites. 
 
 ### Format de fichier csv
 
