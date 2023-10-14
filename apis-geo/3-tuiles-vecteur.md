@@ -96,7 +96,7 @@ Voici quelques scénarios:
 
 **Avec le fond de plan et le cadastre**
 
-- Avec MapLibre <https://bl.ocks.org/ThomasG77/2c0f884c209eebb2710648e316052382>
+- Avec MapLibre <https://gist.githack.com/ThomasG77/2c0f884c209eebb2710648e316052382/raw/95a8ad79b57fe2db9553ccab16946d679d41a8d8/index.html>
 
 **Avec uniquement le fond de plan**
 
@@ -104,7 +104,7 @@ Voici quelques scénarios:
 
 **Avec les limites administratives et le cadastre seulement**
 
-- MapLibre <https://bl.ocks.org/ThomasG77/e9eacae4cd4c75e61327944997cb82d4>
+- MapLibre <https://gist.githack.com/ThomasG77/e9eacae4cd4c75e61327944997cb82d4/raw/4943cd611e87fe26aa72e181e386b90d999769e4/index.html>
 
 ### Consommer les tuiles vectorielles seules
 
@@ -136,7 +136,7 @@ Si vous souhaitez héberger vous-même, nous vous recommandons de passer par [Ti
 Selon vos besoins, vous pouvez choisir d'utiliser l'API de tuiles vectorielles de l'IGN plutôt que celles que nous mettons à disposition. 
 Voici deux exemples:
 
-- OpenLayers <https://bl.ocks.org/ThomasG77/3047b6072f0411d11d23cfed1fdb2c5c>
-- Maplibre <https://bl.ocks.org/ThomasG77/5a122812635a85af7f762858ecf052a3>
+- OpenLayers <https://gist.githubusercontent.com/ThomasG77/3047b6072f0411d11d23cfed1fdb2c5c/raw/03552469ffcae03fdaf7be32b316289884ffaabe/index.html>
+- Maplibre <https://gist.githack.com/ThomasG77/5a122812635a85af7f762858ecf052a3/raw/207dd08f9374c8bdda33a4c8a21a9e1c8d016a09/index.html>
 
 Ici, nous avons utilisé le plan "Standard" dont l'URL est <https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/essentiels/standard.json>. Vous verrez qu'il est possible de choisir d'autres styles et même d'avoir des tuiles vectorielles pour d'autres éléments que les fonds de plan. Pour cela, consultez la documentation officielle côté IGN, <https://geoservices.ign.fr/documentation/services/api-et-services-ogc/vecteur-tuile-tmswmts>. Nous vous recommandons en complément de regarder <https://geoservices.ign.fr/services-web-essentiels> car la 1ère documentation à date mentionne encore une clé d'API alors que bien que présente, celle-ci est publique et s'appelle `essentiels`, ce que vous pouvez voir dans les démos mises à disposition.
