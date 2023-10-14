@@ -12,4 +12,5 @@ juridique/ @mathildehg @AntoineAugusti
 qualite/ @mathildehg @AntoineAugusti
 logiciels/ @bzg
 producteurs-schemas/ @etalab/schema-data-gouv-fr
-pseudonymisation/ @psorianom @KimMontalibet @jdenes
+pseudonymisation/ @psorianom @KimMontalibet @jdenes @pedevineau
+anonymisation/ @pedevineau
