@@ -199,7 +199,7 @@ Vous faites du SIG, néophyte comme expert et utilisez le logiciel SIG QGIS?
 
 Vous utilisez d’autres outils?
 
-- Vous faites du R? [https://cran.r-project.org/web/packages/banR/index.html](https://cran.r-project.org/web/packages/banR/index.html)
+- Vous faites du R? [https://cran.r-project.org/web/packages/banR/index.html](https://github.com/joelgombin/banR)
 - Vous souhaitez intégrer la recherche dans le CMS SPIP? [http://plugins.spip.net/gisban.html](http://plugins.spip.net/gisban.html)
 
 ## Gros consommateurs de l’API [api-adresse.data.gouv.fr](http://api-adresse.data.gouv.fr/)?
