@@ -46,7 +46,7 @@ On entend par base de données un recueil d’œuvres, de données ou d'autres �
 
 Les documents administratifs, informations publiques et données doivent être publiés dans un format :
 *  **Ouvert** : tout protocole de communication, d’interconnexion ou d’échange et tout format de données interopérable et dont les spécifications techniques sont publiques, sans restriction d'accès ou de mise en œuvre ;
-*  **Aisément réutilisable** : le producteur prend en considérant les connaissances et besoins du réutilisateur lors de la publication ;
+*  **Aisément réutilisable** : le producteur prend en considération les connaissances et besoins du réutilisateur lors de la publication ;
 *  **Exploitable par un système de traitement automatisé** : la publication est optimisée pour une utilisation par un système de traitement automatisé et non pour une exploitation immédiate par des humains.
 
 ### Que faire si mes documents administratifs contiennent des secrets légaux ? 
