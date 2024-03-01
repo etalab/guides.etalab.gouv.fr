@@ -239,7 +239,7 @@ Conclusion à tirer sur les projections des données:
 ### Bon à savoir concernant les communes
 
 - [La longueur des noms de commune peut être problématique](https://twitter.com/JulesGrandin/status/1448563444601532422).
-- [Il existe une normalisation des noms de communes](https://www.collectivites-locales.gouv.fr/sites/default/files/Accueil/Notes).
+- [Il existe une normalisation des noms de communes](https://www.collectivites-locales.gouv.fr/sites/default/files/Accueil/Notes%20de%20la%20DGCL/2021/Instruction%20des%20demandes%20de%20changement%20de%20nom%20des%20communes.pdf).
 - Il existe des communes homonymes, le nom n'est donc pas un identifiant fiable.
 - Le code postal ne correspond pas à toujours à une seule commune.
 - Certaines communes ont plusieurs codes postaux.
