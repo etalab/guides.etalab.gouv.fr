@@ -167,7 +167,7 @@ Nous vous proposons un outil sous la forme d'un quizz pour tester votre connaiss
 
 La **première action** à mener, en tant qu'administration, est de **recenser les algorithmes** potentiellement concernés par l'obligation de transparence et de redevabilité, et de publier cette liste en la rendant facilement trouvable.
 
-Le département Etalab est à votre disposition pour vous accompagner dans la mise en oeuvre de ce recensement et plus globalement dans la mise en oeuvre de ces nouvelles obligations. Pour nous contacter : `etalab[at]modernisation.gouv.fr`.
+Le département Etalab est à votre disposition pour vous accompagner dans la mise en oeuvre de ce recensement et plus globalement dans la mise en oeuvre de ces nouvelles obligations. Pour nous contacter : etalab[at]modernisation.gouv.fr.
 
 Etalab met également à disposition une [fiche pratique](./1-mention.md) sur la mention explicite.
 
