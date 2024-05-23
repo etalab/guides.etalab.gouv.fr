@@ -133,4 +133,4 @@ Cette section continuera à être enrichie dans les prochains mois pour apporter
 * La liste des algorithmes de [Pôle Emploi](https://www.pole-emploi.fr/candidat/algorithmes.html).
 
 ## Contact
-Si vous souhaitez qu'[Etalab](https://www.etalab.gouv.fr/qui-sommes-nous) vous accompagne sur ces questions, vous pouvez nous contacter à l'adresse [algorithmes@etalab.gouv.fr](mailto:algorithmes@etalab.gouv.fr) (qui renvoie vers Cindy Kus).
+Si vous souhaitez qu'[Etalab](https://www.etalab.gouv.fr/qui-sommes-nous) vous accompagne sur ces questions, vous pouvez nous contacter : etalab[at]modernisation.gouv.fr.
