@@ -18,8 +18,7 @@ Ce guide est destiné à l'ensemble des administrations et organisations chargé
 
 ### Comment contribuer ?
 
-Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification dans la [version éditable](https://github.com/etalab/guides.etalab.gouv.fr) du guide (sur GitHub) ou en contactant directement l'équipe en charge des algorithmes publics (Cindy Kus) : `algorithmes@etalab.gouv.fr`.
-
+Ce document est un outil évolutif et ouvert. Vous pouvez contribuer à l'améliorer en proposant une modification dans la [version éditable](https://github.com/etalab/guides.etalab.gouv.fr) du guide (sur GitHub) ou en contactant directement : etalab[at]modernisation.gouv.fr.
 ## 1- A quoi servent les algorithmes publics ?
 
 Commençons tout d'abord par une définition: **qu'est-ce qu'un algorithme** ?
