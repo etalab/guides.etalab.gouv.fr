@@ -6,7 +6,7 @@ permalink: /algorithmes/guide
 
 Le département [Etalab](https://www.etalab.gouv.fr) accompagne les administrations dans l'application du nouveau cadre juridique sur les algorithmes publics.
 Ce guide, ouvert aux contributions, est composé de trois parties qui peuvent se lire de manière indépendante.
-- La première partie donne des **éléments de contexte**: qu'est-ce qu'un algorithme ? à quoi servent les algorithmes dans le secteur public ?
+- La première partie donne des **éléments de contexte** : qu'est-ce qu'un algorithme ? à quoi servent les algorithmes dans le secteur public ?
 - La seconde partie détaille les **enjeux en termes d'éthique et de responsabilité**,
 - La troisième partie présente le **cadre juridique applicable** en matière de transparence des algorithmes notamment suite à l'adoption de la loi pour une République numérique.
 
